@@ -81,13 +81,22 @@ FC Tasks:
 #
 <ins>Pass/Fail Criteria:</ins>
 
-| Test        | FAIL        | PASS        | yes/no?     |
-| ----------- | ----------- | ----------- | ----------- |
-| high power state | over # | under # |?|
-| low power state | over # | under # |?|
-| underclocking | unresponsive system | responsive system |?|
-| overclocking | unresponsive system | responsive system |?|
-| idle | over # | under # |?|
+| Test        | Result      | Notes       |
+| ----------- | ----------- | ----------- |
+| high power state 100%| Draw: |          |
+| high power state 50%| Draw: |          |
+| high power state 10%| Draw: |          |
+| Low power state 100% | Draw: |         |
+| Low power state 50% | Draw: |          |
+| Low power state 10% | Draw: |          |
+| Undeclock state 100% | Draw: |          |
+| Undeclock state 50% | Draw: |          |
+| Undeclock state 100% | Draw: |          |
+| Overclocking state 100% | Draw: |          |
+| Overclocking state 50% | Draw: |          |
+| Overclocking state 10% | Draw: |          |
+| Idle | Draw: |          |
+
 
 #
 > <ins>Procedure:</ins>
@@ -152,13 +161,27 @@ FC Tasks:
 #
 <ins>Pass/Fail Criteria:</ins>
 
-| Test        | FAIL        | PASS        | yes/no?     |
-| ----------- | ----------- | ----------- | ----------- |
-| high power state | over # | under # |?|
-| low power state | over # | under # |?|
-| underclocking | unresponsive system | responsive system |?|
-| overclocking | unresponsive system | responsive system |?|
-| idle | over # | under # |?|
+| Test        | Result      | Notes       |
+| ----------- | ----------- | ----------- |
+| MAXN state 100%| Draw: |          |
+| MAXN state 50%| Draw: |          |
+| MAXN power state 10%| Draw: |          |
+| 50W power state 100% | Draw: |         |
+| 50W power state 50% | Draw: |          |
+| 50W power state 10% | Draw: |          |
+| 30W power state 100% | Draw: |         |
+| 30W power state 50% | Draw: |          |
+| 30W power state 10% | Draw: |          |
+| 15W power state 100% | Draw: |         |
+| 15W power state 50% | Draw: |          |
+| 15W power state 10% | Draw: |          |
+| Undeclock state 100% | Draw: |          |
+| Undeclock state 50% | Draw: |          |
+| Undeclock state 100% | Draw: |          |
+| Overclocking state 100% | Draw: |          |
+| Overclocking state 50% | Draw: |          |
+| Overclocking state 10% | Draw: |          |
+| Idle | Draw: |          |
 
 #
 > <ins>Procedure:</ins>
