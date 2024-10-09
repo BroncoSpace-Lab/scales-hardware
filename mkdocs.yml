@@ -1,0 +1,80 @@
+site_name: The PROVES Kit Documentation
+
+theme: 
+  name: material
+  features:
+    - navigation.tabs
+    - header.autohide
+    - navigation.path
+    - content.code.copy
+    - content.code.select
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search  # To have search functionality on the document
+  - mkdocs-pdf #PDF Embed Ability
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - attr_list
+  - abbr
+  - def_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.pathconverter:
+      base_path: 'DOCUMENTATION' # default: ''
+      relative_path: '' # default ''
+      absolute: false # default: false
+      tags: 'a script img link object embed'
+
+nav: # Setting up the navigation. The below list will be tabs on left panel
+  - Home: 
+    - Welcome: index.md
+ 
+
+extra:
+  social:
+    - icon: material/github 
+      link: https://github.com/proveskit
