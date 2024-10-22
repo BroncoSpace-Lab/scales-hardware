@@ -48,7 +48,10 @@ Each of the models were tested at all 4 of the Jetson power modes to show perfor
 # Resnet Results
 The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets/uoft-cs/cifar100)dataset.The team used the test split to inference 10,000 images.
 
+<ins>Resnet Test Results</ins>
+
 |Test|Average FPS|Average GPU %| Average RAM (MB)| Total Inference Time (s)|
+| ----------- | ----------- | ----------- | ----------- | ----------- |
 |MaxN| 21.01 | 57.16 | 10128.28 | 475.99  |
 |50W|  |   |   |    |  
 |30W|  |   |   |    |
