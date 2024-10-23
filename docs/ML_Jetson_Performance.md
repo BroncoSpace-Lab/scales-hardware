@@ -40,7 +40,6 @@ If interested in other metrics Tegrastats records all of the following metrics:
 - tboard Temperature
 - Temperature 
 - tdiode Temperature
-- gpu Tempurate
 - tj Temperature
 
 
@@ -59,24 +58,62 @@ The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets
 |15W| 10.58 | 68.48  | 4075.85  | 945.32   |
 
 ### Raw Data
-[MaxN Raw Data](data/resnet_test.csv)
-[50W Raw Data](data/resnet_50W.csv)
-[30W Raw Data](data/resnet_30W.csv)
 
+- [MaxN Raw Data](data/resnet_test.csv)
+- [50W Raw Data](data/resnet_50W.csv)
+- [30W Raw Data](data/resnet_30W.csv)
+- [15W Raw Data](data/resnet_15W.csv)
 
-## Graphs
-### MAXN Data
+### Graphs
+#### MAXN Data
 ![MAXN Used GR3D %](Images/resnet_maxn_gr3d.png)
 ![MAXN Used RAM](Images/resnet_maxn_used_ram.png)
 
-### 50W Data
-![50W Used GR3D %](Images/resnet_50W_gr3d.png)
+#### 50W Data
+![50W Used GR3D %](Images/restnet_50W_gr3d.png)
 ![50W Used RAM](Images/resnet_50W_used_ram.png)
 
-### 30W Data
+#### 30W Data
 ![30W Used GR3D %](Images/resnet_30W_gr3d.png)
 ![30W Used RAM](Images/resnet_30W_used_ram.png)
 
-### 15W Data
+#### 15W Data
 ![15W Used GR3D %](Images/resnet_15W_gr3d.png)
-![15W Used RAM](Images/resnet_15W_used_ram.png)
+![15W Used RAM](Images/resenet_15W_used_ram.png)
+
+
+## Depth Anything Results
+The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets/uoft-cs/cifar100) dataset.The team used the test split to inference 1,000 images.
+
+<ins>Depth Anything Test Results</ins>
+
+|Test|Average FPS|Average GPU %| Average RAM (MB)| Total Inference Time (s)|
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+|MaxN| 5.25 | 71.63 | 4509.97 | 190.54  |
+|50W| 3.71 | 83.56   | 4924.52 | 269.25 |  
+|30W| 1.53 | 89.55  | 4612.01 |  655.45 |
+|15W| 0.83 | 94.77 | 4889.89 |1198.83   |
+
+### Raw Data
+
+- [MaxN Raw Data](data/depth_maxn.csv)
+- [50W Raw Data](data/depth_50W.csv)
+- [30W Raw Data](data/depth_30W.csv)
+- [15W Raw Data](data/depth_15W.csv)
+
+### Graphs
+#### MAXN Data
+![MAXN Used GR3D %](Images/depth_maxn_gr3d.png)
+![MAXN Used RAM](Images/depth_maxn_used_ram.png)
+
+#### 50W Data
+![50W Used GR3D %](Images/depth_50W_gr3d.png)
+![50W Used RAM](Images/depth_50W_used_ram.png)
+
+#### 30W Data
+![30W Used GR3D %](Images/depth_30W_gr3d.png)
+![30W Used RAM](Images/depth_30W_used_ram.png)
+
+#### 15W Data
+![15W Used GR3D %](Images/depth_15W_gr3d.png)
+![15W Used RAM](Images/depth_15W_used_ram.png)
