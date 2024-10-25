@@ -55,10 +55,10 @@ The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets
 
 |Test|Average FPS|Average GPU %| Average RAM (MB)| Total Inference Time (s)| Power Draw (W) |
 | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |
-|MaxN| 21.01 | 57.16 | 10128.28 | 475.99  ||
+|MaxN| 21.015 | 59.07 | 7905.32 | 475.03 |14.78|
 |50W| 15.27 | 52.39  |10161.1   |  655.08  |12.18|  
 |30W| 16.91 | 61.29  | 4255.58  | 591.32  |12.72|
-|15W| 10.58 | 68.48  | 4075.85  | 945.32   ||
+|15W| 10.64 | 72.35 | 3882.09  | 939.46  |10.16|
 
 ### Raw Data
 
@@ -125,13 +125,29 @@ The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets
 
 <ins>Phi-3 Test Results</ins>
 
-|Test|Tokens/s|Average GPU %| Average RAM (MB)| Total Generation Time (s)|
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-|MaxN| 3.72 |43.5  | 9857.42 | 129.47 |
-|50W| 3.62 | 53.41  | 11094.16|132.94 |  
-|30W|  3.83 | 57.91 | 11771.74 | 125.59  |
-|15W|   |  |     | |
+|Test|Tokens/s|Average GPU %| Average RAM (MB)| Total Generation Time (s)|Power Draw (W)|
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+|MaxN| 3.66 |60.78  | 11248.46 | 131.55 |13.99|
+|50W| 3.60 | 49.75  | 10200.76|133.48 |12.54|  
+|30W|  3.83 | 63.74 | 12136.26| 125.59  |14.07| 
+|15W|  2.6 | 52.31 |  10752.25   | 184.66|11.33|
 
+### Graphs
+#### MAXN Data
+![MAXN Used GR3D %](Images/phi_maxn_gr3d.png)
+![MAXN Used RAM](Images/phi_maxn_used_ram.png)
+
+#### 50W Data
+![50W Used GR3D %](Images/phi_50W_gr3d.png)
+![50W Used RAM](Images/phi_50W_used_ram.png)
+
+#### 30W Data
+![30W Used GR3D %](Images/phi_30W_gr3d.png)
+![30W Used RAM](Images/phi_30W_used_ram.png)
+
+#### 15W Data
+![15W Used GR3D %](Images/phi_15W_gr3d.png)
+![15W Used RAM](Images/phi_15W_used_ram.png)
 
 ## Notes
 
@@ -146,9 +162,5 @@ The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets
 Things to do still 
 
 - Flash and test everything on a 64gb Jetson AGX Orin
-- Delete Collumns with zeros at the beginning and end of the csv data files
-- Redo the average calcs for gr3d % usage with zero rows removed
-- Go back and reparse all the txt data so that the csv gets the power draw metrics as well
-- edit the tegrastats average calcualtor to add the power draws and give total power draw and an average
-- Redo resnet 15W run
-- Redo Resnet maxn run
+- Yolo V8 inference testing
+- 
