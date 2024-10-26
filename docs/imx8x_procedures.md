@@ -68,7 +68,7 @@ Following [this guide to install the SDK](https://docs.phytec.com/projects/yocto
     - The following image shows the IP is 192.168.0.190 for eth0 
     - This may change each time you boot the board, so be sure to check.
 
-![ifconfig example output](/home/scales/scales-hardware/docs/Images/imx8x_ipaddress_example.png)
+![ifconfig example output](Images/imx8x_ipaddress_example.png)
 
 4. Run VS Code and open a WSL terminal 
 
@@ -101,7 +101,7 @@ Wire Legend:
 
     red - Vdd		black - Gnd		brown - SCL		blue - SDA 
 
-![i2c sensor setup](/home/scales/scales-hardware/docs/Images/i2c_sensor_setup.png)
+![i2c sensor setup](Images/i2c_sensor_setup.png)
 
     red goes into pin 1 of X60. 
 
@@ -118,11 +118,11 @@ Wire Legend:
 
 4. Default output: (time to play spot the difference to find your device’s address) 
 
-![i2cdetect expected output](/home/scales/scales-hardware/docs/Images/expected_i2cdetect_output.png)
+![i2cdetect expected output](Images/expected_i2cdetect_output.png)
 
 Expected Output
 
-![i2cdetect output with sensor](/home/scales/scales-hardware/docs/Images/my_i2cdetect_output.png)
+![i2cdetect output with sensor](Images/my_i2cdetect_output.png)
 
 my output (device address is 0x18) 
 
