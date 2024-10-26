@@ -1,6 +1,10 @@
-Important note: It is ideal to be using a 64-bit Linux host machine as opposed to Windows or a virtual machine. ARM Cortec Linux machine will not work (cannot use a Jetson as host computer for development). 
+# i.MX 8X Testing Procedures
 
-# Connecting directly to the i.MX 8X:
+This document lists the interfacing and testing procedures required to get the i.MX 8X development board up and running for SCALES.
+
+Important note: It is ideal to be using a 64-bit Linux host machine as opposed to Windows or a virtual machine. An ARM Cortex Linux machine will not work (cannot use a Jetson as host computer for development). 
+
+## Connecting directly to the i.MX 8X:
 
 Connect to the dev board following the [Quick Start guide](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/quickstart/index.html#basic-evaluation-requirements). 
 
@@ -26,7 +30,7 @@ Connect to the dev board following the [Quick Start guide](https://docs.phytec.c
 4. Sign in when prompted. Password is “root”. 
 
 
-# Setting up Host Computer: 
+## Setting up Host Computer: 
 
 Following [this guide to install the SDK](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/applicationdevelopment/InstallTheSDK.html) on the host computer. 
 
@@ -41,7 +45,7 @@ Following [this guide to install the SDK](https://docs.phytec.com/projects/yocto
 
     `source /opt/fsl-imx-xwayland/5.4-zeus/environment-setup-aarch64-poky-linux`
 
-# Setting up Ethernet: 
+## Setting up Ethernet: 
 
 ### Required materials: 
 
@@ -84,7 +88,7 @@ Following [this guide to install the SDK](https://docs.phytec.com/projects/yocto
 
 7. Congrats you are now in the board on your computer. 
 
-# I2C Interfacing: 
+## I2C Interfacing: 
 
 Following [this guide on I2C interfacing](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/interfaceguides/i2c.html). 
 
