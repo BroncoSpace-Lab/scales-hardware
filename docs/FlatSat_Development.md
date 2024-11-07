@@ -43,9 +43,9 @@ With the given python chat client test, we were able to get data transfer speeds
 
 
 
-This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need)
+This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need).
 
-**Next Step:** Change Verilog code to enable communication between two different systems (Jetson to the flight computer).
+**Next Step:** Develop Verilog code to enable communication between two different external systems (Jetson to the flight computer).
 
 #
 ### **VOXL2**
