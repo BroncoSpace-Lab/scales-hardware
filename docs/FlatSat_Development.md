@@ -99,6 +99,16 @@ We are in the process of getting F Prime deployed on the iMX. We made a [discuss
 Ideally we can get F Prime up and running in the next week or so, that way we can use it for real-time data transmission between boards instead of just copying over files over ethernet. 
 
 ## Future FLATSAT Plan
+
+**General Goals**
+
+- set up static ip address on the iMX
+- fix F Prime deployment on the iMX
+- set up sensor data transfer from iMX to Jetson using F Prime
+- change SatCat verilog to work with external systems
+- change SatCat verilog to work with ethernet instead of UART
+- get the VOXL to work
+
 After viewing the full capabilities of our chosen FPGA, we are currently comparing three different hardware architectures for our SCALES system:
 
 ### Architecture 1
@@ -145,11 +155,13 @@ __Cons:__
 ## Testing Metrics
 These are the test metrics that will help make hardware design decisions:
 
-- 
-- 
-- 
-- 
-- 
-- 
+- lowest power consumption
+- data transfer speed
+- ease of use
+  - hardware setup
+  - software setup
+  - amount of manual input/labor
+- read/write ability
+- availability of I/O
 
 **[Test Procedure](https://scales-hardware.readthedocs.io/en/latest/Test%20Procedure%20List/)**
