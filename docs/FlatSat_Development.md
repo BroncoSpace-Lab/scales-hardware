@@ -64,6 +64,7 @@ The error we are receiving when attempting to flash the board is shown below:
 For more details, take a look at [documentation](https://scales-hardware.readthedocs.io/en/latest/imx8x_procedures/).
 
 **Main updates:**
+
 - successfully re-flashed the operating system to a Yocto Linux kernel
 - set up the SDK on a Linux host computer to cross compile code
 - got an I2C sensor up and running with a C code executable file to read sensor data on the board
@@ -119,11 +120,13 @@ Architecure 2 has sensors attached to **SATCAT**
 
 
 **Pros:**
+
 - Sensor data is accesible to both the flight computer and Jetson
 - 5 GigEthernet Ports
 - 22 Low speed ports (SPI, I2C, UART, CAN)
 
 **Cons:**
+
 - requires heavily modified FPGA board
 - requires extra 2W to power all ports
 
