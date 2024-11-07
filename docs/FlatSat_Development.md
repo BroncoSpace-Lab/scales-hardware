@@ -7,7 +7,7 @@ This document is an overview of the current and future state of our FlatSat deve
 
 We are currently able to connect the boards directly in the following configuration:
 
-picture from draw.io***************
+![image](https://github.com/user-attachments/assets/95054d50-1566-4181-b836-a89268131c7c)
 
 From there, we have to set a temporary ip on the iMX, in this case it is set to 10.3.2.6 so we can ping the Jetson's ip.
 
