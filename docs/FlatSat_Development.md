@@ -98,7 +98,7 @@ We are in the process of getting F Prime deployed on the iMX. We made a [discuss
 Ideally we can get F Prime up and running in the next week or so, that way we can use it for real-time data transmission between boards instead of just copying over files over ethernet. 
 
 ## Future FLATSAT Plan
-After viewing the full capabilities of our chosen FPGA, we are currently comparing two different hardware architectures for our SCALES system:
+After viewing the full capabilities of our chosen FPGA, we are currently comparing three different hardware architectures for our SCALES system:
 
 ### Architecture 1
 Architecture 1 has sensors attached to the **flight computer**.
