@@ -117,9 +117,16 @@ Architecture 1 has sensors attached to the **flight computer**.
 ![image](https://github.com/user-attachments/assets/3d400f78-7bee-4894-8597-d6ad3240c092)
 
 
-**Pros:**
+__Pros:__
 
-**Cons:**
+- Lower power consumption from internal system (less ethernet ports)
+- immediate sensor logging
+- eliminates bandwidth limitation by having seperate data streams for each sensor
+
+__Cons:__
+
+- slightly longer sensor data transferring from the flight computer to the Jetson
+- requires FPGA software development and custom FPGA board
 
 
 ### Architecture 2
@@ -129,16 +136,18 @@ Architecure 2 has sensors attached to **SATCAT**
 
 
 
-**Pros:**
+__Pros:__
 
 - Sensor data is accesible to both the flight computer and Jetson
 - 5 GigEthernet Ports
 - 22 Low speed ports (SPI, I2C, UART, CAN)
+- slightly faster sensor data transfer directly from SatCat to Jetson
 
-**Cons:**
+__Cons:__
 
-- requires heavily modified FPGA board
+- requires heavily modified FPGA software and custom FPGA board
 - requires extra 2W to power all ports
+- bandwidth limitation
 
 
 ### Architecture 3
@@ -149,7 +158,15 @@ Architecure 2 has **no SATCAT** and has sensors attached to the **flight compute
 
 __Pros:__
 
+- easiest architecture to develop
+- lowest power consumption
+- no FPGA development
+- one less source error
+
 __Cons:__
+
+- less communication ports
+- more development needed on flight computer board (to enable more ethernet ports)
 
 
 ## Testing Metrics
