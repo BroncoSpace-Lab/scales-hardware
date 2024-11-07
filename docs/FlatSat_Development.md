@@ -108,6 +108,9 @@ Ideally we can get F Prime up and running in the next week or so, that way we ca
 - change SatCat verilog to work with external systems
 - change SatCat verilog to work with ethernet instead of UART
 - get the VOXL to work
+- create a unified power system
+  - right now, all FlatSat components are plugged into wall outlets, so we need to begin development on the power distribution block of the overall system architecture
+  - ideally, we will be able to power the system with one source that is regulated and distributed to the proper components
 
 After viewing the full capabilities of our chosen FPGA, we are currently comparing three different hardware architectures for our SCALES system:
 
