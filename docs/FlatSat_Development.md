@@ -45,13 +45,15 @@ This provided example only allows connection from SatCat to the COM ports of the
 
 #
 ### **VOXL2**
-The VOXL2 is currently bricked after attempting to update the software using the command "voxl-configure-mpa".
+he VOXL2 is currently bricked after attempting to update the software using the command "voxl-configure-mpa".
 
 We followed the unbricking tutorial numerous times and encountered issues with VOXL's firmware files that fail to call on its own files when flashing the board. We submitted a ticket to the ModalAI forum two weeks ago and havent heard back.
 
 The error we are receiving when attempting to flash the board is shown below:
 
-picture of error********************
+![image](https://github.com/user-attachments/assets/95d4e173-b450-4e02-9d51-37697092857a)
+
+**Next Step:** Reach out to ModalAI to get more assistance from the team to help debug.
 
 #
 ### iMX 8X
