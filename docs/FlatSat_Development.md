@@ -37,8 +37,6 @@ We followed [this example setup from SatCat's GitHub](https://github.com/the-aer
 
 With the python chat client, we were able to get data transfer speeds on both UART and Ethernet:
 
-![switch configuration](Images/satcat_switch_config.png)
-
 ![ethernet configuration](Images/satcat_ethernet_config.png)
 
 ![uart configuration](Images/satcat_uart_config.png)
