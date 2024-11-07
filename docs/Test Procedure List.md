@@ -59,19 +59,19 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] wire all sensors to the filght computer
-> - [ ] run REALTIME_DATA_PROCESSING FPrime deployment and start GDS
-> - [ ] run SPI_START command
-> - [ ] Measure runtime, bandwidth, powerdraw, etc.
-> - [ ] verify data was written into memory
-> - [ ]  Repeat this process to each command listed below:
->   - [ ] I2C_START: TEMP SENSOR
->   - [ ] UART_START: IMU
->   - [ ] Ethernet_START: CAMERA
->   - [ ] USB_START: CAMERA
->   - [ ] CAN_START: PHOTORESISTIVE SENSOR
->   - [ ] GPIO_START: WATCHDOG
->   - [ ] ALL_START: starts all sensor data collection
+> - wire all sensors to the filght computer
+> - run REALTIME_DATA_PROCESSING FPrime deployment and start GDS
+> - run SPI_START command
+> - Measure runtime, bandwidth, powerdraw, etc.
+> - verify data was written into memory
+> - Repeat this process to each command listed below:
+>   - I2C_START: TEMP SENSOR
+>   - UART_START: IMU
+>   - Ethernet_START: CAMERA
+>   - USB_START: CAMERA
+>   - CAN_START: PHOTORESISTIVE SENSOR
+>   - GPIO_START: WATCHDOG
+>   - ALL_START: starts all sensor data collection
 
 ### 2. Power Testing
 > <ins>Objective:</ins> We will be observing different power states of both flight computers (high, middle, low, overclocked, underclocked, idle) to obtain a better understanding of how much power each flight computer will generally use. To do this, we will be using cpuburn to activate different percentages(100%, 50%, and 10%) of the cpu's cores and the power consumption at each percentage. For over and under clocking, we will manually set the clockspeed of the cpu to (clockspeed-0.4GHz) for underclocking and (clockspeed+0.2GHz) for overclocking. For the idle state, we will turn flight computer on with no tasks running and observe power consumption.
@@ -100,13 +100,13 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] download cpuburn on the flight computer
-> - [ ] Test high power draw by running ./cpuburn and record power draw
-> - [ ] Test medium power draw by running ./cpuburn -n 2 and record power draw
-> - [ ] Test low power draw by running ./cpuburn -n 1 and record power draw
-> - [ ] Test overlocking by setting clock speed to (clockspeed+0.2GHz) and record power draw
-> - [ ] Test underclocking by setting clock speed to (clockspeed-0.4GHz) and record power draw
-> - [ ] Test Idle by turning flight computer on with no tasks running and record power draw
+> - download cpuburn on the flight computer
+> - Test high power draw by running ./cpuburn and record power draw
+> - Test medium power draw by running ./cpuburn -n 2 and record power draw
+> - Test low power draw by running ./cpuburn -n 1 and record power draw
+> - Test overlocking by setting clock speed to (clockspeed+0.2GHz) and record power draw
+> - Test underclocking by setting clock speed to (clockspeed-0.4GHz) and record power draw
+> - Test Idle by turning flight computer on with no tasks running and record power draw
 
 ### 3. Watchdog Testing
 > <ins>Objective:</ins> We will be verifying the functionality of an external watchdog timer circuit with our flight computers. We will observe what the WDT does at 5 seconds, 5+0.2 seconds, and 5-0.2 seconds to ensure that the WDT is resetting at 5sec properly.
@@ -138,18 +138,18 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] Attach watchdog circuit to FC
-> - [ ] run WATCHDOG FPrime deployment and start GDS
-> - [ ] run the command GPIO_ON 
-> - [ ] Wait 15 seconds and verify FC stays ON
-> - [ ] run the command GPIO_OFF
-> - [ ] wait and verify FC RESETS (this should be about 5 seconds)
-> - [ ] run the command GPIO_ON_5SEC
-> - [ ] wait 15 seconds and verify FC stays ON
-> - [ ] run the command GPIO_ON_4.8SEC
-> - [ ] wait 15 seconds and verify FC stays ON
-> - [ ] run the command GPIO_ON_5.2SEC
-> - [ ] wait 10 seconds and verify FC RESETS
+> - Attach watchdog circuit to FC
+> - run WATCHDOG FPrime deployment and start GDS
+> - run the command GPIO_ON 
+> - Wait 15 seconds and verify FC stays ON
+> - run the command GPIO_OFF
+> - wait and verify FC RESETS (this should be about 5 seconds)
+> - run the command GPIO_ON_5SEC
+> - wait 15 seconds and verify FC stays ON
+> - run the command GPIO_ON_4.8SEC
+> - wait 15 seconds and verify FC stays ON
+> - run the command GPIO_ON_5.2SEC
+> - wait 10 seconds and verify FC RESETS
 
 
 ### Jetson
@@ -185,14 +185,14 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] download gpu burn on the Jetson (https://github.com/wilicc/gpu-burn)
-> - [ ] open Jetson Power GUI to obtain power draw in the duration of this test
-> - [ ] Test high power draw by running 'gpu_burn -m 100' and record power draw
-> - [ ] Test medium power draw by running 'gpu_burn -m 50' and record power draw
-> - [ ] Test low power draw by running 'gpu_burn -m 10' and record power draw
-> - [ ] Test overlocking by setting clock speed to (clockspeed+0.2GHz) and record power draw
-> - [ ] Test underclocking by setting clock speed to (clockspeed-0.4GHz) and record power draw
-> - [ ] Test Idle by turning Jetson on with no tasks running and record power draw
+> - download gpu burn on the Jetson (https://github.com/wilicc/gpu-burn)
+> - open Jetson Power GUI to obtain power draw in the duration of this test
+> - Test high power draw by running 'gpu_burn -m 100' and record power draw
+> - Test medium power draw by running 'gpu_burn -m 50' and record power draw
+> - Test low power draw by running 'gpu_burn -m 10' and record power draw
+> - Test overlocking by setting clock speed to (clockspeed+0.2GHz) and record power draw
+> - Test underclocking by setting clock speed to (clockspeed-0.4GHz) and record power draw
+> - Test Idle by turning Jetson on with no tasks running and record power draw
 
 
 ## First System Level Test (FC and Jetson Only)
@@ -220,12 +220,12 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] Connect the FC and Jetson. This includes the GPIO pin and the RST pin
-> - [ ] Wait 15 seconds and verify Jetson stays ON
-> - [ ] Change the Jetson script to send a pulse every 4.8 seconds
-> - [ ] wait 15 seconds and verify Jetson stays ON
-> - [ ] Change the Jetson script to send a pulse every 5.2 seconds
-> - [ ] wait 10 seconds and verify Jetson RESETS
+> - Connect the FC and Jetson. This includes the GPIO pin and the RST pin
+> - Wait 15 seconds and verify Jetson stays ON
+> - Change the Jetson script to send a pulse every 4.8 seconds
+> - wait 15 seconds and verify Jetson stays ON
+> - Change the Jetson script to send a pulse every 5.2 seconds
+> - wait 10 seconds and verify Jetson RESETS
 
 ### 2. FC to Jetson Reflashing Test
 > <ins>Objective:</ins> We will be verifying that the FC is capabable of reflashing the Jetson. We will do this by connecting the FC to the Jetson through USB, and running a script that will reflash the Jetson.
@@ -246,9 +246,9 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] Connect the FC to the Jetson using the USB cable
-> - [ ] Run the reflash script on the FC
-> - [ ] Verify that the Jetson Reflashes
+> - Connect the FC to the Jetson using the USB cable
+> - Run the reflash script on the FC
+> - Verify that the Jetson Reflashes
 
 
 ## Final System Level Test (FC, SatCat5, and Jetson)
@@ -281,11 +281,11 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] connect sensor to the flight computer
-> - [ ] connect the Jetson and FC to the FPGA using ethernet cables
-> - [ ] program the FPGA 
-> - [ ] start data transfer scripts on both the flight computer and Jetson
-> - [ ] wait 30 seconds and verify the data saved on the Jetson and flight computer
+> - connect sensor to the flight computer
+> - connect the Jetson and FC to the FPGA using ethernet cables
+> - program the FPGA 
+> - start data transfer scripts on both the flight computer and Jetson
+> - wait 30 seconds and verify the data saved on the Jetson and flight computer
 
 ### 2. Total Power Test
 > <ins>Objective:</ins> We will be oberving the overall power draw of the entire system including the FC, SatCat5, and Jetson. We will do this by running the data transfer test (the test right above this test) and monitor the power draw levels on the FC, SatCat5, and Jetson. We will add up the power draw from each of these components to obtain the overall power draw of the sytem.
@@ -307,10 +307,10 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] Connect the FC, SatCat5, and Jetson together
-> - [ ] Run the same procedure listed under the Data Transfer Test above
-> - [ ] Monitor and record power draw from the FC, SatCat5, and Jetson
-> - [ ] Sum the power draws together to obtain the overall power draw
+> - Connect the FC, SatCat5, and Jetson together
+> - Run the same procedure listed under the Data Transfer Test above
+> - Monitor and record power draw from the FC, SatCat5, and Jetson
+> - Sum the power draws together to obtain the overall power draw
 
 
 ### 3. Full FPrime-to-FPrime Communication Test
@@ -350,7 +350,7 @@ FC Tasks:
 
 
 > <ins>Procedure:</ins>
-> - [ ] Connect the FC, SatCat5, and Jetson together
-> - [ ] Run the respective FPrime deployments on the FC and Jetson
-> - [ ] Run the GDS's for the FC deployment and the Jetson deployment
-> - [ ] (**need help on Alex's side to finish the rest of the procedure and making the right components on FPrime**)
+> - Connect the FC, SatCat5, and Jetson together
+> - Run the respective FPrime deployments on the FC and Jetson
+> - Run the GDS's for the FC deployment and the Jetson deployment
+> - (**need help on Alex's side to finish the rest of the procedure and making the right components on FPrime**)
