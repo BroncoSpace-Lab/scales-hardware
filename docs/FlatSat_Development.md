@@ -22,6 +22,10 @@ And we can do the same process of pinging the iMX and ssh from the Jetson:
 ![jetson ping imx](Images/jetson_ping_imx.png)
 
 ![jetson ssh into imx](Images/jetson_ssh_into_imx.png)
+
+We are also able to copy files from the iMX to the Jetson. In this example, we copied a file called mcp9808a from the iMX to the Jetson:
+
+![scp from imx to jetson](Images/imx_scp_to_jetson.png)
 #
 ### **SatCat**
 
@@ -48,11 +52,18 @@ The error we are receiving when attempting to flash the board is shown below:
 picture of error********************
 
 #
-### **IMX8**
-kelly's corner
+### iMX 8X
 
+For more details, take a look at [documentation](https://scales-hardware.readthedocs.io/en/latest/imx8x_procedures/).
 
-
+Main updates:
+- successfully re-flashed the operating system to a Yocto Linux kernel
+- set up the SDK on a Linux host computer to cross compile code
+- got an I2C sensor up and running with a C++ executable file to read sensor data on the board
+- able to copy code from GitHub instead of using as USB every time
+- figured out how to run python code on the board
+- started trying to get F Prime up and running on board
+    - made a discussion post on the F Prime GitHub to work out the issues we had - will get back to this next week
 
 # Future FLATSAT Plan
 After viewing the full capabilities of our chosen FPGA, we are currently comparing two different hardware architectures for our SCALES system:
