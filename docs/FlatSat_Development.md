@@ -109,8 +109,8 @@ Ideally we can get F Prime up and running in the next week or so, that way we ca
 - change SatCat verilog to work with ethernet instead of UART
 - get the VOXL to work
 - create a unified power system
-  - right now, all FlatSat components are plugged into wall outlets, so we need to begin development on the power distribution block of the overall system architecture
-  - ideally, we will be able to power the system with one source that is regulated and distributed to the proper components
+   - right now, all FlatSat components are plugged into wall outlets, so we need to begin development on the power distribution block of the overall system architecture
+   - ideally, we will be able to power the system with one source that is regulated and distributed to the proper components
 
 After viewing the full capabilities of our chosen FPGA, we are currently comparing three different hardware architectures for our SCALES system:
 
@@ -179,9 +179,9 @@ These are the test metrics that will help make hardware design decisions:
   - will be tested at component level and system level during different tasks including real-time inferencing and data transfer
 - data transfer speed
 - ease of use
-    - hardware setup: How many internal connections are required? How long did it take to set up? 
-    - software setup: How much manual input do we have to put in to get the system to work? How long do certain critical tasks take?
-    - amount of manual input/labor
+   - hardware setup: How many internal connections are required? How long did it take to set up?
+   - software setup: How much manual input do we have to put in to get the system to work? How long do certain critical tasks take?
+   - amount of manual input/labor
 - read/write ability: Are there any issues when flight computer and Jetson are trying to access the data at the same time?
 - availability of I/O
 
