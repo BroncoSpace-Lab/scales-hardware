@@ -33,11 +33,15 @@ We were able to run SatCat's Arty A7 Demo and got SatCat to send/recieve message
 
 We followed [this example setup from SatCat's GitHub](https://github.com/the-aerospace-corporation/satcat5/tree/main/examples/arty_a7) and set up the hardware in the following configuration: 
 
-picture from drawio*******
+![image](https://github.com/user-attachments/assets/2b350d5b-cd49-4405-9d84-c9ce13daf63e)
+
 
 With the given python chat client test, we were able to get data transfer speeds on both UART and Ethernet:
 
-pictures of chat client**************
+![image](https://github.com/user-attachments/assets/c63ee3cb-af18-4c33-86c3-efee78d062da)
+![image](https://github.com/user-attachments/assets/9f018b9d-ca75-42cc-b6d8-3c796b10d818)
+
+
 
 This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need)
 
@@ -45,7 +49,7 @@ This provided example only allows connection from SatCat to the COM ports of the
 
 #
 ### **VOXL2**
-he VOXL2 is currently bricked after attempting to update the software using the command "voxl-configure-mpa".
+The VOXL2 is currently bricked after attempting to update the software using the command "voxl-configure-mpa".
 
 We followed the unbricking tutorial numerous times and encountered issues with VOXL's firmware files that fail to call on its own files when flashing the board. We submitted a ticket to the ModalAI forum two weeks ago and havent heard back.
 
