@@ -100,7 +100,8 @@ After viewing the full capabilities of our chosen FPGA, we are currently compari
 ### Architecture 1
 Architecture 1 has sensors attached to the **flight computer**.
 
-Picture of architecture 1 diagram*************
+![image](https://github.com/user-attachments/assets/3d400f78-7bee-4894-8597-d6ad3240c092)
+
 
 __Pros:__
 
@@ -110,7 +111,8 @@ __Cons:__
 ### Architecture 2
 Architecure 2 has sensors attached to **SATCAT**
 
-Picture of architecture 2 diagram***************
+![image](https://github.com/user-attachments/assets/de4894f7-e44c-494b-947f-bd0005bf10aa)
+
 
 __Pros:__
 
