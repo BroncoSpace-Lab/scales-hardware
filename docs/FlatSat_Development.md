@@ -2,7 +2,7 @@
 
 This document is an overview of the current and future state of our FlatSat development for SCALES.
 
-# Current Updates
+## Current Updates
 ### **Direct Ethernet Connection**
 
 We are currently able to connect the boards directly in the following configuration:
@@ -65,7 +65,7 @@ Main updates:
 - started trying to get F Prime up and running on board
     - made a discussion post on the F Prime GitHub to work out the issues we had - will get back to this next week
 
-# Future FLATSAT Plan
+## Future FLATSAT Plan
 After viewing the full capabilities of our chosen FPGA, we are currently comparing two different hardware architectures for our SCALES system:
 
 ## Architecture 1
