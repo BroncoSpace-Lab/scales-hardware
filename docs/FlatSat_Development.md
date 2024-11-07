@@ -111,7 +111,8 @@ __Cons:__
 ### Architecture 2
 Architecure 2 has sensors attached to **SATCAT**
 
-![image](https://github.com/user-attachments/assets/de4894f7-e44c-494b-947f-bd0005bf10aa)
+![image](https://github.com/user-attachments/assets/0c57dd32-698c-42cd-b15a-72d68b3255de)
+
 
 
 __Pros:__
