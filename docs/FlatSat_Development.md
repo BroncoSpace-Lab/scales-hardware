@@ -43,9 +43,9 @@ With the python chat client, we were able to get data transfer speeds on both UA
 
 ![uart configuration](Images/satcat_uart_config.png)
 
-This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need).
+This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need). This example also only supports one ethernet and one UART, and we would prefer to have 2 ethernet ports available. We tried using a UART to ethernet converter, but it didn't work. We believe this is mainly due to the verilog programmed onto the FPGA only being able to handle UART protocol for that port, so this is something we will have to look into as well. 
 
-**Next Step:** Develop Verilog code to enable communication between two different external systems (Jetson to the flight computer).
+**Next Step:** Develop Verilog code to enable communication between two different external systems (Jetson to the flight computer) and communicate via two ethernet ports.
 
 
 ### **VOXL2**
