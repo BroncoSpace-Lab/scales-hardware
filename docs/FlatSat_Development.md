@@ -176,12 +176,13 @@ __Cons:__
 These are the test metrics that will help make hardware design decisions:
 
 - lowest power consumption
+  - will be tested at component level and system level during different tasks including real-time inferencing and data transfer
 - data transfer speed
 - ease of use
-  - hardware setup
-  - software setup
+  - hardware setup: How many internal connections are required? How long did it take to set up? 
+  - software setup: How much manual input do we have to put in to get the system to work? How long do certain critical tasks take?
   - amount of manual input/labor
-- read/write ability
+- read/write ability: Are there any issues when flight computer and Jetson are trying to access the data at the same time?
 - availability of I/O
 
 **[Test Procedure](https://scales-hardware.readthedocs.io/en/latest/Test%20Procedure%20List/)**
