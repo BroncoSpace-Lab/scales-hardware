@@ -92,6 +92,7 @@ Architecure 2 has sensors attached to **SATCAT**
 Picture of architecture 2 diagram***************
 
 __Pros:__
+- Sensor data is accesible to both the flight computer and Jetson
 
 __Cons:__
 
