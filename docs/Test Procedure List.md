@@ -2,6 +2,7 @@
 This document will create a mock DRM test to run on both the VOXL2 and IMX8. This document also includes individual component testing and system level testing according to the DRM.
 
 ## Mock DRM
+
 sensors:
 - SPI: HUMIDITY SENSOR
 - I2C: TEMP SENSOR
