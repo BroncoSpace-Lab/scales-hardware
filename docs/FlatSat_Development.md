@@ -106,11 +106,11 @@ Architecture 1 has sensors attached to the **flight computer**.
 ![image](https://github.com/user-attachments/assets/3d400f78-7bee-4894-8597-d6ad3240c092)
 
 
-__Pros:__
+**Pros:**
 
-__Cons:__
+**Cons:**
 
-#
+
 ### Architecture 2
 Architecure 2 has sensors attached to **SATCAT**
 
@@ -118,16 +118,16 @@ Architecure 2 has sensors attached to **SATCAT**
 
 
 
-__Pros:__
+**Pros:**
 - Sensor data is accesible to both the flight computer and Jetson
 - 5 GigEthernet Ports
 - 22 Low speed ports (SPI, I2C, UART, CAN)
 
-__Cons:__
+**Cons:**
 - requires heavily modified FPGA board
 - requires extra 2W to power all ports
 
-#
+
 ### Architecture 3
 Architecure 2 has **no SATCAT** and has sensors attached to the **flight computer**
 
@@ -138,7 +138,7 @@ __Pros:__
 
 __Cons:__
 
-#
+
 ## Testing Metrics
 These are the test metrics that will help make hardware design decisions:
 
