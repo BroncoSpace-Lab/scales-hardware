@@ -120,8 +120,12 @@ Architecure 2 has sensors attached to **SATCAT**
 
 __Pros:__
 - Sensor data is accesible to both the flight computer and Jetson
+- 5 GigEthernet Ports
+- 22 Low speed ports (SPI, I2C, UART, CAN)
 
 __Cons:__
+- requires heavily modified FPGA board
+- requires extra 2W to power all ports
 
 #
 ### Architecture 3
