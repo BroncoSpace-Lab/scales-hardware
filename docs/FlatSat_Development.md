@@ -125,6 +125,18 @@ __Pros:__
 
 __Cons:__
 
+
+### Architecture 3
+Architecure 2 has **no SATCAT** and has sensors attached to the **flight computer**
+
+![image](https://github.com/user-attachments/assets/0c57dd32-698c-42cd-b15a-72d68b3255de)
+
+
+
+__Pros:__
+
+__Cons:__
+
 ## Testing Metrics
 These are the test metrics that will help make hardware design decisions:
 
