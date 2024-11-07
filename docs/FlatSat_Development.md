@@ -43,7 +43,9 @@ With the python chat client, we were able to get data transfer speeds on both UA
 
 ![uart configuration](Images/satcat_uart_config.png)
 
-**Next Step:** Change Verilog code to enable communication between two different systems (Jetson to the flight computer).
+This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need).
+
+**Next Step:** Develop Verilog code to enable communication between two different external systems (Jetson to the flight computer).
 
 
 ### **VOXL2**
@@ -53,7 +55,10 @@ We followed the unbricking tutorial numerous times and encountered issues with V
 
 The error we are receiving when attempting to flash the board is shown below:
 
-picture of error********************
+![image](https://github.com/user-attachments/assets/95d4e173-b450-4e02-9d51-37697092857a)
+
+**Next Step:** Reach out to ModalAI to get more assistance from the team to help debug.
+
 
 
 ### iMX 8X
@@ -116,6 +121,7 @@ Architecure 2 has sensors attached to **SATCAT**
 
 
 __Pros:__
+- Sensor data is accesible to both the flight computer and Jetson
 
 __Cons:__
 
