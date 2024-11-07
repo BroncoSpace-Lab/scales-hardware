@@ -29,15 +29,17 @@ We are also able to copy files from the iMX to the Jetson. In this example, we c
 #
 ### **SatCat**
 
-We are currently only able to use SatCat to send/recieve messages from different serial ports within the same windows host computer. 
+We were able to run SatCat's Arty A7 Demo and got SatCat to send/recieve messages from different serial ports within the same windows host computer. 
 
-We followed [this example setup from SatCat's GitHub](https://github.com/the-aerospace-corporation/satcat5/tree/main/examples/arty_a7) to download the software onto the FPGA and set up the hardware in the following configuration: 
+We followed [this example setup from SatCat's GitHub](https://github.com/the-aerospace-corporation/satcat5/tree/main/examples/arty_a7) and set up the hardware in the following configuration: 
 
 picture from drawio*******
 
-With the python chat client, we were able to get data transfer speeds on both UART and Ethernet:
+With the given python chat client test, we were able to get data transfer speeds on both UART and Ethernet:
 
 pictures of chat client**************
+
+This provided example only allows connection from SatCat to the COM ports of the local computer used, and NOT connection between different systems (which is what we need)
 
 **Next Step:** Change Verilog code to enable communication between two different systems (Jetson to the flight computer).
 
