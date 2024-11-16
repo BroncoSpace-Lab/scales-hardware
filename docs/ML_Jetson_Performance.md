@@ -20,6 +20,25 @@ This document will go over the performance of the Jetson AGX Orin 64 Dev Kit whi
     - Language Model
     - [Model Card](https://huggingface.co/microsoft/Phi-3.5-mini-instruct)
     - Parameters: 3.82B
+
+## Reference Missions
+ 
+ There is a couple of reference missions that can be represented through the use of the above models and play a factor in why they were choosen to conduct testing on. 
+
+ Mission 1: 
+ Using Classification Models
+ Clssification Models are used to basically group images to certain "classes" this can be very useful onboard spacecraft because you can use them to filter incoming data streams to see if the images have target objects in them. A great example is with Earth Observation Satellites users want to know if the image taken has cloud cover in it or not, most customers buying imagery do not want to have clouds in their imagery as it increases the complexity of proccessing and provides less data. Classification algorithims running onboard can anazle the live stream of imagery or saved imagery to indentify cloud coverage in images and then priotrize downlinking the images without clouds in them. 
+
+ Mission 2: 
+ Using Depth Models
+ Depth Esetmation models are used to estimate how far something is using camera imagery. This has many uses cases in space applications. The first is in RPO missions where cameras can be used to determine how far apart two spacecraft are and in real time update how two spacecraft are moving. The speed of depth estimation algorithims is quite benficial in time dependent situations like docking. 
+
+ Mission 3: 
+ Using LLMs
+
+ LLMs are large language models that are used to converse in natural language and syhtensize data. As far as we are currently aware there hasnt been an active technology demonstration of these modesl deployed in space but they are very new and we believe there is a path to use in the future. We currently see use cases in basically allowing the satellites to have conversations with ground operators being able to ingest all the information about the satellite and then the user can ask questions about the state of the spacecraft and get a response in natural language. This is a longer timeline mission case but we felt like it was important to run a test using the one of the newest archetectures of models for developer refernce as the use of LLMs is expanding at a rapid pace. 
+
+
 ## Procedure 
 Models were choosen from the hugging face model hub and then completed inference tests on the jetson. The hugging face transformer pipeline api as well as data sets were used to crate the inference enviroment and data. 
 
@@ -47,6 +66,10 @@ If interested in other metrics Tegrastats records all of the following metrics:
 
 
 Each of the models were tested at all 4 of the Jetson power modes to show performance in resource constrained enviroments
+
+## Data Set Description
+
+The [CIFAR100](https://huggingface.co/datasets/uoft-cs/cifar100) is a commonly used dataset that contaains 50000 training images and 10000 test images that have corresponding labels that align to 100 different classes. The classes are completly mutually exlculsive. The data set is further broken down into smaller batches for each of the training and test sets. The test batch of images contains ramdonly selected images from all of the different classes in equal amounts. The training batch may have unequal amounts of each classes. Each images is only 32x32 pixels making them very small images basically thumbnail size. The purpose of using this dataset was that it was a small data set that was able to run quickly on the jetson for all the different model types. The team could conduct testing with larger size images but the general jist of performance will stay the same. Bigger images means longer run times. 
 
 ## Resnet Results
 The resnet model was tested using the [CIFAR100](https://huggingface.co/datasets/uoft-cs/cifar100) dataset.The team used the test split to inference 10,000 images.
