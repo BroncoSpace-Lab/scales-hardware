@@ -87,6 +87,18 @@ ssh root@192.168.0.145 -o HostKeyAlgorithms=+ssh-rsa -o PubKeyAcceptedAlgorithms
 ```
 7. Congrats you are now in the board on your computer. 
 
+### Copying files over to the board
+
+1. Make sure the board is connected to the host computer via ethernet.
+2. Navigate to the directory with the file you would like to copy to the i.MX 8X. Use the following command to secure copy that file to the board. Fill in the blank for the file name and the IP address of the board.
+
+```
+cd <file directory>
+scp -o HostKeyAlgorithms=+ssh-rsa -o PubKeyAcceptedAlgorithms=+ssh-rsa <file name> root@<ip address>:~
+```
+
+3. You should be able to see the file in the main directory of the i.MX 8X.
+
 ## I2C Interfacing
 
 Following [this guide on I2C interfacing](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/interfaceguides/i2c.html). 
@@ -141,9 +153,11 @@ cd /opt/fsl-imx-xwayland/5.4-zeus/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-
 ```
 sudo ./aarch64-poky-linux-gcc -mcpu=cortex-a35+crc+crypto -fstack-protector-strong -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/5.4-zeus/sysroots/aarch64-poky-linux -O ~/imx8x/i2c-temp-sensor/MCP9808.c -o ~/imx8x/i2c-temp-sensor/mcp9808a
 ```
-- Note: this path only works for C code. If you want to use C++, change the gcc at the beginning to g++. I am still trying to figure out how to do python code so stay tuned for that. 
+Notes:
 
-- Note: This code is from GitHub. It was listed as free to use, distributed with a free-will license (mentioned in first line of code comments). 
+    - This path only works for C code. If you want to use C++, change the gcc at the beginning to g++. I am still trying to figure out how to do python code so stay tuned for that. 
+    
+    - Note: This code is from GitHub. It was listed as free to use, distributed with a free-will license (mentioned in first line of code comments). 
 
 8. This code will generate an executable file. To run this code on the board, you may choose to use a USB flash drive or pull the code from our GitHub repo: 
 
@@ -193,3 +207,35 @@ ls
 ./mcp9808a
 ```
 6. You should see the temperature sensor readings in the terminal.
+
+## F Prime Test Deployment
+
+We created a test deployment of F Prime version 3.5 found in [this repository](https://github.com/kdizzlle/fprime.git). Make sure the host computer is connected to the i.MX 8X via ethernet.
+
+1. Use the following code to enter the F Prime directory on the host computer and source the F Prime environment:
+
+```
+cd fprime/fprime-hub-pattern-example
+source fprime-venv/bin/activate
+```
+
+2. Use the following code to enter the Test Deployment directory on the host computer and secure copy the deployment to the board. Fill in the blank with the ip address if the board:
+
+```
+cd build-artifacts/imx8x/TestDeployment/bin
+scp -o HostKeyAlgorithms=+ssh-rsa -o PubKeyAcceptedAlgorithms=+ssh-rsa TestDeployment root@<ip of imx8x>:~
+```
+
+3. Use the following command on the i.MX 8X to run the Test Deployment:
+
+```
+./TestDeployment -a 0.0.0.0 -p 50000
+```
+
+4. Use the following command on the host computer to launch the F Prime gds. Fill in the blank with the ip address if the board:
+
+```
+cd ..
+cd dict/
+fprime-gds -n --dictionary TestDeploymentTopologyDictionary.json --ip-client --ip-address <ip of imx8x>
+```
