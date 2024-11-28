@@ -91,12 +91,10 @@ ssh root@192.168.0.145 -o HostKeyAlgorithms=+ssh-rsa -o PubKeyAcceptedAlgorithms
 
 1. Make sure the board is connected to the host computer via ethernet.
 2. Navigate to the directory with the file you would like to copy to the i.MX 8X. Use the following command to secure copy that file to the board. Fill in the blank for the file name and the IP address of the board.
-
 ```
 cd <file directory>
 scp -o HostKeyAlgorithms=+ssh-rsa -o PubKeyAcceptedAlgorithms=+ssh-rsa <file name> root@<ip address>:~
 ```
-
 3. You should be able to see the file in the main directory of the i.MX 8X.
 
 ## I2C Interfacing
@@ -213,27 +211,20 @@ ls
 We created a test deployment of F Prime version 3.5 found in [this repository](https://github.com/kdizzlle/fprime.git). Make sure the host computer is connected to the i.MX 8X via ethernet.
 
 1. Use the following code to enter the F Prime directory on the host computer and source the F Prime environment:
-
 ```
 cd fprime/fprime-hub-pattern-example
 source fprime-venv/bin/activate
 ```
-
 2. Use the following code to enter the Test Deployment directory on the host computer and secure copy the deployment to the board. Fill in the blank with the ip address if the board:
-
 ```
 cd build-artifacts/imx8x/TestDeployment/bin
 scp -o HostKeyAlgorithms=+ssh-rsa -o PubKeyAcceptedAlgorithms=+ssh-rsa TestDeployment root@<ip of imx8x>:~
 ```
-
 3. Use the following command on the i.MX 8X to run the Test Deployment:
-
 ```
 ./TestDeployment -a 0.0.0.0 -p 50000
 ```
-
 4. Use the following command on the host computer to launch the F Prime gds. Fill in the blank with the ip address if the board:
-
 ```
 cd ..
 cd dict/
