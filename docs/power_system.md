@@ -10,17 +10,17 @@ Components to be used are still being finalized, but they are based on the follo
 
 - **Flight Computer: IMX8/VOXL2**
   - **IMX8:** 
-   - 3.3V / 2A (Inrush Max) - Power (Max) = 3.63W *(based on datasheet)*
+      - 3.3V / 2A (Inrush Max) - Power (Max) = 3.63W *(based on datasheet)*
   - **VOXL2:** 
-   - 12V / 6A (Inrush Max) - Power (Max) = 7W *(based on Janelle's testing; check datasheet for idle values)*
+      - 12V / 6A (Inrush Max) - Power (Max) = 7W *(based on Janelle's testing; check datasheet for idle values)*
 
 - **Edge Computer: Nvidia Jetson AGX Orin**
   - End-user must have access to peak power, so they can switch between performance modes.
   - **AGR Orin:** 
-   - 20V / 3.75A (MAX) - Power (Max) = 75W *(based on max current/voltage ratings)*
+      - 20V / 3.75A (MAX) - Power (Max) = 75W *(based on max current/voltage ratings)*
 
 - **FPGA System: AMD Artix 7 XC7A200T SOM**
-   - 5V / 2A (MAX) - Power (Max) = 10W *(based on datasheet and max utilization data)*
+      - 5V / 2A (MAX) - Power (Max) = 10W *(based on datasheet and max utilization data)*
 
 ## Standardize Power Input
 
@@ -44,7 +44,7 @@ Components to be used are still being finalized, but they are based on the follo
 - Examples of existing EPS distribution boards
    * [IBEOS 150-Watt SmallSat EPS](https://www.ibeos.com/150w-eps-datasheet)
    * [Pumpkin EPSM1](https://www.pumpkininc.com/space/datasheet/710-01952-C_DS_EPSM_1.pdf)
-   * []
+   * [GOMSPACE NanoPower P31u](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanopower-p31u-32_(1).pdf)
 
 
 
