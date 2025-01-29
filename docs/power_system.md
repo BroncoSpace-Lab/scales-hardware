@@ -19,7 +19,8 @@ Components to be used are still being finalized, but they are based on the follo
   - **AGR Orin:** 
       - 20V / 3.75A (MAX) - Power (Max) = 75W *(based on max current/voltage ratings)*
 
-- **FPGA System: AMD Artix 7 XC7A200T SOM**
+- **FPGA System:**
+    **AMD Artix 7 XC7A200T SOM**
       - 5V / 2A (MAX) - Power (Max) = 10W *(based on datasheet and max utilization data)*
 
 ## Standardize Power Input
