@@ -55,18 +55,18 @@ Components to be used are still being finalized, but they are based on the follo
                - can send system reset commands
             - OBC communication for power telemetry
                - integrate with IMX8/VOXL2
-         - *Temperature sensors*
+         - *Temperature sensors*:
             - Used to monitor connector/converter temps in case of high current cases
             - Some smallsat EPS use thermistors as a way to easily measure temperature, may be innacurate, or simple enough
-         - *Watchdog*
+         - *Watchdog*:
             - sends regular intervals to main components to check that they are operating correctly, IIRC only the jetson will have this
-         - *Switching Regulator/(DC/DC) Buck Converter*
+         - *Switching Regulator/(DC/DC) Buck Converter*:
             -Steps down voltage with minimal loss to respective subsystem (Uses capacitors, inductors and transistors to step down voltages using switching frequencies)
                - 28V -> 3v3/5v/12v @high current input/output
-         - *RBF Pin/Kill Switch/Reset Switch*
+         - *RBF Pin/Kill Switch/Reset Switch*:
             - Some
-         - *Fuse* (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
-            -Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
+         - *Fuse*: (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
+            - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
 
 
 
