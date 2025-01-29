@@ -1,23 +1,31 @@
 # SCALES Power Distribution System Development
 
 ## Requirements:
-- Supply Power to Sub-components on SCALES Carrier Board
-   - Components to be used are still being finalized, but they are based on the following [SCALES Component Selection List](https://livecsupomona.sharepoint.com/:x:/r/sites/broncospacelab/Shared%20Documents/SCALES%20-%20General/Documentation/Hardware/SCALES%20Hardware%20Component%20Selection.xlsx?d=w0a79ca0a7f3241a1b204a2bc7466c9c3&csf=1&web=1&e=7n6GZM)
-   - Supply power levels to the following
-         * Flight Computer: IMX8/VOXL2
-            + IMX8: 3.3v / 2A (Inrush Max) - Power (Max) = 3.63W //based on datasheet
-            + VOXL2: 12v / 6A (Inrush Max) - Power (Max) = 7W //based on Janelle's testing check datasheet for idle values
-         * Edge Computer: Nvidia Jetson AGR ORIN
-            + End-user must have access to peak power, so they can switch between performance modes.
-            + AGR Orin: 20V / 3.75A (MAX) - Power (Max) = 75W //Based on max current/voltage ratings
-         * FPGA System: AMD Artix 7 XC7A200T SOM 
-            + 5V / 2A (MAX) - Power (Max) = 10W //Based on datasheet and max utilization data
-   - Standardize Power Input
-         * 28v power supply/battery input
-            Based on information compiled above (Does this include system peripherals?):
-               + OBC: 3.3V @ 2A Max (IMX8) / 12v @ 6A Max (VOXL2)
-               + EC: 20V @ 3.75A Max (Jetson AGX)
-               + FPGA: 5V @ 2A Max (Artix 7 SOM)
+# Supply Power to Sub-components on SCALES Carrier Board
+
+## Components to be used
+Components to be used are still being finalized, but they are based on the following [SCALES Component Selection List](https://livecsupomona.sharepoint.com/:x:/r/sites/broncospacelab/Shared%20Documents/SCALES%20-%20General/Documentation/Hardware/SCALES%20Hardware%20Component%20Selection.xlsx?d=w0a79ca0a7f3241a1b204a2bc7466c9c3&csf=1&web=1&e=7n6GZM).
+
+## Supply Power Levels
+
+- **Flight Computer: IMX8/VOXL2**
+  - **IMX8:** 3.3V / 2A (Inrush Max) - Power (Max) = 3.63W *(based on datasheet)*
+  - **VOXL2:** 12V / 6A (Inrush Max) - Power (Max) = 7W *(based on Janelle's testing; check datasheet for idle values)*
+
+- **Edge Computer: Nvidia Jetson AGX Orin**
+  - End-user must have access to peak power, so they can switch between performance modes.
+  - **AGR Orin:** 20V / 3.75A (MAX) - Power (Max) = 75W *(based on max current/voltage ratings)*
+
+- **FPGA System: AMD Artix 7 XC7A200T SOM**
+  - **5V / 2A (MAX)** - Power (Max) = 10W *(based on datasheet and max utilization data)*
+
+## Standardize Power Input
+
+- **28V power supply/battery input**
+  - Based on information compiled above *(Does this include system peripherals?)*:
+    - **OBC:** 3.3V @ 2A Max (IMX8) / 12V @ 6A Max (VOXL2)
+    - **EC:** 20V @ 3.75A Max (Jetson AGX)
+    - **FPGA:** 5V @ 2A Max (Artix 7 SOM)
    
 
 ## Research Notes:
