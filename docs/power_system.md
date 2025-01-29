@@ -67,7 +67,12 @@ Components to be used are still being finalized, but they are based on the follo
             - Some
          - *Fuse*: (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
             - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
+## To do ##
+   (Week of 2/3/25)
+   - Update power numbers from Janelles testing sheet: https://livecsupomona.sharepoint.com/:x:/r/sites/broncospacelab/_layouts/15/Doc.aspx?sourcedoc=%7BA9B61BF3-FE61-4D61-BD61-080097B6E943%7D&file=FC%20Power%20Testing.xlsx&action=default&mobileredirect=true
 
+   - Consider Block Diagram from VOXL2 Implementation (Janelle discord DM)
+   - Consider INA219 Chip to measure both voltage and current draw
 
 
 
