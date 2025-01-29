@@ -42,6 +42,27 @@ Components to be used are still being finalized, but they are based on the follo
    * [IBEOS 150-Watt SmallSat EPS](https://www.ibeos.com/150w-eps-datasheet)
    * [Pumpkin EPSM1](https://www.pumpkininc.com/space/datasheet/710-01952-C_DS_EPSM_1.pdf)
    * [GOMSPACE NanoPower P31u](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanopower-p31u-32_(1).pdf)
+   * [ISISPACE ICEPS2](https://www.isispace.nl/wp-content/uploads/2019/04/ISIS-ICEPS2-DSH-0001-ICEPS2_Datasheet-01_02.pdf)
+
+      - **Common Components in Power Boards**
+         - *MCU*:
+            - Power regulation monitoring
+               - voltage and current measuring
+            - Fault detection and protection
+               - protects against shorts, overcurrent, brownouts and undervolting situations
+               - can send system reset commands
+            - OBC communication for power telemetry
+               - integrate with IMX8/VOXL2
+         -*Temperature sensors*
+            -Used to monitor connector/converter temps in case of high current cases
+         - *Watchdog*
+            - sends regular intervals to main components to check that they are operating correctly, IIRC only the jetson will have this
+         - *Switching Regulator/(DC/DC) Buck Converter*
+            -Steps down voltage with minimal loss to respective subsystem (Uses capacitors, inductors and transistors to step down voltages using switching frequencies)
+               - 28V -> 3v3/5v/12v @high current input/output
+         -*Fuse* (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
+            -Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
+
 
 
 
