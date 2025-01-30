@@ -67,6 +67,23 @@ Components to be used are still being finalized, but they are based on the follo
             - Some
          - *Fuse*: (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
             - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
+
+(1/30/25)
+- [Basic Block Diagram of EPS board for SCALES Components](https://drive.google.com/file/d/1f2GgWEEMVI20wVgbpNZj8v8eEYCyvHen/view?usp=sharing)
+   - Requirements: (Using Janelles Power Board Block Diagram for reference)
+      - Microcontroller (Ex: STM32F091)
+         - Checks Watchdog Timer
+         - Measures current and voltage outputs
+         - Utilizes CAN/I2C to relay current/voltage info to OBC
+      - External Voltage in connector
+         - start thinking about types of connectors that can handle high current input @ 24/28V inputs that are standard in aerospace/cubesat applications
+      - Analog to Digital converters 
+         - Used to measure voltage/current values and translate them to GPIO inputs for the MCU
+      - Voltage Channel Buck Converters/Switching regulators
+      - RBF System
+         - Use relay to bypass high current/ MOSFET/FET?
+      - Temperature Sensors for Buck/Switching Regulators
+
 ## To do ##
    (Week of 2/3/25)
    - Update power numbers from Janelles testing sheet: https://livecsupomona.sharepoint.com/:x:/r/sites/broncospacelab/_layouts/15/Doc.aspx?sourcedoc=%7BA9B61BF3-FE61-4D61-BD61-080097B6E943%7D&file=FC%20Power%20Testing.xlsx&action=default&mobileredirect=true
