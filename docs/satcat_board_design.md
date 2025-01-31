@@ -26,14 +26,15 @@ Steps:
 
     ![FMC pin definitions](Images/FMC%20pin%20definitions.png)
     
-    FMC pin definitions
+    *FMC pin definitions*
 
     ![SatCat FMC pin signals](Images/satcat%20FMC%20pin%20signals.png)
 
-    SatCat FMC pin signals
+    *SatCat FMC pin signals*
 
 3. Take the [Pin definitions for the FGB676 on the AC701](https://www.xilinx.com/content/dam/xilinx/support/packagefiles/a7packages/xc7a200tfbg676pkg.txt) and add them to the spreadsheet in a different tab. Do the same for the [Pin definitions for the FBG484 on the SOM](https://www.xilinx.com/content/dam/xilinx/support/packagefiles/a7packages/xc7a200tfbg484pkg.txt). It may also help to combine these lists in their own tab to make cross-referencing easier. 
 The spreadsheet used in SCALES is organized as follows:
+
 - signals - main sheet to show and compare the signals between the AC701 eval board and the SCALES SOM
 - chips - shows the pin definitions for each chip variation to cross-reference in the signals sheet.
 - xc7a200tfbg484pkg - pin definitions of the SOM chip pulled from the txt file. for reference only.
@@ -43,23 +44,42 @@ The spreadsheet used in SCALES is organized as follows:
 
     ![Find and Replace example](Images/find%20and%20replace.png)
 
-    Find and Replace example
+    *Find and Replace example*
 
     ![Signal Matching example](Images/signal%20matching.png)
 
-    Signal Matching example
+    *Signal Matching example*
 
 5. Now, the same signal on the other chip will not match up to the same pin, so we have to ctrl+f for the signal name of each FMC/SatCat signal in the chips tab of the sheet in the SOM FBG484 column, then copy the pin and signal name name over to the signals sheet.
     - Disclaimer: the 484 chip does not have a bank 12, but the 676 does. For our purposes, I am replacing the signals used on bank 12 of the 676 FMC chip with the equivalent signals on bank 13 of the 484 SOM chip. I do not currently see an issue with this, but it is something to keep in mind if issues arise later.
 
     ![Find and Replace for SOM](Images/find%20and%20replace%20part%202.png)
 
-    Find and replace for SOM
+    *Find and replace for SOM*
 
 6. Once that is done, open the [SOM schematic](https://www.en.alinx.com/Product/FPGA-System-on-Modules/Artix-7/AC7200.html) (found in the "Documentations" section). Here you will see each bank of the SOM with the FPGA signal name, FPGA pin name, and the SOM signal name listed for each output. Ctrl+F for each FPGA pin on the SOM and copy down the matching SOM output signal name into the spreadsheet. These SOM output signals will be what the board-to-board (B2B) connector uses to communicate with the SCALES custom carrier board.
 
     ![Resulting spreadsheet](Images/final%20spreadsheet%20satcat.png)
 
-    Resulting spreadsheet with the SOM signals on the right
+    *Resulting spreadsheet with the SOM signals on the right*
+
+## Starting the Schematic
+
+1. Download the KiCad library files for the [Board to Board Connector on Mouser](https://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/AXK680337YG?qs=2rFUEsTwVNwvM0tBXFoKgQ%3D%3D&srsltid=AfmBOopD6WLtmqvJjT_Tc4DEg3aTG5Ke6qfQaTzK9vsHYzJwFyfXXfNc). Start a new project in KiCad and place four connectors down.
+
+2. The [SOM schematic](https://www.en.alinx.com/Product/FPGA-System-on-Modules/Artix-7/AC7200.html) (found in the "Documentations" section) page 12 shows the Board to Board (B2B) connectors on the SOM that we will be using. Using that schematic as a reference, match the signals on the connectors to the ones listed in the spreadsheet. Replace the SOM signal name on the schematic with the equivalent SatCat signal name.
+
+    ![SOM B2B to SatCat signal](Images/somB2B_satcat.png)
+
+    *Section from the spreadsheet*
+
+    ![SOM B2B original schematic](Images/b2b_som_original.png)
+
+    *SOM B2B original schematic section*
+
+    ![SOM B2B SCALES modification](Images/b2b_section.png)
+
+    *SCALES SOM B2B modification (same section)*
+
 
 Still working on what comes next. To be continued...
