@@ -123,7 +123,7 @@ Components to be used are still being finalized, but they are based on the follo
 - Idea for new block layout:
    - 28V input
    - Solid State Relay, triggered open by watchdog signal input for each voltage line
-   - Load Switches to delay power up for each device
+   - Load Switches to delay power up for each device [INFO](https://www.ti.com/lit/an/slva883/slva883.pdf?ts=1738566698989#:~:text=Delay%20time%2C%20tDELAY%2C%20accounts%20for,rise%20(typically%20to%2010%25).&text=Rise%20time%2C%20tRISE%2C%20is%20set,rate%20of%20the%20load%20switch.)
    - Switching regulators
       - 28v -> 8v (watchdog)
          - 3 (one for each voltage line)
