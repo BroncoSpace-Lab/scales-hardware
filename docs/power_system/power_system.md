@@ -102,6 +102,9 @@ Components to be used are still being finalized, but they are based on the follo
       - [Watchdog System](https://private-user-images.githubusercontent.com/61564344/374731107-10ac20a2-ea8e-4982-9281-9fe7444e7854.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg2MTExOTksIm5iZiI6MTczODYxMDg5OSwicGF0aCI6Ii82MTU2NDM0NC8zNzQ3MzExMDctMTBhYzIwYTItZWE4ZS00OTgyLTkyODEtOWZlNzQ0NGU3ODU0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjAzVDE5MjgxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3ZjEyZDBmOTkwYWZhOTM1N2NhZjU4NmU1ZmFkOTNkODBkMDVmYjcwODc0MjhlMjZlYTAxMWM5NjRiMzk3M2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Eo-wQk_yyZsGSnr17a3k5jSkEDWWzKaskMTcdA0J3aw)
          - Based on the TLV1704-SEP (Voltage input rated up to 24v)
          - No idea how it works but its what we will be using, schematic is complicated, linked above
+- 2nd Block Diagram based on input above [EPSBlock_V2](docs\Images\EPS_BlockV2.png)
+   - Comments from Zach: Simple, makes sense
+   - Comments from Michael:
       
    
 
