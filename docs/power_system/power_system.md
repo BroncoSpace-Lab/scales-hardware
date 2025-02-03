@@ -29,7 +29,7 @@ Components to be used are still being finalized, but they are based on the follo
     - **FPGA:** 5V @ 2A Max (Artix 7 SOM)
 
 ## Block Diagrams/Basic Design Ideas:
-(1/30/25)
+### (1/30/25)
 - [Basic Block Diagram of EPS board for SCALES Components](https://drive.google.com/file/d/1f2GgWEEMVI20wVgbpNZj8v8eEYCyvHen/view?usp=sharing)
    - Requirements: (Using Janelles Power Board Block Diagram for reference)
       - Microcontroller (Ex: STM32F091)
@@ -45,7 +45,7 @@ Components to be used are still being finalized, but they are based on the follo
          - Use relay to bypass high current/ MOSFET/FET?
       - Temperature Sensors for Buck/Switching Regulators
 
-(2/3/25)
+### (2/3/25)
 - 1st Block Diagram:
  ![EPSBlock_V1](docs\power_system\images\EPS_BlockV1.png)
    - Comments from Zach: 
@@ -54,8 +54,10 @@ Components to be used are still being finalized, but they are based on the follo
       Does Each voltage line needs to have voltage/current sensors? This is because it may be completely redundant, theres no point in adding a sensor that depends on the OBC to be running and even if what would it be doing?
       Stick to a simple design, we need to make sure the watchdog can operate independently from the 3 subsystems, just needs a switching regulator to function, then the pinged input from the OBC will stop the system from resetting.
       Because the watchdog will be what triggers the power cycle, we need to add some sort of system relay that triggers if a ping is not recieved.
-      
-   - Requirements: (More simple design, almost purely analog)
+
+- 2nd Block Diagram:
+![EPSBlock_V2](docs\power_system\images\EPS_BlockV2.png)
+- Requirements: (More simple design, almost purely analog)
       - 28V V+/GND Connector
       - Relay/Switch system to be triggered by Watchdog (Normally Closed, Watchdog RST command triggers Open Switch)
       - Switching Regulators
@@ -66,13 +68,19 @@ Components to be used are still being finalized, but they are based on the follo
       - [Watchdog System](https://private-user-images.githubusercontent.com/61564344/374731107-10ac20a2-ea8e-4982-9281-9fe7444e7854.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg2MTExOTksIm5iZiI6MTczODYxMDg5OSwicGF0aCI6Ii82MTU2NDM0NC8zNzQ3MzExMDctMTBhYzIwYTItZWE4ZS00OTgyLTkyODEtOWZlNzQ0NGU3ODU0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMDMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjAzVDE5MjgxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg3ZjEyZDBmOTkwYWZhOTM1N2NhZjU4NmU1ZmFkOTNkODBkMDVmYjcwODc0MjhlMjZlYTAxMWM5NjRiMzk3M2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Eo-wQk_yyZsGSnr17a3k5jSkEDWWzKaskMTcdA0J3aw)
          - Based on the TLV1704-SEP (Voltage input rated up to 24v)
          - No idea how it works but its what we will be using, schematic is complicated, linked above
-- 2nd Block Diagram:
-![EPSBlock_V2](docs\power_system\images\EPS_BlockV2.png)
+
    - Comments from Zach: Simple, makes sense
    - Comments from Michael:
+        - Watchdog system for each logic system, to trigger each individual line rather than the whole system
+        - To trigger the reset, dont use relays, find some sort of solid state system 
+        - Power sequencing to turn on each section individually, inrush current will be too high if we turn them on all at once
+         - delay timer to sequence each section
+
+
 
 ## Research Notes:
-(1/28/25)
+
+### (1/28/25)
 - Figure out each of the maximum power requirements for each of the components
 - Start looking into how power distribution systems work for different power levels
    * Resources: 
@@ -80,7 +88,7 @@ Components to be used are still being finalized, but they are based on the follo
       - [Basics Power MUX](https://www.ti.com/lit/an/slvae51a/slvae51a.pdf?ts=1738126325034&ref_url=https%3A%2F%2Fwww.ti.com%2Fproduct%2FTPS2115A)
       - [SmallSat Power Systems - NASA](https://www.nasa.gov/smallsat-institute/sst-soa/power-subsystems/#:~:text=Power%20storage%20is%20typically%20applied,control%20to%20spacecraft%20electrical%20loads.)
 
-(1/29/25)
+### (1/29/25)
 - Examples of existing EPS distribution boards
    * [IBEOS 150-Watt SmallSat EPS](https://www.ibeos.com/150w-eps-datasheet)
    * [Pumpkin EPSM1](https://www.pumpkininc.com/space/datasheet/710-01952-C_DS_EPSM_1.pdf)
@@ -111,6 +119,24 @@ Components to be used are still being finalized, but they are based on the follo
          - *Fuse*: (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
             - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
 
+### (2/3/25)
+- Idea for new block layout:
+   - 28V input
+   - Solid State Relay, triggered open by watchdog signal input for each voltage line
+   - Load Switches to delay power up for each device
+   - Switching regulators
+      - 28v -> 8v (watchdog)
+         - 3 (one for each voltage line)
+      - 28v -> 20v (Jetson)
+      - 28v -> 12v (OBC)
+      - 28v -> 5v (FPGA)
+   - Voltage/Current monitor
+      - FPGA
+      - OBC
+   
+   - Watchdog for each voltage level instead of the full system
+#### some issues or concerns with this:
+  
 
 
 
