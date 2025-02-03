@@ -1,10 +1,10 @@
 # SCALES Power Distribution System Development
-## By Luca Lanzillotta ##
+- By Luca Lanzillotta
 
 ## Requirements:
 Supply Power to sub-components on SCALES Carrier Board
 
-## Components to be used
+## Components to be used:
 Components to be used are still being finalized, but they are based on the following [SCALES Component Selection List](https://livecsupomona.sharepoint.com/:x:/r/sites/broncospacelab/Shared%20Documents/SCALES%20-%20General/Documentation/Hardware/SCALES%20Hardware%20Component%20Selection.xlsx?d=w0a79ca0a7f3241a1b204a2bc7466c9c3&csf=1&web=1&e=7n6GZM).
 - **Flight Computer: IMX8/VOXL2**
   - **IMX8:** 
