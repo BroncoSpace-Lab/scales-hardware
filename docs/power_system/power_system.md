@@ -1,7 +1,8 @@
 # SCALES Power Distribution System Development
+## By Luca Lanzillotta ##
 
 ## Requirements:
-Supply Power to Sub-components on SCALES Carrier Board
+Supply Power to sub-components on SCALES Carrier Board
 
 ## Components to be used
 Components to be used are still being finalized, but they are based on the following [SCALES Component Selection List](https://livecsupomona.sharepoint.com/:x:/r/sites/broncospacelab/Shared%20Documents/SCALES%20-%20General/Documentation/Hardware/SCALES%20Hardware%20Component%20Selection.xlsx?d=w0a79ca0a7f3241a1b204a2bc7466c9c3&csf=1&web=1&e=7n6GZM).
@@ -110,11 +111,7 @@ Components to be used are still being finalized, but they are based on the follo
 
 ## To do ##
    (Week of 2/3/25)
-   - First block diagram has been designed, refine design selection
-   - Run through best design options for block diagram, how many current/voltage sensors should be used, what do other engineers think about how I intend to step down the input voltages, etc.
-   - Start trade matrixes after the design for the block system has been made, from there the trade matrixes can start leading to sub-component selection and then initial schematic designs.
-   - Consider INA219 Chip to measure both voltage and current draw
-
+   - 
 
 
 
