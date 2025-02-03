@@ -47,7 +47,7 @@ Components to be used are still being finalized, but they are based on the follo
 
 (2/3/25)
 - 1st Block Diagram:
- ![EPSBlock_V1](docs\Images\EPS_BlockV1.png)
+ ![EPSBlock_V1](docs\power_system\images\EPS_BlockV1.png)
    - Comments from Zach: 
       No need for MCU, Watchdog takes care of system stability based on timing pings
       Watchdog should be powered straight from the 28v stepped down to 5v/3v3
@@ -67,7 +67,7 @@ Components to be used are still being finalized, but they are based on the follo
          - Based on the TLV1704-SEP (Voltage input rated up to 24v)
          - No idea how it works but its what we will be using, schematic is complicated, linked above
 - 2nd Block Diagram:
-![EPSBlock_V2](docs\Images\EPS_BlockV2.png)
+![EPSBlock_V2](docs\power_system\images\EPS_BlockV2.png)
    - Comments from Zach: Simple, makes sense
    - Comments from Michael:
 
