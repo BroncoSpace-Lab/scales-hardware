@@ -1,5 +1,5 @@
 # SCALES Power Distribution System Development
-- By Luca Lanzillotta
+By Luca Lanzillotta
 
 ## Requirements:
 Supply Power to sub-components on SCALES Carrier Board
