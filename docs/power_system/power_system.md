@@ -47,7 +47,7 @@ Components to be used are still being finalized, but they are based on the follo
 
 ### (2/3/25)
 - 1st Block Diagram:
- ![EPSBlock_V1](images\EPS_BlockV1.png)
+ ![EPSBlock_V1](images/EPS_BlockV1.png)
    - Comments from Zach: 
       No need for MCU, Watchdog takes care of system stability based on timing pings
       Watchdog should be powered straight from the 28v stepped down to 5v/3v3
@@ -56,7 +56,7 @@ Components to be used are still being finalized, but they are based on the follo
       Because the watchdog will be what triggers the power cycle, we need to add some sort of system relay that triggers if a ping is not recieved.
 
 - 2nd Block Diagram:
-![EPSBlock_V2](images\EPS_BlockV2.png)
+![EPSBlock_V2](images/EPS_BlockV2.png)
 - Requirements: (More simple design, almost purely analog)
       - 28V V+/GND Connector
       - Relay/Switch system to be triggered by Watchdog (Normally Closed, Watchdog RST command triggers Open Switch)
