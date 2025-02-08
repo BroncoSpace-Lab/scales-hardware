@@ -121,18 +121,27 @@ Components to be used are still being finalized, but they are based on the follo
 
 ### (2/3/25)
 - Idea for new block layout:
-   - 28V input
-   - Solid State Relay, triggered open by watchdog signal input for each voltage line
-   - Load Switches to delay power up for each device [INFO](https://www.ti.com/lit/an/slva883/slva883.pdf?ts=1738566698989#:~:text=Delay%20time%2C%20tDELAY%2C%20accounts%20for,rise%20(typically%20to%2010%25).&text=Rise%20time%2C%20tRISE%2C%20is%20set,rate%20of%20the%20load%20switch.)
+   - 28V Power Input
+      - Connectors:
+         - 
+   - Load Switches [INFO](https://www.ti.com/lit/an/slva652a/slva652a.pdf?ts=1738793997138&ref_url=https%253A%252F%252Fwww.google.com%252F)
+      - Load switches come AFTER switch regulators
+         - [Load Switch](https://www.ti.com/lit/ds/symlink/lm7310.pdf?ts=1738872017422&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM7310)
+            - TILM73100 
+            - Going with ths one for now because of the high current and voltage rating, has integrated current sensing, over and undervoltage protection, and an enable pin. Also has an analog current sensor.
+
    - Switching regulators
-      - 28v -> 8v (watchdog)
+      - 28v -> 8v (Watchdog)
          - 3 (one for each voltage line)
       - 28v -> 20v (Jetson)
       - 28v -> 12v (OBC)
       - 28v -> 5v (FPGA)
    - Voltage/Current monitor
-      - FPGA
-      - OBC
+      - 
+   - Watchdog(s)
+      - Need 3, one for Jetson, OBC, FPGA
+         - Use Proves implementation available [here](https://github.com/BroncoSpace-Lab/scales-rad-tolerant-watchdog?tab=readme-ov-file)
+         - 
    
    - Watchdog for each voltage level instead of the full system
 #### some issues or concerns with this:
