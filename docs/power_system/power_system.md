@@ -119,20 +119,30 @@ Components to be used are still being finalized, but they are based on the follo
          - *Fuse*: (probably not the best to use because if it blows, the whole system is inoperable until it comes back down)
             - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
 
-### (2/3/25)
+### (2/3/25) - (2/10/25)
 - Idea for new block layout:
-   - 28V input
-   - Solid State Relay, triggered open by watchdog signal input for each voltage line
-   - Load Switches to delay power up for each device [INFO](https://www.ti.com/lit/an/slva883/slva883.pdf?ts=1738566698989#:~:text=Delay%20time%2C%20tDELAY%2C%20accounts%20for,rise%20(typically%20to%2010%25).&text=Rise%20time%2C%20tRISE%2C%20is%20set,rate%20of%20the%20load%20switch.)
-   - Switching regulators
-      - 28v -> 8v (watchdog)
-         - 3 (one for each voltage line)
+   - 28V Power Input
+      - Connectors:
+         - 
+   - Load Switches [INFO](https://www.ti.com/lit/an/slva652a/slva652a.pdf?ts=1738793997138&ref_url=https%253A%252F%252Fwww.google.com%252F)
+      - Load switches come AFTER switch regulators
+         - [Load Switch](https://www.ti.com/lit/ds/symlink/lm7310.pdf?ts=1738872017422&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM7310)
+            - TILM73100 
+            - Going with ths one for now because of the high current and voltage rating, has integrated current sensing, over and undervoltage protection, and an enable pin. Also has an analog current sensor.
+
+   - Switching regulator [Vicor PI3740-00](https://www.vicorpower.com/documents/datasheets/ds_pi3740-00.pdf) (this is probably insanely fucking overkill, but better safe than sorry)
+      - Using one for each subsystem, they are about 12 dollars each, and have very high efficiency ratings, they also have the majority of components already integrated.
+         - Datasheet has recommended capacitors for specific voltage ranges as well as calculation sheet for inductor selection
+      - 28v -> 5v (Watchdogs)
       - 28v -> 20v (Jetson)
       - 28v -> 12v (OBC)
       - 28v -> 5v (FPGA)
    - Voltage/Current monitor
-      - FPGA
-      - OBC
+      - [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
+         -36V, Voltage and Power sensor, I2C communication
+   - Watchdog(s)
+      - Need 3, one for Jetson, OBC, FPGA
+         - Use Proves implementation available [here](https://github.com/BroncoSpace-Lab/scales-rad-tolerant-watchdog?tab=readme-ov-file)
    
    - Watchdog for each voltage level instead of the full system
 #### some issues or concerns with this:
