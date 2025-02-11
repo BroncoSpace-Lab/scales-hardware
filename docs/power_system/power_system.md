@@ -1,4 +1,7 @@
 # SCALES Power Distribution System Development
+
+## Quick Links:
+ - Find parts from major distributors: https://octopart.com/
 By Luca Lanzillotta
 
 ## Requirements:
@@ -120,7 +123,7 @@ Components to be used are still being finalized, but they are based on the follo
             - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
 
 ### (2/3/25) - (2/10/25)
-- Idea for new block layout:
+- EPS:
    - 28V Power Input
       - Connectors:
          - 
@@ -143,8 +146,22 @@ Components to be used are still being finalized, but they are based on the follo
    - Watchdog(s)
       - Need 3, one for Jetson, OBC, FPGA
          - Use Proves implementation available [here](https://github.com/BroncoSpace-Lab/scales-rad-tolerant-watchdog?tab=readme-ov-file)
-   
    - Watchdog for each voltage level instead of the full system
+
+### (2/11/25)
+- Notes on Rev A from michael:
+   - Switching Regulator: Vicor PI3740 is not in stock, find another one, stick to TI or Analog devices
+   - Add a GPIO pin to toggle the enable pin on each regulator, if its needed to reset power output
+- Move to Rev B:
+   - Implement the following:
+      - New Switching regulator
+         - Options:
+            - [LT8638](https://www.analog.com/media/en/technical-documentation/data-sheets/lt8638-2.pdf) (2.8V to 42V 10A/12A)
+            - [LT8638SEV#PBF](https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D) (2.8V to 42V 10A/12A) Both should be the same
+      - Current/Voltage Sensors
+      - Standalone 5V line for peripherals
+      - GPIO Enable pins for Switching regulators
+      - Start calculating load switch resistors and capacitor values
 #### some issues or concerns with this:
   
 
