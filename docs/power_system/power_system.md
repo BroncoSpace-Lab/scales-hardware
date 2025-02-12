@@ -1,4 +1,7 @@
 # SCALES Power Distribution System Development
+
+## Quick Links:
+ - Find parts from major distributors: https://octopart.com/
 By Luca Lanzillotta
 
 ## Requirements:
@@ -12,7 +15,7 @@ Components to be used are still being finalized, but they are based on the follo
   - **VOXL2:** 
       - 12V / 6A (Inrush Max) - Power (Max) = 7W *(based on Janelle's testing; check datasheet for idle values)*
 
-- **Edge Computer: Nvidia Jetson AGX Orin**
+- **Edge Computer: Nvidia Jetson AGX OrWin**
   - End-user must have access to peak power, so they can switch between performance modes.
   - **AGR Orin:** 
       - 20V / 3.75A (MAX) - Power (Max) = 75W *(based on max current/voltage ratings)*
@@ -120,7 +123,7 @@ Components to be used are still being finalized, but they are based on the follo
             - Last bastion of defense in case of a current surge, protecting all components from frying (not likely to be used)
 
 ### (2/3/25) - (2/10/25)
-- Idea for new block layout:
+- EPS:
    - 28V Power Input
       - Connectors:
          - 
@@ -143,8 +146,64 @@ Components to be used are still being finalized, but they are based on the follo
    - Watchdog(s)
       - Need 3, one for Jetson, OBC, FPGA
          - Use Proves implementation available [here](https://github.com/BroncoSpace-Lab/scales-rad-tolerant-watchdog?tab=readme-ov-file)
-   
    - Watchdog for each voltage level instead of the full system
+
+### (2/11/25)
+- Notes on Rev A from michael:
+   - Switching Regulator: Vicor PI3740 is not in stock, find another one, stick to TI or Analog devices
+   - Add a GPIO pin to toggle the enable pin on each regulator, if its needed to reset power output
+   - Make sure all capacitors are ceramic, electrolytic caps can explode in space
+- Move to Rev B:
+   - Implement the following:
+      - New Switching regulator
+         - Options:
+            - [LT8638SEV#PBF](https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D) (2.8V to 42V 10A/12A) Both should be the same
+            - Left off on implementing footprint and symbol will implement design wednesday
+               - Pins:
+                   - PHMODE: Tie to ground for single phase operation
+                   - BIAS: Because output voltage is from 3.3v to 25v, datasheet says to tie it to Vout
+                   - INTVcc: Internal 3.4V regulator bypass pin. Use a 1uf ESR capacitor from here to ground CLOSE to the ICEPS2
+                     - 1uF capacitor
+                   - BST: Used to provide a drive voltage, higher than the input voltage, supplies current to the topside power switch, us a 0.1uF boost capacitor
+                     - 0.1uF capacitor
+                   - SW: Outputs of the internal power switches. Tie them together and connect them to the inductor. For the PCB keep the nodes small and close together.
+                     - Confirm inductor value
+                   - GND: Place the gnd terminal of the input capacitor as close to the GND pins as possible. Try to use pins 29 and 32 for best thermal performance although they may be left disconnected.
+                   - Vin: VIN pin supply current to the LT8638S internal circuitry and to the topside switch. To be tied together and be locally bypassed by a 4.7uF capacitor.
+                     - 4.7uf capacitor
+                     - Place the capacitor + side as close to the VIN pins, and the - side as close as possible to the GND pins
+                  - EN/UV: Enable pin for the IC, you can use a voltage divider configuration from Vin to set a threshold voltage to program the IC to turn off if the voltage drops below this level. I will not be using this.
+                  - RT: A resistor is tied between RT and ground to set the switching frequency
+                     - Confirm switching frequency for output voltage and current
+                  - CLKOUT: Output clock signal for PolyPhase Operation, in forced continuous, spread spectrum, and synchronization mode it outputs a 50% duty cycle square wave of the switching frequency. If in burst mode operation, the CLKOUT pin. If not use, let it float. I  wont be using this pin. NC
+                  - Sync/Mode: Has four operating modes:
+                     - Burst Mode: Tie to ground for this mode.
+                     - Forced Continuous Mode, fast transient response and full frequency load over a wide load range, Float pin for this mode.
+                     - Forced Continuous Mode with Spread Spectrum, allows for FCM but with a small modulation of the switching frequency to reduce EMI, if desired tie to INTVcc
+                     - Synchronization Mode, drive it with a clock source to an external frequency, during the sync it will behave in forced continuous mode
+                  - PG: Power good pin, remains low until the FB pin is within +-7.75% of the final regulation voltage. PG is valid when Vin is above 2.8V
+                  - SS: Output tracking and a soft start pin, allows for regulation of the output voltage ramp rate. Documentation has a function that relates the input voltage to the pin to the rate at which the output voltage can increase by. I will not be using this as a load switch will take care of this. In order to disable this, set SS to higher than 1v, or may be left floating.
+                  - FB: Feedback pin that sets the output voltage according to a provided formula in the data sheet
+                  - Vc: Internal error amplifier, used to help stability in the output voltage, recommended by data sheet is a 10kohm resistor with a 1nF cap to ground.               
+               - Jetson Config:
+                  - Enable FCM:
+                     - Leave Sync/Mode pin floating
+                  - FB Resistor Network:
+                     - Program the output voltage with a resistor divider, Jetson requires 20V.
+                     - Formula: R1 = R2((Vout/.6v)-1)
+                     - Calculated Values: R1 = 100kOhm, R2 = 3kOhm, Check calculations sheet to check.
+                  - RT Resistor Selection:
+                     - Resistor value that sets the switching frequency based on the following formula
+                     - RT = (44.8/fsw) -5.9, RT is in Kohms
+                     - Settled on 400Khz so RT about 105KOhms
+                     - Calculations done on sheet on my ipad, will link here later
+                  - Inductor Calculation and Selection:
+                     - Requires about 4 different calculations including the frequency selection.
+                     - Concluded with L >= 6uH with Irms >= 15A for safe operation
+      - Current/Voltage Sensors
+      - Standalone 5V line for peripherals
+      - GPIO Enable pins for Switching regulators
+      - Start calculating load switch resistors and capacitor values
 #### some issues or concerns with this:
   
 
