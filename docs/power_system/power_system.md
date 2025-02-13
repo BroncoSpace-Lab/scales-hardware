@@ -155,10 +155,12 @@ Components to be used are still being finalized, but they are based on the follo
    - Make sure all capacitors are ceramic, electrolytic caps can explode in space
 - Move to Rev B:
    - Implement the following:
-      - New Switching regulator
-         - Options:
+       ## Switching regulators ##
             - [LT8638SEV#PBF](https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D) (2.8V to 42V 10A/12A) Both should be the same
             - Left off on implementing footprint and symbol will implement design wednesday
+            - Daisy Chain CLK implementation:
+               The goal with this is to put each regulator (4) slightly out of phase with the others but all at the same switching frequency, this is to reduce input current ripple on each regulator
+               PHMODE sets the phase angle output for the clock cycle, so the idea would be to set the first one to a PHMODE of 0, the next for a PHMODE of 90deg, then the next 180, and then 270 so well have 4 out of phase.
                - Pins:
                    - PHMODE: Tie to ground for single phase operation
                    - BIAS: Because output voltage is from 3.3v to 25v, datasheet says to tie it to Vout
@@ -200,9 +202,63 @@ Components to be used are still being finalized, but they are based on the follo
                   - Inductor Calculation and Selection:
                      - Requires about 4 different calculations including the frequency selection.
                      - Concluded with L >= 6uH with Irms >= 15A for safe operation
-      - Current/Voltage Sensors
-      - Standalone 5V line for peripherals
-      - GPIO Enable pins for Switching regulators
+                  - Sync Pin has to be tied to external clock with phase shift (4 total so 0, 90, 180, 270)
+               - OBC Config:
+                  - Enable FCM:
+                     - Leave Sync/Mode pin floating
+                  - FB Resistor Network:
+                     - Program the output voltage with a resistor divider, OBC requires 12V.
+                     - Formula: R1 = R2((Vout/.6v)-1)
+                     - Calculated Values: R1 = 95kOhm, R2 = 5kOhm, Check calculations sheet to check.
+                  - RT Resistor Selection:
+                     - Resistor value that sets the switching frequency based on the following formula
+                     - RT = (44.8/fsw) -5.9, RT is in Kohms
+                     - Settled on 400Khz so RT about 105KOhms
+                     - Calculations done on sheet on my ipad, will link here later
+                  - Inductor Calculation and Selection:
+                     - Requires about 4 different calculations including the frequency selection.
+                     - Concluded with L >= 6uH with Irms >= 13A for safe operation, with L calculation settled on 6.4uH
+                  - Sync Pin has to be tied to external clock with phase shift (4 total so 0, 90, 180, 270)
+               - FPGA Config:
+                  - Enable FCM:
+                     - Leave Sync/Mode pin floating
+                  - FB Resistor Network:
+                     - Program the output voltage with a resistor divider, FPGA requires 5V.
+                     - Formula: R1 = R2((Vout/.6v)-1)
+                     - Calculated Values: R1 =22kOhm, R2 = 3kOhm, Check calculations sheet to check.
+                  - RT Resistor Selection:
+                     - Resistor value that sets the switching frequency based on the following formula
+                     - RT = (44.8/fsw) -5.9, RT is in Kohms
+                     - Settled on 400Khz so RT about 105KOhms
+                     - Calculations done on sheet on my ipad, will link here later
+                  - Inductor Calculation and Selection:
+                     - Requires about 4 different calculations including the frequency selection.
+                     - Concluded L calculation settled on 2.9uH so 3uH should work fine
+                  - Sync Pin has to be tied to external clock with phase shift (4 total so 0, 90, 180, 270)
+               - +5v Peripheral Config:
+                  - Enable FCM:
+                     - Leave Sync/Mode pin floating
+                  - FB Resistor Network:
+                     - Program the output voltage with a resistor divider, FPGA requires 5V.
+                     - Formula: R1 = R2((Vout/.6v)-1)
+                     - Calculated Values: R1 =22kOhm, R2 = 3kOhm, Check calculations sheet to check.
+                  - RT Resistor Selection:
+                     - Resistor value that sets the switching frequency based on the following formula
+                     - RT = (44.8/fsw) -5.9, RT is in Kohms
+                     - Settled on 400Khz so RT about 105KOhms
+                     - Calculations done on sheet on my ipad, will link here later
+                  - Inductor Calculation and Selection:
+                     - Requires about 4 different calculations including the frequency selection.
+                     - Concluded L calculation settled on 2.9uH so 3uH should work fine
+                  - Sync Pin has to be tied to external clock with phase shift (4 total so 0, 90, 180, 270)
+
+       ## Clock ##
+         - [LTC6902] (https://www.analog.com/en/products/ltc6902.html) 
+            - Allows for setting phase outputs as well as resistor programmable frequency timings
+            -
+      ## Current/Voltage Sensors ##
+         - [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
+      - GPIO Enable pins for load switches
       - Start calculating load switch resistors and capacitor values
 #### some issues or concerns with this:
   
