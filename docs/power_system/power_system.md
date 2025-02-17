@@ -156,7 +156,8 @@ Components to be used are still being finalized, but they are based on the follo
 - Move to Rev B:
    - Implement the following:
        ## Switching regulators ##
-            - [LT8638SEV#PBF](https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D) (2.8V to 42V 10A/12A) Both should be the same
+            - [LT8638SEV] (https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D)
+            (2.8V to 42V 10A/12A) Both should be the same
             - Left off on implementing footprint and symbol will implement design wednesday
             - Daisy Chain CLK implementation:
                The goal with this is to put each regulator (4) slightly out of phase with the others but all at the same switching frequency, this is to reduce input current ripple on each regulator
@@ -251,13 +252,29 @@ Components to be used are still being finalized, but they are based on the follo
                      - Requires about 4 different calculations including the frequency selection.
                      - Concluded L calculation settled on 2.9uH so 3uH should work fine
                   - Sync Pin has to be tied to external clock with phase shift (4 total so 0, 90, 180, 270)
+      ## Load Switch ##
+         - [LTC4375] (https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf)
+            - Requires: [SISB46DN-T1-GE3] (https://www.vishay.com/docs/76655/sisb46dn.pdf)
+            - ^ Dual channel 40v MOSFET
+            - Has an active high pin that when triggered low sets the current output to be very low, labeled SHDN pin
+            - Has overvoltage and undervoltage pins that set safety levels for OV and UV which can be configured by voltage dividers. Will configure +-2V for each component. More on this below
+            - SHDN Config -> Tied to Watchdog output, triggered high when everything is working correctly and when set low the load switch disables the load
+            - No utilizing fault output
 
        ## Clock ##
          - [LTC6902] (https://www.analog.com/en/products/ltc6902.html) 
             - Allows for setting phase outputs as well as resistor programmable frequency timings
-            -
+               - Set Phase Mode: 4 Phase connect PH to V+, set N to floating which is 10 due to frequency range of 5Khz <= 400Khz <= 500Khz
+               - Since SSFM (Spread Spectrum Frequency Modulation)
+               - Review calculations page in EPS-> Calculations folder to verify with datasheet instructions.
+               - Phases set:
+                  - 5v Perif -> 0deg
+                  - FGPA -> 90 deg
+                  - OBC -> 180 deg
+                  - Jetson -> 270 deg
       ## Current/Voltage Sensors ##
          - [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
+         - Shunt resistors have really low resistance to allow for high currents on each line, Vbus is also used to measure voltage. Bear in mind each shunt resistor should have a   relatively high power dissipation rating to prevent it from burning up.
       - GPIO Enable pins for load switches
       - Start calculating load switch resistors and capacitor values
 #### some issues or concerns with this:
