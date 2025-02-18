@@ -277,7 +277,12 @@ Components to be used are still being finalized, but they are based on the follo
          - Shunt resistors have really low resistance to allow for high currents on each line, Vbus is also used to measure voltage. Bear in mind each shunt resistor should have a   relatively high power dissipation rating to prevent it from burning up.
       - GPIO Enable pins for load switches
       - Start calculating load switch resistors and capacitor values
-#### some issues or concerns with this:
+
+   - Notes for RevB:
+      - Add decoupling capacitors to input voltage lines
+      - Complete UV/OV Resistor values for each load switch
+      - Add GPIO tie in for each SHDN pin for load switches
+      - Find DC to DC step down converter for LTC6902 (28v to 5v)
   
 
 
