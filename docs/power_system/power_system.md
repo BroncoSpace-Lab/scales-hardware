@@ -275,15 +275,21 @@ Components to be used are still being finalized, but they are based on the follo
       ## Current/Voltage Sensors ##
          - [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
          - Shunt resistors have really low resistance to allow for high currents on each line, Vbus is also used to measure voltage. Bear in mind each shunt resistor should have a   relatively high power dissipation rating to prevent it from burning up.
-      - GPIO Enable pins for load switches
-      - Start calculating load switch resistors and capacitor values
-
    - Notes for RevB:
       - Add decoupling capacitors to input voltage lines
-      - Complete UV/OV Resistor values for each load switch
-      - Add GPIO tie in for each SHDN pin for load switches
-      - Find DC to DC step down converter for LTC6902 (28v to 5v)
-  
+  To Do (2/19/25):
+   - Add soft start capacitors to every switch regulator so that they delay long enough for the clock to be powered first
+      - Each is given a 25nF Soft Start capacitor to take 10ms to fully turn on the regulator, this allows the clock to be powered first by setting a shorter slew rate time therefore setting them all out of phase before they fully turn on. [DONE]
+   - Start calculating load switch resistors and capacitor values [DONE]
+   - Pick and integrate 28v to 5v buck converter for clock [DONE]
+   - Add decoupling capacitors to input voltage lines [DONE]
+
+   - Notes (2/19/25) 
+      - Filter caps added at power input
+      - Notes are written for everything, calculations are in the EPC calculations folder. Rev B schematic DONE. 
+      - Next phase is review with Michael and then ERC cleaning. 
+
+
 
 
 

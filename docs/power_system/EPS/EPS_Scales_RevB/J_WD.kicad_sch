@@ -5179,7 +5179,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 43.18) (xy 30.48 44.45)
+			(xy 30.48 34.29) (xy 30.48 44.45)
 		)
 		(stroke
 			(width 0)
@@ -5716,9 +5716,9 @@
 		)
 		(uuid "89d8faf5-c81e-4ffd-a7cb-581a138b16d3")
 	)
-	(global_label "VCC_RF1"
-		(shape output)
-		(at 259.08 44.45 90)
+	(global_label "+5V_PerifOUT"
+		(shape input)
+		(at 240.03 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5726,9 +5726,75 @@
 			)
 			(justify left)
 		)
-		(uuid "4edc3e7f-518e-4959-91ea-94c79bf8cdbd")
+		(uuid "186b630c-d74e-4e26-b83f-16bac8eb6806")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 259.08 33.3005 90)
+			(at 255.9572 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V_PerifOUT"
+		(shape input)
+		(at 186.69 19.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b418d99-20ea-4012-8a48-64fa89446a78")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.6172 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V_PerifOUT"
+		(shape input)
+		(at 259.08 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "391cbafe-c1f8-4858-b3e9-acdbf73250f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.0072 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V_PerifOUT"
+		(shape input)
+		(at 30.48 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "69acb811-fba9-48be-ba0d-b54bb2e5a7c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.4072 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6084,6 +6150,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -7056,7 +7123,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 30.48 43.18 0)
+		(at 30.48 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7064,7 +7131,7 @@
 		(dnp no)
 		(uuid "4cc3ca70-c02e-43cc-b1d1-34bbaf13d169")
 		(property "Reference" "#PWR0118"
-			(at 30.48 46.99 0)
+			(at 30.48 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,16 +7140,17 @@
 			)
 		)
 		(property "Value" "+5v_ROUT1"
-			(at 27.432 37.846 0)
+			(at 27.432 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 43.18 0)
+			(at 30.48 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,7 +7159,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 43.18 0)
+			(at 30.48 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,7 +7168,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 30.48 43.18 0)
+			(at 30.48 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8687,6 +8755,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
