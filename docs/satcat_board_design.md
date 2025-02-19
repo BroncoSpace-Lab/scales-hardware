@@ -35,10 +35,10 @@ Steps:
 3. Take the [Pin definitions for the FGB676 on the AC701](https://www.xilinx.com/content/dam/xilinx/support/packagefiles/a7packages/xc7a200tfbg676pkg.txt) and add them to the spreadsheet in a different tab. Do the same for the [Pin definitions for the FBG484 on the SOM](https://www.xilinx.com/content/dam/xilinx/support/packagefiles/a7packages/xc7a200tfbg484pkg.txt). It may also help to combine these lists in their own tab to make cross-referencing easier. 
 The spreadsheet used in SCALES is organized as follows:
 
-- signals - main sheet to show and compare the signals between the AC701 eval board and the SCALES SOM
-- chips - shows the pin definitions for each chip variation to cross-reference in the signals sheet.
-- xc7a200tfbg484pkg - pin definitions of the SOM chip pulled from the txt file. for reference only.
-- xc7a200tfbg676pkg - pin definition of the eval board chip pulled from the txt file. for reference only.
+    - signals - main sheet to show and compare the signals between the AC701 eval board and the SCALES SOM
+    - chips - shows the pin definitions for each chip variation to cross-reference in the signals sheet.
+    - xc7a200tfbg484pkg - pin definitions of the SOM chip pulled from the txt file. for reference only.
+    - xc7a200tfbg676pkg - pin definition of the eval board chip pulled from the txt file. for reference only.
 
 4. In the chips tab of the sheet, ctrl+f for the FMC pin name (ex. G19) and find the corresponding signal name for the FBG676 chip used on SatCat. Make sure to select “Match entire cell contents” and that you are searching the Value, not the Formulas in the Find and Replace options. Copy the signal name to the main sheet and repeat for all signals on the FMC.
 
@@ -80,6 +80,15 @@ The spreadsheet used in SCALES is organized as follows:
     ![SOM B2B SCALES modification](Images/b2b_section.png)
 
     *SCALES SOM B2B modification (same section)*
+
+## Design Considerations
+
+We are going to be trying to imitate what Aerospace Corp did with SatCat on Slingshot which was:
+
+- 4x Gigabit ethernet SGMII
+- up to 16 SPI/UART depending on scale of the Handle bus
+
+
 
 
 Still working on what comes next. To be continued...

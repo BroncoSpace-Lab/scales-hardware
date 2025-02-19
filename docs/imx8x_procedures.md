@@ -4,6 +4,110 @@ This document lists the interfacing and testing procedures required to get the i
 
 Important note: It is ideal to be using a 64-bit Linux host machine as opposed to Windows or a virtual machine. An ARM Cortex Linux machine will not work (cannot use a Jetson as host computer for development). 
 
+## Yocto Linux BSP
+
+It is very important to be using a 64-bit host computer with Ubuntu 18.04 installed. Any other version - especially newer versions of Ubuntu - will not build the BSP properly.
+
+We followed [this guide to build the BSP](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/developingwithyocto/buildBSP.html). This documentation, as of February 2025, does not work properly on it's own. 
+
+# Build Errors
+
+At first, you may encounter some build errors while trying to run the `bitbake imx-image-multimedia` command in the "Start the Build" section of the guide. Most of these errors result from mistakes in the importing of other files and libraries in the code. To remedy this, we took the following steps:
+
+1. Open `...BSP-Yocto-FSL-i.MX8X-PD21.1.0/sources/poky/bitbake/lib/bb/compat.py` on your host computer and make the import lines near the beginning of the code match the following:
+
+```
+from collections.abc import MutableMapping, KeysView, ValuesView, ItemsView
+from collections import OrderedDict
+from functools import total_ordering
+```
+
+Here, the change is to change the first import from `collections` to `collections.abc`, and to add the line `from collections import OrderedDict`.
+
+2. Open `.../BSP-Yocto-FSL-i.MX8X-PD21.1.0/sources/poky/bitbake/lib/bb/persist_data.py` and match the beginning on your code to the following:
+
+```
+import collections
+import collections.abc
+import logging
+import os.path
+import sys
+import warnings
+from bb.compat import total_ordering
+from collections.abc import Mapping
+import sqlite3
+import contextlib
+
+sqlversion = sqlite3.sqlite_version_info
+if sqlversion[0] < 3 or (sqlversion[0] == 3 and sqlversion[1] < 3):
+    raise Exception("sqlite3 version 3.3.0 or later is required.")
+
+
+logger = logging.getLogger("BitBake.PersistData")
+
+@total_ordering
+class SQLTable(collections.abc.MutableMapping):
+```
+
+Here, the change is adding the `import collections.abc` line and modifying the last line shown here to include `collections.abc.MutableMapping`.
+
+3. Open `.../BSP-Yocto-FSL-i.MX8X-PD21.1.0/sources/poky/bitbake/lib/bb/data_smart.py` and match your import section to the following:
+
+```
+import copy, re, sys, traceback
+from collections.abc import MutableMapping
+import logging
+import hashlib
+import bb, bb.codeparser
+from bb   import utils
+from bb.COW  import COWDictBase
+```
+
+Here, the change is to add the line `from collections.abc import MutableMapping`.
+
+After fixing those errors, there was another one that came up when trying to build:
+
+![bitbake build error](Images/bitbake_build_error.png)
+
+Phytec support gave us the following guidance:
+
+Here is a patch for fixing the dependencies.
+
+The imx8x is on an older BSP. Github has deprecated *anonymous* use of the git protocol so the fetching is failing. This patch adds **.bbappend** files for all the failing recipes.
+
+The bbappends files update the **SRC_URI** to use the **https** protocol, as well as define the **main** branch instead of master, which has been deprecated.
+
+**Applying the Patch**
+
+To apply the patch you will want to copy the attached **0001-Fix-SRC_URI-git-protocol-changed.patch** file to your meta-phytec folder
+
+```
+Yocto/sources/meta-phytec/
+```
+
+You can then cd into your meta-phytec folder and apply the patch
+
+```
+cd sources/meta-phytec/
+git apply 0001-Fix-SRC_URI-git-protocol-changed.patch 
+```
+
+You should then be able to build the BSP using 
+
+```
+bitbake imx-image-multimedia
+```
+
+---------
+
+After applying those changes, the BSP built just fine, and we were able to use balenaEtcher to flash a microSD card for the i.MX using the `imx-image-multimedia-imx8x-phycore-kit.sdcard.bz2` image created during the build found in the `$BUILDDIR/tmp/deploy/images/imx8x-phycore-kit/` directory.
+
+# Modifying the BSP
+
+Following [this guide to modify the BSP](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/developingwithyocto/modifyBSP.html) we built in the previous section. We did not run into any issues when following this guide.
+
+Add any packages from the list that you feel are relevant to your use case. When finished, you would have to re-flash the microSD card with the updated BSP and boot the i.MX with a clean install after each update.
+
 ## Connecting directly to the i.MX 8X
 
 Connect to the dev board following the [Quick Start guide](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/quickstart/index.html#basic-evaluation-requirements). 
