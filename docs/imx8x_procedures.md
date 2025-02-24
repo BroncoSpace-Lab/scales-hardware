@@ -10,7 +10,7 @@ It is very important to be using a 64-bit host computer with Ubuntu 18.04 instal
 
 We followed [this guide to build the BSP](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/developingwithyocto/buildBSP.html). This documentation, as of February 2025, does not work properly on it's own. 
 
-# Build Errors
+### Build Errors
 
 At first, you may encounter some build errors while trying to run the `bitbake imx-image-multimedia` command in the "Start the Build" section of the guide. Most of these errors result from mistakes in the importing of other files and libraries in the code. To remedy this, we took the following steps:
 
@@ -102,7 +102,7 @@ bitbake imx-image-multimedia
 
 After applying those changes, the BSP built just fine, and we were able to use balenaEtcher to flash a microSD card for the i.MX using the `imx-image-multimedia-imx8x-phycore-kit.sdcard.bz2` image created during the build found in the `$BUILDDIR/tmp/deploy/images/imx8x-phycore-kit/` directory.
 
-# Modifying the BSP
+### Modifying the BSP
 
 Following [this guide to modify the BSP](https://docs.phytec.com/projects/yocto-phycore-imx8x/en/latest/developingwithyocto/modifyBSP.html) we built in the previous section. We did not run into any issues when following this guide.
 

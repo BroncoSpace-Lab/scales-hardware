@@ -3,8 +3,9 @@
 This document shows the progress of development of the carrier board for SatCat5.
 The base of the design is based on Aerospace Corp's SatCat5 open source ethernet switcher. Their GitHub includes a prototype design featuring the AC701 Evaluation Board for the Artix 7 FPGA chip. For the purposes of SCALES, an evaluation board like that is not something we would want in our design, so we are using an SOM of the Artix 7 instead.
 
-The idea is to take the important signals from SatCat's prototype using the AC701 and modify it to work with the SOM we would use in SCALES.
-This presents a problem for us, since the AC701 uses a different version of the Artix 7 than the SOM, so the signals don't match up to the same pins on the Artix 7 chip.
+The idea is to take the important signals from SatCat's prototype using the AC701 and modify it to work with the SOM we would use in SCALES. This presents a problem for us, since the AC701 uses a different version of the Artix 7 than the SOM, so the signals don't match up to the same pins on the Artix 7 chip.
+
+We have currently decided to pause development on SatCat for SCALES, as much of the open source design available through Aerospace Corp's GitHub lacks enough detail for s to fully move forward. We have experienced too many barriers in this design to justify the amount of work needed to verify the design.
 
 ## Mapping the Signals
 
