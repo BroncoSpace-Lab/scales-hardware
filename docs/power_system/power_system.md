@@ -289,6 +289,53 @@ Components to be used are still being finalized, but they are based on the follo
       - Notes are written for everything, calculations are in the EPC calculations folder. Rev B schematic DONE. 
       - Next phase is review with Michael and then ERC cleaning. 
 
+   ## Week of 3/3 ## 
+      - Goals:
+         - Complete Block Diagram of Rev C [DONE]
+         (LINK HERE)[https://drive.google.com/file/d/1UQ95z8zSc4xQTobpHLgdMU17UKOtdfAZ/view?usp=sharing]
+         - Finalize Rev C Requirements:
+            - Interface requirements for OBC/Jetson/Peripheral Board
+               - Gecko Connectors?
+            - Power: The EPS system will supply 4 switching regulators with adecuate voltage and current:
+            - Load Switch Configuration: 
+               - Each subsystem has a load switch with a rst toggle, all are handled by the OBC, as well as the watch dog timer. Meaning both can be pulled down depending on the state.
+               - Watchdog system has a load switch which in the case of a watch dog failure, indicated by the I/V sensor can reset the timing for ensured redundancy
+            - Switching Regulator Configuration:
+               - Jetson: 28v to 20v @ 6A MAX
+                  - Start in sync with OBC
+               - OBC: 28v to 5v @ 3A MAX
+                  - Start in sync with Jetson
+               - Perif: 28v to 5v @ 2A Max
+                  - Start Early to boot up smaller components
+               - Watchdogs and Clock: 5v @ 1A Max
+                - Start first so clock may cycle phases and watch dogs can begin operation
+                Startup Sequence:
+                Watch dogs have longest initial pin delay requirement -> Clock starts -> OBC and Jetson boots -> Ping WDs
+         ## Modifications for this to happen ## 
+            - Set SS capacitor for OBC/Jetson/Perif Load Switch to cause slightly longer turn on time compared to Clock and WDs
+            - WD intial boot capacitor must be set for longer time to allow for proper system boot sequence
+            - Software on OBC should allow for when the WDs are to be reset, to pull its own RST pin for the load switch high, so on reset the watch dogs do not false trigger the reset on the OBC load switch
+            - Need to implement I2C Program to monitor incoming I/V sensor signals for each subsystem
+
+         - Finalize Rev C Component Selection:
+            - Edge Computer: Jetson Orin AGX
+            - Flight Computer: IMX8
+            - Peripheral Board: N/A
+
+            - Capacitors: SMD Ceramics
+            - Resistors: SMD Wire Wounds
+            - Inductors: SMD No-Air Ceramic
+         
+            - Load Switche(s): (LTC4365)[https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf] (Im not too convinced on this because it needs an external mosfet)
+            - Switching Regulator(s): (LT8638SEV#PBF)[https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D]
+            - Clock: (LTC 6902)[https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf] (Pick new one? andrew said this one was overspeced, but if you use it use SSFM)
+            - I/V Sensor(s): [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
+
+            
+         - Complete Rev C Schematic:
+         - Begin EPS Board Layout:
+
+
 
 
 
