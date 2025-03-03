@@ -289,6 +289,33 @@ Components to be used are still being finalized, but they are based on the follo
       - Notes are written for everything, calculations are in the EPC calculations folder. Rev B schematic DONE. 
       - Next phase is review with Michael and then ERC cleaning. 
 
+      =======
+   ## EPS REV.B Review Notes ##
+    - https://scales-hardware.readthedocs.io/en/latest/meeting_notes/feb_21_25/
+    - REV C -> Satcat dropped moving to new FPGA board
+    - Make an updated Block diagram to reflect what the schematic is without getting too complicated
+
+   ### To do 2/25/25
+   - Rev C: (Make new block diagram)
+      - Power Input Spec:
+         - Define power input requirement
+         - How low is undervoltage?
+            - Jetson:
+               - Soft start capability?
+               - Idle current
+               - Max operational average current
+               - Max transient current
+      - Load Switches: (Need a new selection)
+         - Go BEFORE switching regulators
+         - Need current sensing capability
+         - Add slew rate caps for turn on time
+      - Switching Regulators:
+         - Verify Rt sets clock when power drops
+         - Power on first, then worry about syncing
+      - Clock: (Need a new selection)
+         - Switch to a crytal oscillating clock instead of what is current chosen
+>>>>>>> Stashed changes
+
 <<<<<<< Updated upstream
    ## Week of 3/3 ## 
       - Goals:
@@ -336,34 +363,6 @@ Components to be used are still being finalized, but they are based on the follo
          - Complete Rev C Schematic:
          - Begin EPS Board Layout:
 
-
-
-=======
-   ## EPS REV.B Review Notes ##
-    - https://scales-hardware.readthedocs.io/en/latest/meeting_notes/feb_21_25/
-    - REV C -> Satcat dropped moving to new FPGA board
-    - Make an updated Block diagram to reflect what the schematic is without getting too complicated
-
-   ### To do 2/25/25
-   - Rev C: (Make new block diagram)
-      - Power Input Spec:
-         - Define power input requirement
-         - How low is undervoltage?
-            - Jetson:
-               - Soft start capability?
-               - Idle current
-               - Max operational average current
-               - Max transient current
-      - Load Switches: (Need a new selection)
-         - Go BEFORE switching regulators
-         - Need current sensing capability
-         - Add slew rate caps for turn on time
-      - Switching Regulators:
-         - Verify Rt sets clock when power drops
-         - Power on first, then worry about syncing
-      - Clock: (Need a new selection)
-         - Switch to a crytal oscillating clock instead of what is current chosen
->>>>>>> Stashed changes
 
 
 
