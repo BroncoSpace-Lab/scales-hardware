@@ -15,7 +15,7 @@ Components to be used are still being finalized, but they are based on the follo
   - **VOXL2:** 
       - 12V / 6A (Inrush Max) - Power (Max) = 7W *(based on Janelle's testing; check datasheet for idle values)*
 
-- **Edge Computer: Nvidia Jetson AGX OrWin**
+- **Edge Computer: Nvidia Jetson AGX Orin**
   - End-user must have access to peak power, so they can switch between performance modes.
   - **AGR Orin:** 
       - 20V / 3.75A (MAX) - Power (Max) = 75W *(based on max current/voltage ratings)*
@@ -289,6 +289,7 @@ Components to be used are still being finalized, but they are based on the follo
       - Notes are written for everything, calculations are in the EPC calculations folder. Rev B schematic DONE. 
       - Next phase is review with Michael and then ERC cleaning. 
 
+<<<<<<< Updated upstream
    ## Week of 3/3 ## 
       - Goals:
          - Complete Block Diagram of Rev C [DONE]
@@ -337,6 +338,32 @@ Components to be used are still being finalized, but they are based on the follo
 
 
 
+=======
+   ## EPS REV.B Review Notes ##
+    - https://scales-hardware.readthedocs.io/en/latest/meeting_notes/feb_21_25/
+    - REV C -> Satcat dropped moving to new FPGA board
+    - Make an updated Block diagram to reflect what the schematic is without getting too complicated
+
+   ### To do 2/25/25
+   - Rev C: (Make new block diagram)
+      - Power Input Spec:
+         - Define power input requirement
+         - How low is undervoltage?
+            - Jetson:
+               - Soft start capability?
+               - Idle current
+               - Max operational average current
+               - Max transient current
+      - Load Switches: (Need a new selection)
+         - Go BEFORE switching regulators
+         - Need current sensing capability
+         - Add slew rate caps for turn on time
+      - Switching Regulators:
+         - Verify Rt sets clock when power drops
+         - Power on first, then worry about syncing
+      - Clock: (Need a new selection)
+         - Switch to a crytal oscillating clock instead of what is current chosen
+>>>>>>> Stashed changes
 
 
 
