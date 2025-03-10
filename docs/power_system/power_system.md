@@ -335,10 +335,10 @@ Components to be used are still being finalized, but they are based on the follo
                   - Start in sync with Jetson
                - Perif: 28v to 5v @ 2A Max
                   - Start Early to boot up smaller components
-               - Watchdogs and Clock: 5v @ 1A Max
-                - Start first so clock may cycle phases and watch dogs can begin operation
-                Startup Sequence:
-                Watch dogs have longest initial pin delay requirement -> Clock starts -> OBC and Jetson boots -> Ping WDs
+               - Watchdogs and Clock: Powered by OBC, boots first
+               Startup sequence:
+               OBS powers on first due to shortest SS. Clock turns on, sets frequency and phase, then it pulls the Enable pins on the load switches high and then the Jetson and Perif Load switch turn on. Then I2c Sensors are powered on for each and data is starting to be read for each subsystem.
+               
          ## Modifications for this to happen ## 
             - Set SS capacitor for OBC/Jetson/Perif Load Switch to cause slightly longer turn on time compared to Clock and WDs
             - WD intial boot capacitor must be set for longer time to allow for proper system boot sequence
@@ -346,17 +346,18 @@ Components to be used are still being finalized, but they are based on the follo
             - Need to implement I2C Program to monitor incoming I/V sensor signals for each subsystem
 
          - Finalize Rev C Component Selection:
-            - Edge Computer: Jetson Orin AGX
-            - Flight Computer: IMX8
-            - Peripheral Board: N/A
+            - Edge Computer: Jetson Orin AGX (20V/8A Out)
+            - Flight Computer: IMX8 (Have a 5v/2A Out)
+            - Peripheral Board: N/A (Have a 5v/1A Out)
 
             - Capacitors: SMD Ceramics
             - Resistors: SMD Wire Wounds
             - Inductors: SMD No-Air Ceramic
          
-            - Load Switche(s): (LTC4365)[https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf] (Im not too convinced on this because it needs an external mosfet)
+            - Load Switche(s): (LTC4365) [https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf] (Im not too convinced on this because it needs an external mosfet)
+               - Require: [SISB46DN-T1-GE3] (https://www.vishay.com/docs/76655/sisb46dn.pdf)
             - Switching Regulator(s): (LT8638SEV#PBF)[https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D]
-            - Clock: (LTC 6902)[https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf] (Pick new one? andrew said this one was overspeced, but if you use it use SSFM)
+            - Clock: (LTC 6902)[https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf] (Use SSFM)
             - I/V Sensor(s): [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
 
             
