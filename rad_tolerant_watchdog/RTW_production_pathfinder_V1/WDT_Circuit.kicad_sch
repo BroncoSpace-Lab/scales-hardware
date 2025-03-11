@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "dcd50567-e2e3-42bb-a5b3-dbcb8d2428fa")
+	(uuid "1dba6527-bb25-4c2f-a0a5-dadd3d2cc649")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
@@ -3897,6 +3897,12 @@
 		(uuid "5f987421-a8ab-4a86-ac99-9edba5b36cc8")
 	)
 	(junction
+		(at 46.99 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70da3be5-b78a-45e0-a7e2-f2503fefecae")
+	)
+	(junction
 		(at 200.66 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3993,10 +3999,26 @@
 		(uuid "ea3cfffd-e950-4784-a952-14b147a2387a")
 	)
 	(junction
+		(at 46.99 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f12c7a6d-f1a7-4905-bfd2-919fa6c0399c")
+	)
+	(junction
 		(at 132.08 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7d62491-a82f-4d7c-9cc2-8909555a36c1")
+	)
+	(wire
+		(pts
+			(xy 46.99 116.84) (xy 46.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "009a6422-1210-478c-8fcd-56d6802d4fc8")
 	)
 	(wire
 		(pts
@@ -4090,6 +4112,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 129.54) (xy 46.99 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18871811-caee-4dbd-9c0f-6256f8813078")
+	)
+	(wire
+		(pts
 			(xy 200.66 144.78) (xy 200.66 137.16)
 		)
 		(stroke
@@ -4157,6 +4189,16 @@
 			(type default)
 		)
 		(uuid "3bafad79-6afd-44db-84b2-42f41a612455")
+	)
+	(wire
+		(pts
+			(xy 46.99 132.08) (xy 46.99 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bda2592-78c4-49ec-8a63-642650893a17")
 	)
 	(wire
 		(pts
@@ -4760,6 +4802,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 124.46) (xy 46.99 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f914a6-08c2-4d02-b5e7-5829c1ba1fc0")
+	)
+	(wire
+		(pts
 			(xy 30.48 30.48) (xy 33.02 30.48)
 		)
 		(stroke
@@ -4787,6 +4839,16 @@
 			(type default)
 		)
 		(uuid "c0855e68-4836-4328-aea0-c9a814ecca86")
+	)
+	(wire
+		(pts
+			(xy 46.99 127) (xy 50.8 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c49cf368-229e-420f-862e-d14cd3618fb5")
 	)
 	(wire
 		(pts
@@ -4820,6 +4882,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 129.54) (xy 46.99 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c987fa6a-d9d7-40d0-b884-a8c26f306823")
+	)
+	(wire
+		(pts
 			(xy 85.09 86.36) (xy 140.97 86.36)
 		)
 		(stroke
@@ -4847,6 +4919,16 @@
 			(type default)
 		)
 		(uuid "d1b3171f-7776-448a-8371-f92181c565af")
+	)
+	(wire
+		(pts
+			(xy 46.99 124.46) (xy 50.8 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d38721f6-8973-473a-964d-b845c7e3d1c1")
 	)
 	(wire
 		(pts
@@ -4937,6 +5019,16 @@
 			(type default)
 		)
 		(uuid "e6f4a2c5-d008-4025-81fa-534aebde2f62")
+	)
+	(wire
+		(pts
+			(xy 50.8 132.08) (xy 46.99 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7223c19-1c7d-417b-94cf-fc7593fa1bc5")
 	)
 	(wire
 		(pts
@@ -5088,6 +5180,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WDT_WDI_1"
+		(shape input)
+		(at 46.99 116.84 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b0ff9ab-d21b-4363-b628-2bee218883e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 103.6949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5415,6 +5529,82 @@
 			(project "RTW_production_pathfinder_V1"
 				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/0991a10f-8049-4fa6-be1f-88f50d17bad6"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 55.88 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1271ba38-0fdf-4e67-b30f-5e35b602f381")
+		(property "Reference" "J18"
+			(at 58.42 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Breakout"
+			(at 58.42 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06ecafb0-2868-4804-aefe-063080bb0adc")
+		)
+		(pin "2"
+			(uuid "e605bd3e-7214-4daa-9331-bb7f930ede93")
+		)
+		(pin "3"
+			(uuid "974f7f1c-6be9-4312-a20e-7266b7fc5558")
+		)
+		(pin "4"
+			(uuid "9208adfb-ba6a-4ea6-b691-e8d70759e8e3")
+		)
+		(instances
+			(project "RTW_production_pathfinder_V1"
+				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/0991a10f-8049-4fa6-be1f-88f50d17bad6"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -7276,6 +7466,73 @@
 			(project "RTW_production_pathfinder_V1"
 				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/0991a10f-8049-4fa6-be1f-88f50d17bad6"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 46.99 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84e08535-ec14-4d73-9d1b-c682391e4f45")
+		(property "Reference" "#PWR0107"
+			(at 46.99 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "536c6b8c-f459-4308-a280-6afd729fedbd")
+		)
+		(instances
+			(project "RTW_production_pathfinder_V1"
+				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/0991a10f-8049-4fa6-be1f-88f50d17bad6"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
