@@ -563,6 +563,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode light-emitting-diode"
 				(at 0 0 0)
 				(effects
@@ -821,8 +830,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_1"
-			(power)
+		(symbol "Jumper:SolderJumper_2_Open"
 			(pin_numbers
 				(hide yes)
 			)
@@ -830,105 +838,8 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "JP"
 				(at 0 2.032 0)
@@ -3888,8 +3799,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3938,7 +3853,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3965,8 +3880,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5907,7 +5821,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1275a7b7-3a0f-4c5f-8f27-09dd522f2f66")
-		(property "Reference" "R58"
+		(property "Reference" "R44"
 			(at 91.44 78.105 0)
 			(effects
 				(font
@@ -5943,7 +5857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 88.9 78.74 0)
 			(effects
 				(font
@@ -5989,15 +5903,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0c1ded7-9ec9-40cc-a404-0b2aed3c50c8")
+			(uuid "f20e0702-6d29-4a5c-b75a-7bf54d13dcdc")
 		)
 		(pin "2"
-			(uuid "07904422-4c4d-4333-9768-f2c912406944")
+			(uuid "14f30020-f806-4afb-aaf5-f9bde0f13589")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R58")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -6014,7 +5928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ec3bd85-3d37-40bb-9cc8-60d6766997af")
-		(property "Reference" "U6"
+		(property "Reference" "U9"
 			(at 154.94 114.3 0)
 			(effects
 				(font
@@ -6128,13 +6042,13 @@
 			(uuid "c9091240-6ff2-4062-9236-9d46f5f997d3")
 		)
 		(pin "1"
-			(uuid "a34bbe25-09de-434a-848b-18369e76353c")
+			(uuid "1ac6a815-7d5a-4dd7-ab9f-3fd7144dc09e")
 		)
 		(pin "6"
-			(uuid "d2e6dfeb-8d7a-43fe-9254-48f66f1f4c42")
+			(uuid "88083177-d02f-4015-a655-880676fd1bf8")
 		)
 		(pin "7"
-			(uuid "6726ebce-d2ee-45d4-b4b2-e9662a4878b0")
+			(uuid "53d68593-dc4f-4232-b1b1-d28e2d0b58e1")
 		)
 		(pin "14"
 			(uuid "178d6548-c150-41dc-9935-8a4694cd42da")
@@ -6163,7 +6077,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "U6")
+					(reference "U9")
 					(unit 2)
 				)
 			)
@@ -6178,7 +6092,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21c9e063-55c6-4132-8ead-7d579798c6b5")
-		(property "Reference" "R70"
+		(property "Reference" "R56"
 			(at 195.58 128.27 90)
 			(effects
 				(font
@@ -6212,7 +6126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4.7 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 195.58 133.35 0)
 			(effects
 				(font
@@ -6258,15 +6172,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c24a61b4-b528-44c7-8f05-383cfbcb1f39")
+			(uuid "d0534607-76e6-415a-ab50-520a96bc5e48")
 		)
 		(pin "2"
-			(uuid "c7b83423-4d2e-4a7c-bd40-dd952358fbe5")
+			(uuid "e2b730ba-0aee-411d-9980-a69540279c80")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R70")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -6282,7 +6196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "276bea23-b6a2-4193-931d-d29ca463d940")
-		(property "Reference" "R68"
+		(property "Reference" "R54"
 			(at 190.5 136.525 90)
 			(effects
 				(font
@@ -6316,7 +6230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 190.5 140.97 0)
 			(effects
 				(font
@@ -6362,15 +6276,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e2a1933-b109-4955-ad44-e984f68d97e8")
+			(uuid "61f15460-6427-4f7d-93de-ce8791cc29a6")
 		)
 		(pin "2"
-			(uuid "c43f5815-c504-489d-911a-2884933d71c1")
+			(uuid "fa2ea978-39ec-433c-b13d-cb4933f26521")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R68")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -6385,7 +6299,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ac2e44b-9c2a-43b5-aca1-1919cb868da6")
-		(property "Reference" "JP7"
+		(property "Reference" "JP3"
 			(at 255.016 53.594 0)
 			(effects
 				(font
@@ -6420,7 +6334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 257.81 53.34 0)
 			(effects
 				(font
@@ -6430,15 +6344,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c6970533-ec16-465b-a6e2-2baa54701514")
+			(uuid "afdc1a19-d1e9-4822-bbdb-95ea9572a923")
 		)
 		(pin "2"
-			(uuid "97edbbea-5d48-43cd-866b-8d51811461fe")
+			(uuid "5e991def-8962-4a22-8cd5-0a37dfc892ba")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "JP7")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -6453,7 +6367,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ba13acd-4c69-499a-b81a-e5446185c139")
-		(property "Reference" "TP24"
+		(property "Reference" "TP11"
 			(at 203.2 118.11 0)
 			(effects
 				(font
@@ -6499,12 +6413,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "638b5878-02c3-4e83-bcbe-5a12094d3d05")
+			(uuid "f3b436cc-4b92-4ac5-86fe-9707ca3def9c")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TP24")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -6519,7 +6433,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ec2e885-0f35-43a6-ad2a-e3c7366fdbe3")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR047"
 			(at 102.87 138.43 0)
 			(effects
 				(font
@@ -6564,12 +6478,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad176aed-5a57-4375-8832-913cd7d9e907")
+			(uuid "033d91a0-4234-40fe-9cf0-b94f43d0b3d4")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR048")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6585,7 +6499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30b13380-f659-47e7-9d85-9b8fff3ac3d4")
-		(property "Reference" "D11"
+		(property "Reference" "D5"
 			(at 93.98 133.2865 90)
 			(effects
 				(font
@@ -6621,7 +6535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Green 520nm LED Indication - Discrete 3.2V 0603 (1608 Metric) - 430 mcd @ 20 mA"
+		(property "Description" "Light emitting diode, small symbol, filled shape"
 			(at 91.44 134.62 0)
 			(effects
 				(font
@@ -6666,16 +6580,25 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 91.44 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "c27323c3-f59b-4787-8153-af7327b96fd3")
+			(uuid "17afd577-d1dc-4fd3-b236-aebef26a1bda")
 		)
 		(pin "2"
-			(uuid "cda7c8be-feed-448c-a686-78857ff664a5")
+			(uuid "05ee6220-0f18-49cd-8471-9b2ff65b1827")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "D11")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6691,7 +6614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "337a65f0-4aaf-4521-b1c6-66a03bb428e6")
-		(property "Reference" "R69"
+		(property "Reference" "R55"
 			(at 195.58 100.33 90)
 			(effects
 				(font
@@ -6725,7 +6648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 195.58 105.41 0)
 			(effects
 				(font
@@ -6771,15 +6694,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b682d2d-1737-4ca2-81b5-f9724614109a")
+			(uuid "d4ca4459-56be-47f3-9d9a-8d860d955184")
 		)
 		(pin "2"
-			(uuid "dc3fc127-6b7a-47d5-b76b-09afaa7c6fbe")
+			(uuid "573f2bf3-1c7c-464c-be2b-345bd8c900bc")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R69")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -6795,7 +6718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3911bdb8-d0e4-41fc-8e41-2145162c7af7")
-		(property "Reference" "R64"
+		(property "Reference" "R50"
 			(at 130.81 115.57 90)
 			(effects
 				(font
@@ -6829,7 +6752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 130.81 120.65 0)
 			(effects
 				(font
@@ -6875,15 +6798,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "298d0209-3e4c-4ef1-a36a-2c7c68b9bd60")
+			(uuid "80fdc45e-3cfe-4f51-8f1b-6ff0f9abb93c")
 		)
 		(pin "2"
-			(uuid "c55b87c5-991c-4d87-9d38-2b8f19a2b9e4")
+			(uuid "7a670165-2832-4012-8f67-08ae7727f430")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R64")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -6899,7 +6822,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c80c7d8-c6db-403a-a1f7-c95c38f358b2")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR044"
 			(at 69.85 83.82 0)
 			(effects
 				(font
@@ -6944,12 +6867,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4911aa7-efaf-4f23-8540-1e719590be39")
+			(uuid "f1189711-ee33-4490-bb4c-522bd6228377")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR036")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -6965,7 +6888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3da7ab37-3d44-4b46-b596-ee3a3a8b8bb3")
-		(property "Reference" "J9"
+		(property "Reference" "J7"
 			(at 194.31 44.958 90)
 			(effects
 				(font
@@ -6999,7 +6922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -7009,21 +6932,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "57a7491a-20f3-4946-b527-82a48df59bd3")
+			(uuid "abd05c38-9258-43ec-ad4e-5f9457e2ea63")
 		)
 		(pin "2"
-			(uuid "0f3ddbad-8231-4f05-bee8-930605fc81d2")
+			(uuid "5faa4f47-c889-4131-afb9-1d999ab78cb5")
 		)
 		(pin "3"
-			(uuid "846a5b44-3f97-4af7-8d0f-4d5b336ea50e")
+			(uuid "b5edbf8d-76c5-4b5c-b210-cdc68490942c")
 		)
 		(pin "4"
-			(uuid "b17c8da5-cb91-40fc-9ad1-8c560f36d75c")
+			(uuid "ae43789a-07fb-4ad7-ae5c-56a3e79fc793")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "J9")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -7039,7 +6962,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48ed5ecd-31dd-4f6d-bd3d-a5356d2f3584")
-		(property "Reference" "R60"
+		(property "Reference" "R46"
 			(at 91.44 92.71 0)
 			(effects
 				(font
@@ -7075,7 +6998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 88.9 93.98 0)
 			(effects
 				(font
@@ -7121,15 +7044,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1f4f2f3-ba7a-4d41-8a6f-35e029ea4cfa")
+			(uuid "795fcabb-d155-4f72-bc9c-a1af219e21d0")
 		)
 		(pin "2"
-			(uuid "c6ef9742-9eef-4d87-ae2b-9b8d0403bda1")
+			(uuid "2d35ab09-93e9-4d60-80e4-65abd1deb9f2")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R60")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -7145,7 +7068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f9c78ad-6720-4500-89ca-69f7138ed303")
-		(property "Reference" "R56"
+		(property "Reference" "R42"
 			(at 91.44 62.865 0)
 			(effects
 				(font
@@ -7181,7 +7104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 88.9 63.5 0)
 			(effects
 				(font
@@ -7227,15 +7150,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e1c68df-64d5-4707-93f5-4f61f770122c")
+			(uuid "c835c4ea-d969-4e71-adcd-7698757c67c9")
 		)
 		(pin "2"
-			(uuid "40cac245-07f7-4669-b11d-0752a4c7b049")
+			(uuid "8b81687d-f540-4bc5-8230-f9c703c03dc6")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R56")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -7251,7 +7174,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52c5c8ee-4b1c-4945-a303-1a3e812885b4")
-		(property "Reference" "C28"
+		(property "Reference" "C34"
 			(at 99.0663 118.11 90)
 			(effects
 				(font
@@ -7285,7 +7208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 99.06 123.19 0)
 			(effects
 				(font
@@ -7331,15 +7254,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3eb68720-b90d-43a6-8d55-b82c66f05691")
+			(uuid "ca47cca2-8b4c-491e-a5d6-a5539e80e50e")
 		)
 		(pin "2"
-			(uuid "94371aa5-f829-4e23-bbce-813cb0f4d333")
+			(uuid "c1c9f288-f815-42cf-832f-c18b57d02d40")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C28")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -7355,7 +7278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5681582b-2b20-4cc3-9a5c-40b6ae6d27fa")
-		(property "Reference" "R62"
+		(property "Reference" "R48"
 			(at 105.41 127.635 0)
 			(effects
 				(font
@@ -7391,7 +7314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 102.87 128.27 0)
 			(effects
 				(font
@@ -7437,15 +7360,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f53cfcf-40e1-4559-bed0-ce37e9665640")
+			(uuid "92c3d509-04fd-497f-8a6f-fbe8d49d60b3")
 		)
 		(pin "2"
-			(uuid "07ada5f8-dd6b-4d2a-8407-8d9870fea5fc")
+			(uuid "8e2c8bc3-cac7-4856-b228-c8b5f5c1d073")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R62")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -7460,7 +7383,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5843477e-1e4e-48d1-b6cf-f561d5887b87")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR048"
 			(at 135.89 134.62 0)
 			(effects
 				(font
@@ -7505,12 +7428,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e2a143c-4715-4d52-b1f3-0c0885b1bc00")
+			(uuid "19a93d8b-3462-42d5-8672-785606eb2037")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR049")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -7525,7 +7448,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f7db072-f95b-487f-b67a-ad4677a19ccd")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR046"
 			(at 91.44 144.78 0)
 			(effects
 				(font
@@ -7570,12 +7493,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7f1c8c6a-7562-4436-b275-fb466e3ba870")
+			(uuid "f79e098b-5584-4616-8c1a-fb3f7c5725b4")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR047")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -7590,7 +7513,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62545d53-a3a6-408f-8682-f31b1e8e7e01")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR042"
 			(at 29.21 40.64 0)
 			(effects
 				(font
@@ -7637,12 +7560,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d916f62-b907-4bb6-899b-2e918fdf86bc")
+			(uuid "db61c646-c77d-4dc4-9aee-af53fb1fee68")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR034")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7657,7 +7580,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69a4db37-e645-4f38-99e3-8685a17046af")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR043"
 			(at 48.26 74.93 0)
 			(effects
 				(font
@@ -7702,12 +7625,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "88eb57aa-8664-4e7e-a7f3-45ad3365e663")
+			(uuid "fa7bb732-4d98-4fbf-a44d-87058b61a3be")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR035")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -7724,7 +7647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e5f7e9f-c0c9-46ea-8ac0-97ceddf3b09e")
-		(property "Reference" "C30"
+		(property "Reference" "C36"
 			(at 167.64 126.3586 0)
 			(effects
 				(font
@@ -7760,7 +7683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 170.18 127 0)
 			(effects
 				(font
@@ -7806,15 +7729,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b4d981b-10fa-4406-bc5e-ae643d7591a8")
+			(uuid "9e16237f-20ef-4b2c-9a6f-6e51ce5d41fd")
 		)
 		(pin "2"
-			(uuid "f1e1c10c-846f-4de2-b89e-801754e7ec16")
+			(uuid "90e36469-b719-4ff1-b28f-2e499d1c4a11")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C30")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -7830,7 +7753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "706af0e9-929a-4623-8978-7200870842b8")
-		(property "Reference" "C25"
+		(property "Reference" "C31"
 			(at 40.64 62.3189 0)
 			(effects
 				(font
@@ -7866,7 +7789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "220µF Molded Tantalum Capacitors 25V 2924 (7361 Metric) 100mOhm @ 100kHz"
+		(property "Description" "Polarized capacitor, small symbol"
 			(at 38.1 63.5 0)
 			(effects
 				(font
@@ -7937,22 +7860,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "17c9affd-1aa9-489f-8a75-e7386e296f75")
+			(uuid "9b3a7b5c-fcc3-4af6-bdef-9f299d66d5d2")
 		)
 		(pin "2"
-			(uuid "a6b8d5f6-49c8-4330-b51a-36eefb1d32b6")
+			(uuid "c65b82c6-08d3-4d5a-bdec-066bd62ba4ad")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C25")
+					(reference "C31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 184.15 35.56 0)
 		(unit 1)
@@ -7962,7 +7884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7205136e-06da-4388-89fb-c1dd4a72d60a")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR052"
 			(at 184.15 41.91 0)
 			(effects
 				(font
@@ -8007,12 +7929,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "51f7ce39-1ee7-4246-8cb1-489ff31d7075")
+			(uuid "f27dea7c-d890-4281-bf61-8a71cfdb8825")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR053")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -8028,7 +7950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73277ab9-472c-4733-8367-e4a79c713567")
-		(property "Reference" "C26"
+		(property "Reference" "C32"
 			(at 50.8 62.3189 0)
 			(effects
 				(font
@@ -8064,7 +7986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "220µF Molded Tantalum Capacitors 16V 2917 (7343 Metric) 100mOhm @ 100kHz"
+		(property "Description" "Polarized capacitor, small symbol"
 			(at 48.26 63.5 0)
 			(effects
 				(font
@@ -8110,15 +8032,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3ceb83b8-1e60-408d-83a4-4b098c63f3c6")
+			(uuid "42923cc9-ebf0-423f-9e02-8f889140cee5")
 		)
 		(pin "2"
-			(uuid "6a72109c-09d5-4c36-b258-8fe6e9b02c17")
+			(uuid "9f5f9c9d-ea8f-4ca2-bb02-5bfea14df8d4")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C26")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -8134,7 +8056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81ee8c34-db25-47aa-928d-eec3eb582738")
-		(property "Reference" "J8"
+		(property "Reference" "J6"
 			(at 176.53 44.958 90)
 			(effects
 				(font
@@ -8168,7 +8090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 177.8 40.64 0)
 			(effects
 				(font
@@ -8178,21 +8100,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "d97b1603-f3d2-402b-b449-3c78c59245c1")
+			(uuid "a01d74ce-aa82-4913-8a26-9ee161bc5952")
 		)
 		(pin "2"
-			(uuid "c680046e-28be-4c12-9483-f50ec9748430")
+			(uuid "6748a942-561a-4afb-b8fc-0a9bae55f783")
 		)
 		(pin "3"
-			(uuid "30e20a60-63de-45f3-8297-758654dec419")
+			(uuid "59b3089a-2898-422f-ac54-eb49b6eb3271")
 		)
 		(pin "4"
-			(uuid "2fc5fc8e-b57d-44a6-bd24-4ae7f21065c9")
+			(uuid "f3a26419-d78a-412a-a7b8-29c88fb31ea2")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "J8")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8207,7 +8129,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83d2f6ac-26f8-4938-815d-7921634f8cb6")
-		(property "Reference" "R61"
+		(property "Reference" "R47"
 			(at 92.71 127 0)
 			(effects
 				(font
@@ -8243,7 +8165,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 91.44 128.27 0)
 			(effects
 				(font
@@ -8289,15 +8211,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac60edad-1e64-4bf3-850f-3c7561630ddd")
+			(uuid "f55b26d0-20ce-44ce-96e4-7b21e48deaf2")
 		)
 		(pin "2"
-			(uuid "ef53d3b5-4fb3-42c4-a75f-48c316da0157")
+			(uuid "ec8499a6-c3c8-49c0-9ff1-e03068be3e49")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R61")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -8312,7 +8234,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8881d515-ce1e-482b-bff4-d37297c3f379")
-		(property "Reference" "JP8"
+		(property "Reference" "JP4"
 			(at 266.446 127.254 0)
 			(effects
 				(font
@@ -8347,7 +8269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 269.24 127 0)
 			(effects
 				(font
@@ -8357,15 +8279,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "de65c3e1-c723-48ff-8f89-41bc8d230e7d")
+			(uuid "f3bb0c96-087c-4d2d-b094-2d9744039743")
 		)
 		(pin "2"
-			(uuid "cb666f08-376b-4f18-8ed1-4099942a5538")
+			(uuid "e67b25f1-d421-4a70-b47f-4a6465cef219")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "JP8")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -8382,7 +8304,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8df5c289-cc0e-4e7d-86c1-7bd9d669a9c4")
-		(property "Reference" "U6"
+		(property "Reference" "U9"
 			(at 194.31 111.76 0)
 			(effects
 				(font
@@ -8505,13 +8427,13 @@
 			(uuid "a89a6e20-7eea-4f01-a73f-a80040e53d5e")
 		)
 		(pin "14"
-			(uuid "86de645a-bedd-4820-957f-f9bc928248d0")
+			(uuid "983e0cd2-57fb-40f5-9829-3a54dd416738")
 		)
 		(pin "8"
-			(uuid "aad29f68-d684-49a2-86d0-5f7cf5f2255e")
+			(uuid "c381535f-547b-40c3-9a1d-a4e37b01697a")
 		)
 		(pin "9"
-			(uuid "2c3493fc-d279-4fee-a706-8147ade7135a")
+			(uuid "141a1332-952f-4c9c-9390-1962c4ad9bc6")
 		)
 		(pin "10"
 			(uuid "e688f44b-c1ab-477c-9c25-6e06279d903d")
@@ -8531,7 +8453,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "U6")
+					(reference "U9")
 					(unit 3)
 				)
 			)
@@ -8547,7 +8469,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e04bef2-729d-4551-9c83-75f2b7d51e51")
-		(property "Reference" "R57"
+		(property "Reference" "R43"
 			(at 91.44 70.485 0)
 			(effects
 				(font
@@ -8583,7 +8505,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 88.9 71.12 0)
 			(effects
 				(font
@@ -8629,15 +8551,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "26ed5f69-6ae0-4926-b186-2224e2f1b9cd")
+			(uuid "bf805938-53c0-4362-b478-c495ea1270a0")
 		)
 		(pin "2"
-			(uuid "51529d8d-24d2-4a80-bffa-21cfe453f658")
+			(uuid "db8bbff8-3042-4cb1-822b-d926f3e4c910")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R57")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -8653,7 +8575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9066d8b2-70d3-4367-8c11-770108ddbdcc")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR051"
 			(at 180.34 137.16 0)
 			(effects
 				(font
@@ -8698,12 +8620,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5c215131-d2db-47c0-a9ba-3028bb269abc")
+			(uuid "4aee3b40-a3d6-443b-bc71-6615e87ff192")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR052")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -8718,7 +8640,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "954c7e17-e123-4498-a816-dd3113ca1ef1")
-		(property "Reference" "TP25"
+		(property "Reference" "TP12"
 			(at 237.49 120.65 0)
 			(effects
 				(font
@@ -8764,12 +8686,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e5de16e-b64f-4e69-bc0b-ac04eda5da67")
+			(uuid "3dfdb3b5-27ca-403b-b9cf-9d1894019b89")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TP25")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -8786,7 +8708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b8b8bf2-dc71-47fe-95fa-0378ecb404af")
-		(property "Reference" "C31"
+		(property "Reference" "C37"
 			(at 177.8 126.3586 0)
 			(effects
 				(font
@@ -8822,7 +8744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 180.34 127 0)
 			(effects
 				(font
@@ -8868,15 +8790,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0c1442c3-04b0-4bd4-b2f7-1c18db7ba41c")
+			(uuid "60eaceec-305c-4b43-a7c7-f67696fb775a")
 		)
 		(pin "2"
-			(uuid "e8ee76e4-e187-4d94-be59-d957ad753322")
+			(uuid "c933e6c9-37c8-4265-a270-cec1231be323")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C31")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -8891,7 +8813,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9cf5841b-77ed-4667-bb9a-57ffd645e490")
-		(property "Reference" "U6"
+		(property "Reference" "U9"
 			(at 71.12 67.945 0)
 			(effects
 				(font
@@ -9034,15 +8956,15 @@
 			(uuid "3805f405-e693-4da9-b21e-bf9b5725dabd")
 		)
 		(pin "12"
-			(uuid "ec705601-62e6-45ad-91ba-d973444958cb")
+			(uuid "a8de05f3-cc96-4ea4-bc20-73d8beab6ff9")
 		)
 		(pin "3"
-			(uuid "8e4e4cd0-e034-40dd-a458-f24fa5b9ab31")
+			(uuid "174a208e-c2cf-4388-8d1f-44dddc2fa565")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "U6")
+					(reference "U9")
 					(unit 5)
 				)
 			)
@@ -9057,7 +8979,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9dffcfd3-176a-487a-864c-22aeda0f5ffd")
-		(property "Reference" "TP20"
+		(property "Reference" "TP7"
 			(at 77.47 57.15 0)
 			(effects
 				(font
@@ -9103,12 +9025,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0239ae61-16d7-4379-936d-5034fae5227a")
+			(uuid "59db8423-1294-4a3f-878d-69b3843b9748")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TP20")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -9124,7 +9046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9ec0eccd-f814-4c0d-ad1f-d5af4ba25f24")
-		(property "Reference" "D10"
+		(property "Reference" "D4"
 			(at 26.67 46.355 90)
 			(effects
 				(font
@@ -9206,15 +9128,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "394a0998-6d56-408c-a6ea-cbf061ab9645")
+			(uuid "076c1056-d733-4d97-9bf3-179219dec7f1")
 		)
 		(pin "2"
-			(uuid "5d445a8f-3c10-4dcf-ac45-6d4c3e1a9248")
+			(uuid "8398daee-cf5e-4800-a1e1-e6c043c77e9f")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "D10")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -9230,7 +9152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f7fa99e-6bde-4765-9902-15e778805279")
-		(property "Reference" "R72"
+		(property "Reference" "R58"
 			(at 241.3 74.295 0)
 			(effects
 				(font
@@ -9266,7 +9188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 238.76 74.93 0)
 			(effects
 				(font
@@ -9337,15 +9259,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f704cdca-ac1e-4483-94ea-028d66329d13")
+			(uuid "de28f28a-3a16-4355-8808-961a26fe7f61")
 		)
 		(pin "2"
-			(uuid "7637c7aa-9eee-4a57-b176-ae851e18c553")
+			(uuid "fde38546-e3a6-49de-b396-47fc88f34224")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R72")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -9360,7 +9282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5c2becd-aadc-4e2b-961a-5b5e26046185")
-		(property "Reference" "C32"
+		(property "Reference" "C38"
 			(at 219.71 95.8786 0)
 			(effects
 				(font
@@ -9396,7 +9318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 217.17 96.52 0)
 			(effects
 				(font
@@ -9442,15 +9364,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "422990aa-71a1-45fe-83b3-5da6f00c40e4")
+			(uuid "04f97d62-4a25-4f42-ae14-09c150d8c238")
 		)
 		(pin "2"
-			(uuid "6974f2a5-905d-451d-954e-c754e609073f")
+			(uuid "b452c9f1-0d29-4988-869c-092fc039830c")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C32")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -9466,7 +9388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af905e4c-4a33-4274-94d8-589611892987")
-		(property "Reference" "R71"
+		(property "Reference" "R57"
 			(at 207.01 100.965 0)
 			(effects
 				(font
@@ -9502,7 +9424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 204.47 101.6 0)
 			(effects
 				(font
@@ -9548,15 +9470,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2dfc812b-2d11-494b-b41a-ca9c4121b57f")
+			(uuid "c9222e30-966b-4b4e-b086-41a7c1c8143c")
 		)
 		(pin "2"
-			(uuid "e57417ed-2075-4efb-9f32-bd36ca19b7ec")
+			(uuid "90f03f9f-02ac-4012-95db-d716cd9495b0")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R71")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -9572,7 +9494,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0908d35-ce01-4c33-9cb9-11e05392b12a")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR050"
 			(at 170.18 137.16 0)
 			(effects
 				(font
@@ -9617,12 +9539,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "56d6844f-d5e6-4f6b-9741-9e85d3b21353")
+			(uuid "8d3c1bf1-1b2b-48b7-95dc-4840215050fb")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR051")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -9638,7 +9560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7359be7-414c-4087-8846-e48f48f60ed7")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR053"
 			(at 185.42 22.86 0)
 			(effects
 				(font
@@ -9685,12 +9607,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "03573427-250e-44ad-ba73-d857aed85c1e")
+			(uuid "0310d4d6-3d1a-43be-acf6-1bd057697b12")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR054")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -9706,7 +9628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd696e00-1360-48c8-b4df-d55465608f94")
-		(property "Reference" "R67"
+		(property "Reference" "R53"
 			(at 182.88 100.965 0)
 			(effects
 				(font
@@ -9742,7 +9664,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 185.42 101.6 0)
 			(effects
 				(font
@@ -9788,15 +9710,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a644341f-903a-45f5-a96c-a4567743f46c")
+			(uuid "33562518-9895-4471-b9ab-fc39d09681d3")
 		)
 		(pin "2"
-			(uuid "6278acf4-0573-442a-a2da-7acd08afdf5f")
+			(uuid "96bf0a62-24f9-43af-862f-7c29870929d9")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R67")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -9811,7 +9733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5ad0d04-a9de-469d-8445-6a19fdb192f3")
-		(property "Reference" "C27"
+		(property "Reference" "C33"
 			(at 60.96 62.3189 0)
 			(effects
 				(font
@@ -9847,7 +9769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "220µF Molded Tantalum Capacitors 16V 2917 (7343 Metric) 100mOhm @ 100kHz"
+		(property "Description" "Polarized capacitor, small symbol"
 			(at 58.42 63.5 0)
 			(effects
 				(font
@@ -9893,15 +9815,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "02e9ef82-dfed-425c-9a31-beb9e6a52c6c")
+			(uuid "6c7b3a9d-b640-431a-87f7-a09b52f23b57")
 		)
 		(pin "2"
-			(uuid "be0e6044-1533-45da-b1db-3e868e5da63f")
+			(uuid "a6aee1ad-0f2e-4b5c-ad78-dde862eecaba")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C27")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -9916,7 +9838,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cad180d2-329a-4ca0-9443-594c24df67f7")
-		(property "Reference" "TP21"
+		(property "Reference" "TP8"
 			(at 90.17 120.65 0)
 			(effects
 				(font
@@ -9962,12 +9884,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8f2f247b-a714-46d6-a40b-e542483e9935")
+			(uuid "d60458dd-91e3-4c4c-88aa-03b0ebb7ec02")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TP21")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -9983,7 +9905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbe36f46-2ae1-47e5-8f52-3aa741365e7e")
-		(property "Reference" "R59"
+		(property "Reference" "R45"
 			(at 91.44 85.09 0)
 			(effects
 				(font
@@ -10019,7 +9941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 88.9 86.36 0)
 			(effects
 				(font
@@ -10065,15 +9987,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "44cf0ca1-4298-4269-9055-0c50489d9434")
+			(uuid "16c74a58-46e6-45fd-b10e-4ad0dfb554a5")
 		)
 		(pin "2"
-			(uuid "e5c61545-ed30-40ce-a0f6-52631c07b9c8")
+			(uuid "335b20fb-710d-4a9d-a834-a6d958b91347")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R59")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -10088,7 +10010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d69ec8fc-716e-492b-b561-2db2529e681d")
-		(property "Reference" "D12"
+		(property "Reference" "D6"
 			(at 199.39 138.43 0)
 			(effects
 				(font
@@ -10168,15 +10090,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e4e8b318-3db1-4413-b505-d7c535772282")
+			(uuid "517e5f5a-03f7-4b35-843d-a74cd414f3ae")
 		)
 		(pin "2"
-			(uuid "8504830b-3c94-4693-a55e-b5917e22a91c")
+			(uuid "0bc96af4-600b-45b4-b0fa-08d6059cc25e")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "D12")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -10192,7 +10114,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d932123e-8beb-4839-b38c-c95fa4838fef")
-		(property "Reference" "R55"
+		(property "Reference" "R41"
 			(at 26.67 52.705 0)
 			(effects
 				(font
@@ -10228,7 +10150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 Ohms ±1% 0.5W, 1/2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 29.21 53.34 0)
 			(effects
 				(font
@@ -10274,15 +10196,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b482a50-4fe6-4711-b44e-c60796d77e79")
+			(uuid "3bb34ec7-1f44-4af9-b899-9a3a5a904987")
 		)
 		(pin "2"
-			(uuid "2592bcb8-a6bd-4534-930a-106a63fc0467")
+			(uuid "2c267a9d-e20d-4707-a5cd-a95cfce23a45")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R55")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -10297,7 +10219,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc65ec7b-8305-4f28-9e03-55c83e2b278d")
-		(property "Reference" "TP22"
+		(property "Reference" "TP9"
 			(at 134.62 118.11 0)
 			(effects
 				(font
@@ -10343,12 +10265,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "47e0b8eb-721e-446c-a3a4-f6094a4d6860")
+			(uuid "39c7242f-bb98-4e21-997c-dc17edd4845f")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TP22")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -10365,7 +10287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de800292-d7c4-4408-916f-d894fb5d66bd")
-		(property "Reference" "U6"
+		(property "Reference" "U9"
 			(at 220.98 114.3 0)
 			(effects
 				(font
@@ -10497,13 +10419,13 @@
 			(uuid "5f524487-bb38-4260-9450-ed44e9e8f062")
 		)
 		(pin "10"
-			(uuid "d7d59d0e-a76b-48f3-b0a1-6d466c376838")
+			(uuid "70717dc0-2ccf-4099-b971-aa5353b75ccb")
 		)
 		(pin "11"
-			(uuid "2d4e5691-f61b-4540-bf03-55e3776163a8")
+			(uuid "b592aa75-4879-45e8-b9f3-a962b9ff4ded")
 		)
 		(pin "13"
-			(uuid "ae709ed3-59ca-4012-b5c9-4fe9f46c07fd")
+			(uuid "03709cf8-56d9-4a41-ad03-86b6e0f260ef")
 		)
 		(pin "12"
 			(uuid "99abc859-0b55-4cb8-b72c-b258789d4308")
@@ -10514,7 +10436,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "U6")
+					(reference "U9")
 					(unit 4)
 				)
 			)
@@ -10530,7 +10452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e83f1622-d03a-4835-906f-f613b4b7864f")
-		(property "Reference" "R65"
+		(property "Reference" "R51"
 			(at 138.43 116.205 0)
 			(effects
 				(font
@@ -10566,7 +10488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 135.89 116.84 0)
 			(effects
 				(font
@@ -10612,15 +10534,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "76706d46-9884-439f-86f1-aa63ef301fab")
+			(uuid "e01085c5-7f2b-48bb-87c2-ca864ca8e496")
 		)
 		(pin "2"
-			(uuid "d5298ef9-6146-4d8c-afb8-f6cbdffc1ed1")
+			(uuid "fd95b87f-7bbb-45aa-86de-fa61f8c0e247")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R65")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -10635,7 +10557,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8eb9546-0e41-473c-9167-b67ecffc1482")
-		(property "Reference" "TP23"
+		(property "Reference" "TP10"
 			(at 168.91 120.65 0)
 			(effects
 				(font
@@ -10681,12 +10603,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ab7e1b7-40d3-4abf-8652-d449d1ef0ba6")
+			(uuid "f092e6dd-2209-4823-8084-8b4d9ea60c2e")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TP23")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -10702,7 +10624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9906c6c-3736-4fa1-a4ff-9df72dd02e42")
-		(property "Reference" "R66"
+		(property "Reference" "R52"
 			(at 166.37 118.11 90)
 			(effects
 				(font
@@ -10736,7 +10658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 166.37 123.19 0)
 			(effects
 				(font
@@ -10782,15 +10704,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "848e782b-2f5c-4380-8c9d-d06223b5b653")
+			(uuid "2ce7dec0-2e3a-4c9c-9802-643c4195eeb4")
 		)
 		(pin "2"
-			(uuid "68ff6655-87aa-4dc9-a3b8-24ec2d8a02ce")
+			(uuid "8f78114d-5d8e-4d06-bacf-262382703e8d")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R66")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -10807,7 +10729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec586d79-eb88-4a6b-9d91-febc5625041a")
-		(property "Reference" "U6"
+		(property "Reference" "U9"
 			(at 119.38 111.76 0)
 			(effects
 				(font
@@ -10912,13 +10834,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "5f359e2f-370b-49e1-ad64-ed1917289c88")
+			(uuid "b928ac33-1bbe-48cd-b24e-969e0c0329a7")
 		)
 		(pin "4"
-			(uuid "868d6126-a187-4829-a757-68d3543739ab")
+			(uuid "e9ee2d4e-ce43-458f-9f54-8fcf9712b894")
 		)
 		(pin "5"
-			(uuid "1eef5d80-14bc-44c8-b62c-1ab97d94f916")
+			(uuid "70556145-6382-4361-9061-8cc223c9f8e9")
 		)
 		(pin "1"
 			(uuid "150d1eb7-ec19-49a8-bcaf-8c1982d44c97")
@@ -10956,7 +10878,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "U6")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -10972,7 +10894,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eccf52c4-6ee8-4219-8412-4e467958aadf")
-		(property "Reference" "R63"
+		(property "Reference" "R49"
 			(at 106.68 118.11 90)
 			(effects
 				(font
@@ -11006,7 +10928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "Resistor, small US symbol"
 			(at 106.68 123.19 0)
 			(effects
 				(font
@@ -11052,22 +10974,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "d16d0dd2-bcfe-45d3-a2c4-db13e8de0988")
+			(uuid "dade1c80-810c-4d67-a4d3-651e67bcb119")
 		)
 		(pin "2"
-			(uuid "4df8a073-658c-428e-8241-bc54ba3d4eca")
+			(uuid "3a2815be-5518-436c-a022-727a76d77dd8")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "R63")
+					(reference "R49")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 166.37 35.56 0)
 		(unit 1)
@@ -11077,7 +10998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edcef8ad-b67e-4307-8bb1-2c06ea69ac82")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR049"
 			(at 166.37 41.91 0)
 			(effects
 				(font
@@ -11122,12 +11043,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "65db64b7-335a-45f9-a924-bff6c22aaedb")
+			(uuid "f9e9543e-ebf5-49f2-a79a-884a7de2031a")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR050")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -11143,7 +11064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee680afc-51f0-4a06-805f-eeac4fc87888")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR054"
 			(at 217.17 106.68 0)
 			(effects
 				(font
@@ -11188,12 +11109,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ca6ca63-3f0e-4a22-bb03-563ca5f6180a")
+			(uuid "4e5ee67e-1d16-458b-9be5-4ce4b3f62a0a")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR055")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11208,7 +11129,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f8d3e5d6-1d68-418c-a300-dbd528f26653")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR045"
 			(at 88.9 104.14 0)
 			(effects
 				(font
@@ -11253,12 +11174,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2bc1d6d9-6933-4437-bafe-1f948d797554")
+			(uuid "aaa42904-27df-4e72-b8f8-22024223e4ca")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR046")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -11274,7 +11195,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa45d824-9f53-43c8-ace5-6585071b6231")
-		(property "Reference" "C29"
+		(property "Reference" "C35"
 			(at 133.35 123.8186 0)
 			(effects
 				(font
@@ -11310,7 +11231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 135.89 124.46 0)
 			(effects
 				(font
@@ -11356,15 +11277,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "015bae38-c60a-45b1-b141-6515c087b6c7")
+			(uuid "d6d8307f-9847-4114-8ac3-94756f7ab5d7")
 		)
 		(pin "2"
-			(uuid "144c8223-3a3f-4139-be88-d5e350e618e1")
+			(uuid "4bbb3c36-86d8-4514-b87d-81b4bcbdec58")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "C29")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -11380,7 +11301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fef3b292-d6aa-47f5-a278-1da9e3730f75")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR055"
 			(at 238.76 50.8 0)
 			(effects
 				(font
@@ -11427,12 +11348,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "052bc6bd-b65d-4865-828c-cecbb569f1fd")
+			(uuid "9ee07dcc-1a86-4e83-8df1-ab80ab4ed081")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "#PWR056")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
