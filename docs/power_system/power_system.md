@@ -362,7 +362,15 @@ Components to be used are still being finalized, but they are based on the follo
 
             
          - Complete Rev C Schematic:
+            (3/13/25) Mostly Complete:
+               - Discuss EPS connectors to connect subsystems:
+                  -I2C
+                  -V+
+                  -GND
+                  -WD pet inputs
+                  - Using Gecko 8x4
          - Begin EPS Board Layout:
+            
 
 
 

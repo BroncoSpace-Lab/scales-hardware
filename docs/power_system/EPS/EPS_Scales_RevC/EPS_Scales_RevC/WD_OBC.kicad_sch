@@ -507,6 +507,174 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED_Small_Filled"
 			(pin_numbers
 				(hide yes)
@@ -3088,114 +3256,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "oresat-diodes:1N4151WS-HE3"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1N4151WS"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/85847/1n4151ws.pdf"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode 50 V 150mA Surface Mount SOD-323"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4151WS-HE3_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1N4151WS-HE3_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "oresat-ics:TLV1704AIPWR"
 			(pin_names
 				(offset 0.127)
@@ -4168,7 +4228,7 @@
 		)
 		(uuid "96191a8e-530f-45fb-a3e2-746c15bc382e")
 	)
-	(text "D5 and D7 MUST be 1N4151WS"
+	(text "D4 and D6 MUST be 1N4151WS"
 		(exclude_from_sim no)
 		(at 222.504 140.716 0)
 		(effects
@@ -4459,16 +4519,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 140.97) (xy 204.47 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08dab3ba-4174-4320-be1f-8afd454f61ea")
-	)
-	(wire
-		(pts
 			(xy 88.9 90.17) (xy 88.9 91.44)
 		)
 		(stroke
@@ -4536,6 +4586,16 @@
 			(type default)
 		)
 		(uuid "1503f3d2-1666-4185-af65-3f8ce61eff74")
+	)
+	(wire
+		(pts
+			(xy 29.21 49.53) (xy 29.21 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a529a3-5c3e-4cae-a495-72410ff57204")
 	)
 	(wire
 		(pts
@@ -4749,7 +4809,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 36.83) (xy 29.21 44.45)
+			(xy 29.21 36.83) (xy 29.21 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5039,16 +5099,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 49.53) (xy 29.21 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b8ebfd0-75cb-468c-bcb4-93bcac2a40e2")
-	)
-	(wire
-		(pts
 			(xy 58.42 60.96) (xy 58.42 59.69)
 		)
 		(stroke
@@ -5126,6 +5176,16 @@
 			(type default)
 		)
 		(uuid "8f0e5500-b8bb-4152-98fa-3ce9ef969713")
+	)
+	(wire
+		(pts
+			(xy 203.2 140.97) (xy 204.47 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f3fe8f8-67c4-4913-b9dc-b8efebafadf3")
 	)
 	(wire
 		(pts
@@ -5519,6 +5579,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 140.97) (xy 195.58 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e64fd21a-08a6-45dd-8210-e3f5d2b30945")
+	)
+	(wire
+		(pts
 			(xy 195.58 35.56) (xy 195.58 21.59)
 		)
 		(stroke
@@ -5586,16 +5656,6 @@
 			(type default)
 		)
 		(uuid "ef3659dc-546c-4e9a-ab40-93bf023812b9")
-	)
-	(wire
-		(pts
-			(xy 193.04 140.97) (xy 196.85 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef8c35db-ac41-4e1f-aafd-47264939155c")
 	)
 	(polyline
 		(pts
@@ -5677,6 +5737,28 @@
 		)
 		(uuid "5875df8c-67b2-4f7b-803a-39d0592b3e8a")
 	)
+	(global_label "~{WD_TOGGLE_OBC}"
+		(shape input)
+		(at 269.24 133.35 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53a1dcd6-3135-4049-9f6d-7806faac0e32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.24 151.8775 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "J_+5V_Out_1"
 		(shape input)
 		(at 185.42 19.05 0)
@@ -5714,28 +5796,6 @@
 		(uuid "76765dd5-b0d3-4c21-b0b6-d225754e10ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 70.0779 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{TOGGLE_OBC}"
-		(shape input)
-		(at 269.24 133.35 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9daeafc1-d590-4e7a-a86b-197e60e6b039")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.24 148.1885 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9037,8 +9097,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-diodes:1N4151WS-HE3")
-		(at 29.21 46.99 90)
+		(lib_id "Device:D")
+		(at 29.21 45.72 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9047,7 +9107,7 @@
 		(dnp no)
 		(uuid "9ec0eccd-f814-4c0d-ad1f-d5af4ba25f24")
 		(property "Reference" "D4"
-			(at 26.67 46.355 90)
+			(at 20.828 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9056,7 +9116,7 @@
 			)
 		)
 		(property "Value" "1N4151WS"
-			(at 26.67 48.895 90)
+			(at 17.526 42.418 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9065,7 +9125,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 34.29 46.99 0)
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9073,8 +9133,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85847/1n4151ws.pdf"
-			(at 36.83 46.99 0)
+		(property "Datasheet" "~"
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9082,8 +9142,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode Standard 50V 150mA Surface Mount SOD-323"
-			(at 29.21 46.99 0)
+		(property "Description" "Diode"
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9092,7 +9152,7 @@
 			)
 		)
 		(property "DPN" "112-1N4151WS-E3-08CT-ND"
-			(at 29.21 46.99 0)
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9101,7 +9161,7 @@
 			)
 		)
 		(property "DST" "Digi-Key"
-			(at 29.21 46.99 0)
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9110,7 +9170,7 @@
 			)
 		)
 		(property "MFR" "Vishay"
-			(at 29.21 46.99 0)
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9119,7 +9179,25 @@
 			)
 		)
 		(property "MPN" "1N4151WS-E3-08"
-			(at 29.21 46.99 0)
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 29.21 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 29.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10002,8 +10080,8 @@
 		)
 	)
 	(symbol
-		(lib_id "oresat-diodes:1N4151WS-HE3")
-		(at 199.39 140.97 0)
+		(lib_id "Device:D")
+		(at 199.39 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10011,7 +10089,7 @@
 		(dnp no)
 		(uuid "d69ec8fc-716e-492b-b561-2db2529e681d")
 		(property "Reference" "D6"
-			(at 199.39 138.43 0)
+			(at 199.39 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10097,7 @@
 			)
 		)
 		(property "Value" "1N4151WS"
-			(at 200.025 144.145 0)
+			(at 198.755 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10027,7 +10105,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 199.39 146.05 0)
+			(at 199.39 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10035,8 +10113,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85847/1n4151ws.pdf"
-			(at 199.39 148.59 0)
+		(property "Datasheet" "~"
+			(at 199.39 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10044,7 +10122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode Standard 50V 150mA Surface Mount SOD-323"
+		(property "Description" "Diode"
 			(at 199.39 140.97 0)
 			(effects
 				(font
@@ -10081,6 +10159,24 @@
 			)
 		)
 		(property "MPN" "1N4151WS-E3-08"
+			(at 199.39 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 199.39 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 199.39 140.97 0)
 			(effects
 				(font
