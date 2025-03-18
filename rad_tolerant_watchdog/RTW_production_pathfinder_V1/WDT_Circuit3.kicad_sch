@@ -3381,28 +3381,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 11.43 48.26)
-		(end 62.23 82.55)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ec75d4b6-a4d3-43b6-ba08-61aed0fe24f9)
-	)
-	(text "Not Required if Power is Not Crowbarred "
-		(exclude_from_sim no)
-		(at 38.1 80.518 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "048f962f-a66b-4039-8a34-371156533712")
-	)
 	(text "TLV1704AMPWPSEP is the radiation tolerant version.\nUse TLV1704AQPWRQ1 for non-flight C3 boards."
 		(exclude_from_sim no)
 		(at 148.59 163.576 0)
@@ -3561,6 +3539,12 @@
 		(uuid "2c260aa4-055b-4568-9327-c82b37021999")
 	)
 	(junction
+		(at 66.04 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cb2ab5f-6324-4446-8fb8-2a25b488fcd9")
+	)
+	(junction
 		(at 234.95 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3681,6 +3665,16 @@
 			(type default)
 		)
 		(uuid "09c47837-efb3-4136-a84a-f03d730eec4f")
+	)
+	(wire
+		(pts
+			(xy 57.15 81.28) (xy 66.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09fbfab9-cdcb-431f-9fdb-4c7267599347")
 	)
 	(wire
 		(pts
@@ -3861,6 +3855,16 @@
 			(type default)
 		)
 		(uuid "4e771589-a815-49c1-92f5-28a6b10a29ae")
+	)
+	(wire
+		(pts
+			(xy 66.04 63.5) (xy 57.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f755816-25be-461f-a854-46fb9096607c")
 	)
 	(wire
 		(pts
@@ -4274,6 +4278,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 82.55) (xy 66.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0e2b8f5-7ef3-4630-a9ef-1f376d93b5c6")
+	)
+	(wire
+		(pts
 			(xy 87.63 127) (xy 92.71 127)
 		)
 		(stroke
@@ -4294,6 +4308,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 74.93) (xy 57.15 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c10a1c4f-7ca5-41c8-90dd-f79934a472e7")
+	)
+	(wire
+		(pts
 			(xy 200.66 109.22) (xy 200.66 124.46)
 		)
 		(stroke
@@ -4311,6 +4335,16 @@
 			(type default)
 		)
 		(uuid "cbfd3094-4cd0-4608-aed4-e3bc55d4f115")
+	)
+	(wire
+		(pts
+			(xy 57.15 63.5) (xy 57.15 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6a7a47-fc9f-4e60-b74b-cf1cbbf90489")
 	)
 	(wire
 		(pts
@@ -5817,7 +5851,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 66.04 81.28 0)
+		(at 66.04 82.55 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5826,7 +5860,7 @@
 		(dnp no)
 		(uuid "5b8bc717-c8ea-43f1-b41f-e9f181f1afca")
 		(property "Reference" "#PWR047"
-			(at 66.04 87.63 0)
+			(at 66.04 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,7 +5869,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.04 85.09 0)
+			(at 66.04 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,7 +5877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 81.28 0)
+			(at 66.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5852,7 +5886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 81.28 0)
+			(at 66.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5861,7 +5895,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 81.28 0)
+			(at 66.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7161,6 +7195,112 @@
 			(project "RTW_production_pathfinder_V1"
 				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/b6ff866b-b9c1-4b3f-a64e-f65c75cdb898"
 					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 57.15 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b10aba86-e272-44df-a0b1-ff17db13dbda")
+		(property "Reference" "C39"
+			(at 59.69 71.1262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 59.69 73.6662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-12317-1-ND"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRT188R61C106KE13D"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5c045b2-9c0b-49a8-9ccb-fd8666d5db3e")
+		)
+		(pin "2"
+			(uuid "3b2bbf11-117b-4ea4-bba5-691f67cd5de1")
+		)
+		(instances
+			(project "RTW_production_pathfinder_V1"
+				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/b6ff866b-b9c1-4b3f-a64e-f65c75cdb898"
+					(reference "C39")
 					(unit 1)
 				)
 			)

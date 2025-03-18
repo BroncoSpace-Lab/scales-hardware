@@ -3635,6 +3635,12 @@
 		(uuid "e951c3c9-5ded-4af8-b439-074cc1459065")
 	)
 	(junction
+		(at 66.04 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f184bf96-2305-42c8-84c1-3a456829ee32")
+	)
+	(junction
 		(at 132.08 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4032,6 +4038,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 74.93) (xy 57.15 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80d8b134-752e-4922-a748-8d26f3331022")
+	)
+	(wire
+		(pts
 			(xy 182.88 121.92) (xy 181.61 121.92)
 		)
 		(stroke
@@ -4119,6 +4135,16 @@
 			(type default)
 		)
 		(uuid "9ac5de4b-ce98-43f4-bf3d-0ed7838beb93")
+	)
+	(wire
+		(pts
+			(xy 66.04 81.28) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b481fed-aa53-40c6-9f46-6d5804c3a1fe")
 	)
 	(wire
 		(pts
@@ -4292,6 +4318,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 82.55) (xy 66.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd48493-7de9-4cbb-a9de-d2a117274d0d")
+	)
+	(wire
+		(pts
 			(xy 181.61 109.22) (xy 189.23 109.22)
 		)
 		(stroke
@@ -4322,6 +4358,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 63.5) (xy 57.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0572200-1058-4298-abd5-85d932fd9b58")
+	)
+	(wire
+		(pts
 			(xy 189.23 137.16) (xy 181.61 137.16)
 		)
 		(stroke
@@ -4339,16 +4385,6 @@
 			(type default)
 		)
 		(uuid "e200ffeb-ebd8-42bc-b2f4-1b7e318f444f")
-	)
-	(wire
-		(pts
-			(xy 66.04 81.28) (xy 66.04 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e51e48e2-ca59-4ea9-b65e-597c85c3a924")
 	)
 	(wire
 		(pts
@@ -4409,6 +4445,26 @@
 			(type default)
 		)
 		(uuid "f394d4d8-0226-4246-af84-1f4f86a6d163")
+	)
+	(wire
+		(pts
+			(xy 57.15 81.28) (xy 66.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f72e3275-d908-4f45-be84-e4168e36148b")
+	)
+	(wire
+		(pts
+			(xy 57.15 63.5) (xy 57.15 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f76468c6-e582-45bc-82de-d181ec23e0e8")
 	)
 	(wire
 		(pts
@@ -4742,6 +4798,112 @@
 				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/0991a10f-8049-4fa6-be1f-88f50d17bad6"
 					(reference "U1")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 57.15 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "197a1879-09aa-40ee-9549-ecbc5554f45a")
+		(property "Reference" "C38"
+			(at 59.69 71.1262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 59.69 73.6662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "490-12317-1-ND"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Murata"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRT188R61C106KE13D"
+			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3baf080-7e71-4936-94e2-1d9c548d2af8")
+		)
+		(pin "2"
+			(uuid "d41c6b1c-19cd-493e-b8fc-8244fe40e07e")
+		)
+		(instances
+			(project "RTW_production_pathfinder_V1"
+				(path "/1ee67691-a73d-451f-9fc6-f9f8182134e0/0991a10f-8049-4fa6-be1f-88f50d17bad6"
+					(reference "C38")
+					(unit 1)
 				)
 			)
 		)
@@ -5785,7 +5947,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 66.04 81.28 0)
+		(at 66.04 82.55 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5794,7 +5956,7 @@
 		(dnp no)
 		(uuid "5b8bc717-c8ea-43f1-b41f-e9f181f1afca")
 		(property "Reference" "#PWR045"
-			(at 66.04 87.63 0)
+			(at 66.04 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5803,7 +5965,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.04 85.09 0)
+			(at 66.04 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +5973,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 81.28 0)
+			(at 66.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5820,7 +5982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 81.28 0)
+			(at 66.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5829,7 +5991,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 81.28 0)
+			(at 66.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
