@@ -314,9 +314,7 @@ Components to be used are still being finalized, but they are based on the follo
          - Power on first, then worry about syncing
       - Clock: (Need a new selection)
          - Switch to a crytal oscillating clock instead of what is current chosen
->>>>>>> Stashed changes
 
-<<<<<<< Updated upstream
    ## Week of 3/3 ## 
       - Goals:
          - Complete Block Diagram of Rev C [DONE]
@@ -346,31 +344,29 @@ Components to be used are still being finalized, but they are based on the follo
             - Need to implement I2C Program to monitor incoming I/V sensor signals for each subsystem
 
          - Finalize Rev C Component Selection:
-            - Edge Computer: Jetson Orin AGX (20V/8A Out)
-            - Flight Computer: IMX8 (Have a 5v/2A Out)
-            - Peripheral Board: N/A (Have a 5v/1A Out)
+            - Edge Computer: Jetson Orin AGX (20V/6A Out)
+            - Flight Computer: IMX8 (Have a 5v/3A Out)
+            - Peripheral Board: N/A (Have a 5v/2A Out)
 
             - Capacitors: SMD Ceramics
             - Resistors: SMD Wire Wounds
             - Inductors: SMD No-Air Ceramic
          
-            - Load Switche(s): (LTC4365) [https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf] (Im not too convinced on this because it needs an external mosfet)
-               - Require: [SISB46DN-T1-GE3] (https://www.vishay.com/docs/76655/sisb46dn.pdf)
-            - Switching Regulator(s): (LT8638SEV#PBF)[https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D]
-            - Clock: (LTC 6902)[https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf] (Use SSFM)
+            - Load Switche(s): [LTC4365](https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf)
+               - Require: [SISB46DN-T1-GE3](https://www.vishay.com/docs/76655/sisb46dn.pdf)
+            - Switching Regulator(s): [LT8638SEV#PBF](https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D)
+            - Clock: [LTC 6902](https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf) (Use SSFM)
             - I/V Sensor(s): [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1739195723292)
 
             
          - Complete Rev C Schematic:
-            (3/13/25) Mostly Complete:
-               - Discuss EPS connectors to connect subsystems:
-                  -I2C
-                  -V+
-                  -GND
-                  -WD pet inputs
-                  - Using Gecko 8x4
+         
          - Begin EPS Board Layout:
-            
+            PCB Notes:
+               -JLC PCB has specific requirements for manufacturing be sure to check everything needed to make sure it is correct.
+               Check Here[https://jlcpcb.com/capabilities/pcb-capabilities]
+
+               -Each component has specific design constraints so make sure that the component is following its pcb layout design spec
 
 
 
