@@ -368,6 +368,10 @@ Components to be used are still being finalized, but they are based on the follo
 
                -Each component has specific design constraints so make sure that the component is following its pcb layout design spec
 
+               -How should I go about routing?
+                  - So far ive just been connecting nets together and when I cant make a connection from the top plane im just using vias to connect things together through the planes. Not entirely sure if this is how it should be done but it seems to be working so far.
+                  - Latest problem is the SIS mosfet which the pads wont let me do connections to easily
+
 
 
 
