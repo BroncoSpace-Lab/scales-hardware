@@ -1999,6 +1999,12 @@
 		(uuid "ca8eec03-f048-4880-ac2e-205fb785af14")
 	)
 	(junction
+		(at 67.31 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1c46f92-c90a-42ca-88c9-0c114b6a518c")
+	)
+	(junction
 		(at 223.52 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2262,7 +2268,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 60.96) (xy 67.31 60.96)
+			(xy 63.5 60.96) (xy 67.31 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2802,6 +2808,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 58.42) (xy 67.31 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d002f4-9ac5-4448-b735-742e32b84d4d")
+	)
+	(wire
+		(pts
 			(xy 44.45 82.55) (xy 66.04 82.55)
 		)
 		(stroke
@@ -3052,6 +3068,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 58.42) (xy 67.31 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2a46c9f-27c8-425c-84e6-1150cae37827")
+	)
+	(wire
+		(pts
 			(xy 104.14 76.2) (xy 104.14 77.47)
 		)
 		(stroke
@@ -3142,6 +3168,28 @@
 			)
 		)
 	)
+	(global_label "~{OBC_Toggle_OBC}"
+		(shape output)
+		(at 63.5 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "40997146-b84d-4f78-a84b-b857ef3fca05")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.6702 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "+3.3V_OBC_Out"
 		(shape input)
 		(at 219.71 59.69 180)
@@ -3210,7 +3258,7 @@
 	)
 	(global_label "~{OBC_EN}"
 		(shape output)
-		(at 60.96 60.96 180)
+		(at 63.5 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3220,7 +3268,7 @@
 		)
 		(uuid "88cb5755-f42a-42a0-8009-e2316550b07c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.6572 60.96 0)
+			(at 53.1972 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
