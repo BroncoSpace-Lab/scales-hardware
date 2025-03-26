@@ -372,6 +372,11 @@ Components to be used are still being finalized, but they are based on the follo
                   - So far ive just been connecting nets together and when I cant make a connection from the top plane im just using vias to connect things together through the planes. Not entirely sure if this is how it should be done but it seems to be working so far.
                   - Latest problem is the SIS mosfet which the pads wont let me do connections to easily
 
+            - Rev C Dev Board Notes 3/26/25
+               - Ran into some bullshit github issues to be honest I have no fucking clue what the problem is but thankfully I was able to remove the problem by nuking my branch, and pulling from main again and then merging it to main. 
+               - Redid layout for all the components, im happy with what i have right now. Going to go over this and start routing from the beginning. What I will try is doing the jetson subsystem and then trying to copy the same tracks and use multichannel
+               - I also removed the XNOR configuration because it doesnt make sense to add it. Sure it can be useful but on a boot sequence its useless because it can throw me into a infinite boot loop essentially a race condition because its trying to turn on faster than it is triggered off by the first system to power on
+
 
 
 
