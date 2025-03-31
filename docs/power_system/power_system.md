@@ -377,6 +377,13 @@ Components to be used are still being finalized, but they are based on the follo
                - Redid layout for all the components, im happy with what i have right now. Going to go over this and start routing from the beginning. What I will try is doing the jetson subsystem and then trying to copy the same tracks and use multichannel
                - I also removed the XNOR configuration because it doesnt make sense to add it. Sure it can be useful but on a boot sequence its useless because it can throw me into a infinite boot loop essentially a race condition because its trying to turn on faster than it is triggered off by the first system to power on
 
+            -REV C Dev Board To Dos 3/31/25
+               - Gecko Connectors swap to DF11-16DP-2DSA(08) Connector
+                  - Make sure the footprint has the through holes
+               - Add meme to the front of the board
+               - Add schematic layout to the back of the board for dev purposes
+               - Test WD kit Michael made on the scope, test with different voltage ranges
+
 
 
 
