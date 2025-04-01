@@ -377,13 +377,54 @@ Components to be used are still being finalized, but they are based on the follo
                - Redid layout for all the components, im happy with what i have right now. Going to go over this and start routing from the beginning. What I will try is doing the jetson subsystem and then trying to copy the same tracks and use multichannel
                - I also removed the XNOR configuration because it doesnt make sense to add it. Sure it can be useful but on a boot sequence its useless because it can throw me into a infinite boot loop essentially a race condition because its trying to turn on faster than it is triggered off by the first system to power on
 
-            -REV C Dev Board To Dos 3/31/25
-               - Gecko Connectors swap to DF11-16DP-2DSA(08) Connector
+         ## Week of 3/31/25 ##
+            -REV C Dev Board To Do's 3/31/25
+               - Gecko Connectors swap to DF11-16DP-2DSA(08) Connector [DONE]
                   - Make sure the footprint has the through holes
                - Add meme to the front of the board
                - Add schematic layout to the back of the board for dev purposes
                - Test WD kit Michael made on the scope, test with different voltage ranges
 
+            -REV C Dev Board Revision Suggestions from Andrew Greenberg (4/1/25)
+               Main Concerns:
+               - Stop working on layout so you dont waste your time [DONE]
+               - Rename +28V as Vbatt and display voltage ranges (Vbatt = [24.0, 28.8, 33.6]) [DONE]
+                  -Reconfigure the UV and OV numbers to allow for this voltage range [DONE]
+                     - Modify in the calculations page (be sure to note the numbers) 
+               - 100nF caps on +28V inputs can be removed due to 10uF [DONE]
+               - Ensure the capacitors are +75v rated so they dont explode at the input side [DONE]
+                  -Must be ceramic [DONE]
+                  -Must be around double of what the peak input voltage is for safe margins [DONE]
+
+               SISB46DN: [DONE]
+                  -Replace symbol with 2 MOSFETS so that the end user can understand what the schematic actually represents
+               INA230:
+                  -Calculate proper resistor values for the INA230 voltage and current detection [DONE] (In rev c calcs last page)
+                  -Remove 4.7k resistors on the INA230 side, you want to include them on the host side, be sure to add these notes in the schematic [DONE]
+         
+               -Physical Design Revision Notes:
+                  -For each component go to its manufacturing page and make note of all the component types that are used for the individual designs, this means that the devices that are used for each are recommended by the manufacturer in the evaluation board.
+
+                  -Replace the footprints for all the inductors to ensure they have the proper current ratings and also have proper spacing for additions to it on the board.
+
+                  Manufacturer recommended components around subsystem comcponents: [DONE]
+                     LTC4365:
+                           -No hard restrictions on component selection for those that will go around it
+                           -Worth adding test points to the UV/OV side to see the values it should trip at
+                     LS8638SEV: 
+                           -Use +50v rated ceramic caps, 3225 metric packages
+                           -Use this kind of inductor: https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA
+                           this is the one referenced in the evaluation board. Having trouble finding the footprint for the right sizing
+                     INA230: No specifics on what caps or resistors to use, go with ceramic caps and carbon/ceramic resistors as usual
+                     LTC6902:
+                           -No strict requirements on what type of components are used with it
+
+                Watchdogs:
+                  -Probe C19 and C20 as well as the 100k resistor.
+                  -Worth doing circuit analysis on to make out mathematically what is going on in the circuit
+               
+               Extra Stuff:
+                  -For the OBC SDA/SCL, we need to include an i2c buffer to ensure proper signaling, for this we can use the    LTC4300A
 
 
 
