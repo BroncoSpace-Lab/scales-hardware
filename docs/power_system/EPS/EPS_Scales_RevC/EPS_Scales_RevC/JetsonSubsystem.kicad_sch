@@ -547,20 +547,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jetson_Dummy:Jetson_Dummy"
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 9.652 8.636 0)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -568,6 +575,24 @@
 				)
 			)
 			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
 				(at 0 0 0)
 				(effects
 					(font
@@ -576,7 +601,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
 				(effects
 					(font
@@ -585,7 +610,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -594,10 +619,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Jetson_Dummy_0_1"
-				(rectangle
-					(start -11.43 10.16)
-					(end 11.43 -2.54)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
 					(stroke
 						(width 0)
 						(type default)
@@ -607,19 +632,11 @@
 					)
 				)
 			)
-			(symbol "Jetson_Dummy_1_1"
-				(text "Jetson_Dummy\n"
-					(at -4.064 8.636 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
+			(symbol "TestPoint_1_1"
 				(pin passive line
-					(at -13.97 5.08 0)
+					(at 0 0 90)
 					(length 2.54)
-					(name "+20V"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -627,78 +644,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -13.97 2.54 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 13.97 5.08 180)
-					(length 2.54)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 13.97 2.54 180)
-					(length 2.54)
-					(name "GPIO_~{SHDN}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 13.97 0 180)
-					(length 2.54)
-					(name "J_WD_PET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -911,22 +856,6 @@
 		(color 0 0 0 0)
 		(uuid "f50a1152-4b07-42b7-ba89-3409a33cac54")
 	)
-	(no_connect
-		(at 127 57.15)
-		(uuid "1560b022-f5e8-4603-b9db-331f6947931f")
-	)
-	(no_connect
-		(at 127 62.23)
-		(uuid "1ef9c7ed-2e88-49b2-ad18-ecf769b7ea65")
-	)
-	(no_connect
-		(at 127 59.69)
-		(uuid "4f52555c-7f4c-4793-b12a-620b607b90c4")
-	)
-	(no_connect
-		(at 127 54.61)
-		(uuid "e4d12fe4-df2f-439d-bbab-0935d16e446d")
-	)
 	(wire
 		(pts
 			(xy 101.6 63.5) (xy 101.6 64.77)
@@ -959,13 +888,13 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 36.83) (xy 132.08 36.83)
+			(xy 127 62.23) (xy 128.27 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24e6e20c-fb80-457f-b11c-368f1024064a")
+		(uuid "2dd0ea7f-9d0f-44c6-8f2a-73802c775c14")
 	)
 	(wire
 		(pts
@@ -989,6 +918,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 59.69) (xy 128.27 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30f522d0-f200-41ae-89ca-3a38f1406a3e")
+	)
+	(wire
+		(pts
 			(xy 127 49.53) (xy 130.81 49.53)
 		)
 		(stroke
@@ -999,13 +938,23 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 31.75) (xy 100.33 31.75)
+			(xy 127 57.15) (xy 128.27 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f4d8c29-50dd-47b2-a0f2-5187e70c1c70")
+		(uuid "4f633850-74dd-4314-bfd8-ca10e4c66626")
+	)
+	(wire
+		(pts
+			(xy 127 54.61) (xy 128.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53358e58-5193-46c5-b4b4-7167e5e35b81")
 	)
 	(wire
 		(pts
@@ -1079,16 +1028,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 36.83) (xy 99.06 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae171bc3-2a01-4f0f-909d-664f4168a523")
-	)
-	(wire
-		(pts
 			(xy 96.52 63.5) (xy 96.52 66.04)
 		)
 		(stroke
@@ -1109,26 +1048,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 31.75) (xy 132.08 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb6fa146-53d1-4e35-afc8-2e94af3180e0")
-	)
-	(wire
-		(pts
-			(xy 128.27 34.29) (xy 132.08 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4c5c867-38c6-47f3-9cea-83e37a5cf3ed")
-	)
-	(wire
-		(pts
 			(xy 96.52 63.5) (xy 101.6 63.5)
 		)
 		(stroke
@@ -1136,16 +1055,6 @@
 			(type default)
 		)
 		(uuid "e188424b-fb94-4a62-b021-066d8c525565")
-	)
-	(wire
-		(pts
-			(xy 99.06 34.29) (xy 100.33 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea5bad8c-6645-4904-a11c-0f2af40212cf")
 	)
 	(wire
 		(pts
@@ -1182,30 +1091,6 @@
 		(uuid "2fe7dbd5-cc64-4242-a1b6-17aa4a867966")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.3296 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "WDT_WDI_Jetson"
-		(shape output)
-		(at 132.08 36.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "6c4e96e9-b381-48e4-9306-9d2de30ca14f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.5996 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1259,149 +1144,6 @@
 			)
 		)
 	)
-	(global_label "~{J_TOGGLE_Jetson}"
-		(shape output)
-		(at 132.08 34.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dddc275f-d6ae-413c-9275-ec1ae3b4ebef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.0912 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+5V_Jetson"
-		(shape output)
-		(at 132.08 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e1db0c08-7482-421d-a4c8-9530fe771c64")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.0113 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+20V_Jetson"
-		(shape output)
-		(at 93.98 31.75 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f4cf95d0-b9c0-48a7-9192-b541f380525a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.8392 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jetson_Dummy:Jetson_Dummy")
-		(at 114.3 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "1aaf0cd0-14d0-4bbe-b9ea-88cff8fe9adf")
-		(property "Reference" "U3"
-			(at 114.3 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 114.3 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
-			(at 114.3 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Necessary EPS connections to and from Jetson"
-			(at 114.3 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "33b841d3-2fee-4aca-9ff7-fae2f28b1899")
-		)
-		(pin "3"
-			(uuid "b9ed8295-94a7-4616-999a-f83fd41cdc75")
-		)
-		(pin "4"
-			(uuid "fcbd060e-ee73-4416-9054-c29af4b1e779")
-		)
-		(pin "2"
-			(uuid "00f304b8-dbb4-4680-9a6f-0559d1294129")
-		)
-		(pin "5"
-			(uuid "546dfb6c-c0f6-4987-8bce-49fe13858ce3")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "16 Pin Gecko Male Connector:G125-MH11605L3P")
 		(at 114.3 59.69 0)
@@ -1412,12 +1154,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bae3b9f-c5f5-47d1-ba1d-3d75b07822e7")
-		(property "Reference" "J11"
+		(property "Reference" "J6"
 			(at 114.3 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "G125-MH11605L3P"
@@ -1517,24 +1260,42 @@
 		(instances
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "J11")
+					(reference "J6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 99.06 36.83 0)
+		(lib_id "Connector:TestPoint")
+		(at 128.27 62.23 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41e237e4-7a98-435c-84f5-0081f9382b95")
-		(property "Reference" "#PWR010"
-			(at 99.06 43.18 0)
+		(uuid "6d79f59f-29fd-428a-9d46-4068352e8e01")
+		(property "Reference" "TP4"
+			(at 133.096 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 128.27 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1542,16 +1303,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 99.06 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 36.83 0)
+		(property "Datasheet" "~"
+			(at 128.27 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,17 +1312,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 99.06 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 36.83 0)
+		(property "Description" "test point"
+			(at 128.27 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1578,12 +1322,146 @@
 			)
 		)
 		(pin "1"
-			(uuid "994a2afd-835e-4308-8796-21b86756757b")
+			(uuid "a0506f56-2c88-45cc-9213-8f1919e8682a")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR010")
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 57.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70c074e8-8adf-4333-8716-eb2ede3ff786")
+		(property "Reference" "TP2"
+			(at 133.096 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 128.27 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae6188ae-ae6f-4f4e-bdf4-720a30587745")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90395f3a-97f8-4896-a1c5-7cf87f1c6a2c")
+		(property "Reference" "TP3"
+			(at 133.096 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 60.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 128.27 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79bfd7c4-c5c0-44d0-bf47-9153f26326ad")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -1599,7 +1477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d32b3136-b7e5-4b51-b472-3e8b4b341b85")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR03"
 			(at 96.52 72.39 0)
 			(effects
 				(font
@@ -1649,7 +1527,74 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR077")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d642d64e-4fbe-4066-b40d-84287da903e2")
+		(property "Reference" "TP1"
+			(at 133.096 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 55.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 128.27 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc264a27-1c91-4fdd-8dd3-6c49e7adc129")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -1698,7 +1643,7 @@
 		)
 	)
 	(sheet
-		(at 158.496 26.416)
+		(at 102.616 21.971)
 		(size 24.13 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1714,7 +1659,7 @@
 		)
 		(uuid "d0afb0f4-2d97-42f4-b222-184f059f2629")
 		(property "Sheetname" "WD_Jetson"
-			(at 158.496 25.7044 0)
+			(at 102.616 21.2594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1723,7 +1668,7 @@
 			)
 		)
 		(property "Sheetfile" "WD_Jetson.kicad_sch"
-			(at 158.496 44.7806 0)
+			(at 102.616 40.3356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
