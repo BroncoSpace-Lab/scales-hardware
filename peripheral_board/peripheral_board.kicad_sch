@@ -9777,6 +9777,18 @@
 		(uuid 1a98836b-4b10-452d-9a5d-c56982d8833f)
 	)
 	(rectangle
+		(start 199.39 401.32)
+		(end 243.84 419.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 27fce106-3127-47f8-aa24-63869c37e26f)
+	)
+	(rectangle
 		(start 210.82 107.95)
 		(end 231.14 132.08)
 		(stroke
@@ -10043,7 +10055,7 @@
 	)
 	(text "Reset\n"
 		(exclude_from_sim no)
-		(at 207.772 403.606 0)
+		(at 229.362 403.606 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10201,6 +10213,16 @@
 		)
 		(uuid "b0efb4e2-f90c-4efa-9521-934c7e14ba95")
 	)
+	(text "Should this be coupled with ~{RESET}"
+		(exclude_from_sim no)
+		(at 217.17 417.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b1e1c0e8-aeb1-4ca4-aaae-46f689502d55")
+	)
 	(text "INT"
 		(exclude_from_sim no)
 		(at 291.084 492.252 0)
@@ -10221,7 +10243,7 @@
 		)
 		(uuid "b770aeb2-f66f-4ef4-81d0-91d0a81703e8")
 	)
-	(text "Can remove the 100nf caps"
+	(text "Can remove the 100nf caps\nAccording to Andrew"
 		(exclude_from_sim no)
 		(at 265.938 18.288 0)
 		(effects
@@ -10300,7 +10322,7 @@
 		(uuid "0d9ba5d5-0326-41c5-9350-32c3120e5da0")
 	)
 	(junction
-		(at 218.44 412.75)
+		(at 240.03 412.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e0009a0-5e27-4686-a95d-9c7a76ab5924")
@@ -10408,7 +10430,7 @@
 		(uuid "35e43e5c-0179-4d02-9e70-7bf8c8271685")
 	)
 	(junction
-		(at 198.12 412.75)
+		(at 219.71 412.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37ba51ca-34a2-44b4-8b65-7692dc37a592")
@@ -10618,7 +10640,7 @@
 		(uuid "8392e260-a800-4c03-bd10-97ff31b5cc21")
 	)
 	(junction
-		(at 198.12 407.67)
+		(at 219.71 407.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84a55d8a-9ebc-4622-8c0d-df2e00bc5837")
@@ -12065,7 +12087,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 412.75) (xy 198.12 407.67)
+			(xy 219.71 412.75) (xy 219.71 407.67)
 		)
 		(stroke
 			(width 0)
@@ -12115,7 +12137,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 412.75) (xy 179.07 412.75)
+			(xy 170.18 412.75) (xy 200.66 412.75)
 		)
 		(stroke
 			(width 0)
@@ -12365,7 +12387,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 412.75) (xy 218.44 407.67)
+			(xy 240.03 412.75) (xy 240.03 407.67)
 		)
 		(stroke
 			(width 0)
@@ -13225,7 +13247,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 412.75) (xy 190.5 412.75)
+			(xy 208.28 412.75) (xy 212.09 412.75)
 		)
 		(stroke
 			(width 0)
@@ -13532,16 +13554,6 @@
 			(type default)
 		)
 		(uuid "c46d9727-27c1-445a-86ba-f5ffab1196ee")
-	)
-	(wire
-		(pts
-			(xy 107.95 138.43) (xy 121.92 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4d11fb6-2415-4df6-a787-ba86ab63a9e8")
 	)
 	(wire
 		(pts
@@ -14045,16 +14057,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 140.97) (xy 121.92 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feac0184-b6a2-4080-8dc5-13255fb6b1c0")
-	)
-	(wire
-		(pts
 			(xy 414.02 66.04) (xy 440.69 66.04)
 		)
 		(stroke
@@ -14393,16 +14395,6 @@
 		)
 		(uuid "76895b97-ae80-42ab-92fa-893d52421785")
 	)
-	(label "A3"
-		(at 121.92 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "778522cd-7345-4ed3-a302-8beae0060ba8")
-	)
 	(label "QSPI_SCLK"
 		(at 29.21 81.28 0)
 		(effects
@@ -14422,16 +14414,6 @@
 			(justify left bottom)
 		)
 		(uuid "8875d056-73fa-46ab-9326-8d19f1fc0e5e")
-	)
-	(label "A2"
-		(at 121.92 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8b1423f5-1d05-492b-bbaf-04b0c41dcb1d")
 	)
 	(label "~{RESET}"
 		(at 34.29 118.11 0)
@@ -15165,7 +15147,7 @@
 			)
 		)
 	)
-	(global_label "SPIO_CS1"
+	(global_label "SPI0_CS1"
 		(shape output)
 		(at 107.95 133.35 0)
 		(fields_autoplaced yes)
@@ -15177,7 +15159,7 @@
 		)
 		(uuid "36bf2ad6-90d7-4bbe-9486-dac9ed325946")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.0066 133.35 0)
+			(at 119.8856 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17063,8 +17045,8 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 255.27 444.5 180)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0373db69-7b0f-47a8-9eea-12e476fe9e8e")
@@ -17277,7 +17259,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 225.552 77.47 0)
+			(at 224.536 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19576,8 +19558,8 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 421.64 44.45 90)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "23e9c3cd-901e-4e28-9a25-60653bc5cf0c")
@@ -20781,7 +20763,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 182.88 412.75 270)
+		(at 204.47 412.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20789,7 +20771,7 @@
 		(dnp no)
 		(uuid "374f4b78-7034-4177-8653-c7176d85097f")
 		(property "Reference" "R52"
-			(at 182.88 410.464 90)
+			(at 204.47 410.464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20797,7 +20779,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 182.88 408.94 90)
+			(at 204.47 408.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20805,7 +20787,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 182.626 413.766 90)
+			(at 204.216 413.766 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20814,7 +20796,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.88 412.75 0)
+			(at 204.47 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20823,7 +20805,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 182.88 412.75 0)
+			(at 204.47 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23250,7 +23232,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 412.75 0)
+		(at 240.03 412.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23258,7 +23240,7 @@
 		(dnp no)
 		(uuid "5878abe3-e81d-4a14-9946-5a93529927f5")
 		(property "Reference" "#PWR0113"
-			(at 218.44 419.1 0)
+			(at 240.03 419.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23267,7 +23249,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 218.44 416.56 0)
+			(at 240.03 416.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23275,7 +23257,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 412.75 0)
+			(at 240.03 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23284,7 +23266,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 412.75 0)
+			(at 240.03 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23293,7 +23275,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 412.75 0)
+			(at 240.03 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28037,8 +28019,8 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 430.53 44.45 90)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8f221b91-fa94-4812-9da0-e0a74592b82a")
@@ -28434,7 +28416,7 @@
 	)
 	(symbol
 		(lib_id "easyeda2kicad:EVPAA602W")
-		(at 208.28 410.21 0)
+		(at 229.87 410.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28442,7 +28424,7 @@
 		(dnp no)
 		(uuid "91355873-3b1a-4393-8d17-be9d1fd9841c")
 		(property "Reference" "SW3"
-			(at 206.248 405.384 0)
+			(at 227.838 405.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28451,7 +28433,7 @@
 			)
 		)
 		(property "Value" "EVPAA602W"
-			(at 202.692 415.29 0)
+			(at 224.282 415.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28460,7 +28442,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:KEY-TH_4P-L3.5-W4.9-P2.80-LS4.3"
-			(at 208.28 420.37 0)
+			(at 229.87 420.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28469,7 +28451,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_PANASONIC_EVPAA602W_Switch-3-5-2-9-1-7Plastic-head-3-5N-0-15mm-SMD_C79148.html"
-			(at 208.28 422.91 0)
+			(at 229.87 422.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28478,7 +28460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.28 410.21 0)
+			(at 229.87 410.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28487,7 +28469,7 @@
 			)
 		)
 		(property "LCSC Part" "C79148"
-			(at 208.28 425.45 0)
+			(at 229.87 425.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28781,7 +28763,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 198.12 407.67 0)
+		(at 219.71 407.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28789,7 +28771,7 @@
 		(dnp no)
 		(uuid "948ae96e-3edc-41e4-8a14-0dff32fcb685")
 		(property "Reference" "TP3"
-			(at 195.326 404.368 0)
+			(at 216.916 404.368 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28797,7 +28779,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 193.04 406.146 0)
+			(at 214.63 406.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28805,7 +28787,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 407.67 0)
+			(at 224.79 407.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28814,7 +28796,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 407.67 0)
+			(at 224.79 407.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28823,7 +28805,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 198.12 407.67 0)
+			(at 219.71 407.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29346,7 +29328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+1V2"
+		(property "Value" "V1.2D"
 			(at 172.974 488.95 90)
 			(effects
 				(font
@@ -29679,7 +29661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+1V2"
+		(property "Value" "V1.2D"
 			(at 172.974 410.21 90)
 			(effects
 				(font
@@ -30241,7 +30223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+1V2"
+		(property "Value" "V1.2A"
 			(at 106.426 392.43 90)
 			(effects
 				(font
@@ -30856,8 +30838,8 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 264.16 458.47 180)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b473a55a-a721-4848-bb8b-243bacca6d32")
@@ -31319,8 +31301,8 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 439.42 44.45 90)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "bc9773a9-fb00-45f5-9d30-fc769c7fc855")
@@ -33762,7 +33744,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 194.31 412.75 180)
+		(at 215.9 412.75 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33770,7 +33752,7 @@
 		(dnp no)
 		(uuid "d83bf237-5bd7-42d4-9f6a-811caf4b6bbe")
 		(property "Reference" "D9"
-			(at 189.992 411.988 0)
+			(at 211.582 411.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33779,7 +33761,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 194.056 414.274 0)
+			(at 215.646 414.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33788,7 +33770,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323F"
-			(at 194.31 412.75 0)
+			(at 215.9 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33797,7 +33779,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 412.75 0)
+			(at 215.9 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33806,7 +33788,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 194.31 412.75 0)
+			(at 215.9 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33815,7 +33797,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 194.31 412.75 0)
+			(at 215.9 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33824,7 +33806,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 194.31 412.75 0)
+			(at 215.9 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34050,8 +34032,8 @@
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 242.57 21.59 90)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "da43f330-7b30-477e-aeb3-29d5d14c826d")
@@ -36219,7 +36201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+1V2"
+		(property "Value" "V1.2D"
 			(at 106.426 455.93 90)
 			(effects
 				(font
