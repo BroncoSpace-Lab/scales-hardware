@@ -2081,27 +2081,6 @@
 		)
 		(uuid "17962c6c-88dd-48ba-a14a-b1622fafa880")
 	)
-	(text "Backup 5V Bias"
-		(exclude_from_sim no)
-		(at 267.716 53.848 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "215fbd7c-4d4a-4054-9a09-f50bdb3dd9dc")
-	)
-	(text "Pull-up on battery pack to Vbus"
-		(exclude_from_sim no)
-		(at 228.6 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2adaba32-cac1-4587-bc21-023ede6845c7")
-	)
 	(text "Oscillator"
 		(exclude_from_sim no)
 		(at 190.5 147.32 0)
@@ -2123,6 +2102,16 @@
 			(justify left bottom)
 		)
 		(uuid "37f0d495-87fa-405f-ad98-539833e54986")
+	)
+	(text "Pulled low so it can be triggered on by WD or OBC"
+		(exclude_from_sim no)
+		(at 252.73 117.856 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "477dc44f-ed41-4b07-aa14-abb622a656ca")
 	)
 	(text "Disable shutdown during\ninitial power up."
 		(exclude_from_sim no)
@@ -2254,12 +2243,6 @@
 			(justify left bottom)
 		)
 		(uuid "f383ae4b-94ee-4261-9da8-3c2effe4837a")
-	)
-	(junction
-		(at 238.76 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "052d9b97-ad5e-4507-9613-b54c9972f60e")
 	)
 	(junction
 		(at 102.87 123.19)
@@ -2469,16 +2452,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 44.45) (xy 257.81 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04ee1134-9fba-4360-a5d7-188e4c8de649")
-	)
-	(wire
-		(pts
 			(xy 58.42 59.69) (xy 68.58 59.69)
 		)
 		(stroke
@@ -2626,6 +2599,16 @@
 			(type default)
 		)
 		(uuid "1de9bc7a-b942-48ee-a9de-bbc574a22c34")
+	)
+	(wire
+		(pts
+			(xy 238.76 123.19) (xy 238.76 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22323f67-e923-4412-a314-6a79ea84424e")
 	)
 	(wire
 		(pts
@@ -2889,16 +2872,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 63.5) (xy 238.76 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5853fd0c-c3aa-4e8c-8653-86c4b416d379")
-	)
-	(wire
-		(pts
 			(xy 88.9 88.9) (xy 88.9 90.17)
 		)
 		(stroke
@@ -2986,16 +2959,6 @@
 			(type default)
 		)
 		(uuid "669d1ce4-46df-48bd-82fe-2f672d3b0362")
-	)
-	(wire
-		(pts
-			(xy 257.81 63.5) (xy 238.76 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67d3b387-c6a9-4891-8d3b-74702443542d")
 	)
 	(wire
 		(pts
@@ -3139,16 +3102,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 57.15) (xy 257.81 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8eef0821-81c5-4a95-9c52-929fa1b2d06a")
-	)
-	(wire
-		(pts
 			(xy 135.89 120.65) (xy 135.89 119.38)
 		)
 		(stroke
@@ -3236,16 +3189,6 @@
 			(type default)
 		)
 		(uuid "9ae0a7dd-b1cd-43a8-8d5a-a34e02b16fb2")
-	)
-	(wire
-		(pts
-			(xy 238.76 77.47) (xy 238.76 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d00f3ae-b742-4910-b714-70145b287eec")
 	)
 	(wire
 		(pts
@@ -3549,16 +3492,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 43.18) (xy 238.76 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5398a89-59a0-4978-a2bc-3e2e317b16d8")
-	)
-	(wire
-		(pts
 			(xy 204.47 99.06) (xy 204.47 59.69)
 		)
 		(stroke
@@ -3626,6 +3559,16 @@
 			(type default)
 		)
 		(uuid "edacebe6-ff0f-4dc9-ab06-7516585894b9")
+	)
+	(wire
+		(pts
+			(xy 238.76 137.16) (xy 238.76 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef1cf0c9-138a-4593-b4f4-5630924ac029")
 	)
 	(wire
 		(pts
@@ -3757,50 +3700,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+5V_Jetson"
-		(shape input)
-		(at 238.76 43.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "73e63616-9efa-4539-b718-b25f54916b58")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 252.6913 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+5V_Jetson"
-		(shape input)
-		(at 257.81 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9dd83b70-664a-48a2-8669-7a23bb38b81a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 271.7413 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4063,74 +3962,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 257.81 53.34 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "12957b3e-e018-4554-8d26-7ee96fc7645b")
-		(property "Reference" "JP1"
-			(at 255.016 53.594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 271.78 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
-			(at 257.81 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 257.81 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 257.81 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec5fcfe3-a66e-4cbc-9919-bc277db057ac")
-		)
-		(pin "2"
-			(uuid "ca8dd73f-3c35-47c7-a209-d20c3101cc04")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 195.58 40.64 270)
 		(unit 1)
@@ -4199,6 +4030,137 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 238.76 134.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c88f30e-c18b-4aa0-a31d-74c96fd2c34e")
+		(property "Reference" "R81"
+			(at 241.3 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 241.3 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT100KCT-ND"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Stackpole Electronics Inc"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT100K"
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" ""
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" ""
+			(at 238.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c70fdfe6-3365-422c-aac0-a00e8721fea6")
+		)
+		(pin "2"
+			(uuid "6381ca87-ed00-4836-88e2-e2ee11e4e757")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "R81")
 					(unit 1)
 				)
 			)
@@ -7564,137 +7526,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 238.76 74.93 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8b26ead-6d2f-41b6-8c7c-b1a9d6dacec6")
-		(property "Reference" "R18"
-			(at 241.3 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k"
-			(at 241.3 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "RMCF0603FT100KCT-ND"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DST" "Digi-Key"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Stackpole Electronics Inc"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RMCF0603FT100K"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" ""
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power Rating" ""
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e98c6d35-a5f3-4f0e-a3f1-d3c67ba931ff")
-		)
-		(pin "2"
-			(uuid "02b5e40b-17d0-4eec-9a31-b35502a4a3fb")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "TestPointWD:Test-Point-0.75mm-th")
 		(at 78.74 59.69 0)
 		(unit 1)
@@ -8322,6 +8153,72 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "TPw6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d58e7cf1-0353-4779-9b35-8d97a224e491")
+		(property "Reference" "#PWR085"
+			(at 238.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef7e879e-81ce-4897-a281-98e56b98663e")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
