@@ -5,6 +5,113 @@
 	(uuid "0708241a-b704-4105-ad0c-fe0d857b7141")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -1761,90 +1868,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TestPointWD:Test-Point-0.75mm-th"
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "TPw"
-				(at -1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TestPoint-MinTH"
-				(at 0 6.985 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Test-Point-0.75mm-th_1_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 0)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Test-Point-0.75mm-th_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2103,15 +2126,15 @@
 		)
 		(uuid "37f0d495-87fa-405f-ad98-539833e54986")
 	)
-	(text "Pulled low so it can be triggered on by WD or OBC"
+	(text "Backup 5V Bias"
 		(exclude_from_sim no)
-		(at 252.73 117.856 0)
+		(at 268.986 53.848 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "477dc44f-ed41-4b07-aa14-abb622a656ca")
+		(uuid "4acd5d0d-858e-4c12-9a6b-7f42c63b9b29")
 	)
 	(text "Disable shutdown during\ninitial power up."
 		(exclude_from_sim no)
@@ -2244,6 +2267,26 @@
 		)
 		(uuid "f383ae4b-94ee-4261-9da8-3c2effe4837a")
 	)
+	(text_box "For comparator 3,Vref set at V+ by R network. When Node at V- is charged passed V+, the output pulls to gnd.\nFor comparator 4, Vref set by V-, when V+ > V-, pulled high at the output with reference voltage. When V+ < V-, pulls to GND, sinks current\n\n"
+		(exclude_from_sim no)
+		(at 147.955 78.74 0)
+		(size 29.21 29.21)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7bafcecc-f257-47be-9648-40820b4a417b")
+	)
 	(junction
 		(at 102.87 123.19)
 		(diameter 0)
@@ -2299,6 +2342,12 @@
 		(uuid "2ea81cd0-960f-4821-8b77-8ce1d69080fe")
 	)
 	(junction
+		(at 240.03 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "319c1e8b-74d5-436b-8d46-7035cb15d56b")
+	)
+	(junction
 		(at 185.42 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2317,10 +2366,22 @@
 		(uuid "3a7de17f-5ef1-4970-a83c-7782ed2003f9")
 	)
 	(junction
+		(at 240.03 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c7daffc-3023-453a-a24c-3a00c326423e")
+	)
+	(junction
 		(at 172.72 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f12cb8e-e15e-4101-acc2-10ddd9316fc9")
+	)
+	(junction
+		(at 80.01 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53bbb238-8897-4ae8-8e65-b51bed302fb8")
 	)
 	(junction
 		(at 135.89 59.69)
@@ -2371,16 +2432,16 @@
 		(uuid "778ede4d-d261-4187-8302-032c60f6ba1d")
 	)
 	(junction
+		(at 175.26 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81fba21b-55be-495d-a15b-f48467197af9")
+	)
+	(junction
 		(at 69.85 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "829e354b-22f6-4496-a359-6457d9ebd075")
-	)
-	(junction
-		(at 78.74 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90ffd529-3eef-40a7-9156-0fd558547c0b")
 	)
 	(junction
 		(at 170.18 123.19)
@@ -2407,6 +2468,12 @@
 		(uuid "b61dbaa1-f396-48d3-83cb-7243c418d613")
 	)
 	(junction
+		(at 140.97 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1547db5-04a0-440c-b19e-868a0acf10af")
+	)
+	(junction
 		(at 135.89 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2419,10 +2486,10 @@
 		(uuid "c7850cf9-2859-4941-a03a-8f9d569cb0e4")
 	)
 	(junction
-		(at 238.76 123.19)
+		(at 208.28 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f0be41e7-ae19-410c-a7c3-3e54cc58787b")
+		(uuid "e2719bc9-8185-4ea0-9b90-de47ace92a57")
 	)
 	(junction
 		(at 88.9 82.55)
@@ -2552,7 +2619,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 147.32 120.65)
+			(xy 204.47 120.65) (xy 208.28 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18184fd8-9a62-4ea1-95fd-dd48038017b0")
+	)
+	(wire
+		(pts
+			(xy 135.89 120.65) (xy 140.97 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2569,6 +2646,16 @@
 			(type default)
 		)
 		(uuid "1a64d8a1-4ee2-4c24-b991-bff9ef568d9f")
+	)
+	(wire
+		(pts
+			(xy 140.97 120.65) (xy 147.32 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d394f41-606d-4a67-aecc-d0f18c25c970")
 	)
 	(wire
 		(pts
@@ -2599,16 +2686,6 @@
 			(type default)
 		)
 		(uuid "1de9bc7a-b942-48ee-a9de-bbc574a22c34")
-	)
-	(wire
-		(pts
-			(xy 238.76 123.19) (xy 238.76 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22323f67-e923-4412-a314-6a79ea84424e")
 	)
 	(wire
 		(pts
@@ -2709,16 +2786,6 @@
 			(type default)
 		)
 		(uuid "356f25dc-2b10-4567-8c67-9c9cad9ec249")
-	)
-	(wire
-		(pts
-			(xy 238.76 123.19) (xy 269.24 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "365fcf76-38fd-430c-bfa9-975d0df6584d")
 	)
 	(wire
 		(pts
@@ -2832,6 +2899,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 77.47) (xy 240.03 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c50afd0-1984-450f-8b57-c988c84fa5e9")
+	)
+	(wire
+		(pts
 			(xy 198.12 35.56) (xy 198.12 21.59)
 		)
 		(stroke
@@ -2882,7 +2959,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 123.19) (xy 238.76 123.19)
+			(xy 228.6 123.19) (xy 240.03 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2909,16 +2986,6 @@
 			(type default)
 		)
 		(uuid "5e9cec5f-1020-444b-a0c9-00ee264290f7")
-	)
-	(wire
-		(pts
-			(xy 204.47 120.65) (xy 213.36 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e9e41b4-8ad3-4d0d-9326-b87a03dce7cd")
 	)
 	(wire
 		(pts
@@ -2962,13 +3029,23 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 123.19) (xy 180.34 123.19)
+			(xy 170.18 123.19) (xy 175.26 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6822b104-b9b9-4a7c-ba15-f34c081638e9")
+	)
+	(wire
+		(pts
+			(xy 259.08 57.15) (xy 259.08 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6994ee75-7e3d-4808-95dc-3587718de97e")
 	)
 	(wire
 		(pts
@@ -2979,6 +3056,16 @@
 			(type default)
 		)
 		(uuid "6c6ced08-993d-43b1-a65e-8f10beb18320")
+	)
+	(wire
+		(pts
+			(xy 240.03 63.5) (xy 240.03 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c94e9ff-d058-4642-a2c9-598aa0023767")
 	)
 	(wire
 		(pts
@@ -3009,6 +3096,16 @@
 			(type default)
 		)
 		(uuid "6f4d888a-9771-47e2-9211-987b30d6a25a")
+	)
+	(wire
+		(pts
+			(xy 175.26 123.19) (xy 180.34 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "700ffca0-9600-4b89-ae91-2112958e88ec")
 	)
 	(polyline
 		(pts
@@ -3062,7 +3159,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 59.69) (xy 78.74 59.69)
+			(xy 69.85 59.69) (xy 80.01 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3089,6 +3186,16 @@
 			(type default)
 		)
 		(uuid "8963efad-8c48-41b8-b4f8-924a8c40e688")
+	)
+	(wire
+		(pts
+			(xy 208.28 120.65) (xy 213.36 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8baef99c-027f-46bb-877a-7edabb11157a")
 	)
 	(wire
 		(pts
@@ -3162,6 +3269,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 123.19) (xy 269.24 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "976f8c45-3fb2-4390-969d-da12a7f06b9e")
+	)
+	(wire
+		(pts
 			(xy 69.85 60.96) (xy 69.85 59.69)
 		)
 		(stroke
@@ -3172,16 +3289,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 59.69) (xy 88.9 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99d61dcb-757c-49ea-a365-08265e3904d9")
-	)
-	(wire
-		(pts
 			(xy 88.9 67.31) (xy 88.9 68.58)
 		)
 		(stroke
@@ -3189,6 +3296,16 @@
 			(type default)
 		)
 		(uuid "9ae0a7dd-b1cd-43a8-8d5a-a34e02b16fb2")
+	)
+	(wire
+		(pts
+			(xy 80.01 59.69) (xy 88.9 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf32119-ac2c-4fb2-9afb-5702e5ba0489")
 	)
 	(wire
 		(pts
@@ -3362,6 +3479,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 44.45) (xy 240.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9070a35-fea9-457a-8263-2ce3a0cabc7a")
+	)
+	(wire
+		(pts
 			(xy 48.26 59.69) (xy 48.26 60.96)
 		)
 		(stroke
@@ -3459,6 +3586,16 @@
 			(type default)
 		)
 		(uuid "de5d6fe4-c06e-4cd0-b79f-001fffaed6e4")
+	)
+	(wire
+		(pts
+			(xy 259.08 44.45) (xy 259.08 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dea92d02-189d-4394-8f95-35349168c02c")
 	)
 	(wire
 		(pts
@@ -3562,16 +3699,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 137.16) (xy 238.76 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef1cf0c9-138a-4593-b4f4-5630924ac029")
-	)
-	(wire
-		(pts
 			(xy 88.9 66.04) (xy 88.9 67.31)
 		)
 		(stroke
@@ -3579,6 +3706,16 @@
 			(type default)
 		)
 		(uuid "ef3659dc-546c-4e9a-ab40-93bf023812b9")
+	)
+	(wire
+		(pts
+			(xy 259.08 63.5) (xy 240.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef61913b-88db-4f67-86bf-00d6860daed6")
 	)
 	(polyline
 		(pts
@@ -3682,6 +3819,28 @@
 			)
 		)
 	)
+	(global_label "+5V_Jetson"
+		(shape output)
+		(at 240.03 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1f6e8e67-9da1-4672-a578-c36a8ad00656")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 253.9613 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{WD_Toggle_Jetson}"
 		(shape output)
 		(at 269.24 133.35 270)
@@ -3700,6 +3859,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V_Jetson"
+		(shape output)
+		(at 259.08 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac889f2f-666a-4a23-80cf-fb963ede7160")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.0113 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4030,137 +4211,6 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 238.76 134.62 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1c88f30e-c18b-4aa0-a31d-74c96fd2c34e")
-		(property "Reference" "R81"
-			(at 241.3 133.985 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k"
-			(at 241.3 136.525 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DPN" "RMCF0603FT100KCT-ND"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DST" "Digi-Key"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Stackpole Electronics Inc"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RMCF0603FT100K"
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part Number" ""
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power Rating" ""
-			(at 238.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c70fdfe6-3365-422c-aac0-a00e8721fea6")
-		)
-		(pin "2"
-			(uuid "6381ca87-ed00-4836-88e2-e2ee11e4e757")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "R81")
 					(unit 1)
 				)
 			)
@@ -4586,6 +4636,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e573bd9-7e9f-44dd-acbd-fe2977e02e70")
+		(property "Reference" "TP33"
+			(at 175.26 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 176.5299 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 175.26 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b594166-6bae-4c99-bad3-10503027e567")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "TP33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 88.9 71.12 0)
 		(unit 1)
@@ -4766,6 +4883,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3eabe1f1-d5f2-4175-825b-db7994daf5bb")
+		(property "Reference" "TP30"
+			(at 80.01 54.864 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.2799 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0f09a2d-b4d7-4bea-993e-88a53d450400")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "TP30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 269.24 127 270)
 		(unit 1)
@@ -4828,72 +5012,6 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 91.44 123.19 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "432ddebf-aca9-4070-bf35-d4560bbee3fc")
-		(property "Reference" "TPw2"
-			(at 90.17 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 91.44 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 91.44 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 91.44 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "87b7a1bd-9ff6-495b-b023-ac76b083fe1d")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "TPw2")
 					(unit 1)
 				)
 			)
@@ -5000,6 +5118,137 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 240.03 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ea22d7d-8f4a-428d-aae7-bd29bfb65623")
+		(property "Reference" "R73"
+			(at 242.57 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 242.57 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DPN" "RMCF0603FT100KCT-ND"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DST" "Digi-Key"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Stackpole Electronics Inc"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT100K"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey Part Number" ""
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" ""
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0feca11e-9258-4d91-971d-ecc95265ba59")
+		)
+		(pin "2"
+			(uuid "7db54988-c367-4da1-a290-c81bfbdc3099")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "R73")
 					(unit 1)
 				)
 			)
@@ -5604,6 +5853,73 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 140.97 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "664a5232-2839-4e67-81ae-40b46f31d051")
+		(property "Reference" "TP32"
+			(at 138.684 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 142.2399 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 146.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 140.97 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b9d3ba5-85dd-487f-a0ce-38b9ce48f4e9")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "TP32")
 					(unit 1)
 				)
 			)
@@ -6914,6 +7230,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 259.08 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b87808e-1186-4939-b0db-a75a92012583")
+		(property "Reference" "JP5"
+			(at 256.286 53.594 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 273.05 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 259.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 259.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cea326c3-3099-4a3c-8cb5-4e878df1b282")
+		)
+		(pin "2"
+			(uuid "433fc795-4a2f-46ab-9fdb-2a801bb118cb")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 29.21 53.34 0)
 		(mirror y)
@@ -7361,10 +7745,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "acd2321b-1ef5-486c-a793-f2caf274e2ba")
 		(property "Reference" "R11"
-			(at 138.43 116.205 0)
+			(at 136.906 110.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7373,7 +7756,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 138.43 118.745 0)
+			(at 136.906 113.538 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7460,138 +7843,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 135.89 120.65 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b4883721-f0c4-480c-a8ea-1749f9a86fb3")
-		(property "Reference" "TPw3"
-			(at 134.62 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 135.89 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 135.89 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2acbdd9-02d6-445f-9c70-970e806a96cc")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "TPw3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 78.74 59.69 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b8f737e3-ebbe-46e8-aefe-f9640a6a7b12")
-		(property "Reference" "TPw1"
-			(at 77.47 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 78.74 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 78.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 78.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29fd7675-338f-436f-a3dd-a52c3f165143")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "TPw1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 184.15 35.56 0)
 		(unit 1)
@@ -7658,6 +7909,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 208.28 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfb51553-e39e-4302-b4ea-43ff239cf20e")
+		(property "Reference" "TP34"
+			(at 208.28 115.824 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 209.5499 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 208.28 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bce7cc41-9a1e-4d77-a825-fc3943d950cd")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "TP34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 69.85 77.47 0)
 		(mirror y)
@@ -7718,138 +8036,6 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 204.47 120.65 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ca8cd5f7-5787-4f00-a72f-1d9ac8499cd1")
-		(property "Reference" "TPw5"
-			(at 203.2 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 204.47 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 204.47 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4834aafe-52fd-42f6-afe1-ccb06261e619")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "TPw5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 170.18 123.19 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ccf8771f-fe0a-487a-b802-58d8df8a07d6")
-		(property "Reference" "TPw4"
-			(at 168.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 170.18 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 170.18 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 170.18 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ae2cc72-f154-492d-8d78-168a1d537f66")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "TPw4")
 					(unit 1)
 				)
 			)
@@ -8087,138 +8273,6 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 238.76 123.19 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3ce51d1-0810-4165-9596-1441261e6968")
-		(property "Reference" "TPw6"
-			(at 237.49 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 238.76 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 238.76 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 238.76 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22b8b41e-4c2a-43d0-a2a5-8e14e6617375")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "TPw6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 238.76 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d58e7cf1-0353-4779-9b35-8d97a224e491")
-		(property "Reference" "#PWR085"
-			(at 238.76 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 238.76 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 238.76 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef7e879e-81ce-4897-a281-98e56b98663e")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
-					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -9081,6 +9135,73 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fed4a4e6-318e-447e-88b5-e920c416d82e")
+		(property "Reference" "TP31"
+			(at 91.44 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 92.7099 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 96.52 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8a059f0-8567-4e2d-bbe3-9d2ed165df16")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "TP31")
 					(unit 1)
 				)
 			)

@@ -5,6 +5,113 @@
 	(uuid "ff454d70-ede5-48dc-aa1e-1521ed2a17f8")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -1761,90 +1868,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TestPointWD:Test-Point-0.75mm-th"
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "TPw"
-				(at -1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TestPoint-MinTH"
-				(at 0 6.985 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Test-Point-0.75mm-th_1_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 0)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Test-Point-0.75mm-th_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2256,10 +2279,22 @@
 		(uuid "f383ae4b-94ee-4261-9da8-3c2effe4837a")
 	)
 	(junction
+		(at 80.01 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "043cd3c3-00cf-43e5-99ac-749a352651bd")
+	)
+	(junction
 		(at 238.76 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "052d9b97-ad5e-4507-9613-b54c9972f60e")
+	)
+	(junction
+		(at 140.97 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11e6c506-480c-441a-8707-82f2886204bc")
 	)
 	(junction
 		(at 102.87 123.19)
@@ -2376,16 +2411,16 @@
 		(uuid "778ede4d-d261-4187-8302-032c60f6ba1d")
 	)
 	(junction
+		(at 175.26 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a85a6bc-648a-4b00-ac7a-8f21cb813cd9")
+	)
+	(junction
 		(at 69.85 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "829e354b-22f6-4496-a359-6457d9ebd075")
-	)
-	(junction
-		(at 78.74 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90ffd529-3eef-40a7-9156-0fd558547c0b")
 	)
 	(junction
 		(at 170.18 123.19)
@@ -2416,6 +2451,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bdc45cda-ae5d-4c4a-a2c1-7137085344a2")
+	)
+	(junction
+		(at 208.28 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1f54649-2d33-48c6-87e2-50e56c89c0f8")
+	)
+	(junction
+		(at 252.73 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c31e7eb6-e8f9-4f04-852d-488607d29fa2")
 	)
 	(junction
 		(at 135.89 120.65)
@@ -2483,6 +2530,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 120.65) (xy 213.36 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0947d3c7-81b3-4cea-9a0c-5e6304012cd6")
+	)
+	(wire
+		(pts
 			(xy 88.9 90.17) (xy 88.9 91.44)
 		)
 		(stroke
@@ -2510,6 +2567,16 @@
 			(type default)
 		)
 		(uuid "0e19adf3-87e3-461a-a351-a23ae5ab65a4")
+	)
+	(wire
+		(pts
+			(xy 140.97 120.65) (xy 147.32 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e3b3d73-6703-484a-9679-aaa779f501b3")
 	)
 	(wire
 		(pts
@@ -2573,7 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 147.32 120.65)
+			(xy 135.89 120.65) (xy 140.97 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2723,7 +2790,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 123.19) (xy 269.24 123.19)
+			(xy 238.76 123.19) (xy 252.73 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2923,7 +2990,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 120.65) (xy 213.36 120.65)
+			(xy 204.47 120.65) (xy 208.28 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2983,7 +3050,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 123.19) (xy 180.34 123.19)
+			(xy 170.18 123.19) (xy 175.26 123.19)
 		)
 		(stroke
 			(width 0)
@@ -3083,16 +3150,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 59.69) (xy 78.74 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8382c22f-b523-4fc3-bcdd-1ef517800716")
-	)
-	(wire
-		(pts
 			(xy 135.89 59.69) (xy 135.89 114.3)
 		)
 		(stroke
@@ -3120,6 +3177,16 @@
 			(type default)
 		)
 		(uuid "8c89dd14-1957-453d-9f50-bce9945b4770")
+	)
+	(wire
+		(pts
+			(xy 80.01 59.69) (xy 88.9 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd1c69c-bc58-4e6f-a50f-40e7216879bd")
 	)
 	(wire
 		(pts
@@ -3203,7 +3270,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 59.69) (xy 88.9 59.69)
+			(xy 69.85 59.69) (xy 80.01 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3380,6 +3447,16 @@
 			(type default)
 		)
 		(uuid "b916e956-8c83-427d-9dfd-f90ad85f0a63")
+	)
+	(wire
+		(pts
+			(xy 252.73 123.19) (xy 269.24 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be16003c-f02a-45db-a265-ce0b48876677")
 	)
 	(wire
 		(pts
@@ -3600,6 +3677,16 @@
 			(type default)
 		)
 		(uuid "ead3c346-9985-4978-9e4e-84a8f39bed7f")
+	)
+	(wire
+		(pts
+			(xy 175.26 123.19) (xy 180.34 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecf1b999-1b44-49a1-9dd1-775d51314002")
 	)
 	(wire
 		(pts
@@ -3936,6 +4023,73 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
 					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 140.97 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d74bfbe-cbc4-4662-8b36-eb7df575c1fe")
+		(property "Reference" "TP37"
+			(at 138.938 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 142.2399 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 146.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 140.97 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0df42172-9475-4b58-a8de-33718b003c73")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
+					(reference "TP37")
 					(unit 1)
 				)
 			)
@@ -4442,72 +4596,6 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
 					(reference "JP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 204.47 120.65 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ba13acd-4c69-499a-b81a-e5446185c139")
-		(property "Reference" "TPw11"
-			(at 203.2 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 204.47 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 204.47 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 204.47 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f3b436cc-4b92-4ac5-86fe-9707ca3def9c")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TPw11")
 					(unit 1)
 				)
 			)
@@ -5594,6 +5682,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "666f48d0-0ffe-432f-b456-f222b9d87942")
+		(property "Reference" "TP38"
+			(at 175.26 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 176.5299 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 175.26 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "705ff18e-b61b-4631-ae68-072ca756251b")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
+					(reference "TP38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 48.26 68.58 0)
 		(unit 1)
@@ -6248,6 +6403,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 252.73 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "876e151f-9a44-4098-beba-25b252ebd2c4")
+		(property "Reference" "TP40"
+			(at 252.73 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 253.9999 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 257.81 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 257.81 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 252.73 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06edf1c7-215d-4878-8761-ec9b506d070e")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
+					(reference "TP40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 269.24 127 270)
 		(unit 1)
@@ -6653,16 +6875,16 @@
 		)
 	)
 	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 238.76 123.19 0)
+		(lib_id "Connector:TestPoint")
+		(at 80.01 59.69 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "954c7e17-e123-4498-a816-dd3113ca1ef1")
-		(property "Reference" "TPw12"
-			(at 237.49 120.65 0)
+		(uuid "9a66db4a-7c04-4be0-a36a-b5157e9c4e31")
+		(property "Reference" "TP41"
+			(at 80.01 54.864 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6670,17 +6892,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint-MinTH"
-			(at 238.76 116.205 0)
+		(property "Value" "TestPoint"
+			(at 81.2799 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 238.76 113.03 0)
+			(at 85.09 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6688,8 +6911,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 238.76 123.19 0)
+		(property "Datasheet" "~"
+			(at 85.09 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,8 +6920,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 238.76 123.19 0)
+		(property "Description" "test point"
+			(at 80.01 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6707,12 +6930,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3dfdb3b5-27ca-403b-b9cf-9d1894019b89")
+			(uuid "b3353021-b1fa-4d71-bedd-c67803e34226")
 		)
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TPw12")
+					(reference "TP41")
 					(unit 1)
 				)
 			)
@@ -6987,72 +7210,6 @@
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
 					(reference "U3")
 					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 78.74 59.69 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "9dffcfd3-176a-487a-864c-22aeda0f5ffd")
-		(property "Reference" "TPw7"
-			(at 77.47 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 78.74 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 78.74 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 78.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59db8423-1294-4a3f-878d-69b3843b9748")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TPw7")
-					(unit 1)
 				)
 			)
 		)
@@ -7412,6 +7569,73 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
 					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 208.28 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a95ed6e0-6666-4ab8-870c-7904617fcc9f")
+		(property "Reference" "TP39"
+			(at 208.28 115.824 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 209.5499 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 208.28 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "451acf83-8985-4ea9-9082-da9fb82404eb")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
+					(reference "TP39")
 					(unit 1)
 				)
 			)
@@ -7801,72 +8025,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 91.44 123.19 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "cad180d2-329a-4ca0-9443-594c24df67f7")
-		(property "Reference" "TPw8"
-			(at 90.17 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 91.44 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 91.44 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 91.44 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d60458dd-91e3-4c4c-88aa-03b0ebb7ec02")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TPw8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 88.9 86.36 0)
 		(unit 1)
@@ -8200,72 +8358,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 135.89 120.65 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc65ec7b-8305-4f28-9e03-55c83e2b278d")
-		(property "Reference" "TPw9"
-			(at 134.62 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 135.89 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 135.89 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "39c7242f-bb98-4e21-997c-dc17edd4845f")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TPw9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "TLV1704:TLV1704AIPWR")
 		(at 220.98 123.19 0)
 		(unit 4)
@@ -8431,6 +8523,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7173cf2-40a7-40f7-9bee-9a7049f9f8ed")
+		(property "Reference" "TP36"
+			(at 91.44 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 92.7099 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 96.52 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aaaa6ce7-c0a2-4ef0-be31-b460f0185201")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
+					(reference "TP36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 135.89 116.84 0)
 		(unit 1)
@@ -8438,10 +8597,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e83f1622-d03a-4835-906f-f613b4b7864f")
 		(property "Reference" "R31"
-			(at 138.43 116.205 0)
+			(at 137.16 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8450,7 +8608,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 138.43 118.745 0)
+			(at 137.414 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8531,72 +8689,6 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "TestPointWD:Test-Point-0.75mm-th")
-		(at 170.18 123.19 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "e8eb9546-0e41-473c-9167-b67ecffc1482")
-		(property "Reference" "TPw10"
-			(at 168.91 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint-MinTH"
-			(at 170.18 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 170.18 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.75 mm TH test point; good for scope probes and jumpers"
-			(at 170.18 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f092e6dd-2209-4823-8084-8b4d9ea60c2e")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e"
-					(reference "TPw10")
 					(unit 1)
 				)
 			)
