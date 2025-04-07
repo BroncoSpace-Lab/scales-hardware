@@ -827,6 +827,12 @@
 		(uuid "3f87d50c-c4dc-4b21-9127-ccc462909c69")
 	)
 	(junction
+		(at 96.52 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44e50425-ac52-4cf0-8f8c-de1ee236ccb7")
+	)
+	(junction
 		(at 69.85 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1028,7 +1034,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 82.55) (xy 95.25 82.55)
+			(xy 97.79 82.55) (xy 96.52 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1075,6 +1081,16 @@
 			(type default)
 		)
 		(uuid "fa970a8c-2550-4af5-b704-c04c887705af")
+	)
+	(wire
+		(pts
+			(xy 96.52 82.55) (xy 95.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb4cada5-42b4-4c6c-8ec9-94fc6bf18f4b")
 	)
 	(global_label "+5V_Perif_Out"
 		(shape output)
@@ -1594,6 +1610,73 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
 					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 96.52 82.55 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4d04ad4-4e47-4cfb-b52a-82c18f381549")
+		(property "Reference" "TP29"
+			(at 98.552 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 95.2501 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 91.44 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 96.52 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5960b5a9-cc26-4598-88b7-8a178c3e1e54")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "TP29")
 					(unit 1)
 				)
 			)
