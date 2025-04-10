@@ -2718,6 +2718,12 @@
 		(uuid "8d51b58a-3e59-4ccf-bae8-7e22941adabf")
 	)
 	(junction
+		(at 224.79 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f230a0e-5420-47b3-8c5d-423863fb4bca")
+	)
+	(junction
 		(at 255.27 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2902,16 +2908,6 @@
 			(type default)
 		)
 		(uuid "0779bbee-7434-4bc3-b649-ed0b09a77bdb")
-	)
-	(wire
-		(pts
-			(xy 224.79 62.23) (xy 224.79 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07b64fb4-c708-4068-b510-fffda691e224")
 	)
 	(wire
 		(pts
@@ -3125,6 +3121,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 62.23) (xy 224.79 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "330b78ed-4d7c-48a7-bbbe-2b013957e79e")
+	)
+	(wire
+		(pts
 			(xy 152.4 30.48) (xy 152.4 35.56)
 		)
 		(stroke
@@ -3232,6 +3238,16 @@
 			(type default)
 		)
 		(uuid "41df1b77-b0ec-4540-85fe-13c065368038")
+	)
+	(wire
+		(pts
+			(xy 224.79 66.04) (xy 224.79 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43333a4b-499a-4a7f-aa71-6689c3c7f4c1")
 	)
 	(wire
 		(pts
@@ -3582,16 +3598,6 @@
 			(type default)
 		)
 		(uuid "aa70f1a3-6f83-4bcb-aa80-79cbbca0db7e")
-	)
-	(wire
-		(pts
-			(xy 224.79 67.31) (xy 224.79 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aafa56fe-86bc-40f0-9b54-e9336214e94c")
 	)
 	(wire
 		(pts
@@ -4497,6 +4503,72 @@
 			(project "EPS_Voyager"
 				(path "/9e935f60-3970-4544-bfdc-c9319d9d6774/0762457c-a6e3-46eb-8072-fdbc6a260216"
 					(reference "TP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 219.71 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06ddbc6a-c7f4-41ab-8bb9-fbbfe3631a07")
+		(property "Reference" "J9"
+			(at 220.345 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 220.345 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+			(at 219.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 219.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "778814fa-3f13-43b8-bc15-bca20763d8c4")
+		)
+		(instances
+			(project ""
+				(path "/9e935f60-3970-4544-bfdc-c9319d9d6774/0762457c-a6e3-46eb-8072-fdbc6a260216"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -8163,74 +8235,6 @@
 			(project "EPS_Voyager"
 				(path "/9e935f60-3970-4544-bfdc-c9319d9d6774/0762457c-a6e3-46eb-8072-fdbc6a260216"
 					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 219.71 67.31 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e9f52ea6-969c-4b04-a399-7edfd02bb50a")
-		(property "Reference" "J19"
-			(at 218.694 69.088 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 220.345 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 219.71 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 219.71 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b5303ce-6916-4b57-95b2-8e36e8841da4")
-		)
-		(pin "2"
-			(uuid "7e2736f4-ac97-4106-8858-e64ded7e9717")
-		)
-		(instances
-			(project "EPS_Voyager"
-				(path "/9e935f60-3970-4544-bfdc-c9319d9d6774/0762457c-a6e3-46eb-8072-fdbc6a260216"
-					(reference "J19")
 					(unit 1)
 				)
 			)
