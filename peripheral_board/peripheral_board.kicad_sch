@@ -1,0 +1,151 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "14f8712f-1710-40cb-b01e-cc9b3c4405bd")
+	(paper "USLetter")
+	(title_block
+		(title "Peripheral Board with Ethernet Switch")
+		(date "2025-04-01")
+		(rev "1")
+		(company "Bronco Space")
+		(comment 1 "SCALES")
+		(comment 2 "By John Pollak")
+	)
+	(lib_symbols)
+	(sheet
+		(at 25.4 25.4)
+		(size 50.8 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3ab0c9bd-1966-49d5-9be4-af5813e74b9f")
+		(property "Sheetname" "Raspberry_pi"
+			(at 25.4 24.0534 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+					(thickness 0.3175)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rp.kicad_sch"
+			(at 25.4 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "peripheral_board"
+				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 76.2)
+		(size 50.8 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7856a3c9-64d6-436e-a586-a702bee0baf4")
+		(property "Sheetname" "5-Port_Ethernet_Switch"
+			(at 25.4 74.8534 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+					(thickness 0.3175)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet_switch.kicad_sch"
+			(at 25.4 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "peripheral_board"
+				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 25.4)
+		(size 50.8 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c97b3269-3095-4637-add1-8dce737dd000")
+		(property "Sheetname" "Wiznet"
+			(at 88.9 24.0534 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+					(thickness 0.3175)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Wiznet.kicad_sch"
+			(at 88.9 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "peripheral_board"
+				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
