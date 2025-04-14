@@ -2712,6 +2712,12 @@
 		(uuid "89246d47-00a1-42e4-b51f-f3ebb93e18c7")
 	)
 	(junction
+		(at 38.1 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c4d216f-8f3f-4904-93e6-99c0bcab8074")
+	)
+	(junction
 		(at 38.1 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3341,6 +3347,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 91.44) (xy 38.1 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f0b7ad7-b348-4e7f-9dfc-cdd6138ea559")
+	)
+	(wire
+		(pts
 			(xy 147.32 34.29) (xy 124.46 34.29)
 		)
 		(stroke
@@ -3621,7 +3637,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 88.9) (xy 38.1 92.71)
+			(xy 38.1 88.9) (xy 38.1 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4516,10 +4532,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "06ddbc6a-c7f4-41ab-8bb9-fbbfe3631a07")
 		(property "Reference" "J9"
-			(at 220.345 60.96 0)
+			(at 217.932 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7735,6 +7750,71 @@
 			(project "EPS_Voyager"
 				(path "/9e935f60-3970-4544-bfdc-c9319d9d6774/0762457c-a6e3-46eb-8072-fdbc6a260216"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 38.1 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d098646c-5eb3-462f-877e-7eba04e8fe92")
+		(property "Reference" "TP23"
+			(at 32.258 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 34.798 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 38.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "621be5db-07bb-40c0-aa72-5b0decbd15ee")
+		)
+		(instances
+			(project "EPS_Voyager"
+				(path "/9e935f60-3970-4544-bfdc-c9319d9d6774/0762457c-a6e3-46eb-8072-fdbc6a260216"
+					(reference "TP23")
 					(unit 1)
 				)
 			)
