@@ -427,4 +427,98 @@ Components to be used are still being finalized, but they are based on the follo
                   -For the OBC SDA/SCL, we need to include an i2c buffer to ensure proper signaling, for this we can use the    LTC4300A
 
 
+# SCALES EPS REV C Design Development #
+* By Luca Lanzillotta
+* 4/15/2025
 
+## Abstract ## 
+   - The SCALES EPS Board is a power distribution board designed with the intention of powering a flight computer, a machine learning edge computer, and a peripheral system for onboard diagnostics and user defined sensors to interface with both the flight computer and the edge computer. Each subsystem is equipped with an error mitigation feature known as a watchdog, which is pet by each corresponding subsystem and serves as a reset point for each subsystem. The flight computer has access to power diagnostics for each subsystem and can be is software programmable of its direct control of each subsystems operation mode.
+
+   ### Component Selection ###
+   **Primary Components:** 
+
+   - IV Sensor: 
+   [INA230](https://www.ti.com/lit/ds/symlink/ina230.pdf?ts=1744680590205&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA230)
+
+   - Switching Regulator: 
+   [LT8638SEV](https://www.mouser.com/ProductDetail/Analog-Devices/LT8638SEVPBF?qs=sGAEpiMZZMsMIqGZiACxIZbomz1DP27AbMqUs%252Bj26yi9VZ8WhNpLhw%3D%3D)
+
+   - Load Switch:
+   [LTC4365](https://www.analog.com/media/en/technical-documentation/data-sheets/LTC4365.pdf)
+
+   - Dual-Gate Mosfet: 
+   [SISB46DN-T1-GE3](https://www.vishay.com/docs/76655/sisb46dn.pdf)
+
+   - Clock: 
+   [LTC 6902](https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf)
+
+   - Power Connector: 
+   [XT-60](https://outofdarts.com/products/xt-60-connector-90-degree-connector?srsltid=AfmBOoqKylA6kCYljerReYkHtwbVrW2sa4yj6tmw-vBZRMtz7rP4LZ-8)
+
+   - Watchdog Comparator: 
+   [TLV-1704SEV](https://www.ti.com/lit/ds/symlink/tlv1704-sep.pdf?ts=1744728353106&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV1704-SEP%252Fpart-details%252FTLV1704AMPWPSEP)
+
+   **Secondary Components:**
+
+   **Resistors:**
+   - (0603):
+      - Load Switch (UV/OV, SHDN Pull Down)
+      - Switching Regulator (Vc, Rt, Bias, Fb)
+      - Clock (Mode set, Rt set)
+      - Watchdog (WDT-Vin, every block within the system)
+   - (2512):
+      - IV Sensor Shunt (IN+ to IN-)
+
+   **Capacitors:**
+   
+   - (1210) +75V:
+      - Input Power Connector (Filter caps)
+      - Load Switch Output (Filter caps)
+      - Switching regulator (BST to SW, BIAS to FB, SW to INA IN+)
+   - (0805) +25V:
+      - Switching Regulator (Vc, INTV, PHMODE to SS)
+      - IV Sensor (VS to GND)
+      - Watchdog system (WDT Vin, Pulse detector, Pulse integrator, Oscillator)
+
+   **Inductors:**
+
+   - Per recommendation of the LT8638SEV evaluation board design the recommended inductors are the following
+      - [XEL6030](https://www.coilcraft.com/getmedia/ed8d0314-5cbb-4be3-85da-32235c3701c8/xel6030.pdf)
+      - Switching regulator (BST to SW)
+      - Rated from 0v to 80v
+      - AEC-200 rated (automotic requirement)
+      - IRMS ratings are more than reasonable based on REV C calculations requirements
+
+
+   ### Requirements ###
+
+   * Power: (XT-60 Connector)
+      - 28V/12A Max Input
+      - 3 Subsystems, OBC, Edge Computer, Peripheral
+      - Existing calculations for inductors and input power are overspecked
+
+   * Load Switches: (LTC4365)
+      - Dual Gate Mosfet (SISB46DN-T1-GE3) is utilized to pass the output based on the inputs of the load switch IC
+      - SHDN feature is held by the WD and/or the flight computer depending on the subsystem
+      - UV/OV thresholds are adapted to the input ratings set by LiPO operating ranges, each subsystem has a calculation in the REV C calculations in this subfolder.
+      - Soft Start capacitors for each subsystem mitigate current spikes at the input side when initializing, they also serve as start up delays
+
+   * Clock: (LTC6902)
+      - Set to 400khz based on average performance metrics for the switching regulator(s)
+      - Using SSFM to reduce system wide noise of a specific signal
+      - 3 Phases used to seperate switching frequency timing across each regulator
+
+   * Switching Regulators: (LT8638SEV)
+      - Switching frequency set by clock, phase set by clock
+      - In the case of clock failure, a frequency setting resistor on the switching regulator will maintain a constant switching frequencyIn the case of clock failure, a frequency setting resistor on the switching regulator will maintain a constant switching frequency
+
+   * Watchdog(s): (TLV1704SEV)
+      - Watchdogs for each subsystem
+      - OBC controls which subsystem is on, OBC is always on
+      - Watchdogs are PET every ~30s by their respective subsystem
+      - Utilizing an adapted version of the OreSAT design provided by Andrew Greenberg [Design HERE](https://github.com/BroncoSpace-Lab/scales-hardware/pull/280)
+      - NOTE: The current watchdog implementation is currently not operating as expected, refer to testing notes.md in this folder for more information on progress    
+
+### Rev. C Block Diagram ###
+
+![REVC](../docs/Images/EPS_REVC_BlockDiagram.png)
