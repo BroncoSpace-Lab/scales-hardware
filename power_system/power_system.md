@@ -430,6 +430,7 @@ Components to be used are still being finalized, but they are based on the follo
 # SCALES EPS REV C Design Development #
 * By Luca Lanzillotta
 * 4/15/2025
+* 4/16/2025
 
 ## Abstract ## 
    - The SCALES EPS Board is a power distribution board designed with the intention of powering a flight computer, a machine learning edge computer, and a peripheral system for onboard diagnostics and user defined sensors to interface with both the flight computer and the edge computer. Each subsystem is equipped with an error mitigation feature known as a watchdog, which is pet by each corresponding subsystem and serves as a reset point for each subsystem. The flight computer has access to power diagnostics for each subsystem and can be is software programmable of its direct control of each subsystems operation mode.
@@ -475,10 +476,6 @@ Components to be used are still being finalized, but they are based on the follo
       - Input Power Connector (Filter caps)
       - Load Switch Output (Filter caps)
       - Switching regulator (BST to SW, BIAS to FB, SW to INA IN+)
-   - (0805) +25V:
-      - Switching Regulator (Vc, INTV, PHMODE to SS)
-      - IV Sensor (VS to GND)
-      - Watchdog system (WDT Vin, Pulse detector, Pulse integrator, Oscillator)
 
    **Inductors:**
 
@@ -486,8 +483,9 @@ Components to be used are still being finalized, but they are based on the follo
       - [XEL6030](https://www.coilcraft.com/getmedia/ed8d0314-5cbb-4be3-85da-32235c3701c8/xel6030.pdf)
       - Switching regulator (BST to SW)
       - Rated from 0v to 80v
-      - AEC-200 rated (automotic requirement)
+      - AEC-200 rated (automotive standard)
       - IRMS ratings are more than reasonable based on REV C calculations requirements
+      - Refer to layout requirements in the datasheet
 
 
    ### Requirements ###
@@ -522,3 +520,14 @@ Components to be used are still being finalized, but they are based on the follo
 ### Rev. C Block Diagram ###
 
 ![REVC](../docs/Images/EPS_REVC_BlockDiagram.png)
+
+### Design Revision Notes ###
+- Use the JLCPCB Component stock checker plugin 
+
+- Fix Dual Gate Mosfet input and output pins Vin and Vout are references for the Load Switch [FIXED]
+
+- Add a resistor to the WD_Toggle so when the WD pulls low it doesnt short the GPIO pin on the subsystem GPIO [FIXED]
+
+- Set all caps to be +75v rated [FIXED]
+
+- Set the shunt resistor to 10mohms [FIXED]
