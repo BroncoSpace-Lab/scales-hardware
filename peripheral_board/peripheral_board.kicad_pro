@@ -43,12 +43,12 @@
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
-        "silk_text_size_h": 0.1,
-        "silk_text_size_v": 0.1,
-        "silk_text_thickness": 0.025,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -122,7 +122,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.09,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -134,10 +134,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.15,
-        "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.25,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.0,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -187,10 +187,10 @@
       ],
       "track_widths": [
         0.0,
-        0.0889,
         0.127,
         0.1524,
         0.254,
+        0.381,
         0.508
       ],
       "tuning_pattern_settings": {
@@ -422,6 +422,7 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -467,14 +468,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "EPS_Scales_RevC.kicad_pro",
+    "filename": "peripheral_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -506,7 +507,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../../../../../OneDrive - Cal Poly Pomona/Bronco Space/SCALES_Pastebin/EPS_Scales_RevC_Dev.V1.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -576,66 +577,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DST",
-          "name": "DST",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey Part Number",
-          "name": "DigiKey Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MFR",
-          "name": "MFR",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power Rating",
-          "name": "Power Rating",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Tolerance",
-          "name": "Tolerance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DPN",
-          "name": "DPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -667,15 +614,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "Peripheral Board",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -689,33 +628,69 @@
   },
   "sheets": [
     [
-      "f3bdc9b1-4369-4cfa-b765-d952bf408a7b",
+      "14f8712f-1710-40cb-b01e-cc9b3c4405bd",
       "Root"
     ],
     [
-      "2cdb1481-3454-4d94-b027-75f199b62545",
-      "Jetson_Subsystem"
+      "3ab0c9bd-1966-49d5-9be4-af5813e74b9f",
+      "Raspberry_pi"
     ],
     [
-      "d0afb0f4-2d97-42f4-b222-184f059f2629",
-      "WD_Jetson"
+      "c97b3269-3095-4637-add1-8dce737dd000",
+      "Wiznet"
     ],
     [
-      "7377a1d5-f804-4206-bc18-fde862f30294",
-      "OBC_Subsystem"
+      "e982802a-e38b-40c0-a6bc-867c12181eba",
+      "RJ45_1"
     ],
     [
-      "9aa92904-6004-4484-8f60-3c86226ff92e",
-      "WD_OBC"
+      "7856a3c9-64d6-436e-a586-a702bee0baf4",
+      "5-Port_Ethernet_Switch"
     ],
     [
-      "9f608de4-3574-4917-924e-b2449769bafa",
-      "Peripheral_Subsystem"
+      "abd9efa7-8b86-4844-a28c-d72ebc582d91",
+      "Power"
     ],
     [
-      "dad07e05-da80-41ae-aa47-8f0b2dc6b1a4",
-      "WD_Peripheral"
+      "b114991d-208a-4f1c-a09d-495379f6cd56",
+      "RJ45_SW_1"
+    ],
+    [
+      "99ab94cd-3e2b-49a4-98d0-22396bc1cd2c",
+      "RK45_SW_2"
+    ],
+    [
+      "abc93491-65e5-4386-8d41-d8e82ef85afc",
+      "RK45_SW_3"
+    ],
+    [
+      "b231998c-6fa1-49be-8c10-980454206351",
+      "RK45_SW_4"
+    ],
+    [
+      "3f4ce27a-59a8-4114-a75e-f3fd0542c3c7",
+      "USB to SPI"
+    ],
+    [
+      "ab2a3caf-ed83-4a10-b068-a622b2959871",
+      "RP2040_REF"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "CONFIGURATIONPARAMETERS": "",
+    "CONFIGURATORNAME": "",
+    "DESIGNDESCRIPTION": "=DesignDescription",
+    "DESIGNER": "=ProjectEngineer",
+    "DOCUMENTFULLPATHANDNAME": "//depot_np_hweng_boards/ung_hweng/UNG_8123_EVB-3_Shasta_KSZ9563 (Boulder_Creek)/A/A0/",
+    "DOCUMENTNUMBER": "5",
+    "DRAWNBY": "=ProjectDrawnBy",
+    "ISUSERCONFIGURABLE": "",
+    "PAGESETUP": "Record=PageOptions¦CenterHorizontal=True¦CenterVertical=True¦PrintScale=1.02¦XCorrection=1.00¦YCorrection=1.00¦PrintKind=0¦BorderSize=5000000¦LeftOffset=0¦BottomOffset=0¦Orientation=2¦PaperLength=1000¦PaperWidth=1000¦Scale=100¦PaperSource=7¦PrintQuality=600¦MediaType=1¦DitherType=10¦PrintScaleMode=1¦PaperKind=11x17¦PaperIndex=17",
+    "PAGETITLE": "Board Power I/O and Regulators",
+    "PARTNUMBER": "=PartNumber",
+    "PROJECTNAME": "=ProjectName",
+    "PROJNAME": "=ProjName",
+    "SHEETTOTAL": "=SheetTotal",
+    "VERSIONCONTROL_REVNUMBER": ""
+  }
 }

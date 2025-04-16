@@ -27,9 +27,13 @@
     -  **4/14/2025** 
         Michael:
         1. Is there a reason why you did not follow the recommended layouts prescribed in the LT and INA datasheets? Usually you should replicate them faithfully unless there are packaging concerns with your particular board
-        2. The routing on the switching regulator is very suboptimal, too much loop area and not enough ground connections. The recommended layout section of the datasheet addresses this
+        
+        2. The routing on the switching regulator is very suboptimal, too much loop area and not enough ground connections. The recommended layout section of the datasheet addresses this.
+
         3. Take advantage of copper fill on your other layers. When in doubt fill with ground.
+
         4. How are you planning to do your interchangeable components like the shunt and the inductor? Usually these components cannot be (easily or at all) placed off board because they would probably require mezzanine boards (which are not economical to create) and going off board for passives like this causes big EMI issues.
+        
         5. Make sure that all of the parts you have selected are actually available to order at our manufacturer, JLC. I Recommend using this plugin to assign all of the part numbers as soon as you can: 
 
 
