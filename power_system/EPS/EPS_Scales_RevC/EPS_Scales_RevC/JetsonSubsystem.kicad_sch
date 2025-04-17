@@ -2800,6 +2800,26 @@
 		)
 		(uuid "ebc7023d-0bf5-4338-98e7-f9fef30b9489")
 	)
+	(text_box "3*3.3u inductors due to there being no 10u Inductor"
+		(exclude_from_sim no)
+		(at 194.945 31.75 0)
+		(size 24.765 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "05b78431-1090-4003-9be4-6eefc17d5651")
+	)
 	(text_box "~{SHDN} pulled low so it is only able to be turned on by WD or OBC"
 		(exclude_from_sim no)
 		(at 60.96 79.375 0)
@@ -2864,7 +2884,7 @@
 	)
 	(text_box "Choke Inductor (Pg. 3) of Rev C. Calcs"
 		(exclude_from_sim no)
-		(at 177.8 35.56 0)
+		(at 189.23 19.685 0)
 		(size 12.7 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2882,6 +2902,26 @@
 			(href "https://github.com/BroncoSpace-Lab/scales-hardware/blob/main/docs/power_system/Rev_C%20Calculations/REV%20C%20Calcs.pdf")
 		)
 		(uuid "3d121f6e-67f5-45b7-98bb-a4e1c442fed2")
+	)
+	(text_box "The UV/OV thresholds are all the same for all the load switches because they determine safe input battery voltages for each subsystem"
+		(exclude_from_sim no)
+		(at 16.51 79.375 0)
+		(size 20.32 20.955)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4a2359a6-a6c2-4f6f-b2ab-b5b94fba0a27")
 	)
 	(text_box "Vout setting resistors (Pg. 2) of Rev C. Calcs [from top to bottom: R1, R2]"
 		(exclude_from_sim no)
@@ -3292,6 +3332,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cef94c87-bd7c-493d-b74d-8c317f00893e")
+	)
+	(junction
+		(at 194.31 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3b9d81a-bb66-4ba9-9571-9efac81f3406")
 	)
 	(junction
 		(at 233.68 62.23)
@@ -3959,6 +4005,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 33.02) (xy 194.31 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "769b664f-95bf-4613-b5fa-38027f920d75")
+	)
+	(wire
+		(pts
 			(xy 132.08 39.37) (xy 132.08 43.18)
 		)
 		(stroke
@@ -4116,6 +4172,16 @@
 			(type default)
 		)
 		(uuid "94802b3d-efb8-4f94-a106-c788fb834382")
+	)
+	(wire
+		(pts
+			(xy 182.88 33.02) (xy 194.31 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "973ba22d-03e4-4e5d-b53c-13adb500d108")
 	)
 	(wire
 		(pts
@@ -4429,16 +4495,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 48.26) (xy 182.88 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0945ffb-72be-4e48-ac96-0c997077615f")
-	)
-	(wire
-		(pts
 			(xy 95.25 35.56) (xy 101.6 35.56)
 		)
 		(stroke
@@ -4656,6 +4712,16 @@
 			(type default)
 		)
 		(uuid "f5ff98d0-3c55-4da2-845f-ad4ec462c5a4")
+	)
+	(wire
+		(pts
+			(xy 194.31 41.91) (xy 194.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f612c9f3-95c8-426d-af12-1b65f8e8b762")
 	)
 	(wire
 		(pts
@@ -5240,7 +5306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 207.9752 55.88 0)
 			(effects
 				(font
@@ -5635,7 +5701,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 238.76 63.1952 0)
 			(effects
 				(font
@@ -5830,7 +5896,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 116.84 50.292 0)
 			(effects
 				(font
@@ -5839,7 +5905,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 119.0752 59.69 0)
 			(effects
 				(font
@@ -5973,7 +6039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 199.0852 55.88 0)
 			(effects
 				(font
@@ -6396,7 +6462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 125.4252 86.36 0)
 			(effects
 				(font
@@ -6665,7 +6731,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 183.8452 68.58 0)
 			(effects
 				(font
@@ -6867,7 +6933,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 125.4252 59.69 0)
 			(effects
 				(font
@@ -6936,7 +7002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 111.4552 59.69 0)
 			(effects
 				(font
@@ -6980,7 +7046,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 194.31 48.26 0)
+		(at 194.31 41.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6988,7 +7054,7 @@
 		(dnp no)
 		(uuid "80bfe93a-b2cb-4be2-980b-3283d0d2f766")
 		(property "Reference" "TP7"
-			(at 193.802 42.418 0)
+			(at 200.152 41.402 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6996,7 +7062,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 196.85 44.958 90)
+			(at 197.612 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7005,7 +7071,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 199.39 48.26 0)
+			(at 194.31 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7014,7 +7080,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 199.39 48.26 0)
+			(at 194.31 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7023,7 +7089,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 194.31 48.26 0)
+			(at 194.31 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7466,7 +7532,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10.4u"
+		(property "Value" "3.3u"
 			(at 184.15 53.3399 0)
 			(effects
 				(font
@@ -7660,7 +7726,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a3c3f1cf-c61e-4cee-8b1f-14edfe3a2c6d")
 		(property "Reference" "#FLG04"
 			(at 227.965 33.02 0)
@@ -7672,7 +7737,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 226.06 33.0199 90)
+			(at 229.362 35.814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7746,7 +7811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 216.8652 55.88 0)
 			(effects
 				(font
@@ -7925,6 +7990,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 182.88 44.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afded8a5-c8e0-40c2-b637-fd9f31594883")
+		(property "Reference" "L3"
+			(at 184.15 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3.3u"
+			(at 184.15 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 182.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+			(at 182.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+			(at 182.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8b118c4b-b4c3-4ab0-b6c9-ea509e526247")
+		)
+		(pin "1"
+			(uuid "a0b5b5b3-74ae-4a9c-923f-a55830a714ae")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 124.46 87.63 0)
 		(unit 1)
@@ -8017,7 +8152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 122.8852 43.18 0)
 			(effects
 				(font
@@ -8420,6 +8555,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 182.88 36.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfe4a9a4-1227-4601-8fce-c517e14302e0")
+		(property "Reference" "L5"
+			(at 184.15 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3.3u"
+			(at 184.15 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 182.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+			(at 182.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+			(at 182.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0276a5a1-e72d-4f63-8f57-2d8c88207e86")
+		)
+		(pin "1"
+			(uuid "b3cb93e1-99d2-4d3e-bc6d-e91b201f34cd")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LT8638SEV#PBF:LT863SEV#PBF")
 		(at 152.4 58.42 0)
 		(unit 1)
@@ -8692,7 +8897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 174.9552 57.15 0)
 			(effects
 				(font
@@ -8761,7 +8966,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 121.6152 71.12 0)
 			(effects
 				(font
@@ -8961,7 +9166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 225.7552 55.88 0)
 			(effects
 				(font

@@ -2863,7 +2863,7 @@
 	)
 	(text_box "For safety ensure that all caps are +75V rated"
 		(exclude_from_sim no)
-		(at 165.735 26.035 0)
+		(at 163.83 27.305 0)
 		(size 44.45 5.08)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2942,6 +2942,26 @@
 		)
 		(uuid "6bb92d36-35f0-4b2c-ae90-bac443a82108")
 	)
+	(text_box "No 3u available so 3*1u inductors"
+		(exclude_from_sim no)
+		(at 195.58 34.925 0)
+		(size 19.05 8.255)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6c0523e4-e797-4de5-af3f-404d14506bab")
+	)
 	(text_box "Peripheral LTC4365 UV/OV (Pg. 7) of Rev C. Calcs [from top to bottom: R3,R2,R1]"
 		(exclude_from_sim no)
 		(at 24.765 80.01 0)
@@ -2965,7 +2985,7 @@
 	)
 	(text_box "Choke Inductor (Pg. 9) of Rev C. Calcs"
 		(exclude_from_sim no)
-		(at 178.435 37.465 0)
+		(at 169.545 14.605 0)
 		(size 12.7 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3090,6 +3110,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "287f2bee-b2aa-4f26-abf7-ac8f3b9f2380")
+	)
+	(junction
+		(at 193.04 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "307ec21d-15e6-4bb2-ae7c-b8df89c890ee")
 	)
 	(junction
 		(at 196.85 49.53)
@@ -3407,6 +3433,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 34.29) (xy 193.04 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fd75d0-880a-40da-a6a0-206c973b2419")
+	)
+	(wire
+		(pts
 			(xy 38.1 134.62) (xy 38.1 133.35)
 		)
 		(stroke
@@ -3604,6 +3640,16 @@
 			(type default)
 		)
 		(uuid "31cb5f5c-d81b-4c68-a37d-5071b853f021")
+	)
+	(wire
+		(pts
+			(xy 193.04 45.72) (xy 193.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "327e065d-73ca-443e-9840-c7fa2efcf176")
 	)
 	(wire
 		(pts
@@ -3927,16 +3973,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 49.53) (xy 181.61 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62b31425-8dc7-449a-88b7-80734943630a")
-	)
-	(wire
-		(pts
 			(xy 67.31 58.42) (xy 74.93 58.42)
 		)
 		(stroke
@@ -4104,6 +4140,16 @@
 			(type default)
 		)
 		(uuid "8106d49a-5dde-4355-9e60-e3069ca612d7")
+	)
+	(wire
+		(pts
+			(xy 181.61 34.29) (xy 193.04 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b13bcc-788d-4abc-a33e-67aa958559b0")
 	)
 	(wire
 		(pts
@@ -5256,7 +5302,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "22p"
 			(at 185.42 67.3099 0)
 			(effects
 				(font
@@ -5265,7 +5311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 182.5752 69.85 0)
 			(effects
 				(font
@@ -5332,7 +5378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 237.49 64.4652 0)
 			(effects
 				(font
@@ -5459,7 +5505,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 115.57 51.562 0)
 			(effects
 				(font
@@ -5468,7 +5514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 117.8052 60.96 0)
 			(effects
 				(font
@@ -5594,7 +5640,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20nF"
+		(property "Value" "20n"
 			(at 124.46 41.9099 0)
 			(effects
 				(font
@@ -5603,7 +5649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 121.6152 44.45 0)
 			(effects
 				(font
@@ -5640,6 +5686,76 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
 					(reference "C71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 181.61 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23baa385-cfcb-4a0a-bd5c-37f2c136afc1")
+		(property "Reference" "L7"
+			(at 182.88 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 182.88 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8e9dc4c6-b1ce-42e8-8116-adb9ea3b5772")
+		)
+		(pin "1"
+			(uuid "5cb64975-8d21-4ffa-878c-44960442a290")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "L7")
 					(unit 1)
 				)
 			)
@@ -5869,7 +5985,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 193.04 49.53 0)
+		(at 193.04 45.72 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5877,7 +5993,7 @@
 		(dnp no)
 		(uuid "34bd4b08-74ec-4365-abb3-22a52eac0921")
 		(property "Reference" "TP48"
-			(at 193.548 43.688 0)
+			(at 198.882 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5885,7 +6001,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 195.58 46.228 90)
+			(at 196.342 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,7 +6010,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 198.12 49.53 0)
+			(at 193.04 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5903,7 +6019,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 198.12 49.53 0)
+			(at 193.04 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5912,7 +6028,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 193.04 49.53 0)
+			(at 193.04 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6291,7 +6407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 124.1552 87.63 0)
 			(effects
 				(font
@@ -6816,7 +6932,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.9"
+		(property "Value" "1u"
 			(at 182.88 54.6099 0)
 			(effects
 				(font
@@ -6868,6 +6984,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 181.61 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70482b32-44fd-4b40-8fdd-68cd45e8316a")
+		(property "Reference" "L8"
+			(at 182.88 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 182.88 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "765f8615-4d45-4ffa-bd26-d87293d97770")
+		)
+		(pin "1"
+			(uuid "5abd9e2d-c5e1-4bd3-b018-ad42647d76a5")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "L8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 223.52 53.34 0)
 		(unit 1)
@@ -6894,7 +7080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 224.4852 57.15 0)
 			(effects
 				(font
@@ -6963,7 +7149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 124.1552 60.96 0)
 			(effects
 				(font
@@ -7893,7 +8079,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 215.5952 57.15 0)
 			(effects
 				(font
@@ -8300,7 +8486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 197.8152 57.15 0)
 			(effects
 				(font
@@ -8503,7 +8689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 110.1852 60.96 0)
 			(effects
 				(font
@@ -8638,7 +8824,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 173.6852 58.42 0)
 			(effects
 				(font
@@ -8773,7 +8959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 206.7052 57.15 0)
 			(effects
 				(font
@@ -9042,7 +9228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 116.5352 72.39 0)
 			(effects
 				(font
