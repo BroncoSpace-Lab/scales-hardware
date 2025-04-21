@@ -70,8 +70,8 @@
 			)
 			(symbol "G125-MH11605L3P_0_0"
 				(rectangle
-					(start -8.89 -10.16)
-					(end 8.89 12.7)
+					(start -8.89 12.7)
+					(end 8.89 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -540,6 +540,44 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "G125-MH11605L3P_1_1"
+				(pin passive line
+					(at -1.27 -12.7 90)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -12.7 90)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2732,7 +2770,7 @@
 	)
 	(text "Gecko 16 pin Male connector"
 		(exclude_from_sim no)
-		(at 60.452 149.86 0)
+		(at 60.706 153.162 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3128,6 +3166,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "167568fd-db4a-47d3-9b48-2d85fca8dc7e")
+	)
+	(junction
+		(at 62.23 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a2c04cc-13e7-4ed2-a337-cf2556a22ba3")
 	)
 	(junction
 		(at 182.88 68.58)
@@ -3622,6 +3666,16 @@
 			(type default)
 		)
 		(uuid "2eec1981-7af8-49b7-aa6d-a7d15fe72416")
+	)
+	(wire
+		(pts
+			(xy 63.5 146.05) (xy 62.23 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2efdc843-5a3a-4942-b059-73118800cb2a")
 	)
 	(wire
 		(pts
@@ -4395,6 +4449,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 146.05) (xy 62.23 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b790b425-88e6-45e5-a0a9-4632932742d3")
+	)
+	(wire
+		(pts
 			(xy 120.65 71.12) (xy 120.65 72.39)
 		)
 		(stroke
@@ -5137,7 +5201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e27b88e-9f38-4743-9e2f-af49a5273c57")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR08"
 			(at 110.49 66.04 0)
 			(effects
 				(font
@@ -5187,7 +5251,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR07")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5461,6 +5525,12 @@
 		(pin "4"
 			(uuid "58c3c89e-b26f-4634-bff8-5c3a3d390053")
 		)
+		(pin "18"
+			(uuid "8ece5400-07a2-4c21-b5e2-9a4bccdce839")
+		)
+		(pin "17"
+			(uuid "c61fe17c-1103-4854-b957-41c00890c7c6")
+		)
 		(instances
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
@@ -5525,6 +5595,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25805"
+			(at 40.64 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3c03bd9c-50ed-4528-94f2-4539c7e02776")
 		)
@@ -5550,7 +5629,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28d88892-c2e8-43db-b621-f6d8562cc541")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR013"
 			(at 132.08 50.8 0)
 			(effects
 				(font
@@ -5600,7 +5679,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR012")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5728,6 +5807,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C304010"
+			(at 242.57 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "642b919a-5c6d-4bc7-9346-a2e98b99a780")
 		)
@@ -5752,7 +5840,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b2656f2-b8a9-466d-a450-2fdfbf4bbbcd")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR011"
 			(at 124.46 66.04 0)
 			(effects
 				(font
@@ -5802,7 +5890,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR010")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5855,6 +5943,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 135.89 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16840"
 			(at 135.89 76.2 0)
 			(effects
 				(font
@@ -5956,7 +6053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ab2e381-a813-493f-910c-82a05a815cbd")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -6006,7 +6103,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6136,6 +6233,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C580882"
+			(at 93.98 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "61997029-798c-4521-91da-a6e0cfac108f")
 		)
@@ -6179,7 +6285,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63cccdb9-d467-4c56-a400-cdc748672463")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG04"
 			(at 231.775 59.69 0)
 			(effects
 				(font
@@ -6230,7 +6336,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#FLG05")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -6313,7 +6419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6507ea12-4b18-4444-ad8c-4dc47ac3a948")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR019"
 			(at 262.89 62.23 0)
 			(effects
 				(font
@@ -6363,7 +6469,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR018")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6379,7 +6485,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "672a0a0f-f356-4e0d-bfff-410939886c35")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 92.71 73.66 0)
 			(effects
 				(font
@@ -6429,7 +6535,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6462,7 +6568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 125.4252 86.36 0)
 			(effects
 				(font
@@ -6506,6 +6612,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 63.5 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68d00ca8-26bf-4f6a-bcf0-450ecc9cc098")
+		(property "Reference" "#PWR05"
+			(at 63.5 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8224005d-454d-4d6c-9bd3-367d79f8fabe")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 172.72 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6514,7 +6686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6ca311f7-f068-4048-ade5-2fa7ec735aef")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 172.72 48.26 0)
 			(effects
 				(font
@@ -6564,7 +6736,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6850,7 +7022,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "739515d2-249b-4499-a7f5-89c58057dc80")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 74.93 77.47 0)
 			(effects
 				(font
@@ -6900,7 +7072,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -6952,6 +7124,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 124.46 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C304010"
 			(at 124.46 55.88 0)
 			(effects
 				(font
@@ -7021,6 +7202,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C309062"
 			(at 110.49 55.88 0)
 			(effects
 				(font
@@ -7232,6 +7422,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14675"
+			(at 74.93 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "38521dfe-f0bd-4e44-b770-28437ec27bc9")
 		)
@@ -7257,7 +7456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "884d2528-9d5f-40e8-bccf-4bb68a0f7506")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR010"
 			(at 120.65 78.74 0)
 			(effects
 				(font
@@ -7307,7 +7506,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR09")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7365,6 +7564,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14675"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c89dba3b-e3c7-4422-955f-0312629b57b9")
 		)
@@ -7390,7 +7598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9026406f-06b0-4802-a831-96a25893ea95")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR015"
 			(at 152.4 82.55 0)
 			(effects
 				(font
@@ -7440,7 +7648,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR014")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7523,7 +7731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94076d18-0b4d-48dd-bcbc-1cec95d1f410")
-		(property "Reference" "L1"
+		(property "Reference" "L3"
 			(at 184.15 50.7999 0)
 			(effects
 				(font
@@ -7550,7 +7758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+		(property "Datasheet" "~"
 			(at 182.88 52.07 0)
 			(effects
 				(font
@@ -7559,7 +7767,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+		(property "Description" "Inductor"
+			(at 182.88 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19191645"
 			(at 182.88 52.07 0)
 			(effects
 				(font
@@ -7577,7 +7794,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "L1")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -7630,6 +7847,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 124.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13564"
 			(at 124.46 73.66 0)
 			(effects
 				(font
@@ -7727,7 +7953,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3c3f1cf-c61e-4cee-8b1f-14edfe3a2c6d")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG03"
 			(at 227.965 33.02 0)
 			(effects
 				(font
@@ -7778,7 +8004,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#FLG04")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -7908,6 +8134,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25811"
+			(at 40.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8923c0ab-2199-4880-ab27-c0964e1db2d3")
 		)
@@ -7933,7 +8168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a90bee9f-07fd-42a7-ba19-d600075e5b00")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR018"
 			(at 247.65 71.12 0)
 			(effects
 				(font
@@ -7983,7 +8218,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR017")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7999,7 +8234,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afded8a5-c8e0-40c2-b637-fd9f31594883")
-		(property "Reference" "L3"
+		(property "Reference" "L2"
 			(at 184.15 43.1799 0)
 			(effects
 				(font
@@ -8026,7 +8261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+		(property "Datasheet" "~"
 			(at 182.88 44.45 0)
 			(effects
 				(font
@@ -8035,7 +8270,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+		(property "Description" "Inductor"
+			(at 182.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19191645"
 			(at 182.88 44.45 0)
 			(effects
 				(font
@@ -8053,7 +8297,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "L3")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -8069,7 +8313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b82604c3-8de3-4c2f-b8e2-bd9fbe400ec2")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR012"
 			(at 124.46 93.98 0)
 			(effects
 				(font
@@ -8119,7 +8363,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR011")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -8152,7 +8396,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 122.8852 43.18 0)
 			(effects
 				(font
@@ -8306,6 +8550,15 @@
 			)
 		)
 		(property "Description" "INA230 36V, 16-Bit, I2C Output Current, Voltage and Power Monitor With Alert"
+			(at 247.65 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C92112"
 			(at 247.65 49.53 0)
 			(effects
 				(font
@@ -8564,7 +8817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfe4a9a4-1227-4601-8fce-c517e14302e0")
-		(property "Reference" "L5"
+		(property "Reference" "L1"
 			(at 184.15 35.5599 0)
 			(effects
 				(font
@@ -8591,7 +8844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xel/xel6030/?srsltid=AfmBOoqxe6hS-AVIr3woqGFRZjt3QaXyQi86MwGE0zvqKz2AENsjz4RA"
+		(property "Datasheet" "~"
 			(at 182.88 36.83 0)
 			(effects
 				(font
@@ -8600,7 +8853,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Coilcraft XEL6030-102 Power Inductor"
+		(property "Description" "Inductor"
+			(at 182.88 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19191645"
 			(at 182.88 36.83 0)
 			(effects
 				(font
@@ -8618,7 +8880,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "L5")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -8671,6 +8933,15 @@
 			)
 		)
 		(property "Description" "42V, 10A/12A Peak Synchronous Step-Down Silent Switcher 2"
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3188906"
 			(at 152.4 58.42 0)
 			(effects
 				(font
@@ -8782,6 +9053,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 69.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13163"
 			(at 69.85 53.34 0)
 			(effects
 				(font
@@ -8924,6 +9204,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C436244"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f62550d6-e412-468e-af1b-988728609c44")
 		)
@@ -8966,7 +9255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 71.12 0)
 			(effects
 				(font
@@ -8985,6 +9274,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C304010"
 			(at 120.65 67.31 0)
 			(effects
 				(font
@@ -9017,7 +9315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0bc284e-951f-4595-b15e-7991124b1a8d")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR017"
 			(at 194.31 83.82 0)
 			(effects
 				(font
@@ -9067,7 +9365,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR016")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9083,7 +9381,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5bba6c3-2a9d-433a-930d-d0c1aa216fef")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 135.89 87.63 0)
 			(effects
 				(font
@@ -9133,7 +9431,7 @@
 		(instances
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
