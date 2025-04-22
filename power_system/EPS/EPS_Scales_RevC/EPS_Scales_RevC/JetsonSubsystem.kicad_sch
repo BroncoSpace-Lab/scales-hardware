@@ -1399,7 +1399,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "LT8638S"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1759,7 +1759,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "LTC4365"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1976,7 +1976,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "DN-T1-GE3_VIS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2780,7 +2780,7 @@
 	)
 	(text "Switching Regulator"
 		(exclude_from_sim no)
-		(at 151.13 34.036 0)
+		(at 141.732 33.782 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2920,6 +2920,26 @@
 		)
 		(uuid "18748f3b-2474-4ef0-92ae-021853483255")
 	)
+	(text_box "Caps tied to higher voltage lines must be +75V"
+		(exclude_from_sim no)
+		(at 148.59 24.765 0)
+		(size 29.845 5.08)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1daece4b-435d-42f7-b053-7498947045ff")
+	)
 	(text_box "Choke Inductor (Pg. 3) of Rev C. Calcs"
 		(exclude_from_sim no)
 		(at 189.23 19.685 0)
@@ -3001,26 +3021,6 @@
 			(justify left top)
 		)
 		(uuid "60381ea5-8d7d-4050-9deb-3713472aa8f3")
-	)
-	(text_box "All Caps must be +75V for safety"
-		(exclude_from_sim no)
-		(at 149.225 27.305 0)
-		(size 36.195 3.81)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "63888fdf-c460-4477-9f91-4440a97754fa")
 	)
 	(text_box "Soft Start C (Pg. 11) of Rev C. Calcs"
 		(exclude_from_sim no)
@@ -3210,6 +3210,12 @@
 		(uuid "2e44c03f-9ddc-4859-8fe5-339578f4b87e")
 	)
 	(junction
+		(at 74.93 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e839c4a-a23f-427c-bbec-f6a0a231cee9")
+	)
+	(junction
 		(at 182.88 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3244,6 +3250,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a1e5126-63de-4a4f-8bcc-970b3446057a")
+	)
+	(junction
+		(at 212.09 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50ae13dd-6721-4cbd-8624-5d55ef8cb895")
 	)
 	(junction
 		(at 130.81 52.07)
@@ -3292,6 +3304,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8861da4b-778a-45e1-bdb6-f9b4051c38d2")
+	)
+	(junction
+		(at 160.02 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89148951-596e-4408-9afd-990fc540f46b")
 	)
 	(junction
 		(at 229.87 30.48)
@@ -3586,16 +3604,6 @@
 			(type default)
 		)
 		(uuid "2247e51d-962a-4156-b451-798dba8b035f")
-	)
-	(wire
-		(pts
-			(xy 160.02 35.56) (xy 160.02 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "229aaa1c-84e5-4632-b806-8ce86b3ea35d")
 	)
 	(wire
 		(pts
@@ -3929,7 +3937,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 57.15) (xy 215.9 57.15)
+			(xy 207.01 57.15) (xy 212.09 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4149,7 +4157,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 140.97) (xy 73.66 140.97)
+			(xy 76.2 140.97) (xy 74.93 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4269,6 +4277,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 140.97) (xy 73.66 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d2b831a-b89c-4785-85eb-5696f712e3cc")
+	)
+	(wire
+		(pts
 			(xy 259.08 52.07) (xy 262.89 52.07)
 		)
 		(stroke
@@ -4299,7 +4317,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 35.56) (xy 160.02 35.56)
+			(xy 161.29 33.02) (xy 160.02 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4529,6 +4547,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 33.02) (xy 160.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2273f4f-25c6-4999-9a93-60efdbb31fd2")
+	)
+	(wire
+		(pts
 			(xy 168.91 49.53) (xy 173.99 49.53)
 		)
 		(stroke
@@ -4566,6 +4594,16 @@
 			(type default)
 		)
 		(uuid "d411ad0f-9327-467c-8fe4-8ad0eef0463a")
+	)
+	(wire
+		(pts
+			(xy 212.09 57.15) (xy 215.9 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d51da4c1-a100-40e2-95d4-b52264bd413b")
 	)
 	(wire
 		(pts
@@ -4909,7 +4947,7 @@
 	)
 	(global_label "SYNC_PHASE1"
 		(shape input)
-		(at 161.29 35.56 0)
+		(at 161.29 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4919,7 +4957,7 @@
 		)
 		(uuid "5f432e58-0268-4588-bb00-3f7c760b9a21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.3985 35.56 0)
+			(at 177.3985 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,6 +5096,73 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 140.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00910682-2fff-4751-b583-3a0db52b4a9d")
+		(property "Reference" "TP46"
+			(at 74.93 145.796 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.6601 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 69.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4c3a585-077c-4384-88ba-73a0043b1a85")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "TP46")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5275,7 +5380,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "DN-T1-GE3_VIS"
 			(at 95.885 24.13 0)
 			(effects
 				(font
@@ -5283,7 +5388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RevC Footprints:SISB46DN-T1-GE3"
+		(property "Footprint" "RevC Footprints:MOSFET_DN-T1-GE3_VIS"
 			(at 95.25 29.21 0)
 			(effects
 				(font
@@ -6110,6 +6215,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 212.09 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51cafc61-d1fc-45df-93d4-0df6a7957700")
+		(property "Reference" "#PWR086"
+			(at 212.09 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 212.09 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89077e84-c0ab-4de4-8e13-2eb3e5646ef5")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 198.12 52.07 0)
 		(unit 1)
@@ -6186,10 +6357,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5e4fd1c1-1ca5-4199-9b94-a669b39c9782")
 		(property "Reference" "U1"
-			(at 97.3933 43.18 0)
+			(at 100.33 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6197,7 +6367,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "LTC4365"
 			(at 97.3933 45.72 0)
 			(effects
 				(font
@@ -8304,6 +8474,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 160.02 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4e07123-6f99-42af-b411-bc4c9f740ac6")
+		(property "Reference" "TP45"
+			(at 154.178 33.528 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.718 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 160.02 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 160.02 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2785c11-8ed6-4eed-8a87-3f109c89bc5f")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "TP45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 124.46 87.63 0)
 		(unit 1)
@@ -8513,7 +8748,7 @@
 		(dnp no)
 		(uuid "d1d05c7c-3081-4056-9710-7e4dbb3af77a")
 		(property "Reference" "U3"
-			(at 253.492 42.418 0)
+			(at 239.014 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8894,10 +9129,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e26c7eae-5b1c-49d9-9c12-c1e69f127148")
 		(property "Reference" "U2"
-			(at 154.5433 73.66 0)
+			(at 138.43 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8905,7 +9139,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "LT8638SEVPBF"
 			(at 154.5433 74.93 0)
 			(effects
 				(font
