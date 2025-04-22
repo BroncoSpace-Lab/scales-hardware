@@ -2989,6 +2989,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Look at making this a seperate board"
+		(exclude_from_sim no)
+		(at 113.538 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3cbb785b-af26-4f1a-9628-ddfd562ac8bc")
+	)
 	(text "1-2 Close for default\n1-2: USB 3.3V from LDO\n2-3: USB 5.0V from USB\n"
 		(exclude_from_sim no)
 		(at 170.688 24.892 0)
@@ -2999,6 +3009,26 @@
 			(justify left)
 		)
 		(uuid "47a183b9-f91d-47e2-928d-bf24b9e69ce9")
+	)
+	(text "Understand what this is used for"
+		(exclude_from_sim no)
+		(at 217.678 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4a487b7d-d8c1-40e7-9a7b-4a7946aac4d0")
+	)
+	(text "remove the pinheader for DEV"
+		(exclude_from_sim no)
+		(at 179.07 16.764 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a80919f9-fba4-40a5-a077-0256d05cbf7a")
 	)
 	(text "1-2 Close for default\n1-2: 3.3V USB reset\n2-3: USB 5V Reset\n\n"
 		(exclude_from_sim no)
@@ -3246,6 +3276,16 @@
 			(type default)
 		)
 		(uuid "07b0374f-1b83-4762-9bb1-4e7816838602")
+	)
+	(wire
+		(pts
+			(xy 245.11 34.29) (xy 245.11 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07f17413-d52d-41a0-b16e-564b2ea8299c")
 	)
 	(wire
 		(pts
@@ -4385,6 +4425,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD33"
+		(shape input)
+		(at 245.11 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87433bf0-033f-4be2-a2ac-2067c25f8ae6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.0772 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8761,72 +8823,6 @@
 			(project "peripheral_board"
 				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd/7856a3c9-64d6-436e-a586-a702bee0baf4/3f4ce27a-59a8-4114-a75e-f3fd0542c3c7"
 					(reference "#PWR0168")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 245.11 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f8b89333-66f9-4de6-8c59-d892538d3d88")
-		(property "Reference" "#PWR0171"
-			(at 245.11 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 242.316 37.084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 245.11 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.11 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 245.11 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4046da7d-8dfd-4544-bb6b-115d9d99da70")
-		)
-		(instances
-			(project "peripheral_board"
-				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd/7856a3c9-64d6-436e-a586-a702bee0baf4/3f4ce27a-59a8-4114-a75e-f3fd0542c3c7"
-					(reference "#PWR0171")
 					(unit 1)
 				)
 			)
