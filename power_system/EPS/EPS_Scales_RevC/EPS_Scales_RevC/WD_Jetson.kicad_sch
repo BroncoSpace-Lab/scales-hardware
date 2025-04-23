@@ -2398,6 +2398,12 @@
 		(uuid "e2719bc9-8185-4ea0-9b90-de47ace92a57")
 	)
 	(junction
+		(at 248.92 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5e863d9-4b41-4867-a043-16bcc20678e9")
+	)
+	(junction
 		(at 88.9 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3005,6 +3011,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 123.19) (xy 269.24 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86a9a570-cf38-44d2-b1ad-202cdff1dc29")
+	)
+	(wire
+		(pts
 			(xy 135.89 59.69) (xy 135.89 114.3)
 		)
 		(stroke
@@ -3095,7 +3111,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 123.19) (xy 269.24 123.19)
+			(xy 228.6 123.19) (xy 248.92 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6966,6 +6982,73 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 248.92 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a556b3ce-9874-4a3a-8cd3-6ecbcefefd52")
+		(property "Reference" "TP47"
+			(at 248.92 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 250.1899 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 254 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 248.92 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2db05179-7efb-498c-8660-d3c4cd9c6a92")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "TP47")
 					(unit 1)
 				)
 			)
