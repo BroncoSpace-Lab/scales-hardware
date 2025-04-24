@@ -13,6 +13,16 @@
 		(comment 2 "By John Pollak")
 	)
 	(lib_symbols)
+	(text "Different config of the 5-port ethernet\n"
+		(exclude_from_sim no)
+		(at 39.116 125.476 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f31e0622-75c1-4c23-b0c7-82ebc8ed7229")
+	)
 	(sheet
 		(at 25.4 25.4)
 		(size 50.8 38.1)
@@ -95,6 +105,48 @@
 			(project "peripheral_board"
 				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 26.67 130.81)
+		(size 25.4 11.43)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bdffb641-9271-40a7-b849-e20d9ae38619")
+		(property "Sheetname" "Strap in mode"
+			(at 26.67 130.0984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "newethernet.kicad_sch"
+			(at 26.67 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "peripheral_board"
+				(path "/14f8712f-1710-40cb-b01e-cc9b3c4405bd"
+					(page "13")
 				)
 			)
 		)

@@ -1237,7 +1237,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 116.84) (xy 227.33 116.84)
+			(xy 167.64 116.84) (xy 227.33 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1257,7 +1257,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 116.84) (xy 179.07 119.38)
+			(xy 167.64 116.84) (xy 167.64 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1307,7 +1307,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 127) (xy 179.07 143.51)
+			(xy 167.64 127) (xy 167.64 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1357,7 +1357,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 143.51) (xy 186.69 143.51)
+			(xy 167.64 143.51) (xy 186.69 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1435,6 +1435,94 @@
 		)
 		(uuid "e6765f98-9ba5-4c5f-9fe6-aaf207e7df86")
 	)
+	(global_label "R2CT"
+		(shape input)
+		(at 274.32 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "09c70828-d446-476a-a67f-7594d264219c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 282.0223 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RX2M"
+		(shape input)
+		(at 254 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8d7adf26-c852-455a-8b6f-3aff22052b1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 262.1256 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TX2P"
+		(shape input)
+		(at 167.64 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e0bff13-d40a-4d5f-982f-b1e78a584ea7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 159.9982 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TX2M"
+		(shape input)
+		(at 186.69 124.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a36a7139-0f63-44d1-a68d-27baafc86edc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 178.8668 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED2_1"
 		(shape input)
 		(at 222.25 109.22 180)
@@ -1470,6 +1558,50 @@
 		(uuid "c590a2e8-fc5b-4156-b64e-7109334924c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 260.0089 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T2CT"
+		(shape input)
+		(at 232.41 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1985005-5ce2-41a8-a765-58fe49c140ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.0101 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RX2P"
+		(shape input)
+		(at 265.43 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f04a2f7c-b791-4359-a397-084e5c415147")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.3742 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2591,7 +2723,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 179.07 123.19 0)
+		(at 167.64 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2599,7 +2731,7 @@
 		(dnp no)
 		(uuid "ef19eb0c-8bce-4163-8a1c-bb08d9e5804a")
 		(property "Reference" "R44"
-			(at 181.61 124.46 0)
+			(at 170.18 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2607,7 +2739,7 @@
 			)
 		)
 		(property "Value" "49.9"
-			(at 182.372 122.428 0)
+			(at 170.942 122.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2615,7 +2747,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 180.086 123.444 90)
+			(at 168.656 123.444 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2624,7 +2756,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 123.19 0)
+			(at 167.64 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2633,7 +2765,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 179.07 123.19 0)
+			(at 167.64 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
