@@ -2177,6 +2177,26 @@
 		)
 		(uuid "f383ae4b-94ee-4261-9da8-3c2effe4837a")
 	)
+	(text_box "This watchdog is left floating due to being pulled low at the input side of the load switch."
+		(exclude_from_sim no)
+		(at 238.125 100.965 0)
+		(size 31.115 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ec1a38cd-e5dc-4c3a-9efd-bca590ce7388")
+	)
 	(junction
 		(at 102.87 123.19)
 		(diameter 0)
@@ -3503,28 +3523,6 @@
 		)
 		(uuid "e2131b2a-b1f4-4c3e-b8cb-435b2eeeccd0")
 	)
-	(global_label "+5V_Perif_Out"
-		(shape input)
-		(at 185.42 19.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "081732ff-9318-4e17-9625-18eb7b1e7325")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.8914 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "WDT_WDI_Perif"
 		(shape input)
 		(at 86.36 123.19 180)
@@ -3549,7 +3547,29 @@
 			)
 		)
 	)
-	(global_label "+5V_Perif_Out"
+	(global_label "+5V_Perif"
+		(shape input)
+		(at 185.42 19.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9f3d2ccf-d822-4edb-910b-a4f8c235975e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.7186 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V_Perif"
 		(shape input)
 		(at 52.07 38.1 0)
 		(fields_autoplaced yes)
@@ -3561,7 +3581,7 @@
 		)
 		(uuid "b53be4f6-4dde-45d4-b129-902439c9e218")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.5414 38.1 0)
+			(at 64.3686 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
