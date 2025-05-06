@@ -2768,6 +2768,18 @@
 		)
 		(uuid 55d6ec89-3464-42d1-accb-fa66905d3e42)
 	)
+	(rectangle
+		(start 178.435 105.41)
+		(end 210.82 163.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ffde455d-8923-41b7-a5d0-74e5e5d2abbf)
+	)
 	(text "Switching Regulator"
 		(exclude_from_sim no)
 		(at 141.732 33.782 0)
@@ -2797,6 +2809,16 @@
 			)
 		)
 		(uuid "37b76f3d-66da-4a69-a3dd-ba8f3e4bacd0")
+	)
+	(text "Vin for Jetson Watchdog\n"
+		(exclude_from_sim no)
+		(at 191.008 107.442 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b1d8b46-7e2c-4408-814d-07d6eaa75dfe")
 	)
 	(text "NPN 40A Dual Gate MOSFET"
 		(exclude_from_sim no)
@@ -3222,6 +3244,12 @@
 		(uuid "52e9340d-76b4-4a70-8d53-a29750903afa")
 	)
 	(junction
+		(at 184.15 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63787363-b1c1-4e96-9ff7-f7afd2cf3df9")
+	)
+	(junction
 		(at 48.26 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3479,6 +3507,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 129.54) (xy 184.15 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "114eec9a-5a9c-4d3d-9010-d24fef3496fb")
+	)
+	(wire
+		(pts
 			(xy 224.79 57.15) (xy 224.79 55.88)
 		)
 		(stroke
@@ -3706,6 +3744,16 @@
 			(type default)
 		)
 		(uuid "3a3a7591-6fa3-4830-b38f-67d7394e7e93")
+	)
+	(wire
+		(pts
+			(xy 184.15 132.08) (xy 193.04 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4adb45-c46f-4903-bb8d-cb817d01b506")
 	)
 	(wire
 		(pts
@@ -4029,6 +4077,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 142.24) (xy 184.15 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "735fe326-caa8-4367-904e-9508cb61365f")
+	)
+	(wire
+		(pts
 			(xy 165.1 40.64) (xy 165.1 39.37)
 		)
 		(stroke
@@ -4209,6 +4267,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 132.08) (xy 184.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91fe2b58-1308-42ce-a49c-f7e457d1b9d9")
+	)
+	(wire
+		(pts
 			(xy 130.81 52.07) (xy 135.89 52.07)
 		)
 		(stroke
@@ -4296,6 +4364,16 @@
 			(type default)
 		)
 		(uuid "a1a48d49-179d-4c58-b460-ab1b2bab6e4c")
+	)
+	(wire
+		(pts
+			(xy 184.15 116.84) (xy 184.15 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3aa3bf1-fc24-4ab4-b80b-a8c91e30ef31")
 	)
 	(wire
 		(pts
@@ -5029,6 +5107,50 @@
 			)
 		)
 	)
+	(global_label "+20V_Jetson"
+		(shape output)
+		(at 184.15 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c074398b-7881-4b0b-930f-59f72eb931bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 199.2908 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V_WD_J"
+		(shape input)
+		(at 193.04 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd1988ef-19f8-48e2-869c-7d9319ffc64e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.5199 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 74.93 140.97 180)
@@ -5221,6 +5343,73 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
 					(reference "OV_TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 184.15 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0bd3c6c8-fcea-494d-8226-b162895cbb70")
+		(property "Reference" "R41"
+			(at 187.706 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50k"
+			(at 187.96 136.906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 182.372 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 184.15 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b7311278-63c2-496b-8dfe-0da3381fdcdf")
+		)
+		(pin "1"
+			(uuid "c3b196cc-ddc6-4a3c-860c-8301444a2862")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -7555,6 +7744,139 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 184.15 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e04ef85-88c0-4aee-84eb-ba5644a48ea1")
+		(property "Reference" "#PWR049"
+			(at 184.15 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 184.15 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 184.15 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef180c5d-1c1c-4597-8b28-2f05123f0b97")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 184.15 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e8da55d-f80f-47d1-96bd-23d69c9338a9")
+		(property "Reference" "R40"
+			(at 187.706 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "150k"
+			(at 187.96 124.206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 182.372 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 184.15 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d2377f98-baa9-444c-8698-d15894eb114d")
+		)
+		(pin "1"
+			(uuid "4f70b540-c860-4c47-ad57-9cfed6c45bff")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "R40")
 					(unit 1)
 				)
 			)
