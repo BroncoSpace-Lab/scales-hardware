@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "LTC4300A"
+	(symbol "LTC4300A-1"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14,8 +14,8 @@
 				)
 			)
 		)
-		(property "Value" "LTC4300A"
-			(at -4.064 6.35 0)
+		(property "Value" "LTC4300A-1"
+			(at -2.794 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50,7 +50,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "LTC4300A_0_1"
+		(symbol "LTC4300A-1_0_1"
 			(rectangle
 				(start -8.89 7.62)
 				(end 12.7 -6.35)
@@ -63,9 +63,9 @@
 				)
 			)
 		)
-		(symbol "LTC4300A_1_1"
-			(text "LTC4300A"
-				(at -4.064 6.35 0)
+		(symbol "LTC4300A-1_1_1"
+			(text "LTC4300A-1"
+				(at -2.794 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -90,17 +90,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin input line
 				(at -11.43 1.27 0)
 				(length 2.54)
-				(name "SCL_OUT"
+				(name "SDA_IN"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -147,7 +147,7 @@
 			(pin input line
 				(at 15.24 3.81 180)
 				(length 2.54)
-				(name "VCC2"
+				(name "ENABLE"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -180,17 +180,17 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at 15.24 -1.27 180)
 				(length 2.54)
-				(name "SDA_IN"
+				(name "SCL_OUT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "6"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)

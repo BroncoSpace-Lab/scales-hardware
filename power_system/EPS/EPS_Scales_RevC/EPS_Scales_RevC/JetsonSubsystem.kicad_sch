@@ -652,44 +652,6 @@
 					)
 				)
 			)
-			(symbol "DF11-16DP-2DSA_1_1"
-				(pin passive line
-					(at -1.27 -12.7 90)
-					(length 2.54)
-					(name "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 -12.7 90)
-					(length 2.54)
-					(name "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
 			(embedded_fonts no)
 		)
 		(symbol "Device:C"
@@ -1984,7 +1946,7 @@
 					)
 				)
 			)
-			(property "Footprint" "RevC Footprints:MOSFET_DN-T1-GE3_VIS"
+			(property "Footprint" "RevC Footprints:SISB46DN-T1-GE3"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2870,26 +2832,6 @@
 		)
 		(uuid "04f84569-b953-40b2-9502-6cc21e43de52")
 	)
-	(text_box "3*3.3u inductors due to there being no 10u Inductor"
-		(exclude_from_sim no)
-		(at 194.945 31.75 0)
-		(size 24.765 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "05b78431-1090-4003-9be4-6eefc17d5651")
-	)
 	(text_box "~{SHDN} pulled low so it is only able to be turned on by WD or OBC"
 		(exclude_from_sim no)
 		(at 60.96 79.375 0)
@@ -3334,12 +3276,6 @@
 		(uuid "9bc32681-533f-4797-9f57-7d7b149927b5")
 	)
 	(junction
-		(at 60.96 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1c852a3-e0b9-4416-8921-7cfe56dd118c")
-	)
-	(junction
 		(at 173.99 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3386,12 +3322,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cef94c87-bd7c-493d-b74d-8c317f00893e")
-	)
-	(junction
-		(at 194.31 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e3b9d81a-bb66-4ba9-9571-9efac81f3406")
 	)
 	(junction
 		(at 233.68 62.23)
@@ -3947,16 +3877,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 146.05) (xy 60.96 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5db75958-150e-4e2c-94a1-5cd2b21cc599")
-	)
-	(wire
-		(pts
 			(xy 207.01 57.15) (xy 212.09 57.15)
 		)
 		(stroke
@@ -4094,16 +4014,6 @@
 			(type default)
 		)
 		(uuid "767f57ca-897f-45a7-956a-fb74103a72bb")
-	)
-	(wire
-		(pts
-			(xy 194.31 33.02) (xy 194.31 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "769b664f-95bf-4613-b5fa-38027f920d75")
 	)
 	(wire
 		(pts
@@ -4257,16 +4167,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 146.05) (xy 60.96 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91375ad0-cbfd-42e8-97a3-3ccee41eb521")
-	)
-	(wire
-		(pts
 			(xy 184.15 132.08) (xy 184.15 134.62)
 		)
 		(stroke
@@ -4284,16 +4184,6 @@
 			(type default)
 		)
 		(uuid "94802b3d-efb8-4f94-a106-c788fb834382")
-	)
-	(wire
-		(pts
-			(xy 182.88 33.02) (xy 194.31 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "973ba22d-03e4-4e5d-b53c-13adb500d108")
 	)
 	(wire
 		(pts
@@ -4807,6 +4697,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 48.26) (xy 194.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7a06b9-ff05-4959-8493-ae774e3791c9")
+	)
+	(wire
+		(pts
 			(xy 40.64 67.31) (xy 53.34 67.31)
 		)
 		(stroke
@@ -4844,16 +4744,6 @@
 			(type default)
 		)
 		(uuid "f4d1ce3a-39ee-4385-ac82-7a5d51abc4c3")
-	)
-	(wire
-		(pts
-			(xy 194.31 41.91) (xy 194.31 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f612c9f3-95c8-426d-af12-1b65f8e8b762")
 	)
 	(wire
 		(pts
@@ -5507,7 +5397,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RevC Footprints:MOSFET_DN-T1-GE3_VIS"
+		(property "Footprint" "RevC Footprints:SISB46DN-T1-GE3"
 			(at 95.25 29.21 0)
 			(effects
 				(font
@@ -6773,72 +6663,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68d00ca8-26bf-4f6a-bcf0-450ecc9cc098")
-		(property "Reference" "#PWR05"
-			(at 60.96 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8224005d-454d-4d6c-9bd3-367d79f8fabe")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 172.72 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7397,7 +7221,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 194.31 41.91 270)
+		(at 194.31 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7405,7 +7229,7 @@
 		(dnp no)
 		(uuid "80bfe93a-b2cb-4be2-980b-3283d0d2f766")
 		(property "Reference" "TP7"
-			(at 200.152 41.402 90)
+			(at 193.802 42.418 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7413,7 +7237,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 197.612 44.45 90)
+			(at 196.85 44.958 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7422,7 +7246,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 194.31 46.99 0)
+			(at 199.39 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7431,7 +7255,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 46.99 0)
+			(at 199.39 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7440,7 +7264,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 194.31 41.91 0)
+			(at 194.31 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8034,7 +7858,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3.3u"
+		(property "Value" "10u"
 			(at 184.15 53.3399 0)
 			(effects
 				(font
@@ -8043,7 +7867,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+		(property "Footprint" "RevC Footprints:INDPM132129X640N"
 			(at 182.88 52.07 0)
 			(effects
 				(font
@@ -8062,15 +7886,6 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 182.88 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C19191645"
 			(at 182.88 52.07 0)
 			(effects
 				(font
@@ -8513,85 +8328,6 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 182.88 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afded8a5-c8e0-40c2-b637-fd9f31594883")
-		(property "Reference" "L2"
-			(at 184.15 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3.3u"
-			(at 184.15 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "RevC Footprints:XEL6030102MEC"
-			(at 182.88 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 182.88 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C19191645"
-			(at 182.88 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8b118c4b-b4c3-4ab0-b6c9-ea509e526247")
-		)
-		(pin "1"
-			(uuid "a0b5b5b3-74ae-4a9c-923f-a55830a714ae")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -9167,85 +8903,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 182.88 36.83 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfe4a9a4-1227-4601-8fce-c517e14302e0")
-		(property "Reference" "L1"
-			(at 184.15 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3.3u"
-			(at 184.15 38.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "RevC Footprints:XEL6030102MEC"
-			(at 182.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/ed8d0314-5cbb-4be3-85da-32235c3701c8/xel6030.pdf"
-			(at 182.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 182.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C19191645"
-			(at 182.88 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0276a5a1-e72d-4f63-8f57-2d8c88207e86")
-		)
-		(pin "1"
-			(uuid "b3cb93e1-99d2-4d3e-bc6d-e91b201f34cd")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LT8638SEV#PBF:LT863SEV#PBF")
 		(at 152.4 58.42 0)
 		(unit 1)
@@ -9728,9 +9385,6 @@
 				(hide yes)
 			)
 		)
-		(pin "17"
-			(uuid "e770b3b9-0eff-4bb2-bc68-07f8c1852c31")
-		)
 		(pin "6"
 			(uuid "8ff2cd76-f5e8-45ba-89be-3ed5dd94852c")
 		)
@@ -9778,9 +9432,6 @@
 		)
 		(pin "16"
 			(uuid "2b9b4ea8-c5a6-491e-a856-a6f5b07fd468")
-		)
-		(pin "18"
-			(uuid "e7409627-eb7a-4521-b461-3f433797241e")
 		)
 		(instances
 			(project ""
