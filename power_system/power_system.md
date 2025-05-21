@@ -531,8 +531,3 @@ Components to be used are still being finalized, but they are based on the follo
 - Set all caps to be +75v rated [FIXED]
 
 - Set the shunt resistor to 10mohms [FIXED]
-
-Board Review Notes 5/1/25:
-- Change inductors to single inductors dont do cascaded
-- Change the block diagram to figure out how to power the watch dogs for each of the subsystems
-- Do Con ops to figure out this plan, we cant have a circular dependency for a set of watch dog use cases

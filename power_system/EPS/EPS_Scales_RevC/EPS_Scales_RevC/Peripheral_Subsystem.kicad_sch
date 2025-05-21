@@ -652,6 +652,44 @@
 					)
 				)
 			)
+			(symbol "DF11-16DP-2DSA_1_1"
+				(pin passive line
+					(at -1.27 -12.7 90)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -12.7 90)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 		(symbol "Device:C"
@@ -1946,7 +1984,7 @@
 					)
 				)
 			)
-			(property "Footprint" "RevC Footprints:SISB46DN-T1-GE3"
+			(property "Footprint" "RevC Footprints:MOSFET_DN-T1-GE3_VIS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2921,7 +2959,7 @@
 		)
 		(uuid "367cab40-07a3-4037-abfa-93b091143dcb")
 	)
-	(text_box "Soft Start C (Pg. 11) of Rev C. Calcs. ~8ms"
+	(text_box "Soft Start C (Pg. 11) of Rev C. Calcs. ~40ms"
 		(exclude_from_sim no)
 		(at 114.3 28.575 0)
 		(size 22.86 7.62)
@@ -2941,6 +2979,26 @@
 			(href "https://github.com/BroncoSpace-Lab/scales-hardware/blob/main/docs/power_system/Rev_C%20Calculations/REV%20C%20Calcs.pdf")
 		)
 		(uuid "6bb92d36-35f0-4b2c-ae90-bac443a82108")
+	)
+	(text_box "No 3u available so 3*1u inductors"
+		(exclude_from_sim no)
+		(at 189.23 25.4 0)
+		(size 19.05 8.255)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6c0523e4-e797-4de5-af3f-404d14506bab")
 	)
 	(text_box "Peripheral LTC4365 UV/OV (Pg. 7) of Rev C. Calcs [from top to bottom: R3,R2,R1]"
 		(exclude_from_sim no)
@@ -2965,7 +3023,7 @@
 	)
 	(text_box "Choke Inductor (Pg. 9) of Rev C. Calcs"
 		(exclude_from_sim no)
-		(at 177.8 36.195 0)
+		(at 175.895 22.225 0)
 		(size 12.7 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -3024,12 +3082,6 @@
 		(uuid "0fe82e9e-da9c-4bca-a783-d3fe449c9cbd")
 	)
 	(junction
-		(at 182.88 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1285b896-39ab-4d34-9865-d27838ee95e6")
-	)
-	(junction
 		(at 129.54 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3078,6 +3130,12 @@
 		(uuid "2d8b48b3-b394-429a-a1db-2bf4b958f3bc")
 	)
 	(junction
+		(at 193.04 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "307ec21d-15e6-4bb2-ae7c-b8df89c890ee")
+	)
+	(junction
 		(at 196.85 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3112,6 +3170,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f87d50c-c4dc-4b21-9127-ccc462909c69")
+	)
+	(junction
+		(at 181.61 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43ea06ad-b3da-4cf2-b7fd-7c3af2e5eeee")
 	)
 	(junction
 		(at 228.6 49.53)
@@ -3198,12 +3262,6 @@
 		(uuid "8e76c76b-43d6-4469-8805-819ce6d6a711")
 	)
 	(junction
-		(at 182.88 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9109aefe-dd12-4386-ad1d-9116ec758bca")
-	)
-	(junction
 		(at 80.01 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3214,6 +3272,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98a3304f-75d0-4ddf-9912-d8cbe0fc2d8f")
+	)
+	(junction
+		(at 53.34 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b309d08-c328-4934-b882-b27345cb443d")
 	)
 	(junction
 		(at 39.37 130.81)
@@ -3250,6 +3314,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df39d43c-7bee-4548-a5ff-382515157114")
+	)
+	(junction
+		(at 181.61 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaa5ff49-8e20-431b-8fce-48cfe4fbf8ac")
 	)
 	(junction
 		(at 205.74 58.42)
@@ -3349,6 +3419,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 140.97) (xy 53.34 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0882d07b-4405-4f9a-9478-4822b00208f4")
+	)
+	(wire
+		(pts
 			(xy 232.41 60.96) (xy 232.41 55.88)
 		)
 		(stroke
@@ -3379,16 +3459,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 69.85) (xy 193.04 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10247a42-3da1-49a0-8bd0-3a3f56b10a58")
-	)
-	(wire
-		(pts
 			(xy 193.04 49.53) (xy 193.04 62.23)
 		)
 		(stroke
@@ -3396,6 +3466,16 @@
 			(type default)
 		)
 		(uuid "10e1a754-a43b-4b4a-8f3a-caac5ae855c0")
+	)
+	(wire
+		(pts
+			(xy 193.04 34.29) (xy 193.04 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fd75d0-880a-40da-a6a0-206c973b2419")
 	)
 	(wire
 		(pts
@@ -3609,6 +3689,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 45.72) (xy 193.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "327e065d-73ca-443e-9840-c7fa2efcf176")
+	)
+	(wire
+		(pts
 			(xy 167.64 58.42) (xy 172.72 58.42)
 		)
 		(stroke
@@ -3619,7 +3709,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 69.85) (xy 182.88 69.85)
+			(xy 167.64 69.85) (xy 181.61 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3709,6 +3799,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 62.23) (xy 181.61 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "472468e6-96a3-472d-9873-6c649b2926fa")
+	)
+	(wire
+		(pts
 			(xy 48.26 52.07) (xy 48.26 59.69)
 		)
 		(stroke
@@ -3776,6 +3876,16 @@
 			(type default)
 		)
 		(uuid "4ec3f82b-baac-4377-9454-35be824e4855")
+	)
+	(wire
+		(pts
+			(xy 181.61 69.85) (xy 193.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f9fa372-a700-4bdc-b06a-55be8efcf804")
 	)
 	(wire
 		(pts
@@ -4039,16 +4149,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 49.53) (xy 193.04 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f9b347e-74f1-46a9-94cf-32e728345ddf")
-	)
-	(wire
-		(pts
 			(xy 257.81 46.99) (xy 259.08 46.99)
 		)
 		(stroke
@@ -4066,6 +4166,16 @@
 			(type default)
 		)
 		(uuid "8106d49a-5dde-4355-9e60-e3069ca612d7")
+	)
+	(wire
+		(pts
+			(xy 181.61 34.29) (xy 193.04 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b13bcc-788d-4abc-a33e-67aa958559b0")
 	)
 	(wire
 		(pts
@@ -4226,16 +4336,6 @@
 			(type default)
 		)
 		(uuid "abd1184a-3bda-4e1f-aac5-0cfbac11c5f7")
-	)
-	(wire
-		(pts
-			(xy 182.88 62.23) (xy 193.04 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af917ab3-f0a7-4888-b446-f093b2731ae3")
 	)
 	(wire
 		(pts
@@ -4549,7 +4649,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 62.23) (xy 182.88 62.23)
+			(xy 181.61 62.23) (xy 193.04 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4639,6 +4739,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 140.97) (xy 53.34 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc57c368-c824-44ca-b444-eec7c71ee39a")
+	)
+	(wire
+		(pts
 			(xy 123.19 53.34) (xy 129.54 53.34)
 		)
 		(stroke
@@ -4667,7 +4777,7 @@
 		)
 		(uuid "ff22e931-7df5-46dc-a537-e9ce06f4ff8e")
 	)
-	(global_label "SDA"
+	(global_label "OBC SDA"
 		(shape bidirectional)
 		(at 264.16 30.48 0)
 		(fields_autoplaced yes)
@@ -4679,7 +4789,7 @@
 		)
 		(uuid "0bfc3a51-625f-46c5-98da-4670aadc5bb4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 271.8246 30.48 0)
+			(at 276.6627 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,7 +4933,7 @@
 			)
 		)
 	)
-	(global_label "SCL"
+	(global_label "OBC SCL"
 		(shape bidirectional)
 		(at 264.16 33.02 0)
 		(fields_autoplaced yes)
@@ -4835,7 +4945,7 @@
 		)
 		(uuid "9d3d1626-24db-41d7-ab5b-7e87d9453fb0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 271.7641 33.02 0)
+			(at 276.6022 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5126,7 +5236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RevC Footprints:SISB46DN-T1-GE3"
+		(property "Footprint" "RevC Footprints:MOSFET_DN-T1-GE3_VIS"
 			(at 93.98 30.48 0)
 			(effects
 				(font
@@ -5181,6 +5291,76 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
 					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 181.61 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04bc9c21-3583-44ea-9662-2c86c9b76c13")
+		(property "Reference" "C50"
+			(at 185.42 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22p"
+			(at 185.42 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 182.5752 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 181.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "080404a9-65a8-4239-9f0d-d9931185db9c")
+		)
+		(pin "2"
+			(uuid "7ac75954-f644-423a-9029-d62c9f9ce31c")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -5339,6 +5519,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 53.34 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18052f62-758a-4798-8c2c-7f1ef87ac823")
+		(property "Reference" "#PWR061"
+			(at 53.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 56.896 145.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b20b1f03-d7bc-4189-9f6d-007146f5643c")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 116.84 57.15 0)
 		(unit 1)
@@ -5402,76 +5647,6 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
 					(reference "C45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 182.88 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d757474-0e13-4b38-b3f4-b2b2cea31e9e")
-		(property "Reference" "C39"
-			(at 186.69 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22p"
-			(at 186.69 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:C1206"
-			(at 183.8452 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 182.88 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "133e81dc-78ea-4dea-801f-380057e75fd8")
-		)
-		(pin "2"
-			(uuid "20202103-a686-44b9-bb8d-addbaca6562a")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
-					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -5616,6 +5791,85 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
 					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 181.61 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23baa385-cfcb-4a0a-bd5c-37f2c136afc1")
+		(property "Reference" "L7"
+			(at 182.88 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 182.88 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5157561"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8e9dc4c6-b1ce-42e8-8116-adb9ea3b5772")
+		)
+		(pin "1"
+			(uuid "5cb64975-8d21-4ffa-878c-44960442a290")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "L7")
 					(unit 1)
 				)
 			)
@@ -5854,7 +6108,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 193.04 49.53 0)
+		(at 193.04 45.72 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5862,7 +6116,7 @@
 		(dnp no)
 		(uuid "34bd4b08-74ec-4365-abb3-22a52eac0921")
 		(property "Reference" "TP36"
-			(at 193.548 43.688 0)
+			(at 198.882 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5870,7 +6124,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 195.58 46.228 90)
+			(at 196.342 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5879,7 +6133,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 198.12 49.53 0)
+			(at 193.04 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5888,7 +6142,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 198.12 49.53 0)
+			(at 193.04 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5897,7 +6151,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 193.04 49.53 0)
+			(at 193.04 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6002,6 +6256,9 @@
 		(pin "12"
 			(uuid "02257931-e6be-498f-85a7-bfe90ebec62a")
 		)
+		(pin "17"
+			(uuid "256a778f-db21-4222-b462-4281b05dbab2")
+		)
 		(pin "10"
 			(uuid "a498a1fc-96ac-448b-aa77-2db3b0bffa71")
 		)
@@ -6016,6 +6273,9 @@
 		)
 		(pin "4"
 			(uuid "63cca342-bb41-47d8-8ccc-10014d98a064")
+		)
+		(pin "18"
+			(uuid "31970619-5206-42af-ba9c-24fe2b31d650")
 		)
 		(pin "13"
 			(uuid "b5188980-8d06-48f1-a992-01b3858fdd0f")
@@ -6922,6 +7182,164 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 181.61 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70056379-0d81-42b7-ba92-fdf860c34274")
+		(property "Reference" "L8"
+			(at 182.88 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 182.88 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5157561"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9d40c040-6d55-47bd-bbc4-e708cc4fc802")
+		)
+		(pin "1"
+			(uuid "808843c1-4c8c-409f-bea9-97bb03ad98d5")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "L8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 181.61 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70482b32-44fd-4b40-8fdd-68cd45e8316a")
+		(property "Reference" "L6"
+			(at 182.88 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 182.88 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RevC Footprints:XEL6030102MEC"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5157561"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "765f8615-4d45-4ffa-bd26-d87293d97770")
+		)
+		(pin "1"
+			(uuid "5abd9e2d-c5e1-4bd3-b018-ad42647d76a5")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
+					(reference "L6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 223.52 53.34 0)
 		(unit 1)
@@ -7580,85 +7998,6 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
 					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 181.61 53.34 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9acb9648-737f-41ad-8ac4-1bda81001982")
-		(property "Reference" "L5"
-			(at 182.88 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3.3u"
-			(at 182.88 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "RevC Footprints:XEL6030"
-			(at 181.61 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 181.61 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5157561"
-			(at 181.61 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3d8de344-5903-4a96-b61d-45f663438b3e")
-		)
-		(pin "1"
-			(uuid "dafb28d5-1f65-4c11-b109-1d3f3a0c7228")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa"
-					(reference "L5")
 					(unit 1)
 				)
 			)
@@ -8907,7 +9246,7 @@
 				)
 			)
 		)
-		(property "Value" "3.0k"
+		(property "Value" "3k"
 			(at 196.85 72.136 0)
 			(effects
 				(font
