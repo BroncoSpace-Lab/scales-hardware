@@ -217,6 +217,46 @@
 		)
 		(uuid "e2cdc1d8-3ca9-41a1-bb78-a61a73504d8e")
 	)
+	(text_box "Jetson"
+		(exclude_from_sim no)
+		(at 24.13 88.265 0)
+		(size 13.97 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "548e9327-609b-4af9-900d-ff4c2f871520")
+	)
+	(text_box "Perif. Board"
+		(exclude_from_sim no)
+		(at 24.13 83.185 0)
+		(size 13.97 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a202671e-f76b-4b92-b0b5-1002475da802")
+	)
 	(text_box "Block Diagram"
 		(exclude_from_sim no)
 		(at 17.78 68.58 0)
@@ -260,6 +300,26 @@
 		)
 		(uuid "b08a2ec1-5e60-48db-8731-fc984be0a0d3")
 	)
+	(text_box "Yocto-Linux"
+		(exclude_from_sim no)
+		(at 22.1992 106.756 0)
+		(size 14.605 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b1904d8f-b3ba-4936-9328-3b18c24a1dd7")
+	)
 	(text_box "The IMX8 Scales Carrier Board is a minimized rendition of the IMX8 Dev board.\nThis design includes a micro USB debugger, the SOM Samtec Connector, 2 Ethernet Ports, DF11 Power Interface, DF11 for SPI, DF11 for UART, a DF11 for I2C, and a Micro SD Card reader.\n"
 		(exclude_from_sim no)
 		(at 18.415 26.67 0)
@@ -300,9 +360,29 @@
 		)
 		(uuid "d949a863-d57c-4542-9553-e8ff92f9a3a2")
 	)
+	(text_box "EPS OBC"
+		(exclude_from_sim no)
+		(at 25.4 95.885 0)
+		(size 11.43 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e7583112-06b1-47e2-9297-477ffe4af1a1")
+	)
 	(wire
 		(pts
-			(xy 54.61 95.885) (xy 62.23 95.885)
+			(xy 58.42 95.885) (xy 62.23 95.885)
 		)
 		(stroke
 			(width 0)
@@ -312,7 +392,7 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 78.74) (xy 56.515 93.345)
+			(xy 59.69 78.74) (xy 59.69 93.345)
 		)
 		(stroke
 			(width 0)
@@ -322,7 +402,7 @@
 	)
 	(wire
 		(pts
-			(xy 37.465 78.74) (xy 56.515 78.74)
+			(xy 53.34 78.74) (xy 59.69 78.74)
 		)
 		(stroke
 			(width 0)
@@ -332,7 +412,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 88.265) (xy 54.61 95.885)
+			(xy 58.42 87.63) (xy 58.42 95.885)
 		)
 		(stroke
 			(width 0)
@@ -352,7 +432,27 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 93.345) (xy 62.23 93.345)
+			(xy 36.83 97.79) (xy 40.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea2827b-ca45-4b8e-a092-7d87cfcd4660")
+	)
+	(wire
+		(pts
+			(xy 39.37 85.09) (xy 39.37 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b2357a2-a45e-4136-9ee7-73628241ceeb")
+	)
+	(wire
+		(pts
+			(xy 59.69 93.345) (xy 62.23 93.345)
 		)
 		(stroke
 			(width 0)
@@ -382,7 +482,57 @@
 	)
 	(wire
 		(pts
-			(xy 37.465 98.425) (xy 62.23 98.425)
+			(xy 38.1 85.09) (xy 39.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec917ad-bce6-46ad-89f1-0b06d511ecca")
+	)
+	(wire
+		(pts
+			(xy 39.37 90.17) (xy 39.37 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad9f2d5-613f-4484-a091-e273ee844117")
+	)
+	(wire
+		(pts
+			(xy 36.9563 108.6656) (xy 40.7663 108.6656)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d6762ba-c1ce-4abc-abce-c966320254f5")
+	)
+	(wire
+		(pts
+			(xy 39.37 86.36) (xy 40.64 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f5527e0-f2f5-495d-b7b7-c3c3338aac72")
+	)
+	(wire
+		(pts
+			(xy 39.37 88.9) (xy 40.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828bb57b-692f-4242-9bbf-485dc3922baf")
+	)
+	(wire
+		(pts
+			(xy 53.34 97.79) (xy 62.23 97.79)
 		)
 		(stroke
 			(width 0)
@@ -402,6 +552,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 90.17) (xy 39.37 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a02c5646-fc85-4520-811e-d929d3485d64")
+	)
+	(wire
+		(pts
 			(xy 56.515 113.03) (xy 62.23 113.03)
 		)
 		(stroke
@@ -412,7 +572,7 @@
 	)
 	(wire
 		(pts
-			(xy 37.465 88.265) (xy 54.61 88.265)
+			(xy 53.34 87.63) (xy 58.42 87.63)
 		)
 		(stroke
 			(width 0)
@@ -432,7 +592,7 @@
 	)
 	(wire
 		(pts
-			(xy 37.465 109.22) (xy 62.23 109.22)
+			(xy 53.34 108.585) (xy 62.23 108.585)
 		)
 		(stroke
 			(width 0)
@@ -441,7 +601,7 @@
 		(uuid "da6721dc-c106-4186-8228-273bbee426c1")
 	)
 	(sheet
-		(at 24.765 107.315)
+		(at 40.64 106.68)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -457,7 +617,7 @@
 		)
 		(uuid "1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31")
 		(property "Sheetname" "SD Card"
-			(at 24.765 106.6034 0)
+			(at 40.64 105.9684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -466,7 +626,7 @@
 			)
 		)
 		(property "Sheetfile" "imx_microSD.kicad_sch"
-			(at 24.765 111.7096 0)
+			(at 40.64 111.0746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -484,7 +644,7 @@
 		)
 	)
 	(sheet
-		(at 24.765 76.835)
+		(at 40.64 76.835)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -500,7 +660,7 @@
 		)
 		(uuid "292335d6-f5c5-4a7d-8d08-fc166527642f")
 		(property "Sheetname" "Debug USB"
-			(at 24.765 76.1234 0)
+			(at 40.64 76.1234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -509,7 +669,7 @@
 			)
 		)
 		(property "Sheetfile" "debug_usb.kicad_sch"
-			(at 24.765 81.2296 0)
+			(at 40.64 81.2296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -570,7 +730,7 @@
 		)
 	)
 	(sheet
-		(at 24.765 86.36)
+		(at 40.64 85.725)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -586,7 +746,7 @@
 		)
 		(uuid "79e8fd09-705e-4c65-82d4-d8130e394a75")
 		(property "Sheetname" "Ethernet"
-			(at 24.765 85.6484 0)
+			(at 40.64 85.0134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -595,7 +755,7 @@
 			)
 		)
 		(property "Sheetfile" "imx_ethernet.kicad_sch"
-			(at 24.765 90.7546 0)
+			(at 40.64 90.1196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -613,7 +773,7 @@
 		)
 	)
 	(sheet
-		(at 24.765 96.52)
+		(at 40.64 95.885)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -629,7 +789,7 @@
 		)
 		(uuid "7dc4de44-e877-4145-a70b-e254356af12a")
 		(property "Sheetname" "Power"
-			(at 24.765 95.8084 0)
+			(at 40.64 95.1734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -638,7 +798,7 @@
 			)
 		)
 		(property "Sheetfile" "imx_power.kicad_sch"
-			(at 24.765 100.9146 0)
+			(at 40.64 100.2796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
