@@ -776,6 +776,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -914,193 +1038,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "easyeda2kicad:1N141WS"
+		(symbol "EPS:1N4151WS"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1119,7 +1057,7 @@
 					)
 				)
 			)
-			(property "Value" "1N141WS"
+			(property "Value" "1N4151WS"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1127,7 +1065,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:SODFL2512X100N"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1136,7 +1074,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1190,7 +1128,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1N141WS_0_1"
+			(symbol "1N4151WS_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -1228,7 +1166,7 @@
 					)
 				)
 			)
-			(symbol "1N141WS_1_1"
+			(symbol "1N4151WS_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1268,14 +1206,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:TLV1704AIPWR"
+		(symbol "EPS:TLV1704AIPWR"
 			(pin_names
 				(offset 0.127)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U14"
+			(property "Reference" "U13"
 				(at 0 10.16 0)
 				(effects
 					(font
@@ -1854,6 +1792,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2186,10 +2310,10 @@
 		)
 		(uuid "f383ae4b-94ee-4261-9da8-3c2effe4837a")
 	)
-	(text_box "This watchdog is is pulled low at the load switch it is connected to; leave floating here."
+	(text_box "Pulled down. Holds Perif board off until toggled by OBC_PERIF_EN is held high by the OBC"
 		(exclude_from_sim no)
-		(at 238.125 100.965 0)
-		(size 31.115 12.7)
+		(at 236.855 111.76 0)
+		(size 26.035 9.525)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2204,7 +2328,27 @@
 			)
 			(justify left top)
 		)
-		(uuid "ec1a38cd-e5dc-4c3a-9efd-bca590ce7388")
+		(uuid "51f1c807-f2f5-4793-ae3e-b638001bb132")
+	)
+	(text_box "WD_EN_Perif goes to EN of the load switch controller"
+		(exclude_from_sim no)
+		(at 260.985 150.495 0)
+		(size 19.685 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "daf7d73e-1f09-4127-bd8a-5430d23dbefc")
 	)
 	(junction
 		(at 102.87 123.19)
@@ -2271,12 +2415,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44a6b8a1-f22f-463a-8518-0488ee3a3d9e")
-	)
-	(junction
-		(at 255.27 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b56e8fc-0226-49d3-a5d2-c0674bab3237")
 	)
 	(junction
 		(at 246.38 67.31)
@@ -2361,6 +2499,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7850cf9-2859-4941-a03a-8f9d569cb0e4")
+	)
+	(junction
+		(at 269.24 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d017e007-f315-40e8-a992-5c6f4c89c5d3")
+	)
+	(junction
+		(at 250.19 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d04dc801-068c-4e2a-897d-005cff138118")
 	)
 	(junction
 		(at 88.9 82.55)
@@ -2566,7 +2716,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 68.58) (xy 52.07 76.2)
+			(xy 52.07 71.12) (xy 52.07 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2686,6 +2836,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 123.19) (xy 269.24 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "518f627f-56b5-4a49-b631-189906d0d6f1")
+	)
+	(wire
+		(pts
 			(xy 269.24 130.81) (xy 269.24 133.35)
 		)
 		(stroke
@@ -2706,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 123.19) (xy 255.27 123.19)
+			(xy 228.6 123.19) (xy 250.19 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2716,7 +2876,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 59.69) (xy 52.07 60.96)
+			(xy 52.07 59.69) (xy 52.07 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2823,16 +2983,6 @@
 			(type default)
 		)
 		(uuid "67286b32-8e49-4da2-9dc4-efb4347009bd")
-	)
-	(wire
-		(pts
-			(xy 255.27 123.19) (xy 269.24 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67b32f55-c206-44f0-9d9e-59450210d1fc")
 	)
 	(wire
 		(pts
@@ -3246,6 +3396,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 130.81) (xy 250.19 132.715)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da8f712c-f5f7-4d58-b01d-5a86440f91f4")
+	)
+	(wire
+		(pts
 			(xy 186.69 118.11) (xy 185.42 118.11)
 		)
 		(stroke
@@ -3438,7 +3598,7 @@
 			)
 		)
 	)
-	(global_label "+5V_Perif"
+	(global_label "+3.3V_PERIF"
 		(shape input)
 		(at 251.46 54.61 0)
 		(fields_autoplaced yes)
@@ -3448,9 +3608,9 @@
 			)
 			(justify left)
 		)
-		(uuid "9f3d2ccf-d822-4edb-910b-a4f8c235975e")
+		(uuid "cd1a23ac-7993-497a-aeb4-67e3cb7c710c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 263.7586 54.61 0)
+			(at 266.48 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3460,29 +3620,7 @@
 			)
 		)
 	)
-	(global_label "+5V_Perif"
-		(shape input)
-		(at 52.07 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b53be4f6-4dde-45d4-b129-902439c9e218")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.3686 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{PERIF_EN}"
+	(global_label "~{WD_EN_PERIF}"
 		(shape output)
 		(at 269.24 133.35 270)
 		(fields_autoplaced yes)
@@ -3494,7 +3632,7 @@
 		)
 		(uuid "ce816c6c-6dd3-4b82-b96b-168adcd8b239")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.24 145.1647 90)
+			(at 269.24 148.8537 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3504,8 +3642,30 @@
 			)
 		)
 	)
+	(global_label "+3.3V_PERIF"
+		(shape input)
+		(at 52.07 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f19f63a6-56f7-4e95-b2e0-42595713cfb7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
-		(lib_id "easyeda2kicad:1N141WS")
+		(lib_id "EPS:1N4151WS")
 		(at 199.39 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3538,7 +3698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
 			(at 199.39 140.97 0)
 			(effects
 				(font
@@ -4171,7 +4331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 220.98 123.19 0)
 		(unit 4)
 		(exclude_from_sim no)
@@ -5208,6 +5368,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 250.19 132.715 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ec1517c-0986-4f84-bc49-b1de55ab3949")
+		(property "Reference" "#PWR031"
+			(at 250.19 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "995c5ed5-1df5-4027-ac22-2a3f866b9454")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa/dad07e05-da80-41ae-aa47-8f0b2dc6b1a4"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 217.17 100.33 0)
 		(mirror y)
 		(unit 1)
@@ -5388,7 +5614,77 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "Device:R")
+		(at 250.19 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c570643-a647-45f1-944c-8ec37729cc39")
+		(property "Reference" "R2"
+			(at 252.73 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 252.73 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.412 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2dd49e64-b112-4eea-84ab-affde7f5bec9")
+		)
+		(pin "2"
+			(uuid "c9ac2d57-1d6d-499e-b288-e025ce4bda23")
+		)
+		(instances
+			(project "EPS_Scales_RevC"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/9f608de4-3574-4917-924e-b2449769bafa/dad07e05-da80-41ae-aa47-8f0b2dc6b1a4"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 154.94 123.19 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -5939,7 +6235,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 255.27 123.19 0)
+		(at 269.24 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5947,7 +6243,7 @@
 		(dnp no)
 		(uuid "943be8d7-528b-4894-b5a5-15c7eac682ba")
 		(property "Reference" "TP44"
-			(at 253.492 117.602 0)
+			(at 267.462 117.602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5956,7 +6252,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 256.5399 118.11 90)
+			(at 270.5099 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5966,7 +6262,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 260.35 123.19 0)
+			(at 274.32 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5975,7 +6271,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 123.19 0)
+			(at 274.32 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5984,7 +6280,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 255.27 123.19 0)
+			(at 269.24 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6408,7 +6704,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 119.38 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7154,7 +7450,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 72.39 68.58 0)
 		(unit 5)
 		(exclude_from_sim no)
@@ -7163,7 +7459,7 @@
 		(dnp no)
 		(uuid "b4a6047a-ff4e-47bc-9aad-962e4cfdab4c")
 		(property "Reference" "U13"
-			(at 72.39 59.69 0)
+			(at 72.39 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7171,7 +7467,7 @@
 			)
 		)
 		(property "Value" "TLV1704"
-			(at 72.39 62.23 0)
+			(at 72.39 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7507,7 +7803,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 194.31 120.65 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -7748,7 +8044,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:1N141WS")
+		(lib_id "EPS:1N4151WS")
 		(at 52.07 46.99 270)
 		(mirror x)
 		(unit 1)
@@ -7784,7 +8080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
 			(at 52.07 46.99 0)
 			(effects
 				(font
@@ -7873,7 +8169,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 52.07 64.77 0)
+		(at 52.07 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7882,15 +8178,6 @@
 		(fields_autoplaced yes)
 		(uuid "d008c8c4-0d3e-489a-a2e5-bf1168f36d49")
 		(property "Reference" "C56"
-			(at 55.88 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
 			(at 55.88 66.0399 0)
 			(effects
 				(font
@@ -7899,8 +8186,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "10u"
+			(at 55.88 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 53.0352 68.58 0)
+			(at 53.0352 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7909,7 +8205,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 64.77 0)
+			(at 52.07 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7918,7 +8214,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 52.07 64.77 0)
+			(at 52.07 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)

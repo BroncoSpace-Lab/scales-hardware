@@ -776,6 +776,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -914,193 +1038,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "easyeda2kicad:1N141WS"
+		(symbol "EPS:1N4151WS"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1119,7 +1057,7 @@
 					)
 				)
 			)
-			(property "Value" "1N141WS"
+			(property "Value" "1N4151WS"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1127,7 +1065,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:SODFL2512X100N"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1136,7 +1074,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1190,7 +1128,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1N141WS_0_1"
+			(symbol "1N4151WS_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -1228,7 +1166,7 @@
 					)
 				)
 			)
-			(symbol "1N141WS_1_1"
+			(symbol "1N4151WS_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1268,14 +1206,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:TLV1704AIPWR"
+		(symbol "EPS:TLV1704AIPWR"
 			(pin_names
 				(offset 0.127)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U14"
+			(property "Reference" "U13"
 				(at 0 10.16 0)
 				(effects
 					(font
@@ -1854,6 +1792,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2186,10 +2310,10 @@
 		)
 		(uuid "f383ae4b-94ee-4261-9da8-3c2effe4837a")
 	)
-	(text_box "This watchdog is left floating due to being pulled low at the input side of the load switch."
+	(text_box "Pulled down. Holds Jetson off Until WD is enabled and the WD_EN goes high."
 		(exclude_from_sim no)
-		(at 235.585 102.87 0)
-		(size 31.115 12.7)
+		(at 236.855 111.125 0)
+		(size 26.67 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2205,6 +2329,26 @@
 			(justify left top)
 		)
 		(uuid "0ee7d867-fb1f-4488-97a0-7af3b909e87f")
+	)
+	(text_box "WD_EN_Jetson goes to EN of the load switch controller"
+		(exclude_from_sim no)
+		(at 259.715 150.495 0)
+		(size 20.32 9.525)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6e48264f-8b70-4e35-8539-d2619a8916af")
 	)
 	(text_box "For comparator 3,Vref set at V+ by R network. When Node at V- is charged passed V+, the output pulls to gnd.\nFor comparator 4, Vref set by V-, when V+ > V-, pulled high at the output with reference voltage. When V+ < V-, pulls to GND, sinks current\n\n"
 		(exclude_from_sim no)
@@ -2297,6 +2441,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f12cb8e-e15e-4101-acc2-10ddd9316fc9")
+	)
+	(junction
+		(at 269.24 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "512bee90-99be-4ab9-9198-a3bcc8b1ca87")
 	)
 	(junction
 		(at 80.01 59.69)
@@ -2409,16 +2559,6 @@
 			(type default)
 		)
 		(uuid "03ed78f0-6002-48c2-99ce-383729125413")
-	)
-	(wire
-		(pts
-			(xy 58.42 59.69) (xy 68.58 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06daa55b-2c5d-4c28-8076-71cf7c8e0cdf")
 	)
 	(wire
 		(pts
@@ -2562,16 +2702,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 59.69) (xy 58.42 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ff0f0c7-5b08-4343-8622-848a15076af2")
-	)
-	(wire
-		(pts
 			(xy 58.42 76.2) (xy 69.85 76.2)
 		)
 		(stroke
@@ -2592,6 +2722,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 133.35) (xy 248.92 135.255)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24598207-080e-4fa9-8e6f-18f4d36fbc77")
+	)
+	(wire
+		(pts
 			(xy 212.09 92.71) (xy 217.17 92.71)
 		)
 		(stroke
@@ -2599,6 +2739,16 @@
 			(type default)
 		)
 		(uuid "248a1ba4-e624-4f3b-9cb0-b99df285fd67")
+	)
+	(wire
+		(pts
+			(xy 58.42 41.91) (xy 58.42 43.815)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "255fe59b-ae2c-44f3-a870-5e6e56f36ecf")
 	)
 	(wire
 		(pts
@@ -2749,16 +2899,6 @@
 			(type default)
 		)
 		(uuid "566af17c-622f-4ba9-b0f5-241c116121e4")
-	)
-	(wire
-		(pts
-			(xy 58.42 38.1) (xy 58.42 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5805d050-81e5-49bd-8923-0085d987e667")
 	)
 	(wire
 		(pts
@@ -2932,7 +3072,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 68.58) (xy 58.42 76.2)
+			(xy 58.42 71.12) (xy 58.42 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3002,13 +3142,13 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 50.8) (xy 58.42 52.07)
+			(xy 248.92 123.19) (xy 248.92 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90ad1727-b2dd-465b-a20e-1f36cbe844f2")
+		(uuid "90808274-b982-4663-a0fb-35c16ebf841c")
 	)
 	(wire
 		(pts
@@ -3162,6 +3302,16 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 121.92) (xy 269.24 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c2a022-725e-4040-bf80-6b6fd5e2e37d")
+	)
+	(wire
+		(pts
 			(xy 91.44 138.43) (xy 91.44 137.16)
 		)
 		(stroke
@@ -3232,6 +3382,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 59.69) (xy 68.58 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8826d37-eee7-4f1b-a834-931d49e59d63")
+	)
+	(wire
+		(pts
 			(xy 237.49 59.69) (xy 237.49 63.5)
 		)
 		(stroke
@@ -3262,16 +3422,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 57.15) (xy 58.42 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf968bc3-f100-4c60-86ad-827042853b09")
-	)
-	(wire
-		(pts
 			(xy 243.84 59.69) (xy 246.38 59.69)
 		)
 		(stroke
@@ -3279,6 +3429,26 @@
 			(type default)
 		)
 		(uuid "d3ea0652-0221-46c8-a7ce-e5e7e2d46c92")
+	)
+	(wire
+		(pts
+			(xy 58.42 57.15) (xy 58.42 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d73fa07f-a0c0-4be4-97e0-c0e4b70810d9")
+	)
+	(wire
+		(pts
+			(xy 58.42 52.07) (xy 58.42 51.435)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d749cd0c-be42-49be-83d1-799120e28592")
 	)
 	(wire
 		(pts
@@ -3380,6 +3550,16 @@
 		)
 		(uuid "ef3659dc-546c-4e9a-ab40-93bf023812b9")
 	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 58.42 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f40965f2-1f49-45bb-9077-731ae1e43b8d")
+	)
 	(polyline
 		(pts
 			(xy 281.94 130.81) (xy 264.16 130.81)
@@ -3450,9 +3630,9 @@
 		)
 		(uuid "f5c5f111-0df8-49a4-bc5d-cc7bb5a4f759")
 	)
-	(global_label "+5V_WD_J"
+	(global_label "+3.3V_Jetson"
 		(shape input)
-		(at 248.92 46.99 0)
+		(at 58.42 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3460,9 +3640,9 @@
 			)
 			(justify left)
 		)
-		(uuid "47abfa17-dd73-4cee-9378-018440ea2647")
+		(uuid "0ccc9eb5-0cfa-4ab7-91cc-c510a718028f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.3999 46.99 0)
+			(at 74.1656 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3652,29 @@
 			)
 		)
 	)
-	(global_label "~{WD_Toggle_Jetson}"
+	(global_label "+3.3V_Jetson"
+		(shape input)
+		(at 248.92 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1abc9613-ccad-42ea-9092-d9a2e5b79841")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.6656 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{WD_EN_JETSON}"
 		(shape output)
 		(at 269.24 133.35 270)
 		(fields_autoplaced yes)
@@ -3484,34 +3686,12 @@
 		)
 		(uuid "56bade5e-0fe4-4087-9562-cbc60013e6a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.24 153.2682 90)
+			(at 269.24 150.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+5V_WD_J"
-		(shape input)
-		(at 58.42 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "705b386c-eef0-4a5a-ac88-e793909154bb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.8999 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3892,8 +4072,8 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:1N141WS")
-		(at 58.42 46.99 270)
+		(lib_id "EPS:1N4151WS")
+		(at 58.42 47.625 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3902,7 +4082,7 @@
 		(dnp no)
 		(uuid "2c3951a9-3df1-43b4-8e69-e2b87227a7e5")
 		(property "Reference" "D1"
-			(at 60.96 47.625 90)
+			(at 60.96 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3911,7 +4091,7 @@
 			)
 		)
 		(property "Value" "1N4151WS"
-			(at 60.96 45.085 90)
+			(at 60.96 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +4100,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:SODFL2512X100N"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3928,8 +4108,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 58.42 46.99 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3938,7 +4118,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3947,7 +4127,7 @@
 			)
 		)
 		(property "DPN" "112-1N4151WS-E3-08CT-ND"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3956,7 +4136,7 @@
 			)
 		)
 		(property "DST" "Digi-Key"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,7 +4145,7 @@
 			)
 		)
 		(property "MFR" "Vishay"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,7 +4154,7 @@
 			)
 		)
 		(property "MPN" "1N4151WS-E3-08"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +4163,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3992,7 +4172,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 58.42 46.99 0)
+			(at 58.42 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4016,7 +4196,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 72.39 68.58 0)
 		(unit 5)
 		(exclude_from_sim no)
@@ -4689,6 +4869,72 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 248.92 135.255 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50abffb4-b9de-4bbc-ad31-236e74868e5d")
+		(property "Reference" "#PWR09"
+			(at 248.92 141.605 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 135.255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 135.255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 248.92 135.255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f88845dc-838f-4b7f-aa99-3373c226ca8c")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -5384,7 +5630,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 194.31 120.65 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -5558,7 +5804,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 154.94 123.19 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -5727,6 +5973,76 @@
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
 					(reference "U4")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 248.92 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72a874c0-83c9-4256-a9f6-945af2122eeb")
+		(property "Reference" "R1"
+			(at 251.46 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 251.46 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.142 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 248.92 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d515592-08bc-4f67-ac23-ae6a0518621c")
+		)
+		(pin "2"
+			(uuid "30e59fbd-412a-468c-b0d8-4934ffc86f74")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545/d0afb0f4-2d97-42f4-b222-184f059f2629"
+					(reference "R1")
+					(unit 1)
 				)
 			)
 		)
@@ -6141,7 +6457,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 58.42 64.77 0)
+		(at 58.42 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6150,15 +6466,6 @@
 		(fields_autoplaced yes)
 		(uuid "8975f03f-d8b9-42fc-86d8-bf75de822eba")
 		(property "Reference" "C17"
-			(at 62.23 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
 			(at 62.23 66.0399 0)
 			(effects
 				(font
@@ -6167,8 +6474,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "10u"
+			(at 62.23 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
-			(at 59.3852 68.58 0)
+			(at 59.3852 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6177,7 +6493,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 64.77 0)
+			(at 58.42 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6186,7 +6502,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 58.42 64.77 0)
+			(at 58.42 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6275,7 +6591,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:1N141WS")
+		(lib_id "EPS:1N4151WS")
 		(at 198.12 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6308,7 +6624,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
 			(at 198.12 140.97 0)
 			(effects
 				(font
@@ -6806,7 +7122,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 248.92 123.19 0)
+		(at 269.24 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6814,7 +7130,7 @@
 		(dnp no)
 		(uuid "a556b3ce-9874-4a3a-8cd3-6ecbcefefd52")
 		(property "Reference" "TP47"
-			(at 248.92 118.364 90)
+			(at 270.51 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6823,7 +7139,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 250.1899 118.11 90)
+			(at 270.5099 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6833,7 +7149,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 254 123.19 0)
+			(at 274.32 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6842,7 +7158,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 123.19 0)
+			(at 274.32 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6851,7 +7167,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 248.92 123.19 0)
+			(at 269.24 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7050,7 +7366,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 220.98 123.19 0)
 		(unit 4)
 		(exclude_from_sim no)
@@ -7718,7 +8034,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TLV1704AIPWR")
+		(lib_id "EPS:TLV1704AIPWR")
 		(at 119.38 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)

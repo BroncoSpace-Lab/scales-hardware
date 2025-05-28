@@ -543,7 +543,10 @@ Board Review Notes 5/1/25:
 Update all Schematic Footprints and Symbols from easyeda2kicad
 
 * Consider Swapping the Load Switch Controller with one that has an internal MOSFET.
-Replacement: [TPS1HA08-Q1](https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748298961148) (Go with the B/D revision for much higher current limit) 40v, 80A limit. In stock in LCSC.
+Replacement: [TPS1HA08B-Q1](https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748298961148) (Go with the B/D revision for much higher current limit) 40v, 80A limit. In stock in LCSC.
+
+   * Layout considerations (Page 46)
+     
 
 * Consider Swapping the switching regulator with a new one with the same specs due to availability on JLC pbc
 Replacement: [LT8612](https://www.analog.com/media/en/technical-documentation/data-sheets/lt8612.pdf)
