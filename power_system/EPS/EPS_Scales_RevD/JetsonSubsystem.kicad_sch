@@ -720,34 +720,45 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EPS:1N4151WS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "EPS:BAS21,215"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 0 2.54 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "1N4151WS"
-				(at 0 -2.54 0)
+			(property "Value" "BAS21,215"
+				(at 0 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "EPS:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Diodes-General-Purpose_NXP_BAS21_BAS21_C8661.html"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -756,8 +767,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
-				(at 0 0 0)
+			(property "LCSC Part" "C8661"
+				(at 0 -19.05 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -765,79 +776,10 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4151WS_0_1"
+			(symbol "BAS21,215_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 0 2.54) (xy 2.54 2.54)
 					)
 					(stroke
 						(width 0)
@@ -847,30 +789,58 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "1N4151WS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 2.54)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
+				(polyline
+					(pts
+						(xy 2.54 0.25) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 2.54 2.54) (xy 5.08 0.25) (xy 5.08 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -878,6 +848,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -6.35 90)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3373,26 +3379,6 @@
 		)
 		(uuid "78557b30-6b50-482e-92eb-d54f2f4d8ed0")
 	)
-	(text_box "switch 1k to 15k, change diodes to recommended."
-		(exclude_from_sim no)
-		(at 22.225 65.405 0)
-		(size 22.225 8.89)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "7c9dc864-34bc-4cbb-84cf-6eba392727df")
-	)
 	(text_box "A0->GND\nA1->GND\nSlave Address\n1000000"
 		(exclude_from_sim no)
 		(at 209.55 43.18 0)
@@ -3570,6 +3556,12 @@
 		(uuid "12c4882d-6261-4f8a-83c1-a0edc5da6ecb")
 	)
 	(junction
+		(at 92.71 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15f32197-7db4-40b6-b1b3-47d881a3f38a")
+	)
+	(junction
 		(at 200.025 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3658,12 +3650,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "441e7ba3-710c-49aa-80f2-e1a00604e1e5")
-	)
-	(junction
-		(at 33.655 55.245)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b72261a-f3b2-4a64-b7a4-26f7c68fead0")
 	)
 	(junction
 		(at 101.6 41.91)
@@ -3774,6 +3760,12 @@
 		(uuid "a3db7691-c1c5-4491-8c7f-74ed48191311")
 	)
 	(junction
+		(at 64.77 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a459327d-1dd7-46b7-a08a-6680046d3775")
+	)
+	(junction
 		(at 233.045 23.495)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3790,12 +3782,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b074efcf-dc45-4cf7-89a1-5b0e9fd9d9b3")
-	)
-	(junction
-		(at 64.77 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b8adf0ab-e9aa-467e-944c-5050db5f64c0")
 	)
 	(junction
 		(at 48.895 125.73)
@@ -3816,16 +3802,16 @@
 		(uuid "bd994551-5ce1-43fa-89db-6c9714bdcea7")
 	)
 	(junction
+		(at 42.545 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf74970b-a4ce-4cc7-ba75-a3622a2dc5ff")
+	)
+	(junction
 		(at 146.685 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c03344fe-524d-412c-8496-3db00f0e47b6")
-	)
-	(junction
-		(at 64.77 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4dc83dd-5134-4100-97fa-1fa7f70b437f")
 	)
 	(junction
 		(at 108.585 46.99)
@@ -3846,16 +3832,16 @@
 		(uuid "d51fb1a2-5253-41e3-8e20-90f7253e2676")
 	)
 	(junction
-		(at 92.71 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db589b47-a942-4690-996a-2e9c1196a936")
-	)
-	(junction
 		(at 175.895 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dbd8ec25-a813-4f42-be04-edea7b9cbf06")
+	)
+	(junction
+		(at 64.77 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd724dbd-e268-4006-b1ca-d572bb27b6fd")
 	)
 	(junction
 		(at 48.895 135.89)
@@ -3912,6 +3898,10 @@
 	(no_connect
 		(at 233.045 46.99)
 		(uuid "2da34b45-4904-4947-8a47-dea60571bb4d")
+	)
+	(no_connect
+		(at 33.655 71.12)
+		(uuid "33417c23-e08e-478f-b97a-dd1de018a03d")
 	)
 	(no_connect
 		(at 175.895 41.91)
@@ -4024,6 +4014,26 @@
 			(type default)
 		)
 		(uuid "0cfde863-42c0-45e1-8948-b1967b0c5c22")
+	)
+	(wire
+		(pts
+			(xy 27.305 53.975) (xy 27.305 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fd7b6b9-7a6f-4d0f-a952-142d3eb51a63")
+	)
+	(wire
+		(pts
+			(xy 92.71 59.69) (xy 92.71 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103a16de-9801-4a3c-9fe6-ed3d6f45b98d")
 	)
 	(wire
 		(pts
@@ -4247,16 +4257,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.655 53.34) (xy 33.655 55.245)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "311ca59f-98af-446d-ae6b-30a1f0e5a148")
-	)
-	(wire
-		(pts
 			(xy 146.685 39.37) (xy 147.955 39.37)
 		)
 		(stroke
@@ -4297,16 +4297,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.305 55.245) (xy 33.655 55.245)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "406c8a9f-fe6b-4f85-aa7d-be2e8a4d77df")
-	)
-	(wire
-		(pts
 			(xy 165.735 31.75) (xy 176.53 31.75)
 		)
 		(stroke
@@ -4324,16 +4314,6 @@
 			(type default)
 		)
 		(uuid "4204d0cd-e774-4911-9fc5-371f0d807338")
-	)
-	(wire
-		(pts
-			(xy 92.71 59.69) (xy 92.71 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "431aeb49-02e7-491a-bea8-0b6b44bd38c2")
 	)
 	(wire
 		(pts
@@ -4514,6 +4494,16 @@
 			(type default)
 		)
 		(uuid "661e6c1f-198f-4e53-afe0-ac9b2b82316e")
+	)
+	(wire
+		(pts
+			(xy 64.77 62.23) (xy 64.77 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a8583dc-3a87-47e4-bb7e-37ad5a5f46d3")
 	)
 	(wire
 		(pts
@@ -4827,16 +4817,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.305 53.975) (xy 27.305 55.245)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99ce4d41-91eb-4764-9558-b8ce899c4e2e")
-	)
-	(wire
-		(pts
 			(xy 66.04 120.65) (xy 64.135 120.65)
 		)
 		(stroke
@@ -4917,7 +4897,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 62.23) (xy 64.77 67.31)
+			(xy 64.77 57.15) (xy 64.77 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5047,6 +5027,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.545 58.42) (xy 42.545 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b594a8e5-b78a-4fb3-bfbe-bdffedb73b63")
+	)
+	(wire
+		(pts
 			(xy 43.815 134.62) (xy 43.815 137.16)
 		)
 		(stroke
@@ -5084,6 +5074,16 @@
 			(type default)
 		)
 		(uuid "bcdcb491-5def-424b-9cd1-4b3eec3ceac8")
+	)
+	(wire
+		(pts
+			(xy 27.305 58.42) (xy 42.545 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd099968-206a-4f55-a1d3-01ae064ad663")
 	)
 	(wire
 		(pts
@@ -5227,16 +5227,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 57.15) (xy 64.77 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d37310e0-8785-454a-8726-3c7a7254f2c0")
-	)
-	(wire
-		(pts
 			(xy 33.655 44.45) (xy 33.655 45.72)
 		)
 		(stroke
@@ -5367,16 +5357,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 59.69) (xy 64.77 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4f39c1e-1eb8-4197-a76b-630550889d96")
-	)
-	(wire
-		(pts
 			(xy 244.475 57.15) (xy 244.475 58.42)
 		)
 		(stroke
@@ -5464,6 +5444,16 @@
 			(type default)
 		)
 		(uuid "f85646ab-ff7b-4004-8bb6-345c2a1f784d")
+	)
+	(wire
+		(pts
+			(xy 64.77 59.69) (xy 64.77 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f90f92f0-330d-4d94-ba19-367b21dacfc3")
 	)
 	(wire
 		(pts
@@ -5932,7 +5922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 79.0702 77.47 0)
 			(effects
 				(font
@@ -5976,7 +5966,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.655 55.245 0)
+		(at 42.545 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5985,7 +5975,7 @@
 		(fields_autoplaced yes)
 		(uuid "09b64552-a594-4445-8559-5e77017417eb")
 		(property "Reference" "#PWR05"
-			(at 33.655 61.595 0)
+			(at 42.545 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5994,7 +5984,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.655 59.69 0)
+			(at 42.545 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6002,7 +5992,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.655 55.245 0)
+			(at 42.545 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6011,7 +6001,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.655 55.245 0)
+			(at 42.545 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6020,7 +6010,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.655 55.245 0)
+			(at 42.545 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6068,7 +6058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 121.412 50.8 90)
 			(effects
 				(font
@@ -6135,7 +6125,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 62.103 61.595 90)
 			(effects
 				(font
@@ -6202,7 +6192,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 99.695 48.768 90)
 			(effects
 				(font
@@ -6245,6 +6235,87 @@
 		)
 	)
 	(symbol
+		(lib_id "EPS:BAS21,215")
+		(at 36.195 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14c53a9a-50b0-4b7b-b3d4-1a629b53d75c")
+		(property "Reference" "D16"
+			(at 38.735 51.435 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAS21,215"
+			(at 38.735 60.325 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR"
+			(at 50.165 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Diodes-General-Purpose_NXP_BAS21_BAS21_C8661.html"
+			(at 52.705 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.195 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C8661"
+			(at 55.245 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20dfef24-7c5f-4806-9b0c-112473ef974f")
+		)
+		(pin "2"
+			(uuid "573c79b8-7aa6-4c13-9bea-6eb88f3cb496")
+		)
+		(pin "3"
+			(uuid "9e5718b2-f26c-4e64-b0e8-2af3e5d0675d")
+		)
+		(instances
+			(project "EPS_Scales_RevD"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 142.24 60.96 0)
 		(unit 1)
@@ -6271,7 +6342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 140.462 60.96 90)
 			(effects
 				(font
@@ -6331,8 +6402,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 194.945 53.34 0)
+		(property "Value" "100n"
+			(at 194.31 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6340,7 +6411,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 194.6402 54.61 0)
 			(effects
 				(font
@@ -6740,7 +6811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 133.0452 54.61 0)
 			(effects
 				(font
@@ -6800,7 +6871,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 182.88 55.88 0)
 			(effects
 				(font
@@ -6809,7 +6880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 182.5752 57.15 0)
 			(effects
 				(font
@@ -6879,7 +6950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 188.087 132.08 90)
 			(effects
 				(font
@@ -6922,93 +6993,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EPS:1N4151WS")
-		(at 33.655 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5837d0f5-fd90-453f-9781-0dee216fc2f4")
-		(property "Reference" "D5"
-			(at 34.29 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4151WS"
-			(at 34.29 52.705 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.655 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
-			(at 33.655 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 33.655 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 33.655 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 33.655 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "04e43f12-e990-44fe-a20c-fe106cf03c3d")
-		)
-		(pin "2"
-			(uuid "893b3b29-9ac3-41be-8fba-9810389bd9f8")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 223.52 37.465 0)
 		(unit 1)
@@ -7026,7 +7010,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 224.79 40.005 0)
 			(effects
 				(font
@@ -7035,7 +7019,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 224.4852 41.275 0)
 			(effects
 				(font
@@ -7263,7 +7247,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 186.817 36.195 90)
 			(effects
 				(font
@@ -7332,7 +7316,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 140.462 53.34 90)
 			(effects
 				(font
@@ -7469,7 +7453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 267.0302 36.83 0)
 			(effects
 				(font
@@ -7848,7 +7832,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "15k"
 			(at 55.88 26.035 90)
 			(effects
 				(font
@@ -7856,7 +7840,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 55.88 30.353 90)
 			(effects
 				(font
@@ -8058,7 +8042,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 99.695 51.308 90)
 			(effects
 				(font
@@ -8574,7 +8558,7 @@
 		(dnp no)
 		(uuid "9ddf9896-256d-4558-bcbc-0ac7e4937057")
 		(property "Reference" "R10"
-			(at 27.305 50.165 0)
+			(at 30.48 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8582,14 +8566,14 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 29.845 46.355 0)
+			(at 30.48 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 29.083 50.165 90)
 			(effects
 				(font
@@ -8656,7 +8640,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 53.213 55.88 90)
 			(effects
 				(font
@@ -8723,7 +8707,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 47.498 55.88 90)
 			(effects
 				(font
@@ -8792,7 +8776,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 182.5752 32.385 0)
 			(effects
 				(font
@@ -8861,7 +8845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 186.817 28.575 90)
 			(effects
 				(font
@@ -8931,7 +8915,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:LED0603-RD_RED"
 			(at 60.325 69.215 0)
 			(effects
 				(font
@@ -9010,7 +8994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:C0402"
 			(at 114.6302 49.53 0)
 			(effects
 				(font
@@ -9080,7 +9064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 188.087 145.415 90)
 			(effects
 				(font
@@ -9317,6 +9301,127 @@
 			(project ""
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EPS:TPS1HB08BQPWPRQ1")
+		(at 78.74 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9790df9-293f-4b4f-bf51-c16899b64383")
+		(property "Reference" "U15"
+			(at 69.215 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS1HB08BQPWPRQ1"
+			(at 78.74 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:HTSSOP-16_L5.0-W4.4-P0.65-LS6.4-TL-EP2.9"
+			(at 78.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748448912035&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS1HA08-Q1"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40-V, 8-mΩ Single-Channel Smart High-Side Switch"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C3230075"
+			(at 78.74 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23af6620-4e02-4824-af15-54ac159500df")
+		)
+		(pin "2"
+			(uuid "3be90de2-b3e8-45ba-8fbf-b6b64e9ddd1b")
+		)
+		(pin "3"
+			(uuid "05bfe00d-5047-43ad-b815-6fddd92076ea")
+		)
+		(pin "4"
+			(uuid "6c03c963-4417-4bf4-a068-b46ca6c732fe")
+		)
+		(pin "6"
+			(uuid "96687ea6-aad5-444b-bdae-d53c10080084")
+		)
+		(pin "11"
+			(uuid "3b58cf7c-2fc4-456b-b043-f4a840f9eb38")
+		)
+		(pin "8"
+			(uuid "58e01f6c-2f66-4145-8be7-53cd678e6ea4")
+		)
+		(pin "13"
+			(uuid "d279be6e-5cff-4bcf-98a7-e8805b76f29a")
+		)
+		(pin "15"
+			(uuid "2daae14b-f2ed-4f51-8e34-8ea2e2e46505")
+		)
+		(pin "10"
+			(uuid "968eb372-4d27-4c66-8927-d7c59ef95057")
+		)
+		(pin "16"
+			(uuid "ffb15633-4ae6-462c-9428-dd835b60bc96")
+		)
+		(pin "12"
+			(uuid "c2d3e3cd-6310-42ea-8e21-6b0457f07c1e")
+		)
+		(pin "9"
+			(uuid "646d476e-a9b9-48dc-8622-5764d16737e2")
+		)
+		(pin "17"
+			(uuid "2c8b19dd-9d1e-4264-b7f0-f18746d2d22c")
+		)
+		(pin "7"
+			(uuid "440a1431-527d-4ce0-9b78-eedbea186789")
+		)
+		(pin "5"
+			(uuid "a4529a81-d4d3-4197-9965-b7a800afb4ac")
+		)
+		(pin "14"
+			(uuid "b4f0b4ae-631a-4afd-b15c-217861bd4948")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -9919,127 +10024,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EPS:TPS1HB08BQPWPRQ1")
-		(at 78.74 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "faa10db2-bb8e-4285-bc7d-c5cebf55aa8c")
-		(property "Reference" "U15"
-			(at 67.945 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS1HA08AQPWPRQ1"
-			(at 78.105 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EPS:HTSSOP-16_L5.0-W4.4-P0.65-LS6.4-TL-EP2.9"
-			(at 78.74 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748448912035&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS1HA08-Q1"
-			(at 78.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40-V, 8-mΩ Single-Channel Smart High-Side Switch"
-			(at 78.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C3230075"
-			(at 78.74 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "f2224024-62ba-43ea-9173-a7fcf611a5f7")
-		)
-		(pin "16"
-			(uuid "3324790d-7d58-418e-8c28-9e53517bfbd6")
-		)
-		(pin "2"
-			(uuid "ac1eaa8d-3837-4327-bfe9-ddbf5b2d63af")
-		)
-		(pin "14"
-			(uuid "e1dbef8d-8a51-4118-b6c6-ea8b216e418c")
-		)
-		(pin "17"
-			(uuid "4a531608-7b33-40b9-ab28-53fe1836ea49")
-		)
-		(pin "4"
-			(uuid "eb224db3-de72-4220-9cc9-38164461f711")
-		)
-		(pin "15"
-			(uuid "54e38412-7d0f-4604-9d6c-e32f17622034")
-		)
-		(pin "11"
-			(uuid "c0e3fb65-3479-4a29-b5f4-180f000fa490")
-		)
-		(pin "3"
-			(uuid "e08f70e9-c2a7-43a0-acd9-5a0cef127a5f")
-		)
-		(pin "5"
-			(uuid "7c12c9cc-4864-4301-9826-f48113506e8c")
-		)
-		(pin "8"
-			(uuid "92ca3ca1-f8a7-470f-9750-0c0664a81cae")
-		)
-		(pin "13"
-			(uuid "54028cc1-99d7-46e0-9196-0eabd5c8607d")
-		)
-		(pin "1"
-			(uuid "74adaeca-3b85-454a-9c6a-b82e9b48049d")
-		)
-		(pin "6"
-			(uuid "6cc313e7-530e-404d-9435-e444da61d3da")
-		)
-		(pin "12"
-			(uuid "0bfbdce9-2202-41a7-b0d7-4c15b97427db")
-		)
-		(pin "10"
-			(uuid "f4683344-86e0-49f6-995d-ebd55b8edf70")
-		)
-		(pin "9"
-			(uuid "b935fe6a-f499-4693-9405-f79e1cb794ad")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/2cdb1481-3454-4d94-b027-75f199b62545"
-					(reference "U15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 99.695 44.45 90)
 		(unit 1)
@@ -10064,7 +10048,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:R0402"
 			(at 99.695 46.228 90)
 			(effects
 				(font
