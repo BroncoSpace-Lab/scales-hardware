@@ -3900,10 +3900,10 @@
 		)
 		(uuid "22aa3678-0669-476b-a72b-8ff1568b49f1")
 	)
-	(text_box "Req. 8.7u, round up"
+	(text_box "Req. 8.7u, going with 8.2u because its whats available on LCSC"
 		(exclude_from_sim no)
-		(at 175.26 64.77 0)
-		(size 12.7 5.08)
+		(at 173.99 64.77 0)
+		(size 17.78 10.795)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3982,7 +3982,7 @@
 	)
 	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2) DONE\nRT (Set default frequency to 400khz) DONE\nEN/UV threshold (~24v = UV, due to Li-ion discharge)(Pg. 15) DONE\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) (Pg. 13) DONE\nBST (add 0.1uF bypass cap) DONE\nINTVCC (add 0.1uF bypass cap) DONE\nBIAS (If Vout is greater than 3.3v tie to vout)(DONE)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) DONE\nTR/SS (Select a soft start time) ~1ms -> 2.16nF DONE\nNC (Tie to ground) DONE"
 		(exclude_from_sim no)
-		(at 204.47 65.405 0)
+		(at 207.01 64.77 0)
 		(size 71.755 26.035)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4581,6 +4581,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e03ccc9c-7b91-4fd0-9a12-493fe2f84b25")
+	)
+	(junction
+		(at 193.675 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4c598c8-f117-44ca-9de6-5947b70da472")
 	)
 	(junction
 		(at 249.555 34.29)
@@ -5186,6 +5192,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.675 74.93) (xy 200.025 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f0d355d-c2b9-4f86-be4e-1f2f4e1cceaa")
+	)
+	(wire
+		(pts
 			(xy 217.17 40.64) (xy 226.695 40.64)
 		)
 		(stroke
@@ -5656,6 +5672,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.025 74.93) (xy 200.025 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dfcef41-b21e-43f3-bde9-8e7a23e73755")
+	)
+	(wire
+		(pts
 			(xy 139.065 39.37) (xy 140.335 39.37)
 		)
 		(stroke
@@ -5663,6 +5689,16 @@
 			(type default)
 		)
 		(uuid "7f4a6d21-acb2-4457-ac84-8e2252bea6c1")
+	)
+	(wire
+		(pts
+			(xy 200.025 63.5) (xy 200.025 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe0b984-de80-4555-8197-454d674bb27a")
 	)
 	(wire
 		(pts
@@ -5893,6 +5929,16 @@
 			(type default)
 		)
 		(uuid "9ccb0f15-c775-4bb4-97c0-febfbcca8dd0")
+	)
+	(wire
+		(pts
+			(xy 193.675 63.5) (xy 200.025 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9db8e7f1-7a6b-4eb7-b9ec-9084578da365")
 	)
 	(wire
 		(pts
@@ -10399,7 +10445,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
+		(property "Value" "47u"
 			(at 194.31 71.12 0)
 			(effects
 				(font
@@ -10408,7 +10454,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:CASE-D_7343"
 			(at 194.6402 72.39 0)
 			(effects
 				(font
@@ -11060,6 +11106,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 200.025 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c008d52a-c8d4-48aa-bb16-fa7e9b2b577d")
+		(property "Reference" "C52"
+			(at 200.66 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47u"
+			(at 200.66 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:CAP-SMD_L7.3-W4.3-FD"
+			(at 200.9902 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.025 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 200.025 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ec97fd8-0497-422b-92c9-79f7b059aec3")
+		)
+		(pin "2"
+			(uuid "a7383460-cddb-4305-822d-388111b011f2")
+		)
+		(instances
+			(project "EPS_Scales_RevD"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/7377a1d5-f804-4206-bc18-fde862f30294"
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 187.325 55.88 0)
 		(unit 1)
@@ -11210,7 +11325,7 @@
 				)
 			)
 		)
-		(property "Value" "9u"
+		(property "Value" "8.2u"
 			(at 181.61 60.96 90)
 			(effects
 				(font
@@ -11218,7 +11333,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EPS:IND-SMD_L11.5-W10.0"
 			(at 181.61 63.5 0)
 			(effects
 				(font
@@ -11227,7 +11342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121442_SXN-Shun-Xiang-Nuo-Elec-SMMS1050-8R2M_C149543.pdf"
 			(at 181.61 63.5 0)
 			(effects
 				(font
@@ -11236,8 +11351,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "SMMS1050-8R2M"
 			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C149543"
+			(at 181.61 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
