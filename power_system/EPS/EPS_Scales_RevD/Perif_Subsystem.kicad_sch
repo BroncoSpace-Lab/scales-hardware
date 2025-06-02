@@ -3624,6 +3624,12 @@
 		(uuid "37105131-1414-47bc-9448-55de65c56c90")
 	)
 	(junction
+		(at 191.135 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37c1ce93-e1b7-4102-9e54-6f28f85775a1")
+	)
+	(junction
 		(at 45.085 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4345,7 +4351,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.135 134.62) (xy 191.135 139.7)
+			(xy 191.135 134.62) (xy 191.135 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5162,6 +5168,16 @@
 			(type default)
 		)
 		(uuid "d4e3f753-cbca-4151-a5aa-a9d6bfa1df6b")
+	)
+	(wire
+		(pts
+			(xy 191.135 137.16) (xy 191.135 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bf75ed-9276-41ec-9ba9-0be9fbb1434c")
 	)
 	(wire
 		(pts
@@ -8411,6 +8427,73 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
 					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 191.135 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5b995d0-3aec-491a-84a7-9da3e0188241")
+		(property "Reference" "TP54"
+			(at 186.309 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 186.055 135.8901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 191.135 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.135 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 191.135 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93701415-5e77-4b51-bfff-3f0e5652eb51")
+		)
+		(instances
+			(project "EPS_Scales_RevD"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "TP54")
 					(unit 1)
 				)
 			)

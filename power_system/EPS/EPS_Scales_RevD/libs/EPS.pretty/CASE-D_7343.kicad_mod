@@ -1,23 +1,140 @@
-(module easyeda2kicad:CASE-D_7343 (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "CASE-D_7343"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "d09b31cf-a040-4ea9-a538-e2c6ab0095f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CASE-D_7343"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "6ab8d6d7-00c9-4c50-895c-3e37fa2e9395")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6109de93-3505-40da-9553-420291838c91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f778a099-0940-4ebb-9972-f2c9d7377289")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
 	(attr smd)
-	(fp_text reference REF** (at 0 -4.0) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -3.7 -2.3)
+		(end 3.6 -2.3)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e847750f-1b92-48c9-a26e-0afe5299a0b7")
 	)
-	(fp_text value CASE-D_7343 (at 0 4.0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start 1.1 2.3)
+		(end 1.1 -2.3)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "49781a62-4a90-4604-9ae9-af0fed18e015")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start 3.7 2.3)
+		(end -3.6 2.3)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4dd40998-d617-46eb-80ed-7eb44934867a")
 	)
-	(fp_line (start 1.10 2.30) (end 1.10 -2.30) (layer F.SilkS) (width 0.40))
-	(fp_line (start -3.70 -2.30) (end 3.60 -2.30) (layer F.SilkS) (width 0.40))
-	(fp_line (start 3.70 2.30) (end -3.60 2.30) (layer F.SilkS) (width 0.40))
-	(pad 1 smd rect (at 3.00 0.00 180.00) (size 2.80 3.01) (layers F.Cu F.Paste F.Mask))
-	(pad 2 smd rect (at -3.00 0.00 180.00) (size 2.80 3.01) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center 3.65 -2.15) (end 3.68 -2.15) (layer F.Fab) (width 0.06))
+	(fp_rect
+		(start -4.6 -2.5)
+		(end 4.6 2.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "101c7f90-d5a5-4e68-ac54-3f585e0f65c4")
+	)
+	(fp_circle
+		(center 3.65 -2.15)
+		(end 3.68 -2.15)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b3b0dc8d-b781-4549-9019-abc0d56d073c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "99e4efaf-176b-40a8-85d1-d84c19f0eb78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 3 0 180)
+		(size 2.8 3.01)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a5756262-71c6-4a67-a6a1-9a732d1702fb")
+	)
+	(pad "2" smd rect
+		(at -3 0 180)
+		(size 2.8 3.01)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cef3583a-eb0f-444f-ab8a-9bd0d7b2a902")
+	)
+	(embedded_fonts no)
 	(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/CASE-D_L7.3-W4.3-H2.9.wrl"
-		(offset (xyz 0.000 -0.000 -0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 180))
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
 	)
 )
