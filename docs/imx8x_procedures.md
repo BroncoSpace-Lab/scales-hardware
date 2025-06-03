@@ -79,104 +79,11 @@ The bbappends files update the **SRC_URI** to use the **https** protocol, as wel
 
 **Applying the Patch**
 
-To apply the patch you will want to make a file called **0001-Fix-SRC_URI-git-protocol-changed.patch** in your meta-phytec folder. We used nano to do this.
+To apply the patch you will want to copy the attached **0001-Fix-SRC_URI-git-protocol-changed.patch** file to your meta-phytec folder
 
 ```
-cd Yocto/sources/meta-phytec/
-nano 0001-Fix-SRC_URI-git-protocol-changed.patch
+Yocto/sources/meta-phytec/
 ```
-
-In the file you just created, paste the following and then save and exit the nano editor.
-
-<details>
-<summary>Click to toggle the patch file code.</summary>
-
-```
-From 21b454eafb3a5a61963a6d8ff53fdd8a8bd2a565 Mon Sep 17 00:00:00 2001
-From: Garrett Giordano <ggiordano@phytec.com>
-Date: Thu, 30 Jan 2025 11:38:13 -0800
-Subject: [PATCH] Fix SRC_URI git protocol changed
-
-Added protocol=https and branch=main to the following recipes:
- - glslang
- - spirv-tools
- - bmap-tools
- - googletest
- - teseract-lang
-
-Signed-off-by: Garrett Giordano <ggiordano@phytec.com>
----
- .../recipes-graphics/tesseract/tesseract-lang_%.bbappend    | 4 ++++
- .../recipes-graphics/vulkan/glslang_git.bbappend            | 5 +++++
- .../recipes-graphics/vulkan/spirv-tools_git.bbappend        | 6 ++++++
- .../recipes-support/bmap-tools/bmap-tools_%.bbappend        | 4 ++++
- .../recipes-test/googletest/googletest_%.bbappend           | 4 ++++
- 5 files changed, 23 insertions(+)
- create mode 100644 meta-phytec-fsl/recipes-graphics/tesseract/tesseract-lang_%.bbappend
- create mode 100644 meta-phytec-fsl/recipes-graphics/vulkan/glslang_git.bbappend
- create mode 100644 meta-phytec-fsl/recipes-graphics/vulkan/spirv-tools_git.bbappend
- create mode 100644 meta-phytec-fsl/recipes-support/bmap-tools/bmap-tools_%.bbappend
- create mode 100644 meta-phytec-fsl/recipes-test/googletest/googletest_%.bbappend
-
-diff --git a/meta-phytec-fsl/recipes-graphics/tesseract/tesseract-lang_%.bbappend b/meta-phytec-fsl/recipes-graphics/tesseract/tesseract-lang_%.bbappend
-new file mode 100644
-index 0000000..1a34dce
---- /dev/null
-+++ b/meta-phytec-fsl/recipes-graphics/tesseract/tesseract-lang_%.bbappend
-@@ -0,0 +1,4 @@
-+# Git has deprecated anonymous git:// protocol. Add protocol=https
-+# master branch has been changed to main. Add branch=main
-+
-+SRC_URI = "git://github.com/tesseract-ocr/tessdata.git;protocol=https;branch=main;"
-diff --git a/meta-phytec-fsl/recipes-graphics/vulkan/glslang_git.bbappend b/meta-phytec-fsl/recipes-graphics/vulkan/glslang_git.bbappend
-new file mode 100644
-index 0000000..fa29589
---- /dev/null
-+++ b/meta-phytec-fsl/recipes-graphics/vulkan/glslang_git.bbappend
-@@ -0,0 +1,5 @@
-+# Git has deprecated anonymous git:// protocol. Add protocol=https
-+# master branch has been changed to main. Add branch=main
-+
-+SRC_URI = "git://github.com/KhronosGroup/glslang;protocol=https;branch=main \
-+"
-diff --git a/meta-phytec-fsl/recipes-graphics/vulkan/spirv-tools_git.bbappend b/meta-phytec-fsl/recipes-graphics/vulkan/spirv-tools_git.bbappend
-new file mode 100644
-index 0000000..35e8bf3
---- /dev/null
-+++ b/meta-phytec-fsl/recipes-graphics/vulkan/spirv-tools_git.bbappend
-@@ -0,0 +1,6 @@
-+# Git has deprecated anonymous git:// protocol. Add protocol=https
-+# master branch has been changed to main. Add branch=main
-+
-+SRC_URI = "git://github.com/KhronosGroup/SPIRV-Tools.git;protocol=https;branch=main;name=spirv-tools \
-+           git://github.com/KhronosGroup/SPIRV-Headers.git;protocol=https;branch=main;name=spirv-headers;destsuffix=${DEST_DIR}/spirv-headers \
-+"
-diff --git a/meta-phytec-fsl/recipes-support/bmap-tools/bmap-tools_%.bbappend b/meta-phytec-fsl/recipes-support/bmap-tools/bmap-tools_%.bbappend
-new file mode 100644
-index 0000000..220a048
---- /dev/null
-+++ b/meta-phytec-fsl/recipes-support/bmap-tools/bmap-tools_%.bbappend
-@@ -0,0 +1,4 @@
-+# Git has deprecated anonymous git:// protocol. Add protocol=https
-+# master branch has been changed to main. Add branch=main
-+
-+SRC_URI = "git://github.com/intel/${BPN};protocol=https;branch=main"
-diff --git a/meta-phytec-fsl/recipes-test/googletest/googletest_%.bbappend b/meta-phytec-fsl/recipes-test/googletest/googletest_%.bbappend
-new file mode 100644
-index 0000000..7b95ce5
---- /dev/null
-+++ b/meta-phytec-fsl/recipes-test/googletest/googletest_%.bbappend
-@@ -0,0 +1,4 @@
-+# Git has deprecated anonymous git:// protocol. Add protocol=https
-+# master branch has been changed to main. Add branch=main
-+
-+SRC_URI = "git://github.com/google/googletest.git;protocol=https;branch=main"
--- 
-2.25.1
-```
-
-</details>
-
 
 You can then cd into your meta-phytec folder and apply the patch
 
