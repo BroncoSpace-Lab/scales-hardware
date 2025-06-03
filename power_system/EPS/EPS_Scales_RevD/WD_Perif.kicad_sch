@@ -637,130 +637,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -2404,12 +2280,6 @@
 		(uuid "05c21966-77e2-4808-9167-3de06ed0e0a0")
 	)
 	(junction
-		(at 240.665 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e62534f-a48f-4dfa-9904-46d17584352d")
-	)
-	(junction
 		(at 159.385 114.935)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2492,12 +2362,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a53e9b7-bfbf-4e83-95b0-953ea3ab2a83")
-	)
-	(junction
-		(at 239.395 114.935)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "834f7a8b-1a3f-4c01-8349-424fd8892e1c")
 	)
 	(junction
 		(at 169.545 114.935)
@@ -2786,6 +2650,16 @@
 			(type default)
 		)
 		(uuid "2ce1f368-b9fb-4d09-887c-c6a05cb9177f")
+	)
+	(wire
+		(pts
+			(xy 240.665 48.26) (xy 243.205 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d64f5b4-9947-478f-92dd-235dd0d1d6b9")
 	)
 	(wire
 		(pts
@@ -3109,16 +2983,6 @@
 	)
 	(wire
 		(pts
-			(xy 239.395 122.555) (xy 239.395 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cc0c9fe-1808-4913-9887-351b696ba395")
-	)
-	(wire
-		(pts
 			(xy 46.355 67.945) (xy 59.055 67.945)
 		)
 		(stroke
@@ -3219,16 +3083,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.665 48.26) (xy 243.205 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b13cf632-0296-4f60-95ca-db43d73887ec")
-	)
-	(wire
-		(pts
 			(xy 191.135 112.395) (xy 193.675 112.395)
 		)
 		(stroke
@@ -3289,7 +3143,7 @@
 	)
 	(wire
 		(pts
-			(xy 239.395 114.935) (xy 258.445 114.935)
+			(xy 217.805 114.935) (xy 258.445 114.935)
 		)
 		(stroke
 			(width 0)
@@ -3569,16 +3423,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.805 114.935) (xy 239.395 114.935)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb8ec982-aa3a-472c-b1d0-7f7b927a16a4")
-	)
-	(wire
-		(pts
 			(xy 159.385 114.935) (xy 164.465 114.935)
 		)
 		(stroke
@@ -3659,16 +3503,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.665 48.26) (xy 240.665 46.355)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe48adde-591c-4dcc-a93e-1b7858955891")
-	)
-	(wire
-		(pts
 			(xy 174.625 132.715) (xy 174.625 125.095)
 		)
 		(stroke
@@ -3707,24 +3541,24 @@
 		)
 		(uuid "29ff815c-5ef6-4882-a3bf-b2f700ede8b9")
 	)
-	(global_label "+3.3V_PERIF"
+	(global_label "+5V_Perif"
 		(shape input)
-		(at 46.355 30.48 0)
+		(at 240.665 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "47dd3c14-5fd0-4c95-a914-f95e2af6d862")
+		(uuid "4622a35c-f6da-47ec-bd75-9bbf26285772")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.375 30.48 0)
+			(at 228.3664 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3753,24 +3587,24 @@
 			)
 		)
 	)
-	(global_label "+3.3V_PERIF"
+	(global_label "+5V_Perif"
 		(shape input)
-		(at 240.665 46.355 0)
+		(at 46.355 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "931807a0-8d4b-438d-ac63-1911bdf5622f")
+		(uuid "82472ad1-e0fa-410f-9d87-6751bb89aa56")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.685 46.355 0)
+			(at 34.0564 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5833,72 +5667,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 239.395 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ec1517c-0986-4f84-bc49-b1de55ab3949")
-		(property "Reference" "#PWR019"
-			(at 239.395 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 239.395 128.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 239.395 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 239.395 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 239.395 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "995c5ed5-1df5-4027-ac22-2a3f866b9454")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892/e711cf5c-5b86-474c-b0e7-14caac959a35"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 206.375 92.075 0)
 		(mirror y)
 		(unit 1)
@@ -6073,76 +5841,6 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892/e711cf5c-5b86-474c-b0e7-14caac959a35"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 239.395 118.745 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c570643-a647-45f1-944c-8ec37729cc39")
-		(property "Reference" "R72"
-			(at 241.3 117.4749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 241.3 120.0149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 237.617 118.745 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 239.395 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 239.395 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2dd49e64-b112-4eea-84ab-affde7f5bec9")
-		)
-		(pin "2"
-			(uuid "c9ac2d57-1d6d-499e-b288-e025ce4bda23")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892/e711cf5c-5b86-474c-b0e7-14caac959a35"
-					(reference "R72")
 					(unit 1)
 				)
 			)
