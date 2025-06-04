@@ -540,8 +540,19 @@ Board Review Notes 5/1/25:
 
 
 # Design Review Notes 5/26/25 #
-Consider Swapping the Load Switch Controller with one that has an internal MOSFET -> [TPS2HB50-Q1](https://www.ti.com/lit/ds/symlink/tps2hb50-q1.pdf?ts=1747428220473&ref_url=https%3A%2F%2Fwww.ti.com%2Fproduct%2FTPS2HB50-Q1%2Fpart-details%2FTPS2HB50AQPWPRQ1%3FkeyMatch%3DTPS2HB50AQPWPRQ1%26tisearch%3Duniversal_search%26usecase%3DOPN)
-Consider Swapping the switching regulator with a new one with the same specs due to availability on JLC pbc
+Update all Schematic Footprints and Symbols from easyeda2kicad
+
+* Consider Swapping the Load Switch Controller with one that has an internal MOSFET.
+Replacement: [TPS1HA08B-Q1](https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748298961148) (Go with the B/D revision for much higher current limit) 40v, 80A limit. In stock in LCSC.
+
+   * Layout considerations (Page 46)
+     
+
+* Consider Swapping the switching regulator with a new one with the same specs due to availability on JLC pbc
+Replacement: [LT8612](https://www.analog.com/media/en/technical-documentation/data-sheets/lt8612.pdf)
+
+* Consider Swapping the INA230 to the INA260 which uses I2C and has an internal shunt resistor
+Replacement: [INA260](https://www.ti.com/product/INA260)
 
 Major Issues:
 
