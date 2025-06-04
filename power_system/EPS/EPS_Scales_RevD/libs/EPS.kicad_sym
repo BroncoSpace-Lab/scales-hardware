@@ -29,7 +29,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EPS:SODFL2512X100N"
+		(property "Footprint" "EPS:SOD2512X116N"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1133,7 +1133,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina260.pdf?ts=1748375218606&ref_url=https%253A%252F%252Fwww.google.com%252F"
-			(at 0 1.27 0)
+			(at -1.27 23.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1142,7 +1142,7 @@
 			)
 		)
 		(property "Description" "Precision Digital Current and Power Monitor With Low-Drift, Precision Integrated Shunt"
-			(at 0 1.27 0)
+			(at 0.254 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1182,7 +1182,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "INA260AIPWR_1_1"
+			(pin passive line
 				(at -11.43 7.62 0)
 				(length 2.54)
 				(name "VBUS"
@@ -1200,7 +1202,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -11.43 5.08 0)
 				(length 2.54)
 				(name "VS"
@@ -1218,7 +1220,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -11.43 1.27 0)
 				(length 2.54)
 				(name "A1"
@@ -1236,7 +1238,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -11.43 -1.27 0)
 				(length 2.54)
 				(name "A0"
@@ -1254,7 +1256,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -11.43 -5.08 0)
 				(length 2.54)
 				(name "ALERT"
@@ -1272,7 +1274,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -11.43 -7.62 0)
 				(length 2.54)
 				(name "NC"
@@ -1290,7 +1292,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 -13.97 90)
 				(length 2.54)
 				(name "GND"
@@ -1300,7 +1302,7 @@
 						)
 					)
 				)
-				(number "11"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1308,7 +1310,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 11.43 8.89 180)
 				(length 2.54)
 				(name "IN+"
@@ -1318,7 +1320,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1326,7 +1328,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 11.43 2.54 180)
 				(length 2.54)
 				(name "IN-"
@@ -1344,7 +1346,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 11.43 -3.81 180)
 				(length 2.54)
 				(name "SDA"
@@ -1362,7 +1364,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 11.43 -6.35 180)
 				(length 2.54)
 				(name "SCL"
@@ -1373,103 +1375,6 @@
 					)
 				)
 				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "INA260AIPWR_1_1"
-			(pin unspecified line
-				(at 1.27 -13.97 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 11.43 6.35 180)
-				(length 2.54)
-				(hide yes)
-				(name "IN+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 11.43 3.81 180)
-				(length 2.54)
-				(hide yes)
-				(name "IN+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 11.43 1.27 180)
-				(length 2.54)
-				(hide yes)
-				(name "IN-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 11.43 -1.27 180)
-				(length 2.54)
-				(hide yes)
-				(name "IN-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1510,7 +1415,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589836477510287360"
-			(at 0 0 0)
+			(at 42.926 18.542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1519,7 +1424,7 @@
 			)
 		)
 		(property "Description" "42V, 6A, Step Down Regulator"
-			(at 0 0 0)
+			(at 17.272 21.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,7 +1464,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "LT8612EUDE#PBF_1_1"
+			(pin passive line
 				(at -13.97 11.43 0)
 				(length 2.54)
 				(name "VIN"
@@ -1577,7 +1484,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 2.54 0)
 				(length 2.54)
 				(name "EN/UV"
@@ -1595,7 +1502,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 -7.62 0)
 				(length 2.54)
 				(name "SYNC"
@@ -1613,7 +1520,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 -10.16 0)
 				(length 2.54)
 				(name "TR/SS"
@@ -1631,7 +1538,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 -12.7 0)
 				(length 2.54)
 				(name "RT"
@@ -1649,7 +1556,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -1.27 -24.13 90)
 				(length 2.54)
 				(name "PGND"
@@ -1667,7 +1574,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 1.27 -24.13 90)
 				(length 2.54)
 				(name "GND"
@@ -1685,307 +1592,7 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 13.97 12.7 180)
-				(length 2.54)
-				(name "FB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 6.35 180)
-				(length 2.54)
-				(name "PG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "23"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 2.54 180)
-				(length 2.54)
-				(name "BIAS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -1.27 180)
-				(length 2.54)
-				(name "INTVCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -5.08 180)
-				(length 2.54)
-				(name "BST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -12.7 180)
-				(length 2.54)
-				(name "SW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "LT8612EUDE#PBF_1_1"
-			(pin unspecified line
-				(at -13.97 7.62 0)
-				(length 2.54)
-				(hide yes)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -13.97 5.08 0)
-				(length 2.54)
-				(hide yes)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -13.97 0 0)
-				(length 2.54)
-				(hide yes)
-				(name "PGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -13.97 -2.54 0)
-				(length 2.54)
-				(hide yes)
-				(name "PGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -3.81 19.05 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "28"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -1.27 19.05 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "27"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -1.27 -24.13 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 1.27 19.05 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 1.27 -24.13 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 3.81 -24.13 90)
-				(length 2.54)
-				(hide yes)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
+			(pin passive line
 				(at 3.81 -24.13 90)
 				(length 2.54)
 				(name "NC"
@@ -2003,18 +1610,17 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 6.35 -24.13 90)
+			(pin passive line
+				(at 13.97 12.7 180)
 				(length 2.54)
-				(hide yes)
-				(name "GND"
+				(name "FB"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "29"
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2022,18 +1628,17 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 13.97 -7.62 180)
+			(pin passive line
+				(at 13.97 6.35 180)
 				(length 2.54)
-				(hide yes)
-				(name "SW"
+				(name "PG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "18"
+				(number "23"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2041,18 +1646,17 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 13.97 -10.16 180)
+			(pin passive line
+				(at 13.97 2.54 180)
 				(length 2.54)
-				(hide yes)
-				(name "SW"
+				(name "BIAS"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "17"
+				(number "22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2060,29 +1664,45 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
+				(at 13.97 -1.27 180)
+				(length 2.54)
+				(name "INTVCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -5.08 180)
+				(length 2.54)
+				(name "BST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 13.97 -12.7 180)
 				(length 2.54)
-				(hide yes)
-				(name "SW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -15.24 180)
-				(length 2.54)
-				(hide yes)
 				(name "SW"
 					(effects
 						(font
@@ -3194,7 +2814,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748448912035&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS1HA08-Q1"
-			(at 0 0 0)
+			(at 5.842 17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +2823,7 @@
 			)
 		)
 		(property "Description" "40-V, 8-mΩ Single-Channel Smart High-Side Switch"
-			(at 0 0 0)
+			(at 5.334 15.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,7 +2863,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "TPS1HB08BQPWPRQ1_1_1"
+			(pin passive line
 				(at -13.97 6.35 0)
 				(length 2.54)
 				(name "VBB"
@@ -3261,7 +2883,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 3.81 0)
 				(length 2.54)
 				(name "EN"
@@ -3279,7 +2901,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 -1.27 0)
 				(length 2.54)
 				(name "SNS"
@@ -3297,7 +2919,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 -3.81 0)
 				(length 2.54)
 				(name "LATCH"
@@ -3315,136 +2937,7 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 13.97 7.62 180)
-				(length 2.54)
-				(name "VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 2.54 180)
-				(length 2.54)
-				(name "DIA_EN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -2.54 180)
-				(length 2.54)
-				(name "SEL1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -5.08 180)
-				(length 2.54)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -7.62 180)
-				(length 2.54)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 13.97 -10.16 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "TPS1HB08BQPWPRQ1_1_1"
-			(pin unspecified line
-				(at -13.97 -5.08 0)
-				(length 2.54)
-				(hide yes)
-				(name "VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 -6.35 0)
 				(length 2.54)
 				(name "~{ST}"
@@ -3462,10 +2955,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -13.97 -7.62 0)
+			(pin passive line
+				(at 13.97 7.62 180)
 				(length 2.54)
-				(hide yes)
 				(name "VOUT"
 					(effects
 						(font
@@ -3473,7 +2965,7 @@
 						)
 					)
 				)
-				(number "7"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3481,18 +2973,17 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -13.97 -10.16 0)
+			(pin passive line
+				(at 13.97 2.54 180)
 				(length 2.54)
-				(hide yes)
-				(name "VOUT"
+				(name "DIA_EN"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3500,7 +2991,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 13.97 0 180)
 				(length 2.54)
 				(name "SEL2"
@@ -3518,18 +3009,17 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 13.97 -5.08 180)
+			(pin passive line
+				(at 13.97 -2.54 180)
 				(length 2.54)
-				(hide yes)
-				(name "VOUT"
+				(name "SEL1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3537,18 +3027,53 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 13.97 -7.62 180)
+			(pin passive line
+				(at 13.97 -5.08 180)
 				(length 2.54)
-				(hide yes)
-				(name "VOUT"
+				(name "NC"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -7.62 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 13.97 -10.16 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4119,6 +3644,160 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "XT60PW-F_C428722"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT60PW-F_C428722"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "XT:TH_2P-XT60PW-F"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C428722"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "XT60PW-F_C428722_0_1"
+			(rectangle
+				(start -7.62 2.54)
+				(end 1.27 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -6.35 1.27)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
