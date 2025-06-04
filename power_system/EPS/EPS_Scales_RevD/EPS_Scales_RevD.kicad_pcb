@@ -166,13 +166,13 @@
 	(net 22 "Net-(U3-BIAS)")
 	(net 23 "Net-(U3-FB)")
 	(net 24 "Net-(U3-BST)")
-	(net 25 "Net-(U3-NC)")
+	(net 25 "Net-(U3-SW)")
 	(net 26 "Net-(U3-INTVCC)")
 	(net 27 "Net-(U6D--)")
 	(net 28 "Net-(U12-VOUT)")
 	(net 29 "Net-(U13-TR{slash}SS)")
 	(net 30 "Net-(U13-BST)")
-	(net 31 "Net-(C40-Pad2)")
+	(net 31 "Net-(U13-SW)")
 	(net 32 "Net-(U13-INTVCC)")
 	(net 33 "/OBC_Subsystem/WD_OBC/WDT-VIN")
 	(net 34 "/Jetson_Subsystem/WD_Jetson/WDT-VIN")
@@ -10300,7 +10300,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_DEYAN-D1040HP-4R7MT_C41410646.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10317,18 +10317,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d1a97bb6-2c4c-4782-a98e-56c4b13122a9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C41410646"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c0ef135c-aaf6-4759-b58a-311d823f3a4d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17727,7 +17715,7 @@
 		(sheetname "/Jetson_Subsystem/WD_Jetson/")
 		(sheetfile "WD_Jetson.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -18211,7 +18199,7 @@
 			(at -6 0 90)
 			(size 4 3.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "7cd69b1f-0238-4a2f-b2b6-16694c6603ed")
@@ -18649,7 +18637,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "9d1a550b-9cbd-4082-b186-091a8fb217c7")
+			(uuid "be4ce3da-6c62-4009-86c6-f43936fb4bce")
 		)
 		(pad "6" smd oval
 			(at -2.87 2.28)
@@ -18658,7 +18646,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "9d1a550b-9cbd-4082-b186-091a8fb217c7")
+			(uuid "224e2f58-a91f-46be-bc08-c3eb74553c13")
 		)
 		(pad "6" smd oval
 			(at 2.87 0.98)
@@ -18667,7 +18655,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "9d1a550b-9cbd-4082-b186-091a8fb217c7")
+			(uuid "c0b8e9c3-325c-4c78-8dec-d777600aa060")
 		)
 		(pad "6" smd oval
 			(at 2.87 1.63)
@@ -18676,7 +18664,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "9d1a550b-9cbd-4082-b186-091a8fb217c7")
+			(uuid "f8c8482e-35bf-4885-a41e-0bf8b9b86db6")
 		)
 		(pad "6" smd oval
 			(at 2.87 2.28)
@@ -18685,7 +18673,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "9d1a550b-9cbd-4082-b186-091a8fb217c7")
+			(uuid "632006a6-a6e2-4af9-8e1e-c9bab5bc2ceb")
 		)
 		(pad "12" smd oval
 			(at 2.87 0.33)
@@ -20517,7 +20505,7 @@
 		(sheetname "/Perif_Subsystem/WD_Perif/")
 		(sheetfile "WD_Perif.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -20786,7 +20774,7 @@
 		(sheetname "/OBC_Subsystem/WD_OBC/")
 		(sheetfile "WD_OBC.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -23888,7 +23876,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VIN")
 			(pintype "passive")
-			(uuid "bf92ca41-9954-4f0b-9f5f-3f8953ae09bc")
+			(uuid "18d98b6c-d8c9-4814-9134-423fd483f3da")
 		)
 		(pad "5" smd rect
 			(at 0.75 1.42 180)
@@ -23897,7 +23885,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VIN")
 			(pintype "passive")
-			(uuid "bf92ca41-9954-4f0b-9f5f-3f8953ae09bc")
+			(uuid "d3a89ccd-c5cf-47e4-bebd-2fda1244159c")
 		)
 		(pad "8" smd rect
 			(at 1.25 1.42 180)
@@ -23915,7 +23903,7 @@
 			(net 2 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "fd2760b5-6683-4288-80f3-8b15823f4474")
+			(uuid "22d62c40-b1cd-44e2-acd0-0d4df0034456")
 		)
 		(pad "8" smd rect
 			(at 2.25 1.42 180)
@@ -23924,7 +23912,7 @@
 			(net 2 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "fd2760b5-6683-4288-80f3-8b15823f4474")
+			(uuid "e141cb67-28d4-44a8-ac99-0df2928a13f4")
 		)
 		(pad "11" smd rect
 			(at 0 0 180)
@@ -23942,7 +23930,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7167dc29-2881-4dd6-a99d-fffbf1c509e6")
+			(uuid "08db922c-d935-48bb-99aa-8e97c7c14fba")
 		)
 		(pad "11" smd rect
 			(at 2.92 -0.25 180)
@@ -23951,7 +23939,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7167dc29-2881-4dd6-a99d-fffbf1c509e6")
+			(uuid "5676d96a-22f7-45a0-be3a-16638917a661")
 		)
 		(pad "11" smd rect
 			(at 2.92 0.25 180)
@@ -23960,7 +23948,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7167dc29-2881-4dd6-a99d-fffbf1c509e6")
+			(uuid "dd3ad78f-20c9-4de5-8a33-c7d6381ae1b1")
 		)
 		(pad "11" smd rect
 			(at 2.92 0.75 180)
@@ -23969,13 +23957,13 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7167dc29-2881-4dd6-a99d-fffbf1c509e6")
+			(uuid "e8a4384b-4d41-421b-a344-af5ae77edcfa")
 		)
 		(pad "15" smd rect
 			(at 0.25 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
 			(uuid "0be226f3-41ee-43fb-a753-afda054d6dae")
@@ -23984,37 +23972,37 @@
 			(at 0.75 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "0be226f3-41ee-43fb-a753-afda054d6dae")
+			(uuid "e4b1a6f5-611a-484f-ad63-89000b928c65")
 		)
 		(pad "15" smd rect
 			(at 1.25 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "0be226f3-41ee-43fb-a753-afda054d6dae")
+			(uuid "eca88605-434d-4182-b4bf-0aec1fa4727e")
 		)
 		(pad "15" smd rect
 			(at 1.75 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "0be226f3-41ee-43fb-a753-afda054d6dae")
+			(uuid "b2871c50-5aa1-4ce2-a3c6-992ec7699616")
 		)
 		(pad "15" smd rect
 			(at 2.25 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "0be226f3-41ee-43fb-a753-afda054d6dae")
+			(uuid "7389547d-9242-4cfc-bbbe-cdb56338f068")
 		)
 		(pad "20" smd rect
 			(at -0.25 -1.42 180)
@@ -24077,7 +24065,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "37288538-2a07-4f4f-b49e-1121357ef1d4")
+			(uuid "1b7d9014-8a4f-438f-b578-258aec8aad58")
 		)
 		(pad "25" smd rect
 			(at -2.92 0.25 180)
@@ -24086,7 +24074,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "37288538-2a07-4f4f-b49e-1121357ef1d4")
+			(uuid "bfc5fefe-bf50-4f56-b0fe-4bd211949d7c")
 		)
 		(pad "25" smd rect
 			(at -2.92 0.75 180)
@@ -24095,7 +24083,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "37288538-2a07-4f4f-b49e-1121357ef1d4")
+			(uuid "31ec1a08-e672-4492-81b4-689a36f5f0cc")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/QFN-28_L6.0-W3.0-H0.8-P0.50-BL-EP.wrl"
@@ -25147,7 +25135,7 @@
 			(net 35 "Net-(U13-BIAS)")
 			(pinfunction "IN+")
 			(pintype "passive")
-			(uuid "abbe7359-63a9-4937-a9ba-2e517054e061")
+			(uuid "39022868-e565-4f68-af7f-e8c1cb6e5996")
 		)
 		(pad "1" smd rect
 			(at -0.98 2.78 270)
@@ -25156,7 +25144,7 @@
 			(net 35 "Net-(U13-BIAS)")
 			(pinfunction "IN+")
 			(pintype "passive")
-			(uuid "abbe7359-63a9-4937-a9ba-2e517054e061")
+			(uuid "3346163d-0413-48da-b62c-4dd0e3214aaf")
 		)
 		(pad "4" smd rect
 			(at -0.33 2.78 270)
@@ -25192,7 +25180,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "a100a874-c3e9-40f7-bb7c-e9262d60e6d9")
+			(uuid "7b26378b-f692-4411-ac2f-c089e0d905c6")
 		)
 		(pad "7" smd rect
 			(at 1.63 2.78 270)
@@ -25264,7 +25252,7 @@
 			(net 63 "+5V_Perif")
 			(pinfunction "IN-")
 			(pintype "passive")
-			(uuid "1a943da7-9964-4feb-ba5c-574c54dc356f")
+			(uuid "a2938b75-06ac-4e73-8f2b-fde29dbb6a16")
 		)
 		(pad "14" smd rect
 			(at -0.98 -2.78 270)
@@ -25273,7 +25261,7 @@
 			(net 63 "+5V_Perif")
 			(pinfunction "IN-")
 			(pintype "passive")
-			(uuid "1a943da7-9964-4feb-ba5c-574c54dc356f")
+			(uuid "396208bc-8c5a-41ae-8f5e-38561806a281")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/TSSOP-16_L5.0-W4.4-P0.65-LS6.4-BL-1.wrl"
@@ -30567,7 +30555,7 @@
 			)
 		)
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*")
-		(path "/364fa580-df87-4e65-a29c-42f81b57f892/e711cf5c-5b86-474c-b0e7-14caac959a35/b4a6047a-ff4e-47bc-9aad-962e4cfdab4c")
+		(path "/364fa580-df87-4e65-a29c-42f81b57f892/e711cf5c-5b86-474c-b0e7-14caac959a35/cf688567-beaa-4afb-b038-df8ac5ee1a90")
 		(sheetname "/Perif_Subsystem/WD_Perif/")
 		(sheetfile "WD_Perif.kicad_sch")
 		(attr smd)
@@ -40175,7 +40163,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "6708ebbd-3a72-4517-9e17-8508e042b979")
+			(uuid "338d2558-9aa4-4bee-b13f-a5beceafc3d3")
 		)
 		(pad "6" smd oval
 			(at -2.87 2.28)
@@ -40184,7 +40172,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "6708ebbd-3a72-4517-9e17-8508e042b979")
+			(uuid "50ff8442-3ff8-40f2-88b6-2b64856fd70b")
 		)
 		(pad "6" smd oval
 			(at 2.87 0.98)
@@ -40193,7 +40181,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "6708ebbd-3a72-4517-9e17-8508e042b979")
+			(uuid "20cb3614-9277-4441-8643-a218148e6e15")
 		)
 		(pad "6" smd oval
 			(at 2.87 1.63)
@@ -40202,7 +40190,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "6708ebbd-3a72-4517-9e17-8508e042b979")
+			(uuid "17992557-cbcb-448c-b16e-7c201aa3fdc8")
 		)
 		(pad "6" smd oval
 			(at 2.87 2.28)
@@ -40211,7 +40199,7 @@
 			(net 20 "Net-(U17-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "6708ebbd-3a72-4517-9e17-8508e042b979")
+			(uuid "e7424fb6-0d62-4ac0-952a-b837b9135b27")
 		)
 		(pad "12" smd oval
 			(at 2.87 0.33)
@@ -49013,7 +49001,7 @@
 			(net 12 "Net-(U1-BIAS)")
 			(pinfunction "IN+")
 			(pintype "passive")
-			(uuid "5db9f4ae-367f-48c9-9e6b-8bf6b4bbd910")
+			(uuid "3371d703-0db2-4167-8f1a-47039325f069")
 		)
 		(pad "1" smd rect
 			(at -0.98 2.78 270)
@@ -49022,7 +49010,7 @@
 			(net 12 "Net-(U1-BIAS)")
 			(pinfunction "IN+")
 			(pintype "passive")
-			(uuid "5db9f4ae-367f-48c9-9e6b-8bf6b4bbd910")
+			(uuid "7dd0ec68-a748-4a79-86e6-c1046404bce5")
 		)
 		(pad "4" smd rect
 			(at -0.33 2.78 270)
@@ -49058,7 +49046,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "7ffe4d81-02e3-4860-b9ef-34caa8c946dd")
+			(uuid "1191c354-63ad-4161-851a-6f443975f75b")
 		)
 		(pad "7" smd rect
 			(at 1.63 2.78 270)
@@ -49130,7 +49118,7 @@
 			(net 14 "+20V_Jetson")
 			(pinfunction "IN-")
 			(pintype "passive")
-			(uuid "52ccf48c-5120-48bc-9d18-16dd4682161a")
+			(uuid "f293bc6d-2516-40e8-ae45-c6080e4c2e09")
 		)
 		(pad "14" smd rect
 			(at -0.98 -2.78 270)
@@ -49139,7 +49127,7 @@
 			(net 14 "+20V_Jetson")
 			(pinfunction "IN-")
 			(pintype "passive")
-			(uuid "52ccf48c-5120-48bc-9d18-16dd4682161a")
+			(uuid "8a1e8da4-0a8b-4b1f-b150-bd091df2d96c")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/TSSOP-16_L5.0-W4.4-P0.65-LS6.4-BL-1.wrl"
@@ -50200,7 +50188,7 @@
 			(at 0.55 0 270)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pintype "passive")
 			(uuid "12a2aaf8-0b28-4380-9776-7a7c838fb954")
 		)
@@ -51387,7 +51375,7 @@
 			(at -5.18 0)
 			(size 3.5 3.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "5f82ab24-2067-4a54-b6cd-68763308783d")
@@ -54299,7 +54287,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VIN")
 			(pintype "passive")
-			(uuid "b680dc1b-8159-4ff8-9cfc-223a3054da7b")
+			(uuid "1e245dcb-5635-469a-94c3-55a0232b5fc2")
 		)
 		(pad "5" smd rect
 			(at 0.75 1.42 180)
@@ -54308,7 +54296,7 @@
 			(net 37 "Net-(U1-VIN)")
 			(pinfunction "VIN")
 			(pintype "passive")
-			(uuid "b680dc1b-8159-4ff8-9cfc-223a3054da7b")
+			(uuid "b0bcce59-3634-473d-8177-e86d2c7d5eb1")
 		)
 		(pad "8" smd rect
 			(at 1.25 1.42 180)
@@ -54326,7 +54314,7 @@
 			(net 2 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "96b0b507-362e-4777-9491-309425dd0fed")
+			(uuid "30969ea3-5975-4f97-913a-27b48545ccb5")
 		)
 		(pad "8" smd rect
 			(at 2.25 1.42 180)
@@ -54335,7 +54323,7 @@
 			(net 2 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "96b0b507-362e-4777-9491-309425dd0fed")
+			(uuid "c54d96bb-cbd3-4d2e-be01-29677d1216f1")
 		)
 		(pad "11" smd rect
 			(at 0 0 180)
@@ -54353,7 +54341,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "34b4151f-7440-4edd-b422-75e22229922f")
+			(uuid "d5e48491-a105-46c1-93dd-02c2fa47ea21")
 		)
 		(pad "11" smd rect
 			(at 2.92 -0.25 180)
@@ -54362,7 +54350,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "34b4151f-7440-4edd-b422-75e22229922f")
+			(uuid "65c9e119-0e2a-4d0b-b544-d9a69f01aaad")
 		)
 		(pad "11" smd rect
 			(at 2.92 0.25 180)
@@ -54371,7 +54359,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "34b4151f-7440-4edd-b422-75e22229922f")
+			(uuid "9bbbbe0a-64f3-43b8-a7c0-3aaf8657e09e")
 		)
 		(pad "11" smd rect
 			(at 2.92 0.75 180)
@@ -54380,7 +54368,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "34b4151f-7440-4edd-b422-75e22229922f")
+			(uuid "215c90cd-c781-43d0-9732-521d9289be58")
 		)
 		(pad "15" smd rect
 			(at 0.25 -1.42 180)
@@ -54398,7 +54386,7 @@
 			(net 55 "Net-(U1-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "3d846692-37a4-4869-9f3d-6ee81ddb68ea")
+			(uuid "f8304e6f-d0ad-4553-9ba9-55d21e13f6f5")
 		)
 		(pad "15" smd rect
 			(at 1.25 -1.42 180)
@@ -54407,7 +54395,7 @@
 			(net 55 "Net-(U1-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "3d846692-37a4-4869-9f3d-6ee81ddb68ea")
+			(uuid "bf74557d-5d2b-42d9-91c8-3fd40dd6de1c")
 		)
 		(pad "15" smd rect
 			(at 1.75 -1.42 180)
@@ -54416,7 +54404,7 @@
 			(net 55 "Net-(U1-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "3d846692-37a4-4869-9f3d-6ee81ddb68ea")
+			(uuid "a0d00a21-83ba-4d42-abcf-fcf9f093caf8")
 		)
 		(pad "15" smd rect
 			(at 2.25 -1.42 180)
@@ -54425,7 +54413,7 @@
 			(net 55 "Net-(U1-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "3d846692-37a4-4869-9f3d-6ee81ddb68ea")
+			(uuid "7742b528-b0ac-4a4f-8344-d2508c4a828c")
 		)
 		(pad "20" smd rect
 			(at -0.25 -1.42 180)
@@ -54488,7 +54476,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "9ebfb240-ae3d-4e7b-91fa-617d3813af58")
+			(uuid "89d4600f-0be9-4757-8c6d-92155132d1b0")
 		)
 		(pad "25" smd rect
 			(at -2.92 0.25 180)
@@ -54497,7 +54485,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "9ebfb240-ae3d-4e7b-91fa-617d3813af58")
+			(uuid "9b240001-36d4-4fb9-967b-a3b456c464bf")
 		)
 		(pad "25" smd rect
 			(at -2.92 0.75 180)
@@ -54506,7 +54494,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "9ebfb240-ae3d-4e7b-91fa-617d3813af58")
+			(uuid "bb27612c-ea88-4fdc-813b-71eb1d3fe8bc")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/QFN-28_L6.0-W3.0-H0.8-P0.50-BL-EP.wrl"
@@ -55374,7 +55362,7 @@
 			)
 		)
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*")
-		(path "/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e/1d553cae-7c8a-48f7-94ea-10ed1c09ed3d")
+		(path "/7377a1d5-f804-4206-bc18-fde862f30294/9aa92904-6004-4484-8f60-3c86226ff92e/d954c90f-0d28-44d6-8d2d-4732f38de972")
 		(sheetname "/OBC_Subsystem/WD_OBC/")
 		(sheetfile "WD_OBC.kicad_sch")
 		(attr smd)
@@ -56103,7 +56091,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "d5ee1228-3036-47a6-89dd-eea328f40908")
+			(uuid "1d3612ba-1ce9-40ac-847c-b6feb187346b")
 		)
 		(pad "6" smd oval
 			(at -2.87 2.28)
@@ -56112,7 +56100,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "d5ee1228-3036-47a6-89dd-eea328f40908")
+			(uuid "449e2e60-64dd-4d3f-9e42-b837f99ea53b")
 		)
 		(pad "6" smd oval
 			(at 2.87 0.98)
@@ -56121,7 +56109,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "d5ee1228-3036-47a6-89dd-eea328f40908")
+			(uuid "6fd34150-4f5d-4d02-8bee-edfde6cf677d")
 		)
 		(pad "6" smd oval
 			(at 2.87 1.63)
@@ -56130,7 +56118,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "d5ee1228-3036-47a6-89dd-eea328f40908")
+			(uuid "2e592633-ec6c-4b5c-8ab9-22267c119bf6")
 		)
 		(pad "6" smd oval
 			(at 2.87 2.28)
@@ -56139,7 +56127,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VOUT")
 			(pintype "passive")
-			(uuid "d5ee1228-3036-47a6-89dd-eea328f40908")
+			(uuid "ff368b2a-04e3-40d7-a9e5-98bbf305626c")
 		)
 		(pad "12" smd oval
 			(at 2.87 0.33)
@@ -62894,7 +62882,7 @@
 			(at 0.55 0 270)
 			(size 0.79 0.54)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 25 "Net-(U3-NC)")
+			(net 25 "Net-(U3-SW)")
 			(pintype "passive")
 			(uuid "b7d0c2db-e088-4bbc-8169-4d1150b31b54")
 		)
@@ -63390,7 +63378,7 @@
 			(net 22 "Net-(U3-BIAS)")
 			(pinfunction "IN+")
 			(pintype "passive")
-			(uuid "53f16ffa-5637-4e51-8a33-9a960f5a2522")
+			(uuid "f647bd50-7785-4d82-bc88-ed2e06629c1d")
 		)
 		(pad "1" smd rect
 			(at -0.98 2.78 270)
@@ -63399,7 +63387,7 @@
 			(net 22 "Net-(U3-BIAS)")
 			(pinfunction "IN+")
 			(pintype "passive")
-			(uuid "53f16ffa-5637-4e51-8a33-9a960f5a2522")
+			(uuid "fd362b38-9bd9-4cb9-9345-baea692fddec")
 		)
 		(pad "4" smd rect
 			(at -0.33 2.78 270)
@@ -63435,7 +63423,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "52570404-6b65-4be0-9eee-a52d1442dbad")
+			(uuid "3bd2e609-57ea-4298-aced-dbf41eccad4c")
 		)
 		(pad "7" smd rect
 			(at 1.63 2.78 270)
@@ -63507,7 +63495,7 @@
 			(net 13 "+3.3V_OBC")
 			(pinfunction "IN-")
 			(pintype "passive")
-			(uuid "d349a280-4fdc-41a5-9b69-452817a2de22")
+			(uuid "c0e77abd-80e4-46b3-9412-e7dd7c2599c1")
 		)
 		(pad "14" smd rect
 			(at -0.98 -2.78 270)
@@ -63516,7 +63504,7 @@
 			(net 13 "+3.3V_OBC")
 			(pinfunction "IN-")
 			(pintype "passive")
-			(uuid "d349a280-4fdc-41a5-9b69-452817a2de22")
+			(uuid "d4f9d6b7-5a59-4f12-90e5-e43417a378a4")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/TSSOP-16_L5.0-W4.4-P0.65-LS6.4-BL-1.wrl"
@@ -66514,7 +66502,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VIN")
 			(pintype "passive")
-			(uuid "8c53b695-af75-434d-8e05-21b3abe3d6e9")
+			(uuid "c7e20723-cb95-4505-9d92-1823215a1fae")
 		)
 		(pad "5" smd rect
 			(at 0.75 1.42 180)
@@ -66523,7 +66511,7 @@
 			(net 28 "Net-(U12-VOUT)")
 			(pinfunction "VIN")
 			(pintype "passive")
-			(uuid "8c53b695-af75-434d-8e05-21b3abe3d6e9")
+			(uuid "77941634-c488-4f82-9b39-a7025d108ea3")
 		)
 		(pad "8" smd rect
 			(at 1.25 1.42 180)
@@ -66541,7 +66529,7 @@
 			(net 2 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "b55211e3-5a52-4115-aa60-7d0eeb558ee5")
+			(uuid "49046b90-4ab3-4ae5-85f2-4f30d5bfc7fc")
 		)
 		(pad "8" smd rect
 			(at 2.25 1.42 180)
@@ -66550,7 +66538,7 @@
 			(net 2 "GND")
 			(pinfunction "PGND")
 			(pintype "passive")
-			(uuid "b55211e3-5a52-4115-aa60-7d0eeb558ee5")
+			(uuid "94c94168-2f8d-4116-b087-449e02264ee7")
 		)
 		(pad "11" smd rect
 			(at 0 0 180)
@@ -66568,7 +66556,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "2d45ba1c-1419-4188-a40e-8b02264df988")
+			(uuid "95e80ead-2b17-4c5c-8634-fca2054dbfd5")
 		)
 		(pad "11" smd rect
 			(at 2.92 -0.25 180)
@@ -66577,7 +66565,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "2d45ba1c-1419-4188-a40e-8b02264df988")
+			(uuid "f001b7cc-c43f-4ba6-86ab-a2bfdb82da9e")
 		)
 		(pad "11" smd rect
 			(at 2.92 0.25 180)
@@ -66586,7 +66574,7 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "2d45ba1c-1419-4188-a40e-8b02264df988")
+			(uuid "f63f5910-301e-437f-b659-d49dc3980e44")
 		)
 		(pad "11" smd rect
 			(at 2.92 0.75 180)
@@ -66595,13 +66583,13 @@
 			(net 2 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "2d45ba1c-1419-4188-a40e-8b02264df988")
+			(uuid "019825f6-72dc-4077-a090-44e339ab3cf8")
 		)
 		(pad "15" smd rect
 			(at 0.25 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
 			(uuid "bf742b9f-e696-4102-b938-396b1dcba2ac")
@@ -66610,37 +66598,37 @@
 			(at 0.75 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "bf742b9f-e696-4102-b938-396b1dcba2ac")
+			(uuid "9f51a250-9829-439c-befd-586f00d36584")
 		)
 		(pad "15" smd rect
 			(at 1.25 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "bf742b9f-e696-4102-b938-396b1dcba2ac")
+			(uuid "b44c01fd-06f8-4a08-b9fd-4acf25c55d2d")
 		)
 		(pad "15" smd rect
 			(at 1.75 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "bf742b9f-e696-4102-b938-396b1dcba2ac")
+			(uuid "ac1c2057-be1f-486c-9783-24c600cce44a")
 		)
 		(pad "15" smd rect
 			(at 2.25 -1.42 180)
 			(size 0.28 0.58)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 31 "Net-(C40-Pad2)")
+			(net 31 "Net-(U13-SW)")
 			(pinfunction "SW")
 			(pintype "passive")
-			(uuid "bf742b9f-e696-4102-b938-396b1dcba2ac")
+			(uuid "94006212-72aa-4348-b8a8-9ec83558e66c")
 		)
 		(pad "20" smd rect
 			(at -0.25 -1.42 180)
@@ -66703,7 +66691,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "c5052853-1a95-4393-9af6-40c343a809fe")
+			(uuid "3047a366-480b-44ef-9925-7fa752dbfdd2")
 		)
 		(pad "25" smd rect
 			(at -2.92 0.25 180)
@@ -66712,7 +66700,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "c5052853-1a95-4393-9af6-40c343a809fe")
+			(uuid "ad6bb217-dcba-4879-a0db-227e1e72f717")
 		)
 		(pad "25" smd rect
 			(at -2.92 0.75 180)
@@ -66721,7 +66709,7 @@
 			(net 2 "GND")
 			(pinfunction "NC")
 			(pintype "passive")
-			(uuid "c5052853-1a95-4393-9af6-40c343a809fe")
+			(uuid "7441fdba-6670-4f18-bb2a-bb7140cf5169")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/luqui/OneDrive/Documents/GitHub/scales-hardware/power_system/EPS/EPS_Scales_RevD/libs/EPS.3dshapes/QFN-28_L6.0-W3.0-H0.8-P0.50-BL-EP.wrl"
@@ -82323,7 +82311,7 @@
 	)
 	(zone
 		(net 25)
-		(net_name "Net-(U3-NC)")
+		(net_name "Net-(U3-SW)")
 		(layer "F.Cu")
 		(uuid "6b3502bd-7aa9-4728-ac0e-a0d69e27012d")
 		(hatch edge 0.5)
@@ -83276,7 +83264,7 @@
 	)
 	(zone
 		(net 31)
-		(net_name "Net-(C40-Pad2)")
+		(net_name "Net-(U13-SW)")
 		(layer "F.Cu")
 		(uuid "de19bec7-8646-410f-91ae-b6c1b048f074")
 		(hatch edge 0.5)
