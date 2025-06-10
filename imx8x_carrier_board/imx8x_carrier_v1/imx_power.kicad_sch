@@ -602,6 +602,40 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "IMX8X Primary Power Input"
+		(exclude_from_sim no)
+		(at 35.56 15.875 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
+			)
+		)
+		(uuid "51929290-3562-4f3f-90dc-75e9db2d493b")
+	)
+	(text_box "Input power comes from the SCALES EPS board, this power connector must also include the necessary I2C lines that connect the monitoring INA260 IC's to the IMX8X"
+		(exclude_from_sim no)
+		(at 13.97 19.05 0)
+		(size 56.515 11.43)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "49fbf215-e7df-4ae5-9c6d-ef69fd6e7bf0")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.87 49.53 0)
@@ -732,7 +766,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
-		(at 54.61 52.07 0)
+		(at 78.105 65.405 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -741,7 +775,7 @@
 		(fields_autoplaced yes)
 		(uuid "c19edaf1-d35d-48ca-b8c9-16a56297ea59")
 		(property "Reference" "CN1"
-			(at 54.61 35.56 0)
+			(at 78.105 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,7 +783,7 @@
 			)
 		)
 		(property "Value" "DF11-16DP-2DSA(08)"
-			(at 54.61 38.1 0)
+			(at 78.105 51.435 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -757,7 +791,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:CONN-TH_DF11-16DP-2DSA-08"
-			(at 54.61 68.58 0)
+			(at 78.105 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -766,7 +800,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
-			(at 54.61 71.12 0)
+			(at 78.105 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -775,7 +809,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 52.07 0)
+			(at 78.105 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -784,7 +818,7 @@
 			)
 		)
 		(property "LCSC Part" "C530981"
-			(at 54.61 73.66 0)
+			(at 78.105 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
