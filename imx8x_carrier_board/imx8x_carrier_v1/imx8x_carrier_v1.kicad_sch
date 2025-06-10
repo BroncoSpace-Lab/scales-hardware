@@ -11,7 +11,103 @@
 		(company "Bronco Space Lab")
 		(comment 1 "By Kelly Williams, Luca Lanzillotta, and John Pollack")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Graphic:SYM_Arrow_Normal"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#SYM"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "SYM_Arrow_Normal"
+				(at 0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Filled arrow, 200mil"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "symbol arrow"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SYM_Arrow_Normal_0_1"
+				(polyline
+					(pts
+						(xy 1.524 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0.762 -0.508) (xy 0.762 0.508) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
 	(rectangle
 		(start 15.24 13.97)
 		(end 85.725 133.35)
@@ -34,6 +130,16 @@
 			(href "#10")
 		)
 		(uuid "008859cd-8f11-4f5f-b769-ea4a82cc8c26")
+	)
+	(text "Load Switch EN"
+		(exclude_from_sim no)
+		(at 119.38 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "116605e0-7789-462a-bd29-f4d433cd033d")
 	)
 	(text "Root...........................................................Page 1"
 		(exclude_from_sim no)
@@ -101,7 +207,7 @@
 		)
 		(uuid "4d3879c0-efc6-4d1a-8655-e73b0866114f")
 	)
-	(text "SPI.............................................................Page 8"
+	(text "QSPI-SPI...................................................Page 8"
 		(exclude_from_sim no)
 		(at 46.355 58.42 0)
 		(effects
@@ -137,7 +243,7 @@
 		)
 		(uuid "7d0f61da-94e7-4518-8239-62cc444a4910")
 	)
-	(text "Miscellaneous.............................................Page 11\n"
+	(text "GPIO-JTAG-Misc........................................Page 11\n"
 		(exclude_from_sim no)
 		(at 46.99 66.04 0)
 		(effects
@@ -192,7 +298,7 @@
 	)
 	(text_box "Jetson"
 		(exclude_from_sim no)
-		(at 110.49 48.26 0)
+		(at 104.775 48.26 0)
 		(size 14.605 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -212,7 +318,7 @@
 	)
 	(text_box "Perif. Board"
 		(exclude_from_sim no)
-		(at 110.49 43.815 0)
+		(at 104.775 43.815 0)
 		(size 14.605 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -275,8 +381,8 @@
 	)
 	(text_box "Yocto-Linux"
 		(exclude_from_sim no)
-		(at 121.8942 25.476 0)
-		(size 14.605 3.81)
+		(at 120.015 25.476 0)
+		(size 14.605 3.099)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -312,6 +418,28 @@
 			(justify left top)
 		)
 		(uuid "bbb6e7e1-a3e7-4942-951c-8aa7818fae59")
+	)
+	(text_box "IMX8X (PCM-065)"
+		(exclude_from_sim no)
+		(at 175.895 55.245 0)
+		(size 16.51 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+			(href "https://livecsupomona.sharepoint.com/sites/broncospacelab/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fbroncospacelab%2FShared%20Documents%2FSCALES%20%2D%20General%2FDocumentation%2FHardware%2Fi%2EMX%208X%2FIMX8DQXPRM%2Epdf&parent=%2Fsites%2Fbroncospacelab%2FShared%20Documents%2FSCALES%20%2D%20General%2FDocumentation%2FHardware%2Fi%2EMX%208X")
+		)
+		(uuid "be830b8c-a68c-414d-8ad3-82cfbfe7a0d3")
 	)
 	(text_box "Page Number"
 		(exclude_from_sim no)
@@ -375,7 +503,7 @@
 	)
 	(polyline
 		(pts
-			(xy 125.095 45.72) (xy 128.905 45.72)
+			(xy 119.38 45.72) (xy 128.905 45.72)
 		)
 		(stroke
 			(width 0)
@@ -445,13 +573,33 @@
 	)
 	(polyline
 		(pts
-			(xy 136.525 27.305) (xy 140.335 27.305)
+			(xy 134.62 27.305) (xy 140.335 27.305)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5d28032c-0e1e-419f-97ae-7fdf3a88cf62")
+	)
+	(polyline
+		(pts
+			(xy 128.905 81.28) (xy 111.76 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62f0242b-d9e4-47d0-9310-0da5c20e377c")
+	)
+	(polyline
+		(pts
+			(xy 111.76 89.535) (xy 121.92 89.535)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a96af73-60b8-4085-80d2-105411c04408")
 	)
 	(polyline
 		(pts
@@ -535,13 +683,874 @@
 	)
 	(polyline
 		(pts
-			(xy 125.095 50.165) (xy 128.905 50.165)
+			(xy 119.38 50.165) (xy 128.905 50.165)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e55284e0-96a8-44bc-801e-668e8f9c8afe")
+	)
+	(polyline
+		(pts
+			(xy 111.76 81.28) (xy 111.76 89.535)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e59a5e5d-7ee4-4c7f-b0e1-e4bd4216d3f6")
+	)
+	(polyline
+		(pts
+			(xy 168.91 58.42) (xy 175.895 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e62d2202-75d0-43c1-98ea-ca32cd93859d")
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 149.225 37.465 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "081dc4bc-476c-4e9a-a79a-005d3523eb51")
+		(property "Reference" "#SYM9"
+			(at 149.225 35.941 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 149.479 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.225 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 149.225 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 126.365 50.165 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4248f85e-d148-49b8-b1c1-d2f7e7318648")
+		(property "Reference" "#SYM8"
+			(at 126.365 48.641 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 126.619 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 126.365 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 126.365 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 126.365 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 126.365 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "484c5d50-5875-469f-88da-670886cc90d6")
+		(property "Reference" "#SYM7"
+			(at 126.365 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 126.619 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 126.365 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 126.365 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 126.365 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 149.225 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49ede27e-5942-4b93-b749-fbe1ed5ce0cc")
+		(property "Reference" "#SYM5"
+			(at 149.225 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 149.479 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.225 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 149.225 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 160.655 32.385 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ccddb46-e7e9-4332-9f97-804dd855c1b8")
+		(property "Reference" "#SYM10"
+			(at 162.179 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 159.385 32.639 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.655 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.655 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 160.655 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 160.655 85.725 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "905fba9c-e8be-4cfd-936b-b7fa52d4b189")
+		(property "Reference" "#SYM11"
+			(at 159.131 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 161.925 85.471 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.655 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.655 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 160.655 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 149.225 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b68f249f-6279-463b-99b0-516f472c07f9")
+		(property "Reference" "#SYM2"
+			(at 149.225 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 149.479 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 149.225 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 173.355 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8d74596-6a63-46d2-8624-f68324c13d36")
+		(property "Reference" "#SYM12"
+			(at 173.355 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 173.609 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.355 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.355 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 173.355 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 119.38 89.535 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c86acbbd-0014-4c64-b5a6-de90f92531da")
+		(property "Reference" "#SYM1"
+			(at 119.38 88.011 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 119.634 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 119.38 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 119.38 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 137.795 27.305 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9fc08f7-6bbc-41f0-8283-b040a96c1349")
+		(property "Reference" "#SYM13"
+			(at 137.795 25.781 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 138.049 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.795 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.795 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 137.795 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 149.225 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfa59015-c38d-42be-9380-bfbc722db99a")
+		(property "Reference" "#SYM4"
+			(at 149.225 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 149.479 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.225 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 149.225 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 149.225 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5ef7be2-cebd-4f32-a242-3c4e86573eff")
+		(property "Reference" "#SYM6"
+			(at 149.225 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 149.479 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.225 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 149.225 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 149.225 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e861891e-164a-41ef-bf5a-89610b8f6d0e")
+		(property "Reference" "#SYM3"
+			(at 149.225 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 149.479 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.225 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 149.225 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(reference "#SYM3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet
 		(at 128.905 71.755)
@@ -687,7 +1696,7 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8")
-		(property "Sheetname" "Miscellaneous"
+		(property "Sheetname" "GPIO-JTAG-Misc."
 			(at 128.905 78.6634 0)
 			(effects
 				(font
@@ -897,15 +1906,15 @@
 			(type solid)
 		)
 		(fill
-			(color 102 248 255 1.0000)
+			(color 0 0 0 0.0000)
 		)
 		(uuid "bd9bf2b1-2646-4f47-8b43-7734a13ea490")
 		(property "Sheetname" "SOM Connectors"
-			(at 153.035 56.515 0)
+			(at 153.035 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(color 7 0 0 1)
+					(color 255 255 255 1)
 				)
 				(justify left bottom)
 			)
@@ -952,7 +1961,7 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "d29c5f61-1869-406e-b3b8-b642272ff287")
-		(property "Sheetname" "SPI"
+		(property "Sheetname" "QSPI-SPI"
 			(at 128.905 55.8034 0)
 			(effects
 				(font
