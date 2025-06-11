@@ -531,3 +531,60 @@ Components to be used are still being finalized, but they are based on the follo
 - Set all caps to be +75v rated [FIXED]
 
 - Set the shunt resistor to 10mohms [FIXED]
+
+Board Review Notes 5/1/25:
+- Change inductors to single inductors dont do cascaded
+- Change the block diagram to figure out how to power the watch dogs for each of the subsystems
+- Do Con ops to figure out this plan, we cant have a circular dependency for a set of watch dog use cases
+
+
+
+# Design Review Notes 5/26/25 #
+Update all Schematic Footprints and Symbols from easyeda2kicad
+
+* Consider Swapping the Load Switch Controller with one that has an internal MOSFET.
+Replacement: [TPS1HA08B-Q1](https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748298961148) (Go with the B/D revision for much higher current limit) 40v, 80A limit. In stock in LCSC.
+
+   * Layout considerations (Page 46)
+     
+
+* Consider Swapping the switching regulator with a new one with the same specs due to availability on JLC pbc
+Replacement: [LT8612](https://www.analog.com/media/en/technical-documentation/data-sheets/lt8612.pdf)
+
+* Consider Swapping the INA230 to the INA260 which uses I2C and has an internal shunt resistor
+Replacement: [INA260](https://www.ti.com/product/INA260)
+
+Major Issues:
+
+* Excessive Loop Area In the Feedback and Output Capacitors for the Switching Regulator
+   Hmmm this may be a bit of an erase everything and relayout the board kinda issue. You create this huge loop area with the FB (Feedback) input where the current that goes there has to run an almost complete circle around the IC in order to reach the required pin. This can introduce a bunch of EMI and particularly on the FB pin it can create a situation where your output voltage gets a little whacky due to that noise.
+
+   Related to this issue the placement / number of decoupling capacitors on the output of the switching regulator. It is confusing at first glance where the output power is actually going, and usually you don't want to hang the output capacitors on a little spar like that away from the shunt resistor (where all of your mains power is ideally going). Consider replacing these capacitors to create a more linear power path or merging some into a big capacitor.
+
+   Take a look at the recommended layout (page 15 of the data sheet) and see if you can adopt some of the design language they communicate there to clean things up some more!
+
+Minor Issues: 
+
+* Change footprints for capacitors that are not power related, particularly those for lower voltages, stick with 0402 for smaller ones
+
+* Power Input Connector and Clearance
+   Does this connector need to be placed at the board edge? It looks like you have it a little far back and sometimes I've seen issues with the connector colliding with the board and not being able to mate in these cases.
+
+   Additionally, will we need to make a special harness to use this connector with bench top power supplies? If yes, make sure to note that when we go to fab and get it ordered as GSE (Ground Support Equipment).
+
+* Poor Placement of the INA230 Decoupling Capacitors
+   Having the decoupling capacitors pretty far away from the input pins like this is unideal. The remedy to this would be to try and place it on the other side of the component. Consider changing these 0.1uF (100nF) capacitors with something tiny like an 0402! That will really help you see a bunch of space when routing. 1210's are great for power subsystems, but this is a bit of a "when all you have is a hammer everything is a nail" where you can totally get away with smaller passives in many places rather than just having chonkers everywhere.
+
+* Small Trace width on 3.3V
+   You've got plenty of space on this board! I would recommend increasing the trace width on this 3.3V line to something like 20mil. The bigger the better with power stuff. More width means less impedance and less power loss.
+ 
+* Poor Placement of the INA230 Decoupling Capacitors
+   Having the decoupling capacitors pretty far away from the input pins like this is unideal. The remedy to this would be to try and place it on the other side of the component. Consider changing these 0.1uF (100nF) capacitors with something tiny like an 0402! That will really help you see a bunch of space when routing. 1210's are great for power subsystems, but this is a bit of a "when all you have is a hammer everything is a nail" where you can totally get away with smaller passives in many places rather than just having chonkers everywhere. 
+
+   Nitpicks:
+   * Some Component Courtyards Seem Overly Conservative
+   It looks like your switching regulator and inductor courtyards are a little more conservative than they need to be. As a result you end up with a bunch of standoff distance between your IC and its passives. The distances are still small so it is probably fine, but something you might want to consider tightening up.
+
+   * Bad Test Point Placement Obstructing Routing on OBC Power Monitor
+   * INA290 incorrect use of VBUS
+   * Consider Adding Silkscreen Labels Next to the Connectors for Easier Debugging
