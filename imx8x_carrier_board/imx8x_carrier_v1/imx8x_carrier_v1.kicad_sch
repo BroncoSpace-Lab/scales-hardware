@@ -133,7 +133,7 @@
 	)
 	(text "Load Switch EN"
 		(exclude_from_sim no)
-		(at 119.38 80.01 0)
+		(at 119.38 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -163,7 +163,7 @@
 		)
 		(uuid "16ce376c-26bd-41d7-b9a2-0c6496d8b106")
 	)
-	(text "Debug USB................................................Page 5\n"
+	(text "Debug USB - UART...................................Page 5\n"
 		(exclude_from_sim no)
 		(at 46.355 50.8 0)
 		(effects
@@ -174,7 +174,7 @@
 		)
 		(uuid "29cdca9e-9f29-479d-8610-0e3e57145082")
 	)
-	(text "SD Card.....................................................Page 4\n"
+	(text "Boot Configuration....................................Page 4\n"
 		(exclude_from_sim no)
 		(at 46.355 48.26 0)
 		(effects
@@ -348,9 +348,9 @@
 		)
 		(uuid "b08a2ec1-5e60-48db-8731-fc984be0a0d3")
 	)
-	(text_box "Yocto-Linux"
+	(text_box "uSD Card"
 		(exclude_from_sim no)
-		(at 120.015 25.476 0)
+		(at 116.205 23.571 0)
 		(size 14.605 3.099)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -450,6 +450,26 @@
 		)
 		(uuid "e7583112-06b1-47e2-9297-477ffe4af1a1")
 	)
+	(text_box "eMMC"
+		(exclude_from_sim no)
+		(at 116.205 28.575 0)
+		(size 14.605 3.099)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f5ec4222-74c2-45ec-a405-332a9412c127")
+	)
 	(polyline
 		(pts
 			(xy 136.525 89.535) (xy 140.97 89.535)
@@ -472,7 +492,17 @@
 	)
 	(polyline
 		(pts
-			(xy 119.38 45.72) (xy 128.905 45.72)
+			(xy 135.255 29.845) (xy 135.255 27.305)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26e28962-5219-445a-b99f-f42f72c87168")
+	)
+	(polyline
+		(pts
+			(xy 119.38 45.72) (xy 123.825 45.72)
 		)
 		(stroke
 			(width 0)
@@ -482,23 +512,13 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 81.28) (xy 151.765 81.28)
+			(xy 142.24 78.74) (xy 146.685 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3d0f79e6-a680-42a1-b7ec-6ef1b3d6b67f")
-	)
-	(polyline
-		(pts
-			(xy 160.655 35.56) (xy 160.655 28.575)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fbd7d47-7fcb-4791-9fc4-9222b1535e3a")
 	)
 	(polyline
 		(pts
@@ -512,7 +532,7 @@
 	)
 	(polyline
 		(pts
-			(xy 134.62 27.305) (xy 140.335 27.305)
+			(xy 135.255 25.4) (xy 135.255 27.305)
 		)
 		(stroke
 			(width 0)
@@ -522,7 +542,7 @@
 	)
 	(polyline
 		(pts
-			(xy 128.905 81.28) (xy 111.76 81.28)
+			(xy 128.905 78.74) (xy 111.76 78.74)
 		)
 		(stroke
 			(width 0)
@@ -532,7 +552,27 @@
 	)
 	(polyline
 		(pts
-			(xy 111.76 89.535) (xy 121.92 89.535)
+			(xy 130.81 29.845) (xy 135.255 29.845)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "688cc219-6a63-48fe-8d1b-284bcf0aa1e5")
+	)
+	(polyline
+		(pts
+			(xy 130.81 25.4) (xy 135.255 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c018812-7e10-4a4b-81af-d5666f7a3211")
+	)
+	(polyline
+		(pts
+			(xy 111.76 89.535) (xy 116.84 89.535)
 		)
 		(stroke
 			(width 0)
@@ -542,7 +582,7 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 58.42) (xy 151.765 58.42)
+			(xy 142.24 59.69) (xy 146.685 59.69)
 		)
 		(stroke
 			(width 0)
@@ -552,17 +592,7 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 73.66) (xy 151.765 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a25fcc78-e2eb-4039-af5f-4dafdda9e2a1")
-	)
-	(polyline
-		(pts
-			(xy 160.655 83.185) (xy 160.655 89.535)
+			(xy 160.655 88.265) (xy 160.655 89.535)
 		)
 		(stroke
 			(width 0)
@@ -572,7 +602,7 @@
 	)
 	(polyline
 		(pts
-			(xy 160.655 27.305) (xy 160.655 28.575)
+			(xy 160.655 27.305) (xy 160.655 30.48)
 		)
 		(stroke
 			(width 0)
@@ -582,7 +612,7 @@
 	)
 	(polyline
 		(pts
-			(xy 141.605 37.465) (xy 151.765 37.465)
+			(xy 141.605 37.465) (xy 146.685 37.465)
 		)
 		(stroke
 			(width 0)
@@ -592,7 +622,7 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 66.04) (xy 151.765 66.04)
+			(xy 142.24 67.945) (xy 146.685 67.945)
 		)
 		(stroke
 			(width 0)
@@ -602,7 +632,7 @@
 	)
 	(polyline
 		(pts
-			(xy 142.24 48.26) (xy 151.765 48.26)
+			(xy 142.24 48.26) (xy 146.685 48.26)
 		)
 		(stroke
 			(width 0)
@@ -612,7 +642,7 @@
 	)
 	(polyline
 		(pts
-			(xy 119.38 50.165) (xy 128.905 50.165)
+			(xy 119.38 50.165) (xy 123.825 50.165)
 		)
 		(stroke
 			(width 0)
@@ -622,7 +652,7 @@
 	)
 	(polyline
 		(pts
-			(xy 111.76 81.28) (xy 111.76 89.535)
+			(xy 111.76 78.74) (xy 111.76 89.535)
 		)
 		(stroke
 			(width 0)
@@ -632,7 +662,7 @@
 	)
 	(polyline
 		(pts
-			(xy 168.91 58.42) (xy 175.895 58.42)
+			(xy 168.91 58.42) (xy 170.815 58.42)
 		)
 		(stroke
 			(width 0)
@@ -834,7 +864,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_Arrow_Normal")
-		(at 149.225 58.42 0)
+		(at 149.225 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -843,7 +873,7 @@
 		(fields_autoplaced yes)
 		(uuid "49ede27e-5942-4b93-b749-fbe1ed5ce0cc")
 		(property "Reference" "#SYM5"
-			(at 149.225 56.896 0)
+			(at 149.225 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -852,7 +882,7 @@
 			)
 		)
 		(property "Value" "SYM_Arrow_Normal"
-			(at 149.479 59.69 0)
+			(at 149.479 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -861,7 +891,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.225 58.42 0)
+			(at 149.225 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -870,7 +900,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.225 58.42 0)
+			(at 149.225 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -879,7 +909,7 @@
 			)
 		)
 		(property "Description" "Filled arrow, 200mil"
-			(at 149.225 58.42 0)
+			(at 149.225 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -898,7 +928,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_Arrow_Normal")
-		(at 160.655 32.385 270)
+		(at 160.655 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -907,7 +937,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ccddb46-e7e9-4332-9f97-804dd855c1b8")
 		(property "Reference" "#SYM10"
-			(at 162.179 32.385 0)
+			(at 162.179 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -916,7 +946,7 @@
 			)
 		)
 		(property "Value" "SYM_Arrow_Normal"
-			(at 159.385 32.639 0)
+			(at 159.385 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -925,7 +955,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.655 32.385 0)
+			(at 160.655 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -934,7 +964,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.655 32.385 0)
+			(at 160.655 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -943,7 +973,7 @@
 			)
 		)
 		(property "Description" "Filled arrow, 200mil"
-			(at 160.655 32.385 0)
+			(at 160.655 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1019,70 +1049,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
 					(reference "#SYM11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Graphic:SYM_Arrow_Normal")
-		(at 149.225 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b68f249f-6279-463b-99b0-516f472c07f9")
-		(property "Reference" "#SYM2"
-			(at 149.225 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SYM_Arrow_Normal"
-			(at 149.479 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.225 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.225 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Filled arrow, 200mil"
-			(at 149.225 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(reference "#SYM2")
 					(unit 1)
 				)
 			)
@@ -1282,7 +1248,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_Arrow_Normal")
-		(at 149.225 66.04 0)
+		(at 149.225 67.945 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1291,7 +1257,7 @@
 		(fields_autoplaced yes)
 		(uuid "dfa59015-c38d-42be-9380-bfbc722db99a")
 		(property "Reference" "#SYM4"
-			(at 149.225 64.516 0)
+			(at 149.225 66.421 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1300,7 +1266,7 @@
 			)
 		)
 		(property "Value" "SYM_Arrow_Normal"
-			(at 149.479 67.31 0)
+			(at 149.479 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1309,7 +1275,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.225 66.04 0)
+			(at 149.225 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1318,7 +1284,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.225 66.04 0)
+			(at 149.225 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1327,7 +1293,7 @@
 			)
 		)
 		(property "Description" "Filled arrow, 200mil"
-			(at 149.225 66.04 0)
+			(at 149.225 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,7 +1376,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_Arrow_Normal")
-		(at 149.225 73.66 0)
+		(at 149.225 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1419,7 +1385,7 @@
 		(fields_autoplaced yes)
 		(uuid "e861891e-164a-41ef-bf5a-89610b8f6d0e")
 		(property "Reference" "#SYM3"
-			(at 149.225 72.136 0)
+			(at 149.225 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1394,7 @@
 			)
 		)
 		(property "Value" "SYM_Arrow_Normal"
-			(at 149.479 74.93 0)
+			(at 149.479 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,7 +1403,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.225 73.66 0)
+			(at 149.225 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,7 +1412,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.225 73.66 0)
+			(at 149.225 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1455,7 +1421,7 @@
 			)
 		)
 		(property "Description" "Filled arrow, 200mil"
-			(at 149.225 73.66 0)
+			(at 149.225 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1468,49 +1434,6 @@
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
 					(reference "#SYM3")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 128.905 71.755)
-		(size 13.335 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 223 38 1.0000)
-		)
-		(uuid "1575fa68-d7d9-41f1-978d-06ee2cdc4dde")
-		(property "Sheetname" "UART"
-			(at 128.905 71.0434 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "imx_UART.kicad_sch"
-			(at 128.905 76.1496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "9")
 				)
 			)
 		)
@@ -1530,7 +1453,7 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31")
-		(property "Sheetname" "SD Card"
+		(property "Sheetname" "Boot Configuration"
 			(at 140.335 24.765 0)
 			(effects
 				(font
@@ -1573,7 +1496,7 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "292335d6-f5c5-4a7d-8d08-fc166527642f")
-		(property "Sheetname" "Debug USB"
+		(property "Sheetname" "Debug USB - UART"
 			(at 128.905 34.8484 0)
 			(effects
 				(font
@@ -1601,7 +1524,7 @@
 		)
 	)
 	(sheet
-		(at 128.905 79.375)
+		(at 128.905 76.835)
 		(size 13.335 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1616,8 +1539,8 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8")
-		(property "Sheetname" "GPIO-JTAG-Misc."
-			(at 128.905 78.6634 0)
+		(property "Sheetname" "GPIO - JTAG - Misc."
+			(at 128.905 76.1234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1626,7 +1549,7 @@
 			)
 		)
 		(property "Sheetfile" "miscellaneous.kicad_sch"
-			(at 128.905 83.7696 0)
+			(at 128.905 81.2296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1702,7 +1625,7 @@
 		)
 		(uuid "7dc4de44-e877-4145-a70b-e254356af12a")
 		(property "Sheetname" "Primary System Power"
-			(at 137.16 86.995 0)
+			(at 136.525 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1729,7 +1652,7 @@
 		)
 	)
 	(sheet
-		(at 128.905 64.135)
+		(at 128.905 66.04)
 		(size 13.335 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1745,7 +1668,7 @@
 		)
 		(uuid "9f694d68-3ac6-426c-8010-e2188e2cfbb4")
 		(property "Sheetname" "I2C"
-			(at 128.905 63.4234 0)
+			(at 128.905 65.3284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,7 +1677,7 @@
 			)
 		)
 		(property "Sheetfile" "imx_I2C.kicad_sch"
-			(at 128.905 68.5296 0)
+			(at 128.905 70.4346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1823,7 +1746,7 @@
 		)
 	)
 	(sheet
-		(at 128.905 56.515)
+		(at 128.905 57.785)
 		(size 13.335 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1839,7 +1762,7 @@
 		)
 		(uuid "d29c5f61-1869-406e-b3b8-b642272ff287")
 		(property "Sheetname" "QSPI-SPI"
-			(at 128.905 55.8034 0)
+			(at 128.905 57.0734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1848,7 +1771,7 @@
 			)
 		)
 		(property "Sheetfile" "imx_SPI.kicad_sch"
-			(at 128.905 60.9096 0)
+			(at 128.905 62.1796 0)
 			(effects
 				(font
 					(size 1.27 1.27)

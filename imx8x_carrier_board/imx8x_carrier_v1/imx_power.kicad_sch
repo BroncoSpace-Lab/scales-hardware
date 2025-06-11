@@ -710,8 +710,8 @@
 		)
 	)
 	(rectangle
-		(start 71.755 19.05)
-		(end 144.78 66.675)
+		(start 14.605 59.055)
+		(end 70.485 106.68)
 		(stroke
 			(width 0)
 			(type default)
@@ -723,7 +723,7 @@
 	)
 	(text "DF11 Power Connector"
 		(exclude_from_sim no)
-		(at 83.82 20.955 0)
+		(at 26.67 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -765,53 +765,75 @@
 		)
 		(uuid "49fbf215-e7df-4ae5-9c6d-ef69fd6e7bf0")
 	)
+	(text_box "This Input power design is based on the SCALES EPS Rev D schematic. Which does not include 5v power to the IMX8X carrier board. This means that USB on this revision of the SCALES carrier board will not operate natively unless external 5v power is supplied to USB.\nFor the next revision of the SCALES EPS, and the IMX8X Carrier board, implement a 5v to 3.3v step down converter natively on the carrier board, so that the EPS can supply 5v, and the regulator on this board can supply the SOM and USB via the EPS output."
+		(exclude_from_sim no)
+		(at 14.605 32.385 0)
+		(size 55.88 25.4)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "a1966e29-592c-4cd4-9bae-69197fa3965b")
+	)
 	(junction
-		(at 97.79 46.99)
+		(at 26.67 85.725)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "386e55d5-c62a-43a7-b2a7-6a084b0b098f")
 	)
 	(junction
-		(at 97.79 38.1)
+		(at 26.67 76.835)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71e2c6d2-dd70-4497-a90c-6cfc43d44055")
 	)
 	(junction
-		(at 97.79 36.83)
+		(at 26.67 75.565)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "754f102a-69fa-48d3-bd3a-ab22e762c284")
 	)
 	(junction
-		(at 97.79 35.56)
+		(at 26.67 74.295)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "80ffe641-d3f9-44fd-b697-ce6523b1d5d8")
 	)
 	(junction
-		(at 97.79 45.72)
+		(at 26.67 84.455)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab0340ee-5a15-45ab-b810-cc3b9f511f6d")
 	)
 	(junction
-		(at 97.79 48.26)
+		(at 26.67 86.995)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4a3e2b1-7b14-468a-bd50-6a4060c1e32a")
 	)
 	(no_connect
-		(at 113.03 48.26)
+		(at 41.91 86.995)
 		(uuid "66c9d88f-0acb-465d-b872-39e14b86a4d3")
 	)
 	(no_connect
-		(at 113.03 45.72)
+		(at 41.91 84.455)
 		(uuid "71bc1442-3355-4fa0-85af-66a8f7c88cce")
 	)
 	(wire
 		(pts
-			(xy 113.03 33.02) (xy 115.57 33.02)
+			(xy 41.91 71.755) (xy 44.45 71.755)
 		)
 		(stroke
 			(width 0)
@@ -821,7 +843,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 46.99) (xy 91.44 47.625)
+			(xy 20.32 85.725) (xy 20.32 86.36)
 		)
 		(stroke
 			(width 0)
@@ -831,7 +853,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 38.1) (xy 120.015 38.1)
+			(xy 41.91 76.835) (xy 48.895 76.835)
 		)
 		(stroke
 			(width 0)
@@ -841,7 +863,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 38.1) (xy 97.79 40.64)
+			(xy 26.67 76.835) (xy 26.67 79.375)
 		)
 		(stroke
 			(width 0)
@@ -851,7 +873,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 36.83) (xy 97.79 38.1)
+			(xy 26.67 75.565) (xy 26.67 76.835)
 		)
 		(stroke
 			(width 0)
@@ -861,7 +883,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 45.72) (xy 97.79 46.99)
+			(xy 26.67 84.455) (xy 26.67 85.725)
 		)
 		(stroke
 			(width 0)
@@ -871,7 +893,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 43.18) (xy 115.57 43.18)
+			(xy 41.91 81.915) (xy 44.45 81.915)
 		)
 		(stroke
 			(width 0)
@@ -881,7 +903,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 40.64) (xy 121.285 40.64)
+			(xy 41.91 79.375) (xy 48.895 79.375)
 		)
 		(stroke
 			(width 0)
@@ -891,7 +913,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 46.99) (xy 97.79 48.26)
+			(xy 26.67 85.725) (xy 26.67 86.995)
 		)
 		(stroke
 			(width 0)
@@ -901,7 +923,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.075 36.83) (xy 97.79 36.83)
+			(xy 20.955 75.565) (xy 26.67 75.565)
 		)
 		(stroke
 			(width 0)
@@ -911,7 +933,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 50.8) (xy 115.57 50.8)
+			(xy 41.91 89.535) (xy 44.45 89.535)
 		)
 		(stroke
 			(width 0)
@@ -921,7 +943,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 35.56) (xy 97.79 36.83)
+			(xy 26.67 74.295) (xy 26.67 75.565)
 		)
 		(stroke
 			(width 0)
@@ -931,7 +953,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 43.18) (xy 97.79 45.72)
+			(xy 26.67 81.915) (xy 26.67 84.455)
 		)
 		(stroke
 			(width 0)
@@ -941,7 +963,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 46.99) (xy 97.79 46.99)
+			(xy 20.32 85.725) (xy 26.67 85.725)
 		)
 		(stroke
 			(width 0)
@@ -951,7 +973,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 48.26) (xy 97.79 50.8)
+			(xy 26.67 86.995) (xy 26.67 89.535)
 		)
 		(stroke
 			(width 0)
@@ -961,7 +983,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 33.02) (xy 97.79 35.56)
+			(xy 26.67 71.755) (xy 26.67 74.295)
 		)
 		(stroke
 			(width 0)
@@ -971,7 +993,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 35.56) (xy 115.57 35.56)
+			(xy 41.91 74.295) (xy 44.45 74.295)
 		)
 		(stroke
 			(width 0)
@@ -979,9 +1001,9 @@
 		)
 		(uuid "ff80f3a4-8d97-4a61-960a-ce60921a5048")
 	)
-	(global_label "ADMA_I2C0_SCL"
+	(global_label "X_ADMA_I2C0_SCL"
 		(shape output)
-		(at 121.285 40.64 0)
+		(at 48.895 79.375 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -991,7 +1013,7 @@
 		)
 		(uuid "1772fcc6-8d37-4404-860f-52cf179de021")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 138.9054 40.64 0)
+			(at 68.6925 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1001,9 +1023,9 @@
 			)
 		)
 	)
-	(global_label "ADMA_I2C0_SDA"
+	(global_label "X_ADMA_I2C0_SDA"
 		(shape bidirectional)
-		(at 120.015 38.1 0)
+		(at 48.895 76.835 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1013,7 +1035,7 @@
 		)
 		(uuid "5e621d84-9733-49c2-bc0b-fedc899665ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 138.8072 38.1 0)
+			(at 69.8643 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1023,9 +1045,9 @@
 			)
 		)
 	)
-	(global_label "SCU_WDOG0_WDOG_OUT"
+	(global_label "X_SCU_WDOG0_WDOG_OUT"
 		(shape output)
-		(at 115.57 50.8 0)
+		(at 44.45 89.535 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1035,7 +1057,7 @@
 		)
 		(uuid "ce2e9f1c-9105-4075-bfaa-81a470b3ee12")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.7499 50.8 0)
+			(at 71.807 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1047,7 +1069,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 47.625 0)
+		(at 20.32 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1056,7 +1078,7 @@
 		(fields_autoplaced yes)
 		(uuid "09ac7718-c5a1-4f2e-8764-3ad6379c2e39")
 		(property "Reference" "#PWR025"
-			(at 91.44 53.975 0)
+			(at 20.32 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1065,7 +1087,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 52.07 0)
+			(at 20.32 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1073,7 +1095,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 47.625 0)
+			(at 20.32 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1082,7 +1104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 47.625 0)
+			(at 20.32 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1091,7 +1113,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 47.625 0)
+			(at 20.32 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1113,7 +1135,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 92.075 36.83 0)
+		(at 20.955 75.565 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1121,7 +1143,7 @@
 		(dnp no)
 		(uuid "64afd2e7-3511-45eb-a4c8-7811196f2e0b")
 		(property "Reference" "#PWR0128"
-			(at 92.075 40.64 0)
+			(at 20.955 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1130,7 +1152,7 @@
 			)
 		)
 		(property "Value" "VCC_3V3"
-			(at 92.075 33.02 0)
+			(at 20.955 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1138,7 +1160,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.075 36.83 0)
+			(at 20.955 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1147,7 +1169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.075 36.83 0)
+			(at 20.955 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1156,7 +1178,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.075 36.83 0)
+			(at 20.955 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1177,7 +1199,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 115.57 33.02 270)
+		(at 44.45 71.755 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1185,7 +1207,7 @@
 		(dnp no)
 		(uuid "6f3f9b8f-a6ff-4ad9-acc7-22634eab79d2")
 		(property "Reference" "TP9"
-			(at 120.65 33.02 90)
+			(at 49.53 71.755 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1194,7 +1216,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 121.285 34.2899 90)
+			(at 50.165 73.0249 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1204,7 +1226,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 38.1 0)
+			(at 44.45 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1213,7 +1235,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 38.1 0)
+			(at 44.45 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,7 +1244,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 115.57 33.02 0)
+			(at 44.45 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1244,7 +1266,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
-		(at 105.41 41.91 0)
+		(at 34.29 80.645 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1252,7 +1274,7 @@
 		(dnp no)
 		(uuid "c19edaf1-d35d-48ca-b8c9-16a56297ea59")
 		(property "Reference" "CN1"
-			(at 102.235 29.21 0)
+			(at 31.115 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1260,7 +1282,7 @@
 			)
 		)
 		(property "Value" "DF11-16DP-2DSA(08)"
-			(at 106.045 55.245 0)
+			(at 34.925 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1268,7 +1290,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:CONN-TH_DF11-16DP-2DSA-08"
-			(at 105.41 58.42 0)
+			(at 34.29 97.155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1277,7 +1299,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
-			(at 105.41 60.96 0)
+			(at 34.29 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1286,7 +1308,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 41.91 0)
+			(at 34.29 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1295,7 +1317,7 @@
 			)
 		)
 		(property "LCSC Part" "C530981"
-			(at 105.41 63.5 0)
+			(at 34.29 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1362,7 +1384,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 115.57 35.56 270)
+		(at 44.45 74.295 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1370,7 +1392,7 @@
 		(dnp no)
 		(uuid "dbba81af-f212-4899-a37e-2ef516988f09")
 		(property "Reference" "TP10"
-			(at 120.65 35.56 90)
+			(at 49.53 74.295 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1379,7 +1401,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 121.285 36.8299 90)
+			(at 50.165 75.5649 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1389,7 +1411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 40.64 0)
+			(at 44.45 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1398,7 +1420,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 40.64 0)
+			(at 44.45 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1407,7 +1429,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 115.57 35.56 0)
+			(at 44.45 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1429,7 +1451,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 115.57 43.18 270)
+		(at 44.45 81.915 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1437,7 +1459,7 @@
 		(dnp no)
 		(uuid "f4c74bce-87c4-4407-9fa1-4dafc24a4a81")
 		(property "Reference" "TP11"
-			(at 120.65 43.18 90)
+			(at 49.53 81.915 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,7 +1468,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 121.285 44.4499 90)
+			(at 50.165 83.1849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,7 +1478,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 48.26 0)
+			(at 44.45 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1465,7 +1487,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 48.26 0)
+			(at 44.45 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1474,7 +1496,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 115.57 43.18 0)
+			(at 44.45 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
