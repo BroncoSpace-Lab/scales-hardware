@@ -958,7 +958,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -969,15 +969,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 2.032 0 90)
+				(at 2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -985,7 +985,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 1.016 -0.254 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1002,7 +1002,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1029,12 +1029,61 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1042,7 +1091,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -8553,7 +8602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 62.23 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8578,7 +8627,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 60.452 90)
+			(at 246.126 63.246 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8595,12 +8644,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8811,7 +8861,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 371.475 167.005 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8836,7 +8886,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 371.475 165.227 90)
+			(at 371.221 168.021 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8853,12 +8903,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 371.475 167.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9274,7 +9325,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9299,7 +9350,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 98.552 90)
+			(at 246.126 101.346 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9316,12 +9367,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9546,7 +9598,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9571,7 +9623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 85.852 90)
+			(at 246.126 88.646 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9588,12 +9640,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9612,7 +9665,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 128.27 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9637,7 +9690,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 126.492 90)
+			(at 246.126 129.286 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9654,12 +9707,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9946,7 +10000,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9971,7 +10025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 93.472 90)
+			(at 246.126 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9988,12 +10042,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10012,7 +10067,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 130.81 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10037,7 +10092,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 129.032 90)
+			(at 246.126 131.826 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10054,12 +10109,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10144,7 +10200,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 102.87 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10169,7 +10225,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 101.092 90)
+			(at 246.126 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10186,12 +10242,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10274,7 +10331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 53.34 142.24 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10299,7 +10356,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 140.462 90)
+			(at 53.086 143.256 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10316,12 +10373,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 53.34 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10620,7 +10678,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 329.565 163.195 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10645,7 +10703,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 329.565 161.417 90)
+			(at 329.311 164.211 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10662,12 +10720,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 329.565 163.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10686,7 +10745,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10711,7 +10770,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 103.632 90)
+			(at 246.126 106.426 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10728,12 +10787,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10816,7 +10876,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 58.42 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10841,7 +10901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 56.642 109.22 90)
+			(at 59.436 109.474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10858,12 +10918,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 58.42 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11090,7 +11151,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 69.85 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11115,7 +11176,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 68.072 90)
+			(at 246.126 70.866 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11132,12 +11193,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11298,7 +11360,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11323,7 +11385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 47.752 90)
+			(at 246.126 50.546 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11340,12 +11402,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11364,7 +11427,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 74.93 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11389,7 +11452,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 73.152 90)
+			(at 246.126 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11406,12 +11469,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11430,7 +11494,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 120.65 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11455,7 +11519,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 118.872 90)
+			(at 246.126 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11472,12 +11536,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11496,7 +11561,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11521,7 +11586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 50.292 90)
+			(at 246.126 53.086 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11538,12 +11603,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11651,7 +11717,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 107.95 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11676,7 +11742,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 106.172 90)
+			(at 246.126 108.966 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11693,12 +11759,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11717,7 +11784,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 152.4 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11742,7 +11809,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 150.622 123.19 90)
+			(at 153.416 123.444 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11759,12 +11826,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 152.4 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12061,7 +12129,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 57.15 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12086,7 +12154,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 55.372 90)
+			(at 246.126 58.166 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12103,12 +12171,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12804,7 +12873,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 77.47 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12829,7 +12898,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 75.692 90)
+			(at 246.126 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12846,12 +12915,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12870,7 +12940,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 133.35 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12895,7 +12965,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 131.572 90)
+			(at 246.126 134.366 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12912,12 +12982,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13000,7 +13071,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13025,7 +13096,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 70.612 90)
+			(at 246.126 73.406 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13042,12 +13113,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13066,7 +13138,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 125.73 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13091,7 +13163,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 123.952 90)
+			(at 246.126 126.746 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13108,12 +13180,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13550,7 +13623,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 59.69 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13575,7 +13648,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 57.912 90)
+			(at 246.126 60.706 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13592,12 +13665,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14189,7 +14263,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 66.04 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14214,7 +14288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.262 109.22 90)
+			(at 67.056 109.474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14231,12 +14305,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 66.04 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14255,7 +14330,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 146.05 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14280,7 +14355,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.272 130.81 90)
+			(at 147.066 131.064 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14297,12 +14372,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 146.05 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14321,7 +14397,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14346,7 +14422,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 78.232 90)
+			(at 246.126 81.026 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14363,12 +14439,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14451,7 +14528,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 123.19 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14476,7 +14553,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 121.412 90)
+			(at 246.126 124.206 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14493,12 +14570,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14517,7 +14595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 329.565 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14542,7 +14620,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 327.787 58.42 90)
+			(at 330.581 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14559,12 +14637,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 329.565 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14647,7 +14726,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 152.4 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14672,7 +14751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 98.552 90)
+			(at 152.146 101.346 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14689,12 +14768,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 152.4 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14865,7 +14945,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 361.315 172.085 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14890,7 +14970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 359.537 172.085 90)
+			(at 362.331 172.339 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14907,12 +14987,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 361.315 172.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15284,7 +15365,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 34.29 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15309,7 +15390,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 130.302 90)
+			(at 34.036 133.096 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15326,12 +15407,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 34.29 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15648,7 +15730,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15673,7 +15755,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 90.932 90)
+			(at 246.126 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15690,12 +15772,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15982,7 +16065,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16007,7 +16090,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 96.012 90)
+			(at 246.126 98.806 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16024,12 +16107,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16328,7 +16412,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 329.565 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16353,7 +16437,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 327.787 31.75 90)
+			(at 330.581 32.004 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16370,12 +16454,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 329.565 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16664,7 +16749,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 118.11 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16689,7 +16774,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 116.332 90)
+			(at 246.126 119.126 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16706,12 +16791,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16870,7 +16956,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 152.4 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16895,7 +16981,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 93.472 90)
+			(at 152.146 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16912,12 +16998,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 152.4 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17076,7 +17163,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17101,7 +17188,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 83.312 90)
+			(at 246.126 86.106 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17118,12 +17205,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17142,7 +17230,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 88.9 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17167,7 +17255,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.122 95.25 90)
+			(at 89.916 95.504 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17184,12 +17272,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 88.9 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17208,7 +17297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 54.61 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17233,7 +17322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 52.832 90)
+			(at 246.126 55.626 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17250,12 +17339,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17402,7 +17492,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 83.82 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17427,7 +17517,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 130.302 90)
+			(at 83.566 133.096 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17444,12 +17534,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 83.82 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17596,7 +17687,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 50.8 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17621,7 +17712,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.022 109.22 90)
+			(at 51.816 109.474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17638,12 +17729,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 50.8 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17662,7 +17754,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 46.99 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17687,7 +17779,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 45.212 90)
+			(at 246.126 48.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17704,12 +17796,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17792,7 +17885,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17817,7 +17910,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 80.772 90)
+			(at 246.126 83.566 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17834,12 +17927,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17934,7 +18028,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_US")
 		(at 246.38 115.57 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17959,7 +18053,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 113.792 90)
+			(at 246.126 116.586 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17976,12 +18070,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 246.38 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
