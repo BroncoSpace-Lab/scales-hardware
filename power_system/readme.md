@@ -7,8 +7,7 @@ The production errors that this board include are simple, which is why they are 
 ### List of Changes After Production Errors for Viking 1-A ###
 Copper fills were missing around the majority of non power traces and were causing difficulties in manufacuring, this was corrected by JLCPCB by their fab engineers, but I took the liberty of adding the same type of corrections to the existing board version. These are included in the latest commit.
 
-### Full Description of EPS_REVD / Viking 1-A ###
-## System Overview: ##
+## EPS_REVD / Viking 1-A System Overview: ##
 
 - Power Requirements (+28v 8A Max)
     - ML/Edge Computer - Nvidia Jetson (+20V 4A)
@@ -31,39 +30,67 @@ Copper fills were missing around the majority of non power traces and were causi
     - Monitoring is done by the OBC via I2C from the INA260s, which allows the subsystem to get basic telemetry on the subsystem state of operation
 
 ## Block Diagram and Visual Con. Ops ##
-[EPS REVD Block Diagram](https://www.notion.so/image/attachment%3Ac9a64c81-9e04-447f-a100-deb8de8a3569%3ABlock_Diagram_EPSREVD.png?table=block&id=208ca1dc-a64c-8068-9282-f511bc8ab1a4&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
 
-[EPS RevD Concept of Operations](https://www.notion.so/image/attachment%3A0d729145-e7c4-4724-be60-e385ed505b18%3AEPS_RevD_ConnOps.drawio.png?table=block&id=208ca1dc-a64c-805f-a420-cfc4dafb0370&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* EPS RevD Block Diagram
+
+    ![EPS RevD Block Diagram](images/RevD/Block_Diagram_EPSREVD.png)
+
+* EPS RevD Concept of Operations
+
+    ![EPS RevD Concept of Operations](images/RevD/EPS_RevD_ConnOps.drawio.png)
 
 ## **Board Schematic** ##
-- [Root](https://www.notion.so/image/attachment%3A7bd262cf-66a0-4457-bd6b-2b23965c8ade%3Aimage.png?table=block&id=20aca1dc-a64c-8095-84d9-c7194b599591&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* Root
 
-- [Jetson Subsystem](https://www.notion.so/image/attachment%3A3cff6657-aa35-4223-a8f8-ead611267653%3Aimage.png?table=block&id=20aca1dc-a64c-802e-a5d7-d4cccf64e0ad&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+    ![Root](images/RevD/Root.png)
+
+* Jetson Subsystem
+
+    ![Jetson Subsystem](images/RevD/Jetson%20Subsystem.png)
+
+* OBC Subsystem
+
+    ![OBC Subsystem](images/RevD/OBC%20Subsystem.png)
+
+* Perif. Subsystem
+
+    ![Perif. Subsystem](images/RevD/Perif.%20Subsystem.png)
     
-- [OBC Subsystem](https://www.notion.so/image/attachment%3A17344e0e-4ee2-4745-847b-4ea6e2b22d6d%3Aimage.png?table=block&id=20aca1dc-a64c-808a-9b9f-f86c9b21187a&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
-    
-- [Perif. Subsystem](https://www.notion.so/image/attachment%3Aad70494e-4e49-4a4c-b4a5-5e43a55b3abb%3Aimage.png?table=block&id=20aca1dc-a64c-8041-997c-c6a241788703&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
-    
-- [Watchdog Circuit](https://www.notion.so/image/attachment%3A222e0c4b-c9fe-47b9-bdc7-c3d2114097d9%3Aimage.png?table=block&id=20aca1dc-a64c-8097-a505-c0a3e10a59a9&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* Watchdog Circuit
+
+    ![Watchdog Circuit](images/RevD/Watchdog%20Circuit.png)
     
 
 ## **Board Layout** ##
-- Layers
-    - [Signal1 Layer](https://www.notion.so/image/attachment%3A7d778a6f-3466-42b9-8220-6aa2e31874ef%3Aimage.png?table=block&id=20aca1dc-a64c-809c-be3b-cb24ec853412&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+
+* Signal1 Layer
+
+    ![Signal1 Layer](images/RevD/Signal1%20Layer.png)
     
-    - [GND Layer](https://www.notion.so/image/attachment%3A885b7b39-8538-4c39-bb08-e643d61444a3%3Aimage.png?table=block&id=20aca1dc-a64c-8052-8f86-e3fd9b0dd7d0&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* GND Layer
+
+    ![GND Layer](images/RevD/GND%20Layer.png)
     
-    - [Power Layer](https://www.notion.so/image/attachment%3A2fa4df4f-a000-494d-8fc1-3e01957045d5%3Aimage.png?table=block&id=20aca1dc-a64c-80d3-af24-c6c999945438&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* Power Layer
+
+    ![Power Layer](images/RevD/Power%20Layer.png)
     
-    - [Signal2 Layer](https://www.notion.so/image/attachment%3Ab82f3888-3ba0-41d4-8ddb-0d87ddaf98de%3Aimage.png?table=block&id=20aca1dc-a64c-80d0-a46b-ffd4127c3f71&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* Signal2 Layer
+
+    ![Signal2 Layer](images/RevD/Signal2%20Layer.png)
     
-- 3D Render Front and Back
-    - [Front](https://www.notion.so/image/attachment%3A4bb52243-8412-4b55-9b69-99f835f29f85%3Aimage.png?table=block&id=20aca1dc-a64c-8057-a6ca-da1dd7680218&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+## 3D Render Front and Back ##
+    
+* Front
+
+    ![Front](images/RevD/Front.png)
         
-    - [Back](https://www.notion.so/image/attachment%3A2183714b-9471-4e9c-aa43-40b86b787d3d%3Aimage.png?table=block&id=20aca1dc-a64c-8041-9792-d54e6458f350&spaceId=b51c3867-2257-4092-bdbe-f98e3132606f&width=2000&userId=104d872b-594c-81d4-83eb-00020a56c20b&cache=v2)
+* Back   
+
+    ![Back](images/RevD/Back.png)
         
 
-## **Testing and Evaluation** ##
+## **Testing and Evaluation**
 
 Using the on board test points and the expected probe locations based on the schematic, we can check if all the voltages are as required, if the watch dogs are behaving as expected, and if there are any components that may not be performing as required.
 
