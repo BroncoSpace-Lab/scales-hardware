@@ -178,45 +178,28 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "imx8_carrier_board_symbol_library:5.8ZSGT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
+			(property "Value" "5.8 ZSGT"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
+			(property "Footprint" ":SW-TH_5.8ZSGT"
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -224,7 +207,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Datasheet" "https://lcsc.com/product-detail/Electrical-Switches_SHOU-HAN-5-8-ZSGT_C2681587.html"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -233,8 +225,8 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
+			(property "LCSC Part" "C2681587"
+				(at 0 -20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -242,10 +234,56 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(symbol "5.8ZSGT_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.56 0) (xy 3.3 0) (xy 1.78 0.25)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.05 2.03)
+					(end 0.51 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.05 -1.27)
+					(end 0.51 -2.03)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy -2.54 2.03) (xy -2.79 2.79)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -256,19 +294,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy -2.54 2.03) (xy -2.29 2.79)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -279,7 +306,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy -2.54 -2.03) (xy -2.29 -2.79)
 					)
 					(stroke
 						(width 0)
@@ -289,17 +316,136 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -5.08 0 0)
+				(polyline
+					(pts
+						(xy -2.54 -5.08) (xy -2.54 -2.03) (xy -2.79 -2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 2.03) (xy -0.25 2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.03) (xy 0.25 2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.03) (xy 0.25 -2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -2.03) (xy -0.25 -2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 2.54 2.03) (xy 2.29 2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.03) (xy 2.79 2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.03) (xy 2.79 -2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy 2.54 -2.03) (xy 2.29 -2.79)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.81 -3.81)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 7.62 270)
 					(length 2.54)
-					(name "1"
+					(name "6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -307,8 +453,44 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 0 180)
+				(pin unspecified line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -318,6 +500,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -355,7 +573,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -380,14 +598,6 @@
 						(size 1.27 1.27)
 					)
 					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "ki_keywords" "connector"
@@ -1597,8 +1807,8 @@
 		(uuid 37614913-1312-4baa-a275-846cf450b145)
 	)
 	(rectangle
-		(start 97.79 31.115)
-		(end 141.605 68.58)
+		(start 97.155 31.115)
+		(end 147.955 69.85)
 		(stroke
 			(width 0)
 			(type default)
@@ -1635,7 +1845,7 @@
 	)
 	(text "Reset Button"
 		(exclude_from_sim no)
-		(at 127.254 59.563 0)
+		(at 132.715 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1655,7 +1865,7 @@
 		)
 		(uuid "f5b92133-d08a-4dfd-b6f1-1301c85d58d0")
 	)
-	(text_box "Use a 2x10 header pin connector, 2.54mm pitch. Pin functions are updated."
+	(text_box "Use a 2x10 header pin connector, 2.54mm pitch. Pin functions are updated in the library symbol."
 		(exclude_from_sim no)
 		(at 15.24 38.1 0)
 		(size 24.765 10.795)
@@ -1698,6 +1908,12 @@
 		(uuid "ace4e6ea-18ab-43c8-8976-21e8db6240d2")
 	)
 	(junction
+		(at 140.335 56.515)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c002e44-6ccb-4967-8fd6-7c745fe6a3ab")
+	)
+	(junction
 		(at 75.565 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1734,6 +1950,12 @@
 		(uuid "b3a5cc40-9ec6-44cb-8694-5c776342a767")
 	)
 	(junction
+		(at 125.095 56.515)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc172111-9979-45eb-9b05-cd148d47f785")
+	)
+	(junction
 		(at 75.565 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1750,6 +1972,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e746b0c8-faa0-40aa-9daf-ad4381bdf6f1")
+	)
+	(wire
+		(pts
+			(xy 140.335 56.515) (xy 144.145 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02952aea-ed50-455c-a23f-48192cc9a670")
 	)
 	(wire
 		(pts
@@ -1803,7 +2035,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 56.515) (xy 115.57 56.515)
+			(xy 115.57 56.515) (xy 125.095 56.515)
 		)
 		(stroke
 			(width 0)
@@ -1830,6 +2062,16 @@
 			(type default)
 		)
 		(uuid "1bed01a6-49bb-4785-a9a5-5ba1c9b783e4")
+	)
+	(wire
+		(pts
+			(xy 125.095 53.975) (xy 125.095 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eab1d4e-85be-4788-8d53-607fe50b8a47")
 	)
 	(wire
 		(pts
@@ -1923,6 +2165,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.335 56.515) (xy 140.335 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6274530e-5113-468a-97bb-4e4012849fa0")
+	)
+	(wire
+		(pts
 			(xy 64.77 74.93) (xy 80.01 74.93)
 		)
 		(stroke
@@ -1930,6 +2182,26 @@
 			(type default)
 		)
 		(uuid "6406bc5c-30b6-45a6-9b6b-c4d0bb6bc341")
+	)
+	(wire
+		(pts
+			(xy 140.335 53.975) (xy 140.335 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80be5458-8c90-4430-bf8d-5b1ad2914dc1")
+	)
+	(wire
+		(pts
+			(xy 144.145 56.515) (xy 144.145 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8168a1d9-4209-4943-9f69-5f528bf99c0e")
 	)
 	(wire
 		(pts
@@ -2003,16 +2275,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 56.515) (xy 138.43 57.785)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3cd5d38-0041-4d1f-9848-c0dc460493f3")
-	)
-	(wire
-		(pts
 			(xy 80.01 62.23) (xy 75.565 62.23)
 		)
 		(stroke
@@ -2053,13 +2315,13 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 56.515) (xy 138.43 56.515)
+			(xy 125.095 56.515) (xy 125.095 59.055)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db4cd855-ee52-4973-b642-bcdb0ef30f3c")
+		(uuid "e43f114d-09c3-477e-9a8f-9152ad2abaf0")
 	)
 	(wire
 		(pts
@@ -2274,6 +2536,95 @@
 		)
 	)
 	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:5.8ZSGT")
+		(at 132.715 56.515 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e230259-da83-40d0-a5d7-fe49cbe76c41")
+		(property "Reference" "SW2"
+			(at 132.715 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.8 ZSGT"
+			(at 132.715 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "imx8_carrier_board_footprints:SW-TH_5.8ZSGT"
+			(at 147.955 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Electrical-Switches_SHOU-HAN-5-8-ZSGT_C2681587.html"
+			(at 150.495 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.715 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2681587"
+			(at 153.035 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "eca543a7-81e5-4f03-929b-7843da251723")
+		)
+		(pin "3"
+			(uuid "8032762b-eed2-45db-a7f9-b0f30f9d0c2a")
+		)
+		(pin "2"
+			(uuid "05ec113a-c038-4df3-986e-63fc9f1a2804")
+		)
+		(pin "4"
+			(uuid "f858abb1-f8d1-4f1e-b89b-08026135b798")
+		)
+		(pin "1"
+			(uuid "5c49f9c5-c48f-437b-9f44-7bbe585eb9b3")
+		)
+		(pin "6"
+			(uuid "bb2cf54e-ebe6-4dfd-861b-1f6a5d3e8c83")
+		)
+		(instances
+			(project ""
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:ARM_JTAG")
 		(at 85.09 77.47 0)
 		(mirror y)
@@ -2302,7 +2653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "imx8_carrier_board_footprints:ARM_JTAG"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical"
 			(at 85.09 77.47 0)
 			(effects
 				(font
@@ -2393,6 +2744,72 @@
 			(project ""
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.145 59.055 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42609b06-c09d-4de3-9d26-d7358766cedd")
+		(property "Reference" "#PWR088"
+			(at 144.145 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.145 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.145 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.145 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.145 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c0d7280-74ca-4580-bb8f-a9f8c40fa889")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -2601,74 +3018,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 127 56.515 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab211d3e-ea93-4e85-a07f-ac0370eccc08")
-		(property "Reference" "SW2"
-			(at 127 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 127 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 127 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50a3af5a-65cf-46c1-a242-91ecc15a4780")
-		)
-		(pin "2"
-			(uuid "e99a92b1-205f-46bb-b7ac-1706302e4beb")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
 		(at 115.57 42.545 0)
 		(unit 1)
@@ -2859,70 +3208,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
 					(reference "#PWR0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 138.43 57.785 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dade585e-eb8d-48b7-b2fd-499505e7d678")
-		(property "Reference" "#PWR124"
-			(at 138.43 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 138.43 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.43 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 138.43 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c6b8b09a-5a56-4386-a6ba-252e9fecbadd")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
-					(reference "#PWR124")
 					(unit 1)
 				)
 			)
