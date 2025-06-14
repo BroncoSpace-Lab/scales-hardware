@@ -5,6 +5,210 @@
 	(uuid "b748894f-e3cf-426d-95e3-ca5bfb16c696")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -1818,6 +2022,18 @@
 		)
 		(uuid 68af7169-c218-4d5f-b67f-e774f2fa2ae9)
 	)
+	(rectangle
+		(start 153.035 31.115)
+		(end 203.835 69.85)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid bd2ec488-f388-4a17-821c-f5d525029fd1)
+	)
 	(text "JTAG-Misc."
 		(exclude_from_sim no)
 		(at 22.225 15.24 0)
@@ -1852,6 +2068,19 @@
 			)
 		)
 		(uuid "c67be0c5-79de-4518-ab37-c976ff10c954")
+	)
+	(text "ON OFF BUTTON"
+		(exclude_from_sim no)
+		(at 153.035 34.29 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "da3b5f02-0ecf-4da6-805a-87a1108b8fb0")
 	)
 	(text "JTAG Debugger"
 		(exclude_from_sim no)
@@ -2055,6 +2284,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.735 46.355) (xy 175.895 46.355)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ba03a66-2937-46b0-8c4a-09e771845d5b")
+	)
+	(wire
+		(pts
 			(xy 75.565 92.71) (xy 75.565 87.63)
 		)
 		(stroke
@@ -2105,6 +2344,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.735 48.895) (xy 170.18 48.895)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "341895fe-7b54-49bc-9cf2-d19c04d46aa9")
+	)
+	(wire
+		(pts
 			(xy 75.565 62.23) (xy 75.565 67.31)
 		)
 		(stroke
@@ -2112,6 +2361,16 @@
 			(type default)
 		)
 		(uuid "36baceba-33f8-4b1f-aa17-1cf97cb26bbf")
+	)
+	(wire
+		(pts
+			(xy 175.26 51.435) (xy 175.26 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "387d6e87-8eac-4ee5-ba71-584262357246")
 	)
 	(wire
 		(pts
@@ -2165,6 +2424,26 @@
 	)
 	(wire
 		(pts
+			(xy 180.975 48.895) (xy 177.8 48.895)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58441e78-41dc-40cd-8efd-1c8a064b3e19")
+	)
+	(wire
+		(pts
+			(xy 175.895 46.355) (xy 175.895 43.815)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f93e393-340e-4afa-8310-26d7f356565f")
+	)
+	(wire
+		(pts
 			(xy 140.335 56.515) (xy 140.335 59.055)
 		)
 		(stroke
@@ -2182,6 +2461,16 @@
 			(type default)
 		)
 		(uuid "6406bc5c-30b6-45a6-9b6b-c4d0bb6bc341")
+	)
+	(wire
+		(pts
+			(xy 165.735 51.435) (xy 175.26 51.435)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbc646f-eb10-4a03-a8ce-c17499a63f0e")
 	)
 	(wire
 		(pts
@@ -2443,6 +2732,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_ON_OFF_BUTTON"
+		(shape input)
+		(at 180.975 48.895 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ace94fa-6f81-4653-b6c7-3aff6bd57154")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.4379 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2750,6 +3061,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 160.655 48.895 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "365a41b7-7962-4da9-9e19-1b1a26308d4c")
+		(property "Reference" "J8"
+			(at 161.29 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 161.29 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 160.655 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.655 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 160.655 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed812481-9324-4a1c-ab9c-f620769d8afe")
+		)
+		(pin "2"
+			(uuid "cd3799c2-dfca-4134-887b-d45d060ecf8b")
+		)
+		(pin "3"
+			(uuid "309f369d-e1b5-4133-a060-a11fe65ea10c")
+		)
+		(instances
+			(project ""
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 144.145 59.055 0)
 		(unit 1)
@@ -2877,6 +3259,73 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
 					(reference "R95")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 173.99 48.895 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fac559e-af7b-430d-bb43-530753816f64")
+		(property "Reference" "R130"
+			(at 168.91 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 177.8 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.736 49.911 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 173.99 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5ad0904-d192-4cdf-8464-82bf7134bcf3")
+		)
+		(pin "2"
+			(uuid "3422559b-8e3e-4d5f-8952-88d9854ff811")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
+					(reference "R130")
 					(unit 1)
 				)
 			)
@@ -3018,6 +3467,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 175.26 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7802267-e990-43b4-a724-7260a24d2fed")
+		(property "Reference" "#PWR0156"
+			(at 175.26 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45cdfb37-d837-4821-9c6a-23b8f34eaa1d")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
+					(reference "#PWR0156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
 		(at 115.57 42.545 0)
 		(unit 1)
@@ -3143,6 +3658,71 @@
 			(project ""
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
+		(at 175.895 43.815 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd1414ea-59ed-4df7-ba3b-3b29ca49e07e")
+		(property "Reference" "#PWR0155"
+			(at 175.895 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_3V3_OUT"
+			(at 175.895 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.895 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.895 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 175.895 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7e2de65-1c28-4948-8a3f-8e06dc13f1cc")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8"
+					(reference "#PWR0155")
 					(unit 1)
 				)
 			)
