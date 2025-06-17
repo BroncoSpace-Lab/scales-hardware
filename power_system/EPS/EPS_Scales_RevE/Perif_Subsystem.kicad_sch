@@ -2676,6 +2676,26 @@
 		)
 		(uuid "c195c77f-6d7a-4839-be0f-d522f5c642c6")
 	)
+	(text_box "C25 @2.2uF ~1s\nEnsure it is a tantalum\nVerify time in RevE calcs"
+		(exclude_from_sim no)
+		(at 120.65 66.04 0)
+		(size 13.335 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "0ffa5ca7-e12e-4c97-a89b-485bffea5ea0")
+	)
 	(text_box "A0->Vs\nA1->VS\nSlave Address\n1000101"
 		(exclude_from_sim no)
 		(at 229.235 64.77 0)
@@ -2695,6 +2715,26 @@
 			(justify left top)
 		)
 		(uuid "1403b246-66b6-42a0-83b1-85b0139950c5")
+	)
+	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2) DONE\nRT (Set default frequency to 400khz) DONE\nEN/UV threshold (~24v = UV, due to Li-ion discharge)(Pg. 15) DONE\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) DONE\nBST (add 0.1uF bypass cap) DONE\nINTVCC (add 0.1uF bypass cap) DONE\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) DONE\nTR/SS (Select a soft start time) ~1s -> 2.16uF DONE\nNC (Tie to ground) DONE"
+		(exclude_from_sim no)
+		(at 94.615 111.76 0)
+		(size 61.595 30.48)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1d54ac01-087c-42de-b668-7e264d2c5677")
 	)
 	(text_box "R103 and R104 set 5V Vout"
 		(exclude_from_sim no)
@@ -2716,7 +2756,7 @@
 		)
 		(uuid "26f56e90-9190-4086-be98-6d88909f7fc5")
 	)
-	(text_box "L is calculated to 12.95, round to whats available, 12uH"
+	(text_box "L is calculated to 9.065, round to whats available, 9uH"
 		(exclude_from_sim no)
 		(at 178.435 70.485 0)
 		(size 17.78 8.89)
@@ -2756,46 +2796,6 @@
 		)
 		(uuid "66fc0cf4-b5ad-48de-b38b-73668ac3e5fa")
 	)
-	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2) DONE\nRT (Set default frequency to 400khz) DONE\nEN/UV threshold (~24v = UV, due to Li-ion discharge)(Pg. 15) DONE\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) (Pg. 13) DONE\nBST (add 0.1uF bypass cap) DONE\nINTVCC (add 0.1uF bypass cap) DONE\nBIAS (If Vout is greater than 3.3v tie to vout)(DONE)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) DONE\nTR/SS (Select a soft start time) ~1ms -> 2.16nF DONE\nNC (Tie to ground) DONE"
-		(exclude_from_sim no)
-		(at 96.52 111.125 0)
-		(size 71.755 26.035)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "6c30b20e-3f6d-49e0-a2e7-6415ad293d53")
-	)
-	(text_box "C25 @2.2nF ~1ms"
-		(exclude_from_sim no)
-		(at 122.555 72.39 0)
-		(size 11.43 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "6fded765-0b41-40ad-a32d-861b2e2e0612")
-	)
 	(text_box "R83 and R101 set UVLO @ 24v"
 		(exclude_from_sim no)
 		(at 130.175 46.99 0)
@@ -2818,7 +2818,7 @@
 	)
 	(text_box "Vout -> 22nF Cap\n(Pg. 38)"
 		(exclude_from_sim no)
-		(at 114.935 52.07 0)
+		(at 113.03 53.975 0)
 		(size 7.62 5.715)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2835,26 +2835,6 @@
 			(justify left top)
 		)
 		(uuid "9e67076e-7543-4eac-bfe2-77aa6cfb1952")
-	)
-	(text_box "SNS -> 1k -> GND : Not using analog sense\nLatch -> 15k -> GND : Auto-retry Enabled\n~{ST} -> 220 -> LED : Indicates fault when DIA_EN -> GND\nSEL1 & SEL2 -> 15k -> GND : Diagnostics Disabled\n(Pg. 5)"
-		(exclude_from_sim no)
-		(at 69.215 68.58 0)
-		(size 18.415 13.97)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "b672b694-0a19-4c67-8f0b-d3c015d8577f")
 	)
 	(text_box "Gecko for Dev. Board replaced with DF11-16DP-2DSA due to shipping constraints"
 		(exclude_from_sim no)
@@ -2895,6 +2875,26 @@
 			(justify left top)
 		)
 		(uuid "e233e8dc-f961-4764-a841-08f295365ade")
+	)
+	(text_box "SNS -> 1k -> GND : Not using analog sense\nLatch -> 15k -> GND : Auto-retry Enabled\n~{ST} -> 1k -> LED : Indicates fault on fail. Open Drain.\nSEL1 & SEL2 -> 15k -> GND : Diagnostics Disabled\n(Pg. 5)"
+		(exclude_from_sim no)
+		(at 71.12 68.58 0)
+		(size 18.415 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "ea7e987d-c204-44fb-9f3d-51858d123693")
 	)
 	(junction
 		(at 258.445 40.64)
@@ -2939,13 +2939,19 @@
 		(uuid "1b850945-ba57-46ba-964b-7d31c4bb1c27")
 	)
 	(junction
+		(at 145.415 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20301d5d-5fb1-49da-9d0b-883f75fbadfa")
+	)
+	(junction
 		(at 182.245 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1d8f20c0-3ca1-4a85-b978-0067c967e841")
+		(uuid "21e3f81b-26d4-455f-9b05-a82337e82626")
 	)
 	(junction
-		(at 45.085 151.13)
+		(at 45.72 146.685)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24a00428-391b-41f1-9eb4-07bfdf2146e3")
@@ -2957,7 +2963,7 @@
 		(uuid "2d0e36d2-ea2e-45d6-9b45-abf93e8a5838")
 	)
 	(junction
-		(at 45.085 138.43)
+		(at 45.72 133.985)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f735b72-bbd3-48d6-b00d-aca2fb3178e3")
@@ -2969,13 +2975,7 @@
 		(uuid "3281f82f-5da7-4d16-9b19-fa6ecdc490c0")
 	)
 	(junction
-		(at 55.245 84.455)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38775fa5-6b81-4dd1-8bb8-e577b62f0cea")
-	)
-	(junction
-		(at 45.085 140.97)
+		(at 45.72 136.525)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e22fc84-f7ca-46d9-9e38-404641490434")
@@ -3011,7 +3011,7 @@
 		(uuid "63d8fbc3-f5b2-4c95-85e9-a98ce0662cb9")
 	)
 	(junction
-		(at 45.085 148.59)
+		(at 45.72 144.145)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68c9cf48-c266-4aa1-bffb-06624b53bade")
@@ -3047,7 +3047,7 @@
 		(uuid "8acbf433-864b-458c-9fee-b05c05adca2c")
 	)
 	(junction
-		(at 45.085 149.86)
+		(at 45.72 145.415)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d73d84e-d000-420c-bc69-326fb9ebb842")
@@ -3063,12 +3063,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98308b49-af9d-4527-b6de-718b83cd79e5")
-	)
-	(junction
-		(at 145.415 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a25d72de-0b5b-45d2-885b-0ceda3e6ca5a")
 	)
 	(junction
 		(at 106.045 54.61)
@@ -3113,7 +3107,7 @@
 		(uuid "c335059e-81ff-4c4c-bca7-ab5b29118ba5")
 	)
 	(junction
-		(at 45.085 139.7)
+		(at 45.72 135.255)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3f2dba1-d9e1-41a1-becc-5c641c8bcf60")
@@ -3179,7 +3173,7 @@
 		(uuid "f72cb08c-c5c6-4b14-a8dc-e0960f4bc03f")
 	)
 	(no_connect
-		(at 60.325 135.89)
+		(at 60.96 131.445)
 		(uuid "2203900e-e0bd-4282-9ee7-2376b8fb9cc4")
 	)
 	(no_connect
@@ -3214,7 +3208,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.735 149.86) (xy 45.085 149.86)
+			(xy 39.37 145.415) (xy 45.72 145.415)
 		)
 		(stroke
 			(width 0)
@@ -3294,16 +3288,6 @@
 	)
 	(wire
 		(pts
-			(xy 47.625 84.455) (xy 55.245 84.455)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16c979f9-7853-4022-80d7-4581db40d787")
-	)
-	(wire
-		(pts
 			(xy 29.845 48.26) (xy 33.02 48.26)
 		)
 		(stroke
@@ -3344,7 +3328,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 148.59) (xy 45.085 149.86)
+			(xy 45.72 144.145) (xy 45.72 145.415)
 		)
 		(stroke
 			(width 0)
@@ -3474,16 +3458,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.245 58.42) (xy 55.245 60.325)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2f876c-aa27-4f7a-b74a-677a2d8ee0b3")
-	)
-	(wire
-		(pts
 			(xy 93.98 52.07) (xy 91.44 52.07)
 		)
 		(stroke
@@ -3531,26 +3505,6 @@
 			(type default)
 		)
 		(uuid "3b9ea172-6bcc-4ff3-b670-82ab52421256")
-	)
-	(wire
-		(pts
-			(xy 63.5 58.42) (xy 55.245 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cf3c0ff-52cf-43ee-9fbb-365443d46d74")
-	)
-	(wire
-		(pts
-			(xy 55.245 67.945) (xy 55.245 70.485)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d984718-b398-4b14-8a5c-465d7b439247")
 	)
 	(wire
 		(pts
@@ -3724,7 +3678,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.325 153.67) (xy 63.5 153.67)
+			(xy 60.96 149.225) (xy 64.135 149.225)
 		)
 		(stroke
 			(width 0)
@@ -3784,6 +3738,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 48.26) (xy 33.02 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6883f818-6c9c-48ae-9e4a-aac6fad0b470")
+	)
+	(wire
+		(pts
 			(xy 223.52 63.5) (xy 243.84 63.5)
 		)
 		(stroke
@@ -3794,7 +3758,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 67.945) (xy 33.02 84.455)
+			(xy 33.02 68.58) (xy 33.02 84.455)
 		)
 		(stroke
 			(width 0)
@@ -3874,6 +3838,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.735 44.45) (xy 41.275 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76e4f084-0104-4b1d-8095-72fa08f2e2bf")
+	)
+	(wire
+		(pts
 			(xy 179.07 60.96) (xy 182.245 60.96)
 		)
 		(stroke
@@ -3944,7 +3918,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 149.86) (xy 45.085 151.13)
+			(xy 45.72 145.415) (xy 45.72 146.685)
 		)
 		(stroke
 			(width 0)
@@ -3974,7 +3948,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.275 139.7) (xy 45.085 139.7)
+			(xy 41.91 135.255) (xy 45.72 135.255)
 		)
 		(stroke
 			(width 0)
@@ -3994,13 +3968,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.245 78.105) (xy 55.245 84.455)
+			(xy 57.15 60.325) (xy 57.15 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ca24084-7f2d-4749-b8e2-17b82c01a117")
+		(uuid "90661d8b-ea9f-44bd-a4ec-a94d4c2b4a91")
 	)
 	(wire
 		(pts
@@ -4011,6 +3985,16 @@
 			(type default)
 		)
 		(uuid "92d5dc64-bf95-4fc9-94f7-b606040d18d6")
+	)
+	(wire
+		(pts
+			(xy 57.15 58.42) (xy 63.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94f2cac2-7510-499b-b3dd-d18d3d59ddc3")
 	)
 	(wire
 		(pts
@@ -4054,7 +4038,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 146.05) (xy 45.085 148.59)
+			(xy 45.72 141.605) (xy 45.72 144.145)
 		)
 		(stroke
 			(width 0)
@@ -4071,16 +4055,6 @@
 			(type default)
 		)
 		(uuid "a43bb9fe-98a7-4f39-b9a9-1b4e8c418a4e")
-	)
-	(wire
-		(pts
-			(xy 38.735 44.45) (xy 41.275 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4822210-e0fc-400e-a352-ac512f5e9a36")
 	)
 	(wire
 		(pts
@@ -4144,13 +4118,23 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 138.43) (xy 45.085 139.7)
+			(xy 45.72 133.985) (xy 45.72 135.255)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b064e111-bc61-4ccc-b181-f95c5225ef98")
+	)
+	(wire
+		(pts
+			(xy 182.245 68.58) (xy 189.23 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1324756-d8dd-4191-b3e0-17262d9d680d")
 	)
 	(wire
 		(pts
@@ -4174,6 +4158,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 67.945) (xy 57.15 70.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a5bf6d-c6c9-47e1-986d-f868db0f19e4")
+	)
+	(wire
+		(pts
 			(xy 148.59 68.58) (xy 151.13 68.58)
 		)
 		(stroke
@@ -4191,16 +4185,6 @@
 			(type default)
 		)
 		(uuid "c09615c1-d312-42fa-9d5b-cd083a530e81")
-	)
-	(wire
-		(pts
-			(xy 182.245 68.58) (xy 189.23 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4145ebb-a81f-4e3e-b1d2-c88b7b57c304")
 	)
 	(wire
 		(pts
@@ -4224,7 +4208,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 139.7) (xy 45.085 140.97)
+			(xy 45.72 135.255) (xy 45.72 136.525)
 		)
 		(stroke
 			(width 0)
@@ -4284,7 +4268,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 151.13) (xy 45.085 153.67)
+			(xy 45.72 146.685) (xy 45.72 149.225)
 		)
 		(stroke
 			(width 0)
@@ -4294,7 +4278,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.245 84.455) (xy 106.045 84.455)
+			(xy 47.625 84.455) (xy 106.045 84.455)
 		)
 		(stroke
 			(width 0)
@@ -4324,7 +4308,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.735 151.765) (xy 38.735 149.86)
+			(xy 39.37 147.32) (xy 39.37 145.415)
 		)
 		(stroke
 			(width 0)
@@ -4334,7 +4318,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 140.97) (xy 45.085 143.51)
+			(xy 45.72 136.525) (xy 45.72 139.065)
 		)
 		(stroke
 			(width 0)
@@ -4394,7 +4378,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 135.89) (xy 45.085 138.43)
+			(xy 45.72 131.445) (xy 45.72 133.985)
 		)
 		(stroke
 			(width 0)
@@ -4411,6 +4395,16 @@
 			(type default)
 		)
 		(uuid "eda0e973-557d-484a-85d2-c5a408bb6c28")
+	)
+	(wire
+		(pts
+			(xy 57.15 78.105) (xy 57.15 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3ef84a-3175-49fb-b410-564e8d80e073")
 	)
 	(wire
 		(pts
@@ -4431,16 +4425,6 @@
 			(type default)
 		)
 		(uuid "f33adb94-835e-478c-8f57-3febc2445163")
-	)
-	(wire
-		(pts
-			(xy 33.02 60.325) (xy 33.02 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f35bc9ed-90dc-4de0-b0e5-6933188a2fa7")
 	)
 	(wire
 		(pts
@@ -4514,7 +4498,7 @@
 	)
 	(global_label "WDT_WDI_Perif"
 		(shape output)
-		(at 63.5 153.67 0)
+		(at 64.135 149.225 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4526,7 +4510,7 @@
 		)
 		(uuid "2ac8f882-b201-43f1-82b8-045f4a38d5ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.3869 153.67 0)
+			(at 81.0219 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,6 +4608,28 @@
 			)
 		)
 	)
+	(global_label "+3.3V_OBC"
+		(shape input)
+		(at 57.15 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5e86f566-1c18-4d83-a5fc-57ba76a3b0d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.6581 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SYNC_PHASE2"
 		(shape input)
 		(at 140.335 63.5 180)
@@ -4714,7 +4720,7 @@
 	)
 	(global_label "+5V_Perif"
 		(shape input)
-		(at 41.275 139.7 180)
+		(at 41.91 135.255 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4724,7 +4730,7 @@
 		)
 		(uuid "ccaee8df-90c0-474f-b6f0-66f859f8e624")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.9764 139.7 0)
+			(at 29.6114 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4735,16 +4741,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 214.63 74.93 0)
+		(lib_id "Device:R_US")
+		(at 148.59 75.565 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c4c1c1c-01c0-4814-9d12-cbf0113223e8")
-		(property "Reference" "C41"
-			(at 216.535 72.39 0)
+		(uuid "0fe99ef9-33c0-417e-817d-fdc1d1b901a1")
+		(property "Reference" "R79"
+			(at 149.86 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,8 +4758,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 216.535 77.47 0)
+		(property "Value" "110k"
+			(at 149.86 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4761,8 +4767,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EPS:C0402"
-			(at 215.5952 78.74 0)
+		(property "Footprint" "EPS:R0402"
+			(at 149.606 75.819 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +4777,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 214.63 74.93 0)
+			(at 148.59 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,8 +4785,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 214.63 74.93 0)
+		(property "Description" "Resistor, US symbol"
+			(at 148.59 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C138065"
+			(at 148.59 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,15 +4804,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "2f8458ed-9302-4be3-ba14-4b9dafcf63c0")
+			(uuid "e5653283-64d6-4a0c-91b7-4423aa61144a")
 		)
 		(pin "1"
-			(uuid "cc5c07ce-a83c-4fa1-9fa7-ad7808a3a476")
+			(uuid "068d52f7-85c4-4366-bae6-a2ddc8f5dbba")
 		)
 		(instances
-			(project "EPS_Scales_RevC"
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C41")
+					(reference "R79")
 					(unit 1)
 				)
 			)
@@ -4871,283 +4886,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 201.295 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1247c62b-6436-41c5-975f-ccc428d18775")
-		(property "Reference" "C48"
-			(at 201.93 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47u"
-			(at 201.93 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:CAP-SMD_L7.3-W4.3-FD"
-			(at 202.2602 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.295 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 201.295 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f8b2337-8f11-4025-910a-fd75ee430c5b")
-		)
-		(pin "2"
-			(uuid "8aa39d6e-e16e-4f4c-8830-aa5786c9e462")
-		)
-		(instances
-			(project "EPS_Scales_RevD"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 145.415 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "155e076e-0848-4302-b5d5-4eb7179a1714")
-		(property "Reference" "R101"
-			(at 146.685 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2k"
-			(at 146.685 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 146.431 57.404 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 145.415 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 145.415 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3bece442-e0cb-485f-a278-26f11ebc8937")
-		)
-		(pin "2"
-			(uuid "085044a1-d2aa-4980-9005-d286e2f95117")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 97.79 54.61 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "197ff937-a45a-444d-806b-866afd6892f4")
-		(property "Reference" "R80"
-			(at 95.885 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 105.41 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 98.044 53.594 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 97.79 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a333095-57ea-46cd-a50d-383ce7625fcc")
-		)
-		(pin "2"
-			(uuid "c0cfc53e-cbd6-4617-855f-53a61eb56d94")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R80")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 267.335 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ab6647c-36b5-41d7-8866-74105c10f710")
-		(property "Reference" "C51"
-			(at 270.51 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 270.51 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:C0402"
-			(at 268.3002 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.335 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 267.335 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b692784-017c-4f48-ac17-33856dabacb9")
-		)
-		(pin "2"
-			(uuid "3b21de8f-1fd9-487e-bde5-7c6930d91692")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 106.045 85.09 0)
 		(unit 1)
@@ -5214,6 +4952,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 223.52 53.975 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a3ad3c1-4919-4712-bcf8-9e49eb9a3b5a")
+		(property "Reference" "C48"
+			(at 224.79 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 224.79 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 224.4852 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 223.52 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 226.06 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C85858"
+			(at 223.52 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "111381d1-16c3-4c03-b5e2-b1df4afd4077")
+		)
+		(pin "2"
+			(uuid "398e33c0-c891-4ce1-aea4-ab69b4d98b97")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 243.84 88.265 0)
 		(unit 1)
@@ -5273,145 +5097,6 @@
 			(project "EPS_Scales_RevD"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
 					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 50.8 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c1ce8c2-50ec-478f-987d-57e7e0fea7dc")
-		(property "Reference" "C38"
-			(at 54.61 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220n"
-			(at 54.61 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:C0402"
-			(at 51.7652 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "de51c963-cce8-4b89-8596-53fa3bf50568")
-		)
-		(pin "1"
-			(uuid "1ecad78b-e43d-4e3e-b962-de0ce78295b4")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 184.15 38.735 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ffd185b-2980-4c37-ba5e-3004c1cbf1bf")
-		(property "Reference" "C49"
-			(at 186.69 37.465 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10p"
-			(at 186.69 40.005 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:C0402"
-			(at 185.1152 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 184.15 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 184.15 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "45a9dca7-c243-4d28-8075-4186aac25123")
-		)
-		(pin "1"
-			(uuid "a2a222cb-b799-461b-ab26-47b0b7a2a15e")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C49")
 					(unit 1)
 				)
 			)
@@ -5485,34 +5170,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 137.795 76.2 0)
+		(lib_id "Device:R_US")
+		(at 97.79 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3a58ff28-0137-47bf-bb14-073d041bc195")
-		(property "Reference" "C39"
-			(at 140.335 74.93 0)
+		(uuid "3a67f9ff-b2b2-40e8-b500-9b728b6d35dc")
+		(property "Reference" "R78"
+			(at 93.345 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "2.2n"
-			(at 140.335 77.47 0)
+		(property "Value" "15k"
+			(at 101.6 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "EPS:C0402"
-			(at 138.7602 80.01 0)
+		(property "Footprint" "EPS:R0402"
+			(at 97.536 50.546 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5521,7 +5204,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.795 76.2 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5529,8 +5212,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 137.795 76.2 0)
+		(property "Description" "Resistor, US symbol"
+			(at 97.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114761"
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5539,15 +5231,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "47ee036a-e79e-4c18-ae18-1949fe1f3d2e")
+			(uuid "ed22e445-04a8-4b23-8ebe-ee8f79397941")
 		)
 		(pin "1"
-			(uuid "635e4c31-ed78-41b4-9913-4bfb854780fa")
+			(uuid "bdd855bc-bdb7-4850-aeec-bde7e3d24abd")
 		)
 		(instances
-			(project "EPS_Scales_RevC"
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C39")
+					(reference "R78")
 					(unit 1)
 				)
 			)
@@ -5615,6 +5307,168 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
 					(reference "TP37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 207.645 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cbb738b-8923-400a-ac8b-2cb2991f2c08")
+		(property "Reference" "C58"
+			(at 208.28 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47u"
+			(at 208.28 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:CAP-SMD_L7.3-W4.3-FD"
+			(at 208.6102 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.645 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 207.645 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+35v"
+			(at 210.185 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C87110"
+			(at 207.645 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c344c5ed-dd70-4181-8cb5-ea5aa6f8dc4b")
+		)
+		(pin "2"
+			(uuid "dd75e808-99e7-4989-a1d0-a9eced830fdc")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 47.625 64.135 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4538d999-e0a3-4da0-a5cc-16b79600ff92")
+		(property "Reference" "R72"
+			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15k"
+			(at 50.8 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:R0402"
+			(at 46.609 63.881 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 47.625 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 47.625 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114761"
+			(at 47.625 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "15f1b7a2-9af5-43b9-aca9-97ee5d71f839")
+		)
+		(pin "1"
+			(uuid "ddc4d03e-fdaa-4369-91b0-38184336b087")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "R72")
 					(unit 1)
 				)
 			)
@@ -5802,8 +5656,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 214.63 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e4e81f0-23c1-4550-9abe-74e9833e02ab")
+		(property "Reference" "C41"
+			(at 215.9 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 215.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 215.5952 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 217.17 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C85858"
+			(at 214.63 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baa74960-49c6-4e0b-b386-bda3087e9b81")
+		)
+		(pin "2"
+			(uuid "1e47873e-6734-4c73-a3c6-2f30bc6812e0")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 60.325 143.51 270)
+		(at 60.96 139.065 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5812,7 +5752,7 @@
 		(fields_autoplaced yes)
 		(uuid "5916a9c9-c8b1-4af6-b67e-a8cd1ec250d3")
 		(property "Reference" "TP18"
-			(at 65.405 142.2399 90)
+			(at 66.04 137.7949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5821,7 +5761,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 65.405 144.7799 90)
+			(at 66.04 140.3349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5831,7 +5771,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 60.325 148.59 0)
+			(at 60.96 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5840,7 +5780,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.325 148.59 0)
+			(at 60.96 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5849,7 +5789,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 60.325 143.51 0)
+			(at 60.96 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5870,16 +5810,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 33.02 64.135 0)
+		(lib_id "Device:C")
+		(at 201.295 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5c570643-a647-45f1-944c-8ec37729cc39")
-		(property "Reference" "R72"
-			(at 34.29 62.865 0)
+		(uuid "59d48c53-202b-41eb-9486-bc88dbe9dac2")
+		(property "Reference" "C57"
+			(at 201.93 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5887,8 +5827,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15k"
-			(at 34.29 65.405 0)
+		(property "Value" "47u"
+			(at 201.93 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,8 +5836,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EPS:R0402"
-			(at 34.036 64.389 90)
+		(property "Footprint" "EPS:CAP-SMD_L7.3-W4.3-FD"
+			(at 202.2602 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5906,7 +5846,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 64.135 0)
+			(at 201.295 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5914,8 +5854,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 33.02 64.135 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 201.295 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+35v"
+			(at 203.835 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C87110"
+			(at 201.295 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5924,15 +5881,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2dd49e64-b112-4eea-84ab-affde7f5bec9")
+			(uuid "dda4de68-415b-45d3-824a-883d5ce3c415")
 		)
 		(pin "2"
-			(uuid "c9ac2d57-1d6d-499e-b288-e025ce4bda23")
+			(uuid "2bf69419-4da1-4d06-a5d5-9a33c3d92a7c")
 		)
 		(instances
-			(project "EPS_Scales_RevD"
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R72")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -6058,6 +6015,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25766"
+			(at 193.04 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6c3adea0-b88c-4089-b8eb-214464d27910")
 		)
@@ -6127,6 +6093,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C477765"
+			(at 193.04 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "93f91e3e-57bc-45ba-9af1-66ee3c157aac")
 		)
@@ -6143,35 +6118,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 111.76 48.26 0)
+		(lib_id "Device:R_US")
+		(at 40.005 64.135 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63c82916-f1ef-4a9d-9b8d-c44d4cf9cf24")
-		(property "Reference" "C36"
-			(at 115.57 46.9899 0)
+		(uuid "63772b55-b768-40a1-8809-57192902fb8a")
+		(property "Reference" "R75"
+			(at 43.18 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "22n"
-			(at 115.57 49.5299 0)
+		(property "Value" "1k"
+			(at 42.545 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "EPS:C0402"
-			(at 112.7252 52.07 0)
+		(property "Footprint" "EPS:R0402"
+			(at 38.989 63.881 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6152,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 48.26 0)
+			(at 40.005 64.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6188,8 +6160,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 111.76 48.26 0)
+		(property "Description" "Resistor, US symbol"
+			(at 40.005 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106235"
+			(at 40.005 64.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6198,15 +6179,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "ba761eb9-28f6-4af8-9096-98f16497bbb5")
+			(uuid "ebe30b1d-b635-4718-86b1-f54c9cc320f5")
 		)
 		(pin "1"
-			(uuid "17b0f6bb-1dc0-45f2-9290-6425e8fb8f3f")
+			(uuid "24463074-d678-4568-bf7d-ffb500eb21a5")
 		)
 		(instances
-			(project ""
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C36")
+					(reference "R75")
 					(unit 1)
 				)
 			)
@@ -6214,7 +6195,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 55.245 74.295 90)
+		(at 57.15 74.295 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6223,25 +6204,25 @@
 		(fields_autoplaced yes)
 		(uuid "6997b364-73cd-4744-9fb2-89d525bc140b")
 		(property "Reference" "D9"
-			(at 58.42 74.6124 90)
+			(at 60.325 71.4374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "LED"
-			(at 58.42 77.1524 90)
+			(at 60.325 73.9774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EPS:LED0603-RD_RED"
-			(at 55.245 74.295 0)
+			(at 57.15 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +6231,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.245 74.295 0)
+			(at 57.15 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6259,7 +6240,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 55.245 74.295 0)
+			(at 57.15 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +6249,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 55.245 74.295 0)
+			(at 57.15 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6398,85 +6379,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 40.005 64.135 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73271de0-ea9c-49cf-a066-81410bf35caf")
-		(property "Reference" "R75"
-			(at 41.91 62.8649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 41.91 65.4049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 41.021 64.389 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.005 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 40.005 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df9ba978-d84c-42f9-8143-928b5f01a289")
-		)
-		(pin "2"
-			(uuid "1bbb9b9d-fd22-40d7-8fc5-84da4381460f")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R75")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 207.645 74.93 0)
+		(at 182.245 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7b90169c-2888-4578-aa93-781c75fc750b")
-		(property "Reference" "C53"
-			(at 208.28 72.39 0)
+		(uuid "6b6e8dc7-15b6-40b9-af32-b6e21cc4bcf3")
+		(property "Reference" "C40"
+			(at 184.785 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6484,8 +6396,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
-			(at 208.28 77.47 0)
+		(property "Value" "100n"
+			(at 184.785 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6493,8 +6405,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EPS:CAP-SMD_L7.3-W4.3-FD"
-			(at 208.6102 78.74 0)
+		(property "Footprint" "EPS:C0402"
+			(at 183.2102 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6503,7 +6415,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.645 74.93 0)
+			(at 182.245 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6512,7 +6424,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 207.645 74.93 0)
+			(at 182.245 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 184.785 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C85858"
+			(at 182.245 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,15 +6450,101 @@
 			)
 		)
 		(pin "1"
-			(uuid "818ec879-e29c-41a4-acf3-cc218f61b250")
+			(uuid "3f5a2d91-4176-4a32-abe2-2d041f412716")
 		)
 		(pin "2"
-			(uuid "f959beb6-7d82-46c2-8571-6637c86a77d8")
+			(uuid "9ba142cb-2f82-44ee-8106-8b188a6c658c")
 		)
 		(instances
-			(project "EPS_Scales_RevD"
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C53")
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 267.335 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c0eeccc-c61e-439e-afc8-d337533dcc55")
+		(property "Reference" "C49"
+			(at 268.605 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 268.605 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 268.3002 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.335 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 267.335 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 269.875 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C85858"
+			(at 267.335 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc6e3d26-aca3-447e-b58a-445a054a2d9c")
+		)
+		(pin "2"
+			(uuid "aeacc06d-de17-472f-8ba1-e76030025bd0")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C49")
 					(unit 1)
 				)
 			)
@@ -6604,15 +6619,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 34.925 44.45 90)
+		(at 97.79 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "83baa015-ddb0-4b17-9883-fe93cd794d77")
-		(property "Reference" "R82"
-			(at 34.925 41.91 90)
+		(uuid "8141cf1b-5593-4491-b152-9728b218fe88")
+		(property "Reference" "R76"
+			(at 93.345 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6620,7 +6635,7 @@
 			)
 		)
 		(property "Value" "15k"
-			(at 39.37 43.18 90)
+			(at 101.6 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6628,7 +6643,83 @@
 			)
 		)
 		(property "Footprint" "EPS:R0402"
-			(at 35.179 43.434 90)
+			(at 97.536 53.086 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 97.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114761"
+			(at 97.79 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5448937-10dd-47b0-8dc0-034325e0a250")
+		)
+		(pin "1"
+			(uuid "e2e2091d-8940-4b9c-b9c8-bc865195c61c")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "R76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 34.925 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "852d2dce-2fd0-4294-8e5e-fd55ecbf9531")
+		(property "Reference" "R73"
+			(at 35.56 40.005 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15k"
+			(at 35.56 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:R0402"
+			(at 34.671 45.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6654,16 +6745,25 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C114761"
+			(at 34.925 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "d2e7a738-6c08-4f78-9a93-d1c9c5b3363f")
+			(uuid "39102b5b-9fd2-41d6-847f-a9d84606d41a")
 		)
 		(pin "1"
-			(uuid "d7ac9b6a-01f0-45cb-9e88-417d9aa4aafa")
+			(uuid "a67702c9-c5bb-4f90-b69a-5c729b8a310c")
 		)
 		(instances
-			(project ""
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R82")
+					(reference "R73")
 					(unit 1)
 				)
 			)
@@ -6774,7 +6874,7 @@
 	)
 	(symbol
 		(lib_id "EPS:DF11-16DP-2DSA(08)")
-		(at 52.705 144.78 0)
+		(at 53.34 140.335 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6782,7 +6882,7 @@
 		(dnp no)
 		(uuid "896ad3ee-410b-4f64-8082-5473fd03b074")
 		(property "Reference" "CN1"
-			(at 52.705 157.48 0)
+			(at 53.34 153.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6790,7 +6890,7 @@
 			)
 		)
 		(property "Value" "DF11-16DP-2DSA(08)"
-			(at 52.705 160.02 0)
+			(at 53.34 155.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6798,7 +6898,7 @@
 			)
 		)
 		(property "Footprint" "EPS:CONN-TH_DF11-16DP-2DSA-08"
-			(at 52.705 161.29 0)
+			(at 53.34 156.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6807,7 +6907,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
-			(at 52.705 163.83 0)
+			(at 53.34 159.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6816,7 +6916,7 @@
 			)
 		)
 		(property "Description" "Hirose 2x8 Connector, Drop in replacement for Gecko"
-			(at 52.705 144.78 0)
+			(at 53.34 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6825,7 +6925,7 @@
 			)
 		)
 		(property "LCSC Part" "C530981"
-			(at 52.705 166.37 0)
+			(at 53.34 161.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6892,7 +6992,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.735 151.765 0)
+		(at 39.37 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6901,7 +7001,7 @@
 		(fields_autoplaced yes)
 		(uuid "9510f088-82cf-4487-a645-4adb61fb6233")
 		(property "Reference" "#PWR056"
-			(at 38.735 158.115 0)
+			(at 39.37 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6910,7 +7010,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.735 156.21 0)
+			(at 39.37 151.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6918,7 +7018,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.735 151.765 0)
+			(at 39.37 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6927,7 +7027,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.735 151.765 0)
+			(at 39.37 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6936,7 +7036,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.735 151.765 0)
+			(at 39.37 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7023,15 +7123,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 182.245 64.77 0)
+		(at 111.76 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a0bc5b03-3e1b-4868-a910-86abfb35538e")
-		(property "Reference" "C40"
-			(at 184.785 63.5 0)
+		(uuid "9fe814b5-f2d8-4a73-9f62-4e072df67317")
+		(property "Reference" "C36"
+			(at 115.57 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7039,8 +7139,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 184.785 66.04 0)
+		(property "Value" "22n"
+			(at 115.57 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7049,7 +7149,7 @@
 			)
 		)
 		(property "Footprint" "EPS:C0402"
-			(at 183.2102 68.58 0)
+			(at 112.7252 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7058,7 +7158,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.245 64.77 0)
+			(at 111.76 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7067,7 +7167,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 182.245 64.77 0)
+			(at 111.76 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 114.3 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C77023"
+			(at 111.76 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7076,15 +7193,101 @@
 			)
 		)
 		(pin "2"
-			(uuid "686ec81e-3a94-417b-9c31-10111bb9580d")
+			(uuid "b43b112d-c77c-417c-a720-49b776a5fbd3")
 		)
 		(pin "1"
-			(uuid "2e7990c7-4ecb-4f44-90f2-4069e23507d6")
+			(uuid "d35ccc3a-68d9-4090-a095-cbc7669b69ef")
 		)
 		(instances
-			(project "EPS_Scales_RevC"
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C40")
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 184.15 38.735 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1764b57-ffd0-41f7-964b-d0a373696fcb")
+		(property "Reference" "C39"
+			(at 186.69 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10p"
+			(at 186.69 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 185.1152 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 184.15 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 186.69 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1545"
+			(at 184.15 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "538d2ddc-a5be-4798-848e-8fd1b1720664")
+		)
+		(pin "2"
+			(uuid "4ef7e3a7-abeb-475d-8fab-f36e0f28da7b")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -7159,7 +7362,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 60.325 146.05 270)
+		(at 60.96 141.605 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7168,7 +7371,7 @@
 		(fields_autoplaced yes)
 		(uuid "a415ce25-28e6-4218-9a38-a24b39856a66")
 		(property "Reference" "TP19"
-			(at 65.405 144.7799 90)
+			(at 66.04 140.3349 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7177,7 +7380,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 65.405 147.3199 90)
+			(at 66.04 142.8749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7187,7 +7390,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 60.325 151.13 0)
+			(at 60.96 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7196,7 +7399,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.325 151.13 0)
+			(at 60.96 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7205,7 +7408,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 60.325 146.05 0)
+			(at 60.96 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7227,7 +7430,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 60.325 140.97 270)
+		(at 60.96 136.525 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7236,7 +7439,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab64f3b4-2905-4dcf-b90e-2338993ed141")
 		(property "Reference" "TP17"
-			(at 65.405 139.6999 90)
+			(at 66.04 135.2549 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7245,7 +7448,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 65.405 142.2399 90)
+			(at 66.04 137.7949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7255,7 +7458,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 60.325 146.05 0)
+			(at 60.96 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7264,7 +7467,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.325 146.05 0)
+			(at 60.96 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7273,7 +7476,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 60.325 140.97 0)
+			(at 60.96 136.525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7288,6 +7491,92 @@
 			(project "EPS_Scales_RevC"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
 					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 137.795 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae66f402-3aa0-49c4-9087-85259c14b1d1")
+		(property "Reference" "C38"
+			(at 140.335 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 140.335 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 138.7602 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.795 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 137.795 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12530"
+			(at 137.795 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+6.3v"
+			(at 140.97 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9217055-8d14-431e-959e-278045585063")
+		)
+		(pin "2"
+			(uuid "b111321a-0993-4ab6-835f-1f1ea15c85f6")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -7360,215 +7649,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 47.625 64.135 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b6c351a6-6fde-41bb-82b8-96a98663bf16")
-		(property "Reference" "R76"
-			(at 49.53 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 49.53 65.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 48.641 64.389 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 47.625 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 47.625 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c28b9aa-b0d6-4cd4-8256-eecd53f05fe5")
-		)
-		(pin "2"
-			(uuid "8c65dd8a-8265-411f-be8c-afc85edf606a")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R76")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 55.245 64.135 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b823e136-f42c-4334-9269-d0f7a10d7a5c")
-		(property "Reference" "R77"
-			(at 57.15 62.8649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220"
-			(at 57.15 65.4049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 56.261 64.389 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.245 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 55.245 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "009f737a-a808-4c70-b4f3-e589cbafbaf5")
-		)
-		(pin "2"
-			(uuid "1c180559-a86b-4ca5-bc17-fb772edbe641")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R77")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 97.79 49.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bc8e6db5-1256-4ba0-bffe-32108f1fbfc7")
-		(property "Reference" "R81"
-			(at 95.885 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 105.41 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 98.044 48.514 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 97.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed6de6ec-5689-43f2-abd8-e173a23b0dd5")
-		)
-		(pin "2"
-			(uuid "867ff7cf-2bd9-4e13-88a2-f8526db62240")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 60.325 148.59 270)
+		(at 60.96 144.145 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7577,7 +7659,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfc2f088-23d8-40ed-9afa-ae46939bd4dc")
 		(property "Reference" "TP20"
-			(at 65.405 147.3199 90)
+			(at 66.04 142.8749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7586,7 +7668,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 65.405 149.8599 90)
+			(at 66.04 145.4149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,7 +7678,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 60.325 153.67 0)
+			(at 60.96 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7605,7 +7687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.325 153.67 0)
+			(at 60.96 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7614,7 +7696,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 60.325 148.59 0)
+			(at 60.96 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7701,15 +7783,552 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 97.79 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3cfac40-89f9-443a-a1f1-8e6db8d0fa12")
+		(property "Reference" "R74"
+			(at 93.345 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15k"
+			(at 101.6 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:R0402"
+			(at 97.536 55.626 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 97.79 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114761"
+			(at 97.79 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3bfb8506-8ce9-4876-a329-3ce125548f55")
+		)
+		(pin "1"
+			(uuid "e20a0fc8-e5fd-4e5b-9da8-dc305f307a5d")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "R74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 193.04 68.58 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb8ad713-e605-4aab-94b6-a7500307edcb")
+		(property "Reference" "L3"
+			(at 193.04 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "9.1u"
+			(at 193.04 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:IND-SMD_L6.0-W6.0_ASPI-6045S"
+			(at 193.04 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2410121605_Abracon-LLC-ASPI-6045S-9R1M-T_C187449.pdf"
+			(at 193.04 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 193.04 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C187449"
+			(at 193.04 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "834e4434-d6d3-43d8-80a2-2742a6d0fadc")
+		)
+		(pin "2"
+			(uuid "85ef9fa6-6dcd-4172-9afb-3430969caba1")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 145.415 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7199d7f-59b2-4d0c-89db-7bc4029a6fe7")
+		(property "Reference" "R80"
+			(at 146.685 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k"
+			(at 146.685 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:R0402"
+			(at 146.431 57.404 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 145.415 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 145.415 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C60488"
+			(at 145.415 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "01507444-4477-4cf6-afc1-118bfe752865")
+		)
+		(pin "1"
+			(uuid "b9bd18ae-ddfc-4a18-a817-1d00c2f10ffb")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "R80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 33.02 64.77 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e02ee667-1cd8-4539-abf4-137c0c8bd2e3")
+		(property "Reference" "R48"
+			(at 36.195 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15k"
+			(at 36.195 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:R0402"
+			(at 32.004 64.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 33.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114761"
+			(at 33.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9e804141-b4c4-4c95-bccf-232f8d31ff08")
+		)
+		(pin "1"
+			(uuid "ae7119ad-ca6d-4799-917c-9331a2452948")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 57.15 64.135 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7f3217f-bef1-49dd-9a29-58e195cb3890")
+		(property "Reference" "R77"
+			(at 60.325 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 59.69 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EPS:R0402"
+			(at 56.134 63.881 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 57.15 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106235"
+			(at 57.15 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a8e050f-0ec2-46bf-a1b2-8a834caddc4a")
+		)
+		(pin "1"
+			(uuid "ff245df3-c9e5-4787-8560-5840ba207f09")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 133.985 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edd73d9a-78e1-4087-a83b-713928676e7e")
+		(property "Reference" "TP16"
+			(at 66.04 132.7149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 66.04 135.2549 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 60.96 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 60.96 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7365ed3e-1554-4404-b06b-6b35d37aec2b")
+		)
+		(instances
+			(project ""
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 50.8 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f20a5cf3-56b7-483e-8764-b3690d097620")
+		(property "Reference" "C35"
+			(at 53.34 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220n"
+			(at 53.34 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 51.7652 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+50v"
+			(at 53.34 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5159775"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "481efda0-6ac4-412d-81f5-bf0c8c7bdf24")
+		)
+		(pin "2"
+			(uuid "2b23209a-54d9-4409-9017-d9697201ea5e")
+		)
+		(instances
+			(project "EPS_Scales_RevE"
+				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 145.415 48.895 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c4bae21b-9866-491d-a7c2-fb980b02ce9c")
-		(property "Reference" "R83"
-			(at 146.685 48.26 0)
+		(uuid "f32e63d8-f001-4363-b777-0537780c9985")
+		(property "Reference" "R81"
+			(at 146.685 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7753,283 +8372,8 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "cde37dd4-2c08-40f4-b337-2ecea6e7d035")
-		)
-		(pin "2"
-			(uuid "329c0816-2ca4-4112-80b0-8a02f2376e92")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 97.79 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c71c68a4-298e-4b17-9e8c-61240d1ce106")
-		(property "Reference" "R79"
-			(at 95.885 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 105.41 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 98.044 51.054 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 97.79 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03e7d1d0-abc5-4f2e-baba-eec41885933e")
-		)
-		(pin "2"
-			(uuid "4fb11991-2228-49f4-9c97-133c0371f125")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 193.04 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb8ad713-e605-4aab-94b6-a7500307edcb")
-		(property "Reference" "L3"
-			(at 193.04 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "12u"
-			(at 193.04 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EPS:IND-SMD_L13.5-W12.6"
-			(at 193.04 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 193.04 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5339468"
-			(at 193.04 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "834e4434-d6d3-43d8-80a2-2742a6d0fadc")
-		)
-		(pin "2"
-			(uuid "85ef9fa6-6dcd-4172-9afb-3430969caba1")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 148.59 75.565 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cccb3111-64c5-46f3-9746-1fde298dcf9c")
-		(property "Reference" "R102"
-			(at 149.86 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "110k"
-			(at 149.86 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 149.606 75.819 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 148.59 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6d320ad3-7c5d-4cf7-ba60-3d51d5076440")
-		)
-		(pin "2"
-			(uuid "a42abd54-971f-496d-811e-b2f1acbcdceb")
-		)
-		(instances
-			(project "EPS_Scales_RevC"
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "R102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 223.52 53.975 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d7507d6e-e74d-4f55-b7bb-285deaabb7c9")
-		(property "Reference" "C50"
-			(at 226.06 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 226.06 55.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:C0402"
-			(at 224.4852 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 223.52 53.975 0)
+		(property "LCSC" "C93943"
+			(at 145.415 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8038,15 +8382,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "78d94f75-f85a-4845-ba3d-e400978856a7")
+			(uuid "2252ea63-84e9-4a27-9438-ed46c6547dbb")
 		)
 		(pin "1"
-			(uuid "52fab54a-c997-4ed0-9c3e-99c1e39d4304")
+			(uuid "1313d37f-11df-4496-b950-eadeb3099618")
 		)
 		(instances
-			(project "EPS_Scales_RevC"
+			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "C50")
+					(reference "R81")
 					(unit 1)
 				)
 			)
@@ -8054,75 +8398,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 60.325 138.43 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edd73d9a-78e1-4087-a83b-713928676e7e")
-		(property "Reference" "TP16"
-			(at 65.405 137.1599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 65.405 139.6999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 60.325 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.325 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 60.325 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7365ed3e-1554-4404-b06b-6b35d37aec2b")
-		)
-		(instances
-			(project ""
-				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(reference "TP16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 60.325 151.13 270)
+		(at 60.96 146.685 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8131,7 +8407,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc82f173-d1c4-4c53-a8e6-fd9b4ce15172")
 		(property "Reference" "TP21"
-			(at 65.405 149.8599 90)
+			(at 66.04 145.4149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8140,7 +8416,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 65.405 152.3999 90)
+			(at 66.04 147.9549 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8150,7 +8426,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 60.325 156.21 0)
+			(at 60.96 151.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8159,7 +8435,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.325 156.21 0)
+			(at 60.96 151.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8168,7 +8444,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 60.325 151.13 0)
+			(at 60.96 146.685 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8225,7 +8501,7 @@
 		(instances
 			(project "EPS_Scales_RevE"
 				(path "/f3bdc9b1-4369-4cfa-b765-d952bf408a7b/364fa580-df87-4e65-a29c-42f81b57f892"
-					(page "7")
+					(page "5")
 				)
 			)
 		)
