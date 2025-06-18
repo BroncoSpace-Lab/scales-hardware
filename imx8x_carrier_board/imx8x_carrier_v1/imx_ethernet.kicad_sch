@@ -5120,6 +5120,12 @@
 		(uuid "0599e545-9537-4ff9-aba1-35b9a13b77b6")
 	)
 	(junction
+		(at 374.65 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05c1bb31-5d5f-4e48-b3b1-6454c0e198dc")
+	)
+	(junction
 		(at 307.34 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5304,12 +5310,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4255ccf4-8287-482e-9fb3-cf41c9df1861")
-	)
-	(junction
-		(at 372.745 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43900565-95d6-4131-bcf7-e11151b62dec")
 	)
 	(junction
 		(at 163.83 113.03)
@@ -5997,7 +5997,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.745 83.185) (xy 372.745 82.55)
+			(xy 374.65 83.82) (xy 374.65 82.55)
 		)
 		(stroke
 			(width 0)
@@ -6614,16 +6614,6 @@
 			(type default)
 		)
 		(uuid "2d2bb8e9-1a6c-44e1-96a8-36894c18b685")
-	)
-	(wire
-		(pts
-			(xy 372.745 88.9) (xy 372.745 88.265)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e028f92-0269-429e-a612-8247293f3ddf")
 	)
 	(wire
 		(pts
@@ -8477,6 +8467,16 @@
 	)
 	(wire
 		(pts
+			(xy 374.65 78.74) (xy 374.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a24376f9-105f-4d76-a0d6-2289f09edfcc")
+	)
+	(wire
+		(pts
 			(xy 144.78 104.14) (xy 144.78 102.87)
 		)
 		(stroke
@@ -8777,7 +8777,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.745 88.9) (xy 363.22 88.9)
+			(xy 374.65 88.9) (xy 363.22 88.9)
 		)
 		(stroke
 			(width 0)
@@ -9407,7 +9407,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.745 82.55) (xy 360.045 82.55)
+			(xy 360.045 82.55) (xy 374.65 82.55)
 		)
 		(stroke
 			(width 0)
@@ -10354,6 +10354,26 @@
 			(justify right bottom)
 		)
 		(uuid "465540eb-534f-4e03-b89b-b6f5bd4cedd5")
+	)
+	(label "Ethernet 2V5"
+		(at 372.11 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9cd2b5c7-c3a4-4496-8fc1-c0e07728c622")
+	)
+	(label "Ethernet 1V0"
+		(at 360.68 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce6d5278-a6ee-442f-ada7-84a4982fe050")
 	)
 	(label "ETH1_LED1"
 		(at 248.285 191.135 0)
@@ -18968,7 +18988,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 372.745 85.725 0)
+		(at 374.65 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18976,7 +18996,7 @@
 		(dnp no)
 		(uuid "c4010ab2-469d-4371-ba3e-127e5c6435e7")
 		(property "Reference" "C55"
-			(at 375.285 84.4613 0)
+			(at 377.19 85.0963 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18985,7 +19005,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 375.285 87.0013 0)
+			(at 377.19 87.6363 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18994,7 +19014,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 372.745 85.725 0)
+			(at 374.65 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19003,7 +19023,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 372.745 85.725 0)
+			(at 374.65 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19012,7 +19032,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 372.745 85.725 0)
+			(at 374.65 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19020,7 +19040,7 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 376.555 89.535 0)
+			(at 378.46 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19610,7 +19630,7 @@
 	)
 	(symbol
 		(lib_id "imx8x_kicad_library:VDD_ETH_1V0")
-		(at 372.745 82.55 0)
+		(at 374.65 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19619,7 +19639,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce8aa5f6-9a6c-4f24-bbeb-6ab80b8b31c5")
 		(property "Reference" "#PWR0120"
-			(at 372.745 86.36 0)
+			(at 374.65 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19628,7 +19648,7 @@
 			)
 		)
 		(property "Value" "VDD_ETH_1V0"
-			(at 375.285 81.2799 0)
+			(at 377.19 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19637,7 +19657,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 372.745 82.55 0)
+			(at 374.65 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19646,7 +19666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 372.745 82.55 0)
+			(at 374.65 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19655,7 +19675,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 372.745 82.55 0)
+			(at 374.65 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
