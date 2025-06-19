@@ -841,34 +841,45 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EPS:1N4151WS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "EPS:1N4448WS-7-F"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "1N4151WS"
-				(at 0 -2.54 0)
+			(property "Value" "1N4448WS-7-F"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "EPS:SOD2512X116N"
+			(property "Footprint" "EPS:SOD-323_L1.8-W1.3-LS2.5-RD"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Others_Diodes-Incorporated_1N4448WS-7-F_Diodes-Incorporated-1N4448WS-7-F_C260859.html"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -877,8 +888,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
-				(at 0 0 0)
+			(property "LCSC Part" "C260859"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -886,88 +897,10 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C2979762"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4151WS_0_1"
+			(symbol "1N4448WS-7-F_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.27 -2.03) (xy -1.27 2.03)
 					)
 					(stroke
 						(width 0)
@@ -977,12 +910,22 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "1N4151WS_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
+				(polyline
+					(pts
+						(xy 1.27 1.52) (xy -1.27 0) (xy 1.27 -1.78) (xy 1.27 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -997,9 +940,9 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 3.81)
 					(name "A"
 						(effects
 							(font
@@ -2649,6 +2592,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.355 30.48) (xy 46.355 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04cfd313-e8fa-48e6-b0e1-8bfada342241")
+	)
+	(wire
+		(pts
 			(xy 243.205 48.26) (xy 243.205 62.865)
 		)
 		(stroke
@@ -2799,26 +2752,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.355 30.48) (xy 46.355 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27ce2b6e-e28d-4dfb-8321-e7ea2967ce4e")
-	)
-	(wire
-		(pts
-			(xy 46.355 43.18) (xy 46.355 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ce1f368-b9fb-4d09-887c-c6a05cb9177f")
-	)
-	(wire
-		(pts
 			(xy 240.665 48.26) (xy 243.205 48.26)
 		)
 		(stroke
@@ -2886,16 +2819,6 @@
 			(type default)
 		)
 		(uuid "4f748e06-1247-4b60-947a-fd6f40968a4c")
-	)
-	(wire
-		(pts
-			(xy 192.405 132.715) (xy 193.675 132.715)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f87bf43-b373-4554-90e0-c3a25103025d")
 	)
 	(wire
 		(pts
@@ -3489,16 +3412,6 @@
 	)
 	(wire
 		(pts
-			(xy 183.515 132.715) (xy 184.785 132.715)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6d411ae-eaac-46ca-9484-36af3267331c")
-	)
-	(wire
-		(pts
 			(xy 92.075 115.57) (xy 92.075 114.935)
 		)
 		(stroke
@@ -3708,7 +3621,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EPS:1N4151WS")
+		(lib_id "EPS:1N4448WS-7-F")
 		(at 188.595 132.715 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3724,16 +3637,16 @@
 				)
 			)
 		)
-		(property "Value" "1N4151WS"
-			(at 187.96 129.54 0)
+		(property "Value" "1N4448WS-7-F"
+			(at 188.595 127.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "EPS:SOD2512X116N"
-			(at 188.595 132.715 0)
+		(property "Footprint" "EPS:SOD-323_L1.8-W1.3-LS2.5-RD"
+			(at 188.595 125.095 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3741,8 +3654,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
-			(at 188.595 132.715 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_Diodes-Incorporated_1N4448WS-7-F_Diodes-Incorporated-1N4448WS-7-F_C260859.html"
+			(at 188.595 122.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,6 +3728,15 @@
 		)
 		(property "LCSC" "C2979762"
 			(at 188.595 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C260859"
+			(at 188.595 120.015 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7245,7 +7167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EPS:1N4151WS")
+		(lib_id "EPS:1N4448WS-7-F")
 		(at 46.355 39.37 270)
 		(mirror x)
 		(unit 1)
@@ -7263,17 +7185,16 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N4151WS"
-			(at 48.895 37.465 90)
+		(property "Value" "1N4448WS-7-F"
+			(at 41.275 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "EPS:SOD2512X116N"
-			(at 46.355 39.37 0)
+		(property "Footprint" "EPS:SOD-323_L1.8-W1.3-LS2.5-RD"
+			(at 38.735 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7281,8 +7202,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85412/1n4151wsg.pdf"
-			(at 46.355 39.37 0)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_Diodes-Incorporated_1N4448WS-7-F_Diodes-Incorporated-1N4448WS-7-F_C260859.html"
+			(at 36.195 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7355,6 +7276,15 @@
 		)
 		(property "LCSC" "C2979762"
 			(at 46.355 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C260859"
+			(at 33.655 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
