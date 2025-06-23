@@ -1125,6 +1125,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "imx8_carrier_board_symbol_library:VCC_3V3_OUT"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC_3V3_OUT"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_3V3_OUT_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_3V3_OUT_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "imx8x_kicad_library:VCC_3V3"
 			(power)
 			(pin_names
@@ -1846,16 +1971,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 65.405) (xy 49.53 64.135)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3163d6a0-aafa-4fe6-a223-a08d10b527c0")
-	)
-	(wire
-		(pts
 			(xy 163.83 43.18) (xy 163.83 69.85)
 		)
 		(stroke
@@ -2136,6 +2251,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 64.135) (xy 49.53 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7952ac7f-bcad-43bf-981b-8668b62453c4")
+	)
+	(wire
+		(pts
 			(xy 133.35 52.07) (xy 175.26 52.07)
 		)
 		(stroke
@@ -2263,16 +2388,6 @@
 			(type default)
 		)
 		(uuid "973ac586-d5f1-4641-a048-620d42cb0446")
-	)
-	(wire
-		(pts
-			(xy 186.69 24.13) (xy 186.69 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9905c0e7-80fc-44b2-bd68-37042745f239")
 	)
 	(wire
 		(pts
@@ -2426,13 +2541,13 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 24.13) (xy 185.42 24.13)
+			(xy 186.69 27.305) (xy 186.69 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c71bcbe9-60c8-40b7-bbf0-b86a312b09ff")
+		(uuid "c6177ede-cb2b-4da4-9bd2-0233a28c66c4")
 	)
 	(wire
 		(pts
@@ -2661,28 +2776,6 @@
 		(uuid "46210720-99d1-46a9-8099-b53e38d61e8d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.8417 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SD1_SPWR"
-		(shape input)
-		(at 185.42 24.13 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "590c5cef-c069-440c-823f-9b917e37c867")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.5773 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3637,6 +3730,136 @@
 		)
 	)
 	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
+		(at 49.53 64.135 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "599f19c2-f6db-4323-bb4a-8341be7b0ee2")
+		(property "Reference" "#PWR094"
+			(at 49.53 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_3V3_OUT"
+			(at 49.53 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 49.53 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "912efd88-6c66-48fb-8af7-cd8c80a510e8")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3")
+		(at 186.69 27.305 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "613ca09a-d9b7-40cc-a030-4d67b9247fe4")
+		(property "Reference" "#PWR0115"
+			(at 186.69 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_3V3"
+			(at 186.69 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 186.69 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30a7478c-2242-4f43-a2e0-32685e0caccf")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 156.21 44.45 0)
 		(unit 1)
@@ -4184,71 +4407,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31"
 					(reference "R83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3")
-		(at 49.53 64.135 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d346ecf-38ab-414b-8cc5-fbf6ff0f40b7")
-		(property "Reference" "#PWR115"
-			(at 49.53 67.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "3V3"
-			(at 49.53 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 49.53 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50704778-cd70-4056-b99c-c76f223237d6")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31"
-					(reference "#PWR115")
 					(unit 1)
 				)
 			)

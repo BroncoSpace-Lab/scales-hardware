@@ -794,33 +794,31 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L_Small"
+		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "L"
-				(at 0.762 1.016 0)
+				(at -1.27 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "L_Small"
-				(at 0.762 -1.016 0)
+			(property "Value" "L"
+				(at 1.905 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -841,7 +839,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Inductor, small symbol"
+			(property "Description" "Inductor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -868,11 +866,11 @@
 					(hide yes)
 				)
 			)
-			(symbol "L_Small_0_1"
+			(symbol "L_0_1"
 				(arc
-					(start 0 2.032)
-					(mid 0.5058 1.524)
-					(end 0 1.016)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -882,8 +880,8 @@
 					)
 				)
 				(arc
-					(start 0 1.016)
-					(mid 0.5058 0.508)
+					(start 0 1.27)
+					(mid 0.6323 0.635)
 					(end 0 0)
 					(stroke
 						(width 0)
@@ -895,8 +893,8 @@
 				)
 				(arc
 					(start 0 0)
-					(mid 0.5058 -0.508)
-					(end 0 -1.016)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -906,9 +904,9 @@
 					)
 				)
 				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -1.524)
-					(end 0 -2.032)
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -918,11 +916,11 @@
 					)
 				)
 			)
-			(symbol "L_Small_1_1"
+			(symbol "L_1_1"
 				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name "~"
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -938,9 +936,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
-					(name "~"
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1322,6 +1320,131 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "imx8_carrier_board_symbol_library:3V3_FTDI"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "3V3_FTDI"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "3V3_FTDI_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "3V3_FTDI_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4448,128 +4571,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "imx8x_kicad_library:VCC_3V3"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_3V3_1_1"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "VCC_3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -4871,7 +4872,7 @@
 	)
 	(rectangle
 		(start 14.605 34.29)
-		(end 126.365 76.2)
+		(end 127 76.2)
 		(stroke
 			(width 0)
 			(type default)
@@ -4882,8 +4883,8 @@
 		(uuid 94c5275f-171a-425d-9abe-b664b0679429)
 	)
 	(rectangle
-		(start 179.705 40.005)
-		(end 215.9 70.485)
+		(start 167.005 34.29)
+		(end 203.2 64.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -4906,8 +4907,8 @@
 		(uuid df34e047-3be4-46cd-9a8c-6aed031e2d6d)
 	)
 	(rectangle
-		(start 141.605 40.005)
-		(end 177.8 70.485)
+		(start 128.905 34.29)
+		(end 165.1 64.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -4945,7 +4946,7 @@
 	)
 	(text "Think there needs to be 22 resitors for the tx and rx\n"
 		(exclude_from_sim no)
-		(at 174.625 38.1 0)
+		(at 161.925 32.385 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4955,7 +4956,7 @@
 	)
 	(text "UART1 Pin Headers"
 		(exclude_from_sim no)
-		(at 158.75 43.18 0)
+		(at 146.05 37.465 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -4977,7 +4978,7 @@
 	)
 	(text "UART2 Pin Headers"
 		(exclude_from_sim no)
-		(at 196.85 43.18 0)
+		(at 184.15 37.465 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -5044,6 +5045,26 @@
 		)
 		(uuid "eff0a366-2a27-4b4f-852c-9c54f7cec305")
 	)
+	(text_box "PGOOD used to securely protect IO from external power"
+		(exclude_from_sim no)
+		(at 33.02 66.675 0)
+		(size 36.195 6.985)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0d5a7658-a6e3-4b33-b612-424585509459")
+	)
 	(text_box "We will not be using UART0 for anything other than the debug port, so there are no muxes included here."
 		(exclude_from_sim no)
 		(at 13.97 19.05 0)
@@ -5075,6 +5096,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0cc8ae35-c54f-4044-a617-efd831532a36")
+	)
+	(junction
+		(at 85.09 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e22f7a0-d78f-41d7-808b-cddd3955d5e6")
 	)
 	(junction
 		(at 161.29 191.77)
@@ -5165,12 +5192,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43809c4c-547e-405e-9b7c-a9fa19bbff3a")
-	)
-	(junction
-		(at 85.09 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "459df21b-e2f8-4278-b873-46f85e62f93a")
 	)
 	(junction
 		(at 158.75 113.03)
@@ -5437,12 +5458,6 @@
 		(uuid "edab747e-0055-4e3e-9512-33bbd6761a2d")
 	)
 	(junction
-		(at 45.085 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f0eb728c-a9c9-4882-8385-27259763920a")
-	)
-	(junction
 		(at 255.27 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5455,7 +5470,7 @@
 		(uuid "f758f4af-63c7-4b61-8d82-ee3f33720400")
 	)
 	(no_connect
-		(at 190.5 56.515)
+		(at 177.8 50.8)
 		(uuid "0024ea45-f168-4523-9e36-9ca6d034cd03")
 	)
 	(no_connect
@@ -5471,7 +5486,7 @@
 		(uuid "9b459691-9e10-4a42-ba7a-a9bec218b91f")
 	)
 	(no_connect
-		(at 190.5 59.055)
+		(at 177.8 53.34)
 		(uuid "b8c50dcc-a3aa-48bd-aa9a-758bbdc23850")
 	)
 	(no_connect
@@ -5591,16 +5606,6 @@
 			(type default)
 		)
 		(uuid "08f477de-b264-4924-ad3e-e5056e4d5d34")
-	)
-	(wire
-		(pts
-			(xy 71.12 101.6) (xy 76.2 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0931cf6d-7b14-4d2d-85c1-62ea60d72594")
 	)
 	(wire
 		(pts
@@ -5904,7 +5909,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 61.595) (xy 156.845 61.595)
+			(xy 139.7 55.88) (xy 144.145 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6044,7 +6049,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 51.435) (xy 193.675 51.435)
+			(xy 177.8 45.72) (xy 180.975 45.72)
 		)
 		(stroke
 			(width 0)
@@ -6234,16 +6239,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 54.61) (xy 45.085 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36637912-18b8-46bf-932b-5ff0e1680c26")
-	)
-	(wire
-		(pts
 			(xy 88.9 195.58) (xy 142.24 195.58)
 		)
 		(stroke
@@ -6364,6 +6359,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 118.11) (xy 71.12 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa1f20a-5488-4db8-9e6c-97cb6fdacab3")
+	)
+	(wire
+		(pts
 			(xy 223.52 204.47) (xy 241.3 204.47)
 		)
 		(stroke
@@ -6411,16 +6416,6 @@
 			(type default)
 		)
 		(uuid "434af85d-8702-4825-bfd4-56340450fe1e")
-	)
-	(wire
-		(pts
-			(xy 45.085 50.8) (xy 36.195 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43ea900e-bd84-4d7f-9aaa-3ca23cd2a2b4")
 	)
 	(wire
 		(pts
@@ -6584,7 +6579,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 53.975) (xy 193.675 53.975)
+			(xy 177.8 48.26) (xy 180.975 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6724,16 +6719,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 118.11) (xy 85.09 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60df5055-9918-4256-b33c-70018cb9be86")
-	)
-	(wire
-		(pts
 			(xy 255.27 138.43) (xy 255.27 140.97)
 		)
 		(stroke
@@ -6781,6 +6766,16 @@
 			(type default)
 		)
 		(uuid "67778938-0771-4b21-82cf-1d1a6cd9dbaf")
+	)
+	(wire
+		(pts
+			(xy 82.55 118.11) (xy 85.09 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67edd8aa-b981-4fbd-b48c-bdf849c76187")
 	)
 	(wire
 		(pts
@@ -7544,7 +7539,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.325 50.8) (xy 45.085 50.8)
+			(xy 36.195 50.8) (xy 60.325 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7664,6 +7659,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.915 101.6) (xy 85.09 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab1b918f-05dd-473f-bcdf-3b588651cb7c")
+	)
+	(wire
+		(pts
 			(xy 323.85 136.525) (xy 338.455 136.525)
 		)
 		(stroke
@@ -7731,6 +7736,16 @@
 			(type default)
 		)
 		(uuid "b1fd6c57-9f4b-456f-a8c5-d326bf7329d8")
+	)
+	(wire
+		(pts
+			(xy 71.12 101.6) (xy 74.295 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b506e228-4aa0-4c1f-aeb6-894f811c852b")
 	)
 	(wire
 		(pts
@@ -7851,16 +7866,6 @@
 			(type default)
 		)
 		(uuid "bde735b1-40ab-42d0-892c-bc9dd453e720")
-	)
-	(wire
-		(pts
-			(xy 76.2 118.11) (xy 71.12 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0fd3859-0a44-4be7-923e-573c2ac795d1")
 	)
 	(wire
 		(pts
@@ -8184,16 +8189,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.895 54.61) (xy 45.085 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9a1b9be-4cc4-4b05-a402-6c400978f74b")
-	)
-	(wire
-		(pts
 			(xy 251.46 184.15) (xy 255.27 184.15)
 		)
 		(stroke
@@ -8314,7 +8309,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 61.595) (xy 194.945 61.595)
+			(xy 177.8 55.88) (xy 182.245 55.88)
 		)
 		(stroke
 			(width 0)
@@ -8621,16 +8616,6 @@
 			(type default)
 		)
 		(uuid "f359bd2b-320c-4dc0-8ee9-18ac84475419")
-	)
-	(wire
-		(pts
-			(xy 81.28 101.6) (xy 85.09 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3bdb7aa-6b8d-465a-a7a6-6b2a6d1aa80a")
 	)
 	(wire
 		(pts
@@ -8954,7 +8939,7 @@
 	)
 	(global_label "X_ADMA_UART2_RX"
 		(shape input)
-		(at 193.675 51.435 0)
+		(at 180.975 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8964,7 +8949,7 @@
 		)
 		(uuid "0018c6c6-7ca1-4165-9d58-869f69463289")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.0168 51.435 0)
+			(at 201.3168 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8976,7 +8961,7 @@
 	)
 	(global_label "X_ADMA_UART2_TX"
 		(shape output)
-		(at 193.675 53.975 0)
+		(at 180.975 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8986,7 +8971,7 @@
 		)
 		(uuid "09f321f3-0a0b-458e-9a0a-4389a3aa7b0c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 213.7144 53.975 0)
+			(at 201.0144 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8998,7 +8983,7 @@
 	)
 	(global_label "X_ADMA_UART1_TX"
 		(shape output)
-		(at 152.4 53.975 0)
+		(at 139.7 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9008,7 +8993,7 @@
 		)
 		(uuid "26d8f074-2dcf-4008-8ca6-11aa1944452f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.4394 53.975 0)
+			(at 159.7394 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9020,7 +9005,7 @@
 	)
 	(global_label "X_ADMA_UART1_CTS_B"
 		(shape input)
-		(at 152.4 59.055 0)
+		(at 139.7 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9030,7 +9015,7 @@
 		)
 		(uuid "36da7a09-d738-4efb-94b4-a2d6ff50b77c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.947 59.055 0)
+			(at 163.247 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9084,9 +9069,31 @@
 			)
 		)
 	)
+	(global_label "X_PGOOD"
+		(shape input)
+		(at 48.895 54.61 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8749c5c6-85fc-4f6b-bb38-30f6e18db469")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.895 66.2433 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_ADMA_UART1_RX"
 		(shape input)
-		(at 152.4 51.435 0)
+		(at 139.7 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9096,7 +9103,7 @@
 		)
 		(uuid "938f0fab-1dd8-42ca-9bde-1229b42d3cfd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.7418 51.435 0)
+			(at 160.0418 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9108,7 +9115,7 @@
 	)
 	(global_label "X_ADMA_UART1_RTS_B"
 		(shape input)
-		(at 152.4 56.515 0)
+		(at 139.7 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9118,7 +9125,7 @@
 		)
 		(uuid "9715eb96-47b8-45a0-b01b-1827c34546f2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.947 56.515 0)
+			(at 163.247 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9435,7 +9442,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 52.07 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9478,12 +9485,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 52.07 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9499,7 +9507,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 121.285 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9542,12 +9550,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 121.285 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9628,7 +9637,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
-		(at 147.32 56.515 0)
+		(at 134.62 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9636,7 +9645,7 @@
 		(dnp no)
 		(uuid "121c689e-af07-4102-9ce6-9944e24ecfc5")
 		(property "Reference" "J2"
-			(at 147.955 48.895 0)
+			(at 135.255 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9644,7 +9653,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at 147.955 49.53 0)
+			(at 135.255 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9653,7 +9662,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 147.32 56.515 0)
+			(at 134.62 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9662,7 +9671,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 56.515 0)
+			(at 134.62 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9671,7 +9680,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 147.32 56.515 0)
+			(at 134.62 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9969,72 +9978,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
 					(reference "C40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 78.74 118.11 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1bdd6d31-71fa-4796-a28c-5a52e016be31")
-		(property "Reference" "L2"
-			(at 78.74 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "600R/100MHz"
-			(at 78.74 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 78.74 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4ff8c06b-2a63-4193-a36d-e6bc041b84ac")
-		)
-		(pin "2"
-			(uuid "6d11d4f5-1ae4-450f-91d8-dfa60b1defb5")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -11465,7 +11408,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 194.945 61.595 0)
+		(at 182.245 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11474,7 +11417,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ae5eb97-7224-49fc-a001-6fd7ade8f08c")
 		(property "Reference" "#PWR98"
-			(at 194.945 67.945 0)
+			(at 182.245 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11483,7 +11426,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.945 66.04 0)
+			(at 182.245 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11491,7 +11434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.945 61.595 0)
+			(at 182.245 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11500,7 +11443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.945 61.595 0)
+			(at 182.245 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11509,7 +11452,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 194.945 61.595 0)
+			(at 182.245 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11531,7 +11474,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 156.845 61.595 0)
+		(at 144.145 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11540,7 +11483,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b3bfb1e-42a2-4c45-ae57-9b318d183f8e")
 		(property "Reference" "#PWR7"
-			(at 156.845 67.945 0)
+			(at 144.145 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11549,7 +11492,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.845 66.04 0)
+			(at 144.145 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11557,7 +11500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.845 61.595 0)
+			(at 144.145 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11566,7 +11509,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.845 61.595 0)
+			(at 144.145 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11575,7 +11518,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.845 61.595 0)
+			(at 144.145 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11657,72 +11600,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
 					(reference "R48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 78.74 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e61a465-56af-4aec-a721-a06a05366a62")
-		(property "Reference" "L1"
-			(at 78.74 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "600R/100MHz"
-			(at 78.74 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 78.74 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a3f8ef71-c89e-4e40-a76c-471660138eab")
-		)
-		(pin "2"
-			(uuid "54c45a49-f4c3-4325-a873-115f4edae25f")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
-					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -12707,7 +12584,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 71.12 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12750,12 +12627,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 71.12 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12771,7 +12649,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 266.7 195.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12814,12 +12692,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 266.7 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12835,7 +12714,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 139.7 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12878,12 +12757,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 139.7 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12976,7 +12856,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
-		(at 185.42 56.515 0)
+		(at 172.72 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12984,7 +12864,7 @@
 		(dnp no)
 		(uuid "7f0158f6-c55c-47a4-aa9f-fb32842465dc")
 		(property "Reference" "J3"
-			(at 186.055 48.895 0)
+			(at 173.355 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12992,7 +12872,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at 186.055 49.53 0)
+			(at 173.355 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13001,7 +12881,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 185.42 56.515 0)
+			(at 172.72 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13010,7 +12890,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 56.515 0)
+			(at 172.72 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13019,7 +12899,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 185.42 56.515 0)
+			(at 172.72 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13942,7 +13822,74 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "Device:L")
+		(at 78.74 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a318d59-2da6-4618-8822-0469779e27fe")
+		(property "Reference" "L4"
+			(at 78.74 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "600R/100MHz"
+			(at 80.01 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 78.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "290ea383-01db-47f7-abb2-d387ef915f25")
+		)
+		(pin "2"
+			(uuid "b75e7184-04a8-4957-bf55-b5747a998302")
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
+					(reference "L4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 76.2 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13985,12 +13932,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 76.2 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14647,7 +14595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 71.12 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14690,12 +14638,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 71.12 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -16720,7 +16669,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 110.49 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16763,12 +16712,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 110.49 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -17469,6 +17419,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 78.105 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da72c28c-8391-4d08-b7cd-1e7858c7e125")
+		(property "Reference" "L3"
+			(at 78.105 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "600R/100MHz"
+			(at 78.74 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.105 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.105 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 78.105 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7c47f05-f01b-4b6e-8f46-c03c94e095f7")
+		)
+		(pin "2"
+			(uuid "02ac0bbf-c3fd-4e8b-82c9-d80c0d291bf5")
+		)
+		(instances
+			(project ""
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 153.67 158.75 270)
 		(unit 1)
@@ -18136,7 +18153,7 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8x_kicad_library:VCC_3V3")
+		(lib_id "imx8_carrier_board_symbol_library:3V3_FTDI")
 		(at 132.08 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18179,12 +18196,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 132.08 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
