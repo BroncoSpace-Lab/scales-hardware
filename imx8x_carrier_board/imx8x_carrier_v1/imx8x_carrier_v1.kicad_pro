@@ -514,15 +514,43 @@
       },
       {
         "clearance": 0.2,
-        "diff_pair_gap": 0.2,
-        "diff_pair_width": 0.1575,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.124,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DP_100R",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1565,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.1565,
+        "diff_pair_width": 0.1565,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DP_50R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1565,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1582,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DP_90R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1582,
         "via_diameter": 0.8,
         "via_drill": 0.4
       }
@@ -533,10 +561,10 @@
     "net_colors": null,
     "netclass_assignments": {
       "/Debug USB - UART/DEBUG_USB_DN": [
-        "DP_100R"
+        "DP_90R"
       ],
       "/Debug USB - UART/DEBUG_USB_DP": [
-        "DP_100R"
+        "DP_90R"
       ],
       "ETH1_A_TX_N": [
         "DP_100R"
@@ -587,7 +615,24 @@
         "DP_100R"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "DP_100R",
+        "pattern": "ETH1_A_TX_P"
+      },
+      {
+        "netclass": "DP_100R",
+        "pattern": "ETH1_A_TX_N"
+      },
+      {
+        "netclass": "DP_90R",
+        "pattern": "DEBUG_USB_DN"
+      },
+      {
+        "netclass": "DP_90R",
+        "pattern": "DEBUG_USB_DP"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
