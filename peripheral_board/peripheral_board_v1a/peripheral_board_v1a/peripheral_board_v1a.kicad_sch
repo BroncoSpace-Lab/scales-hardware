@@ -311,7 +311,7 @@
 	)
 	(text_box "Ethernet Port 2"
 		(exclude_from_sim no)
-		(at 125.73 135.89 0)
+		(at 125.73 136.525 0)
 		(size 10.16 5.08)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -369,6 +369,26 @@
 		)
 		(uuid "3b059e07-6880-4401-b871-28dd83b641b9")
 	)
+	(text_box "i.MX"
+		(exclude_from_sim no)
+		(at 114.935 130.175 0)
+		(size 5.715 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "544c2e9e-38bf-4f7e-b4bd-6d5efedcfa49")
+	)
 	(text_box "Block Diagram"
 		(exclude_from_sim no)
 		(at 110.49 96.52 0)
@@ -392,10 +412,10 @@
 		)
 		(uuid "5de7f215-4e3f-43b6-b5c9-22084e0ee1fa")
 	)
-	(text_box "Jetson\nIMX"
+	(text_box "Jetson\n"
 		(exclude_from_sim no)
-		(at 107.95 133.35 0)
-		(size 8.89 5.08)
+		(at 112.395 137.16 0)
+		(size 8.255 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -414,7 +434,7 @@
 	)
 	(text_box "Ethernet Port 1"
 		(exclude_from_sim no)
-		(at 125.73 130.81 0)
+		(at 125.73 130.175 0)
 		(size 10.16 5.08)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -534,16 +554,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 133.35) (xy 121.92 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1083625d-3771-4269-8cc7-908cb76cd32a")
-	)
-	(wire
-		(pts
 			(xy 138.43 113.03) (xy 152.4 113.03)
 		)
 		(stroke
@@ -561,6 +571,16 @@
 			(type default)
 		)
 		(uuid "2ddcb402-3f6f-4cb8-a0f4-b14b6df34a68")
+	)
+	(wire
+		(pts
+			(xy 125.73 133.35) (xy 123.825 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f52ceb2-3143-4b9a-bd01-fba7ad0ddfff")
 	)
 	(wire
 		(pts
@@ -584,23 +604,23 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 138.43) (xy 121.92 138.43)
+			(xy 123.825 133.35) (xy 123.825 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "742eeb28-a2eb-4771-bde7-ad53fb93491b")
+		(uuid "61c14b93-c259-479a-922b-59eb4e52e87a")
 	)
 	(wire
 		(pts
-			(xy 121.92 138.43) (xy 121.92 137.16)
+			(xy 120.65 139.065) (xy 125.73 139.065)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "888866d3-a07e-40b9-966a-b3f888852f85")
+		(uuid "974fb136-9d48-4179-9978-5ebce228f1df")
 	)
 	(wire
 		(pts
@@ -614,26 +634,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 137.16) (xy 121.92 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aebd5b6f-85f9-4a70-b3b6-1dc79a0c5798")
-	)
-	(wire
-		(pts
-			(xy 116.84 134.62) (xy 121.92 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b572507e-1e4e-4120-b331-9feb1259e34b")
-	)
-	(wire
-		(pts
 			(xy 116.84 113.03) (xy 123.19 113.03)
 		)
 		(stroke
@@ -644,13 +644,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 133.35) (xy 121.92 134.62)
+			(xy 120.65 132.08) (xy 123.825 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da2e7038-f275-4c91-a53f-4a67866195da")
+		(uuid "fc321fea-3315-4e2d-ac7c-412f783b301c")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
