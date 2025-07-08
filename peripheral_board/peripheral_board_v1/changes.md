@@ -20,7 +20,6 @@
     * *Looked over the RJ45 still a unsure*
     * Added in 2 differnt versions of Ethernt Connections. The one that shows the magnetics might be used for the Ethernet switch.
 * Removed the Single Bus Buffer gate with 3-state output to match the dev board
-* 
 
 ### Raspberry Pi
 * Moved to USB type C from micro USB for debugging.
@@ -31,3 +30,5 @@
 ### Ethernet Switch
 * Changed the crystal to be the same as the Wiznet and to have the correct load caps
 * Changed the RJ45 port to match the design sheet but need to make sure they are correctly wired up
+* Put test pads for port 5 but might wire it up as RMII configuration
+* Added in solder jumpers for the LED strap in pins

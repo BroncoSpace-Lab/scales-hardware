@@ -3,7 +3,7 @@ The peripheral board is conprized for two different purposes.
 
 1. Inter communication between the Jetson and i.MX8X.
 2. Gives the end user access to ports to attach the peripherals that they want. 
-    The ports given:
+    The ports given to user:
     * At least 1 Ethernet port
     * At least 2 SPI/UART ports
 ## General Information of each major block of the board
@@ -22,7 +22,7 @@ This is the back of the board in KiCad's 3D view.
 
 ## Break down of the three core parts
 Each section is about the individual chips and it has basic information on the layout.
- 
+
 ### Raspberry Pi
 [JLC Link](https://jlcpcb.com/partdetail/RaspberryPi-RP2350A/C42411118) to the RP2350A.
 
