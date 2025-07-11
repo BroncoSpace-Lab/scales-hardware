@@ -46,13 +46,6 @@ The original eval board is no longer made but there is an update of the chip wit
 
 ## How to used the board
 *Still in Development*
-The RP2350 needs to be coded to ensure that the correct GPIO pins are set up in the correct signals.
-    ### User Ports
-    * GPIO 8 through 11 are UART labeled as UART1.
-    * GPIO 12 through 15 are SPI labeled as SPI1
-    
-    ### Internal Connection
-    * SPI0 is being held for the data transmission between the Rasberry Pi and the Wiznet.
 
 *Taken with a grain of salt*
 The Wizenet W5500 and Microchip KSZ8795CLXIC should be preconfigured to work as is. The Microchip KSZ8795CLXIC could be one reconfigured to utilize the 5th port as different data rates if they are needed.

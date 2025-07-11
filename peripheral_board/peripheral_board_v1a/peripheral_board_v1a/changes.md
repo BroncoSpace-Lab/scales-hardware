@@ -20,7 +20,7 @@
     * *Looked over the RJ45 still a unsure*
     * Added in 2 differnt versions of Ethernt Connections. The one that shows the magnetics might be used for the Ethernet switch.
 * Removed the Single Bus Buffer gate with 3-state output to match the dev board
-* 
+* The layout is the exact same as SALAD and very similar to Adafruits.
 
 ### Raspberry Pi
 * Moved to USB type C from micro USB for debugging.
@@ -29,5 +29,11 @@
 * Cleaned up the Schematic to make it more clean.
 
 ### Ethernet Switch
-* Changed the crystal to be the same as the Wiznet and to have the correct load caps
-* Changed the RJ45 port to match the design sheet but need to make sure they are correctly wired up
+* Changed the crystal to be the same as the Wiznet and to have the correct load caps.
+* Changed the RJ45 port to match the design sheet but need to make sure they are correctly wired up.
+* Impedance control for the ports have them all length matched to 55 mm.
+
+## Other things to note
+Would like to restructure the folders and remove the v1 and make a folder that is just KiCad dependancies to help version control.
+*Unsure if that is a good idea or if I should just leave it as project specific libriaries.*
+Will look over this before this is merged to main
