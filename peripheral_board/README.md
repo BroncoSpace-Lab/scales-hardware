@@ -3,7 +3,7 @@ The peripheral board is conprized for two different purposes.
 
 1. Inter communication between the Jetson and i.MX8X.
 2. Gives the end user access to ports to attach the peripherals that they want. 
-    The ports given:
+    The ports given to user:
     * At least 1 Ethernet port
     * At least 2 SPI/UART ports
 ## General Information of each major block of the board
@@ -22,7 +22,7 @@ This is the back of the board in KiCad's 3D view.
 
 ## Break down of the three core parts
 Each section is about the individual chips and it has basic information on the layout.
- 
+
 ### Raspberry Pi
 [JLC Link](https://jlcpcb.com/partdetail/RaspberryPi-RP2350A/C42411118) to the RP2350A.
 
@@ -46,13 +46,6 @@ The original eval board is no longer made but there is an update of the chip wit
 
 ## How to used the board
 *Still in Development*
-The RP2350 needs to be coded to ensure that the correct GPIO pins are set up in the correct signals.
-    ### User Ports
-    * GPIO 8 through 11 are UART labeled as UART1.
-    * GPIO 12 through 15 are SPI labeled as SPI1
-    
-    ### Internal Connection
-    * SPI0 is being held for the data transmission between the Rasberry Pi and the Wiznet.
 
 *Taken with a grain of salt*
 The Wizenet W5500 and Microchip KSZ8795CLXIC should be preconfigured to work as is. The Microchip KSZ8795CLXIC could be one reconfigured to utilize the 5th port as different data rates if they are needed.
