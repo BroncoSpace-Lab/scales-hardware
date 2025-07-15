@@ -8,17 +8,17 @@ The peripheral board is conprized for two different purposes.
     * At least 2 SPI/UART ports
 ## General Information of each major block of the board
 
-![Peripheral Board General Info & Block Diagram](docs\Images\peripheral_board_info_diagram.png)
+![Peripheral Board General Info & Block Diagram](/docs/Images/peripheral_board_info_diagram_v0.png)
 
 The above image is of the root page of the schematic with basic infomration and a block diagram of the board and its use.
 
 This is the front of the board in KiCad's 3D view.
-![Peripheral Board Front](docs\Images\peripheral_board_front.PNG)
+![Peripheral Board Front](/docs/Images/peripheral_board_front_v1.png)
 
 Some of the models are not in the correct placement beacuse their 3D model was incorrectly created. They are placed in the correctly on the board.
 
 This is the back of the board in KiCad's 3D view.
-![Peripheral Board Back](docs\Images\peripheral_board_back.PNG)
+![Peripheral Board Back](/docs/Images/peripheral_board_back_v1.png)
 
 ## Break down of the three core parts
 Each section is about the individual chips and it has basic information on the layout.
