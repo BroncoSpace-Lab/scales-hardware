@@ -5,11 +5,11 @@
 	(uuid "4409cb5c-c5cc-45e5-ba22-666413441047")
 	(paper "A5")
 	(title_block
-		(title "SCALES Carrier Board")
+		(title "SCALES IMX8 Carrier Board")
 		(date "2025-05-23")
 		(rev "V1")
 		(company "Bronco Space Lab")
-		(comment 1 "By Kelly Williams and Luca Lanzillotta")
+		(comment 1 "By Kelly Williams, Luca Lanzillotta, and John Pollack")
 	)
 	(lib_symbols)
 	(rectangle
@@ -24,119 +24,103 @@
 		)
 		(uuid e86cb4ac-0dfd-494b-a447-8fad49eb3ed7)
 	)
-	(text "SOM Connectors.................................................\n"
+	(text "UART...........................................................Page 9\n"
 		(exclude_from_sim no)
-		(at 45.72 62.23 0)
+		(at 46.355 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#9")
+		)
+		(uuid "008859cd-8f11-4f5f-b769-ea4a82cc8c26")
+	)
+	(text "Load Switch EN"
+		(exclude_from_sim no)
+		(at 118.11 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "00fcb9cf-1f55-4eba-9fe1-c83626060769")
+		(uuid "116605e0-7789-462a-bd29-f4d433cd033d")
 	)
-	(text "Ethernet.............................................................\n"
+	(text "Root...........................................................Page 1"
 		(exclude_from_sim no)
-		(at 45.72 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "098e58ea-1197-4910-98f2-616029a44da5")
-	)
-	(text "Root...................................................................\n"
-		(exclude_from_sim no)
-		(at 45.72 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1543f603-a879-4f3c-8603-26553edb4e5d")
-	)
-	(text "Page 5"
-		(exclude_from_sim no)
-		(at 71.755 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "#5")
-		)
-		(uuid "179554a7-d166-43cc-8dc2-9d37223cd4d8")
-	)
-	(text "Debug USB.........................................................\n"
-		(exclude_from_sim no)
-		(at 45.72 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "22674067-d123-4af5-8ec1-5a4bff79d7f5")
-	)
-	(text "Page 4"
-		(exclude_from_sim no)
-		(at 71.755 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "#4")
-		)
-		(uuid "24c82f97-9416-45a6-ac1f-8d76cf5baa17")
-	)
-	(text "Miscellaneous.....................................................\n"
-		(exclude_from_sim no)
-		(at 45.72 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "348ce283-98ef-4e50-b4e0-85322eb56e83")
-	)
-	(text "SD Card..............................................................\n"
-		(exclude_from_sim no)
-		(at 45.72 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4958beec-c86b-42e8-91e1-6644dad3a1dd")
-	)
-	(text "Page 6"
-		(exclude_from_sim no)
-		(at 71.755 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "#6")
-		)
-		(uuid "4d30fb8f-160c-48fc-a8a3-2001c9439f7d")
-	)
-	(text "Power.................................................................\n"
-		(exclude_from_sim no)
-		(at 45.72 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7028784d-6789-46f9-905f-37db5f8f0eb6")
-	)
-	(text "Page 1"
-		(exclude_from_sim no)
-		(at 71.755 46.99 0)
+		(at 46.355 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(href "#1")
 		)
-		(uuid "72c97748-4e80-4613-b594-2051ac070b4f")
+		(uuid "1543f603-a879-4f3c-8603-26553edb4e5d")
+	)
+	(text "SOM Connectors........................................Page 2\n"
+		(exclude_from_sim no)
+		(at 46.355 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#2")
+		)
+		(uuid "16ce376c-26bd-41d7-b9a2-0c6496d8b106")
+	)
+	(text "Debug USB - UART...................................Page 5\n"
+		(exclude_from_sim no)
+		(at 46.355 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#5")
+		)
+		(uuid "29cdca9e-9f29-479d-8610-0e3e57145082")
+	)
+	(text "Boot Configuration....................................Page 4\n"
+		(exclude_from_sim no)
+		(at 46.355 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#4")
+		)
+		(uuid "37b1e04b-8f29-4f27-93bf-beb6a6f47453")
+	)
+	(text "Ethernet.....................................................Page 6\n"
+		(exclude_from_sim no)
+		(at 46.355 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#6")
+		)
+		(uuid "3ed059f9-8481-4f6d-978f-aaf635879cab")
+	)
+	(text "Primary Power System..............................Page 3\n"
+		(exclude_from_sim no)
+		(at 46.355 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#3")
+		)
+		(uuid "4d3879c0-efc6-4d1a-8655-e73b0866114f")
+	)
+	(text "QSPI-SPI...................................................Page 7"
+		(exclude_from_sim no)
+		(at 46.355 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#7")
+		)
+		(uuid "5decc983-721c-4eab-9832-4285f34d9f9b")
 	)
 	(text "Variant: Pre-Flight Testing Board"
 		(exclude_from_sim no)
@@ -163,64 +147,72 @@
 		)
 		(uuid "7d0f61da-94e7-4518-8239-62cc444a4910")
 	)
-	(text "Page 8\n"
+	(text "JTAG-Misc..................................................Page 10\n"
 		(exclude_from_sim no)
-		(at 71.755 64.77 0)
+		(at 46.99 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(href "#10")
+		)
+		(uuid "dc9ba89f-9f3c-4d50-b1ad-3d1c304a2b7f")
+	)
+	(text "I2C.............................................................Page 8\n"
+		(exclude_from_sim no)
+		(at 46.355 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(href "#8")
 		)
-		(uuid "8fb18348-d164-4d64-8bec-5b0dceadea93")
+		(uuid "f9a4e9c8-4b00-44a0-97be-a2bb370c16e1")
 	)
-	(text "SPI/UART............................................................\n"
+	(text_box "Jetson"
 		(exclude_from_sim no)
-		(at 45.72 59.69 0)
+		(at 103.505 52.705 0)
+		(size 14.605 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left top)
 		)
-		(uuid "907112ef-a949-4228-b199-f142c4d24e16")
+		(uuid "548e9327-609b-4af9-900d-ff4c2f871520")
 	)
-	(text "Page 3"
+	(text_box "Perif. Board"
 		(exclude_from_sim no)
-		(at 71.755 52.07 0)
+		(at 103.505 48.26 0)
+		(size 14.605 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(href "#3")
+			(justify left top)
 		)
-		(uuid "cd5b01a1-177e-498d-81dc-6cf6b6ac5ac7")
-	)
-	(text "Page 2"
-		(exclude_from_sim no)
-		(at 71.755 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "#2")
-		)
-		(uuid "ce371de9-c1a7-4056-951d-3a67ab5457f5")
-	)
-	(text "Page 7"
-		(exclude_from_sim no)
-		(at 71.755 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "#7")
-		)
-		(uuid "e2cdc1d8-3ca9-41a1-bb78-a61a73504d8e")
+		(uuid "a202671e-f76b-4b92-b0b5-1002475da802")
 	)
 	(text_box "Block Diagram"
 		(exclude_from_sim no)
-		(at 17.78 68.58 0)
-		(size 62.23 5.08)
+		(at 111.125 14.605 0)
+		(size 62.23 4.445)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -242,7 +234,7 @@
 	)
 	(text_box "Component/Index"
 		(exclude_from_sim no)
-		(at 22.86 41.91 0)
+		(at 22.86 35.56 0)
 		(size 19.685 3.175)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -260,10 +252,30 @@
 		)
 		(uuid "b08a2ec1-5e60-48db-8731-fc984be0a0d3")
 	)
-	(text_box "The IMX8 Scales Carrier Board is a minimized rendition of the IMX8 Dev board.\nThis design includes a micro USB debugger, the SOM Samtec Connector, 2 Ethernet Ports, DF11 Power Interface, DF11 for SPI, DF11 for UART, a DF11 for I2C, and a Micro SD Card reader.\n"
+	(text_box "uSD Card"
+		(exclude_from_sim no)
+		(at 114.935 28.016 0)
+		(size 14.605 3.099)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b1904d8f-b3ba-4936-9328-3b18c24a1dd7")
+	)
+	(text_box "The IMX8 Scales Carrier Board is a minimized and stripped down version of the IMX8 Dev board.\n"
 		(exclude_from_sim no)
 		(at 18.415 26.67 0)
-		(size 66.04 12.065)
+		(size 66.04 6.35)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -280,9 +292,31 @@
 		)
 		(uuid "bbb6e7e1-a3e7-4942-951c-8aa7818fae59")
 	)
+	(text_box "IMX8X (PCM-065)"
+		(exclude_from_sim no)
+		(at 174.625 59.69 0)
+		(size 16.51 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+			(href "https://livecsupomona.sharepoint.com/sites/broncospacelab/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fbroncospacelab%2FShared%20Documents%2FSCALES%20%2D%20General%2FDocumentation%2FHardware%2Fi%2EMX%208X%2FIMX8DQXPRM%2Epdf&parent=%2Fsites%2Fbroncospacelab%2FShared%20Documents%2FSCALES%20%2D%20General%2FDocumentation%2FHardware%2Fi%2EMX%208X")
+		)
+		(uuid "be830b8c-a68c-414d-8ad3-82cfbfe7a0d3")
+	)
 	(text_box "Page Number"
 		(exclude_from_sim no)
-		(at 60.325 41.91 0)
+		(at 60.325 35.56 0)
 		(size 15.24 3.175)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -300,164 +334,513 @@
 		)
 		(uuid "d949a863-d57c-4542-9553-e8ff92f9a3a2")
 	)
-	(wire
-		(pts
-			(xy 54.61 95.885) (xy 62.23 95.885)
-		)
+	(text_box "EPS OBC"
+		(exclude_from_sim no)
+		(at 120.65 92.075 0)
+		(size 14.605 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
-		(uuid "1c0e09ba-5b77-4762-aaac-0ce56619470e")
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e7583112-06b1-47e2-9297-477ffe4af1a1")
 	)
-	(wire
-		(pts
-			(xy 56.515 78.74) (xy 56.515 93.345)
-		)
+	(text_box "eMMC"
+		(exclude_from_sim no)
+		(at 114.935 33.02 0)
+		(size 14.605 3.099)
+		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
-		(uuid "1fe1054d-1b2b-4b75-a729-2a4888976dae")
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f5ec4222-74c2-45ec-a405-332a9412c127")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 37.465 78.74) (xy 56.515 78.74)
+			(xy 149.352 82.804) (xy 151.13 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "234905eb-7cc0-4199-a10e-9b29a894634f")
+		(uuid "0721c386-e849-4551-9e65-d20e585cfe80")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 54.61 88.265) (xy 54.61 95.885)
+			(xy 135.382 93.98) (xy 139.7 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "281d699b-d135-4555-a678-45df9d3f3abc")
+		(uuid "0b817d25-3603-48dc-89fa-3a6f080bdfe9")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 37.465 129.54) (xy 56.515 129.54)
+			(xy 134.62 32.258) (xy 139.7 32.258)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2993a637-1ce2-479a-843e-c9fa18b0035a")
+		(uuid "1175a25b-9bbe-499e-8190-0cedf66f63b2")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 56.515 93.345) (xy 62.23 93.345)
+			(xy 149.352 73.406) (xy 151.13 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c81abe6-1330-4c06-9faa-61665e127897")
+		(uuid "156c2670-860e-4b69-a923-550fd656a943")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 54.61 111.125) (xy 62.23 111.125)
+			(xy 126.492 51.816) (xy 128.27 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46b93a54-c1dd-460b-96f1-a6d3c30e8ac4")
+		(uuid "1bb46848-dfbb-42a7-8e52-781b453de4ae")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 54.61 119.38) (xy 54.61 111.125)
+			(xy 152.4 31.75) (xy 160.02 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "689d7603-d4a9-45fa-90d5-170fb9d95695")
+		(uuid "26216b56-d6b7-481b-9a42-4b8d6e1bfd96")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 37.465 98.425) (xy 62.23 98.425)
+			(xy 134.62 34.29) (xy 134.62 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90d17c89-73a6-4a29-a5ab-f3620b87a382")
+		(uuid "26e28962-5219-445a-b99f-f42f72c87168")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 56.515 129.54) (xy 56.515 113.03)
+			(xy 161.036 38.862) (xy 160.02 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9761889c-3087-40b9-b8cd-cc46e6dee846")
+		(uuid "289cd3ff-a5d0-4036-a39d-5fbf16f306e3")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 56.515 113.03) (xy 62.23 113.03)
+			(xy 118.11 50.8) (xy 128.27 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf24341d-bc3f-4125-a4e4-4d4872abb94a")
+		(uuid "3246e4b1-22f5-4932-97e5-5d54610d6e9b")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 37.465 88.265) (xy 54.61 88.265)
+			(xy 126.492 49.784) (xy 128.27 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb2eaccb-5d04-4924-8932-7b39aa7ed7cb")
+		(uuid "343799cf-ec31-44e0-a9e5-730c736600f8")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 37.465 119.38) (xy 54.61 119.38)
+			(xy 149.352 40.894) (xy 151.13 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3614a1d-1aaf-4df0-b1e3-5f1159914be4")
+		(uuid "38beb18b-feee-4612-bef7-488e6483b8bc")
 	)
-	(wire
+	(polyline
 		(pts
-			(xy 37.465 109.22) (xy 62.23 109.22)
+			(xy 140.97 83.82) (xy 151.13 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da6721dc-c106-4186-8228-273bbee426c1")
+		(uuid "3d0f79e6-a680-42a1-b7ec-6ef1b3d6b67f")
+	)
+	(polyline
+		(pts
+			(xy 152.4 93.98) (xy 160.02 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4360fec3-07b1-48f4-b8c2-c9c277223e96")
+	)
+	(polyline
+		(pts
+			(xy 134.62 30.48) (xy 134.62 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d28032c-0e1e-419f-97ae-7fdf3a88cf62")
+	)
+	(polyline
+		(pts
+			(xy 118.872 92.964) (xy 120.65 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f4cbf89-8f3f-4136-b3cf-cc276654b32e")
+	)
+	(polyline
+		(pts
+			(xy 149.352 71.374) (xy 151.13 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f85a604-580a-47f4-832b-e48a1f81237e")
+	)
+	(polyline
+		(pts
+			(xy 128.27 83.82) (xy 110.49 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62f0242b-d9e4-47d0-9310-0da5c20e377c")
+	)
+	(polyline
+		(pts
+			(xy 129.54 34.29) (xy 134.62 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "688cc219-6a63-48fe-8d1b-284bcf0aa1e5")
+	)
+	(polyline
+		(pts
+			(xy 137.922 31.242) (xy 139.7 32.258)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77c76a1a-f8ae-4497-b780-29dc3cbd007c")
+	)
+	(polyline
+		(pts
+			(xy 129.54 30.48) (xy 134.62 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c018812-7e10-4a4b-81af-d5666f7a3211")
+	)
+	(polyline
+		(pts
+			(xy 110.49 93.98) (xy 120.65 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a96af73-60b8-4085-80d2-105411c04408")
+	)
+	(polyline
+		(pts
+			(xy 159.004 89.408) (xy 160.02 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d864690-21e0-493e-8fd9-e2be9c872d42")
+	)
+	(polyline
+		(pts
+			(xy 149.352 52.324) (xy 151.13 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9010efaa-2133-497a-a918-d7c723b0e865")
+	)
+	(polyline
+		(pts
+			(xy 118.872 94.996) (xy 120.65 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ed66455-28e3-4167-bbcb-ca4700117ef3")
+	)
+	(polyline
+		(pts
+			(xy 140.97 64.77) (xy 151.13 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0096036-1c5d-49e0-b6db-55ecb7f40fda")
+	)
+	(polyline
+		(pts
+			(xy 149.352 63.754) (xy 151.13 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4afff21-94a6-402a-aacc-1ca0981a80f6")
+	)
+	(polyline
+		(pts
+			(xy 126.492 53.594) (xy 128.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6c3f1f0-a5f5-4c78-956d-97e4d0fb0652")
+	)
+	(polyline
+		(pts
+			(xy 137.922 92.964) (xy 139.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaae376d-c9bc-4fe0-8228-2e5f059dbbbc")
+	)
+	(polyline
+		(pts
+			(xy 160.02 87.63) (xy 160.02 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade6b9c5-ca54-4d41-aaae-0f524a16d86c")
+	)
+	(polyline
+		(pts
+			(xy 160.02 31.75) (xy 160.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae0d4b3a-c7c1-4715-94ce-594f469b0ef7")
+	)
+	(polyline
+		(pts
+			(xy 137.922 94.996) (xy 139.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af9b81aa-094a-4772-bf72-3be347348594")
+	)
+	(polyline
+		(pts
+			(xy 140.97 41.91) (xy 151.13 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b61a0f7c-73ed-4d42-9ddf-d45a0ab97ed1")
+	)
+	(polyline
+		(pts
+			(xy 159.004 38.862) (xy 160.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ce3c86-9d93-43af-be74-0315b733c619")
+	)
+	(polyline
+		(pts
+			(xy 126.492 55.626) (xy 128.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1b4d893-f852-4cc2-b096-9def757c2281")
+	)
+	(polyline
+		(pts
+			(xy 140.97 72.39) (xy 151.13 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c51d39d4-062d-419f-9361-f4ae8c6261aa")
+	)
+	(polyline
+		(pts
+			(xy 149.352 42.926) (xy 151.13 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c52d312b-d07a-4ccb-8edc-a428671ac080")
+	)
+	(polyline
+		(pts
+			(xy 140.97 53.34) (xy 151.13 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d202b761-1c2c-4aa1-a185-4d46ad837299")
+	)
+	(polyline
+		(pts
+			(xy 137.922 33.274) (xy 139.7 32.258)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e511c3f3-ca25-4756-8834-e859c8c2747d")
+	)
+	(polyline
+		(pts
+			(xy 118.11 54.61) (xy 128.27 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55284e0-96a8-44bc-801e-668e8f9c8afe")
+	)
+	(polyline
+		(pts
+			(xy 110.49 83.82) (xy 110.49 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e59a5e5d-7ee4-4c7f-b0e1-e4bd4216d3f6")
+	)
+	(polyline
+		(pts
+			(xy 167.64 63.5) (xy 174.498 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e62d2202-75d0-43c1-98ea-ca32cd93859d")
+	)
+	(polyline
+		(pts
+			(xy 149.352 84.836) (xy 151.13 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6d9e473-ee12-4b6d-9794-549b65ba8e38")
+	)
+	(polyline
+		(pts
+			(xy 149.352 65.786) (xy 151.13 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed93bf2a-7b45-4ab2-8102-c79b865df4dd")
+	)
+	(polyline
+		(pts
+			(xy 161.036 89.408) (xy 160.02 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eecbe30a-1f9a-4349-bc7d-f8ba8f5fe1ea")
+	)
+	(polyline
+		(pts
+			(xy 149.352 54.356) (xy 151.13 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f209f80f-c18f-4e37-ad1c-6a85bacdb134")
 	)
 	(sheet
-		(at 24.765 107.315)
+		(at 139.7 30.48)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 223 38 1.0000)
 		)
 		(uuid "1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31")
-		(property "Sheetname" "SD Card"
-			(at 24.765 106.6034 0)
+		(property "Sheetname" "Boot Configuration"
+			(at 139.7 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -466,179 +849,7 @@
 			)
 		)
 		(property "Sheetfile" "imx_microSD.kicad_sch"
-			(at 24.765 111.7096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 24.765 76.835)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "292335d6-f5c5-4a7d-8d08-fc166527642f")
-		(property "Sheetname" "Debug USB"
-			(at 24.765 76.1234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "debug_usb.kicad_sch"
-			(at 24.765 81.2296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 24.765 127.635)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8")
-		(property "Sheetname" "Miscellaneous"
-			(at 24.765 126.9234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "miscellaneous.kicad_sch"
-			(at 24.765 132.0296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 24.765 86.36)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "79e8fd09-705e-4c65-82d4-d8130e394a75")
-		(property "Sheetname" "Ethernet"
-			(at 24.765 85.6484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "imx_ethernet.kicad_sch"
-			(at 24.765 90.7546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 24.765 96.52)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7dc4de44-e877-4145-a70b-e254356af12a")
-		(property "Sheetname" "Power"
-			(at 24.765 95.8084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "imx_power.kicad_sch"
-			(at 24.765 100.9146 0)
+			(at 139.7 34.8746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -656,58 +867,7 @@
 		)
 	)
 	(sheet
-		(at 62.23 90.805)
-		(size 17.145 23.495)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bd9bf2b1-2646-4f47-8b43-7734a13ea490")
-		(property "Sheetname" "SOM Connectors"
-			(at 62.23 90.0934 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "SOM.kicad_sch"
-			(at 62.23 114.8846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Field2" ""
-			(at 62.23 90.805 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 24.765 117.475)
+		(at 128.27 40.64)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -719,11 +879,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 223 38 1.0000)
 		)
-		(uuid "d29c5f61-1869-406e-b3b8-b642272ff287")
-		(property "Sheetname" "SPI UART"
-			(at 24.765 116.7634 0)
+		(uuid "292335d6-f5c5-4a7d-8d08-fc166527642f")
+		(property "Sheetname" "Debug USB - UART"
+			(at 128.27 39.9284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -731,8 +891,94 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "imx_SPI_UART.kicad_sch"
-			(at 24.765 121.8696 0)
+		(property "Sheetfile" "debug_usb.kicad_sch"
+			(at 128.27 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 81.28)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 223 38 1.0000)
+		)
+		(uuid "2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8")
+		(property "Sheetname" "JTAG - Misc."
+			(at 128.27 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "miscellaneous.kicad_sch"
+			(at 128.27 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 48.26)
+		(size 12.7 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 223 38 1.0000)
+		)
+		(uuid "79e8fd09-705e-4c65-82d4-d8130e394a75")
+		(property "Sheetname" "Ethernet"
+			(at 128.27 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imx_ethernet.kicad_sch"
+			(at 128.27 57.7346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -745,6 +991,185 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 92.71)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 223 38 1.0000)
+		)
+		(uuid "7dc4de44-e877-4145-a70b-e254356af12a")
+		(property "Sheetname" "Primary System Power"
+			(at 135.255 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imx_power.kicad_sch"
+			(at 139.7 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 71.12)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 223 38 1.0000)
+		)
+		(uuid "9f694d68-3ac6-426c-8010-e2188e2cfbb4")
+		(property "Sheetname" "I2C"
+			(at 128.27 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imx_I2C.kicad_sch"
+			(at 128.27 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 40.64)
+		(size 16.51 46.99)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd9bf2b1-2646-4f47-8b43-7734a13ea490")
+		(property "Sheetname" "SOM Connectors"
+			(at 151.638 62.738 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 255 255 1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SOM.kicad_sch"
+			(at 151.13 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Field2" ""
+			(at 151.13 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 62.23)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 223 38 1.0000)
+		)
+		(uuid "d29c5f61-1869-406e-b3b8-b642272ff287")
+		(property "Sheetname" "QSPI-SPI"
+			(at 128.27 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imx_SPI.kicad_sch"
+			(at 128.27 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_carrier_v1"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
+					(page "7")
 				)
 			)
 		)
