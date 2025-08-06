@@ -7113,12 +7113,6 @@
 		(uuid "2526ccc9-7675-48b6-97bb-78e6192cc18c")
 	)
 	(junction
-		(at 273.05 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "273c1517-a24e-4ff5-ad21-536aedd17ad0")
-	)
-	(junction
 		(at 74.93 212.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7291,12 +7285,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6559da9a-d91a-4095-96b5-2c97606c6fef")
-	)
-	(junction
-		(at 279.4 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6981af72-df75-425d-820f-cebe01d43e78")
 	)
 	(junction
 		(at 248.92 187.96)
@@ -8860,16 +8848,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 190.5) (xy 273.05 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "259a15a9-5ad2-4a14-942b-9dff3d7fc16b")
-	)
-	(wire
-		(pts
 			(xy 59.69 77.47) (xy 63.5 77.47)
 		)
 		(stroke
@@ -10000,7 +9978,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 190.5) (xy 280.67 190.5)
+			(xy 246.38 190.5) (xy 280.67 190.5)
 		)
 		(stroke
 			(width 0)
@@ -10920,7 +10898,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 71.12) (xy 246.38 71.12)
+			(xy 246.38 71.12) (xy 285.75 71.12)
 		)
 		(stroke
 			(width 0)
@@ -11247,16 +11225,6 @@
 			(type default)
 		)
 		(uuid "c1da2897-8968-4e3e-8ab5-b812348c39c8")
-	)
-	(wire
-		(pts
-			(xy 279.4 71.12) (xy 285.75 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2ca2640-cecd-45d7-a848-8a1d794988ab")
 	)
 	(wire
 		(pts
@@ -14648,89 +14616,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 279.4 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a7235e0-3f35-43d1-9763-de22e1746f2f")
-		(property "Reference" "TP5"
-			(at 275.082 68.072 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 269.875 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
-			(at 284.48 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 284.48 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 279.4 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 279.4 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 279.4 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "caa0d58b-5bfb-4826-954f-c7e66531b693")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 115.57 46.99 0)
 		(unit 1)
@@ -18091,89 +17976,6 @@
 			(project ""
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 273.05 190.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bdc0c1ca-c8d1-4008-a29a-72db9871b1a0")
-		(property "Reference" "TP4"
-			(at 268.605 188.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 261.62 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 278.13 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 273.05 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 273.05 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 273.05 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6a609e27-e5c0-4331-bbb7-cd98db3fdcce")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
