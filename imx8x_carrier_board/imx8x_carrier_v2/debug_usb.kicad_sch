@@ -4743,8 +4743,8 @@
 		(uuid 94c5275f-171a-425d-9abe-b664b0679429)
 	)
 	(rectangle
-		(start 168.529 37.592)
-		(end 204.724 68.072)
+		(start 130.429 37.592)
+		(end 171.196 79.502)
 		(stroke
 			(width 0)
 			(type default)
@@ -4765,18 +4765,6 @@
 			(type none)
 		)
 		(uuid df34e047-3be4-46cd-9a8c-6aed031e2d6d)
-	)
-	(rectangle
-		(start 130.429 37.592)
-		(end 166.624 68.072)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid f7c2cb04-74d3-430d-b793-dbdba58e5af2)
 	)
 	(text "ESD/Surge Protector"
 		(exclude_from_sim no)
@@ -4804,28 +4792,6 @@
 		)
 		(uuid "0fa1e474-2989-4215-81de-d0f6d8cff1e8")
 	)
-	(text "Think there needs to be 22 resitors for the tx and rx\n"
-		(exclude_from_sim no)
-		(at 163.83 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "514f3a38-f41f-4ba2-b57a-9a9963542097")
-	)
-	(text "UART1 Pin Headers"
-		(exclude_from_sim no)
-		(at 147.32 40.64 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-				(thickness 0.4064)
-				(bold yes)
-			)
-		)
-		(uuid "6663aec8-ff5d-43dd-a032-38de63f681f7")
-	)
 	(text "Micro-B USB Connector =>"
 		(exclude_from_sim no)
 		(at 33.02 151.13 0)
@@ -4838,7 +4804,7 @@
 	)
 	(text "UART2 Pin Headers"
 		(exclude_from_sim no)
-		(at 185.42 40.64 0)
+		(at 147.32 40.64 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -5156,6 +5122,12 @@
 		(uuid "7b7c6030-5a25-4727-8555-5404c09e4a12")
 	)
 	(junction
+		(at 140.97 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c20d956-d700-42f3-a566-1e9aa8ed6655")
+	)
+	(junction
 		(at 86.36 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5354,10 +5326,6 @@
 		(uuid "f758f4af-63c7-4b61-8d82-ee3f33720400")
 	)
 	(no_connect
-		(at 179.07 54.61)
-		(uuid "0024ea45-f168-4523-9e36-9ca6d034cd03")
-	)
-	(no_connect
 		(at 242.57 207.01)
 		(uuid "3af047a1-8d62-4236-9841-d80ae969fb42")
 	)
@@ -5368,10 +5336,6 @@
 	(no_connect
 		(at 242.57 204.47)
 		(uuid "9b459691-9e10-4a42-ba7a-a9bec218b91f")
-	)
-	(no_connect
-		(at 179.07 57.15)
-		(uuid "b8c50dcc-a3aa-48bd-aa9a-758bbdc23850")
 	)
 	(no_connect
 		(at 327.66 201.93)
@@ -5793,16 +5757,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 59.69) (xy 149.86 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bcb87e4-7c23-4097-8706-cd7186aaccdc")
-	)
-	(wire
-		(pts
 			(xy 53.34 148.59) (xy 49.53 148.59)
 		)
 		(stroke
@@ -5933,7 +5887,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 49.53) (xy 182.88 49.53)
+			(xy 140.97 49.53) (xy 144.78 49.53)
 		)
 		(stroke
 			(width 0)
@@ -6463,13 +6417,23 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 52.07) (xy 182.88 52.07)
+			(xy 140.97 52.07) (xy 144.78 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "547cb08f-54f3-4775-bb35-c2d8c3965d7c")
+	)
+	(wire
+		(pts
+			(xy 140.97 57.15) (xy 140.97 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5486edc0-4645-4f4b-b6ca-027290347519")
 	)
 	(wire
 		(pts
@@ -6550,6 +6514,16 @@
 			(type default)
 		)
 		(uuid "5b6eb805-dba1-4885-a162-4267a85ef2f7")
+	)
+	(wire
+		(pts
+			(xy 140.97 54.61) (xy 140.97 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d914956-630e-4970-a3f2-49f8d449c9d6")
 	)
 	(wire
 		(pts
@@ -6810,6 +6784,16 @@
 			(type default)
 		)
 		(uuid "742afe86-f2b9-4a73-9eec-ed00aae1e5f5")
+	)
+	(wire
+		(pts
+			(xy 151.13 57.15) (xy 151.13 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7524e5f0-b295-4617-a714-e5a2f66ba04d")
 	)
 	(wire
 		(pts
@@ -8223,7 +8207,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 59.69) (xy 189.23 59.69)
+			(xy 140.97 57.15) (xy 151.13 57.15)
 		)
 		(stroke
 			(width 0)
@@ -8883,7 +8867,7 @@
 	)
 	(global_label "X_ADMA_UART2_RX"
 		(shape input)
-		(at 182.88 49.53 0)
+		(at 144.78 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8893,7 +8877,7 @@
 		)
 		(uuid "0018c6c6-7ca1-4165-9d58-869f69463289")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 203.2218 49.53 0)
+			(at 165.1218 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8905,7 +8889,7 @@
 	)
 	(global_label "X_ADMA_UART2_TX"
 		(shape output)
-		(at 182.88 52.07 0)
+		(at 144.78 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8915,51 +8899,7 @@
 		)
 		(uuid "09f321f3-0a0b-458e-9a0a-4389a3aa7b0c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.9194 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_ADMA_UART1_TX"
-		(shape output)
-		(at 140.97 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "26d8f074-2dcf-4008-8ca6-11aa1944452f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.0094 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_ADMA_UART1_CTS_B"
-		(shape input)
-		(at 140.97 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "36da7a09-d738-4efb-94b4-a2d6ff50b77c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.517 57.15 0)
+			(at 164.8194 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9031,50 +8971,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_ADMA_UART1_RX"
-		(shape input)
-		(at 140.97 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "938f0fab-1dd8-42ca-9bde-1229b42d3cfd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.3118 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_ADMA_UART1_RTS_B"
-		(shape input)
-		(at 140.97 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9715eb96-47b8-45a0-b01b-1827c34546f2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.517 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -12140,7 +12036,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 189.23 59.69 0)
+		(at 151.13 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12149,7 +12045,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ae5eb97-7224-49fc-a001-6fd7ade8f08c")
 		(property "Reference" "#PWR98"
-			(at 189.23 66.04 0)
+			(at 151.13 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12158,7 +12054,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 64.008 0)
+			(at 151.13 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12166,7 +12062,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 59.69 0)
+			(at 151.13 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12175,7 +12071,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 59.69 0)
+			(at 151.13 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12184,7 +12080,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 59.69 0)
+			(at 151.13 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12199,72 +12095,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
 					(reference "#PWR98")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 149.86 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4b3bfb1e-42a2-4c45-ae57-9b318d183f8e")
-		(property "Reference" "#PWR7"
-			(at 149.86 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 149.86 64.008 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c7cdf46-9ea7-4b12-9b6e-fe3ee2d0789c")
-		)
-		(instances
-			(project ""
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
-					(reference "#PWR7")
 					(unit 1)
 				)
 			)
@@ -16457,82 +16287,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
-		(at 135.89 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "be4c8dcf-a551-4bee-ba66-99715654fce1")
-		(property "Reference" "J2"
-			(at 136.906 47.752 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x05_Pin"
-			(at 140.462 61.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 135.89 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 135.89 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "36735988-245d-41cd-981d-e84f4ce84b1a")
-		)
-		(pin "2"
-			(uuid "064c81ca-bcc1-4bde-a8e7-2bd73eade306")
-		)
-		(pin "1"
-			(uuid "9425b668-349e-46e3-9f9e-0971e1c12f76")
-		)
-		(pin "5"
-			(uuid "768c10f0-453f-468f-b10e-23f0f3d6c1f7")
-		)
-		(pin "4"
-			(uuid "c27cd870-df52-472e-b657-362a39c1f185")
-		)
-		(instances
-			(project ""
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/292335d6-f5c5-4a7d-8d08-fc166527642f"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 26.67 58.42 0)
 		(unit 1)
@@ -18824,7 +18578,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
-		(at 173.99 54.61 0)
+		(at 135.89 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18832,7 +18586,7 @@
 		(dnp no)
 		(uuid "e60843fa-3aec-485a-8372-bc0d8ae914f9")
 		(property "Reference" "J3"
-			(at 175.006 48.26 0)
+			(at 136.906 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18840,7 +18594,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at 177.8 61.214 0)
+			(at 139.7 61.214 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18848,7 +18602,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
-			(at 173.99 54.61 0)
+			(at 135.89 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18857,7 +18611,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 54.61 0)
+			(at 135.89 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18866,7 +18620,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 173.99 54.61 0)
+			(at 135.89 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
