@@ -38,7 +38,7 @@
 	)
 	(text "Load Switch EN"
 		(exclude_from_sim no)
-		(at 118.11 82.55 0)
+		(at 118.11 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -135,17 +135,6 @@
 		)
 		(uuid "741dda8d-be53-4f17-a15c-23fd843453ad")
 	)
-	(text "GPIO...........................................................Page 9\n"
-		(exclude_from_sim no)
-		(at 46.482 60.706 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(href "#8")
-		)
-		(uuid "7c744b9a-63bc-410e-a0e1-985fa64c352f")
-	)
 	(text "IMX8 SCALES Carrier Board"
 		(exclude_from_sim no)
 		(at 45.72 17.78 0)
@@ -159,7 +148,7 @@
 		)
 		(uuid "7d0f61da-94e7-4518-8239-62cc444a4910")
 	)
-	(text "I2C.............................................................Page 8\n"
+	(text "GPIO/I2C......................................................Page 8\n"
 		(exclude_from_sim no)
 		(at 46.355 58.42 0)
 		(effects
@@ -377,7 +366,7 @@
 	)
 	(polyline
 		(pts
-			(xy 149.352 82.804) (xy 151.13 83.82)
+			(xy 149.352 75.184) (xy 151.13 76.2)
 		)
 		(stroke
 			(width 0)
@@ -404,16 +393,6 @@
 			(type default)
 		)
 		(uuid "1175a25b-9bbe-499e-8190-0cedf66f63b2")
-	)
-	(polyline
-		(pts
-			(xy 149.352 73.406) (xy 151.13 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "156c2670-860e-4b69-a923-550fd656a943")
 	)
 	(polyline
 		(pts
@@ -487,7 +466,7 @@
 	)
 	(polyline
 		(pts
-			(xy 140.97 83.82) (xy 151.13 83.82)
+			(xy 140.97 76.2) (xy 151.13 76.2)
 		)
 		(stroke
 			(width 0)
@@ -527,17 +506,7 @@
 	)
 	(polyline
 		(pts
-			(xy 149.352 71.374) (xy 151.13 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f85a604-580a-47f4-832b-e48a1f81237e")
-	)
-	(polyline
-		(pts
-			(xy 128.27 83.82) (xy 110.49 83.82)
+			(xy 128.27 76.2) (xy 110.49 76.2)
 		)
 		(stroke
 			(width 0)
@@ -717,16 +686,6 @@
 	)
 	(polyline
 		(pts
-			(xy 140.97 72.39) (xy 151.13 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c51d39d4-062d-419f-9361-f4ae8c6261aa")
-	)
-	(polyline
-		(pts
 			(xy 149.352 42.926) (xy 151.13 41.91)
 		)
 		(stroke
@@ -767,7 +726,7 @@
 	)
 	(polyline
 		(pts
-			(xy 110.49 83.82) (xy 110.49 93.98)
+			(xy 110.49 76.2) (xy 110.49 93.98)
 		)
 		(stroke
 			(width 0)
@@ -787,7 +746,7 @@
 	)
 	(polyline
 		(pts
-			(xy 149.352 84.836) (xy 151.13 83.82)
+			(xy 149.352 77.216) (xy 151.13 76.2)
 		)
 		(stroke
 			(width 0)
@@ -911,7 +870,7 @@
 		)
 	)
 	(sheet
-		(at 128.27 81.28)
+		(at 128.27 73.66)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -926,8 +885,8 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8")
-		(property "Sheetname" "GPIO"
-			(at 128.27 80.5684 0)
+		(property "Sheetname" "GPIO/I2C"
+			(at 128.27 72.9484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -936,7 +895,7 @@
 			)
 		)
 		(property "Sheetfile" "miscellaneous.kicad_sch"
-			(at 128.27 85.6746 0)
+			(at 128.27 78.0546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,7 +907,7 @@
 		(instances
 			(project "imx8x_carrier_v2"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "9")
+					(page "8")
 				)
 			)
 		)
@@ -1011,7 +970,7 @@
 			(color 255 223 38 1.0000)
 		)
 		(uuid "7dc4de44-e877-4145-a70b-e254356af12a")
-		(property "Sheetname" "Primary System Power"
+		(property "Sheetname" "System Power"
 			(at 135.255 91.44 0)
 			(effects
 				(font
@@ -1034,49 +993,6 @@
 			(project "imx8x_carrier_v2"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 128.27 71.12)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 223 38 1.0000)
-		)
-		(uuid "9f694d68-3ac6-426c-8010-e2188e2cfbb4")
-		(property "Sheetname" "I2C"
-			(at 128.27 70.4084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "imx_I2C.kicad_sch"
-			(at 128.27 75.5146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "imx8x_carrier_v2"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047"
-					(page "8")
 				)
 			)
 		)
