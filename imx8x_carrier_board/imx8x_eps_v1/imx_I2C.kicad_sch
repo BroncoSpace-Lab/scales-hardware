@@ -1,0 +1,118 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "49225a0e-87a4-4c0f-b68a-b4a3b297ae7b")
+	(paper "A5")
+	(lib_symbols)
+	(rectangle
+		(start 15.24 38.1)
+		(end 77.47 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 27b05cf1-d697-4c3a-b85e-048c7642a466)
+	)
+	(text "I2C\n"
+		(exclude_from_sim no)
+		(at 19.05 16.51 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
+			)
+		)
+		(uuid "59e65933-5a46-4599-a3ee-bf11b536b00e")
+	)
+	(text_box "I2C Pull ups based on the dev board schematic pull ups for I2C1"
+		(exclude_from_sim no)
+		(at 14.605 19.685 0)
+		(size 39.37 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "480c2760-19bf-40cc-ba2a-e06da8a1289a")
+	)
+	(text_box "If for some reason we want more GPIOs available we can get a GPIO expander via I2C"
+		(exclude_from_sim no)
+		(at 14.605 26.67 0)
+		(size 39.37 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "b58b38af-3c0e-47fc-a8b5-5b7fe2db04c9")
+	)
+	(global_label "X_ADMA_I2C3_SDA"
+		(shape bidirectional)
+		(at 41.91 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1998556d-469c-4fd2-b2fb-d53315fed211")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.8793 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_ADMA_I2C3_SCL"
+		(shape input)
+		(at 41.91 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77f127e7-57f3-46be-b963-85a6258c33c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 61.7075 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+)
