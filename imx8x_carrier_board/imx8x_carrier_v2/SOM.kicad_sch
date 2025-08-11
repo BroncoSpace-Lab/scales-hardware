@@ -7119,6 +7119,12 @@
 		(uuid "17fc86e4-4001-4925-9710-d68eb0ce4623")
 	)
 	(junction
+		(at 368.808 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c595e57-0152-47c4-90cc-96db126e3998")
+	)
+	(junction
 		(at 233.68 240.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7309,12 +7315,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6bc0343d-c68b-4e5a-9e05-71e7df4f5261")
-	)
-	(junction
-		(at 368.3 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7029e2de-42f6-4fe7-85b9-04d07666498a")
 	)
 	(junction
 		(at 247.65 215.9)
@@ -9344,7 +9344,7 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 36.83) (xy 368.3 36.83)
+			(xy 364.49 36.83) (xy 368.808 36.83)
 		)
 		(stroke
 			(width 0)
@@ -9461,16 +9461,6 @@
 			(type default)
 		)
 		(uuid "51ec3b55-825a-464c-bd24-a212ed6277f5")
-	)
-	(wire
-		(pts
-			(xy 368.3 36.83) (xy 373.38 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5210aab0-7b5f-49ab-8219-761355aec232")
 	)
 	(wire
 		(pts
@@ -9661,6 +9651,16 @@
 			(type default)
 		)
 		(uuid "61eaa031-122e-43d5-b767-e64acf585cd4")
+	)
+	(wire
+		(pts
+			(xy 368.808 36.83) (xy 373.38 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624054d9-2f25-4257-83ce-02c7a78b2357")
 	)
 	(wire
 		(pts
@@ -10584,7 +10584,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 36.83) (xy 368.3 39.37)
+			(xy 368.808 36.83) (xy 368.808 39.37)
 		)
 		(stroke
 			(width 0)
@@ -13930,6 +13930,74 @@
 		)
 	)
 	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
+		(at 355.6 29.21 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01247e3e-7f20-41ee-9c65-76d237205e43")
+		(property "Reference" "H1"
+			(at 358.14 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
+			(at 358.14 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 355.6 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 355.6 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6491c537-e951-4429-98ff-e6b146036ebf")
+		)
+		(instances
+			(project ""
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 33.02 87.63 180)
 		(unit 1)
@@ -14802,74 +14870,6 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
-		(at 373.38 29.21 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39e8e44c-4f2c-4623-9eeb-8cfb57a0ea0f")
-		(property "Reference" "H3"
-			(at 375.92 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 375.92 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 373.38 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 373.38 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 373.38 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5cba8b8-54cf-474b-88b7-6456839b1793")
-		)
-		(instances
-			(project "imx8x_carrier_v2"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 223.52 243.84 0)
 		(unit 1)
@@ -15180,74 +15180,6 @@
 			(project ""
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
 					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
-		(at 355.6 29.21 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4fb30016-4554-47db-9b4c-c9b84ed3dc6c")
-		(property "Reference" "H1"
-			(at 358.14 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 358.14 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 355.6 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 355.6 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 355.6 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "026e492c-1606-46d2-b282-ea2ce2f0fd59")
-		)
-		(instances
-			(project ""
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -16710,74 +16642,6 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
-		(at 382.27 29.21 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98c4ffaf-44fc-4788-8cb0-7ca3e3c98593")
-		(property "Reference" "H4"
-			(at 384.81 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 384.81 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 382.27 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 382.27 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 382.27 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f798baa1-6bfb-44b5-ab59-d071cf77fdc8")
-		)
-		(instances
-			(project "imx8x_carrier_v2"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 260.35 162.56 0)
 		(unit 1)
@@ -17296,6 +17160,74 @@
 		)
 	)
 	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
+		(at 373.38 29.21 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae7f33ac-ebb2-4084-9fed-1660f68d9072")
+		(property "Reference" "H3"
+			(at 375.92 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
+			(at 375.92 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 373.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 373.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 373.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49ece97a-2c6c-41c9-a70e-4384bd8f424f")
+		)
+		(instances
+			(project "imx8x_carrier_v2"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 152.4 48.26 0)
 		(unit 1)
@@ -17652,6 +17584,74 @@
 			(project ""
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
+		(at 364.49 29.21 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c40cc025-93e2-423c-b374-38fd8aa4896b")
+		(property "Reference" "H2"
+			(at 367.03 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
+			(at 367.03 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 364.49 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 364.49 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 364.49 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "689eeb9d-63ef-4464-aeb4-13e6d8e56acc")
+		)
+		(instances
+			(project "imx8x_carrier_v2"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -18335,74 +18335,6 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
-		(at 364.49 29.21 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c961d76f-f012-42d5-be8c-fc61c2206c19")
-		(property "Reference" "H2"
-			(at 367.03 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 367.03 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 364.49 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 364.49 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 364.49 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c95a5ed7-34f8-4902-a895-3df8b09c7d4d")
-		)
-		(instances
-			(project "imx8x_carrier_v2"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 200.66 125.73 0)
 		(unit 1)
@@ -18768,7 +18700,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 368.3 39.37 0)
+		(at 368.808 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18777,7 +18709,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea540f8c-ec65-4e90-add1-124292051265")
 		(property "Reference" "#PWR05"
-			(at 368.3 45.72 0)
+			(at 368.808 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18786,7 +18718,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 368.3 44.45 0)
+			(at 368.808 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18794,7 +18726,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 39.37 0)
+			(at 368.808 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18803,7 +18735,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.3 39.37 0)
+			(at 368.808 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18812,7 +18744,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 39.37 0)
+			(at 368.808 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19207,6 +19139,74 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
 					(reference "R125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "imx8_carrier_board_symbol_library:MountingHole_Pad_M2.5_2.7mm")
+		(at 382.27 29.21 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f11ed9a0-1ac4-474e-92b8-e42b76d7b846")
+		(property "Reference" "H4"
+			(at 384.81 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
+			(at 384.81 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 382.27 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 382.27 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection as pad named MP"
+			(at 382.27 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec78360a-2146-49ce-8a6b-20217aece55d")
+		)
+		(instances
+			(project "imx8x_carrier_v2"
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
+					(reference "H4")
 					(unit 1)
 				)
 			)
