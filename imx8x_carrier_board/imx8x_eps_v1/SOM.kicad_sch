@@ -5897,131 +5897,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "imx8_carrier_board_symbol_library:VCC_3V3"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC_3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "imx8_carrier_board_symbol_library:VCC_3V3_OUT"
 			(power)
 			(pin_numbers
@@ -6888,7 +6763,7 @@
 	)
 	(text "Switch the watchdog and the m40 uart"
 		(exclude_from_sim no)
-		(at 175.768 197.866 0)
+		(at 175.26 198.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6921,26 +6796,6 @@
 		)
 		(uuid "c13d5920-4053-4f68-83d8-e4f0006c28f7")
 	)
-	(text_box "Consider sequencing peripheral power with P_GOOD using a load switch. page 27 of the HW manual to ensure SOM safety"
-		(exclude_from_sim no)
-		(at 155.575 173.99 0)
-		(size 31.115 11.43)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "073000af-bf14-41f6-ae41-2c48a486ddf2")
-	)
 	(text_box "X2 Connector: Pins C through D"
 		(exclude_from_sim no)
 		(at 215.392 34.671 0)
@@ -6965,8 +6820,8 @@
 	)
 	(text_box "In the kernel device tree you can set the correct value to the specific register and enable, disable, or leave floating the pull up or down of the pin, controlled on the actual SOM\n"
 		(exclude_from_sim no)
-		(at 12.7 111.125 0)
-		(size 36.195 37.465)
+		(at 368.427 83.566 0)
+		(size 36.195 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -6985,7 +6840,7 @@
 	)
 	(text_box "I2C0_SCL/SDA Reserved for Power Board Diagnostics. \nI2C3_SCL/SDA is open for end user."
 		(exclude_from_sim no)
-		(at 264.16 136.525 0)
+		(at 251.46 113.665 0)
 		(size 38.1 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -7002,26 +6857,6 @@
 			(justify left top)
 		)
 		(uuid "30d10ff2-352e-42ff-ab31-00b5564b904d")
-	)
-	(text_box "09 reserved for jetson watchdog"
-		(exclude_from_sim no)
-		(at 252.476 183.896 0)
-		(size 20.828 4.572)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "8bececf0-7548-4780-9b8d-b384f1d34dba")
 	)
 	(text_box "For pin usages, please refer to the SCALES Notion on the IMX8X Carrier Board under design implementation notes.\nLinked here."
 		(exclude_from_sim no)
@@ -7043,6 +6878,26 @@
 			(href "https://www.notion.so/broncospace/Carrier-Board-Design-208ca1dca64c8071ba8dd0e6b5343ced?source=copy_link")
 		)
 		(uuid "9811dd39-9457-4787-9f57-d3cea5062245")
+	)
+	(text_box "GPIO1_12 is reserved for Jetson Enable. \nExposed via pin headers, however it is internally routed from the SOM to the Load Switches."
+		(exclude_from_sim no)
+		(at 274.955 204.47 0)
+		(size 34.29 13.97)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c2a9275e-4962-498e-b436-97fcc8026d88")
 	)
 	(text_box "X1 Connector: Pins A through B"
 		(exclude_from_sim no)
@@ -7139,7 +6994,7 @@
 		(uuid "17fc86e4-4001-4925-9710-d68eb0ce4623")
 	)
 	(junction
-		(at 368.808 36.83)
+		(at 368.3 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c595e57-0152-47c4-90cc-96db126e3998")
@@ -7451,7 +7306,7 @@
 		(uuid "97e5eb5c-5d11-49bb-a881-2508924162f0")
 	)
 	(junction
-		(at 280.67 190.5)
+		(at 312.42 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a346a8b-8c8d-4070-8ad4-3f6236316261")
@@ -7889,10 +7744,6 @@
 		(uuid "561da9d6-ccb7-4106-aede-ecd49a073006")
 	)
 	(no_connect
-		(at 251.46 195.58)
-		(uuid "571b5ff1-ed55-4839-ad46-23762aac6e1b")
-	)
-	(no_connect
 		(at 246.38 139.7)
 		(uuid "5e098a16-0986-466d-9f84-cea14bc0a7c0")
 	)
@@ -8108,7 +7959,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 218.44) (xy 264.16 210.82)
+			(xy 264.16 218.44) (xy 264.16 212.09)
 		)
 		(stroke
 			(width 0)
@@ -8498,7 +8349,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 190.5) (xy 280.67 193.04)
+			(xy 312.42 190.5) (xy 312.42 193.04)
 		)
 		(stroke
 			(width 0)
@@ -9198,7 +9049,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 189.23) (xy 280.67 190.5)
+			(xy 312.42 189.23) (xy 312.42 190.5)
 		)
 		(stroke
 			(width 0)
@@ -9368,7 +9219,7 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 36.83) (xy 368.808 36.83)
+			(xy 364.49 36.83) (xy 368.3 36.83)
 		)
 		(stroke
 			(width 0)
@@ -9678,7 +9529,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.808 36.83) (xy 373.38 36.83)
+			(xy 368.3 36.83) (xy 373.38 36.83)
 		)
 		(stroke
 			(width 0)
@@ -9878,7 +9729,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 127) (xy 274.32 127)
+			(xy 262.89 127) (xy 309.88 127)
 		)
 		(stroke
 			(width 0)
@@ -9958,7 +9809,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 190.5) (xy 280.67 190.5)
+			(xy 246.38 190.5) (xy 312.42 190.5)
 		)
 		(stroke
 			(width 0)
@@ -10608,7 +10459,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.808 36.83) (xy 368.808 39.37)
+			(xy 368.3 36.83) (xy 368.3 39.37)
 		)
 		(stroke
 			(width 0)
@@ -10998,7 +10849,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 210.82) (xy 248.92 210.82)
+			(xy 264.16 212.09) (xy 248.92 212.09)
 		)
 		(stroke
 			(width 0)
@@ -11228,7 +11079,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 240.03) (xy 233.68 238.76)
+			(xy 233.68 240.03) (xy 233.68 234.95)
 		)
 		(stroke
 			(width 0)
@@ -11355,6 +11206,16 @@
 			(type default)
 		)
 		(uuid "ccb13a0d-89f8-4cff-a630-dc653cb3502e")
+	)
+	(wire
+		(pts
+			(xy 248.92 212.09) (xy 248.92 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd5c1a34-5fbf-4db0-ba4e-7c65810a7ed9")
 	)
 	(wire
 		(pts
@@ -11488,7 +11349,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 129.54) (xy 274.32 127)
+			(xy 309.88 130.81) (xy 309.88 127)
 		)
 		(stroke
 			(width 0)
@@ -11508,7 +11369,7 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 198.12) (xy 280.67 200.66)
+			(xy 312.42 198.12) (xy 312.42 200.66)
 		)
 		(stroke
 			(width 0)
@@ -13579,6 +13440,28 @@
 			)
 		)
 	)
+	(global_label "+3.3V_OBC"
+		(shape input)
+		(at 233.68 234.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ce4bcf2b-897f-4f0c-9748-dbf51a5ca56e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 247.1881 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_LSIO_QSPIOB_SS0_B"
 		(shape input)
 		(at 218.44 60.96 180)
@@ -14089,7 +13972,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 280.67 200.66 0)
+		(at 312.42 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14097,7 +13980,7 @@
 		(dnp no)
 		(uuid "04899744-5931-42e6-a329-c28810559079")
 		(property "Reference" "#PWR140"
-			(at 280.67 207.01 0)
+			(at 312.42 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14106,7 +13989,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 280.67 204.47 0)
+			(at 312.42 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14114,7 +13997,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 200.66 0)
+			(at 312.42 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14123,7 +14006,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 280.67 200.66 0)
+			(at 312.42 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14132,7 +14015,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 280.67 200.66 0)
+			(at 312.42 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15062,71 +14945,6 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3")
-		(at 233.68 238.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41776961-5b54-48cd-9ecd-68f29deee2b6")
-		(property "Reference" "#PWR136"
-			(at 233.68 242.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC_3V3"
-			(at 233.68 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 233.68 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9fbe17d7-0ce1-44b9-9a7a-3858cc2a8ee3")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "#PWR136")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 213.36 203.2 180)
 		(unit 1)
@@ -16019,7 +15837,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 280.67 190.5 270)
+		(at 312.42 190.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16027,7 +15845,7 @@
 		(dnp no)
 		(uuid "7a60e3f8-ee77-4225-b655-7bc9764d0c43")
 		(property "Reference" "#FLG06"
-			(at 282.575 190.5 0)
+			(at 314.325 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16036,7 +15854,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 288.544 190.5 90)
+			(at 320.294 190.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16044,7 +15862,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 190.5 0)
+			(at 312.42 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16053,7 +15871,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 280.67 190.5 0)
+			(at 312.42 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16062,7 +15880,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 280.67 190.5 0)
+			(at 312.42 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16367,7 +16185,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 280.67 195.58 0)
+		(at 312.42 195.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16375,7 +16193,7 @@
 		(dnp no)
 		(uuid "8fb19788-447b-4051-bc6c-8f59d954c311")
 		(property "Reference" "C70"
-			(at 283.21 194.3163 0)
+			(at 314.96 194.3163 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16384,7 +16202,7 @@
 			)
 		)
 		(property "Value" "220nF"
-			(at 283.21 196.8563 0)
+			(at 314.96 196.8563 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16393,7 +16211,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 280.67 195.58 0)
+			(at 312.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16402,7 +16220,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 280.67 195.58 0)
+			(at 312.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16411,7 +16229,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 280.67 195.58 0)
+			(at 312.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16420,7 +16238,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 280.67 195.58 0)
+			(at 312.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16428,7 +16246,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 280.67 195.58 0)
+			(at 312.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17550,7 +17368,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:VDD_ADC_1V8")
-		(at 280.67 189.23 0)
+		(at 312.42 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17558,7 +17376,7 @@
 		(dnp no)
 		(uuid "b98e4b69-9c14-4a01-8258-69614ed004ea")
 		(property "Reference" "#PWR033"
-			(at 280.67 193.04 0)
+			(at 312.42 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17567,7 +17385,7 @@
 			)
 		)
 		(property "Value" "VDD_ADC_1V8"
-			(at 281.305 184.15 0)
+			(at 313.055 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17575,7 +17393,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 189.23 0)
+			(at 312.42 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17584,7 +17402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 280.67 189.23 0)
+			(at 312.42 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17593,7 +17411,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 280.67 189.23 0)
+			(at 312.42 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17683,7 +17501,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 129.54 0)
+		(at 309.88 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17692,7 +17510,7 @@
 		(fields_autoplaced yes)
 		(uuid "c55058a5-017d-43dc-b4d3-7dcfd71625df")
 		(property "Reference" "#PWR0151"
-			(at 274.32 135.89 0)
+			(at 309.88 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17701,7 +17519,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 134.62 0)
+			(at 309.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17709,7 +17527,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 129.54 0)
+			(at 309.88 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17718,7 +17536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 129.54 0)
+			(at 309.88 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17727,7 +17545,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 274.32 129.54 0)
+			(at 309.88 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18724,7 +18542,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 368.808 39.37 0)
+		(at 368.3 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18733,7 +18551,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea540f8c-ec65-4e90-add1-124292051265")
 		(property "Reference" "#PWR05"
-			(at 368.808 45.72 0)
+			(at 368.3 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18742,7 +18560,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 368.808 44.45 0)
+			(at 368.3 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18750,7 +18568,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.808 39.37 0)
+			(at 368.3 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18759,7 +18577,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 368.808 39.37 0)
+			(at 368.3 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18768,7 +18586,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.808 39.37 0)
+			(at 368.3 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)

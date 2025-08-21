@@ -5,7 +5,7 @@
 	(uuid "2ff1da0d-ffb2-499f-8425-a5e2e40017a5")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x04"
+		(symbol "Conn_01x04_1"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -29,7 +29,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +74,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_1_1"
+			(symbol "Conn_01x04_1_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 1.27 -6.35)
@@ -3600,28 +3600,6 @@
 			)
 		)
 	)
-	(global_label "X_LSIO_GPIO1_IO09"
-		(shape bidirectional)
-		(at 86.36 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b98e8a87-6b2e-44f7-9c7e-ea8c719ba001")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.9392 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "+20V_Jetson"
 		(shape output)
 		(at 241.3 30.48 0)
@@ -3640,6 +3618,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WDT_WDI_Jetson"
+		(shape output)
+		(at 86.36 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "fc960a09-f44f-4bec-b3de-6eb18d440ff3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.8404 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4220,80 +4222,6 @@
 			(project "imx8x_eps_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/7dc4de44-e877-4145-a70b-e254356af12a/f041010b-c7bf-44b6-b7b6-9787e69a889a"
 					(reference "R186")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 241.3 52.07 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b4cdcfb-dbf9-4e79-a1d9-192b6d657104")
-		(property "Reference" "J7"
-			(at 240.03 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04"
-			(at 240.03 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 241.3 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 241.3 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df67e2ae-9c8d-40ff-a00d-e6d759069a5c")
-		)
-		(pin "2"
-			(uuid "2866be30-c3bc-4406-924a-d91d4549d6bc")
-		)
-		(pin "3"
-			(uuid "de833594-72c8-44c1-938c-78a71ed1e096")
-		)
-		(pin "4"
-			(uuid "4e13d953-7d1d-452a-bed6-c9dbc988a161")
-		)
-		(instances
-			(project "imx8x_eps_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/7dc4de44-e877-4145-a70b-e254356af12a/f041010b-c7bf-44b6-b7b6-9787e69a889a"
-					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -6101,6 +6029,81 @@
 			(project "imx8x_eps_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/7dc4de44-e877-4145-a70b-e254356af12a/f041010b-c7bf-44b6-b7b6-9787e69a889a"
 					(reference "C104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x04_1")
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 241.3 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a005ff2a-8496-447b-a25c-b2b7382ca72e")
+		(property "Reference" "J2"
+			(at 240.03 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 240.03 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 241.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e9972081-34ee-4cf0-a7eb-9d25761b5fa2")
+		)
+		(pin "1"
+			(uuid "6dc96b3c-99e9-46b7-b25f-e08d64ca13dd")
+		)
+		(pin "2"
+			(uuid "f0f82b97-3671-4650-8ce9-83588868eb87")
+		)
+		(pin "4"
+			(uuid "dad9ed56-6b5e-4735-b4a4-b6a981c364b1")
+		)
+		(instances
+			(project ""
+				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/7dc4de44-e877-4145-a70b-e254356af12a/f041010b-c7bf-44b6-b7b6-9787e69a889a"
+					(reference "J2")
 					(unit 1)
 				)
 			)
