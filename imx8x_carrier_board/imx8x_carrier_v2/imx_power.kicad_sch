@@ -710,8 +710,8 @@
 		)
 	)
 	(rectangle
-		(start 14.097 30.988)
-		(end 69.977 78.613)
+		(start 14.351 39.624)
+		(end 70.231 87.249)
 		(stroke
 			(width 0)
 			(type default)
@@ -723,7 +723,7 @@
 	)
 	(text "DF11 Power Connector"
 		(exclude_from_sim no)
-		(at 26.67 33.02 0)
+		(at 26.924 41.656 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -743,10 +743,10 @@
 		)
 		(uuid "51929290-3562-4f3f-90dc-75e9db2d493b")
 	)
-	(text_box "Input power comes from the SCALES EPS board, this power connector must also include the necessary I2C lines that connect the monitoring INA260 IC's to the IMX8X"
+	(text_box "Description:\nThis input interfaces the IMX8 Carrier board to the EPS REV F board. I2C0 is reserved for the on-board telemetry devices of the power system, and additionally interfaces 2 reserves GPIO pins on the SOM for subsystem enable lines, and a watchdog output to refresh the watchdog integrated in the power system. The IMX8 carrier board takes in a regulated 3.3V output from the Power system.\nFor this connector we are currently using Hirose DF11 2x8 male headers."
 		(exclude_from_sim no)
-		(at 13.97 19.05 0)
-		(size 56.515 11.43)
+		(at 14.478 19.05 0)
+		(size 72.644 19.558)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -758,52 +758,50 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
 			)
 			(justify left top)
 		)
-		(uuid "49fbf215-e7df-4ae5-9c6d-ef69fd6e7bf0")
+		(uuid "5ce69479-ae59-433f-95d7-e315d1e3ed8c")
 	)
 	(junction
-		(at 25.4 57.15)
+		(at 25.654 65.786)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "386e55d5-c62a-43a7-b2a7-6a084b0b098f")
 	)
 	(junction
-		(at 25.4 48.26)
+		(at 25.654 56.896)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71e2c6d2-dd70-4497-a90c-6cfc43d44055")
 	)
 	(junction
-		(at 25.4 46.99)
+		(at 25.654 55.626)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "754f102a-69fa-48d3-bd3a-ab22e762c284")
 	)
 	(junction
-		(at 25.4 45.72)
+		(at 25.654 54.356)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "80ffe641-d3f9-44fd-b697-ce6523b1d5d8")
 	)
 	(junction
-		(at 25.4 55.88)
+		(at 25.654 64.516)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab0340ee-5a15-45ab-b810-cc3b9f511f6d")
 	)
 	(junction
-		(at 25.4 58.42)
+		(at 25.654 67.056)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4a3e2b1-7b14-468a-bd50-6a4060c1e32a")
 	)
 	(wire
 		(pts
-			(xy 19.05 57.15) (xy 19.05 58.42)
+			(xy 19.304 65.786) (xy 19.304 67.056)
 		)
 		(stroke
 			(width 0)
@@ -813,7 +811,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 48.26) (xy 25.4 50.8)
+			(xy 25.654 56.896) (xy 25.654 59.436)
 		)
 		(stroke
 			(width 0)
@@ -823,7 +821,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 48.26) (xy 43.18 48.26)
+			(xy 40.894 56.896) (xy 43.434 56.896)
 		)
 		(stroke
 			(width 0)
@@ -833,7 +831,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 46.99) (xy 25.4 48.26)
+			(xy 25.654 55.626) (xy 25.654 56.896)
 		)
 		(stroke
 			(width 0)
@@ -843,7 +841,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 55.88) (xy 25.4 57.15)
+			(xy 25.654 64.516) (xy 25.654 65.786)
 		)
 		(stroke
 			(width 0)
@@ -853,7 +851,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 58.42) (xy 46.99 58.42)
+			(xy 40.894 67.056) (xy 47.244 67.056)
 		)
 		(stroke
 			(width 0)
@@ -863,7 +861,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 53.34) (xy 43.18 53.34)
+			(xy 40.894 61.976) (xy 43.434 61.976)
 		)
 		(stroke
 			(width 0)
@@ -873,7 +871,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 57.15) (xy 25.4 58.42)
+			(xy 25.654 65.786) (xy 25.654 67.056)
 		)
 		(stroke
 			(width 0)
@@ -883,7 +881,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 46.99) (xy 25.4 46.99)
+			(xy 19.304 55.626) (xy 25.654 55.626)
 		)
 		(stroke
 			(width 0)
@@ -893,7 +891,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 43.18 60.96)
+			(xy 40.894 69.596) (xy 43.434 69.596)
 		)
 		(stroke
 			(width 0)
@@ -903,7 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 45.72) (xy 25.4 46.99)
+			(xy 25.654 54.356) (xy 25.654 55.626)
 		)
 		(stroke
 			(width 0)
@@ -913,7 +911,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 55.88) (xy 46.99 55.88)
+			(xy 40.894 64.516) (xy 47.244 64.516)
 		)
 		(stroke
 			(width 0)
@@ -923,7 +921,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 53.34) (xy 25.4 55.88)
+			(xy 25.654 61.976) (xy 25.654 64.516)
 		)
 		(stroke
 			(width 0)
@@ -933,7 +931,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 50.8) (xy 43.18 50.8)
+			(xy 40.894 59.436) (xy 43.434 59.436)
 		)
 		(stroke
 			(width 0)
@@ -943,7 +941,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 57.15) (xy 25.4 57.15)
+			(xy 19.304 65.786) (xy 25.654 65.786)
 		)
 		(stroke
 			(width 0)
@@ -953,7 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 58.42) (xy 25.4 60.96)
+			(xy 25.654 67.056) (xy 25.654 69.596)
 		)
 		(stroke
 			(width 0)
@@ -963,7 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 43.18) (xy 25.4 45.72)
+			(xy 25.654 51.816) (xy 25.654 54.356)
 		)
 		(stroke
 			(width 0)
@@ -973,7 +971,7 @@
 	)
 	(global_label "X_LSIO_GPIO1_IO09"
 		(shape bidirectional)
-		(at 46.99 58.42 0)
+		(at 47.244 67.056 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -983,7 +981,7 @@
 		)
 		(uuid "9b9167f6-821d-40b5-903b-e4e0594bd3c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.4108 58.42 0)
+			(at 69.6648 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,7 +993,7 @@
 	)
 	(global_label "X_ADMA_I2C0_SCL"
 		(shape output)
-		(at 40.64 43.18 0)
+		(at 40.894 51.816 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1005,7 +1003,7 @@
 		)
 		(uuid "a12f36d6-e30a-4a7b-a851-75e61a5a335f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.4375 43.18 0)
+			(at 60.6915 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1017,7 +1015,7 @@
 	)
 	(global_label "X_SCU_WDOG0_WDOG_OUT"
 		(shape output)
-		(at 43.18 60.96 0)
+		(at 43.434 69.596 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1027,7 +1025,7 @@
 		)
 		(uuid "ce2e9f1c-9105-4075-bfaa-81a470b3ee12")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.537 60.96 0)
+			(at 70.791 69.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1039,7 +1037,7 @@
 	)
 	(global_label "X_LSIO_GPIO1_IO10"
 		(shape bidirectional)
-		(at 46.99 55.88 0)
+		(at 47.244 64.516 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1049,7 +1047,7 @@
 		)
 		(uuid "dc973f68-689d-4d47-acc2-6b2a61acf37d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.4108 55.88 0)
+			(at 69.6648 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1061,7 +1059,7 @@
 	)
 	(global_label "X_ADMA_I2C0_SDA"
 		(shape bidirectional)
-		(at 40.64 45.72 0)
+		(at 40.894 54.356 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1071,7 +1069,7 @@
 		)
 		(uuid "e2321c17-3938-4685-8974-c3e25bf2a8bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.6093 45.72 0)
+			(at 61.8633 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1083,7 +1081,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 19.05 58.42 0)
+		(at 19.304 67.056 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1092,7 +1090,7 @@
 		(fields_autoplaced yes)
 		(uuid "09ac7718-c5a1-4f2e-8764-3ad6379c2e39")
 		(property "Reference" "#PWR25"
-			(at 19.05 64.77 0)
+			(at 19.304 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,7 +1099,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 19.05 63.5 0)
+			(at 19.304 72.136 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1109,7 +1107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 58.42 0)
+			(at 19.304 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1118,7 +1116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 58.42 0)
+			(at 19.304 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1127,7 +1125,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 58.42 0)
+			(at 19.304 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1149,7 +1147,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3")
-		(at 19.05 46.99 0)
+		(at 19.304 55.626 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1157,7 +1155,7 @@
 		(dnp no)
 		(uuid "64afd2e7-3511-45eb-a4c8-7811196f2e0b")
 		(property "Reference" "#PWR128"
-			(at 19.05 50.8 0)
+			(at 19.304 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1166,7 +1164,7 @@
 			)
 		)
 		(property "Value" "VCC_3V3"
-			(at 19.05 43.18 0)
+			(at 19.304 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1174,7 +1172,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 46.99 0)
+			(at 19.304 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1183,7 +1181,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 46.99 0)
+			(at 19.304 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,7 +1190,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 19.05 46.99 0)
+			(at 19.304 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1214,7 +1212,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 43.18 48.26 270)
+		(at 43.434 56.896 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1222,7 +1220,7 @@
 		(dnp no)
 		(uuid "6f3f9b8f-a6ff-4ad9-acc7-22634eab79d2")
 		(property "Reference" "TP9"
-			(at 48.26 48.26 90)
+			(at 48.514 56.896 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1231,7 +1229,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 48.895 49.5299 90)
+			(at 49.149 58.1659 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1241,7 +1239,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
-			(at 43.18 53.34 0)
+			(at 43.434 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1250,7 +1248,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 53.34 0)
+			(at 43.434 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1259,7 +1257,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 43.18 48.26 0)
+			(at 43.434 56.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1268,7 +1266,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 43.18 48.26 0)
+			(at 43.434 56.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1276,7 +1274,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 43.18 48.26 0)
+			(at 43.434 56.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1297,7 +1295,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
-		(at 33.02 52.07 0)
+		(at 33.274 60.706 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1305,7 +1303,7 @@
 		(dnp no)
 		(uuid "c19edaf1-d35d-48ca-b8c9-16a56297ea59")
 		(property "Reference" "CN1"
-			(at 29.845 39.37 0)
+			(at 30.099 48.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1311,7 @@
 			)
 		)
 		(property "Value" "DF11-16DP-2DSA(08)"
-			(at 33.655 65.405 0)
+			(at 33.909 74.041 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1321,7 +1319,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:CONN-TH_DF11-16DP-2DSA-08"
-			(at 33.02 68.58 0)
+			(at 33.274 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1330,7 +1328,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
-			(at 33.02 71.12 0)
+			(at 33.274 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1339,7 +1337,7 @@
 			)
 		)
 		(property "Description" "DF11 Connector"
-			(at 33.02 52.07 0)
+			(at 33.274 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1348,7 +1346,7 @@
 			)
 		)
 		(property "LCSC Part" "C530981"
-			(at 33.02 73.66 0)
+			(at 33.274 82.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1357,7 +1355,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 33.02 52.07 0)
+			(at 33.274 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1365,7 +1363,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 33.02 52.07 0)
+			(at 33.274 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1431,7 +1429,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 43.18 50.8 270)
+		(at 43.434 59.436 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1439,7 +1437,7 @@
 		(dnp no)
 		(uuid "dbba81af-f212-4899-a37e-2ef516988f09")
 		(property "Reference" "TP10"
-			(at 48.26 50.8 90)
+			(at 48.514 59.436 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1448,7 +1446,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 48.895 52.0699 90)
+			(at 49.149 60.7059 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1458,7 +1456,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
-			(at 43.18 55.88 0)
+			(at 43.434 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,7 +1465,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 55.88 0)
+			(at 43.434 64.516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1476,7 +1474,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 43.18 50.8 0)
+			(at 43.434 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1485,7 +1483,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 43.18 50.8 0)
+			(at 43.434 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,7 +1491,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 43.18 50.8 0)
+			(at 43.434 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1514,7 +1512,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 43.18 53.34 270)
+		(at 43.434 61.976 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1522,7 +1520,7 @@
 		(dnp no)
 		(uuid "f4c74bce-87c4-4407-9fa1-4dafc24a4a81")
 		(property "Reference" "TP11"
-			(at 48.26 53.34 90)
+			(at 48.514 61.976 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1531,7 +1529,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 48.895 54.6099 90)
+			(at 49.149 63.2459 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1541,7 +1539,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm"
-			(at 43.18 58.42 0)
+			(at 43.434 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1550,7 +1548,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 58.42 0)
+			(at 43.434 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,7 +1557,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 43.18 53.34 0)
+			(at 43.434 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1568,7 +1566,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 43.18 53.34 0)
+			(at 43.434 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,7 +1574,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 43.18 53.34 0)
+			(at 43.434 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
