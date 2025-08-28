@@ -7905,6 +7905,10 @@
 		(uuid "9b5c4902-5437-4da8-9ab5-d262a8b939d8")
 	)
 	(no_connect
+		(at 82.296 72.136)
+		(uuid "9e9cbf84-6458-4b45-ba51-a26b304e937b")
+	)
+	(no_connect
 		(at 252.476 126.746)
 		(uuid "a059ef58-1dc8-47d6-8bca-63ce20cc5cf4")
 	)
@@ -8873,16 +8877,6 @@
 			(type default)
 		)
 		(uuid "2d3c8e87-8ac9-4075-be55-9b76a9c2dd78")
-	)
-	(wire
-		(pts
-			(xy 65.786 72.136) (xy 61.976 72.136)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d3f7d33-2eb1-41d4-8c9e-287370f2b60a")
 	)
 	(wire
 		(pts
@@ -10003,16 +9997,6 @@
 			(type default)
 		)
 		(uuid "7da50bec-18a6-49eb-bb40-fe253b6d737a")
-	)
-	(wire
-		(pts
-			(xy 73.406 72.136) (xy 82.296 72.136)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e0f539c-1784-4a91-a1c3-bd43a5d600fa")
 	)
 	(wire
 		(pts
@@ -11213,16 +11197,6 @@
 			(type default)
 		)
 		(uuid "ccb13a0d-89f8-4cff-a630-dc653cb3502e")
-	)
-	(wire
-		(pts
-			(xy 61.976 72.136) (xy 61.976 73.406)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd5e0a9d-0f6f-485e-b2aa-ad8ca1fd7341")
 	)
 	(wire
 		(pts
@@ -15406,89 +15380,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 69.596 72.136 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6596329e-4682-4595-a690-a1737c511908")
-		(property "Reference" "R109"
-			(at 64.516 70.866 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 73.152 71.374 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 69.85 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.596 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 69.596 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 69.596 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 69.596 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "088d2025-87bf-4921-a0e9-a9bbf23d8dfe")
-		)
-		(pin "2"
-			(uuid "e3f4d23c-63c1-4416-90c7-5ed901d7f7e8")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "R109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 129.286 103.886 0)
 		(unit 1)
@@ -19516,72 +19407,6 @@
 			(project "imx8x_carrier_v1"
 				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
 					(reference "C67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 61.976 73.406 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe78ca3d-7895-4801-be16-e069a64d250b")
-		(property "Reference" "#PWR08"
-			(at 61.976 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 61.976 78.486 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 61.976 73.406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 61.976 73.406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 61.976 73.406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2e9e8c7e-3f5f-4cd5-8847-071e5184ee43")
-		)
-		(instances
-			(project "imx8x_carrier_v1"
-				(path "/4409cb5c-c5cc-45e5-ba22-666413441047/bd9bf2b1-2646-4f47-8b43-7734a13ea490"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
