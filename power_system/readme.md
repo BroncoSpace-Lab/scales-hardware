@@ -1,3 +1,114 @@
+    
+- **Viking 1-C Board Ordered (7/9/25)**
+    
+    This is the third board of the SCALES EPS. It is based on the RevF schematic which yields the Viking 1-C Board. This board improves on the success of the 1-B board and implements some minor improvements that prevented the Peripheral and Jetson subsystem from activating correctly. 
+    
+    **List of Changes in Viking 1-C After Production Errors in Viking 1-B**
+    
+    - Removed R48
+    - Removed R83
+    - The above mentioned resistors caused too low of a voltage to fully enable the En pins on the load switches, and by simply removing them we can successfully drive the load switches on using GPIO pins.
+    - Added 3 MCP9808 I2C Temperature Sensors so we can have some on board temp monitoring, I made sure the addresses dont conflict with that of the other i2c devices on board.
+    
+    **EPS REV F/ Viking 1-C System Overview:**
+    
+    - Power Requirements (+28v 8A Max)
+        - ML/Edge Computer - Nvidia Jetson (+20V 4A)
+        - OBC/Flight Computer - IMX8 (+3.3V 2A)
+        - Peripheral System - Raspberry Pi + Wiznet (+5V 2A)
+    - Component List
+        - Load Switch + Controller: [TPS1HA08-Q1](https://www.ti.com/lit/ds/symlink/tps1ha08-q1.pdf?ts=1748448912035&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS1HA08-Q1)
+        - Switching Regulator: [LT8612](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589836477510287360)
+        - IV-Sensor: [INA260AIPWR](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589836477510287360)
+        - Temperature Sensor: [MCP9808](https://www.microchip.com/en-us/product/mcp9800)
+        - Clock Generator: [LTC6902](https://www.analog.com/media/en/technical-documentation/data-sheets/6902f.pdf)
+        - I2C Buffer: [TCA4307](https://www.ti.com/lit/ds/symlink/tca4307.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1748986173530&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftca4307)
+        - Comparator (WD Circuit): [TLV1704](https://www.ti.com/lit/ds/symlink/tlv1704-sep.pdf)
+        - Subsystem Connector: [DF-11 (2x8)](https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html)
+        - Power Connector: [XT-60PWF](https://www.lcsc.com/product-detail/plug_Changzhou-Amass-Elec-XT60PW-F_C428722.html)
+    - Concept of Operations
+        - OBC is the primary subsystem, which is always enabled. The OBC controls the ML and Perif. via load switches. OBC must hold the respective subsystem EN pin high for it to be active.
+        - Each subsystem has a Watch dog that verifies its normal operation; in the case of a fault, the subsystem is disabled by its watch dog.
+            - OBC: If the OBC hangs and fails to pet, it is power cycled, as the EN pin for its load switch is always held high with respect to the battery voltage
+            - ML/Perif: If either of these subsystems hang and fail to pet, they are disabled until the OBC re-enables them.
+        - Monitoring is done by the OBC via I2C from the INA260s, which allows the subsystem to get basic telemetry on the subsystem state of operation
+        - There are also 3 seperate temperature sensors that send telemetry back to the IMX8X over a 3.3v I2C
+    
+    **Block Diagram and Visual Con. Ops**
+    
+    - EPS RevF Block Diagram
+    
+    
+     
+      ![image](https://github.com/user-attachments/assets/e7a37d6d-426b-4c05-a1c1-b99cf89466d2)
+
+
+    
+    - EPS RevF Concept of Operations
+        
+        ![EPS RevE Con Ops](https://github.com/BroncoSpace-Lab/scales-hardware/raw/main/power_system/images/RevE/RevE%20Con%20Cops.png)
+        
+    
+    **Board Schematic**
+    
+    - Root
+        
+       ![image](https://github.com/user-attachments/assets/2af81d0f-468a-4528-9353-4179cd5d1dae)
+        
+    - OBC Subsystem
+        
+        ![image](https://github.com/user-attachments/assets/226e576c-e953-4384-a969-1694a22efd43)
+        
+    - Perif. Subsystem
+        
+       ![image](https://github.com/user-attachments/assets/bab4c65b-624c-4e82-bddc-449ab1eed92d)
+        
+    - Jetson Subsystem
+        
+       ![image](https://github.com/user-attachments/assets/66587f59-6be3-4180-8a12-4e851ff2706e)
+        
+    - OBC Watchdog Circuit
+        
+        ![image](https://github.com/user-attachments/assets/d0f0369d-0d45-40ea-b61a-2eb62fae55cb)
+        
+    - Peripheral Watchdog Circuit
+        
+       ![image](https://github.com/user-attachments/assets/3f6533ac-ec3b-4976-886e-0a321c033718)
+        
+    - Jetson Watchdog Circuit
+        
+       ![image](https://github.com/user-attachments/assets/e476df78-6290-4229-bcff-c143f729415a)
+        
+    
+    **Board Layout**
+    
+    - Signal1 Layer
+        
+        ![image](https://github.com/user-attachments/assets/6b77e733-4323-48b0-a783-d5e2b35f9c45)
+        
+    - GND Layer
+        
+       ![image](https://github.com/user-attachments/assets/7a7cb6ef-9bdd-4042-a71e-9d066d4aefd3)
+        
+    - Power Layer
+        
+        ![image](https://github.com/user-attachments/assets/b70a285a-3b61-43be-b070-e3ad2ba08a18)
+        
+    - Signal2 Layer
+        
+        ![image](https://github.com/user-attachments/assets/1c396e57-9dda-4d6b-9e98-43bfa1569433)
+        
+    
+    **3D Render Front and Back**
+    
+    - Front
+        
+        ![image](https://github.com/user-attachments/assets/b09cc4ce-2882-43a2-a9b7-f1d31803498f)
+        
+    - Back
+        
+        ![image](https://github.com/user-attachments/assets/d6a8a5bc-fb9c-4cdb-a0f3-6fe40919ce29)
+      
 ###  Viking 1-B Board Ordered (6/20/25) ###
 This is the second board of the SCALES EPS. It is based on the RevE schematic which yields the Viking 1-B Board. It seeks to improve on numerous calculation and placement errors in the first prototype. Particularly miscalculated resistor and inductor values as well as significant improvements in placement, routing, fills, and smaller components.
 
