@@ -1090,7 +1090,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+2V5"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1111,7 +1111,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+2V5"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1137,7 +1137,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+2V5\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1155,7 +1155,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+2V5_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1193,7 +1193,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+2V5_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2436,71 +2436,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 78.105 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4b3d66e4-8ae9-4352-a239-de83ccf09d71")
-		(property "Reference" "#PWR036"
-			(at 78.105 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 78.105 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.105 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.105 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 78.105 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fd3c3a4b-80a7-4371-98d5-3cd2cad5f191")
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/c3ca900e-99ac-4769-98db-f2b6577cf32c"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
 		(at 20.32 31.115 0)
 		(unit 1)
@@ -2694,6 +2629,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/c3ca900e-99ac-4769-98db-f2b6577cf32c"
 					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 88.9 76.835 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "805b0a02-0b0d-4bbd-a434-e24811a7eddb")
+		(property "Reference" "#PWR037"
+			(at 88.9 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+2.5V"
+			(at 88.9 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+			(at 88.9 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7638a75-7772-4966-9f97-c7fdb7f47637")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/c3ca900e-99ac-4769-98db-f2b6577cf32c"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2906,16 +2906,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 88.9 76.835 0)
+		(lib_id "power:+2V5")
+		(at 78.105 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cc6c38a5-963e-4352-989f-7ef5499c10e6")
-		(property "Reference" "#PWR037"
-			(at 88.9 80.645 0)
+		(uuid "bfeeb323-07bc-4934-b695-2fb300a56ecc")
+		(property "Reference" "#PWR036"
+			(at 78.105 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,8 +2923,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 88.9 73.025 0)
+		(property "Value" "+2.5V"
+			(at 78.105 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +2932,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 76.835 0)
+			(at 78.105 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2941,7 +2941,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 76.835 0)
+			(at 78.105 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2949,8 +2949,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 88.9 76.835 0)
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+			(at 78.105 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,12 +2959,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f1ad3061-ff6d-4bb4-8cea-2a355e45d1cf")
+			(uuid "40ceb922-c2b0-4a20-82ed-a41048ddeeaf")
 		)
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/c3ca900e-99ac-4769-98db-f2b6577cf32c"
-					(reference "#PWR037")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
