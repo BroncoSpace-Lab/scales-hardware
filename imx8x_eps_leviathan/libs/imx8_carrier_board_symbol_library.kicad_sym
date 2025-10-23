@@ -12677,9 +12677,20 @@
 					(type background)
 				)
 			)
+			(circle
+				(center 0 1.27)
+				(radius 0.51)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
-					(xy 0 1.78) (xy 0 3.81)
+					(xy 0 1.27) (xy 0 5.08)
 				)
 				(stroke
 					(width 0)
@@ -12689,9 +12700,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 0 1.27)
-				(radius 0.51)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -7.62)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -12713,18 +12725,6 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -4.32) (xy 0 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0.51 1.52) (xy 2.54 -3.81)
 				)
 				(stroke
@@ -12735,68 +12735,8 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 5.08 3.81) (xy -5.08 3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 -6.35) (xy -5.08 -6.35)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin unspecified line
-				(at -7.62 3.81 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -7.62 -6.35 0)
-				(length 2.54)
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 7.62 270)
+				(at -6.35 -1.27 0)
 				(length 2.54)
 				(name "5"
 					(effects
@@ -12814,7 +12754,43 @@
 				)
 			)
 			(pin unspecified line
-				(at 7.62 3.81 180)
+				(at -2.54 7.62 270)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -2.54 -10.16 90)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 2.54 7.62 270)
 				(length 2.54)
 				(name "2"
 					(effects
@@ -12832,7 +12808,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 7.62 -6.35 180)
+				(at 2.54 -10.16 90)
 				(length 2.54)
 				(name "4"
 					(effects
@@ -13937,13 +13913,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "Surge Protection Diodes"
+			(at -0.508 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC Part" "C13612"
@@ -14765,9 +14740,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2872754.html?s_z=n_C2872754"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14776,7 +14752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "65dB Positive Fixed 1V X2-SON-4-EP(1x1) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
 			(at 0 0 0)
 			(effects
 				(font
