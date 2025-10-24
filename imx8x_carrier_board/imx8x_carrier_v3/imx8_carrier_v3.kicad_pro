@@ -6,7 +6,7 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.05,
+        "board_outline_line_width": 0.1,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -30,7 +30,7 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.1,
+        "other_line_width": 0.15,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -41,14 +41,14 @@
           "height": 1.27,
           "width": 2.54
         },
-        "silk_line_width": 0.1,
+        "silk_line_width": 0.15,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.127
         }
       },
       "diff_pair_dimensions": [
@@ -63,7 +63,7 @@
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "ignore",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -123,22 +123,24 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.09,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.1,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.2,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -434,6 +436,7 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -476,20 +479,25 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "imx8_carrier_board_footprints",
+      "i.MX8 SOM Connectors"
+    ],
     "pinned_symbol_libs": [
-      "EPS"
+      "imx8_carrier_board_symbol_library",
+      "easyeda2kicad",
+      "i.MX8 SOM Connectors"
     ]
   },
   "meta": {
-    "filename": "imx8x_eps_leviathan.kicad_pro",
+    "filename": "imx8_carrier_v3.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -500,17 +508,159 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.1,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.124,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DP_100R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.124,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.1,
+        "diff_pair_gap": 0.1565,
+        "diff_pair_width": 0.1565,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DP_50R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1565,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.1,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1582,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "DP_90R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1582,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/Debug USB - UART/DEBUG_USB_DN": [
+        "DP_90R"
+      ],
+      "/Debug USB - UART/DEBUG_USB_DP": [
+        "DP_90R"
+      ],
+      "ETH1_A_TX_N": [
+        "DP_100R"
+      ],
+      "ETH1_A_TX_P": [
+        "DP_100R"
+      ],
+      "ETH1_B_TX_N": [
+        "DP_100R"
+      ],
+      "ETH1_B_TX_P": [
+        "DP_100R"
+      ],
+      "ETH1_C_TXCLK_N": [
+        "DP_100R"
+      ],
+      "ETH1_C_TXCLK_P": [
+        "DP_100R"
+      ],
+      "ETH1_D_RXDV_N": [
+        "DP_100R"
+      ],
+      "ETH1_D_RXDV_P": [
+        "DP_100R"
+      ],
+      "X_CONN_ENET1_RXC": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_RXD0": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_RXD1": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_RXD2": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_RXD3": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_RX_CTL": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_RX_CTRL": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_TXC": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_TXD0": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_TXD1": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_TXD2": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_TXD3": [
+        "DP_50R"
+      ],
+      "X_CONN_ENET1_TX_CTL": [
+        "DP_50R"
+      ],
+      "X_CONN_ETH0_MDC": [
+        "DP_50R"
+      ],
+      "X_CONN_ETH0_MDIO": [
+        "DP_50R"
+      ],
+      "X_ETH0_A_TX_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_A_TX_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_B_TX_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_B_TX_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_C_TXCLK_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_C_TXCLK_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_D_RXDV_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_D_RXDV_P": [
+        "DP_100R"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -521,7 +671,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "steps/imx8x_carrier_v2.step",
       "svg": "",
       "vrml": ""
     },
@@ -557,31 +707,31 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -590,13 +740,61 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -642,64 +840,36 @@
   },
   "sheets": [
     [
-      "bd3af9f3-19df-4a2f-8b54-98c48cea082e",
+      "4409cb5c-c5cc-45e5-ba22-666413441047",
       "Root"
     ],
     [
-      "ec0c3356-3ab2-4b92-97c2-73704290dee9",
-      "SCALES_EPS"
+      "bd9bf2b1-2646-4f47-8b43-7734a13ea490",
+      "SOM Connectors"
     ],
     [
-      "1b5b2e76-614d-4307-9232-e06f7c77302d",
-      "IMX8XQXP SCALES Mariner Carrier Board"
+      "7dc4de44-e877-4145-a70b-e254356af12a",
+      "System Power"
     ],
     [
-      "638cb001-1cfc-4072-ab85-9425255a7df8",
-      "Jetson_Subsystem"
-    ],
-    [
-      "3647fd64-542b-4f7d-b4f7-54300244b8ca",
-      "OBC_Subsystem"
-    ],
-    [
-      "4810607d-4932-42f0-9bf9-01ec3ddc5364",
-      "Perif_Subsystem"
-    ],
-    [
-      "3229a25f-7951-4d39-ae39-36fc86e5e462",
-      "WD_OBC"
-    ],
-    [
-      "ca20f4bc-3262-48d2-87a5-83c946a1695c",
-      "WD_Jetson"
-    ],
-    [
-      "d76dd75e-585c-4f61-92c5-bda4099b5574",
-      "SOM"
-    ],
-    [
-      "523ae3db-78a2-4812-be5f-87bab42ef950",
+      "1a7e1f21-ce7a-46a1-9a6c-e0dfa1e7cc31",
       "Boot Configuration"
     ],
     [
-      "af0dcf25-e67e-4174-8f3a-a0b953038707",
+      "292335d6-f5c5-4a7d-8d08-fc166527642f",
       "Debug USB - UART"
     ],
     [
-      "6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4",
+      "79e8fd09-705e-4c65-82d4-d8130e394a75",
       "Ethernet"
     ],
     [
-      "0aab8921-2b9e-4652-8121-5ec55a6db914",
-      "Peripheral Connections"
+      "d29c5f61-1869-406e-b3b8-b642272ff287",
+      "QSPI-SPI"
     ],
     [
-      "917416e3-c4c2-400a-9578-bbbe2cebeda1",
-      "Ethernet 0"
-    ],
-    [
-      "7cd00261-27aa-42f1-94ab-f02490f10ddf",
-      "Ethernet 1"
+      "2a3cf0a2-a564-48e3-9f87-fb7549fc1ff8",
+      "GPIO/I2C"
     ]
   ],
   "text_variables": {}
