@@ -775,6 +775,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -876,135 +1001,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VPP"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VPP"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VPP\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VPP_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VPP_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 12.7 12.7)
-		(end 54.61 60.96)
+		(end 56.642 59.944)
 		(stroke
 			(width 0)
 			(type default)
@@ -1028,7 +1028,7 @@
 	)
 	(text_box "Note: Phytec has it pulled up to the SOM input voltage VCC_3v3"
 		(exclude_from_sim no)
-		(at 13.97 20.32 0)
+		(at 13.462 16.764 0)
 		(size 21.59 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1047,30 +1047,30 @@
 		(uuid "741cc9b9-253a-45fd-8e37-fa8a9dd49fb1")
 	)
 	(junction
-		(at 36.83 35.56)
+		(at 41.656 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22eb6559-82cf-4267-a975-151333853017")
 	)
 	(junction
-		(at 36.83 34.29)
+		(at 41.656 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9c67b8b-03ef-4898-a7ba-785212a70d0e")
 	)
 	(junction
-		(at 36.83 53.34)
+		(at 41.656 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd47f555-66de-4dbd-a76f-ac1d1d557721")
 	)
 	(no_connect
-		(at 30.48 44.45)
+		(at 35.306 41.91)
 		(uuid "7827a9cb-45da-4216-8399-45d794a09c2b")
 	)
 	(wire
 		(pts
-			(xy 39.37 35.56) (xy 36.83 35.56)
+			(xy 44.196 33.02) (xy 41.656 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1080,7 +1080,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 34.29) (xy 36.83 34.29)
+			(xy 39.116 31.75) (xy 41.656 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1090,7 +1090,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 24.13) (xy 36.83 25.4)
+			(xy 41.656 21.59) (xy 41.656 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1100,7 +1100,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 34.29) (xy 36.83 35.56)
+			(xy 41.656 31.75) (xy 41.656 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1110,7 +1110,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 35.56) (xy 36.83 35.56)
+			(xy 39.116 33.02) (xy 41.656 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1120,7 +1120,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 33.02) (xy 36.83 34.29)
+			(xy 41.656 30.48) (xy 41.656 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1130,7 +1130,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 53.34) (xy 39.37 53.34)
+			(xy 41.656 50.8) (xy 44.196 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1140,7 +1140,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 53.34) (xy 36.83 55.88)
+			(xy 41.656 50.8) (xy 41.656 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1150,7 +1150,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 53.34) (xy 36.83 53.34)
+			(xy 39.116 50.8) (xy 41.656 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1160,7 +1160,7 @@
 	)
 	(global_label "~{X_nRESET_IN}"
 		(shape input)
-		(at 34.29 34.29 180)
+		(at 39.116 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1170,7 +1170,7 @@
 		)
 		(uuid "deb4f0b2-b35b-448d-8791-253c03c0a721")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.3307 34.29 0)
+			(at 24.1567 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1182,7 +1182,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
-		(at 113.03 121.92 0)
+		(at 142.748 42.418 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1191,7 +1191,7 @@
 		(fields_autoplaced yes)
 		(uuid "08b51175-476e-42b4-b580-faa20922a02a")
 		(property "Reference" "CN3"
-			(at 113.03 105.41 0)
+			(at 142.748 25.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1199,7 +1199,7 @@
 			)
 		)
 		(property "Value" "DF11-16DP-2DSA(08)"
-			(at 113.03 107.95 0)
+			(at 142.748 28.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1207,7 +1207,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:CONN-TH_DF11-16DP-2DSA-08"
-			(at 113.03 138.43 0)
+			(at 142.748 58.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1216,7 +1216,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
-			(at 113.03 140.97 0)
+			(at 142.748 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1225,7 +1225,7 @@
 			)
 		)
 		(property "Description" "DF11 Connector"
-			(at 113.03 121.92 0)
+			(at 142.748 42.418 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1234,7 @@
 			)
 		)
 		(property "LCSC Part" "C530981"
-			(at 113.03 143.51 0)
+			(at 142.748 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1301,7 +1301,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
-		(at 64.77 120.65 0)
+		(at 94.488 41.148 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1310,7 +1310,7 @@
 		(fields_autoplaced yes)
 		(uuid "5292ddbf-fa01-4fa3-8a6e-0c2b550ed166")
 		(property "Reference" "CN2"
-			(at 64.77 104.14 0)
+			(at 94.488 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1318,7 +1318,7 @@
 			)
 		)
 		(property "Value" "DF11-16DP-2DSA(08)"
-			(at 64.77 106.68 0)
+			(at 94.488 27.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1326,7 +1326,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:CONN-TH_DF11-16DP-2DSA-08"
-			(at 64.77 137.16 0)
+			(at 94.488 57.658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,7 +1335,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
-			(at 64.77 139.7 0)
+			(at 94.488 60.198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1344,7 +1344,7 @@
 			)
 		)
 		(property "Description" "DF11 Connector"
-			(at 64.77 120.65 0)
+			(at 94.488 41.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1353,7 +1353,7 @@
 			)
 		)
 		(property "LCSC Part" "C530981"
-			(at 64.77 142.24 0)
+			(at 94.488 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1420,7 +1420,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 55.88 0)
+		(at 41.656 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1428,7 +1428,7 @@
 		(dnp no)
 		(uuid "a44c9548-34ab-4af7-9f8e-15f2e6cc1169")
 		(property "Reference" "#PWR0129"
-			(at 36.83 62.23 0)
+			(at 41.656 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,7 +1437,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 59.69 0)
+			(at 41.656 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1445,7 +1445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 55.88 0)
+			(at 41.656 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1454,7 +1454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 55.88 0)
+			(at 41.656 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,7 +1463,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 55.88 0)
+			(at 41.656 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1484,17 +1484,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 36.83 24.13 0)
+		(lib_id "power:+3.3V")
+		(at 41.656 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cd67e090-efed-4462-8e1f-102d377ab0b7")
-		(property "Reference" "#PWR0128"
-			(at 36.83 27.94 0)
+		(uuid "b7b0c4cf-0471-4578-a738-940c935f3f7d")
+		(property "Reference" "#PWR0169"
+			(at 41.656 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1502,8 +1502,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC_3V3_OUT"
-			(at 36.83 19.05 0)
+		(property "Value" "+3.3V_OBC"
+			(at 41.656 16.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1511,7 +1511,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 24.13 0)
+			(at 41.656 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1520,7 +1520,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 24.13 0)
+			(at 41.656 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1528,8 +1528,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC_3V3_OUT\""
-			(at 36.83 24.13 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 41.656 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1538,12 +1538,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "78bcf6a7-2905-4f09-8b48-6a79ef786830")
+			(uuid "e1e79e98-67ed-44cd-9ef2-c2143bcbee2a")
 		)
 		(instances
 			(project "imx8x_eps_leviathan"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/0aab8921-2b9e-4652-8121-5ec55a6db914"
-					(reference "#PWR0128")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -1551,7 +1551,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 36.83 29.21 0)
+		(at 41.656 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1560,7 +1560,7 @@
 		(fields_autoplaced yes)
 		(uuid "d103e953-9e4a-4369-9013-6b2645b4f8c3")
 		(property "Reference" "R158"
-			(at 39.37 27.9399 0)
+			(at 44.196 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1569,7 +1569,7 @@
 			)
 		)
 		(property "Value" "2K"
-			(at 39.37 30.4799 0)
+			(at 44.196 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1578,7 +1578,7 @@
 			)
 		)
 		(property "Footprint" "EPS:R0402"
-			(at 37.846 29.464 90)
+			(at 42.672 26.924 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1587,7 +1587,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 29.21 0)
+			(at 41.656 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1596,7 +1596,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 36.83 29.21 0)
+			(at 41.656 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1621,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:KMR221GLFS")
-		(at 36.83 43.18 0)
+		(at 41.656 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1629,7 +1629,7 @@
 		(dnp no)
 		(uuid "dfafc7e0-1422-4487-88a7-fb24317adcbe")
 		(property "Reference" "SW2"
-			(at 32.512 40.386 0)
+			(at 37.338 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1638,7 +1638,7 @@
 			)
 		)
 		(property "Value" "KMR221GLFS"
-			(at 36.83 54.61 0)
+			(at 41.656 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1647,7 +1647,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:KEY-SMD_KMR2XXGXXX"
-			(at 36.83 57.15 0)
+			(at 41.656 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1656,7 +1656,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Others_C-K-KMR221GLFS_C72443.html"
-			(at 36.83 59.69 0)
+			(at 41.656 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +1665,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 43.18 0)
+			(at 41.656 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +1674,7 @@
 			)
 		)
 		(property "LCSC Part" "C72443"
-			(at 36.83 62.23 0)
+			(at 41.656 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
