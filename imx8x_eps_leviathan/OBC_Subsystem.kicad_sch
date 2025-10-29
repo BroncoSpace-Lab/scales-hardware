@@ -2229,7 +2229,7 @@
 	)
 	(rectangle
 		(start 95.758 100.965)
-		(end 190.373 154.94)
+		(end 199.898 154.94)
 		(stroke
 			(width 0)
 			(type default)
@@ -2596,12 +2596,6 @@
 		(uuid "314441b9-94e5-4744-8672-637a5f45e98b")
 	)
 	(junction
-		(at 107.442 114.808)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "387e6e1e-aa55-47d9-a885-743dfc5d5826")
-	)
-	(junction
 		(at 145.542 44.196)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2696,6 +2690,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ab73dc2-d02a-45a8-96f8-467d59d4b33c")
+	)
+	(junction
+		(at 107.442 114.808)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5aef4cf9-c231-44a3-815a-0752078e18ee")
 	)
 	(junction
 		(at 143.764 114.808)
@@ -4513,6 +4513,50 @@
 			)
 		)
 	)
+	(global_label "X_ADMA_I2C0_SCL"
+		(shape output)
+		(at 173.482 136.398 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d983f85-1ece-4de0-a8d4-7b6fe5b2c2a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.2795 136.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_ADMA_I2C0_SDA"
+		(shape bidirectional)
+		(at 172.974 138.938 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0ebd9e64-b92c-43af-bd28-7e1903d45aa3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.9433 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SYNC_PHASE1"
 		(shape output)
 		(at 70.866 126.746 0)
@@ -4557,28 +4601,6 @@
 			)
 		)
 	)
-	(global_label "OBC SCL"
-		(shape bidirectional)
-		(at 173.482 136.398 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "396c12dc-0537-42f0-93d6-c682b68d7310")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.9242 136.398 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SYNC_PHASE2"
 		(shape output)
 		(at 70.866 129.286 0)
@@ -4619,28 +4641,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "OBC SDA"
-		(shape bidirectional)
-		(at 172.974 138.938 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "695b3da3-6fe3-41d5-9cc9-f476a1cd73ef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.4767 138.938 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5886,72 +5886,6 @@
 			(project "imx8x_eps_leviathan"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/3647fd64-542b-4f7d-b4f7-54300244b8ca"
 					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 107.442 114.808 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41c35d26-132c-45df-b740-3511d6aa314c")
-		(property "Reference" "#PWR049"
-			(at 107.442 118.618 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V_OBC"
-			(at 107.442 109.474 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.442 114.808 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.442 114.808 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 107.442 114.808 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e7a82647-ff88-4233-b354-3cb6096abf35")
-		)
-		(instances
-			(project "imx8x_eps_leviathan"
-				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/3647fd64-542b-4f7d-b4f7-54300244b8ca"
-					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -8383,6 +8317,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 107.442 114.808 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c810f753-7ada-4c24-b9bd-864736192d7e")
+		(property "Reference" "#PWR049"
+			(at 107.442 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V_OBC_Perif"
+			(at 112.776 111.252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.442 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.442 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 107.442 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d83ee8d-6f4c-4fc9-b0f5-f4d8b73f46bd")
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/3647fd64-542b-4f7d-b4f7-54300244b8ca"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 38.608 48.006 270)
 		(unit 1)
@@ -9135,7 +9134,7 @@
 		)
 	)
 	(sheet
-		(at 193.04 101.092)
+		(at 200.66 100.838)
 		(size 15.24 54.61)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9151,7 +9150,7 @@
 		)
 		(uuid "3229a25f-7951-4d39-ae39-36fc86e5e462")
 		(property "Sheetname" "WD_OBC"
-			(at 193.04 100.3804 0)
+			(at 200.66 100.1264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9160,7 +9159,7 @@
 			)
 		)
 		(property "Sheetfile" "WD_OBC.kicad_sch"
-			(at 193.04 156.2866 0)
+			(at 200.66 156.0326 0)
 			(effects
 				(font
 					(size 1.27 1.27)

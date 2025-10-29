@@ -34,7 +34,7 @@
 		)
 		(uuid "756d0acb-fbcd-4a17-9744-b30599b7b57b")
 	)
-	(text_box "This merger board seeks to combine the SCALES EPS board with the SCALES IMX8 Carrier Board. Both boards have undergone three revisions, this merger will combine the final revisions of both with each of them undergoing some more modifications based on seperate board reviews.\nNotable differences for each board compared to their individual counterparts are listed below.\n\nEPS: Based on the Rev F Schematic / Viking 1-C model, (Modificaitions based on suggestions by A. Greenberg)\n- Watchdog removed for Peripheral Board\n- More decoupling capacitors for inrush current mitigation for Jetson bootup sequence\n- Resistors to bias EN lines for the perif/jetson\n- Resistors to current limit Watchdog outputs\n\nIMX8X Carrier Board: Based on the Mariner 1-C board (Modifications suggested by Phytec)\n- \n"
+	(text_box "This merger board seeks to combine the SCALES EPS board with the SCALES IMX8 Carrier Board. Both boards have undergone three revisions, this merger will combine the final revisions of both with each of them undergoing some more modifications based on seperate board reviews.\nNotable differences for each board compared to their individual counterparts are listed below.\n\nEPS: Based on the Rev F Schematic / Viking 1-C model, (Modificaitions based on suggestions by A. Greenberg)\n Watchdog removed for Peripheral Board\n More decoupling capacitors for inrush current mitigation for Jetson bootup sequence\n Resistors to bias EN lines for the perif/jetson\n Resistors to current limit Watchdog outputs\n\nIMX8X Carrier Board: Based on the Mariner 1-C board (Modifications suggested by Phytec)\n - Drop LSIO_QSPI0B-DATA 0 to 3, exclude from Pinmux (Pg. 2)\n - Consider Pgood implementation for i2c0 and i2c3, spi2, and uart\n - For USB2, remove leave R68 Not mounted (Pg.5) (verified on pcm 942)\n - Eth1 RX pull up R18, R20 and R21 leave Not Mounted (Pg. 6)\n - VDDA1P8 Change VCC_ETH_1V0 to VCC_1V8\n - For Pgood, Isolate SOM 3v3, and use an load switch for the 3v3 peripheral systems and a switching regulator with an enable line triggered by pgood for the 1.8v system\n    - Using TI TLV62569PDDCR for switching and sequencing from 3.3v to 1.8v using Pgood\n    - Using TPS22917 for 3.3v peripheral power sequencing using Pgood\n - Remove 74AUP1G08 and tie POR_B_1V8 through a 15k resistor to Reset_N\n - Reset button pull up to SOM VCC_3V3 not VCC3V3OUT\n\n"
 		(exclude_from_sim no)
 		(at 13.208 22.86 0)
 		(size 74.93 111.506)
@@ -49,8 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left top)
 		)
