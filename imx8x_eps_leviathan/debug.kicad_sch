@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "Leviathan 1-A")
-		(date "2025-10-22")
+		(date "2025-10-29")
 		(rev "1-A")
 		(company "Bronco Space Lab")
-		(comment 1 "By John Pollak & Luca Lanzillotta")
+		(comment 1 "By Luca Lanzillotta & John Pollack")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -4258,7 +4258,7 @@
 	)
 	(text "UART Level Shifters"
 		(exclude_from_sim no)
-		(at 244.348 95.758 0)
+		(at 244.475 95.885 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -4270,7 +4270,7 @@
 	)
 	(text "VCC_FTDI_3V3"
 		(exclude_from_sim no)
-		(at 265.938 138.176 0)
+		(at 266.065 138.43 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -4282,7 +4282,7 @@
 	)
 	(text "USB to UART0 (FTDI Controller)"
 		(exclude_from_sim no)
-		(at 134.874 29.718 0)
+		(at 134.62 29.845 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -4294,7 +4294,7 @@
 	)
 	(text "ESD/Surge Protector"
 		(exclude_from_sim no)
-		(at 234.188 49.276 0)
+		(at 234.315 49.53 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -4513,12 +4513,6 @@
 		(uuid "6e58db1c-67e7-483a-b4ab-53a4a3e04956")
 	)
 	(junction
-		(at 64.77 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6fab747a-8be5-4a35-9eb8-cb4c510051e8")
-	)
-	(junction
 		(at 67.31 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4721,6 +4715,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5ae8101-af98-4120-ba6e-eb287dae40ea")
+	)
+	(junction
+		(at 64.77 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e739cabb-051c-4b04-9ad6-8b7484f62293")
 	)
 	(junction
 		(at 104.14 119.38)
@@ -5003,16 +5003,6 @@
 			(type default)
 		)
 		(uuid "13b884a7-e67a-4c21-ad8e-fa5d72263d82")
-	)
-	(wire
-		(pts
-			(xy 54.61 97.79) (xy 58.42 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13cd18b2-3698-473b-a75e-ebd1b1b56723")
 	)
 	(wire
 		(pts
@@ -5396,7 +5386,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 93.98) (xy 46.99 106.68)
+			(xy 46.99 90.805) (xy 46.99 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5546,7 +5536,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.656 130.81) (xy 44.45 130.81)
+			(xy 41.91 130.81) (xy 44.45 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5986,6 +5976,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 90.805) (xy 64.77 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68dd9a45-fa90-4df4-985c-609946a6d0b7")
+	)
+	(wire
+		(pts
 			(xy 234.95 69.85) (xy 234.95 72.39)
 		)
 		(stroke
@@ -6076,7 +6076,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 93.98) (xy 64.77 93.98)
+			(xy 59.69 90.805) (xy 64.77 90.805)
 		)
 		(stroke
 			(width 0)
@@ -6086,7 +6086,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 85.09) (xy 60.96 85.09)
+			(xy 54.61 85.09) (xy 60.96 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6163,6 +6163,16 @@
 			(type default)
 		)
 		(uuid "7778eee0-0da2-48b9-b6a1-f2de69d02160")
+	)
+	(wire
+		(pts
+			(xy 54.61 94.615) (xy 54.61 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78397a9b-d6e3-43df-8f98-a558e29583cc")
 	)
 	(wire
 		(pts
@@ -6636,7 +6646,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 85.09) (xy 58.42 90.17)
+			(xy 54.61 85.09) (xy 54.61 86.995)
 		)
 		(stroke
 			(width 0)
@@ -6673,6 +6683,16 @@
 			(type default)
 		)
 		(uuid "9dcbb40a-febc-4509-84c6-adcf62cb37f8")
+	)
+	(wire
+		(pts
+			(xy 64.77 92.71) (xy 64.77 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e81e708-247b-421f-99dd-68a9fd2bfd38")
 	)
 	(wire
 		(pts
@@ -6876,7 +6896,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.656 121.92) (xy 59.69 121.92)
+			(xy 41.91 121.92) (xy 59.69 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7123,16 +7143,6 @@
 			(type default)
 		)
 		(uuid "c3c3b6a3-3438-47b0-a2d5-dbc63a27b22c")
-	)
-	(wire
-		(pts
-			(xy 64.77 93.98) (xy 64.77 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c405c2b3-29b7-4e1d-84c9-840f9f9e794c")
 	)
 	(wire
 		(pts
@@ -7486,7 +7496,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 93.98) (xy 46.99 93.98)
+			(xy 49.53 90.805) (xy 46.99 90.805)
 		)
 		(stroke
 			(width 0)
@@ -7546,7 +7556,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.656 130.81) (xy 41.656 121.92)
+			(xy 41.91 130.81) (xy 41.91 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7623,16 +7633,6 @@
 			(type default)
 		)
 		(uuid "efeff47c-7a93-419e-9bed-c190bc447c29")
-	)
-	(wire
-		(pts
-			(xy 64.77 92.71) (xy 64.77 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1bdcd1c-2943-4c54-a97c-8c1469bac7de")
 	)
 	(wire
 		(pts
@@ -7814,6 +7814,16 @@
 		)
 		(uuid "8c79fe9e-1a38-4b93-b027-61a6c6aaec7c")
 	)
+	(label "DEBUG_USB_DN"
+		(at 75.565 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e756a3c-8b27-4d05-9785-c1b19107d41f")
+	)
 	(label "DEBUG_USB_DP"
 		(at 266.7 59.69 0)
 		(effects
@@ -7823,6 +7833,16 @@
 			(justify left bottom)
 		)
 		(uuid "c46ebbc3-c6fc-49fa-9183-7544835e2026")
+	)
+	(label "DEBUG_USB_DP"
+		(at 60.96 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdd4972d-a202-4c86-aebd-55f7c719ea43")
 	)
 	(global_label "X_M40_UART0_TX"
 		(shape input)
@@ -8523,7 +8543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 60.96 31.75 0)
 			(effects
 				(font
@@ -9080,7 +9100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 273.558 157.226 0)
 			(effects
 				(font
@@ -9150,7 +9170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V"
+		(property "Description" "Unpolarized capacitor"
 			(at 95.758 30.48 0)
 			(effects
 				(font
@@ -9488,7 +9508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V"
+		(property "Description" "Unpolarized capacitor"
 			(at 32.258 43.18 0)
 			(effects
 				(font
@@ -9622,7 +9642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "25V"
+		(property "Description" "Unpolarized capacitor"
 			(at 209.042 152.146 0)
 			(effects
 				(font
@@ -9896,7 +9916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 75.438 41.91 0)
 			(effects
 				(font
@@ -10163,7 +10183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 60.96 53.34 0)
 			(effects
 				(font
@@ -10566,7 +10586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 67.818 63.5 0)
 			(effects
 				(font
@@ -10661,7 +10681,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
-		(at 58.42 93.98 90)
+		(at 54.61 90.805 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10669,7 +10689,7 @@
 		(dnp no)
 		(uuid "49c59643-d34e-4548-99b9-961a636d49a6")
 		(property "Reference" "Y1"
-			(at 55.372 90.17 90)
+			(at 51.562 86.995 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,7 +10697,7 @@
 			)
 		)
 		(property "Value" "12MHz"
-			(at 58.42 93.98 90)
+			(at 54.61 90.805 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10685,7 +10705,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:CRYSTAL-SMD_4P-L3.2-W2.5-BL"
-			(at 58.42 93.98 0)
+			(at 54.61 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10694,7 +10714,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 93.98 0)
+			(at 54.61 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10703,7 +10723,7 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
-			(at 58.42 93.98 0)
+			(at 54.61 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10712,7 +10732,7 @@
 			)
 		)
 		(property "LCSC Part" "C9002"
-			(at 58.42 93.98 90)
+			(at 54.61 90.805 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10856,7 +10876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V"
+		(property "Description" "Unpolarized capacitor"
 			(at 32.258 62.23 0)
 			(effects
 				(font
@@ -10995,7 +11015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 102.108 30.48 0)
 			(effects
 				(font
@@ -11063,7 +11083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 92.71 93.98 0)
 			(effects
 				(font
@@ -11395,7 +11415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 215.138 152.146 0)
 			(effects
 				(font
@@ -11599,7 +11619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 72.898 141.986 0)
 			(effects
 				(font
@@ -11667,7 +11687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS_DEBUG_USB\""
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
 			(at 209.55 140.97 0)
 			(effects
 				(font
@@ -11867,7 +11887,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC_1V8_OUT\""
+		(property "Description" "Power symbol creates a global label with name \"VMEM\""
 			(at 220.98 116.84 0)
 			(effects
 				(font
@@ -11968,7 +11988,7 @@
 		(dnp no)
 		(uuid "743fb238-6f30-4856-bf9c-ace558930961")
 		(property "Reference" "USB1"
-			(at 31.75 79.248 0)
+			(at 26.035 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12455,7 +12475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V"
+		(property "Description" "Unpolarized capacitor"
 			(at 267.462 157.226 0)
 			(effects
 				(font
@@ -12594,7 +12614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 83.058 63.5 0)
 			(effects
 				(font
@@ -12664,7 +12684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 67.818 41.91 0)
 			(effects
 				(font
@@ -12732,7 +12752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 95.25 20.32 0)
 			(effects
 				(font
@@ -12891,7 +12911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 17.78 31.75 0)
 			(effects
 				(font
@@ -13027,7 +13047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V"
+		(property "Description" "Unpolarized capacitor"
 			(at 61.468 41.91 0)
 			(effects
 				(font
@@ -13358,7 +13378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 75.438 63.5 0)
 			(effects
 				(font
@@ -13841,7 +13861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 72.39 127 0)
 			(effects
 				(font
@@ -14040,7 +14060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 194.31 125.73 0)
 			(effects
 				(font
@@ -14176,7 +14196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 83.058 41.91 0)
 			(effects
 				(font
@@ -14712,7 +14732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 17.78 50.8 0)
 			(effects
 				(font
@@ -14777,7 +14797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC_1V8_OUT\""
+		(property "Description" "Power symbol creates a global label with name \"VMEM\""
 			(at 220.98 97.79 0)
 			(effects
 				(font
@@ -14981,7 +15001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS_DEBUG_USB\""
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
 			(at 273.05 69.85 0)
 			(effects
 				(font
@@ -15184,7 +15204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 38.608 62.23 0)
 			(effects
 				(font
@@ -15457,7 +15477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V"
+		(property "Description" "Unpolarized capacitor"
 			(at 61.468 63.5 0)
 			(effects
 				(font
@@ -15657,7 +15677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "50V"
+		(property "Description" "Unpolarized capacitor"
 			(at 50.038 105.156 0)
 			(effects
 				(font
@@ -15725,7 +15745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS_DEBUG_USB\""
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
 			(at 43.18 74.93 0)
 			(effects
 				(font
@@ -15792,7 +15812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "50V"
+		(property "Description" "Unpolarized capacitor"
 			(at 65.786 93.472 0)
 			(effects
 				(font
@@ -16343,7 +16363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 59.69 109.22 0)
 			(effects
 				(font
@@ -16617,7 +16637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "16V"
+		(property "Description" "Unpolarized capacitor"
 			(at 38.608 43.18 0)
 			(effects
 				(font
@@ -16888,7 +16908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"3V3_FTDI\""
+		(property "Description" "Power symbol creates a global label with name \"VDDF\""
 			(at 278.13 146.05 0)
 			(effects
 				(font
