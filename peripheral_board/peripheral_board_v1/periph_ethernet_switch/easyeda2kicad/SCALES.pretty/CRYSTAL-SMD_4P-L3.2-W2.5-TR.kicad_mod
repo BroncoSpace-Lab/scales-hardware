@@ -1,0 +1,199 @@
+(footprint "CRYSTAL-SMD_4P-L3.2-W2.5-TR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "ABRACON ABM8G-25.000MHZ-B4Y-T")
+	(property "Reference" "REF**"
+		(at 0 -4.8 0)
+		(layer "F.SilkS")
+		(uuid "053842ad-64dc-42b3-8abb-feec6c605a16")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CRYSTAL-SMD_4P-L3.2-W2.5-TR"
+		(at 0 4.8 0)
+		(layer "F.Fab")
+		(uuid "47eb31d2-7ad4-4bbb-a3c0-a0e5988c52fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/product-detail/C596913.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c94c9efe-d5a9-4d8c-8f2f-c8fcb898b625")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "ABRACON ABM8G-25.000MHZ-B4Y-T"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af32ad9a-924a-4d60-9c4c-e3c3a8dd09ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.1 -1.7)
+		(end -2.1 1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "45dcfc4a-ad4d-4b24-a7ca-5cf7186eadbd")
+	)
+	(fp_line
+		(start -2.1 1.7)
+		(end 2.1 1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24fc2fd5-a3c1-4bfa-a7b8-fb0afbfa835f")
+	)
+	(fp_line
+		(start 2.1 -1.7)
+		(end -2.1 -1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "350c7e83-a954-409e-812a-e0312107d59b")
+	)
+	(fp_line
+		(start 2.1 1.7)
+		(end 2.1 -1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0436a63d-a308-4df4-8296-e92e2ccf2ee0")
+	)
+	(fp_arc
+		(start 1.89 -2.05)
+		(mid 1.904995 -2.35025)
+		(end 1.900016 -2.049667)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9fb4491a-76cc-40d9-8953-371450f593ec")
+	)
+	(fp_circle
+		(center 1.27 -1.02)
+		(end 1.47 -1.02)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "7251d3ef-1e36-4482-9158-43d744fee6b2")
+	)
+	(fp_rect
+		(start -2.19 -1.79)
+		(end 2.2 1.78)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0896395d-c3d9-421b-a7a7-424d839f8943")
+	)
+	(fp_circle
+		(center 1.6 -1.25)
+		(end 1.63 -1.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "fd29de19-b1a3-4e17-bb74-40b3672c1463")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "16f2e3ff-d8fb-4428-a170-7bf40f960c6e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at 1.1 -0.8)
+		(size 0.01 0.01)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.7 0.57) (xy -0.34 0.57) (xy -0.7 0.2) (xy -0.7 -0.58) (xy 0.7 -0.58)
+				)
+				(width 0.1)
+				(fill yes)
+			)
+		)
+		(uuid "1be39154-4e84-4840-8a6b-f4a1bfbd0854")
+	)
+	(pad "2" smd rect
+		(at -1.1 -0.8 180)
+		(size 1.4 1.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a1f6be02-7a01-4b26-aa08-5db9fe058f9c")
+	)
+	(pad "3" smd rect
+		(at -1.1 0.8 180)
+		(size 1.4 1.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "aac3cd0f-a376-47c2-ad22-b64d39321a5f")
+	)
+	(pad "4" smd rect
+		(at 1.1 0.8 180)
+		(size 1.4 1.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "45f45bab-bb94-4e2d-8dd9-95089a8c0b4c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/easyeda2kicad/SCALES.3dshapes/CRYSTAL-SMD_4P-L3.2-W2.5-TR.step"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)
