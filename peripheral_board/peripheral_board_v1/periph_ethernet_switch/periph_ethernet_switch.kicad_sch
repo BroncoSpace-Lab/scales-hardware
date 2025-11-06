@@ -5,113 +5,6 @@
 	(uuid "065aff9d-de72-4d05-9bf8-aade8202d5c4")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -3331,10 +3224,98 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "SCALES:RH-5001"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RH-5001"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SCALES:TEST-TH_BD2.54-P1.4_BLACK"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C5199801.html?s_z=n_Test%2520point"
+				(at 0 -11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Test Points RoHS"
+				(at -0.254 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C5199801"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RH-5001_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_DIP_x07"
 			(pin_names
 				(offset 0)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4261,6 +4242,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 204.47 38.1)
+		(end 247.65 64.135)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 53ab1fa2-0051-473c-8b43-a9df2da72c31)
+	)
 	(text "Digital to Analog\n"
 		(exclude_from_sim no)
 		(at 203.2 134.62 0)
@@ -4270,6 +4263,26 @@
 			)
 		)
 		(uuid "9fddd267-2e0f-4e14-9b84-25b527698ce4")
+	)
+	(text "DIP Switch for LED Strap in"
+		(exclude_from_sim no)
+		(at 264.16 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a305160a-d1d9-4408-8cac-573cb5b132e4")
+	)
+	(text "Not going to be using these\nUnsure if I should leave floating or not."
+		(exclude_from_sim no)
+		(at 226.06 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e3d314d2-6e63-4151-9522-778c3d07aeea")
 	)
 	(text_box "Place the resistor close to the ISET pin.\nDo not place any capacitor in parallel with the ISET resistor.\nRoute all signals, especially clocks and high frequency signals, away from this pin to avoid coupling.\nDo not share the ISET resistor ground via with any other component's grounding via."
 		(exclude_from_sim no)
@@ -4340,10 +4353,10 @@
 		(uuid "1845b2dc-6508-4876-8c76-f50113d40b50")
 	)
 	(junction
-		(at 118.11 34.29)
+		(at 116.84 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "214f7d9e-5ff6-443b-8721-d5024730f0fb")
+		(uuid "233e6790-a9b2-4d19-b287-524779c0128c")
 	)
 	(junction
 		(at 48.895 25.4)
@@ -4470,12 +4483,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7552fb15-bdd4-4c32-a3ee-edc4be7d603c")
-	)
-	(junction
-		(at 166.37 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "783defaf-8255-4e12-ac80-7e9eac524e34")
 	)
 	(junction
 		(at 55.245 34.925)
@@ -5037,7 +5044,7 @@
 	)
 	(wire
 		(pts
-			(xy 159.385 52.07) (xy 166.37 52.07)
+			(xy 159.385 52.07) (xy 170.815 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5114,6 +5121,16 @@
 			(type default)
 		)
 		(uuid "1c0ea9d3-c569-4dc7-a86d-086706c6e232")
+	)
+	(wire
+		(pts
+			(xy 116.84 34.29) (xy 118.11 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c7f8783-01d8-4f20-b6cd-8bdf028e70ee")
 	)
 	(wire
 		(pts
@@ -5217,7 +5234,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 34.29) (xy 118.11 34.29)
+			(xy 113.03 34.29) (xy 116.84 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5407,7 +5424,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 56.515) (xy 219.71 56.515)
+			(xy 218.44 60.96) (xy 215.9 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5507,7 +5524,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 54.61) (xy 217.17 56.515)
+			(xy 218.44 58.42) (xy 218.44 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5627,7 +5644,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 57.15) (xy 243.84 57.15)
+			(xy 229.87 60.96) (xy 233.68 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5854,6 +5871,16 @@
 			(type default)
 		)
 		(uuid "5f008453-aee8-4259-b3ac-a8dd16442a82")
+	)
+	(wire
+		(pts
+			(xy 116.84 21.59) (xy 116.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f33812a-93f3-4e0f-98e5-df066a2074c2")
 	)
 	(wire
 		(pts
@@ -6227,6 +6254,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 21.59) (xy 116.84 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae9bb58-7efe-4b33-bf81-793b5c45d2b8")
+	)
+	(wire
+		(pts
 			(xy 37.465 137.795) (xy 37.465 138.43)
 		)
 		(stroke
@@ -6567,16 +6604,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 13.335) (xy 166.37 13.335)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9136ddc6-f08e-4ae8-8168-0925a8c7d2de")
-	)
-	(wire
-		(pts
 			(xy 37.465 147.32) (xy 37.465 148.59)
 		)
 		(stroke
@@ -6677,7 +6704,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 69.85) (xy 167.005 69.85)
+			(xy 149.86 69.85) (xy 167.64 69.85)
 		)
 		(stroke
 			(width 0)
@@ -6967,16 +6994,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 13.335) (xy 166.37 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0a50eb1-5c41-452e-a2c0-55e4844dcfe9")
-	)
-	(wire
-		(pts
 			(xy 87.63 172.72) (xy 87.63 176.53)
 		)
 		(stroke
@@ -6994,16 +7011,6 @@
 			(type default)
 		)
 		(uuid "b16fd342-1794-4265-86dd-7827ef0c7df4")
-	)
-	(wire
-		(pts
-			(xy 118.11 34.29) (xy 118.11 13.335)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1efd49d-d6ac-4029-b68b-c1c2ee714fef")
 	)
 	(wire
 		(pts
@@ -7154,16 +7161,6 @@
 			(type default)
 		)
 		(uuid "bd440327-7e05-4e26-86ce-d36d77be54eb")
-	)
-	(wire
-		(pts
-			(xy 170.815 52.07) (xy 166.37 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdccab09-212e-47fb-8856-577cbdd92676")
 	)
 	(wire
 		(pts
@@ -7577,7 +7574,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 43.815) (xy 217.17 46.99)
+			(xy 218.44 47.625) (xy 218.44 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7847,7 +7844,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 53.975) (xy 240.03 57.15)
+			(xy 229.87 57.785) (xy 229.87 60.96)
 		)
 		(stroke
 			(width 0)
@@ -7857,7 +7854,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 43.815) (xy 240.03 46.355)
+			(xy 229.87 47.625) (xy 229.87 50.165)
 		)
 		(stroke
 			(width 0)
@@ -8789,29 +8786,29 @@
 	)
 	(global_label "PME_N"
 		(shape bidirectional)
-		(at 219.71 56.515 0)
+		(at 215.9 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "47e8a6ce-943a-4f0a-9f45-be59695830fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.975 56.515 0)
+			(at 205.635 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "INTRP_N"
 		(shape bidirectional)
-		(at 243.84 57.15 0)
+		(at 233.68 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8821,7 +8818,7 @@
 		)
 		(uuid "4882e4ff-a0f2-4b0e-9900-4d412c4344ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.6775 57.15 0)
+			(at 245.5175 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10071,7 +10068,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 259.08 66.04 0)
+		(at 281.94 69.215 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10080,7 +10078,7 @@
 		(fields_autoplaced yes)
 		(uuid "020f4fb8-1688-4bb1-a434-3758dc496dda")
 		(property "Reference" "H1"
-			(at 261.62 64.7699 0)
+			(at 279.4 67.9449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10089,7 +10087,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 261.62 67.3099 0)
+			(at 279.4 70.4849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10098,7 +10096,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 259.08 66.04 0)
+			(at 281.94 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10107,7 +10105,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 259.08 66.04 0)
+			(at 281.94 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10116,7 +10114,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 259.08 66.04 0)
+			(at 281.94 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10408,7 +10406,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a97de2c-3616-45b1-81e1-225dd3891dd3")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR032"
 			(at 154.305 177.165 0)
 			(effects
 				(font
@@ -10459,7 +10457,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR031")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -10813,7 +10811,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "155ad0ba-d731-4be3-833d-cd1e3ef2acdb")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR058"
 			(at 234.95 91.44 0)
 			(effects
 				(font
@@ -10863,7 +10861,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR057")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -10871,15 +10869,15 @@
 	)
 	(symbol
 		(lib_id "power:+2V5")
-		(at 217.17 43.815 0)
+		(at 218.44 47.625 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "17cf0a85-98c5-4d42-bee0-bc23f1c1d632")
-		(property "Reference" "#PWR053"
-			(at 217.17 47.625 0)
+		(property "Reference" "#PWR054"
+			(at 218.44 51.435 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10888,7 +10886,7 @@
 			)
 		)
 		(property "Value" "+2.5V"
-			(at 217.17 40.005 0)
+			(at 218.44 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10896,7 +10894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 43.815 0)
+			(at 218.44 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10905,7 +10903,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 43.815 0)
+			(at 218.44 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10914,7 +10912,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 217.17 43.815 0)
+			(at 218.44 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10928,7 +10926,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR053")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11012,7 +11010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1941fe47-dedd-45fa-ac09-a51aed0b60db")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR039"
 			(at 163.195 35.56 0)
 			(effects
 				(font
@@ -11063,7 +11061,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR038")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -11549,7 +11547,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e2d5897-7590-4cad-aa6a-0c189a690bf0")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR056"
 			(at 220.345 161.925 0)
 			(effects
 				(font
@@ -11599,7 +11597,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR055")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -11951,7 +11949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c03900e-5b17-4cc9-bc24-e2de09ae5dbf")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR033"
 			(at 154.305 183.515 0)
 			(effects
 				(font
@@ -12001,7 +11999,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR032")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -12083,7 +12081,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "45e626ff-a56a-4ee6-80b9-ddef6da2d4c9")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 156.21 109.22 0)
 			(effects
 				(font
@@ -12133,7 +12131,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR035")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -12174,7 +12172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C559142.html"
 			(at 264.16 130.81 0)
 			(effects
 				(font
@@ -12238,6 +12236,82 @@
 			(project ""
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SCALES:RH-5001")
+		(at 171.45 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5119addc-5a3b-43b7-9a85-cc320d6d461b")
+		(property "Reference" "TP1"
+			(at 173.99 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RH-5001"
+			(at 173.99 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SCALES:TEST-TH_BD2.54-P1.4_BLACK"
+			(at 171.45 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5199801.html?s_z=n_Test%2520point"
+			(at 171.45 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Test Points RoHS"
+			(at 171.196 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5199801"
+			(at 171.45 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7201499b-b48c-4b5b-85e7-59248b977b53")
+		)
+		(instances
+			(project ""
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -12390,7 +12464,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "566587f3-29c9-43b2-8fa4-c9e2684e80a4")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR053"
 			(at 207.01 161.925 0)
 			(effects
 				(font
@@ -12440,7 +12514,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR052")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -12455,7 +12529,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59ce5271-2d2d-4dc6-8a5d-a8e2d299e6ec")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR027"
 			(at 153.035 35.56 0)
 			(effects
 				(font
@@ -12505,7 +12579,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR026")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12520,7 +12594,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b000393-56d8-4770-aec5-daee2e0e56e5")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR026"
 			(at 149.86 58.42 0)
 			(effects
 				(font
@@ -12570,7 +12644,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR025")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -12719,7 +12793,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5eff7fb0-1209-4fe9-8c80-09767e9379e3")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR049"
 			(at 187.96 87.63 0)
 			(effects
 				(font
@@ -12769,7 +12843,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR048")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -12853,7 +12927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66019135-9643-4998-82d7-cca53d5b88fa")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR042"
 			(at 169.545 121.92 0)
 			(effects
 				(font
@@ -12903,7 +12977,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR041")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -12980,15 +13054,15 @@
 	)
 	(symbol
 		(lib_id "power:+2V5")
-		(at 240.03 43.815 0)
+		(at 229.87 47.625 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "67bd34f9-20dc-4a13-94a3-b8484b2f3374")
-		(property "Reference" "#PWR058"
-			(at 240.03 47.625 0)
+		(property "Reference" "#PWR059"
+			(at 229.87 51.435 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12997,7 +13071,7 @@
 			)
 		)
 		(property "Value" "+2.5V"
-			(at 240.03 40.005 0)
+			(at 229.87 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13005,7 +13079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 43.815 0)
+			(at 229.87 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13014,7 +13088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 43.815 0)
+			(at 229.87 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13023,7 +13097,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 240.03 43.815 0)
+			(at 229.87 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13037,7 +13111,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR058")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -13052,7 +13126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "686a39df-1ad4-40cf-923c-263f805c5ff6")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR038"
 			(at 161.925 144.78 0)
 			(effects
 				(font
@@ -13102,7 +13176,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR037")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -13182,7 +13256,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c5b4ace-add6-4941-a359-4c9dc056a7cb")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR045"
 			(at 174.625 199.39 0)
 			(effects
 				(font
@@ -13232,7 +13306,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR044")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -13316,7 +13390,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "708bb2b9-7f08-4627-83e9-ed5a6a3c5669")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR041"
 			(at 166.37 112.395 0)
 			(effects
 				(font
@@ -13366,7 +13440,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR040")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -13440,7 +13514,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 259.08 74.93 0)
+		(at 281.94 78.105 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13449,7 +13524,7 @@
 		(fields_autoplaced yes)
 		(uuid "73cb910b-c6e0-4641-9ac2-77c8b6ebacf7")
 		(property "Reference" "H3"
-			(at 261.62 73.6599 0)
+			(at 279.4 76.8349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13458,7 +13533,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 261.62 76.1999 0)
+			(at 279.4 79.3749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13467,7 +13542,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 259.08 74.93 0)
+			(at 281.94 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13476,7 +13551,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 259.08 74.93 0)
+			(at 281.94 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13485,7 +13560,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 259.08 74.93 0)
+			(at 281.94 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13580,7 +13655,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77ea2ad4-c049-47b8-94bc-7a05288ce3e3")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR051"
 			(at 199.39 161.925 0)
 			(effects
 				(font
@@ -13630,7 +13705,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR050")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -13645,7 +13720,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cc683cc-4e48-48fc-9dd5-8ea2fe93e3f8")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR043"
 			(at 169.545 136.525 0)
 			(effects
 				(font
@@ -13695,7 +13770,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR042")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -13914,7 +13989,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8444debf-49b8-419d-b96c-3aefeadb73e1")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR029"
 			(at 154.305 160.02 0)
 			(effects
 				(font
@@ -13965,7 +14040,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR028")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -14045,7 +14120,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89f58d74-e3a1-40d0-9d65-db82233d3928")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR050"
 			(at 199.39 146.05 0)
 			(effects
 				(font
@@ -14095,7 +14170,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR049")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -14269,7 +14344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d68a611-d5cf-4c71-8abd-b4d9db1c0ca8")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR035"
 			(at 154.305 195.58 0)
 			(effects
 				(font
@@ -14320,7 +14395,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR034")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -15002,7 +15077,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "972151ab-5a0f-4b83-9bd5-f548e89072e9")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR046"
 			(at 186.69 146.05 0)
 			(effects
 				(font
@@ -15052,7 +15127,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR045")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -15205,7 +15280,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "99d78067-9b9e-4076-b9b3-100d61f88af7")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 161.925 130.81 0)
 			(effects
 				(font
@@ -15256,7 +15331,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -15264,16 +15339,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 217.17 50.8 180)
+		(at 218.44 54.61 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9a1db757-b95f-49dc-8ae4-128009a25edb")
 		(property "Reference" "R4"
-			(at 219.71 49.5299 0)
+			(at 220.98 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15282,7 +15357,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 219.71 52.0699 0)
+			(at 220.98 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15291,7 +15366,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 216.154 50.546 90)
+			(at 217.424 54.356 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15300,7 +15375,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 217.17 50.8 0)
+			(at 218.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15309,7 +15384,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 217.17 50.8 0)
+			(at 218.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15407,7 +15482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9de789de-a387-4b4b-b5bd-5a81dfafb54b")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR055"
 			(at 220.345 146.05 0)
 			(effects
 				(font
@@ -15458,75 +15533,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 167.005 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9df5b5d6-0ef0-40c9-a0a1-dc45b87d75b3")
-		(property "Reference" "TP1"
-			(at 169.545 65.2779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 169.545 67.8179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 172.085 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.085 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 167.005 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f56e05e2-2a78-4822-95f6-25c2a14185e0")
-		)
-		(instances
-			(project ""
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "TP1")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -15534,16 +15541,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 240.03 50.165 180)
+		(at 229.87 53.975 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9e00dde4-112a-457a-9e4f-01c3c24572cd")
 		(property "Reference" "R5"
-			(at 242.57 48.8949 0)
+			(at 232.41 52.7049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15552,7 +15559,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 242.57 51.4349 0)
+			(at 232.41 55.2449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15561,7 +15568,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 239.014 49.911 90)
+			(at 228.854 53.721 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15570,7 +15577,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 50.165 0)
+			(at 229.87 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15579,7 +15586,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 240.03 50.165 0)
+			(at 229.87 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15604,7 +15611,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 259.08 79.375 0)
+		(at 281.94 82.55 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -15613,7 +15621,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0750d3d-0707-48ed-8ee4-b32c3e9bbd99")
 		(property "Reference" "H4"
-			(at 261.62 78.1049 0)
+			(at 279.4 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15622,7 +15630,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 261.62 80.6449 0)
+			(at 279.4 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15631,7 +15639,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 259.08 79.375 0)
+			(at 281.94 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15640,7 +15648,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 259.08 79.375 0)
+			(at 281.94 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15649,7 +15657,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 259.08 79.375 0)
+			(at 281.94 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15675,7 +15683,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a22184d5-9456-472f-8537-caf826cb274f")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR031"
 			(at 154.305 171.45 0)
 			(effects
 				(font
@@ -15726,7 +15734,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR030")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -15741,7 +15749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a2e58dce-70c7-4887-9cfb-72be0837589c")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR034"
 			(at 154.305 189.865 0)
 			(effects
 				(font
@@ -15792,7 +15800,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR033")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -16011,7 +16019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aa84f4bf-7e62-4514-8630-6a0b4a63218d")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR028"
 			(at 154.305 154.305 0)
 			(effects
 				(font
@@ -16061,7 +16069,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR027")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -16145,7 +16153,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b280f939-01ff-45bd-ac5e-36e3438cdc2e")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR047"
 			(at 186.69 161.925 0)
 			(effects
 				(font
@@ -16195,7 +16203,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR046")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -16416,7 +16424,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b62ac312-d13a-47d0-9fb7-2a6c5589b5fb")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR048"
 			(at 187.325 34.925 0)
 			(effects
 				(font
@@ -16466,7 +16474,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR047")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -17425,7 +17433,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d929b764-661e-4e1a-bc04-94ed6bb27497")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR044"
 			(at 174.625 35.56 0)
 			(effects
 				(font
@@ -17476,7 +17484,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR043")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -17685,7 +17693,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 259.08 70.485 0)
+		(at 281.94 73.66 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -17694,7 +17703,7 @@
 		(fields_autoplaced yes)
 		(uuid "e5b1fe83-6660-43a0-97ce-ac90e3573f53")
 		(property "Reference" "H2"
-			(at 261.62 69.2149 0)
+			(at 279.4 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17703,7 +17712,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 261.62 71.7549 0)
+			(at 279.4 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17712,7 +17721,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 259.08 70.485 0)
+			(at 281.94 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17721,7 +17730,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 259.08 70.485 0)
+			(at 281.94 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17730,7 +17739,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 259.08 70.485 0)
+			(at 281.94 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17756,7 +17765,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e91f9dd2-1c91-4d5d-bed2-8110cf2521c2")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR060"
 			(at 275.59 143.51 0)
 			(effects
 				(font
@@ -17806,7 +17815,72 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR059")
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee10162b-4cb0-468b-a5e0-0a1334d7ea6d")
+		(property "Reference" "#PWR025"
+			(at 113.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abf5934e-44c6-48f3-8fe3-806e5e1e402a")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -17821,7 +17895,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee30a854-1dd3-4d2e-ac4b-11d710ae9375")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR030"
 			(at 154.305 165.735 0)
 			(effects
 				(font
@@ -17871,7 +17945,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR029")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -17886,7 +17960,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eeb617bc-d831-4548-9faf-f12c03f28d78")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR052"
 			(at 207.01 146.05 0)
 			(effects
 				(font
@@ -17937,7 +18011,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR051")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -17952,7 +18026,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0818c0f-e7e7-4a24-93a6-a00de709e24a")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR057"
 			(at 222.25 100.33 0)
 			(effects
 				(font
@@ -18002,7 +18076,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR056")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -18151,7 +18225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd06bec5-cf09-40bc-bd6d-eda365582c3f")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR040"
 			(at 166.37 97.155 0)
 			(effects
 				(font
@@ -18202,7 +18276,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -18321,49 +18395,6 @@
 		)
 	)
 	(sheet
-		(at 189.23 42.545)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "2d2b15f0-5f73-4489-b89c-4a26baec0dbc")
-		(property "Sheetname" "Strap-In"
-			(at 189.23 41.8334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "strap_in_config.kicad_sch"
-			(at 189.23 46.9396 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 271.78 51.435)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
@@ -18444,7 +18475,7 @@
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(page "8")
+					(page "7")
 				)
 			)
 		)
