@@ -144,6 +144,179 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SCALES:0826-1G1T-23-F"
 			(pin_names
 				(offset 1.016)
@@ -1180,16 +1353,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Not sure if need to 100 ohm in with the LED"
-		(exclude_from_sim no)
-		(at 100.33 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "41b96ae0-ffca-44c6-849e-c8cf99504e04")
-	)
 	(text "LEDx_1 pin indicates the link status\nLEDx_0 pin indicates the activity status"
 		(exclude_from_sim no)
 		(at 76.2 44.45 0)
@@ -1206,6 +1369,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5774978-4190-4e03-936e-0e147fee3e0e")
+	)
+	(wire
+		(pts
+			(xy 87.63 66.04) (xy 87.63 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bab3664-e00a-41f3-a5ab-791cc0fbfd85")
+	)
+	(wire
+		(pts
+			(xy 88.265 78.105) (xy 88.265 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18de4bbc-6e94-43cc-98b6-816bfcc02a75")
 	)
 	(wire
 		(pts
@@ -1289,6 +1472,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 80.01) (xy 88.265 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dedd904-aa78-441e-a226-62f092b1393e")
+	)
+	(wire
+		(pts
 			(xy 36.195 44.45) (xy 49.53 44.45)
 		)
 		(stroke
@@ -1309,16 +1502,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 69.85) (xy 74.93 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ee188c0-9ce2-47a2-a3b9-8ae8df95a59c")
-	)
-	(wire
-		(pts
 			(xy 28.575 44.45) (xy 22.86 44.45)
 		)
 		(stroke
@@ -1326,16 +1509,6 @@
 			(type default)
 		)
 		(uuid "808a3755-60bb-4bcd-9729-42575e30a3a7")
-	)
-	(wire
-		(pts
-			(xy 74.93 80.01) (xy 74.93 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84775f10-53d9-40bb-b837-22169330ef07")
 	)
 	(wire
 		(pts
@@ -1419,6 +1592,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 80.01) (xy 77.47 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be412755-843b-4f5c-bd1a-97364dd1c7e4")
+	)
+	(wire
+		(pts
 			(xy 23.495 24.13) (xy 28.575 24.13)
 		)
 		(stroke
@@ -1466,6 +1649,26 @@
 			(type default)
 		)
 		(uuid "d8a562df-a519-4f0f-b7b2-cc2da395abc2")
+	)
+	(wire
+		(pts
+			(xy 74.93 69.85) (xy 77.47 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9038fd-8898-4e60-95a8-1d6b0c3f5cbc")
+	)
+	(wire
+		(pts
+			(xy 85.09 69.85) (xy 87.63 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0252e89-7016-45a2-ac6f-9c7d9d5bb692")
 	)
 	(wire
 		(pts
@@ -1788,16 +1991,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
-		(at 74.93 78.74 0)
+		(lib_id "Device:R_US")
+		(at 81.28 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2b9c5f80-b7c1-4f32-826d-704de9a976af")
-		(property "Reference" "#PWR095"
-			(at 74.93 82.55 0)
+		(uuid "0bf32bea-f034-4efb-8b5d-d8ecdce8d96b")
+		(property "Reference" "R30"
+			(at 81.28 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 81.28 78.105 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 81.026 81.026 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1805,16 +2024,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+2.5V"
-			(at 74.93 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 78.74 0)
+		(property "Datasheet" "~"
+			(at 81.28 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1822,8 +2033,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 74.93 78.74 0)
+		(property "Description" "Resistor, US symbol"
+			(at 81.28 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1831,22 +2042,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 74.93 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "0bfe17a9-a266-4c76-8f1b-71c1d72f3eb1")
 		)
 		(pin "1"
-			(uuid "96be5c4e-cc24-4fe7-bdff-6db97a2d78fb")
+			(uuid "57b8c6fd-67e0-48d7-8dce-575094017565")
 		)
 		(instances
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/36b1c77c-592d-4ec4-b581-8127c10b7e3d"
-					(reference "#PWR095")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -1987,16 +2192,83 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
-		(at 74.93 67.31 0)
+		(lib_id "Device:R_US")
+		(at 81.28 69.85 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "61177f27-7dca-456d-8e90-5025f319b75d")
+		(uuid "5c27c03b-af9f-4343-b648-6b52ab0a903a")
+		(property "Reference" "R29"
+			(at 81.28 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 81.28 67.945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 81.026 70.866 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 81.28 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bd7f1d93-e0a4-4850-a519-b29b42a8a161")
+		)
+		(pin "1"
+			(uuid "f311ee10-0a13-4dc4-aedd-9335fa80764d")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/36b1c77c-592d-4ec4-b581-8127c10b7e3d"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 87.63 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8607110d-bc4b-4bcc-9182-a55275a5e0dd")
 		(property "Reference" "#PWR094"
-			(at 74.93 71.12 0)
+			(at 87.63 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,7 +2277,7 @@
 			)
 		)
 		(property "Value" "+2.5V"
-			(at 74.93 63.5 0)
+			(at 87.63 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2013,7 +2285,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 67.31 0)
+			(at 87.63 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2022,7 +2294,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 67.31 0)
+			(at 87.63 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,7 +2303,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 74.93 67.31 0)
+			(at 87.63 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2312,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6b4fc31-752a-4937-8ee5-9f4b7141a2ac")
+			(uuid "8f3a325b-6797-4f6f-b8d0-c4e9421992b8")
 		)
 		(instances
 			(project "periph_ethernet_switch"
@@ -2176,6 +2448,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/36b1c77c-592d-4ec4-b581-8127c10b7e3d"
 					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 88.265 78.105 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "923c28f6-2bc3-417d-aa4e-43d4dd4bcae8")
+		(property "Reference" "#PWR095"
+			(at 88.265 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+2.5V"
+			(at 88.265 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.265 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.265 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+			(at 88.265 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43a880ac-a60b-4af0-bdde-493348f91536")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4/36b1c77c-592d-4ec4-b581-8127c10b7e3d"
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)

@@ -144,6 +144,262 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Crystal_GND24"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at 3.175 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Crystal_GND24_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_GND24_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:FerriteBead"
 			(pin_numbers
 				(hide yes)
@@ -4243,8 +4499,8 @@
 		)
 	)
 	(rectangle
-		(start 204.47 38.1)
-		(end 247.65 64.135)
+		(start 193.04 79.375)
+		(end 235.585 109.22)
 		(stroke
 			(width 0)
 			(type default)
@@ -4252,7 +4508,29 @@
 		(fill
 			(type none)
 		)
-		(uuid 53ab1fa2-0051-473c-8b43-a9df2da72c31)
+		(uuid 537df9a4-8f5c-4798-910e-7936abe512c5)
+	)
+	(rectangle
+		(start 196.85 35.56)
+		(end 257.81 69.215)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c6d2cd77-bb14-4f99-9482-7f7e3e4f403e)
+	)
+	(text "Left as a reference"
+		(exclude_from_sim no)
+		(at 210.82 59.055 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "18c0550f-6b1b-4547-99ad-ef631913b5a3")
 	)
 	(text "Digital to Analog\n"
 		(exclude_from_sim no)
@@ -4274,15 +4552,15 @@
 		)
 		(uuid "a305160a-d1d9-4408-8cac-573cb5b132e4")
 	)
-	(text "Not going to be using these\nUnsure if I should leave floating or not."
+	(text "Clock"
 		(exclude_from_sim no)
-		(at 226.06 40.64 0)
+		(at 213.995 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "e3d314d2-6e63-4151-9522-778c3d07aeea")
+		(uuid "c0556979-eae5-4b46-a586-b4939e5f304d")
 	)
 	(text_box "Place the resistor close to the ISET pin.\nDo not place any capacitor in parallel with the ISET resistor.\nRoute all signals, especially clocks and high frequency signals, away from this pin to avoid coupling.\nDo not share the ISET resistor ground via with any other component's grounding via."
 		(exclude_from_sim no)
@@ -4407,7 +4685,13 @@
 		(uuid "48cec71c-212f-4af2-b253-2199357d8c4d")
 	)
 	(junction
-		(at 213.36 81.28)
+		(at 214.63 99.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c05c2d7-422b-4ac2-8a79-616d21e16bcf")
+	)
+	(junction
+		(at 225.425 50.165)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4de72ded-5b86-4f8a-af7f-70a665fab09c")
@@ -4447,12 +4731,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "676ff8e0-ce23-408e-884f-324765203765")
-	)
-	(junction
-		(at 34.925 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6a6a2b0a-a3d4-45b8-88a7-ed7abafe9e62")
 	)
 	(junction
 		(at 199.39 142.875)
@@ -4509,18 +4787,6 @@
 		(uuid "8398289b-f506-4a42-bd3c-57cce4a71a11")
 	)
 	(junction
-		(at 27.94 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88b7db6e-6436-4471-8969-2735e16e856a")
-	)
-	(junction
-		(at 170.18 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8df75e6a-24f3-4a26-a77c-f35419cb3758")
-	)
-	(junction
 		(at 154.305 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4563,7 +4829,7 @@
 		(uuid "ae5c85c4-3947-446d-a37c-45c7620c5284")
 	)
 	(junction
-		(at 20.955 33.655)
+		(at 20.32 33.655)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aebeb5c1-1fe2-46eb-b178-448b05bed667")
@@ -4581,22 +4847,10 @@
 		(uuid "b24a8e4e-e445-4693-9b38-3f34a0dae45d")
 	)
 	(junction
-		(at 48.895 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b2fb6ea8-e40d-4ee7-b6f5-683bf2b5c13b")
-	)
-	(junction
-		(at 234.95 76.2)
+		(at 247.015 45.085)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5270461-f4ff-4ed8-b8e4-bcbe7d50e607")
-	)
-	(junction
-		(at 55.245 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c0d4e0fd-236d-4489-8ea9-d75fc8a666a1")
 	)
 	(junction
 		(at 27.94 33.655)
@@ -4605,16 +4859,16 @@
 		(uuid "c1cca7a8-8ddf-4168-bd8d-00672a030cfd")
 	)
 	(junction
-		(at 42.545 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3100fd2-e1c3-4f0d-88a9-9dc10de7a32c")
-	)
-	(junction
 		(at 174.625 156.845)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb77cd42-dd72-43cf-a6a8-632e8d333076")
+	)
+	(junction
+		(at 229.87 99.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce6865c1-6ce9-4f74-8001-e08ce1027810")
 	)
 	(junction
 		(at 109.22 173.355)
@@ -4647,13 +4901,19 @@
 		(uuid "dfc7f09a-1145-4524-a4ab-77f32a65bf78")
 	)
 	(junction
+		(at 214.63 86.995)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e07f7612-4edb-40f8-ac6f-3edfd83af9e6")
+	)
+	(junction
 		(at 154.305 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e091991f-7dd1-4a61-8889-da45358027a0")
 	)
 	(junction
-		(at 222.25 92.71)
+		(at 234.315 61.595)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1183dd6-d994-47c4-9967-0d805a9e09ce")
@@ -4844,16 +5104,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.895 43.815) (xy 55.245 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0558f055-1289-4141-a1ba-b488a53a917b")
-	)
-	(wire
-		(pts
 			(xy 125.73 173.99) (xy 147.955 173.99)
 		)
 		(stroke
@@ -5004,6 +5254,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 41.91) (xy 20.32 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11140ad1-e23f-414e-8d20-e191443028bd")
+	)
+	(wire
+		(pts
 			(xy 100.33 35.56) (xy 100.33 13.97)
 		)
 		(stroke
@@ -5061,6 +5321,16 @@
 			(type default)
 		)
 		(uuid "15a61ec0-570c-4124-99cd-5ad338e3739f")
+	)
+	(wire
+		(pts
+			(xy 159.385 52.07) (xy 170.815 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "164ba126-d244-4c57-86a9-a8c6663e9c74")
 	)
 	(wire
 		(pts
@@ -5154,6 +5424,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 86.995) (xy 229.87 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2072b992-5937-45cc-9057-b20fad769793")
+	)
+	(wire
+		(pts
 			(xy 27.94 41.91) (xy 27.94 43.815)
 		)
 		(stroke
@@ -5164,6 +5444,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.155 86.995) (xy 229.87 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "233b3c86-0d8b-4667-a4af-8f58d619a49f")
+	)
+	(wire
+		(pts
 			(xy 36.83 68.58) (xy 36.83 69.85)
 		)
 		(stroke
@@ -5171,6 +5461,16 @@
 			(type default)
 		)
 		(uuid "235a3ce7-3572-402b-a4a6-cce848b89284")
+	)
+	(wire
+		(pts
+			(xy 201.295 99.695) (xy 214.63 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2433ddec-ab86-4b84-b6e3-c2132228fe8a")
 	)
 	(wire
 		(pts
@@ -5204,7 +5504,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 76.2) (xy 205.74 76.2)
+			(xy 200.025 45.085) (xy 217.805 45.085)
 		)
 		(stroke
 			(width 0)
@@ -5294,16 +5594,6 @@
 	)
 	(wire
 		(pts
-			(xy 20.955 41.91) (xy 20.955 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c24dbaa-e39b-4588-8a04-b9c6fb809a11")
-	)
-	(wire
-		(pts
 			(xy 159.385 173.99) (xy 154.305 173.99)
 		)
 		(stroke
@@ -5311,6 +5601,16 @@
 			(type default)
 		)
 		(uuid "2caa66f9-033f-4451-b81d-5d93a9a53a1e")
+	)
+	(wire
+		(pts
+			(xy 214.63 99.695) (xy 216.535 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ce0d764-a633-4b4e-9549-ae86f1a25a82")
 	)
 	(wire
 		(pts
@@ -5394,7 +5694,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 76.2) (xy 234.95 76.2)
+			(xy 243.205 45.085) (xy 247.015 45.085)
 		)
 		(stroke
 			(width 0)
@@ -5411,16 +5711,6 @@
 			(type default)
 		)
 		(uuid "33a1ee46-65b5-4193-8291-093e22d51d38")
-	)
-	(wire
-		(pts
-			(xy 218.44 60.96) (xy 215.9 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "340ada65-ec82-446d-b919-a514a5beaecc")
 	)
 	(wire
 		(pts
@@ -5524,23 +5814,13 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 54.61) (xy 170.18 52.07)
+			(xy 159.385 55.245) (xy 159.385 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3c6adb6e-15ef-4e6d-9796-7eba6ca82366")
-	)
-	(wire
-		(pts
-			(xy 218.44 58.42) (xy 218.44 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c73bfda-4d55-4783-9e3e-8fdf6bf89dc9")
 	)
 	(wire
 		(pts
@@ -5581,6 +5861,16 @@
 			(type default)
 		)
 		(uuid "3deedff5-7939-4619-a3aa-6111aedf14fb")
+	)
+	(wire
+		(pts
+			(xy 214.63 86.995) (xy 214.63 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e54b734-cba5-45e4-9eae-c23ecd4c0927")
 	)
 	(wire
 		(pts
@@ -5654,16 +5944,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 60.96) (xy 233.68 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45033929-d43c-4476-a1da-2bad620718c6")
-	)
-	(wire
-		(pts
 			(xy 174.625 192.405) (xy 174.625 193.04)
 		)
 		(stroke
@@ -5671,6 +5951,16 @@
 			(type default)
 		)
 		(uuid "45428bb6-74ad-450f-b4d0-bce9d43c7d3d")
+	)
+	(wire
+		(pts
+			(xy 200.025 86.995) (xy 214.63 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47ed4901-eb3f-40cd-9ea9-f2e4c35e7b7a")
 	)
 	(wire
 		(pts
@@ -5724,7 +6014,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 13.335) (xy 20.955 13.335)
+			(xy 107.95 13.335) (xy 20.32 13.335)
 		)
 		(stroke
 			(width 0)
@@ -5784,16 +6074,6 @@
 	)
 	(wire
 		(pts
-			(xy 42.545 43.815) (xy 48.895 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53a2e214-1e26-4739-b6b5-d77029f96835")
-	)
-	(wire
-		(pts
 			(xy 35.56 104.775) (xy 31.115 104.775)
 		)
 		(stroke
@@ -5834,7 +6114,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.955 13.335) (xy 20.955 33.655)
+			(xy 20.32 13.335) (xy 20.32 33.655)
 		)
 		(stroke
 			(width 0)
@@ -5901,16 +6181,6 @@
 			(type default)
 		)
 		(uuid "5f5798b1-6921-4756-a9f5-992b1b0136ab")
-	)
-	(wire
-		(pts
-			(xy 170.18 52.07) (xy 170.815 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6105915b-c684-403b-a1b0-a14b39af7280")
 	)
 	(wire
 		(pts
@@ -6064,6 +6334,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 86.995) (xy 216.535 86.995)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b9d964e-628f-4ae6-ad09-4536fa00da80")
+	)
+	(wire
+		(pts
 			(xy 67.31 33.02) (xy 67.31 35.56)
 		)
 		(stroke
@@ -6091,6 +6371,16 @@
 			(type default)
 		)
 		(uuid "6cee97a0-7b8f-493a-88da-7e5ffed4455d")
+	)
+	(wire
+		(pts
+			(xy 229.87 99.695) (xy 229.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d296f1b-7152-400a-a310-ee72afdac02d")
 	)
 	(wire
 		(pts
@@ -6204,7 +6494,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.955 33.655) (xy 20.955 34.29)
+			(xy 20.32 33.655) (xy 20.32 34.29)
 		)
 		(stroke
 			(width 0)
@@ -6241,6 +6531,16 @@
 			(type default)
 		)
 		(uuid "757e0437-f5cf-4a7f-b8cd-52699afe038b")
+	)
+	(wire
+		(pts
+			(xy 214.63 99.695) (xy 214.63 95.885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "769d2632-f9f9-46cb-b063-7ed62468f5ec")
 	)
 	(wire
 		(pts
@@ -6494,7 +6794,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 92.71) (xy 222.25 92.71)
+			(xy 243.205 61.595) (xy 234.315 61.595)
 		)
 		(stroke
 			(width 0)
@@ -6561,6 +6861,16 @@
 			(type default)
 		)
 		(uuid "8ceef0f6-b348-4ed8-acff-91b09630212e")
+	)
+	(wire
+		(pts
+			(xy 207.645 92.075) (xy 209.55 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d3672d9-3efd-4ac1-a8a4-d233fe1c9321")
 	)
 	(wire
 		(pts
@@ -6664,16 +6974,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 52.07) (xy 159.385 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94c297ce-3cd8-404e-b94d-a44672d50694")
-	)
-	(wire
-		(pts
 			(xy 220.345 153.67) (xy 220.345 155.575)
 		)
 		(stroke
@@ -6754,7 +7054,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 81.28) (xy 231.14 92.71)
+			(xy 243.205 50.165) (xy 243.205 61.595)
 		)
 		(stroke
 			(width 0)
@@ -6784,7 +7084,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 81.28) (xy 203.2 81.28)
+			(xy 211.455 50.165) (xy 215.265 50.165)
 		)
 		(stroke
 			(width 0)
@@ -6884,7 +7184,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 33.655) (xy 20.955 33.655)
+			(xy 15.875 33.655) (xy 20.32 33.655)
 		)
 		(stroke
 			(width 0)
@@ -6901,6 +7201,16 @@
 			(type default)
 		)
 		(uuid "a4c7b987-bb0d-4267-baae-44f119eeb025")
+	)
+	(wire
+		(pts
+			(xy 260.985 93.98) (xy 264.16 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e45ac4-8ef0-4dee-ba5e-4f4f9e724c09")
 	)
 	(wire
 		(pts
@@ -6934,16 +7244,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 43.815) (xy 34.925 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a740813d-f8a7-4ee6-9f9b-162fbb3bd102")
-	)
-	(wire
-		(pts
 			(xy 23.495 96.52) (xy 23.495 104.775)
 		)
 		(stroke
@@ -6964,7 +7264,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 81.28) (xy 213.36 81.28)
+			(xy 222.885 50.165) (xy 225.425 50.165)
 		)
 		(stroke
 			(width 0)
@@ -7011,6 +7311,16 @@
 			(type default)
 		)
 		(uuid "b01daa3c-b08a-4b94-a3a8-a94828d73d02")
+	)
+	(wire
+		(pts
+			(xy 260.35 90.17) (xy 264.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c78e74-8996-4ac8-b9e7-f918133a6081")
 	)
 	(wire
 		(pts
@@ -7214,6 +7524,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 92.075) (xy 222.25 92.075)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb6bf21-7b36-4d48-913e-dcf7b4f852fd")
+	)
+	(wire
+		(pts
 			(xy 143.51 33.02) (xy 143.51 35.56)
 		)
 		(stroke
@@ -7354,7 +7674,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 83.82) (xy 234.95 85.09)
+			(xy 247.015 52.705) (xy 247.015 53.975)
 		)
 		(stroke
 			(width 0)
@@ -7464,7 +7784,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 33.02) (xy 17.78 33.655)
+			(xy 15.875 33.02) (xy 15.875 33.655)
 		)
 		(stroke
 			(width 0)
@@ -7494,6 +7814,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.155 99.695) (xy 229.87 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d38104bc-f6fa-4133-8c91-cb81457a2b66")
+	)
+	(wire
+		(pts
 			(xy 133.35 14.605) (xy 156.21 14.605)
 		)
 		(stroke
@@ -7504,7 +7834,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 92.71) (xy 222.25 92.71)
+			(xy 225.425 61.595) (xy 234.315 61.595)
 		)
 		(stroke
 			(width 0)
@@ -7544,7 +7874,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 76.2) (xy 215.9 76.2)
+			(xy 225.425 45.085) (xy 227.965 45.085)
 		)
 		(stroke
 			(width 0)
@@ -7554,7 +7884,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 81.28) (xy 187.96 76.2)
+			(xy 200.025 50.165) (xy 200.025 45.085)
 		)
 		(stroke
 			(width 0)
@@ -7591,16 +7921,6 @@
 			(type default)
 		)
 		(uuid "db3ab509-1d2d-4ec1-9553-15bd5531fd58")
-	)
-	(wire
-		(pts
-			(xy 218.44 47.625) (xy 218.44 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbcbb975-8503-4067-9887-255597a86a1a")
 	)
 	(wire
 		(pts
@@ -7724,7 +8044,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 81.28) (xy 215.9 81.28)
+			(xy 225.425 50.165) (xy 227.965 50.165)
 		)
 		(stroke
 			(width 0)
@@ -7754,7 +8074,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 76.2) (xy 237.49 76.2)
+			(xy 247.015 45.085) (xy 249.555 45.085)
 		)
 		(stroke
 			(width 0)
@@ -7771,16 +8091,6 @@
 			(type default)
 		)
 		(uuid "e5bc91ef-b2b3-4ac2-b466-2cc719ac1605")
-	)
-	(wire
-		(pts
-			(xy 20.955 43.815) (xy 27.94 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6f1b275-10d6-42a9-861e-1e0af148283f")
 	)
 	(wire
 		(pts
@@ -7864,26 +8174,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 57.785) (xy 229.87 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ead72a3e-8d60-4533-ad9f-2c17481cd448")
-	)
-	(wire
-		(pts
-			(xy 229.87 47.625) (xy 229.87 50.165)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eae57729-72cd-4aa9-88f6-f3f54e27c12f")
-	)
-	(wire
-		(pts
 			(xy 55.245 80.01) (xy 58.42 80.01)
 		)
 		(stroke
@@ -7894,7 +8184,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 83.82) (xy 213.36 81.28)
+			(xy 225.425 52.705) (xy 225.425 50.165)
 		)
 		(stroke
 			(width 0)
@@ -7994,7 +8284,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 92.71) (xy 213.36 91.44)
+			(xy 225.425 61.595) (xy 225.425 60.325)
 		)
 		(stroke
 			(width 0)
@@ -8074,17 +8364,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.925 43.815) (xy 42.545 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc489625-0f83-4fba-84b7-d048552c1896")
-	)
-	(wire
-		(pts
-			(xy 222.25 92.71) (xy 222.25 93.98)
+			(xy 234.315 61.595) (xy 234.315 62.865)
 		)
 		(stroke
 			(width 0)
@@ -8228,6 +8508,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "XI"
+		(shape bidirectional)
+		(at 200.025 86.995 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12744505-7670-4de3-bbe0-7bd4ce450450")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.1142 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8784,7 +9086,7 @@
 	)
 	(global_label "XO"
 		(shape bidirectional)
-		(at 199.39 81.28 180)
+		(at 211.455 50.165 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8794,7 +9096,7 @@
 		)
 		(uuid "47c52451-f029-4886-993a-ad26261358c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.7535 81.28 0)
+			(at 204.8185 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8806,7 +9108,7 @@
 	)
 	(global_label "PME_N"
 		(shape bidirectional)
-		(at 215.9 60.96 180)
+		(at 260.35 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8816,7 +9118,7 @@
 		)
 		(uuid "47e8a6ce-943a-4f0a-9f45-be59695830fb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.635 60.96 0)
+			(at 250.085 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8828,22 +9130,22 @@
 	)
 	(global_label "INTRP_N"
 		(shape bidirectional)
-		(at 233.68 60.96 0)
+		(at 260.985 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4882e4ff-a0f2-4b0e-9900-4d412c4344ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.5175 60.96 0)
+			(at 249.1475 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9730,6 +10032,28 @@
 			)
 		)
 	)
+	(global_label "XO"
+		(shape bidirectional)
+		(at 201.295 99.695 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8bfc25e-9ec1-4541-82f8-c9ce566867d6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.6585 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ISET"
 		(shape bidirectional)
 		(at 67.31 33.02 90)
@@ -9894,7 +10218,7 @@
 	)
 	(global_label "XI"
 		(shape bidirectional)
-		(at 237.49 76.2 0)
+		(at 249.555 45.085 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9904,7 +10228,7 @@
 		)
 		(uuid "dbd93002-718c-4f9d-850f-a73f56155ec1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.4008 76.2 0)
+			(at 255.4658 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10287,6 +10611,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 220.345 86.995 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05a167c6-8c08-4ed6-a79d-829ec2c94506")
+		(property "Reference" "C66"
+			(at 219.075 85.725 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "16pF"
+			(at 226.695 85.725 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 224.155 86.0298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.345 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 220.345 86.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df2879c1-5bb6-4cb5-96d5-8258cacc5940")
+		)
+		(pin "2"
+			(uuid "4eca69a3-665e-4e5d-8ed1-efa39d01ddf5")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "C66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+2V5")
 		(at 57.15 170.18 0)
 		(unit 1)
@@ -10485,15 +10878,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 213.36 87.63 0)
+		(at 225.425 56.515 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "0bc7a70a-f0f2-47c4-b5eb-a76ca109f22b")
 		(property "Reference" "C33"
-			(at 213.36 85.725 0)
+			(at 225.425 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10502,7 +10895,7 @@
 			)
 		)
 		(property "Value" "15pF"
-			(at 213.36 89.535 0)
+			(at 225.425 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10511,7 +10904,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 214.3252 91.44 0)
+			(at 226.3902 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10520,7 +10913,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 87.63 0)
+			(at 225.425 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10529,7 +10922,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 213.36 87.63 0)
+			(at 225.425 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10824,15 +11217,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 85.09 0)
+		(at 247.015 53.975 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "155ad0ba-d731-4be3-833d-cd1e3ef2acdb")
 		(property "Reference" "#PWR058"
-			(at 234.95 91.44 0)
+			(at 247.015 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10841,7 +11234,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 88.9 0)
+			(at 247.015 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10849,7 +11242,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 85.09 0)
+			(at 247.015 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10858,7 +11251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 85.09 0)
+			(at 247.015 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10867,7 +11260,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 85.09 0)
+			(at 247.015 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10882,71 +11275,6 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 218.44 47.625 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "17cf0a85-98c5-4d42-bee0-bc23f1c1d632")
-		(property "Reference" "#PWR054"
-			(at 218.44 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2.5V"
-			(at 218.44 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 218.44 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5f98d63-e564-4613-8dd6-d0c46ee177ea")
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -11827,71 +12155,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
-		(at 17.78 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "38f70bd3-58da-4a49-ac31-3b379885da12")
-		(property "Reference" "#PWR01"
-			(at 17.78 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2.5V"
-			(at 17.78 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 17.78 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 17.78 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bce676c6-a5f4-41ef-91f4-b61ce0b2a990")
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 163.195 156.845 90)
 		(unit 1)
@@ -12263,6 +12526,82 @@
 	)
 	(symbol
 		(lib_id "SCALES:RH-5001")
+		(at 267.97 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4dc408e3-421b-4653-afcc-f29ac7fc6f75")
+		(property "Reference" "TP11"
+			(at 270.51 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RH-5001"
+			(at 270.51 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SCALES:TEST-TH_BD2.54-P1.4_BLACK"
+			(at 267.97 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5199801.html?s_z=n_Test%2520point"
+			(at 267.97 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Test Points RoHS"
+			(at 267.716 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5199801"
+			(at 267.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a46a9d4-85f0-41d6-9791-559ad8659c62")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SCALES:RH-5001")
 		(at 171.45 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12541,6 +12880,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 20.32 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5755615f-055b-4b7d-a857-e51432bfae98")
+		(property "Reference" "#PWR0118"
+			(at 20.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 20.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 20.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e029ed8c-a5bd-42ee-af25-dee9e5d569e8")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+2V5")
 		(at 153.035 31.75 0)
 		(unit 1)
@@ -12607,7 +13011,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.18 54.61 0)
+		(at 159.385 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12615,7 +13019,7 @@
 		(dnp no)
 		(uuid "5b000393-56d8-4770-aec5-daee2e0e56e5")
 		(property "Reference" "#PWR026"
-			(at 170.18 60.96 0)
+			(at 159.385 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12624,7 +13028,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 58.42 0)
+			(at 159.385 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12632,7 +13036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 54.61 0)
+			(at 159.385 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12641,7 +13045,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 54.61 0)
+			(at 159.385 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12650,7 +13054,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 54.61 0)
+			(at 159.385 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12806,15 +13210,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 187.96 81.28 0)
+		(at 200.025 50.165 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "5eff7fb0-1209-4fe9-8c80-09767e9379e3")
 		(property "Reference" "#PWR049"
-			(at 187.96 87.63 0)
+			(at 200.025 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12823,7 +13227,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 187.96 85.09 0)
+			(at 200.025 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12831,7 +13235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 81.28 0)
+			(at 200.025 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12840,7 +13244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 81.28 0)
+			(at 200.025 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12849,7 +13253,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 81.28 0)
+			(at 200.025 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13067,71 +13471,6 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 229.87 47.625 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "67bd34f9-20dc-4a13-94a3-b8484b2f3374")
-		(property "Reference" "#PWR059"
-			(at 229.87 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2.5V"
-			(at 229.87 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 229.87 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 229.87 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a26261f-f80a-428f-a80a-5cc16bd82948")
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -13598,6 +13937,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 214.63 92.075 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74b3868d-0d6d-485f-b55c-3c13a3516765")
+		(property "Reference" "Y1"
+			(at 214.63 92.075 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MICROCHIP VXM7-9032-25M0000000"
+			(at 214.63 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SCALES:CRYSTAL-SMD_4P-L3.2-W2.5-BL"
+			(at 214.63 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1517995.html?s_z=n_VXM7-9032-25M0000000"
+			(at 214.63 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 214.63 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b08c954f-27fc-473e-82a6-8a58c31789a5")
+		)
+		(pin "2"
+			(uuid "677f8bfa-8b86-4d67-bf7e-2257a66017fb")
+		)
+		(pin "1"
+			(uuid "80097d3c-501f-4467-9c83-1cced655fd05")
+		)
+		(pin "3"
+			(uuid "1ad85bdb-07f1-409e-a75c-e3120721b327")
+		)
+		(instances
+			(project ""
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 169.545 124.46 0)
 		(unit 1)
@@ -13791,6 +14203,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 42.545 43.815 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d2786f7-e4f4-4ff9-b780-13aedd9254e1")
+		(property "Reference" "#PWR0120"
+			(at 42.545 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 42.545 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 42.545 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 42.545 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 42.545 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59bb7297-79e5-4468-83c5-67386f895146")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -14198,16 +14675,16 @@
 	)
 	(symbol
 		(lib_id "SCALES:ABM8G-25.000MHZ-B4Y-T")
-		(at 223.52 78.74 0)
+		(at 235.585 47.625 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8afd49ed-6550-427c-a502-f782dc2f58be")
 		(property "Reference" "U2"
-			(at 223.52 68.58 0)
+			(at 235.585 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14215,7 +14692,7 @@
 			)
 		)
 		(property "Value" "25 MHz"
-			(at 223.52 71.12 0)
+			(at 235.585 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14223,7 +14700,7 @@
 			)
 		)
 		(property "Footprint" "SCALES:CRYSTAL-SMD_4P-L3.2-W2.5-TR"
-			(at 223.52 88.9 0)
+			(at 235.585 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14232,7 +14709,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C596913.html"
-			(at 223.52 94.996 0)
+			(at 235.585 63.881 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14241,7 +14718,7 @@
 			)
 		)
 		(property "Description" "10pF SMD3225-4P Crystals RoHS"
-			(at 224.028 93.218 0)
+			(at 236.093 62.103 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14250,7 +14727,7 @@
 			)
 		)
 		(property "LCSC Part" "C596913"
-			(at 223.52 91.44 0)
+			(at 235.585 60.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14259,7 +14736,7 @@
 			)
 		)
 		(property "Part Name" "ABM8G-25.000MHZ-B4Y-T"
-			(at 223.52 97.282 0)
+			(at 235.585 66.167 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14290,15 +14767,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 209.55 76.2 270)
+		(at 221.615 45.085 270)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "8b6c8726-f282-4b81-8a2b-a137133c0378")
 		(property "Reference" "R3"
-			(at 204.47 74.93 90)
+			(at 216.535 43.815 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14306,7 +14783,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 212.09 74.93 90)
+			(at 224.155 43.815 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14314,7 +14791,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 209.296 77.216 90)
+			(at 221.361 46.101 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14323,7 +14800,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 76.2 0)
+			(at 221.615 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14332,7 +14809,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 209.55 76.2 0)
+			(at 221.615 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14481,6 +14958,75 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 220.345 99.695 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9028d6bc-3ef1-4859-b5ae-4208e3c22632")
+		(property "Reference" "C65"
+			(at 219.075 98.425 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "16pF"
+			(at 226.695 98.425 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 224.155 98.7298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.345 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 220.345 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68aeafa6-7787-4b01-b139-b08c4faf6f07")
+		)
+		(pin "2"
+			(uuid "d0dfc5b2-eccf-490d-a086-851fb793f490")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "C65")
 					(unit 1)
 				)
 			)
@@ -15022,16 +15568,81 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 207.01 81.28 270)
+		(lib_id "power:GND")
+		(at 229.87 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(uuid "93c67cbf-a19c-4392-baec-9c63ca8a68e4")
+		(property "Reference" "#PWR054"
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "544be90e-3326-4cc7-8b39-f1bfff40444a")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 219.075 50.165 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "96a87231-8da4-44b1-89df-5ed9ee6a34fc")
 		(property "Reference" "R2"
-			(at 201.93 80.01 90)
+			(at 213.995 48.895 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15039,7 +15650,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 209.55 80.01 90)
+			(at 221.615 48.895 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15047,7 +15658,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 206.756 82.296 90)
+			(at 218.821 51.181 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15056,7 +15667,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 81.28 0)
+			(at 219.075 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15065,7 +15676,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 207.01 81.28 0)
+			(at 219.075 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15224,15 +15835,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 234.95 80.01 0)
+		(at 247.015 48.895 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "9915d28f-c3b6-4ad3-aafd-10b3d342eb4a")
 		(property "Reference" "C35"
-			(at 234.95 78.105 0)
+			(at 247.015 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15241,7 +15852,7 @@
 			)
 		)
 		(property "Value" "15pF"
-			(at 234.95 81.915 0)
+			(at 247.015 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15250,7 +15861,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 235.9152 83.82 0)
+			(at 247.9802 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15259,7 +15870,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 80.01 0)
+			(at 247.015 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15268,7 +15879,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 234.95 80.01 0)
+			(at 247.015 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15352,76 +15963,6 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 218.44 54.61 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "9a1db757-b95f-49dc-8ae4-128009a25edb")
-		(property "Reference" "R4"
-			(at 220.98 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 220.98 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 217.424 54.356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 218.44 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 218.44 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8285763f-d543-4bbd-a75f-4334915ac504")
-		)
-		(pin "1"
-			(uuid "06d8694c-a41b-47ae-b447-7d6a45178222")
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -15560,76 +16101,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 229.87 53.975 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "9e00dde4-112a-457a-9e4f-01c3c24572cd")
-		(property "Reference" "R5"
-			(at 232.41 52.7049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 232.41 55.2449 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 228.854 53.721 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 229.87 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 229.87 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d4b46a53-7e46-48b7-82e3-3b69d52b9197")
-		)
-		(pin "1"
-			(uuid "0d54cb63-b435-4dd2-8631-818f811077fb")
-		)
-		(instances
-			(project "periph_ethernet_switch"
-				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 281.94 82.55 0)
 		(mirror y)
@@ -15755,6 +16226,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 43.815 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2c5399e-d033-4f59-9011-40c542d38c73")
+		(property "Reference" "#PWR0122"
+			(at 27.94 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10dc1637-d677-4869-b32c-ec6e302529ef")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -15890,6 +16426,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.925 43.815 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a56c7883-5a54-4958-a4dc-22aff9b70a25")
+		(property "Reference" "#PWR0121"
+			(at 34.925 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.925 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.925 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.925 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.925 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b25e5f49-40d5-4e9c-80ca-2e06066cfd8e")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -16166,6 +16767,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 222.25 92.075 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae0abf09-0402-4fa8-a06d-4c6f13104f82")
+		(property "Reference" "#PWR0124"
+			(at 222.25 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8e75a49-3789-426a-9ebf-7d43e14290cd")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 186.69 155.575 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16293,6 +16959,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 15.875 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b42b9c91-609b-46c1-9178-d96482bc7848")
+		(property "Reference" "#PWR0119"
+			(at 15.875 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+2.5VA"
+			(at 15.875 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.875 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.875 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+2V5A\""
+			(at 15.875 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b037651-23fa-4717-8b2b-0c426956d9e2")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -17246,6 +17977,82 @@
 		)
 	)
 	(symbol
+		(lib_id "SCALES:RH-5001")
+		(at 267.97 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d302751c-3731-4288-b082-3c7786a5080b")
+		(property "Reference" "TP10"
+			(at 270.51 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RH-5001"
+			(at 270.51 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SCALES:TEST-TH_BD2.54-P1.4_BLACK"
+			(at 267.97 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5199801.html?s_z=n_Test%2520point"
+			(at 267.97 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Test Points RoHS"
+			(at 267.716 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5199801"
+			(at 267.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7ac968f-0c9a-4a56-bf54-0db0d82b4973")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 31.115 95.25 0)
 		(unit 1)
@@ -17712,6 +18519,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 48.895 43.815 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd792cc4-8b88-4a05-a398-800b741fe683")
+		(property "Reference" "#PWR01"
+			(at 48.895 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.895 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.895 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.895 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.895 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19688bf1-59ad-4ed9-b0e2-0ca4e5241bff")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 281.94 73.66 0)
 		(mirror y)
@@ -18039,15 +18911,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 93.98 0)
+		(at 234.315 62.865 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "f0818c0f-e7e7-4a24-93a6-a00de709e24a")
 		(property "Reference" "#PWR057"
-			(at 222.25 100.33 0)
+			(at 234.315 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18056,7 +18928,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 97.79 0)
+			(at 234.315 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18064,7 +18936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 93.98 0)
+			(at 234.315 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18073,7 +18945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 93.98 0)
+			(at 234.315 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18082,7 +18954,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 93.98 0)
+			(at 234.315 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18237,6 +19109,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 207.645 92.075 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f744bce3-3ecb-4794-9a8b-74adc1870f47")
+		(property "Reference" "#PWR0123"
+			(at 207.645 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.645 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.645 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.645 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 207.645 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09c18690-91cb-4b14-a098-77bf8a04f1b1")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+1V2")
 		(at 166.37 93.345 0)
 		(unit 1)
@@ -18304,7 +19241,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 20.955 38.1 0)
+		(at 20.32 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18312,7 +19249,7 @@
 		(dnp no)
 		(uuid "ffa790c4-7b6d-4671-b099-f407d9c6f435")
 		(property "Reference" "C1"
-			(at 20.955 36.195 0)
+			(at 20.32 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18321,7 +19258,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 20.955 40.005 0)
+			(at 20.32 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18330,7 +19267,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 21.9202 41.91 0)
+			(at 21.2852 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18339,7 +19276,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.955 38.1 0)
+			(at 20.32 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18348,7 +19285,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 20.955 38.1 0)
+			(at 20.32 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
