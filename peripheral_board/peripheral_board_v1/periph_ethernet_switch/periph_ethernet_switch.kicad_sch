@@ -573,23 +573,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -614,7 +618,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -632,7 +636,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -641,9 +645,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -651,6 +655,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -4101,6 +4125,28 @@
 		)
 		(uuid 537df9a4-8f5c-4798-910e-7936abe512c5)
 	)
+	(rectangle
+		(start 252.73 64.77)
+		(end 284.48 81.28)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7bd7d9fb-c0b4-4da5-a841-03323d1b31b9)
+	)
+	(text "Mounting\nHoles"
+		(exclude_from_sim no)
+		(at 278.892 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d241528-f6d4-4b72-b088-a532623364e6")
+	)
 	(text "DIP Switch for LED Strap in"
 		(exclude_from_sim no)
 		(at 257.81 126.365 0)
@@ -4202,6 +4248,12 @@
 		(uuid "287c9b4a-bdd2-48a3-b380-9b122c1cc656")
 	)
 	(junction
+		(at 270.51 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "303a31c8-61a4-451d-b919-f3febef3db7c")
+	)
+	(junction
 		(at 154.305 168.275)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4230,6 +4282,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41c87104-33c5-446c-948b-a0a6d09fa7b7")
+	)
+	(junction
+		(at 266.7 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43954395-87e5-471e-8090-62e7c0909932")
 	)
 	(junction
 		(at 31.115 104.775)
@@ -4284,6 +4342,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7394aa0a-e3c9-4764-941d-f3c2d9b0e138")
+	)
+	(junction
+		(at 262.89 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73f23c1f-17a3-41ee-9df4-fc8de6ce6bcb")
 	)
 	(junction
 		(at 170.815 31.75)
@@ -4801,6 +4865,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 73.66) (xy 266.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1420c377-c53b-4ad2-bd08-7beb449567b2")
+	)
+	(wire
+		(pts
 			(xy 55.245 57.15) (xy 58.42 57.15)
 		)
 		(stroke
@@ -5158,6 +5232,16 @@
 			(type default)
 		)
 		(uuid "322874be-ad23-4e89-9b73-af9ce8f4b601")
+	)
+	(wire
+		(pts
+			(xy 262.89 72.39) (xy 262.89 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "328bb81b-6578-45e4-8ca5-f58cb4847a04")
 	)
 	(wire
 		(pts
@@ -5961,6 +6045,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 72.39) (xy 278.13 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "751e5f69-ec4e-4771-aa4f-5b6e8ffc61cc")
+	)
+	(wire
+		(pts
 			(xy 149.86 40.005) (xy 149.86 52.07)
 		)
 		(stroke
@@ -6258,6 +6352,16 @@
 			(type default)
 		)
 		(uuid "8c87425b-0ea2-4b03-b990-0ef2a47934a8")
+	)
+	(wire
+		(pts
+			(xy 255.27 73.66) (xy 262.89 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ccb0edb-d261-46e4-8bb4-3cd6a9b539c5")
 	)
 	(wire
 		(pts
@@ -6641,6 +6745,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 73.66) (xy 266.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8c72ed2-f3cd-49db-b1ab-bff2ae4b1944")
+	)
+	(wire
+		(pts
 			(xy 107.95 173.355) (xy 109.22 173.355)
 		)
 		(stroke
@@ -6738,6 +6852,16 @@
 			(type default)
 		)
 		(uuid "b7d97def-7025-4d85-bcfb-8c5daacfc19e")
+	)
+	(wire
+		(pts
+			(xy 255.27 72.39) (xy 255.27 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c6c958-e4b9-4edd-8d4b-8cf8646c892c")
 	)
 	(wire
 		(pts
@@ -7061,6 +7185,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 72.39) (xy 270.51 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd80b34b-f632-4226-afe2-74cfbe7d727c")
+	)
+	(wire
+		(pts
 			(xy 102.87 179.07) (xy 149.86 179.07)
 		)
 		(stroke
@@ -7118,6 +7252,16 @@
 			(type default)
 		)
 		(uuid "d027555c-617b-461f-8b9a-3a3f14e869b8")
+	)
+	(wire
+		(pts
+			(xy 266.7 73.66) (xy 266.7 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d209b6b8-e7e5-4be7-a093-07973ba4544d")
 	)
 	(wire
 		(pts
@@ -7528,6 +7672,16 @@
 			(type default)
 		)
 		(uuid "f64f13e1-b82e-46a7-b9cf-fb3254bd5510")
+	)
+	(wire
+		(pts
+			(xy 278.13 73.66) (xy 270.51 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ebfbcc-d61d-4278-a648-e45f87f271d7")
 	)
 	(wire
 		(pts
@@ -9574,8 +9728,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 281.94 69.215 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 255.27 69.85 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9585,25 +9739,26 @@
 		(fields_autoplaced yes)
 		(uuid "020f4fb8-1688-4bb1-a434-3758dc496dda")
 		(property "Reference" "H1"
-			(at 279.4 67.9449 0)
+			(at 257.81 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 279.4 70.4849 0)
+			(at 257.81 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 281.94 69.215 0)
+			(at 255.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9612,7 +9767,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 69.215 0)
+			(at 255.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9620,14 +9775,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 281.94 69.215 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 255.27 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "5b91b62c-5469-460b-862f-219d8acec9f0")
 		)
 		(instances
 			(project ""
@@ -12429,8 +12587,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 281.94 78.105 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 270.51 69.85 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12440,25 +12598,26 @@
 		(fields_autoplaced yes)
 		(uuid "73cb910b-c6e0-4641-9ac2-77c8b6ebacf7")
 		(property "Reference" "H3"
-			(at 279.4 76.8349 0)
+			(at 273.05 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 279.4 79.3749 0)
+			(at 273.05 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 281.94 78.105 0)
+			(at 270.51 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12467,7 +12626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 78.105 0)
+			(at 270.51 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12475,14 +12634,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 281.94 78.105 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 270.51 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "7f6157b7-44a4-4977-b0f4-011ba4f2b7df")
 		)
 		(instances
 			(project "periph_ethernet_switch"
@@ -14102,8 +14264,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 281.94 82.55 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 278.13 69.85 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14113,25 +14275,26 @@
 		(fields_autoplaced yes)
 		(uuid "a0750d3d-0707-48ed-8ee4-b32c3e9bbd99")
 		(property "Reference" "H4"
-			(at 279.4 81.2799 0)
+			(at 280.67 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 279.4 83.8199 0)
+			(at 280.67 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 281.94 82.55 0)
+			(at 278.13 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14140,7 +14303,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 82.55 0)
+			(at 278.13 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14148,14 +14311,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 281.94 82.55 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 278.13 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "53b898f4-4595-4bad-9ca3-268c60a3c1bc")
 		)
 		(instances
 			(project "periph_ethernet_switch"
@@ -14358,6 +14524,71 @@
 			(project "periph_ethernet_switch"
 				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.7 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a421d8ed-50bd-402c-a50c-eca40c2e1af9")
+		(property "Reference" "#PWR0132"
+			(at 266.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a173f6c3-273e-4147-93d5-92f3cec8a37c")
+		)
+		(instances
+			(project "periph_ethernet_switch"
+				(path "/065aff9d-de72-4d05-9bf8-aade8202d5c4"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -16381,8 +16612,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 281.94 73.66 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 262.89 69.85 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16392,25 +16623,26 @@
 		(fields_autoplaced yes)
 		(uuid "e5b1fe83-6660-43a0-97ce-ac90e3573f53")
 		(property "Reference" "H2"
-			(at 279.4 72.3899 0)
+			(at 265.43 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 279.4 74.9299 0)
+			(at 265.43 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
-			(at 281.94 73.66 0)
+			(at 262.89 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16419,7 +16651,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 73.66 0)
+			(at 262.89 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16427,14 +16659,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 281.94 73.66 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 262.89 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "bf70fbec-8711-48da-a175-1ebb4e0128c2")
 		)
 		(instances
 			(project "periph_ethernet_switch"
