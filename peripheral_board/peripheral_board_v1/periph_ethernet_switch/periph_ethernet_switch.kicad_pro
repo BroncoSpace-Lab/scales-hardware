@@ -542,7 +542,7 @@
         "microvia_drill": 0.1,
         "name": "DP_100R_C_T",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.146,
         "via_diameter": 0.45,
@@ -556,7 +556,7 @@
         "microvia_drill": 0.1,
         "name": "DP_100R_TOP",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "via_diameter": 0.45,
@@ -570,7 +570,7 @@
         "microvia_drill": 0.1,
         "name": "DP_100R_TOP_OLD",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2012,
         "via_diameter": 0.6,
@@ -584,11 +584,23 @@
         "microvia_drill": 0.1,
         "name": "DP_90R",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2644,
         "via_diameter": 0.6,
         "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.13,
+        "name": "GbE",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.13,
+        "via_diameter": 0.45,
+        "via_drill": 0.25
       }
     ],
     "meta": {
@@ -597,124 +609,164 @@
     "net_colors": null,
     "netclass_assignments": {
       "TXRX1_A+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_A-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_B+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_B-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_C+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_C-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_D+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX1_D-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_A+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_A-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_B+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_B-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_C+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_C-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_D+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX2_D-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_A+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_A-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_B+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_B-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_C+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_C-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_D+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX3_D-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_A+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_A-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_B+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_B-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_C+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_C-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_D+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX4_D-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_A+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_A-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_B+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_B-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_C+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_C-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_D+": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ],
       "TXRX5_D-": [
-        "DP_100R_TOP"
+        "DP_100R_TOP",
+        "GbE"
       ]
     },
     "netclass_patterns": []
