@@ -1,0 +1,23 @@
+** Profile: "STARTUP-published"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\TPS1HB08B-Q1_PSPICE_TRANS\tps1hb08b-q1_trans-pspicefiles\startup\published.sim ] 
+
+** Creating circuit file "published.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps1hb08b-q1_trans.lib" 
+* From [PSPICE NETLIST] section of C:\Users\luqui\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 700u 0 100n 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 1.0n
+.OPTIONS CHGTOL= 1p
+.OPTIONS ITL4= 40
+.PROBE64 V(alias(*)) I(alias(*)) 
+.INC "..\STARTUP.net" 
+
+
+.END
