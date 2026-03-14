@@ -2,12 +2,12 @@ Version 4
 SymbolType BLOCK
 RECTANGLE Normal -112 -168 112 168
 WINDOW 0 0 -168 Bottom 2
-WINDOW 3 0 168 Top 2
-WINDOW 39 0 192 Top 2
 SYMATTR Prefix X
 SYMATTR Value TPS1HB08B-Q1_TRANS
-SYMATTR ModelFile C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\ltSpice\TPS1HB08_sim\TPS1HB08B-Q1_TRANS.lib
+SYMATTR ModelFile C:\Users\Luca Lanzillotta\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\ltSpice\TPS1HB08_sim\TPS1HB08B-Q1_TRANS.lib
 SYMATTR SpiceLine TEMP_AMB=25
+WINDOW 3 0 168 Top 2
+WINDOW 39 0 192 Top 2
 PIN -112 -128 LEFT 8
 PINATTR PinName DIA_EN
 PINATTR SpiceOrder 1
