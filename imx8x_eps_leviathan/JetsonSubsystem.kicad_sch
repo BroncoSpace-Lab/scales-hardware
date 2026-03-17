@@ -2896,10 +2896,10 @@
 		)
 		(uuid "58ceb62b-d513-4cb4-9c0d-55b590d15f41")
 	)
-	(text_box "C25 @2.2uF ~1s\nEnsure it is a ceramic\nVerify time in RevE calcs"
+	(text_box "C12 Changing to 0.47 for ~200ms startup time. I think this was the main issue for the brown outs. We werent meeting the startup time."
 		(exclude_from_sim no)
 		(at 107.569 65.786 0)
-		(size 13.335 7.62)
+		(size 14.986 12.954)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -7288,7 +7288,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "0.47u"
 			(at 132.842 75.057 0)
 			(effects
 				(font
@@ -7324,7 +7324,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C106255"
 			(at 130.302 74.422 0)
 			(effects
 				(font

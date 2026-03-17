@@ -2826,6 +2826,26 @@
 		)
 		(uuid "716643e4-0df7-4807-8aa2-f173361b80c3")
 	)
+	(text_box "C12 Changing to 0.47 for ~200ms startup time. I think this was the main issue for the brown outs. We werent meeting the startup time."
+		(exclude_from_sim no)
+		(at 115.697 66.294 0)
+		(size 14.986 12.954)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left top)
+		)
+		(uuid "71669ee3-aac6-4620-ad87-41732457b415")
+	)
 	(text_box "Vbatt = [24.0, 28.8, 33.6] Due to Li-ion battery charged and discharged states"
 		(exclude_from_sim no)
 		(at 62.992 25.527 0)
@@ -2925,26 +2945,6 @@
 			(justify left top)
 		)
 		(uuid "d04c937a-5b23-4971-bd35-389752290037")
-	)
-	(text_box "C25 @2.2uF ~1s\nEnsure it is a tantalum\nVerify time in RevE calcs"
-		(exclude_from_sim no)
-		(at 121.412 65.532 0)
-		(size 13.335 7.62)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "d6f5f298-b0f8-4bb6-9b0c-c9e9d7ddab6c")
 	)
 	(text_box "All Power related caps must +50v 0603/0402. Logic side can be 25V~16V 0402."
 		(exclude_from_sim no)
@@ -3996,7 +3996,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 83.82) (xy 138.43 79.375)
+			(xy 138.43 83.82) (xy 138.43 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4126,7 +4126,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 71.755) (xy 138.43 65.405)
+			(xy 138.43 65.405) (xy 138.43 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5858,6 +5858,92 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 138.43 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50e7ff20-893d-40aa-a0fa-7088c3a73763")
+		(property "Reference" "C34"
+			(at 140.97 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.47u"
+			(at 140.97 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EPS:C0402"
+			(at 139.3952 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C106255"
+			(at 138.43 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "+6.3v"
+			(at 141.605 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8242f4de-32dd-44b5-8c27-ae4d72536d07")
+		)
+		(pin "2"
+			(uuid "92ebded6-2f6b-4a2f-a909-6eb6c3d4a8d7")
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/4810607d-4932-42f0-9bf9-01ec3ddc5364"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 201.93 74.295 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7388,92 +7474,6 @@
 			(project "imx8x_eps_leviathan"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/4810607d-4932-42f0-9bf9-01ec3ddc5364"
 					(reference "TP32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 138.43 75.565 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ae66f402-3aa0-49c4-9087-85259c14b1d1")
-		(property "Reference" "C34"
-			(at 140.97 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2u"
-			(at 140.97 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EPS:C0402"
-			(at 139.3952 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 138.43 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C12530"
-			(at 138.43 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "+6.3v"
-			(at 141.605 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b9217055-8d14-431e-959e-278045585063")
-		)
-		(pin "2"
-			(uuid "b111321a-0993-4ab6-835f-1f1ea15c85f6")
-		)
-		(instances
-			(project "imx8x_eps_leviathan"
-				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/4810607d-4932-42f0-9bf9-01ec3ddc5364"
-					(reference "C34")
 					(unit 1)
 				)
 			)
