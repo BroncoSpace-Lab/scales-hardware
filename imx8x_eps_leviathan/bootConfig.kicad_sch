@@ -1006,131 +1006,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "imx8_carrier_board_symbol_library:VCC_LDO_SD1"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC_LDO_SD1"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_LDO_SD1_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_LDO_SD1_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -1737,12 +1612,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c163dd4-3727-4e3e-9f52-c42a539b8774")
-	)
-	(junction
-		(at 200.66 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e38678d-4f30-4341-a285-6f11e1d547bd")
 	)
 	(junction
 		(at 151.13 55.88)
@@ -2578,16 +2447,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 20.32) (xy 200.66 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc3feed4-b483-4fcc-84c4-210d34ec044c")
-	)
-	(wire
-		(pts
 			(xy 147.32 33.02) (xy 147.32 53.34)
 		)
 		(stroke
@@ -2625,16 +2484,6 @@
 			(type default)
 		)
 		(uuid "e4ce652f-bd31-4b49-b8f9-19680dd49d6b")
-	)
-	(wire
-		(pts
-			(xy 200.66 29.21) (xy 200.66 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7f34e56-1736-4de8-8c5c-ba2a3e27e808")
 	)
 	(wire
 		(pts
@@ -3318,71 +3167,6 @@
 			(project "imx8x_eps_leviathan"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/523ae3db-78a2-4812-be5f-87bab42ef950"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_LDO_SD1")
-		(at 200.66 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "454a3155-6647-40c1-9bf4-4c8323cdd658")
-		(property "Reference" "#PWR063"
-			(at 200.66 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC_LDO_SD1"
-			(at 193.04 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 200.66 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a13039a-113b-4d99-a2c0-cf8eda00652e")
-		)
-		(instances
-			(project "imx8x_eps_leviathan"
-				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/523ae3db-78a2-4812-be5f-87bab42ef950"
-					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -4151,74 +3935,6 @@
 			(project "imx8x_eps_leviathan"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/523ae3db-78a2-4812-be5f-87bab42ef950"
 					(reference "R96")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 200.66 25.4 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "987521a7-3baf-481d-8238-ff5490b070ca")
-		(property "Reference" "R101"
-			(at 203.708 23.368 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 203.708 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EPS:R0402"
-			(at 201.676 25.146 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 200.66 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0497f812-73d1-4179-9bd4-00b3009b67a6")
-		)
-		(pin "2"
-			(uuid "b65ce6e6-cff0-4fa6-ac77-a6534104d015")
-		)
-		(instances
-			(project "imx8x_eps_leviathan"
-				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/523ae3db-78a2-4812-be5f-87bab42ef950"
-					(reference "R101")
 					(unit 1)
 				)
 			)
