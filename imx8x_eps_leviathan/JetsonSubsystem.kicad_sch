@@ -1486,7 +1486,7 @@
 					)
 				)
 			)
-			(property "Value" "TPS1HB08BQPWPRQ1"
+			(property "Value" "TPS1HB08QPWPRQ1"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -1630,7 +1630,7 @@
 				(pin passive line
 					(at -13.97 -6.35 0)
 					(length 2.54)
-					(name "~{ST}"
+					(name "ILIM"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1684,14 +1684,14 @@
 				(pin passive line
 					(at 13.97 0 180)
 					(length 2.54)
-					(name "NC"
+					(name "SEL1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "15"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1702,14 +1702,14 @@
 				(pin passive line
 					(at 13.97 -2.54 180)
 					(length 2.54)
-					(name "SEL1"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2736,30 +2736,10 @@
 		)
 		(uuid "1473de36-2484-4097-a3f2-1345222cd424")
 	)
-	(text_box "+20V from EPS to Jetson Vin"
+	(text_box "R3 is a pull down to bias the EN pin OFF, WD_EN_JETSON and GPIO float unless asserted. OBC_EN is 3.3v. On High, 3.3*(15k/1k+15k) = 3.09v > 2V for EN"
 		(exclude_from_sim no)
-		(at 82.423 105.918 0)
-		(size 19.05 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "294bc516-4723-4004-8b0f-f121cfc42502")
-	)
-	(text_box "R2 is a pull down to bias the EN pin. OBC_EN is 3.3v. On High, 3.3*(15k/1k+15k) = 3.09v > 2V for EN"
-		(exclude_from_sim no)
-		(at 17.018 55.372 0)
-		(size 19.558 16.764)
+		(at 20.447 53.086 0)
+		(size 20.193 23.749)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2776,50 +2756,10 @@
 		)
 		(uuid "31be8396-c4c2-4e68-b730-069a883702a9")
 	)
-	(text_box "Vbatt = [24.0, 28.8, 33.6] Due to Li-ion battery charged and discharged states"
+	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2)\nRT (Set default frequency to 400khz\nEN/UV threshold (~24v = UV, due to Li-ion discharge\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) \nBST (add 0.1uF bypass cap)\nINTVCC (add 0.1uF bypass cap)\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) \nTR/SS (Select a soft start time) ~500ms 1uF\nNC (Tie to ground)"
 		(exclude_from_sim no)
-		(at 98.933 20.193 0)
-		(size 32.385 8.89)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "31ca7d27-bde5-4f54-abb1-7a594332bb44")
-	)
-	(text_box "SNS -> 1k -> GND : Not using analog sense\nLatch -> 15k -> GND : Auto-retry Enabled\n~{ST} -> 1k -> LED : Indicates fault on fail. Open Drain.\nSEL1 & SEL2 -> 15k -> GND : Diagnostics Disabled\n(Pg. 5)"
-		(exclude_from_sim no)
-		(at 67.437 67.31 0)
-		(size 18.415 13.97)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "3626736b-c565-4595-bd98-2855fa44e61e")
-	)
-	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2) DONE\nRT (Set default frequency to 400khz) DONE\nEN/UV threshold (~24v = UV, due to Li-ion discharge)(Pg. 15) DONE\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) DONE\nBST (add 0.1uF bypass cap) DONE\nINTVCC (add 0.1uF bypass cap) DONE\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) DONE\nTR/SS (Select a soft start time) ~1s -> 2.16uF DONE\nNC (Tie to ground) DONE"
-		(exclude_from_sim no)
-		(at 14.478 164.846 0)
-		(size 61.595 30.48)
+		(at 127 102.235 0)
+		(size 55.245 26.67)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2836,7 +2776,7 @@
 		)
 		(uuid "499e24a4-2c16-40a5-b841-f1a77bb7b6a7")
 	)
-	(text_box "L is calculated to be 35.315uH, round to whats available. 47uH"
+	(text_box "L is calculated to be 35.315uH. Avoid rounding."
 		(exclude_from_sim no)
 		(at 177.038 69.088 0)
 		(size 17.145 11.43)
@@ -2876,27 +2816,7 @@
 		)
 		(uuid "576445f0-a59b-4c2b-bd16-a21f8a345d23")
 	)
-	(text_box "Gecko for Dev. Board replaced with DF11-16DP-2DSA due to shipping constraints"
-		(exclude_from_sim no)
-		(at 39.878 153.543 0)
-		(size 39.116 7.366)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "58ceb62b-d513-4cb4-9c0d-55b590d15f41")
-	)
-	(text_box "C12 Changing to 1u for ~500ms startup time."
+	(text_box "C12 = to 1u for ~500ms startup time. Validated in LTSPICE"
 		(exclude_from_sim no)
 		(at 108.966 67.31 0)
 		(size 14.986 5.588)
@@ -2916,10 +2836,10 @@
 		)
 		(uuid "79aea8b4-3bcd-4dcd-bb42-2ce6a63c1eca")
 	)
-	(text_box "WD_EN_Jetson is held low at the WD side. If the OBC wants to enable the Jetson board, it must hold the enable line high long enough for the Load Switch, Switching Regulator and Watch dog to power up. Once this is done the WD_EN_PERIF will hold the EN pin high until no pet is recieved.\nWhen no pet is recieved, the WD will turn off the whole system, here we need to use the crowbarred circuit to ensure that the watch dog has enough current to re-enable the load switch."
+	(text_box "EN Pin Pulled up by GPIO on IMX8X to enable subsystem. WD_EN_JETSON is pulled low on WD timeout. 42s"
 		(exclude_from_sim no)
-		(at 65.278 17.018 0)
-		(size 26.67 17.78)
+		(at 64.77 24.765 0)
+		(size 29.21 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2930,7 +2850,7 @@
 		)
 		(effects
 			(font
-				(size 0.762 0.762)
+				(size 1.27 1.27)
 			)
 			(justify left top)
 		)
@@ -2956,9 +2876,9 @@
 		)
 		(uuid "b06af441-89f1-4535-894a-0ddd48d9bdf6")
 	)
-	(text_box "A0->GND\nA1->GND\nSlave Address\n1000000"
+	(text_box "A0->GND\nA1->GND\nI2C Address\n1000000"
 		(exclude_from_sim no)
-		(at 230.378 67.183 0)
+		(at 246.38 67.945 0)
 		(size 12.7 13.335)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke

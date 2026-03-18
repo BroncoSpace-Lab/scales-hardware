@@ -1593,7 +1593,7 @@
 					)
 				)
 			)
-			(property "Value" "TPS1HB08BQPWPRQ1"
+			(property "Value" "TPS1HB08QPWPRQ1"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -1737,7 +1737,7 @@
 				(pin passive line
 					(at -13.97 -6.35 0)
 					(length 2.54)
-					(name "~{ST}"
+					(name "ILIM"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1791,14 +1791,14 @@
 				(pin passive line
 					(at 13.97 0 180)
 					(length 2.54)
-					(name "NC"
+					(name "SEL1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "15"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1809,14 +1809,14 @@
 				(pin passive line
 					(at 13.97 -2.54 180)
 					(length 2.54)
-					(name "SEL1"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2764,30 +2764,10 @@
 		)
 		(uuid "08fbe25f-7e1c-49f1-9b44-ed94c99ac544")
 	)
-	(text_box "WD_EN is pulled high on WD side. OBC is always on. If the OBC WD is not pet, it will pull low, temporarily triggering a low at EN."
+	(text_box "Clock is brought up with LT8612 OBC output. Set to 400Khz, SSFM on. 3 Phase setting"
 		(exclude_from_sim no)
-		(at 47.752 23.749 0)
-		(size 20.955 8.255)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "1c9f9769-d662-4f90-8b82-2177e09b122f")
-	)
-	(text_box "Clock to go be powered with OBC. Set to 400Khz, SSFM on. 3 Phase setting"
-		(exclude_from_sim no)
-		(at 15.113 148.59 0)
-		(size 42.545 5.08)
+		(at 15.113 146.05 0)
+		(size 42.545 7.62)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2804,10 +2784,10 @@
 		)
 		(uuid "2d260b9e-125d-4d83-b777-cc6a286d737f")
 	)
-	(text_box "R63 and R64 set UVLO @ 24v.\nVerify in RevE calcs"
+	(text_box "R63 and R64 set UVLO @ 24v."
 		(exclude_from_sim no)
-		(at 132.207 45.339 0)
-		(size 11.43 9.525)
+		(at 132.207 48.514 0)
+		(size 11.303 5.461)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2824,10 +2804,10 @@
 		)
 		(uuid "3454bd92-4987-4689-8e68-e594866cf632")
 	)
-	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2) DONE\nRT (Set default frequency to 400khz) DONE\nEN/UV threshold (~24v = UV, due to Li-ion discharge)(Pg. 15) DONE\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) DONE\nBST (add 0.1uF bypass cap) DONE\nINTVCC (add 0.1uF bypass cap) DONE\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) DONE\nTR/SS (Select a soft start time) ~1s -> 2.16uF DONE\nNC (Tie to ground) DONE"
+	(text_box "Note: Symbol was modified so that pins were consolidated. \nThis is chip is version B, so pin 5 is ILIM"
 		(exclude_from_sim no)
-		(at 217.043 100.838 0)
-		(size 61.595 30.48)
+		(at 67.945 24.765 0)
+		(size 30.48 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2842,11 +2822,31 @@
 			)
 			(justify left top)
 		)
-		(uuid "452c3d18-f5b1-4d34-bfbf-09922cb14852")
+		(uuid "3e676ce6-bd34-46f5-8e6b-ca75b3b5e6c6")
+	)
+	(text_box "LT8612 Config\nSYNC (Tied to Clock Phase 2)\nRT (Set default frequency to 400khz\nEN/UV threshold (~24v = UV, due to Li-ion discharge\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) \nBST (add 0.1uF bypass cap)\nINTVCC (add 0.1uF bypass cap)\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) \nTR/SS (Select a soft start time) ~200ms 0.47uF\nNC (Tie to ground)"
+		(exclude_from_sim no)
+		(at 219.71 102.235 0)
+		(size 52.07 33.02)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4c8855d4-ca8b-49e8-b8db-a6e84b76ef1f")
 	)
 	(text_box "Vbatt = [24.0, 28.8, 33.6] Due to Li-ion battery charged and discharged states"
 		(exclude_from_sim no)
-		(at 69.342 23.749 0)
+		(at 17.145 19.05 0)
 		(size 32.385 8.89)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2864,10 +2864,10 @@
 		)
 		(uuid "52bcd0ea-9c45-4bab-bc27-b70d44ba71d2")
 	)
-	(text_box "L is calculated to 6.09u round to whats avaialable. Verify in Rev E calcs."
+	(text_box "L is calculated to 6.09u. Avoid Rounding."
 		(exclude_from_sim no)
 		(at 186.817 69.469 0)
-		(size 16.51 6.35)
+		(size 16.51 4.191)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2884,10 +2884,10 @@
 		)
 		(uuid "53c30696-12f5-4d24-8806-4da982fa234b")
 	)
-	(text_box "SNS -> 1k -> GND : Not using analog sense\nLatch -> 15k -> GND : Auto-retry Enabled\n~{ST} -> 1k -> LED : Indicates fault on fail. Open Drain.\nSEL1 & SEL2 -> 15k -> GND : Diagnostics Disabled\n(Pg. 5)"
+	(text_box "SNS -> 1k -> GND : Not Using\nLatch -> 15k -> GND : Auto-retry Enabled\nSEL1 & SEL2 -> 15k -> GND : Diagnostics Disabled\nILIM -> FLOAT -> Default Current Limit Set 42A"
 		(exclude_from_sim no)
-		(at 69.977 66.929 0)
-		(size 18.415 13.97)
+		(at 70.612 68.199 0)
+		(size 18.923 11.176)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2904,9 +2904,9 @@
 		)
 		(uuid "626c4dfe-9043-4ec4-8244-44f74eecb5f1")
 	)
-	(text_box "R65 and R66 set 3.3V Vout. Verify in Rev E calcs."
+	(text_box "R65 and R66 set 3.3V Vout."
 		(exclude_from_sim no)
-		(at 169.672 30.099 0)
+		(at 185.42 30.48 0)
 		(size 51.435 3.175)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2946,7 +2946,7 @@
 	)
 	(text_box "C23 Changing to 0.47 for ~200ms startup time. "
 		(exclude_from_sim no)
-		(at 115.697 69.342 0)
+		(at 119.888 69.342 0)
 		(size 14.097 5.588)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2964,10 +2964,10 @@
 		)
 		(uuid "b89ec1f6-b13f-405d-8d95-f44fea87763c")
 	)
-	(text_box "Safe resistor divider to ensure at both high and low Lipo levels OBC is always on."
+	(text_box "R16/R17 voltage divider to ensure at both high and low Lipo levels. OBC is always on. EN Pin pulled low by WD_EN_OBC on WD timeout"
 		(exclude_from_sim no)
-		(at 26.797 19.939 0)
-		(size 20.32 12.065)
+		(at 26.035 50.8 0)
+		(size 16.51 22.225)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2984,9 +2984,9 @@
 		)
 		(uuid "cc3e16b1-e191-4eaa-a68b-eb82224b833e")
 	)
-	(text_box "A0->Vs\nA1->GND\nSlave Address\n1000001"
+	(text_box "A0->Vs\nA1->GND\nI2C Address\n1000001"
 		(exclude_from_sim no)
-		(at 230.632 65.024 0)
+		(at 250.19 64.135 0)
 		(size 12.7 13.335)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke

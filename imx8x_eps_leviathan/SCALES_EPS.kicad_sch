@@ -1151,6 +1151,16 @@
 		)
 		(uuid "361e7f9f-2e92-4534-90de-fb2c16ac0dbd")
 	)
+	(text "Info"
+		(exclude_from_sim no)
+		(at 210.82 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9409c8b0-7aa6-4508-861f-b74adf67d9dc")
+	)
 	(text_box "0x19"
 		(exclude_from_sim no)
 		(at 371.856 136.652 0)
@@ -1171,7 +1181,7 @@
 		)
 		(uuid "1b4022d0-a6f9-4e72-ba3b-c720b6e8e970")
 	)
-	(text_box "Power requirements per subsystem\nOBC: 28v to 3.3v @ 2A\nJetson: 28v to 20v @ 4A\nPerif: 28v to 5v @ 2A\n\nPower on sequencing:\nOBC powers when Vbatt is supplied. \nOBC controls operation of the Jetson as well as the Peripheral system via GPIO pins to the respective subsystem load switch.\n\nStartup time for the Jetson on enable is ~10ms\nStartup time for the Peripheral on enable is ~1ms\nStartup time for the OBC on boot is ~1ms"
+	(text_box "Power requirements per subsystem\nOBC: 28v to 3.3v @ 2A\nJetson: 28v to 20v @ 6A\nPerif: 28v to 5v @ 2A\n\nPower on sequencing:\nOBC powers when Vbatt is supplied. \nOBC controls operation of the Jetson as well as the Peripheral system via GPIO pins to the respective subsystem load switch.\n\nStartup time for the Jetson on enable is ~500ms\nStartup time for the Peripheral on enable is ~200ms\nStartup time for the OBC on boot is ~200ms"
 		(exclude_from_sim no)
 		(at 190.627 30.607 0)
 		(size 41.275 41.275)

@@ -1486,7 +1486,7 @@
 					)
 				)
 			)
-			(property "Value" "TPS1HB08BQPWPRQ1"
+			(property "Value" "TPS1HB08QPWPRQ1"
 				(at 0 -15.24 0)
 				(effects
 					(font
@@ -1630,7 +1630,7 @@
 				(pin passive line
 					(at -13.97 -6.35 0)
 					(length 2.54)
-					(name "~{ST}"
+					(name "ILIM"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1684,14 +1684,14 @@
 				(pin passive line
 					(at 13.97 0 180)
 					(length 2.54)
-					(name "NC"
+					(name "SEL1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "15"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1702,14 +1702,14 @@
 				(pin passive line
 					(at 13.97 -2.54 180)
 					(length 2.54)
-					(name "SEL1"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2696,16 +2696,6 @@
 		)
 		(uuid eda4eedc-bf59-4b05-844e-f493e4a2d369)
 	)
-	(text "Gecko 16 pin Male connector"
-		(exclude_from_sim no)
-		(at 53.975 165.735 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0a1e3d8e-9187-4faf-99d2-d3fe9af5adba")
-	)
 	(text "Peripheral Subsystem"
 		(exclude_from_sim no)
 		(at 26.035 16.51 0)
@@ -2726,7 +2716,7 @@
 		)
 		(uuid "935eb59b-53ac-47f5-a74e-0b79ccc325e9")
 	)
-	(text_box "L is calculated to 9.065, round to whats available, 10uH"
+	(text_box "L is calculated to 9.065. Avoid rounding."
 		(exclude_from_sim no)
 		(at 179.197 69.977 0)
 		(size 17.78 8.89)
@@ -2766,6 +2756,26 @@
 		)
 		(uuid "297de145-51f8-4aed-92e8-decbd1a365bd")
 	)
+	(text_box "LT8612 Config\nSYNC (Tied to Clock Phase 2)\nRT (Set default frequency to 400khz\nEN/UV threshold (~24v = UV, due to Li-ion discharge\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) \nBST (add 0.1uF bypass cap)\nINTVCC (add 0.1uF bypass cap)\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) \nTR/SS (Select a soft start time) ~200ms 0.47uF\nNC (Tie to ground)"
+		(exclude_from_sim no)
+		(at 140.335 109.22 0)
+		(size 52.07 33.02)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3a4fbec6-f17a-4012-bcf3-aefaefff8194")
+	)
 	(text_box "Vout -> 22nF Cap\n(Pg. 38)"
 		(exclude_from_sim no)
 		(at 113.792 53.467 0)
@@ -2786,10 +2796,10 @@
 		)
 		(uuid "41cec9c4-a105-4ba7-adcf-c70206b11842")
 	)
-	(text_box "A0->Vs\nA1->VS\nSlave Address\n1000101"
+	(text_box "A0->Vs\nA1->VS\nI2C Address\n1000101"
 		(exclude_from_sim no)
-		(at 229.997 64.262 0)
-		(size 12.7 13.335)
+		(at 246.38 64.77 0)
+		(size 17.145 11.43)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2806,29 +2816,9 @@
 		)
 		(uuid "46a8d8c7-4e52-4728-92e0-a965d9db0a8c")
 	)
-	(text_box "To configure: (Pg.8)\nSYNC (Tied to Clock Phase 2) DONE\nRT (Set default frequency to 400khz) DONE\nEN/UV threshold (~24v = UV, due to Li-ion discharge)(Pg. 15) DONE\nPGND (Tie to GND) DONE\nSW (Tie to inductor and setup the boost capacitor) DONE\nBST (add 0.1uF bypass cap) DONE\nINTVCC (add 0.1uF bypass cap) DONE\nBIAS (If Vout is greater than 3.3v tie to vout)\nFB (Set Vout via R1 and R2 using FB Setup Pg.12) DONE\nTR/SS (Select a soft start time) ~1s -> 2.16uF DONE\nNC (Tie to ground) DONE"
-		(exclude_from_sim no)
-		(at 95.504 111.76 0)
-		(size 58.42 27.686)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "716643e4-0df7-4807-8aa2-f173361b80c3")
-	)
 	(text_box "C12 Changing to 0.47 for ~200ms startup time. I think this was the main issue for the brown outs. We werent meeting the startup time."
 		(exclude_from_sim no)
-		(at 115.697 66.294 0)
+		(at 119.634 68.326 0)
 		(size 14.986 12.954)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2845,66 +2835,6 @@
 			(justify left top)
 		)
 		(uuid "71669ee3-aac6-4620-ad87-41732457b415")
-	)
-	(text_box "Vbatt = [24.0, 28.8, 33.6] Due to Li-ion battery charged and discharged states"
-		(exclude_from_sim no)
-		(at 62.992 25.527 0)
-		(size 32.385 8.89)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "9a76b3f8-4608-4e0e-90b1-16743ada2914")
-	)
-	(text_box "Gecko for Dev. Board replaced with DF11-16DP-2DSA due to shipping constraints"
-		(exclude_from_sim no)
-		(at 54.102 112.522 0)
-		(size 39.116 7.366)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "9fe116da-170e-4b3d-b904-d400656f1a73")
-	)
-	(text_box "SNS -> 1k -> GND : Not using analog sense\nLatch -> 15k -> GND : Auto-retry Enabled\n~{ST} -> 1k -> LED : Indicates fault on fail. Open Drain.\nSEL1 & SEL2 -> 15k -> GND : Diagnostics Disabled\n(Pg. 5)"
-		(exclude_from_sim no)
-		(at 71.882 68.072 0)
-		(size 18.415 13.97)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left top)
-		)
-		(uuid "caaaaa30-db05-498f-b9f6-0f413655856e")
 	)
 	(text_box "R83 and R101 set UVLO @ 24v"
 		(exclude_from_sim no)
@@ -3117,12 +3047,6 @@
 		(uuid "925ea679-5619-4664-8aad-25fa7c6ed081")
 	)
 	(junction
-		(at 46.355 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92b33f9d-7fbd-417a-b0ef-7889314bc08c")
-	)
-	(junction
 		(at 138.43 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3205,12 +3129,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfa8ecf2-861e-4bc4-9e0e-827bfaa6f83e")
-	)
-	(junction
-		(at 46.355 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfac9853-1a0c-41c4-aff2-4aab573fcd69")
 	)
 	(junction
 		(at 51.435 31.115)
@@ -7831,73 +7749,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EPS:TestPoint")
-		(at 46.355 127 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d4bac782-4c8f-4bd3-847b-65c144e17881")
-		(property "Reference" "TP4"
-			(at 41.529 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 41.275 125.7301 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 46.355 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.355 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 46.355 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2943ec42-c76f-4a8f-8826-37d20372723f")
-		)
-		(instances
-			(project "imx8x_eps_leviathan"
-				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/4810607d-4932-42f0-9bf9-01ec3ddc5364"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 146.05 56.515 0)
 		(unit 1)
@@ -7970,73 +7821,6 @@
 			(project "imx8x_eps_leviathan"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/4810607d-4932-42f0-9bf9-01ec3ddc5364"
 					(reference "R45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EPS:TestPoint")
-		(at 46.355 140.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f2017c05-1576-42a9-884f-78893727e4d0")
-		(property "Reference" "TP3"
-			(at 41.529 140.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 41.275 139.7001 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 46.355 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.355 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 46.355 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b89162a-d1b5-4dae-9b29-3657c0d49c0f")
-		)
-		(instances
-			(project "imx8x_eps_leviathan"
-				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/ec0c3356-3ab2-4b92-97c2-73704290dee9/4810607d-4932-42f0-9bf9-01ec3ddc5364"
-					(reference "TP3")
 					(unit 1)
 				)
 			)
