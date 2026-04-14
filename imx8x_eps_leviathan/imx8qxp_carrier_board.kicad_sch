@@ -1,0 +1,409 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c5739355-836f-4148-89b8-aa12bf738aaa")
+	(paper "A5")
+	(title_block
+		(title "Leviathan V1")
+		(date "2025-10-29")
+		(rev "V1")
+		(company "Bronco Space Lab")
+		(comment 1 "By Luca Lanzillotta & John Pollack")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 12.7 15.748)
+		(end 83.82 134.874)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3ffe7ab3-6b74-4344-9c26-2f631e9cc0ee)
+	)
+	(text "Variant: Pre-Flight Testing Board"
+		(exclude_from_sim no)
+		(at 49.53 25.146 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.254)
+				(color 0 37 255 1)
+			)
+		)
+		(uuid "34e509c0-5c94-473a-bd29-c85449e17f68")
+	)
+	(text "IMX8 SCALES Merger Board"
+		(exclude_from_sim no)
+		(at 49.53 19.304 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 0 37 255 1)
+			)
+		)
+		(uuid "8f103bb2-1d6d-4343-99f2-44e23b5df139")
+	)
+	(text_box "The IMX8 Scales Merger Board is a minimized version of the IMX8 Dev board combined with the SCALES EPS Board\n"
+		(exclude_from_sim no)
+		(at 15.24 28.194 0)
+		(size 66.04 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "72966809-5137-42d5-917d-cca4889279e6")
+	)
+	(text_box "Board Description:\nProvided serial communications for end user: FTDI, UART, SPI, I2C\nPower Input: From SCALES EPS Rev F (Hirose DF11 2x8 Connector)\nEthernet: 2, 10/100 Base-T RJ-45 Connectors\nSPI/GPIO/I2C: Provided via Hirose DF11 2x8 Connector\nSOM Connector: 2x140 proprietary Samtec Connector for IMX8QXP SOM"
+		(exclude_from_sim no)
+		(at 15.113 35.56 0)
+		(size 66.294 20.066)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "debbd598-fc5d-40e0-995c-4ad4e7999d42")
+	)
+	(polyline
+		(pts
+			(xy 158.242 32.766) (xy 151.13 32.766)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0381a15e-b6e1-46e8-8879-e65c8e255cc5")
+	)
+	(polyline
+		(pts
+			(xy 132.842 32.766) (xy 125.222 32.766)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2311c680-159f-4306-a617-53fd169de792")
+	)
+	(polyline
+		(pts
+			(xy 132.842 76.962) (xy 125.73 76.962)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5641f900-0abe-4748-975b-7e2fdb9a867a")
+	)
+	(polyline
+		(pts
+			(xy 158.496 53.848) (xy 151.384 53.848)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66bdce37-fcd5-435f-96ba-4aa4d5ffb906")
+	)
+	(polyline
+		(pts
+			(xy 132.842 53.848) (xy 125.476 53.848)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf3e67f-3434-46ec-8008-26e505ec45bd")
+	)
+	(sheet
+		(at 100.076 46.99)
+		(size 25.4 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0aab8921-2b9e-4652-8121-5ec55a6db914")
+		(property "Sheetname" "Peripheral Connections"
+			(at 100.076 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "periphCon.kicad_sch"
+			(at 100.076 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.496 47.498)
+		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "523ae3db-78a2-4812-be5f-87bab42ef950")
+		(property "Sheetname" "Boot Configuration"
+			(at 158.496 46.7864 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bootConfig.kicad_sch"
+			(at 158.496 60.7826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 99.822 26.162)
+		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4")
+		(property "Sheetname" "Ethernet"
+			(at 99.822 25.4504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet.kicad_sch"
+			(at 99.822 39.4466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.242 26.162)
+		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af0dcf25-e67e-4174-8f3a-a0b953038707")
+		(property "Sheetname" "Debug USB - UART"
+			(at 158.242 25.4504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debug.kicad_sch"
+			(at 158.242 39.4466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100.33 69.088)
+		(size 25.146 15.494)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd950bac-c734-4938-bbb2-10284e743c57")
+		(property "Sheetname" "Power"
+			(at 100.33 68.3764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Pgood_Power.kicad_sch"
+			(at 100.33 85.1666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 132.842 24.384)
+		(size 18.542 66.04)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d76dd75e-585c-4f61-92c5-bda4099b5574")
+		(property "Sheetname" "SOM"
+			(at 132.842 23.6724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SOM.kicad_sch"
+			(at 132.842 91.0086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "imx8x_eps_leviathan"
+				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d"
+					(page "9")
+				)
+			)
+		)
+	)
+)
