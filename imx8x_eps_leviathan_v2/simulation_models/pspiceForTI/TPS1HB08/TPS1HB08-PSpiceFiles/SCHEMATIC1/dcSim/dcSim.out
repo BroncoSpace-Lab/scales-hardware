@@ -1,0 +1,797 @@
+
+**** 03/13/26 13:11:27 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dcSim"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\psp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dcSim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TPS1HB08
+X_U1         N00541 N00323 0 N00408 N00394 N00174 N00174 N00174 N00750 N00442
++  N01047 N01047 N00592 N00156 N00156 N00156 N00156 N00156 N00156
++  TPS1HB08B-Q1_TRANS PARAMS: TEMP_AMB=25
+R_R16         N002951 N00592  56.2k TC=0,0 
+R_R17         0 N002951  10k TC=0,0 
+R_R19         0 N00394  15k TC=0,0 
+R_R18         0 N00442  1k TC=0,0 
+R_R20         0 N00541  15k TC=0,0 
+R_R21         0 N00750  15k TC=0,0 
+V_V1         N00592 0 28V
+C_C20         0 N00592  220n  TC=0,0 
+
+**** RESUMING dcSim.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nom_pspti.ind for library file nom_pspti.lib.
+
+INFO(ORPSIM-15422): Making new index file nom_pspti.ind for library file nom_pspti.lib.
+
+Index has 114938 entries from 5258 file(s).
+
+
+INFO(ORPSIM-15423): Unable to find index file nom.ind for library file nom.lib.
+
+INFO(ORPSIM-15422): Making new index file nom.ind for library file nom.lib.
+
+Index has 1955 entries from 6 file(s).
+
+**** 03/13/26 13:11:27 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dcSim"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\psp
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U3_U105.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U144.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U54.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U58.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U140.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U53.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U61.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U114.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U1_U42.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U1_U41.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U1_U40.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U4_U62.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U4_U61.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U4_U22.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U224.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U205.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U206.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U204.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U193.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U220.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U2_U16.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+**** 03/13/26 13:11:27 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dcSim"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\psp
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOS01_TPS2HA08 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    2.02         
+          KP  156.250000E+03 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    1.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 03/13/26 13:11:27 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dcSim"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\psp
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U3_S4._U3_S4 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U1.X_U3_U104.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_U141.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_S5._U3_S5 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U1.X_U3_S9._U3_S9 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U3_U113.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_U124.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_S3._U3_S3 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U1.X_U3_S8._U3_S8 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_U4_S6._U1_U4_S6 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_U4_U58.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U1_U2_S1._U1_U2_S1 
+         RON    1.000000E+06 
+        ROFF   10.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+**** 03/13/26 13:11:27 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dcSim"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\psp
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00156)   27.5690 (N00323)    0.0000 (N00394)    0.0000 (N00408)   29.0000     
+
+(N00442) 5.901E-09 (N00541)    0.0000 (N00592)   28.0000 (N00750)    0.0000     
+
+(N01047)   25.0000 (N002951)    4.2296                   (X_U1.CL1)    0.0000   
+
+(X_U1.TSD)    0.0000                  (X_U1.TSW)    0.0000                      
+
+(X_U1.VRON)     .0077                 (X_U1.VBB_1)   28.0000                    
+
+(X_U1.EN1_OK)    0.0000               (X_U1.CUR_LIM) 297.1E-06                  
+
+(X_U1.EN1_INT)    0.0000              (X_U1.N657579)    1.0000                  
+
+(X_U1.N730236) 1.000E-06              (X_U1.N730322)   29.0000                  
+
+(X_U1.N730334)   29.0000              (X_U1.SEL1_OK)    0.0000                  
+
+(X_U1.UVLO_OK)    1.0000              (X_U1.VBB_INT)   28.0000                  
+
+(X_U1.LATCH_OK)    0.0000             (X_U1.SEL1_INT)    0.0000                 
+
+(X_U1.VOUT_INT)   27.5690             (X_U1.DEVICE_EN)    0.0000                
+
+(X_U1.I_SENSE_1) 440.5E-15            (X_U1.LATCH_INT)    0.0000                
+
+(X_U1.N17275586)    1.0000            (X_U1.N17275734)    1.0000                
+
+(X_U1.U1_U4_RST)    1.0000            (X_U1.U3_ISNSFH)     .0045                
+
+(X_U1.X_U2_U1.1)    1.0000            (X_U1.X_U2_U2.1)    0.0000                
+
+(X_U1.X_U2_U4.1)    0.0000            (X_U1.X_U2_U6.1)    0.0000                
+
+(X_U1.X_U2_U9.1)    0.0000            (X_U1.X_U3_X1.6)    1.0000                
+
+(X_U1.X_U3_X3.6)    0.0000            (X_U1.DIAG_EN_OK)    0.0000               
+
+(X_U1.DIA_EN_INT)    0.0000           (X_U1.EN1_SIGNAL)    0.0000               
+
+(X_U1.FAULT_SDWN)    0.0000           (X_U1.OPEN_LOAD1)    0.0000               
+
+(X_U1.U1_PULL_UP)    0.0000           (X_U1.U1_U2_GATE)   27.5580               
+
+(X_U1.U1_U2_VGS1)    -.0114           (X_U1.U2_N229416)    2.0000               
+
+(X_U1.U2_N229598)    2.5000           (X_U1.U2_N229700)    2.0000               
+
+(X_U1.U2_N520995)    1.0000           (X_U1.U2_N522261)    0.0000               
+
+(X_U1.U2_N529345)    2.0000           (X_U1.U2_N529529)    2.0000               
+
+(X_U1.U2_N529795)    0.0000           (X_U1.U2_N554751)    0.0000               
+
+(X_U1.U3_FLT_CLR)    1.0000           (X_U1.U3_LATCH_B)    1.0000               
+
+(X_U1.U1_CRNT_FB1)    0.0000          (X_U1.U1_GATE_DRV)    0.0000              
+
+(X_U1.U2_N2293383)     .3500          (X_U1.U2_N2295123)     .2000              
+
+(X_U1.U2_N2296343)     .3500          (X_U1.U2_N5292953)     .3500              
+
+(X_U1.U2_N5294513)     .3500          (X_U1.U3_CH_TRANS)    0.0000              
+
+(X_U1.U3_TSNSTON2)    0.0000          (X_U1.X_U7_U220.1)    0.0000              
+
+(X_U1.X_U7_U221.1)    0.0000          (X_U1.U3_N17258378)    0.0000             
+
+(X_U1.U3_N17258507)    1.0000         (X_U1.U3_N17258671)    1.0000             
+
+(X_U1.U3_N17258674)    1.0000         (X_U1.U3_N17258681)    1.0000             
+
+(X_U1.U3_N17258686)    0.0000         (X_U1.U3_N17258815)    0.0000             
+
+(X_U1.U3_N17258846)     .1000         (X_U1.U3_N17259145)    0.0000             
+
+(X_U1.U3_N17259149)    0.0000         (X_U1.U3_N17259242)    1.0000             
+
+(X_U1.U3_N17259284)    0.0000         (X_U1.U3_N17259359)    0.0000             
+
+(X_U1.U3_N17259364)    0.0000         (X_U1.U3_N17259423)    0.0000             
+
+(X_U1.U3_N17259495)    0.0000         (X_U1.U3_N17259498)    0.0000             
+
+(X_U1.U3_N17259505)    0.0000         (X_U1.U3_N17259510)    0.0000             
+
+(X_U1.U3_N17259543) 4.500E-15         (X_U1.U3_N17259585)    1.0000             
+
+(X_U1.U3_N17259608)    5.9000         (X_U1.U3_N17259629)    0.0000             
+
+(X_U1.U3_N17259702)     .1000         (X_U1.U3_N17259769)    0.0000             
+
+(X_U1.U3_N17259772)    0.0000         (X_U1.U3_N17260006)    0.0000             
+
+(X_U1.U3_N17260010)    0.0000         (X_U1.U3_N17260027)    1.0000             
+
+(X_U1.U3_N17260067)    0.0000         (X_U1.U3_N17260072)    0.0000             
+
+(X_U1.U3_N17260089)    0.0000         (X_U1.U3_N17260108)    0.0000             
+
+(X_U1.U3_N17260159)    1.0000         (X_U1.U3_N17260256)    1.8000             
+
+(X_U1.U3_N17260281)    1.0000         (X_U1.U3_N17260301)     .4305             
+
+(X_U1.U3_N17275109)    0.0000         (X_U1.U3_N17275297)    0.0000             
+
+(X_U1.U3_N17275494)    0.0000         (X_U1.U3_SNS_FAULT)    0.0000             
+
+(X_U1.U3_TIMER_SET)    0.0000         (X_U1.U7_N16680299)   25.0000             
+
+(X_U1.U7_N16680313)   25.0000         (X_U1.U7_N16680327)   25.0000             
+
+(X_U1.U7_N16680341)   25.0000         (X_U1.U7_N16680355)   25.0000             
+
+(X_U1.U7_N16680369)   25.0000         (X_U1.U7_N16680383)   25.0000             
+
+(X_U1.U7_N16680397)   25.0000         (X_U1.U7_N16680411)   25.0000             
+
+(X_U1.U7_N16680425)   25.0000         (X_U1.U7_N16680441)   25.0000             
+
+(X_U1.U7_N16680455)   25.0000         (X_U1.U7_N16681043)  150.0000             
+
+(X_U1.U7_N16681109)   25.0000         (X_U1.U7_N16681329)   25.0000             
+
+(X_U1.U7_N16681343)   25.0000         (X_U1.U7_N16681357)   25.0000             
+
+(X_U1.U7_N16681371)   25.0000         (X_U1.U7_N16681385)   25.0000             
+
+(X_U1.U7_N16681397)   25.0000         (X_U1.U7_N16681411)   25.0000             
+
+(X_U1.U7_N16681739)     .0077         (X_U1.U7_N16682696)    0.0000             
+
+(X_U1.U7_N16682716)   60.0000         (X_U1.U7_N16682746)   25.0000             
+
+(X_U1.X_U2_U1.INM1)  -25.5000         (X_U1.X_U2_U1.INP1)    0.0000             
+
+(X_U1.X_U2_U1.INP2)     .2000         (X_U1.X_U2_U2.INM1)    2.0000             
+
+(X_U1.X_U2_U2.INP1)    0.0000         (X_U1.X_U2_U2.INP2)    0.0000             
+
+(X_U1.X_U2_U4.INM1)    2.0000         (X_U1.X_U2_U4.INP1)    0.0000             
+
+(X_U1.X_U2_U4.INP2)    0.0000         (X_U1.X_U2_U6.INM1)    2.0000             
+
+(X_U1.X_U2_U6.INP1)    0.0000         (X_U1.X_U2_U6.INP2)    0.0000             
+
+(X_U1.X_U2_U9.INM1)    2.0000         (X_U1.X_U2_U9.INP1)    0.0000             
+
+(X_U1.X_U2_U9.INP2)    0.0000         (X_U1.X_U3_U104.CH)    0.0000             
+
+(X_U1.X_U3_U113.CH)    0.0000         (X_U1.X_U3_U124.CH)    1.0000             
+
+(X_U1.X_U3_U141.CH)    0.0000         (X_U1.U1_U2_TURN_ON)    0.0000            
+
+(X_U1.U1_U4_N657523)    7.1000        (X_U1.U1_U4_N657837)    0.0000            
+
+(X_U1.U1_U4_N667184)    1.0000        (X_U1.U1_U4_N667269)    0.0000            
+
+(X_U1.U1_U4_N667359)    0.0000        (X_U1.U1_U4_N667787)    6.8000            
+
+(X_U1.U1_U4_N669258)    1.0000        (X_U1.U1_U4_VC_CLF1) 14.20E-15            
+
+(X_U1.U3_EN1_OK_DLY)    0.0000        (X_U1.U3_MASTER_RST)    1.0000            
+
+(X_U1.U3_TSNS_TRANS)    0.0000        (X_U1.X_U2_U16.inp1)    0.0000            
+
+(X_U1.X_U2_U16.yin1) 53.99E-30        (X_U1.X_U2_U16.yin2)    0.0000            
+
+(X_U1.X_U2_U16.yin3)-53.99E-30        (X_U1.X_U2_U16.yin4)    0.0000            
+
+(X_U1.X_U3_U10.Yint)    0.0000        (X_U1.X_U3_U105.MY5)    1.0000            
+
+(X_U1.X_U3_U105.Qbr)    1.0000        (X_U1.X_U3_U105.Qqq)    -.0099            
+
+(X_U1.X_U3_U114.MY5)    1.0000        (X_U1.X_U3_U114.Qbr)    1.0000            
+
+(X_U1.X_U3_U114.Qqq)    -.0099        (X_U1.X_U3_U140.MY5)    1.0000            
+
+(X_U1.X_U3_U140.Qbr)    1.0000        (X_U1.X_U3_U140.Qqq)    -.0099            
+
+(X_U1.X_U3_U144.MY5)    1.0000        (X_U1.X_U3_U144.Qbr)    1.0000            
+
+(X_U1.X_U3_U144.Qqq)    -.0099        (X_U1.X_U3_U33.YINT)    1.0000            
+
+(X_U1.X_U3_U53.inp1)    0.0000        (X_U1.X_U3_U53.yin1) 53.99E-30            
+
+(X_U1.X_U3_U53.yin2)    0.0000        (X_U1.X_U3_U53.yin3)-53.99E-30            
+
+(X_U1.X_U3_U53.yin4)    0.0000        (X_U1.X_U3_U54.inp1)    0.0000            
+
+(X_U1.X_U3_U54.yin1) 53.99E-30        (X_U1.X_U3_U54.yin2)    0.0000            
+
+(X_U1.X_U3_U54.yin3)-53.99E-30        (X_U1.X_U3_U54.yin4)    0.0000            
+
+(X_U1.X_U3_U61.inp1)    0.0000        (X_U1.X_U3_U61.yin1) 53.99E-30            
+
+(X_U1.X_U3_U61.yin2)    0.0000        (X_U1.X_U3_U61.yin3)-53.99E-30            
+
+(X_U1.X_U3_U61.yin4)    0.0000        (X_U1.X_U3_U62.YINT)    0.0000            
+
+(X_U1.X_U3_U68.YINT)    0.0000        (X_U1.X_U3_U72.YINT)    0.0000            
+
+(X_U1.X_U3_U81.YINT)    1.0000        (X_U1.X_U3_U83.YINT)    1.0000            
+
+(X_U1.X_U3_U85.YINT)    0.0000        (X_U1.X_U3_U86.YINT)    0.0000            
+
+(X_U1.U3_ICH1_DETECT)    1.0000       (X_U1.U3_SNS_FLT_PRE)    0.0000           
+
+(X_U1.U3_TSNS_DETECT)    0.0000       (X_U1.X_U1_U4_U58.CH)    0.0000           
+
+(X_U1.X_U2_U11.YINT1)    1.0000       (X_U1.X_U2_U11.YINT2)    1.0000           
+
+(X_U1.X_U2_U11.YINT3)    1.0000       (X_U1.X_U2_U12.YINT1)    0.0000           
+
+(X_U1.X_U2_U12.YINT2)    0.0000       (X_U1.X_U2_U12.YINT3)    0.0000           
+
+(X_U1.X_U2_U13.YINT1)    0.0000       (X_U1.X_U2_U13.YINT2)    0.0000           
+
+(X_U1.X_U2_U13.YINT3)    0.0000       (X_U1.X_U2_U14.YINT1)    0.0000           
+
+(X_U1.X_U2_U14.YINT2)    0.0000       (X_U1.X_U2_U14.YINT3)    0.0000           
+
+(X_U1.X_U3_U104.MEAS)    0.0000       (X_U1.X_U3_U105.Qint)    -.0099           
+
+(X_U1.X_U3_U110.YINT)    0.0000       (X_U1.X_U3_U111.YINT)    1.0000           
+
+(X_U1.X_U3_U113.MEAS)    0.0000       (X_U1.X_U3_U114.Qint)    -.0099           
+
+(X_U1.X_U3_U118.Yint)    0.0000       (X_U1.X_U3_U119.YINT)    1.0000           
+
+(X_U1.X_U3_U122.YINT)    0.0000       (X_U1.X_U3_U123.Yint)    1.0000           
+
+(X_U1.X_U3_U124.MEAS)    1.0000       (X_U1.X_U3_U127.YINT)    1.0000           
+
+(X_U1.X_U3_U129.YINT)    0.0000       (X_U1.X_U3_U130.YINT)    1.0000           
+
+(X_U1.X_U3_U131.YINT)    0.0000       (X_U1.X_U3_U132.YINT)    1.0000           
+
+(X_U1.X_U3_U133.YINT)    0.0000       (X_U1.X_U3_U139.YINT)    0.0000           
+
+(X_U1.X_U3_U140.Qint)    -.0099       (X_U1.X_U3_U141.MEAS)    0.0000           
+
+(X_U1.X_U3_U144.Qint)    -.0099       (X_U1.X_U3_U67.YINT1)    0.0000           
+
+(X_U1.X_U3_U67.YINT2)    0.0000       (X_U1.X_U3_U67.YINT3)    0.0000           
+
+(X_U1.X_U3_U71.YINT1)    1.0000       (X_U1.X_U3_U71.YINT2)    1.0000           
+
+(X_U1.X_U3_U71.YINT3)    1.0000       (X_U1.X_U7_U220.INM1)  125.0000           
+
+(X_U1.X_U7_U220.INP1)    0.0000       (X_U1.X_U7_U220.INP2)    0.0000           
+
+(X_U1.X_U7_U221.INM1)   60.0000       (X_U1.X_U7_U221.INP1)    0.0000           
+
+(X_U1.X_U7_U221.INP2)    0.0000       (X_U1.U1_U1_N16847997)    1.0000          
+
+(X_U1.U1_U1_N16848021)    0.0000      (X_U1.U1_U1_N16848046)    1.0000          
+
+(X_U1.U1_U1_N16848383)    3.0000      (X_U1.U1_U1_N16858086)    1.0000          
+
+(X_U1.U1_U1_N16858696) 1.259E-18      (X_U1.U1_U1_N16858710) 297.1E-06          
+
+(X_U1.U1_U1_N16858914)    0.0000      (X_U1.U1_U2_N18760666)   65.0000          
+
+(X_U1.U1_U2_N18760914)   28.0000      (X_U1.U1_U2_N18761008)   28.0000          
+
+(X_U1.U1_U2_N18805385)   26.9690      (X_U1.U1_U2_N18805959)    1.0000          
+
+(X_U1.U1_U2_N18806451)    2.0200      (X_U1.U1_U2_N18806492)    1.0000          
+
+(X_U1.U1_U2_N18815167)    1.0000      (X_U1.U1_U2_N18815238)    1.0000          
+
+(X_U1.U3_FAULT_SDWN_B)    1.0000      (X_U1.X_U1_U1_U1.Yint)    1.0000          
+
+(X_U1.X_U1_U1_U9.YINT)    0.0000      (X_U1.X_U1_U4_U62.MY5)    1.0000          
+
+(X_U1.X_U1_U4_U62.Qbr)    1.0000      (X_U1.X_U1_U4_U62.Qqq)    -.0099          
+
+(X_U1.X_U3_U104.RESET)    1.0000      (X_U1.X_U3_U105.MYVSS)    0.0000          
+
+(X_U1.X_U3_U105.Qqqd1)    0.0000      (X_U1.X_U3_U113.RESET)    1.0000          
+
+(X_U1.X_U3_U114.MYVSS)    0.0000      (X_U1.X_U3_U114.Qqqd1)    0.0000          
+
+(X_U1.X_U3_U124.RESET)    0.0000      (X_U1.X_U3_U140.MYVSS)    0.0000          
+
+(X_U1.X_U3_U140.Qqqd1)    0.0000      (X_U1.X_U3_U141.RESET)    1.0000          
+
+(X_U1.X_U3_U144.MYVSS)    0.0000      (X_U1.X_U3_U144.Qqqd1)    0.0000          
+
+(X_U1.U1_U1_OPEN_OUT_1)    1.0000     (X_U1.U1_U2_N187603021)  -17.0000         
+
+(X_U1.U1_U2_N187617650)   30.1000     (X_U1.U3_ISNSFH_DETECT)    0.0000         
+
+(X_U1.U3_SNS_FLT_PRE_B)    1.0000     (X_U1.X_U1_U1_U34.YINT)    0.0000         
+
+(X_U1.X_U1_U1_U37.YINT)    1.0000     (X_U1.X_U1_U1_U40.inp1)    1.0000         
+
+(X_U1.X_U1_U1_U40.yin1)    1.0000     (X_U1.X_U1_U1_U40.yin2)    1.0000         
+
+(X_U1.X_U1_U1_U40.yin3)    1.0000     (X_U1.X_U1_U1_U40.yin4)    1.0000         
+
+(X_U1.X_U1_U1_U41.inp1)    0.0000     (X_U1.X_U1_U1_U41.yin1) 53.99E-30         
+
+(X_U1.X_U1_U1_U41.yin2)    0.0000     (X_U1.X_U1_U1_U41.yin3)-53.99E-30         
+
+(X_U1.X_U1_U1_U41.yin4)    0.0000     (X_U1.X_U1_U1_U42.inp1)    1.0000         
+
+(X_U1.X_U1_U1_U42.yin1)    1.0000     (X_U1.X_U1_U1_U42.yin2)    1.0000         
+
+(X_U1.X_U1_U1_U42.yin3)    1.0000     (X_U1.X_U1_U1_U42.yin4)    1.0000         
+
+(X_U1.X_U1_U1_U44.Yint)    0.0000     (X_U1.X_U1_U2_U221.106)   28.0000         
+
+(X_U1.X_U1_U2_U221.301) 440.5E-15     (X_U1.X_U1_U2_U25.YINT)    1.0000         
+
+(X_U1.X_U1_U4_U57.YINT)    0.0000     (X_U1.X_U1_U4_U58.MEAS)    0.0000         
+
+(X_U1.X_U1_U4_U59.Yint)    0.0000     (X_U1.X_U1_U4_U62.Qint)    -.0099         
+
+(X_U1.X_U1_U4_U63.YINT)    1.0000     (X_U1.X_U1_U4_U64.YINT)    1.0000         
+
+(X_U1.X_U3_U104.RESET2)    1.0000     (X_U1.X_U3_U113.RESET2)    1.0000         
+
+(X_U1.X_U3_U124.RESET2)    0.0000     (X_U1.X_U3_U141.RESET2)    1.0000         
+
+(X_U1.U3_DIAG_EN_OK_DLY)    0.0000    (X_U1.X_U1_U1_U45.YINT1)    0.0000        
+
+(X_U1.X_U1_U1_U45.YINT2)    0.0000    (X_U1.X_U1_U1_U45.YINT3)    0.0000        
+
+(X_U1.X_U1_U2_U192.YINT)    1.0000    (X_U1.X_U1_U2_U201.Yint)    1.0000        
+
+(X_U1.X_U1_U2_U223.YINT)    0.0000    (X_U1.X_U1_U2_U224.inp1)    1.0000        
+
+(X_U1.X_U1_U2_U224.yin1)    1.0000    (X_U1.X_U1_U2_U224.yin2)    1.0000        
+
+(X_U1.X_U1_U2_U224.yin3)    1.0000    (X_U1.X_U1_U2_U224.yin4)    1.0000        
+
+(X_U1.X_U1_U2_U227.YINT)    0.0000    (X_U1.X_U1_U2_U228.YINT)    0.0000        
+
+(X_U1.X_U1_U4_U58.RESET)    1.0000    (X_U1.X_U1_U4_U62.MYVSS)    0.0000        
+
+(X_U1.X_U1_U4_U62.Qqqd1)    0.0000    (X_U1.X_U3_U105.X3.YINT)    0.0000        
+
+(X_U1.X_U3_U114.X3.YINT)    0.0000    (X_U1.X_U3_U140.X3.YINT)    0.0000        
+
+(X_U1.X_U3_U144.X3.YINT)    0.0000    (X_U1.X_U1_U4_U58.RESET2)    1.0000       
+
+(X_U1.X_U1_U4_U62.X3.YINT)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -4.230E-04
+    X_U1.V_V106  -1.000E-06
+    X_U1.V_U3_V29   0.000E+00
+    X_U1.V_U3_V28  -4.500E-12
+    X_U1.V_U3_V30   0.000E+00
+    X_U1.V_U3_V3   0.000E+00
+    X_U1.V_U1_U1_V11   0.000E+00
+    X_U1.V_U1_U4_V3  -1.420E-11
+    X_U1.V_U1_U4_V6   0.000E+00
+    X_U1.V_U1_U4_V5   0.000E+00
+    X_U1.V_U1_U2_V105  -1.077E-12
+    X_U1.V_U1_U2_V108  -2.543E-12
+    X_U1.V_U1_U2_V110  -4.457E-11
+    X_U1.V_U1_U2_V107   0.000E+00
+    X_U1.V_U1_U2_V109  -3.700E-11
+    X_U1.V_U2_V9   0.000E+00
+    X_U1.V_U2_V6   0.000E+00
+    X_U1.V_U2_V12   0.000E+00
+    X_U1.V_U2_V10   0.000E+00
+    X_U1.V_U2_V3   0.000E+00
+    X_U1.V_U2_V4   0.000E+00
+    X_U1.V_U2_Vuv_hys   0.000E+00
+    X_U1.V_U2_V11   0.000E+00
+    X_U1.V_U2_V5   0.000E+00
+    X_U1.V_U2_V2   0.000E+00
+    X_U1.V_U7_TAMB1  -2.910E-11
+    X_U1.V_U7_TAMB  -1.819E-11
+    X_U1.V_U7_V1   0.000E+00
+    X_U1.V_U7_V3   0.000E+00
+    X_U1.V_U7_V2   0.000E+00
+    X_U1.V_U7_V4   0.000E+00
+    X_U1.X_H2.VH_H2   1.000E-06
+    X_U1.X_U3_U105.V1  -1.011E-12
+    X_U1.X_U3_U105.V2  -3.692E-02
+    X_U1.X_U3_U144.V1  -1.011E-12
+    X_U1.X_U3_U144.V2  -3.692E-02
+    X_U1.X_U3_X3.vsense   0.000E+00
+    X_U1.X_U3_X1.vsense   0.000E+00
+    X_U1.X_U3_U140.V1  -1.011E-12
+    X_U1.X_U3_U140.V2  -3.692E-02
+    X_U1.X_U3_U114.V1  -1.011E-12
+    X_U1.X_U3_U114.V2  -3.692E-02
+    X_U1.X_U1_U4_U62.V1  -1.011E-12
+    X_U1.X_U1_U4_U62.V2  -3.692E-02
+    X_U1.X_U1_U2_H13.VH_U1_U2_H13   4.405E-13
+    X_U1.X_U1_U2_U221.vsense   4.405E-13
+
+    TOTAL POWER DISSIPATION   1.18E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/13/26 13:11:27 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-dcSim"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\simulation_models\psp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =      150.42
+

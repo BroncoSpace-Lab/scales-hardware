@@ -1,0 +1,411 @@
+
+**** 03/12/26 16:23:09 *** PSpice 23.1.0 (17 December 2024) *** ID# 0 ********
+
+ ** Profile: "OBC_Subsystem-test"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\e
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps1hb08b-q1_pspice_trans/tps1hb08b-q1_trans.lib" 
+* From [PSPICE NETLIST] section of C:\Users\luqui\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\OBC_Subsystem.net" 
+
+
+
+**** INCLUDING OBC_Subsystem.net ****
+* source EPS_MERGERSIM
+V_V1         N06721 0 28V
+R_R6         0 N06282  1k TC=0,0 
+R_R2         0 N06286  15k TC=0,0 
+R_R4         N05591 N06721  56.2k TC=0,0 
+R_R1         0 N05519  15k TC=0,0 
+R_R5         0 N06284  15k TC=0,0 
+R_R3         0 N05591  10k TC=0,0 
+X_U1          N05519 N05591 0 N06099 N06284 N06994 N07006 N07018 N06286 N06282
++  N07038 N06373 N06721 OBC_LOAD_SWITCH_OUT OBC_LOAD_SWITCH_OUT
++  OBC_LOAD_SWITCH_OUT OBC_LOAD_SWITCH_OUT OBC_LOAD_SWITCH_OUT
++  OBC_LOAD_SWITCH_OUT TPS1HB08B-Q1_TRANS PARAMS: TEMP_AMB=25
+
+**** RESUMING test.cir ****
+.END
+
+**** 03/12/26 16:23:09 *** PSpice 23.1.0 (17 December 2024) *** ID# 0 ********
+
+ ** Profile: "OBC_Subsystem-test"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\e
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U3_U105.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U144.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U54.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U58.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U140.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U53.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U61.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U3_U114.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U1_U42.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U1_U41.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U1_U40.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U4_U62.D_D1 
+          IS    1.000000E-15 
+           N     .01         
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U4_U61.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U4_U22.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U224.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U205.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U206.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U204.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U193.dd1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U1_U2_U220.dd 
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+               X_U1.X_U2_U16.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS    5.000000E-03 
+          TT   10.000000E-12 
+
+
+**** 03/12/26 16:23:09 *** PSpice 23.1.0 (17 December 2024) *** ID# 0 ********
+
+ ** Profile: "OBC_Subsystem-test"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\e
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOS01_TPS2HA08 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    2.02         
+          KP  156.250000E+03 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    1.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 03/12/26 16:23:09 *** PSpice 23.1.0 (17 December 2024) *** ID# 0 ********
+
+ ** Profile: "OBC_Subsystem-test"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\e
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_U3_S4._U3_S4 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U1.X_U3_U104.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_U141.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_S5._U3_S5 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U1.X_U3_S9._U3_S9 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U3_U113.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_U124.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U3_S3._U3_S3 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .6          
+        VOFF     .4          
+
+
+               X_U1.X_U3_S8._U3_S8 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_U4_S6._U1_U4_S6 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U1.X_U1_U4_U58.S1 
+         RON    1            
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U1.X_U1_U2_S1._U1_U2_S1 
+         RON    1.000000E+06 
+        ROFF   10.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+ERROR(ORPSIM-16587): Cannot simulate circuit because there are more than 250 devices, which exceeds the limit for PSpice A/D Basics. To simulate this circuit, upgrade to a higher license.
+
+
+ABORTING SIMULATION
+**** 03/12/26 16:23:09 *** PSpice 23.1.0 (17 December 2024) *** ID# 0 ********
+
+ ** Profile: "OBC_Subsystem-test"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\e
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           7
+  External (NCNODS)                 =         355
+  Total (NUMNOD)                    =         383
+
+Total device count (NUMEL)          =         568
+  Capacitors (C)                    =         139
+  Diodes (D)                        =          34
+  VCVS (E)                          =         151
+  CCCS (F)                          =           3
+  VCCS (G)                          =          15
+  CCVS (H)                          =           2
+  MosFETs (M)                       =           1
+  Resistors (R)                     =         165
+  VSwitches (S)                     =          12
+  Voltage Sources (V)               =          46
+
+Number of subcircuits (X)           =          95
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         582
+  Initial no. elements (NTTAR)      =        1446
+  No. elements w/ fillin (NTTBR)    =        1446
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      99.573
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =         .23
+  General setup                     =         .06
+  CMI setup                     =        0.00
+  Setup                             =         .03
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .27
+  Total job time (using Solver 1)   =         .30
+

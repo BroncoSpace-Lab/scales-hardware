@@ -1,0 +1,40 @@
+.TITLE SCALES EPS REF F Simulation Model
+
+.OPTIONS PSPICE
+.INCLUDE libs\TPS1HB08B-Q1_TRANS.lib
+
+* +28v power supply
+VVBATT VBB 0 28 ; V<source name> <postive node> <negative node> <voltage>
+
+* Load Resistor
+RLOAD VOUT 0 10 ; R<resistorname> <postive node> <negative node> <voltage>
+
+XTPS1 DIA_EN EN 0 ILIM LATCH NC_0 NC_1 NC_2 SEL1 SNS TCON TJ VBB
++ VOUT VOUT VOUT VOUT VOUT VOUT TPS1HB08B-Q1_TRANS
+
+C20 VBB 0 220n
+R16 VBB EN 56.2k
+R17 EN 0 10k
+R18 SNS 0 1k
+R19 LATCH 0 15k
+C22 VOUT 0 22n
+R21 DIA_EN 0 15k
+R23 SEL1 0 15k
+
+RNC0 NC_0 0 1G
+RNC1 NC_1 0 1G
+RNC2 NC_2 0 1G
+RNC3 ILIM 0 1G
+RNC4 TCON 0 1G
+RNC5 TJ 0 1G
+
+* TPS1HB08B-Q1 subckt from lib
+* instantiated with local nodes
+
+
+.control
+  tran 1u 1m
+  plot v(VOUT) v(VBB)
+.endc
+
+.end

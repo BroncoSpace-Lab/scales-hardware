@@ -1,0 +1,219 @@
+
+**** 08/31/23 11:31:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Modeling\TLV1701\TLV1701-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tlv1701.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100u 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TLV1701
+.EXTERNAL INPUT OUT
+.EXTERNAL INPUT V+
+.EXTERNAL INPUT IN+
+.EXTERNAL INPUT IN-
+.EXTERNAL INPUT V-
+X_U1         IN+ IN- V+ V- OUT TLV1701
+R_R3         N834155 OUT  10k TC=0,0 
+V_VINN1         N834155 0 3.3
+V_V+1         V- 0 -12
+V_VINN         IN- 0 12
+V_V+         V+ 0 24
+V_V1         IN+ 0  
++PULSE 11.9 12.1 0 10p 10p 10u 20u
+
+**** RESUMING test.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file tlv1701.ind for library file tlv1701.lib.
+
+INFO(ORPSIM-15422): Making new index file tlv1701.ind for library file tlv1701.lib.
+
+Index has 38 entries from 1 file(s).
+
+**** 08/31/23 11:31:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Modeling\TLV1701\TLV1701-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_S1._S1   X_U1.X_S2._S2   
+         RON    1               1            
+        ROFF    1.000000E+06    1.000000E+06 
+         VON    1               0            
+        VOFF    0               1            
+
+
+               X_U1.X_U5.X_SMID._SMID 
+         RON    1            
+        ROFF    1.000000E+12 
+         VON    0            
+        VOFF    1            
+
+
+               X_U1.X_U5.X_SHIZ._SHIZ 
+         RON    1            
+        ROFF    1.000000E+12 
+         VON    0            
+        VOFF    1            
+
+
+               X_U1.X_U5.X_SVOL._SVOL 
+         RON    1            
+        ROFF    1.000000E+12 
+         VON    0            
+        VOFF    1            
+
+
+**** 08/31/23 11:31:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Modeling\TLV1701\TLV1701-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   24.0000  (   V-)  -12.0000  (  IN+)   11.9000  (  IN-)   12.0000      
+
+(  OUT)  -11.7710  (N834155)    3.3000                   (X_U1.CMP)  -11.7650   
+
+(X_U1.N21237)    0.0000               (X_U1.IN+BUFF)   11.9000                  
+
+(X_U1.IN-BUFF)   12.0000              (X_U1.INRANGE)  -12.0000                  
+
+(X_U1.N785573)   11.9000              (X_U1.N843683)   24.0000                  
+
+(X_U1.N855856)     .2353              (X_U1.N856745)   -5.8824                  
+
+(X_U1.N856751)   -5.8824              (X_U1.N857155)   -5.8824                  
+
+(X_U1.N857241)   -5.8824              (X_U1.X_U3.VH)    0.0000                  
+
+(X_U1.X_U5.1V)    1.0000              (X_U1.X_U7.1V)    1.0000                  
+
+(X_U1.X_U3.OUT)  -12.0000             (X_U1.X_U5.MID)    6.0000                 
+
+(X_U1.V+_BUFFER)   24.0000            (X_U1.V-_BUFFER)  -12.0000                
+
+(X_U1.X_U3.VMID)    6.0000            (X_U1.X_U2.N20155)   24.1000              
+
+(X_U1.X_U2.N20415)  -12.1000          (X_U1.X_U2.N20531)  -12.0000              
+
+(X_U1.X_U2.N20539)  -12.1000          (X_U1.X_U2.N20826)  -12.0000              
+
+(X_U1.X_U2.N20833)  -12.0000          (X_U1.X_U2.N20840)  -12.0000              
+
+(X_U1.X_U2.N31286)   24.1000          (X_U1.X_U3.INNNEW)   12.0000              
+
+(X_U1.X_U4.N03175)   -5.8824          (X_U1.X_U5.X_U3.3)   23.0000              
+
+(X_U1.X_U5.X_U8.6)    0.0000          (X_U1.X_U7.N16955)    0.0000              
+
+(X_U1.X_U7.N16973)   36.0000          (X_U1.X_U7.N20310)    2.1900              
+
+(X_U1.X_U7.N20377)   37.1000          (X_U1.X_U2.X_U24.6)  -12.0000             
+
+(X_U1.X_U5.N774212)   23.0000         (X_U1.X_U5.N774290)   23.0000             
+
+(X_U1.X_U5.N778484)  -11.7710         (X_U1.X_U5.N778496)  -11.7720             
+
+(X_U1.X_U5.N789513)    1.0000         (X_U1.X_U5.N850209)  -11.9980             
+
+(X_U1.X_U5.X_U10.4)    1.0000         (X_U1.X_U7.N777140)    2.1900             
+
+(X_U1.X_U7.N777200)    0.0000         (X_U1.X_U7.X_U17.4)    0.0000             
+
+(X_U1.X_U2.X_U1.OUT2)  -12.0000       (X_U1.X_U5.X_U7.VMID)    6.0000           
+
+(X_U1.X_U7.X_U5.OUT2)    0.0000       (X_U1.X_U2.X_U21.OUT2)  -12.0000          
+
+(X_U1.X_U2.X_U22.OUT2)  -12.0000      (X_U1.X_U2.X_U23.OUT2)  -12.0000          
+
+(X_U1.X_U7.X_U13.OUT1)   36.0000      (X_U1.X_U7.X_U15.OUT2)    0.0000          
+
+(X_U1.X_U7.X_U16.OUT2)    0.0000      (X_U1.X_U5.CONTROL_HIZ)    0.0000         
+
+(X_U1.X_U5.CONTROL_MID)    1.0000     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VINN1     -1.507E-03
+    V_V+1        1.562E-03
+    V_VINN      -5.024E-09
+    V_V+        -5.500E-05
+    V_V1        -5.024E-09
+    X_U1.V_VOS   0.000E+00
+    X_U1.X_U2.V_VCMNP   0.000E+00
+    X_U1.X_U2.V_VCMPN   0.000E+00
+    X_U1.X_U2.V_VCMPP   0.000E+00
+    X_U1.X_U2.V_VCMNN   0.000E+00
+    X_U1.X_U5.V_VLOGIC   0.000E+00
+    X_U1.X_U5.V_V1   6.617E-24
+    X_U1.X_U7.V_VS_MIN_SET   0.000E+00
+    X_U1.X_U7.V_VS_MAX_SET   0.000E+00
+    X_U1.X_U7.V_VLOGIC   0.000E+00
+    X_U1.X_U7.V_VS_MIN_SET1   0.000E+00
+
+    TOTAL POWER DISSIPATION   2.50E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/31/23 11:31:57 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Modeling\TLV1701\TLV1701-PSpiceFiles\SCHEMATIC1\test.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.06
+
