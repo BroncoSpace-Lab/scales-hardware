@@ -5,11 +5,11 @@
 	(uuid "16c4c659-05d9-4c74-a40b-1357d5af1090")
 	(paper "A4")
 	(title_block
-		(title "Leviathan V1")
-		(date "2025-10-29")
-		(rev "V1")
+		(title "Leviathan V2")
+		(date "2026-04-21")
+		(rev "V2")
 		(company "Bronco Space Lab")
-		(comment 1 "By Luca Lanzillotta & John Pollack")
+		(comment 1 "By Luca Lanzillotta")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -388,6 +388,28 @@
 					)
 				)
 			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "quartz ceramic resonator oscillator"
 				(at 0 0 0)
 				(show_name no)
@@ -472,18 +494,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.556) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
@@ -539,9 +549,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 5.08 270)
+					(at 0 -5.08 90)
 					(length 1.27)
-					(name "2"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -577,7 +587,8 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "4"
+					(hide yes)
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4642,12 +4653,6 @@
 		(uuid "136562b7-8a71-493f-b45f-2d9b388eb592")
 	)
 	(junction
-		(at 71.12 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18914a7b-aac6-4e18-9094-3d607306f3e8")
-	)
-	(junction
 		(at 213.36 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4762,6 +4767,12 @@
 		(uuid "416e0e30-427f-4493-af4c-4b2b8ba89eba")
 	)
 	(junction
+		(at 71.12 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43353991-1992-43c3-b98d-890e693e3996")
+	)
+	(junction
 		(at 130.81 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4790,6 +4801,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59c2d86a-0809-4d91-b556-5f909772e0c0")
+	)
+	(junction
+		(at 33.02 164.338)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5aa8a68c-fc5a-461c-b0e2-d299ef34625a")
 	)
 	(junction
 		(at 180.34 113.03)
@@ -4906,12 +4923,6 @@
 		(uuid "82b3d437-a1cb-48a9-b415-c0a54b9708d1")
 	)
 	(junction
-		(at 33.02 164.592)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ce6f39f-870d-4d88-aedd-7ea273939cc7")
-	)
-	(junction
 		(at 171.45 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4978,7 +4989,7 @@
 		(uuid "a9103694-bcc6-4968-8d2b-1dca10a4d1e4")
 	)
 	(junction
-		(at 21.59 164.592)
+		(at 21.59 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aac07e1c-7888-4c69-bee2-453137ca8942")
@@ -5050,7 +5061,7 @@
 		(uuid "c5da142a-2dca-4044-940c-c79f64504af0")
 	)
 	(junction
-		(at 29.21 164.592)
+		(at 29.21 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb8b3c42-e7ab-47f4-9d4b-a9bb1947d166")
@@ -5243,7 +5254,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 163.322) (xy 21.59 164.592)
+			(xy 21.59 163.322) (xy 21.59 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5483,7 +5494,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 169.672) (xy 33.02 164.592)
+			(xy 33.02 170.18) (xy 33.02 164.338)
 		)
 		(stroke
 			(width 0)
@@ -5540,16 +5551,6 @@
 			(type default)
 		)
 		(uuid "22f7176f-6716-46bd-9fb5-8e4a537c7d3d")
-	)
-	(wire
-		(pts
-			(xy 33.02 164.592) (xy 41.91 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23534ea0-92e9-46f3-97e1-e41d3a75dbfa")
 	)
 	(wire
 		(pts
@@ -5713,7 +5714,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 164.592) (xy 33.02 164.592)
+			(xy 29.21 163.83) (xy 33.02 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6060,6 +6061,16 @@
 			(type default)
 		)
 		(uuid "4a4be503-78a1-4456-84ea-1410697bcc17")
+	)
+	(wire
+		(pts
+			(xy 33.02 164.338) (xy 41.91 164.338)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4acf205b-b0c8-4033-9e28-98aa19c07199")
 	)
 	(wire
 		(pts
@@ -6470,6 +6481,16 @@
 			(type default)
 		)
 		(uuid "688dbabc-7b12-468c-be6c-e44b20f807a7")
+	)
+	(wire
+		(pts
+			(xy 40.64 170.18) (xy 41.91 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69a576f4-12cc-4d64-a0fc-82f2f1e28766")
 	)
 	(wire
 		(pts
@@ -7763,7 +7784,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 165.862) (xy 21.59 164.592)
+			(xy 21.59 163.83) (xy 21.59 165.862)
 		)
 		(stroke
 			(width 0)
@@ -8033,16 +8054,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 169.672) (xy 41.91 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8255080-cb23-4ca2-a374-0370b5086d61")
-	)
-	(wire
-		(pts
 			(xy 29.21 88.9) (xy 46.99 88.9)
 		)
 		(stroke
@@ -8133,7 +8144,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 164.592) (xy 29.21 164.592)
+			(xy 21.59 163.83) (xy 29.21 163.83)
 		)
 		(stroke
 			(width 0)
@@ -8213,6 +8224,26 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 164.338) (xy 41.91 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ddf439-3fde-456c-a0f2-42bac559723c")
+	)
+	(wire
+		(pts
+			(xy 33.02 164.338) (xy 33.02 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f570ff-bf68-495b-85a4-8ee5494823c0")
+	)
+	(wire
+		(pts
 			(xy 72.39 107.95) (xy 69.85 107.95)
 		)
 		(stroke
@@ -8223,7 +8254,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 165.862) (xy 29.21 164.592)
+			(xy 29.21 163.83) (xy 29.21 165.862)
 		)
 		(stroke
 			(width 0)
@@ -9369,7 +9400,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "008140a7-06a6-4adc-9b5e-573c70817ac8")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR0162"
 			(at 199.39 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9429,7 +9460,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0144")
+					(reference "#PWR0162")
 					(unit 1)
 				)
 			)
@@ -9446,7 +9477,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01c1b0c6-8431-4b7a-8495-a906ac4a219a")
-		(property "Reference" "C112"
+		(property "Reference" "C116"
 			(at 194.31 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9530,7 +9561,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C112")
+					(reference "C116")
 					(unit 1)
 				)
 			)
@@ -9547,7 +9578,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04cb486a-4483-4645-9023-cd095ffcb699")
-		(property "Reference" "C115"
+		(property "Reference" "C120"
 			(at 204.47 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9631,7 +9662,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C115")
+					(reference "C120")
 					(unit 1)
 				)
 			)
@@ -9648,7 +9679,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ae49b73-ace6-41e9-86b6-f3c7ed2ed55f")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0143"
 			(at 21.59 167.132 0)
 			(hide yes)
 			(show_name no)
@@ -9708,7 +9739,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0112")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
@@ -9725,7 +9756,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b20bdf0-a048-4c84-98a7-fe3610577990")
-		(property "Reference" "#PWR17"
+		(property "Reference" "#PWR0171"
 			(at 246.38 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9785,7 +9816,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR17")
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)
@@ -9901,7 +9932,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ef0e1b9-87a1-4382-b265-bdf88c9dae2f")
-		(property "Reference" "C95"
+		(property "Reference" "C98"
 			(at 133.35 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9985,7 +10016,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C95")
+					(reference "C98")
 					(unit 1)
 				)
 			)
@@ -10003,7 +10034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "143e31c0-6868-4be6-bbc5-32912e2875d0")
-		(property "Reference" "C84"
+		(property "Reference" "C93"
 			(at 109.982 183.6419 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10067,7 +10098,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C84")
+					(reference "C93")
 					(unit 1)
 				)
 			)
@@ -10084,7 +10115,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14452da8-9eb3-4ae4-888e-ade0f186cb7b")
-		(property "Reference" "#PWR0142"
+		(property "Reference" "#PWR0157"
 			(at 160.02 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -10144,7 +10175,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0142")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 			)
@@ -10393,7 +10424,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "163424e5-f969-49fc-ac6f-1482110d69f4")
-		(property "Reference" "#PWR21"
+		(property "Reference" "#PWR0174"
 			(at 261.62 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10453,7 +10484,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR21")
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -10470,7 +10501,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "175c289d-d432-4ca1-9248-f0904d801ee8")
-		(property "Reference" "C94"
+		(property "Reference" "C97"
 			(at 125.73 88.9063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10554,7 +10585,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C94")
+					(reference "C97")
 					(unit 1)
 				)
 			)
@@ -10571,7 +10602,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19903ffe-e802-485b-9ba3-8de0dab77c3c")
-		(property "Reference" "#PWR13"
+		(property "Reference" "#PWR0148"
 			(at 69.85 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -10631,7 +10662,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR13")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -10649,7 +10680,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19f456e7-9fbb-4eb5-9e7f-7b7cc56e00df")
-		(property "Reference" "R155"
+		(property "Reference" "R178"
 			(at 74.168 171.958 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10711,7 +10742,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R155")
+					(reference "R178")
 					(unit 1)
 				)
 			)
@@ -10719,7 +10750,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 36.83 169.672 90)
+		(at 36.83 170.18 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10729,8 +10760,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a4ac8e5-e4c7-48ee-83a0-ca1d87a0734e")
-		(property "Reference" "R148"
-			(at 36.83 174.244 90)
+		(property "Reference" "R166"
+			(at 36.83 174.752 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10740,7 +10771,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 36.83 171.704 90)
+			(at 36.83 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10750,7 +10781,7 @@
 			)
 		)
 		(property "Footprint" "EPS:R0402"
-			(at 37.084 170.688 90)
+			(at 37.084 171.196 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10761,7 +10792,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 169.672 0)
+			(at 36.83 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10772,7 +10803,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 36.83 169.672 0)
+			(at 36.83 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10791,7 +10822,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R148")
+					(reference "R166")
 					(unit 1)
 				)
 			)
@@ -10808,7 +10839,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c85cb29-6e29-4e75-b725-6caa2e0c5fdd")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0172"
 			(at 251.46 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -10868,7 +10899,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0118")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -10885,7 +10916,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e47f5c1-1f92-452e-a9f7-5405df809021")
-		(property "Reference" "R183"
+		(property "Reference" "R186"
 			(at 213.36 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10967,7 +10998,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R183")
+					(reference "R186")
 					(unit 1)
 				)
 			)
@@ -10984,7 +11015,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e7f0f9d-4692-4674-88f7-01c68c0af692")
-		(property "Reference" "#PWR0122"
+		(property "Reference" "#PWR0155"
 			(at 149.352 196.342 0)
 			(hide yes)
 			(show_name no)
@@ -11044,7 +11075,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0122")
+					(reference "#PWR0155")
 					(unit 1)
 				)
 			)
@@ -11061,7 +11092,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f0c1a93-6b39-497e-9ada-0e8ebd0c9838")
-		(property "Reference" "C99"
+		(property "Reference" "C102"
 			(at 144.78 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11145,7 +11176,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C99")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -11162,7 +11193,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25071b8a-414c-46bc-8b1a-85d71958c1aa")
-		(property "Reference" "R163"
+		(property "Reference" "R185"
 			(at 199.39 147.574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11172,7 +11203,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "1MEG"
 			(at 199.39 150.114 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11224,7 +11255,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R163")
+					(reference "R185")
 					(unit 1)
 				)
 			)
@@ -11241,7 +11272,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "26a5fd4c-458c-46bb-a353-dc0be8115eea")
-		(property "Reference" "C111"
+		(property "Reference" "C115"
 			(at 193.04 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11325,7 +11356,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C111")
+					(reference "C115")
 					(unit 1)
 				)
 			)
@@ -11342,7 +11373,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "276b4b1d-51a6-455f-a335-55031aaaf9fb")
-		(property "Reference" "C113"
+		(property "Reference" "C117"
 			(at 195.58 82.5563 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11426,7 +11457,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C113")
+					(reference "C117")
 					(unit 1)
 				)
 			)
@@ -11444,7 +11475,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d3a1858-6814-490b-9b22-0025e1605435")
-		(property "Reference" "C82"
+		(property "Reference" "C87"
 			(at 21.336 167.894 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11508,7 +11539,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C82")
+					(reference "C87")
 					(unit 1)
 				)
 			)
@@ -11525,7 +11556,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2e89fde0-14aa-4313-af86-8229143bee85")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0151"
 			(at 91.44 172.212 0)
 			(hide yes)
 			(show_name no)
@@ -11585,7 +11616,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0126")
+					(reference "#PWR0151")
 					(unit 1)
 				)
 			)
@@ -11701,7 +11732,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3176f110-de51-4aa1-bcfa-6ed7bc65b595")
-		(property "Reference" "C86"
+		(property "Reference" "C91"
 			(at 87.63 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11765,7 +11796,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C86")
+					(reference "C91")
 					(unit 1)
 				)
 			)
@@ -11783,7 +11814,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32065c10-da48-4211-9d6d-90f0feec4fdf")
-		(property "Reference" "#PWR10"
+		(property "Reference" "#PWR0146"
 			(at 29.21 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -11843,7 +11874,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR10")
+					(reference "#PWR0146")
 					(unit 1)
 				)
 			)
@@ -11860,7 +11891,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3451bbe9-aa10-45bf-aba0-20d3b92205ce")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0153"
 			(at 113.792 196.342 0)
 			(hide yes)
 			(show_name no)
@@ -11920,7 +11951,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0114")
+					(reference "#PWR0153")
 					(unit 1)
 				)
 			)
@@ -11937,7 +11968,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36ec5692-0b8a-4677-9d89-d23c1393caca")
-		(property "Reference" "C117"
+		(property "Reference" "C122"
 			(at 227.33 82.5563 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12021,7 +12052,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C117")
+					(reference "C122")
 					(unit 1)
 				)
 			)
@@ -12038,7 +12069,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37d46dab-2540-4e8d-8b38-91b006b6a161")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0169"
 			(at 236.22 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12098,7 +12129,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0116")
+					(reference "#PWR0169")
 					(unit 1)
 				)
 			)
@@ -12116,7 +12147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "393784fb-3b95-4ad2-b148-faf4b8f885cf")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0165"
 			(at 212.09 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -12176,7 +12207,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0159")
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -12193,7 +12224,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c875399-fb85-4459-bc6d-afc8262c12e2")
-		(property "Reference" "C105"
+		(property "Reference" "C109"
 			(at 163.83 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12277,7 +12308,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C105")
+					(reference "C109")
 					(unit 1)
 				)
 			)
@@ -12315,7 +12346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "imx8_carrier_board_footprints:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 263.525 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -12380,7 +12411,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4664fdbc-a79e-47f6-998b-77ebad198047")
-		(property "Reference" "C116"
+		(property "Reference" "C121"
 			(at 215.9 82.5563 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12464,7 +12495,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C116")
+					(reference "C121")
 					(unit 1)
 				)
 			)
@@ -12581,7 +12612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49658627-1911-4a9c-9ff1-17fe5791aed9")
-		(property "Reference" "#FLG011"
+		(property "Reference" "#FLG019"
 			(at 205.74 147.955 0)
 			(hide yes)
 			(show_name no)
@@ -12641,7 +12672,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#FLG011")
+					(reference "#FLG019")
 					(unit 1)
 				)
 			)
@@ -12658,7 +12689,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a65be95-afc9-416c-b693-6734a83aed38")
-		(property "Reference" "#FLG012"
+		(property "Reference" "#FLG020"
 			(at 275.717 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -12719,7 +12750,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#FLG012")
+					(reference "#FLG020")
 					(unit 1)
 				)
 			)
@@ -12736,7 +12767,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fbd5f5c-dcf2-4048-ac70-cac78346d2cd")
-		(property "Reference" "U27"
+		(property "Reference" "U26"
 			(at 137.922 181.864 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12818,7 +12849,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "U27")
+					(reference "U26")
 					(unit 1)
 				)
 			)
@@ -12835,7 +12866,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "500869ae-8397-43a3-88e9-15fd200b9842")
-		(property "Reference" "C100"
+		(property "Reference" "C103"
 			(at 146.05 88.9063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12919,7 +12950,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C100")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -12936,7 +12967,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "503f134d-5554-465d-a1f5-fe6dd7e0ecd1")
-		(property "Reference" "#PWR0143"
+		(property "Reference" "#PWR0159"
 			(at 173.99 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -12996,7 +13027,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0143")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 			)
@@ -13013,7 +13044,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "52266439-0d36-4b43-9256-9535945c82a0")
-		(property "Reference" "C93"
+		(property "Reference" "C96"
 			(at 124.46 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13097,7 +13128,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C93")
+					(reference "C96")
 					(unit 1)
 				)
 			)
@@ -13114,7 +13145,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "545488c5-3558-424c-97e7-c5b2a0f074ac")
-		(property "Reference" "R187"
+		(property "Reference" "R194"
 			(at 267.97 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13196,7 +13227,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R187")
+					(reference "R194")
 					(unit 1)
 				)
 			)
@@ -13214,7 +13245,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "552d03f5-fd85-4c40-9234-39583d4ce400")
-		(property "Reference" "R151"
+		(property "Reference" "R180"
 			(at 122.682 190.754 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13276,7 +13307,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R151")
+					(reference "R180")
 					(unit 1)
 				)
 			)
@@ -13293,7 +13324,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cdb6e7b-4a8b-42b2-b7f8-cdc8a8193847")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR0161"
 			(at 193.04 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -13353,7 +13384,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0123")
+					(reference "#PWR0161")
 					(unit 1)
 				)
 			)
@@ -13469,7 +13500,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "613f83a9-5c08-4a15-8e5b-66c8f9407ffd")
-		(property "Reference" "C92"
+		(property "Reference" "C95"
 			(at 121.92 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13553,7 +13584,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C92")
+					(reference "C95")
 					(unit 1)
 				)
 			)
@@ -13570,7 +13601,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "6217b266-4fa9-4fcd-a184-450fd8b090fc")
-		(property "Reference" "R179"
+		(property "Reference" "R181"
 			(at 158.75 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13652,7 +13683,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R179")
+					(reference "R181")
 					(unit 1)
 				)
 			)
@@ -13669,7 +13700,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "630970b3-59a2-4de0-9fc1-31c738a8f1a6")
-		(property "Reference" "#FLG020"
+		(property "Reference" "#FLG017"
 			(at 111.887 179.832 0)
 			(hide yes)
 			(show_name no)
@@ -13730,7 +13761,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#FLG020")
+					(reference "#FLG017")
 					(unit 1)
 				)
 			)
@@ -13748,7 +13779,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6370c17d-1e69-4972-af51-8340436c9444")
-		(property "Reference" "R157"
+		(property "Reference" "R179"
 			(at 78.74 167.005 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13810,7 +13841,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R157")
+					(reference "R179")
 					(unit 1)
 				)
 			)
@@ -13827,7 +13858,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66b413b6-e3a2-41e4-8d15-80832a5b7078")
-		(property "Reference" "C114"
+		(property "Reference" "C119"
 			(at 204.47 82.5563 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13911,7 +13942,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C114")
+					(reference "C119")
 					(unit 1)
 				)
 			)
@@ -13929,7 +13960,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67c98811-40e8-44a4-9b10-d714acf88f2f")
-		(property "Reference" "R152"
+		(property "Reference" "R190"
 			(at 243.84 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13993,7 +14024,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R152")
+					(reference "R190")
 					(unit 1)
 				)
 			)
@@ -14010,7 +14041,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69245067-7bab-4545-b1ac-4e23679ef2b8")
-		(property "Reference" "C101"
+		(property "Reference" "C104"
 			(at 153.67 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14094,7 +14125,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C101")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -14112,7 +14143,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c494576-bce4-4bb2-8c5d-c2cf9b29e7f3")
-		(property "Reference" "C83"
+		(property "Reference" "C88"
 			(at 28.956 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14176,7 +14207,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C83")
+					(reference "C88")
 					(unit 1)
 				)
 			)
@@ -14193,7 +14224,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7464d960-5886-48e0-b470-a6d8d0e31e01")
-		(property "Reference" "R168"
+		(property "Reference" "R167"
 			(at 55.626 91.186 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14275,7 +14306,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R168")
+					(reference "R167")
 					(unit 1)
 				)
 			)
@@ -14391,7 +14422,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7698ca87-3169-4976-a943-269738c20f60")
-		(property "Reference" "C96"
+		(property "Reference" "C99"
 			(at 135.89 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14475,7 +14506,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C96")
+					(reference "C99")
 					(unit 1)
 				)
 			)
@@ -14492,7 +14523,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78cb1260-4632-4d19-b91e-aafd83fc3fc1")
-		(property "Reference" "#PWR0178"
+		(property "Reference" "#PWR0167"
 			(at 217.17 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -14552,7 +14583,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0178")
+					(reference "#PWR0167")
 					(unit 1)
 				)
 			)
@@ -14569,7 +14600,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78e22499-b51d-4e7a-b5bf-76aefe740c8a")
-		(property "Reference" "C110"
+		(property "Reference" "C114"
 			(at 182.88 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14653,7 +14684,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C110")
+					(reference "C114")
 					(unit 1)
 				)
 			)
@@ -14671,7 +14702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78f14879-656d-46c8-8068-22000e999822")
-		(property "Reference" "#FLG010"
+		(property "Reference" "#FLG018"
 			(at 157.607 178.562 0)
 			(hide yes)
 			(show_name no)
@@ -14732,7 +14763,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#FLG010")
+					(reference "#FLG018")
 					(unit 1)
 				)
 			)
@@ -14749,7 +14780,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "795acb32-5d05-43a5-8c91-6835c4b2ca78")
-		(property "Reference" "C97"
+		(property "Reference" "C100"
 			(at 137.16 88.9063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14833,7 +14864,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C97")
+					(reference "C100")
 					(unit 1)
 				)
 			)
@@ -14949,7 +14980,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83347306-b967-4703-9bb2-4535a7feb0e9")
-		(property "Reference" "U28"
+		(property "Reference" "U27"
 			(at 260.35 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15034,7 +15065,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "U28")
+					(reference "U27")
 					(unit 1)
 				)
 			)
@@ -15051,7 +15082,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "873cce72-35b3-4ac4-bcf9-cd9357a2d3f2")
-		(property "Reference" "R186"
+		(property "Reference" "R193"
 			(at 267.97 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15133,7 +15164,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R186")
+					(reference "R193")
 					(unit 1)
 				)
 			)
@@ -15150,7 +15181,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87f11438-5c6b-4273-ba43-f494e4df7b7f")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0149"
 			(at 71.12 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -15210,7 +15241,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0121")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -15227,7 +15258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a86f11d-7e07-4c5c-be4a-60bd311eb836")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR0147"
 			(at 67.31 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -15287,7 +15318,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0120")
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
@@ -15304,7 +15335,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8eecc606-0b46-42d0-bf4e-d052296ddb95")
-		(property "Reference" "R181"
+		(property "Reference" "R183"
 			(at 168.91 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15386,7 +15417,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R181")
+					(reference "R183")
 					(unit 1)
 				)
 			)
@@ -15525,7 +15556,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "imx8_carrier_board_footprints:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 259.08 93.345 0)
 			(hide yes)
 			(show_name no)
@@ -15590,7 +15621,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96135ab9-d76d-4450-9a1e-2d72275b1ace")
-		(property "Reference" "#PWR0174"
+		(property "Reference" "#PWR0144"
 			(at 25.4 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -15650,7 +15681,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0174")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -15667,7 +15698,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96445359-58aa-4ec3-84bb-1361ba9e0890")
-		(property "Reference" "#PWR30"
+		(property "Reference" "#PWR0177"
 			(at 271.78 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -15727,7 +15758,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR30")
+					(reference "#PWR0177")
 					(unit 1)
 				)
 			)
@@ -15744,7 +15775,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "98849bb7-63c7-49c1-b1a6-07c84ae6484f")
-		(property "Reference" "C103"
+		(property "Reference" "C107"
 			(at 157.48 88.9063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15828,7 +15859,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C103")
+					(reference "C107")
 					(unit 1)
 				)
 			)
@@ -15846,7 +15877,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9eac29dd-ae5d-478b-baa9-e349600db9dd")
-		(property "Reference" "#PWR32"
+		(property "Reference" "#PWR0158"
 			(at 160.02 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -15906,7 +15937,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR32")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 			)
@@ -15923,7 +15954,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f93bd24-c92f-451c-99e2-d52e8c6822a3")
-		(property "Reference" "C107"
+		(property "Reference" "C111"
 			(at 173.99 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16007,7 +16038,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C107")
+					(reference "C111")
 					(unit 1)
 				)
 			)
@@ -16024,7 +16055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a371bf6e-278a-4779-b184-5f180db1bd15")
-		(property "Reference" "C91"
+		(property "Reference" "C94"
 			(at 116.84 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16108,7 +16139,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C91")
+					(reference "C94")
 					(unit 1)
 				)
 			)
@@ -16125,7 +16156,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5640f09-2e0b-443a-a0ea-1826b472e373")
-		(property "Reference" "#PWR0158"
+		(property "Reference" "#PWR0175"
 			(at 270.51 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -16185,7 +16216,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0158")
+					(reference "#PWR0175")
 					(unit 1)
 				)
 			)
@@ -16202,7 +16233,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a68322b6-ba88-4c63-b50f-9f375a50b990")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0150"
 			(at 83.82 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -16262,7 +16293,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0125")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
@@ -16279,7 +16310,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "abb5bdf5-31c9-4a41-b493-9d80e149c029")
-		(property "Reference" "R182"
+		(property "Reference" "R184"
 			(at 168.91 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16361,7 +16392,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R182")
+					(reference "R184")
 					(unit 1)
 				)
 			)
@@ -16378,7 +16409,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b198efab-146d-42b4-a6d7-95f5188e1a6e")
-		(property "Reference" "Y3"
+		(property "Reference" "Y2"
 			(at 34.036 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16468,7 +16499,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "Y3")
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -16485,7 +16516,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b39b9883-fba8-4777-b155-823ca7da9120")
-		(property "Reference" "C88"
+		(property "Reference" "C89"
 			(at 35.56 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16569,7 +16600,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C88")
+					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -16586,7 +16617,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5ffe412-1fc2-446d-aaec-c32a0e3c7b59")
-		(property "Reference" "#PWR0147"
+		(property "Reference" "#PWR0178"
 			(at 273.812 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -16646,7 +16677,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0147")
+					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
@@ -16663,7 +16694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b704ea45-ed5e-4198-a00e-2e3c941c5982")
-		(property "Reference" "C108"
+		(property "Reference" "C112"
 			(at 173.99 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16747,7 +16778,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C108")
+					(reference "C112")
 					(unit 1)
 				)
 			)
@@ -16765,7 +16796,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8973a5f-e6a1-4460-b7cf-59af7556dc47")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0164"
 			(at 205.74 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -16825,7 +16856,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0127")
+					(reference "#PWR0164")
 					(unit 1)
 				)
 			)
@@ -16842,7 +16873,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b89b6919-d52d-4ec0-bfb8-9db7876863a2")
-		(property "Reference" "#PWR24"
+		(property "Reference" "#PWR0168"
 			(at 217.17 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -16902,7 +16933,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR24")
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -16919,7 +16950,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd62afe7-44e5-447f-98fd-430dcd1f7906")
-		(property "Reference" "C119"
+		(property "Reference" "C124"
 			(at 248.92 82.5563 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17003,7 +17034,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C119")
+					(reference "C124")
 					(unit 1)
 				)
 			)
@@ -17020,7 +17051,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bee6abdc-75c8-4ba0-85e5-e5c906f7e7dd")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0156"
 			(at 151.892 181.102 0)
 			(hide yes)
 			(show_name no)
@@ -17080,7 +17111,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0124")
+					(reference "#PWR0156")
 					(unit 1)
 				)
 			)
@@ -17097,7 +17128,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf00ef83-8432-4ab7-ae8b-619cbdbe23db")
-		(property "Reference" "C102"
+		(property "Reference" "C106"
 			(at 154.94 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17181,7 +17212,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C102")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -17199,7 +17230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c01fa6f9-bb43-4d2d-b3f7-6e41648b93a7")
-		(property "Reference" "R149"
+		(property "Reference" "R188"
 			(at 233.68 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17263,7 +17294,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R149")
+					(reference "R188")
 					(unit 1)
 				)
 			)
@@ -17280,7 +17311,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2c7aa33-bb6d-437e-a848-1fa40f7d7fd8")
-		(property "Reference" "R184"
+		(property "Reference" "R187"
 			(at 213.36 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17362,7 +17393,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R184")
+					(reference "R187")
 					(unit 1)
 				)
 			)
@@ -17379,7 +17410,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c3da0dbd-4168-4a7e-8398-743c345ab62d")
-		(property "Reference" "C98"
+		(property "Reference" "C101"
 			(at 142.24 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17463,7 +17494,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C98")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -17480,7 +17511,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4baabb2-6d1b-4450-9400-249c36cd0ef9")
-		(property "Reference" "#PWR23"
+		(property "Reference" "#PWR0179"
 			(at 273.812 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -17540,7 +17571,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR23")
+					(reference "#PWR0179")
 					(unit 1)
 				)
 			)
@@ -17557,7 +17588,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c53cad2f-8675-4ba6-862a-9c9f6861d125")
-		(property "Reference" "U26"
+		(property "Reference" "U24"
 			(at 54.61 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17639,7 +17670,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "U26")
+					(reference "U24")
 					(unit 1)
 				)
 			)
@@ -17656,7 +17687,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8686022-d5dc-423d-9cd6-815295d8164d")
-		(property "Reference" "#PWR15"
+		(property "Reference" "#PWR0160"
 			(at 173.99 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -17717,7 +17748,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR15")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 			)
@@ -17735,7 +17766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c91a5c68-34a7-4995-aa10-98f92200ef77")
-		(property "Reference" "R150"
+		(property "Reference" "R189"
 			(at 233.68 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17799,7 +17830,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R150")
+					(reference "R189")
 					(unit 1)
 				)
 			)
@@ -17816,7 +17847,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9b04b37-3351-40d1-b418-c488b73eb493")
-		(property "Reference" "R167"
+		(property "Reference" "R165"
 			(at 21.59 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17898,7 +17929,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R167")
+					(reference "R165")
 					(unit 1)
 				)
 			)
@@ -17916,7 +17947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9cfee53-4f83-46df-8c10-09d6e9c10b4f")
-		(property "Reference" "#PWR27"
+		(property "Reference" "#PWR0163"
 			(at 200.66 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -17976,7 +18007,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR27")
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
@@ -18092,7 +18123,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db4133bf-0468-459a-82dc-607ff0070c07")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0170"
 			(at 236.22 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -18152,7 +18183,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0117")
+					(reference "#PWR0170")
 					(unit 1)
 				)
 			)
@@ -18169,7 +18200,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dbdc010d-ee5e-407d-aa85-cd00d60f5460")
-		(property "Reference" "C85"
+		(property "Reference" "C105"
 			(at 155.702 181.1019 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18233,7 +18264,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C85")
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -18250,7 +18281,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "de68021b-dfbb-488a-862f-00a7b3fe476a")
-		(property "Reference" "C118"
+		(property "Reference" "C123"
 			(at 238.76 82.5563 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18334,7 +18365,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C118")
+					(reference "C123")
 					(unit 1)
 				)
 			)
@@ -18351,7 +18382,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0eef7df-3bdf-44e4-a996-fc7e4e25167d")
-		(property "Reference" "R188"
+		(property "Reference" "R195"
 			(at 270.002 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18433,7 +18464,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R188")
+					(reference "R195")
 					(unit 1)
 				)
 			)
@@ -18450,7 +18481,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e13b7ddb-7f56-43ca-a2c6-cecb2ba13647")
-		(property "Reference" "C104"
+		(property "Reference" "C108"
 			(at 162.56 115.5763 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18534,7 +18565,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C104")
+					(reference "C108")
 					(unit 1)
 				)
 			)
@@ -18551,7 +18582,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2b6458b-94e5-4010-9c8d-97e87313351a")
-		(property "Reference" "C109"
+		(property "Reference" "C113"
 			(at 182.88 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18635,7 +18666,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C109")
+					(reference "C113")
 					(unit 1)
 				)
 			)
@@ -18653,7 +18684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e332fff6-e49e-414e-976f-754a1866ee2e")
-		(property "Reference" "#PWR28"
+		(property "Reference" "#PWR0152"
 			(at 109.22 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -18713,7 +18744,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR28")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
@@ -18730,7 +18761,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e51a7e4d-b37e-4f1a-9483-e6a9b335cbba")
-		(property "Reference" "R185"
+		(property "Reference" "R192"
 			(at 266.7 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18812,7 +18843,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R185")
+					(reference "R192")
 					(unit 1)
 				)
 			)
@@ -18830,7 +18861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6ae2f64-86c6-4b28-951d-f419a5fa0dd9")
-		(property "Reference" "R153"
+		(property "Reference" "R191"
 			(at 243.84 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18894,7 +18925,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R153")
+					(reference "R191")
 					(unit 1)
 				)
 			)
@@ -18911,7 +18942,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7460d22-d2cd-4be3-a94e-668c1795818f")
-		(property "Reference" "C90"
+		(property "Reference" "C92"
 			(at 115.57 101.6063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18995,7 +19026,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C90")
+					(reference "C92")
 					(unit 1)
 				)
 			)
@@ -19111,7 +19142,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e92d23ae-8ec0-4587-8455-6ad9c7866c52")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0154"
 			(at 118.872 181.102 0)
 			(hide yes)
 			(show_name no)
@@ -19171,7 +19202,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0115")
+					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
@@ -19188,7 +19219,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ebe00cde-df25-4a82-8cf6-7f20e2d0cd26")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0145"
 			(at 25.4 182.372 0)
 			(hide yes)
 			(show_name no)
@@ -19248,7 +19279,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0113")
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -19265,7 +19296,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee5e0eed-7065-4212-890b-f793319a6852")
-		(property "Reference" "R189"
+		(property "Reference" "R168"
 			(at 50.8 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19347,7 +19378,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R189")
+					(reference "R168")
 					(unit 1)
 				)
 			)
@@ -19364,7 +19395,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef29fa90-e297-41b9-90e0-4d144036af26")
-		(property "Reference" "#PWR18"
+		(property "Reference" "#PWR0166"
 			(at 213.36 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -19424,7 +19455,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR18")
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
@@ -19441,7 +19472,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "f3544b72-c477-490d-ad25-b696d2524e96")
-		(property "Reference" "R180"
+		(property "Reference" "R182"
 			(at 158.75 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19523,7 +19554,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "R180")
+					(reference "R182")
 					(unit 1)
 				)
 			)
@@ -19540,7 +19571,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f7f9a598-d8d3-46a9-b1c7-eed23c56cee5")
-		(property "Reference" "C87"
+		(property "Reference" "C118"
 			(at 198.628 161.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19612,7 +19643,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C87")
+					(reference "C118")
 					(unit 1)
 				)
 			)
@@ -19629,7 +19660,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f7fce30c-f6aa-4bdc-b442-31362e860ab1")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0173"
 			(at 251.46 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -19689,7 +19720,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0119")
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -19706,7 +19737,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbcbecfe-010e-4591-bd53-281863f3fcca")
-		(property "Reference" "#PWR0146"
+		(property "Reference" "#PWR0176"
 			(at 271.78 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -19766,7 +19797,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "#PWR0146")
+					(reference "#PWR0176")
 					(unit 1)
 				)
 			)
@@ -19783,7 +19814,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fca84c0d-466a-48ba-89ae-02fc64fb106f")
-		(property "Reference" "C106"
+		(property "Reference" "C110"
 			(at 167.64 88.9063 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19867,7 +19898,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C106")
+					(reference "C110")
 					(unit 1)
 				)
 			)
@@ -19884,7 +19915,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff86131c-9fdc-49c2-8030-494f236be2df")
-		(property "Reference" "C89"
+		(property "Reference" "C90"
 			(at 35.56 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19968,7 +19999,7 @@
 		(instances
 			(project "imx8x_eps_leviathan_v2"
 				(path "/bd3af9f3-19df-4a2f-8b54-98c48cea082e/1b5b2e76-614d-4307-9232-e06f7c77302d/6c21cd66-ac4b-45b6-9a4b-16fe35fc9cd4"
-					(reference "C89")
+					(reference "C90")
 					(unit 1)
 				)
 			)
