@@ -1,0 +1,20 @@
+** Profile: "OBC_Subsystem-test"  [ C:\Users\luqui\OneDrive\Documents\GitHub\scales-hardware\imx8x_eps_leviathan\Simulation Models\eps_mergersim-pspicefiles\obc_subsystem\test.sim ] 
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps1hb08b-q1_pspice_trans/tps1hb08b-q1_trans.lib" 
+* From [PSPICE NETLIST] section of C:\Users\luqui\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\OBC_Subsystem.net" 
+
+
+.END
